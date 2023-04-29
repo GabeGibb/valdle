@@ -1,0 +1,15 @@
+button:hover{
+    transform: translate(100px, 100px);
+
+}  
+
+div{
+    background-color: blue;
+    color: aqua;
+    width: 10px;
+    height: 10px;
+}
+
+div:hover{
+    transform: translate(100px, 100px);
+}
