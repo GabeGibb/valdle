@@ -111,13 +111,13 @@ function clearMap(){
         }
         child.innerHTML = '';
     }
-    // let mapPic = document.getElementById("curMap");
-    // mapPic.style.display = 'none';
+    let mapPic = document.getElementById("curMap");
+    mapPic.src = '';
 
 }
 
 
-mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven']
+mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split']
 
 createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
 
