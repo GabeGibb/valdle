@@ -417,8 +417,8 @@
                 "regionName": "Bridge",
                 "superRegionName": "Attacker Side",
                 "location": {
-                    "x": 13204,
-                    "y": -756
+                    "x": 500,
+                    "y": 500
                 }
             },
             {
