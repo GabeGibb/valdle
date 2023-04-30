@@ -49,12 +49,16 @@ function makeCalloutDiv(callout, mapName){
 
         rowNum++;
         if (win){
-            setTimeout(function() {alert('YOU WIN')}, 10);
+            setTimeout(function() {confirm('YOU WIN')
+            window.location = window.location.href;
+        }, 10);
             clearMap();
             gameOver = true;
         }
         else if(rowNum >= 6){
-            setTimeout(function() {alert('GAME OVER')}, 10);
+            setTimeout(function() {alert('GAME OVER! Location was ' + answer)
+            window.location = window.location.href;
+        }, 10);
             clearMap();
             gameOver = true;
         }
@@ -105,11 +109,6 @@ function createMap(mapName){
                 let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
                 let mapImg = document.getElementById("trueImg");
                 mapImg.src = imgUrl;
-                // mapImg.width = mapImg.width/2;
-                
-                // drawImage(mapImg, 0, 0, mapImg.width/2, mapImg.height/2, 0, 0, mapImg.width, mapImg.height);
-                // let x = mapImg.width/2;
-                // let y = mapImg.height/2;
 
 
             }
