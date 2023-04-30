@@ -57,6 +57,6 @@ function createMap(mapName){
 }
 
 
-createMap('Icebox')
+createMap('Split')
 
 
