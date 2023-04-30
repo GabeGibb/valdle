@@ -92,8 +92,13 @@ function createMap(mapName){
                 let randCall = Math.floor(Math.random()*maps[i]['callouts'].length);
                 answer[1] = maps[i]['callouts'][randCall]['regionName']
                 answer[2] = maps[i]['callouts'][randCall]['superRegionName']
+
                 console.log(answer);
                 clearMap();
+
+                let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
+                document.getElementById("trueImg").src = imgUrl;
+
             }
             start = false;
         }
