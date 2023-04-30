@@ -1,5 +1,6 @@
 let allInfo;
 let start = true;
+let gameOver = false;
 let rowNum = 1;
 let answer = ['', '', '']
 
@@ -49,10 +50,14 @@ function makeCalloutDiv(callout, mapName){
 
         rowNum++;
         if (win){
-            setTimeout(alert('WINNER'), 100);
+            setTimeout(function() {alert('YOU WIN')}, 10);
+            clearMap();
+            gameOver = true;
         }
         else if(rowNum >= 6){
-            setTimeout(alert('game over'), 500);
+            setTimeout(function() {alert('GAME OVER')}, 10);
+            clearMap();
+            gameOver = true;
         }
     };
 
@@ -63,6 +68,9 @@ function makeCalloutDiv(callout, mapName){
 
 
 function createMap(mapName){
+    if (gameOver){
+        return;
+    }
     clearMap();
     var map = document.getElementById("curMap");
 
