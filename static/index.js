@@ -57,6 +57,6 @@ function createMap(mapName){
 }
 
 
-createMap('Ascent')
+createMap('Fracture')
 
 
