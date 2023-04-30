@@ -1,24 +1,22 @@
 
 
-
-
-
 let mapSize = document.getElementById("curMap").height;
 let divideFactor = 1000/mapSize;
 console.log(mapSize)
 
-function makeCalloutDiv(x, y, callout){
+function makeCalloutDiv(callout){
     let div = document.createElement("div");
-    
+
+    callout['location']['x'], callout['location']['y'], callout['regionName']
+    let x = callout['location']['x'];
+    let y = callout['location']['y'];
+    let region = callout['regionName'];
+    let superRegion = callout['superRegionName']
+
     div.style.left = (x/divideFactor).toString() + 'px'; //x
     div.style.top = (y/divideFactor).toString() + 'px'; //y
-    // div.style.position = "absolute";
-    // div.style.width = "20";
-    // div.style.height = "20px";
-    // div.style.background = "red";
-    // div.style.color = "white";
     div.className = "callout";
-    div.innerHTML = callout;
+    div.innerHTML = region;
 
     div.style.cursor = 'pointer';
     div.onclick = function(){
@@ -51,7 +49,7 @@ function createMap(mapName){
             
             for(let j = 0; j < maps[i]['callouts'].length; j++){
                 callout = maps[i]['callouts'][j];
-                makeCalloutDiv(callout['location']['x'], callout['location']['y'], callout['regionName'])
+                makeCalloutDiv(callout)
             }
         }
         

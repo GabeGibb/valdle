@@ -11,4 +11,4 @@ def hello():
 def test():
     return 'hi'
 
-# app.run(host='0.0.0.0')
+app.run(host='0.0.0.0')
