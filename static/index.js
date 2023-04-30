@@ -23,7 +23,7 @@ function makeCalloutDiv(callout, mapName){
     div.style.top = (-10 +(y/divideFactor)).toString() + 'px'; //y
     div.className = "callout";
     div.innerHTML = region;
-    // console.log(allInfo)
+
     div.style.cursor = 'pointer';
     div.onclick = function(){
 
@@ -35,7 +35,6 @@ function makeCalloutDiv(callout, mapName){
 
         let win = true;
         for (child of row.children) {
-            // console.log(child);
             if(guess[i] == answer[i]){
                 child.style.background = 'green';
             }else{
@@ -80,7 +79,6 @@ function createMap(mapName){
     .then((response) => response.json())
     .then((data) => {maps = data})
     .then(()=>{
-        // maps = maps['data'];
         allInfo = maps;
         for(let i = 0; i < maps.length; i++){
             if (maps[i]['displayName'] != mapName){
@@ -105,7 +103,14 @@ function createMap(mapName){
                 clearMap();
 
                 let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
-                document.getElementById("trueImg").src = imgUrl;
+                let mapImg = document.getElementById("trueImg");
+                mapImg.src = imgUrl;
+                // mapImg.width = mapImg.width/2;
+                
+                // drawImage(mapImg, 0, 0, mapImg.width/2, mapImg.height/2, 0, 0, mapImg.width, mapImg.height);
+                // let x = mapImg.width/2;
+                // let y = mapImg.height/2;
+
 
             }
             start = false;
