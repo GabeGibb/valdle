@@ -1,15 +1,21 @@
-button:hover{
-    transform: translate(100px, 100px);
-
-}  
-
-div{
-    background-color: blue;
-    color: aqua;
-    width: 10px;
-    height: 10px;
+body{
+    background-color: black;
 }
 
-div:hover{
-    transform: translate(100px, 100px);
+#mapBox{
+    border: 5px solid;
+    margin: auto;
+    /* width: 1000px; */
+    padding: 10px;
+    position: relative;
+    flex:1;
 }
+
+#curMap, #mapBox{
+    width: 500px;
+}
+
+/* .callout{
+    top:0px;
+    bottom:0px;
+} */
