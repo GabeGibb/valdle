@@ -3,12 +3,9 @@ body{
 }
 
 #mapBox{
-    border: 5px solid;
     margin: auto;
-    /* width: 1000px; */
     padding: 10px;
     position: relative;
-    /* flex:1; */
 }
 
 #curMap, #mapBox{
@@ -17,7 +14,6 @@ body{
 
 .callout{
     position: absolute;
-    /* width: 20px; */
     height: 20px;
     background-color: red;
     color: white;
