@@ -101,9 +101,7 @@ function createMap(mapName){
     })
 }
 
-function drawMapImage() {
-    
-}
+
 
 function clearMap(){
     let map = document.getElementById("mapChoice");
