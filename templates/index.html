@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 <title>Valdle</title>
 </head>
     <body>
@@ -11,7 +11,7 @@
         </div>
 
         
-        <script src="index.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
         
     </body>
 </html>
