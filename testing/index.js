@@ -35,7 +35,7 @@ function createMap(mapName){
     let callout;
     // fetch('https://valorant-api.com/v1/maps')
 
-    fetch("static/maps.json")
+    fetch("maps.json")
     .then((response) => response.json())
     .then((data) => {maps = data})
     .then(()=>{

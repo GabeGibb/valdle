@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+#mapBox{
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+
+#curMap, #mapBox{
+    width: 500px;
+}
+
+.callout{
+    position: absolute;
+    height: 20px;
+    background-color: red;
+    color: white;
+}
