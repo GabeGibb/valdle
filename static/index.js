@@ -1,3 +1,8 @@
+
+
+
+
+
 let mapSize = document.getElementById("curMap").height;
 let divideFactor = 1000/mapSize;
 console.log(mapSize)
@@ -14,6 +19,13 @@ function makeCalloutDiv(x, y, callout){
     div.style.color = "white";
     div.className = "callout";
     div.innerHTML = callout;
+
+    // div.style.cursor = 'pointer';
+    // div.onclick = function(){
+    //     return;
+    // };
+
+
     document.getElementById("mapBox").appendChild(div);
 
 }
