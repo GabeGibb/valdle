@@ -72,6 +72,7 @@ function createMap(mapName){
     .then((response) => response.json())
     .then((data) => {maps = data})
     .then(()=>{
+        // maps = maps['data'];
         allInfo = maps;
         for(let i = 0; i < maps.length; i++){
             if (maps[i]['displayName'] != mapName){
@@ -98,6 +99,10 @@ function createMap(mapName){
         }
         
     })
+}
+
+function drawMapImage() {
+    
 }
 
 function clearMap(){
