@@ -10,20 +10,20 @@ console.log(mapSize)
 function makeCalloutDiv(x, y, callout){
     let div = document.createElement("div");
     
-    div.style.position = "absolute";
     div.style.left = (x/divideFactor).toString() + 'px'; //x
     div.style.top = (y/divideFactor).toString() + 'px'; //y
-    div.style.width = "20";
-    div.style.height = "20px";
-    div.style.background = "red";
-    div.style.color = "white";
+    // div.style.position = "absolute";
+    // div.style.width = "20";
+    // div.style.height = "20px";
+    // div.style.background = "red";
+    // div.style.color = "white";
     div.className = "callout";
     div.innerHTML = callout;
 
-    // div.style.cursor = 'pointer';
-    // div.onclick = function(){
-    //     return;
-    // };
+    div.style.cursor = 'pointer';
+    div.onclick = function(){
+        div.style.background = "blue";
+    };
 
 
     document.getElementById("mapBox").appendChild(div);

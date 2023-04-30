@@ -15,7 +15,10 @@ body{
     width: 500px;
 }
 
-/* .callout{
-    top:0px;
-    bottom:0px;
-} */
+.callout{
+    position: absolute;
+    /* width: 20px; */
+    height: 20px;
+    background-color: red;
+    color: white;
+}
