@@ -1,6 +1,7 @@
 
 
-let mapSize = document.getElementById("curMap").height;
+// let mapSize = document.getElementById("mapChoice").height;
+let mapSize = 640;
 let divideFactor = 1000/mapSize;
 console.log(mapSize)
 
@@ -13,8 +14,8 @@ function makeCalloutDiv(callout){
     let region = callout['regionName'];
     let superRegion = callout['superRegionName']
 
-    div.style.left = (x/divideFactor).toString() + 'px'; //x
-    div.style.top = (y/divideFactor).toString() + 'px'; //y
+    div.style.left = (-10 +(x/divideFactor)).toString() + 'px'; //x
+    div.style.top = (-10 +(y/divideFactor)).toString() + 'px'; //y
     div.className = "callout";
     div.innerHTML = region;
 
@@ -24,7 +25,7 @@ function makeCalloutDiv(callout){
     };
 
 
-    document.getElementById("mapBox").appendChild(div);
+    document.getElementById("mapChoice").appendChild(div);
 
 }
 
@@ -57,6 +58,6 @@ function createMap(mapName){
 }
 
 
-createMap('Icebox')
+createMap('Fracture')
 
 

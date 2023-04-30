@@ -1,4 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+  <title>Valdle</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  
+</head>
+<body>
+  <nav class="navbar">
+    <a>Valdle</a>
+  </nav>
+
+  <div class="content">
+    <div class="map_selection">
+      <div class="containerTab">
+        <div class="containerRow1">
+            <div class="apple">apple</div>
+            <button class="map_button" id = "chooseAscent">Ascent</button>
+            <button class="map_button" id = "chooseBind">Bind</button>
+            <button class="map_button" id = "chooseBreeze">Breeze</button>
+            <button class="map_button" id = "chooseFracture">Fracture</button>
+            <button class="map_button" id = "chooseHaven">Haven</button>
+            <div class="apple">apple</div>
+        </div>
+        <div class="containerRow2">
+            <div class="apple">apple</div>
+            <button class="map_button" id = "chooseIcebox">Icebox</button>
+            <button class="map_button" id = "chooseLotus">Lotus</button>
+            <button class="map_button" id = "choosePearl">Pearl</button>
+            <button class="map_button" id = "chooseSplit">Split</button>
+            <div class="apple">apple</div>
+        </div>
+
+      </div>
+    
+      <div class="map">
+    
+      </div>
+    </div>
+
+    <div class="mapImgChoice" id="mapImgChoice">
+        <div class="fill1"></div>
+        <div class="mapChoice" id="mapChoice"><img class="" id="curMap"></div>
+        <div class="imgChoice"><img class ="trueImg" src="https://images.pexels.com/photos/2749481/pexels-photo-2749481.jpeg?cs=srgb&dl=pexels-nicole-avagliano-2749481.jpg&fm=jpg"></div>
+        <div class="fill2"></div>
+    </div>
+
+    <div class="board">
+      <div class="row">
+        <div class="category"><span class="cata">Map Names</span></div>
+        <div class="category"><span class="cata">Callout</span></div>
+        <div class="category"><span class="cata">Location</span></div>
+      </div>
+      <div class="row" id="r1">
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+      </div>
+      <div class="row" id="r2">
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+      </div>
+      <div class="row" id="r3">
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+      </div>
+      <div class="row" id="r4">
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+      </div>
+      <div class="row" id="r5">
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+        <div class="tile"><span class="hint"></span></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+  
+</body>
+</html>
+
+
+<!-- GABE -->
+<!-- <!doctype html>
 <html>
 <head>
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
@@ -14,4 +106,4 @@
         <script src="{{ url_for('static', filename='index.js') }}"></script>
         
     </body>
-</html>
+</html> -->
