@@ -79,7 +79,7 @@ function createMap(mapName){
 
     let callout;
 
-    fetch("static/maps.json")
+    fetch("static/maps.json", {cache: "force-cache"})
     .then((response) => response.json())
     .then((data) => {maps = data})
     .then(()=>{
@@ -137,6 +137,14 @@ function clearMap(){
 mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split']
 
 createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
+
+// mapChoices.forEach(function(x){
+//     createMap(x);
+//     clearMap();
+//     console.log(x);
+// });
+
+
 
 // createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
 
