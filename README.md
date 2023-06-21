@@ -1,4 +1,4 @@
-# Website (Hosting may take awhile to load) https://valdle-nmdu.onrender.com/
+# Website (loads slow) https://valdle-nmdu.onrender.com/
 # A Wordle-like game but adapted to the game of Valorant!
 Given just a picture, can you use your Valorant map knowledge to try and guess the exact callout?
 # Demo
