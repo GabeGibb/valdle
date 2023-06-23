@@ -78,6 +78,16 @@ body::-webkit-scrollbar{
     grid-template-columns: 1fr 640px 640px 1fr;
 }
 
+#answerBox{
+    /* background-color: #fa4454 !important; */
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    width: fit-content;
+    margin: auto; 
+
+}
+
 
 
 /* .mapChoice{
