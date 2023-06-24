@@ -48,24 +48,12 @@ function makeCalloutDiv(callout, mapName){
 
 
         rowNum++;
-        // if (win){
-        // //     setTimeout(function() {confirm('YOU WIN')
-        // //     // window.location = window.location.href;
-        // // }, 10);
-        //     // clearMap();
-        //     gameOver = true;
-        // }
-        // else if(rowNum >= 6){
-        // //     setTimeout(function() {alert('GAME OVER! Location was ' + answer)
-        // //     // window.location = window.location.href;
-        // // }, 10);
-        // //     clearMap();
-        //     gameOver = true;
-        // }
+
         if (win || rowNum >= 6){
             gameOver = true;
             let answerBox = document.getElementById("answerBox");
             answerBox.innerText = answer;
+            clearMap();
         }
     };
 
