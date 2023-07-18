@@ -47,7 +47,6 @@ body{
 
 #dropdown{
     text-align:center;
-    /* padding: 30px; */
     width: 300px;
     position: relative;
     z-index: 30;
@@ -64,20 +63,26 @@ body{
     font-size: 20px;
     font-family: 'VALORANT', sans-serif;
     padding:30px;
+    height: 100px;
+    margin: 5px;
+    position:relative;
+    left:-5px;
+
 }
 
 .buttonImages{
-    width: 100px;
-    left: 0px;
-    position:absolute;
+    width: 90px;
+    left: -75px;
+    position:relative;
+    top: -25px;
     
 }
 
 .agentNameInButton{
     font-size: 25px;
     position:relative;
-    left: 35px;
-    
+    left: 45px;
+    top: -115px;
 }
 
 #searchInput{
