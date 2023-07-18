@@ -194,7 +194,6 @@ function displayPartTwo(){
     partTwoDisplay = document.getElementById("partTwoDisplay");
     $("#partTwoDisplay").show();
     // partTwoDisplay.scrollIntoView();
-    partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 
     let whatAbilityNameDiv = document.getElementById("whatAbilityName")
     for(i = 0; i < dataList[randAgent]["abilities"].length; i++){ 
@@ -209,6 +208,8 @@ function displayPartTwo(){
         }
         whatAbilityNameDiv.appendChild(button); //appends button to div
     }
+
+    partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
 function isCorrectAbilityName(button, currAbility){
