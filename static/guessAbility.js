@@ -64,6 +64,12 @@ $(document).on("click", function(event){
     }
 });
 
+$('#searchInput').on('keypress', function(e){
+    if(e['originalEvent']['key'] == 'Enter'){
+        validateAgent();
+    }
+})
+
 
 function filterFunction() {
     var input, filter, ul, li, button, i;
