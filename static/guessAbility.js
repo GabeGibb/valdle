@@ -124,6 +124,7 @@ function isCorrectAgent(userInput){
     if(agentAnswer == userInput){
         newDiv.classList.add("correctGuess")
         console.log("yippie!");
+        printVictoryMessage();
     }
     else{
         newDiv.classList.add("wrongGuess")
@@ -159,4 +160,10 @@ function removeAgent(name){
     if(index != 'empty'){
         button[index].remove();
     }
+}
+
+function printVictoryMessage(){
+    let msg = document.getElementById("victoryMessage");
+    msg.innerText = "nice";
+    console.log(msg);
 }

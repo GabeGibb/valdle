@@ -138,4 +138,9 @@ body{
     /* padding:20px; */
 }
 
+#victoryMessage{
+    color:azure;
+    font-size: 40px;
+}
+
 
