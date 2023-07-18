@@ -6,9 +6,12 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-
 @app.route('/')
-def hello():
+def valdle():
+    return render_template('valdle.html')
+
+@app.route('/guessMap')
+def guessMap():
     return render_template('guessMap.html')
 
 @app.route('/guessAbility')
@@ -16,7 +19,7 @@ def guessAbility():
     return render_template('guessAbility.html')
 
 
-@app.route('/<map>/<region>/<superRegion>')
+@app.route('/guessMap/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
     path = f'Valorant Maps/{map}/{region} - {superRegion}.png'
     if 'partial' in request.args and request.args['partial'] == 'true':
