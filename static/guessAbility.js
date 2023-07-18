@@ -1,7 +1,7 @@
 let dataList;
 
 var randAgent = Math.floor(Math.random() * 22);
-var randAbility = Math.floor(Math.random() * 4);
+var randAbility; //initialized in randomizeAbilityIndex()
 
 // console.log(randAgent);
 // console.log(randAbility);
@@ -9,18 +9,36 @@ var randAbility = Math.floor(Math.random() * 4);
 var abilityImage = document.getElementById("abilityImage")
 
 $.get("https://valorant-api.com/v1/agents?isPlayableCharacter=true", function(data, status){
-    console.log(data['data'])
+    console.log(data['data']);
     dataList = data["data"];
-    createRandAbility();
+   
+    console.log("agent name: " + dataList[randAgent]["displayName"]);
+    var abilityIndex = randomizeAbilityIndex();
+    createRandAbility(abilityIndex);
     makeButtons();
     $("#agentNames").hide();
 
 });
 
+function randomizeAbilityIndex(){
+    // console.log(dataList[randAgent]["abilities"].length);
+    if((dataList[randAgent]["abilities"].length == 5) && (dataList[randAgent]["abilities"][4]["displayIcon"] != null)){
+        randAbility = Math.floor(Math.random() * 5)
+        console.log("randAbility = " + randAbility)
+        return randAbility;
+        
+    }
+    else{
+        randAbility = Math.floor(Math.random() * 4);
+        // console.log("randAbility = " + randAbility)
+        return randAbility;
+    }
+}
 
-function createRandAbility(){
-    var chosenAbility = dataList[randAgent]["abilities"][randAbility];
+function createRandAbility(abilityIndex){
+    var chosenAbility = dataList[randAgent]["abilities"][abilityIndex];
     console.log(chosenAbility);
+    // console.log(dataList[randAgent]["abilities"][abilityIndex]["displayIcon"]);
     makeAbilityImage(chosenAbility);
 }
 
@@ -168,4 +186,10 @@ function removeAgent(name){
 
 function printVictoryMessage(){
     $('#victoryMessage').text('nice')
+    displayPartTwo();
+}
+
+function displayPartTwo(){
+    partTwoDisplay = document.getElementById("partTwoDisplay");
+    
 }
