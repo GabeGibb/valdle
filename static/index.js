@@ -6,7 +6,7 @@ let answer = ['', '', '']
 
 
 // let mapSize = document.getElementById("mapChoice").height;
-let mapSize = 640;
+let mapSize = 320;
 let divideFactor = 1000/mapSize;
 console.log(mapSize)
 
@@ -41,7 +41,8 @@ function makeCalloutDiv(callout, mapName){
                 child.style.background = 'red';
                 win = false;
             }
-            child.innerText = guess[i];
+            let text = document.createTextNode(guess[i]);
+            child.firstChild.appendChild(text);
             i++;
         }
         div.remove();
