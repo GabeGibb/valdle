@@ -55,7 +55,10 @@ function makeButtons(){
 }
 
 function showButtons(){
-    $("#agentNames").show();
+    // console.log($('#searchInput').val())
+    // if ($('#searchInput').val().length > 0){
+        $("#agentNames").show();
+    // }
 }
 
 $(document).on("click", function(event){
