@@ -23,7 +23,7 @@ def callout(map, region, superRegion):
     if request.args['partial'] == 'true':
         im = Image.open(path)
         w,h = im.size
-        cropSize = 3
+        cropSize = 4
         smallW = w / cropSize
         smallH = h / cropSize
         startX = randint(0, w-smallW)
@@ -31,7 +31,7 @@ def callout(map, region, superRegion):
         im2 = im.crop((startX, startY, startX + smallW, startY + smallH))
         
         img_io = BytesIO()
-        im2.save(img_io, 'PNG', quality=70)
+        im2.save(img_io, 'PNG', quality=100)
         img_io.seek(0)
         return send_file(img_io, 'PNG')
         
