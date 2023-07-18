@@ -33,12 +33,13 @@ function makeButtons(){
     let names = document.getElementById("agentNames");
     for(let i = 0; i < dataList.length; i++){
         let currName = (dataList[i]["displayName"]);
-        console.log(currName);
+        // console.log(currName);
         let text = document.createTextNode(currName);
         let button = document.createElement('BUTTON');
         button.classList.add("agentButton");
         button.onclick = function(){
             document.getElementById("searchInput").value = currName;
+            $("#agentNames").hide();
         }
         button.appendChild(text); //adds content to button
         names.appendChild(button); //appends button to div
@@ -64,7 +65,9 @@ function filterFunction() {
     var input, filter, ul, li, button, i;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
-    div = document.getElementById("dropdown");
+    // div = document.getElementById("dropdown");
+    // button = div.getElementsByTagName("button");
+    div = document.getElementById("agentNames");
     button = div.getElementsByTagName("button");
     for (i = 0; i < button.length; i++) {
       txtValue = button[i].textContent || button[i].innerText;
@@ -76,3 +79,27 @@ function filterFunction() {
     }
   }
     
+function validateAgent(){
+    let userInput = document.getElementById("searchInput")
+    console.log(userInput.value);
+    // console.log(dataList);
+    for(let i = 0; i < dataList.length; i++){ //TODO: case sens
+        if(userInput.value == dataList[i]["displayName"]){
+            isCorrectAgent(userInput.value);
+        }
+        
+    }
+}
+
+function isCorrectAgent(userInput){
+    let agentGuesses = document.getElementById("agentGuesses");
+    let agentAnswer = dataList[randAgent]["displayName"];
+    if(agentAnswer == userInput){
+        let text = document.createTextNode(agentAnswer);
+        let p = document.createElement('p');
+
+        p.appendChild(text); //adds content to button
+        agentGuesses.appendChild(button); //appends button to div
+        console.log("yippie!");
+    }
+}

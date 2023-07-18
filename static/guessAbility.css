@@ -47,20 +47,25 @@ body{
 
 #dropdown{
     text-align:center;
-    padding: 30px;
+    /* padding: 30px; */
     width: 300px;
     position: relative;
     z-index: 30;
     margin:auto;
+    top: 30px;
+    border: 2px solid red;
 }
 
 
 
 .agentButton{
     display:block;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 255px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height:40px;
+    font-size: 20px;
+    font-family: 'VALORANT', sans-serif;
 }
 
 #searchInput{
@@ -68,16 +73,17 @@ body{
     margin-right: auto;
     width: 300px;
     display:block;
-    /* height: 50px; */
+    height: 40px;
+    font-family: 'VALORANT', sans-serif;
 }
 
 #userInputDiv{
     /* width: 100px; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align:center;
     position: relative; 
     display:flex;
-    top: 50px;
+    /* top: 50px; */
 }
 
 #submit{

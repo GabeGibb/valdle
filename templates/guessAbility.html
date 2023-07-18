@@ -11,20 +11,23 @@
         </nav>
 
         <div id="promptDiv">
-        <p id="prompt">Guess Whose Ability</p>
+        <p id="prompt">Which Agent Has This Ability?</p>
         </div>
 
         <div id="abilityImageDiv">
             <img id="abilityImage" src="">
         </div>
-        <div id="wrongAgents">
-        <!--Add Wrong Answers-->
+        
+        <div id="fullListOfGuesses">
+            <div id="agentGuesses">
+                <!--Add Guesses-->
+            </div>
         </div>
 
         <div id="dropdown" class="dropdown-content">
             <div id="userInputDiv">
                 <input type="text" class="dropdown-content" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
-                <button id="submit">></button>
+                <button id="submit" onclick="validateAgent()">></button>
             </div>
             <div id="agentNames" class="dropdown-content"></div>
         </div>
