@@ -1,3 +1,5 @@
+let dataList;
+
 var randAgent = Math.floor(Math.random() * 23);
 var randAbility = Math.floor(Math.random() * 4);
 
@@ -126,8 +128,12 @@ function isCorrectAgent(userInput){
     else{
         newDiv.classList.add("wrongGuess")
         console.log("NOOO!");
+        $('#searchInput').val('');
     }
     newDiv.classList.add("individualGuesses");
+
+    removeAgent(userInput);
+   
 }
 
 function findUserIndex(userInput){
@@ -135,5 +141,22 @@ function findUserIndex(userInput){
         if(userInput == dataList[i]["displayName"]){
             return i;
         }
+    }
+}
+
+function removeAgent(name){
+    div = document.getElementById("agentNames");
+    button = div.getElementsByTagName("button");
+    let index = 'empty';
+    for (i = 0; i < button.length; i++) {
+        txtValue = button[i].textContent || button[i].innerText;
+        if (txtValue == name){
+            button[i].textContent = ''
+            button[i].innerText = ''
+            index = i;
+        }
+    }
+    if(index != 'empty'){
+        button[index].remove();
     }
 }
