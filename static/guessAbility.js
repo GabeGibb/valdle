@@ -195,4 +195,31 @@ function displayPartTwo(){
     $("#partTwoDisplay").show();
     // partTwoDisplay.scrollIntoView();
     partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+
+    let whatAbilityNameDiv = document.getElementById("whatAbilityName")
+    for(i = 0; i < dataList[randAgent]["abilities"].length; i++){ 
+        let button = document.createElement('button');
+        let currAbility = dataList[randAgent]["abilities"][i]["displayName"];
+        // console.log(currAbility)
+        button.innerHTML = currAbility; //adds content to button
+        button.classList.add("abilityNameInButton");
+        button.onclick = function(){
+            isCorrectAbilityName(button, currAbility);
+            
+        }
+        whatAbilityNameDiv.appendChild(button); //appends button to div
+    }
+}
+
+function isCorrectAbilityName(button, currAbility){
+    let correctAbilityName = dataList[randAgent]["abilities"][randAbility]["displayName"];
+    
+    if(currAbility == correctAbilityName){
+        button.classList.add("correctAbilityName")
+        whatAbilityNameDiv = document.getElementById("whatAbilityName");
+        whatAbilityNameDiv.disabled = true;
+    }
+    else{
+        button.classList.add("incorrectAbilityName")
+    }
 }

@@ -23,7 +23,7 @@ body{
     
 }
 
-#prompt{
+.prompt{
     color:aliceblue;
     font-size: 25px;
   /* width:960px;  */
@@ -163,5 +163,31 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 500px;
+    text-align: center;
     /* display:block; */
+}
+
+#whatAbilityName{
+
+}
+
+.abilityNameInButton{
+    font-family: 'VALORANT', sans-serif;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.correctAbilityName{
+    background-color: green;
+}
+
+.incorrectAbilityName{
+    background-color: red;
 }
