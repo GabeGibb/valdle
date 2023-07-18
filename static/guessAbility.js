@@ -92,14 +92,27 @@ function validateAgent(){
 }
 
 function isCorrectAgent(userInput){
-    let agentGuesses = document.getElementById("agentGuesses");
-    let agentAnswer = dataList[randAgent]["displayName"];
-    if(agentAnswer == userInput){
-        let text = document.createTextNode(agentAnswer);
-        let p = document.createElement('p');
+    let guessParent = document.getElementById("fullListOfGuesses");
+    let newDiv = document.createElement("div");
+    guessParent.appendChild(newDiv);
 
-        p.appendChild(text); //adds content to button
-        agentGuesses.appendChild(button); //appends button to div
+    let agentAnswer = dataList[randAgent]["displayName"];
+
+    let text = document.createTextNode(userInput);
+    let p = document.createElement('p');
+    p.classList.add("guessText");
+
+    let agentImg = document.createElement('img');
+    agentImg.src = dataList[randAgent]["displayIconSmall"]
+    p.appendChild(text); //adds content to button
+    newDiv.appendChild(p); //appends button to div
+
+    if(agentAnswer == userInput){
+        newDiv.classList.add("correctGuess")
         console.log("yippie!");
+    }
+    else{
+        newDiv.classList.add("wrongGuess")
+        console.log("NOOO!");
     }
 }

@@ -89,3 +89,19 @@ body{
 #submit{
     width:50px;
 }
+
+
+#fullListOfGuesses{
+    border: 3px solid yellow;
+    font-size:20px;
+    color:aqua;
+    text-align: center;
+}
+
+.correctGuess{
+    background-color: green;
+}
+
+.wrongGuess{
+    background-color: rgb(255, 0, 0);
+}
