@@ -224,6 +224,9 @@ function isCorrectAbilityName(button, currAbility){
         $('#finalVictoryMessage').text('yippie!');
         
         winConfetti();
+        
+        
+        
     }
     else if (canGuessAbilityName){
         button.classList.add("incorrectAbilityName")
