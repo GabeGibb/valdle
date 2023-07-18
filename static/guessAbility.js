@@ -164,7 +164,5 @@ function removeAgent(name){
 }
 
 function printVictoryMessage(){
-    let msg = document.getElementById("victoryMessage");
-    msg.innerText = "nice";
-    console.log(msg);
+    $('#victoryMessage').text('nice')
 }
