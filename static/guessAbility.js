@@ -36,6 +36,7 @@ function makeButtons(){
         console.log(currName);
         let text = document.createTextNode(currName);
         let button = document.createElement('BUTTON');
+        button.classList.add("agentButton");
         button.onclick = function(){
             document.getElementById("searchInput").value = currName;
         }

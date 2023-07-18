@@ -56,7 +56,7 @@ body{
 
 
 
-button{
+.agentButton{
     display:block;
     width: 250px;
     margin-left: auto;
@@ -66,8 +66,20 @@ button{
 #searchInput{
     margin-left: auto;
     margin-right: auto;
-    width: 245px;
+    width: 300px;
     display:block;
+    /* height: 50px; */
 }
 
+#userInputDiv{
+    /* width: 100px; */
+    border: 2px solid red;
+    text-align:center;
+    position: relative; 
+    display:flex;
+    top: 50px;
+}
 
+#submit{
+    width:50px;
+}
