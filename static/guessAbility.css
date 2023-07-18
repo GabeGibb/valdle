@@ -53,7 +53,7 @@ body{
     z-index: 30;
     margin:auto;
     top: 30px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 
@@ -63,9 +63,21 @@ body{
     width: 255px;
     /* margin-left: auto;
     margin-right: auto; */
-    height:40px;
+    /* height:40px; */
     font-size: 20px;
     font-family: 'VALORANT', sans-serif;
+    padding:30px;
+}
+
+.buttonImages{
+    border: 30px red;
+    width: 100px;
+    left: 0px;
+    position:relative;
+}
+
+.agentName{
+    
 }
 
 #searchInput{
@@ -92,10 +104,15 @@ body{
 
 
 #fullListOfGuesses{
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     font-size:20px;
     color:aqua;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align:center;
+
 }
 
 .correctGuess{
@@ -105,3 +122,15 @@ body{
 .wrongGuess{
     background-color: rgb(255, 0, 0);
 }
+
+.agentGuessImg{
+    /* border:10px solid blue; */
+    width: 150px;
+}
+
+.individualGuesses{
+    /* text-align:center; */
+    /* padding:20px; */
+}
+
+

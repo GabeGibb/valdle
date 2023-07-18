@@ -36,11 +36,13 @@ function makeButtons(){
         // console.log(currName);
         let text = document.createTextNode(currName);
         let button = document.createElement('BUTTON');
+        // text.classList.add("agentName");
         button.classList.add("agentButton");
         button.onclick = function(){
             document.getElementById("searchInput").value = currName;
             $("#agentNames").hide();
         }
+        button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
         button.appendChild(text); //adds content to button
         names.appendChild(button); //appends button to div
     }
@@ -57,8 +59,6 @@ $(document).on("click", function(event){
         $("#agentNames").hide();
     }
 });
-
-
 
 
 function filterFunction() {
@@ -103,7 +103,8 @@ function isCorrectAgent(userInput){
     p.classList.add("guessText");
 
     let agentImg = document.createElement('img');
-    agentImg.src = dataList[findUserIndex(userInput)]["displayIconSmall"];
+    agentImg.src = dataList[findUserIndex(userInput)]["displayIcon"];
+    agentImg.classList.add("agentGuessImg");
     newDiv.appendChild(agentImg);
     p.appendChild(text); //adds content to button
     newDiv.appendChild(p); //appends button to div
@@ -116,6 +117,7 @@ function isCorrectAgent(userInput){
         newDiv.classList.add("wrongGuess")
         console.log("NOOO!");
     }
+    newDiv.classList.add("individualGuesses");
 }
 
 function findUserIndex(userInput){
