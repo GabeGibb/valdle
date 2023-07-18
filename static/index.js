@@ -1,4 +1,4 @@
-let allInfo;
+let maps;
 let start = true;
 let gameOver = false;
 let rowNum = 1;
@@ -54,6 +54,10 @@ function makeCalloutDiv(callout, mapName){
             let answerBox = document.getElementById("answerBox");
             answerBox.innerText = answer;
             clearMap();
+
+            let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
+            let mapImg = document.getElementById("curMap");
+            mapImg.src = imgUrl;
         }
     };
 
@@ -72,43 +76,37 @@ function createMap(mapName){
 
     let callout;
 
-    fetch("static/maps.json", {cache: "force-cache"})
-    .then((response) => response.json())
-    .then((data) => {maps = data})
-    .then(()=>{
-        allInfo = maps;
-        for(let i = 0; i < maps.length; i++){
-            if (maps[i]['displayName'] != mapName){
-                continue;
-            }
-
-            map.src = maps[i]['displayIcon'];
-            
-            for(let j = 0; j < maps[i]['callouts'].length; j++){
-                callout = maps[i]['callouts'][j];
-                makeCalloutDiv(callout, mapName)
-            }
-
-
-            if (start){
-                answer[0] = maps[i]['displayName'];
-                let randCall = Math.floor(Math.random()*maps[i]['callouts'].length);
-                answer[1] = maps[i]['callouts'][randCall]['regionName']
-                answer[2] = maps[i]['callouts'][randCall]['superRegionName']
-
-                console.log(answer);
-                clearMap();
-
-                let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2] + '?partial=true';
-                let mapImg = document.getElementById("trueImg");
-                mapImg.src = imgUrl;
-
-
-            }
-            start = false;
+    for(let i = 0; i < maps.length; i++){
+        if (maps[i]['displayName'] != mapName){
+            continue;
         }
+
+        map.src = maps[i]['displayIcon'];
         
-    })
+        for(let j = 0; j < maps[i]['callouts'].length; j++){
+            callout = maps[i]['callouts'][j];
+            makeCalloutDiv(callout, mapName)
+        }
+
+
+        if (start){
+            answer[0] = maps[i]['displayName'];
+            let randCall = Math.floor(Math.random()*maps[i]['callouts'].length);
+            answer[1] = maps[i]['callouts'][randCall]['regionName']
+            answer[2] = maps[i]['callouts'][randCall]['superRegionName']
+
+            console.log(answer);
+            clearMap();
+
+            let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2] + '?partial=true';
+            let mapImg = document.getElementById("trueImg");
+            mapImg.src = imgUrl;
+
+
+        }
+        start = false;
+    }
+    
 }
 
 
@@ -127,17 +125,13 @@ function clearMap(){
 }
 
 
+
+
 mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split']
 
-createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
-
-// mapChoices.forEach(function(x){
-//     createMap(x);
-//     clearMap();
-//     console.log(x);
-// });
 
 
-
-// createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
-
+$.get("static/maps.json", function(data, status){
+    maps = data
+    createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
+});
