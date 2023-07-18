@@ -79,6 +79,9 @@ body{
     
 }
 
+#agentNames{
+    position: absolute;
+}
 .agentNameInButton{
     font-size: 25px;
     position:relative;
