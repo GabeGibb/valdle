@@ -1,4 +1,4 @@
-function confetti(){
+function winConfetti(){
 
     var end = Date.now() + (5 * 1000);
 

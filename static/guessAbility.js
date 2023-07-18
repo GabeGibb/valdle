@@ -223,10 +223,7 @@ function isCorrectAbilityName(button, currAbility){
         canGuessAbilityName = false;
         $('#finalVictoryMessage').text('yippie!');
         
-        confetti();
-
-
-
+        winConfetti();
     }
     else if (canGuessAbilityName){
         button.classList.add("incorrectAbilityName")

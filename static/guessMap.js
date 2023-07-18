@@ -59,6 +59,8 @@ function makeCalloutDiv(callout, mapName){
             let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
             let mapImg = document.getElementById("curMap");
             mapImg.src = imgUrl;
+
+            winConfetti();
         }
     };
 
