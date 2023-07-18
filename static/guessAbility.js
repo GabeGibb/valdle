@@ -103,7 +103,8 @@ function isCorrectAgent(userInput){
     p.classList.add("guessText");
 
     let agentImg = document.createElement('img');
-    agentImg.src = dataList[randAgent]["displayIconSmall"]
+    agentImg.src = dataList[findUserIndex(userInput)]["displayIconSmall"];
+    newDiv.appendChild(agentImg);
     p.appendChild(text); //adds content to button
     newDiv.appendChild(p); //appends button to div
 
@@ -114,5 +115,13 @@ function isCorrectAgent(userInput){
     else{
         newDiv.classList.add("wrongGuess")
         console.log("NOOO!");
+    }
+}
+
+function findUserIndex(userInput){
+    for(let i = 0; i < dataList.length; i++){
+        if(userInput == dataList[i]["displayName"]){
+            return i;
+        }
     }
 }
