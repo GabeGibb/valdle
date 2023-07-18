@@ -105,17 +105,20 @@ body{
 
 #submit{
     width:50px;
+    height: 48px;
+    background-color: #fa4454;
+
 }
 
 
 #fullListOfGuesses{
     /* border: 3px solid yellow; */
     font-size:20px;
-    color:aqua;
+    /* color:aqua; */
     /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 350px;
     text-align:center;
 
 }
@@ -130,12 +133,20 @@ body{
 
 .agentGuessImg{
     /* border:10px solid blue; */
-    width: 150px;
+    width: 75px;
+    position:relative;
+    left: 5px;
 }
-
+.guessText{
+    position:relative;
+    top: -25px;
+    font-size: 20px;
+    text-align: center;
+}
 .individualGuesses{
     /* text-align:center; */
     /* padding:20px; */
+    height:100px;
 }
 
 #victoryMessage{
