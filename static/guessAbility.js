@@ -2,7 +2,7 @@ let dataList;
 
 var randAgent = Math.floor(Math.random() * 22);
 var randAbility; //initialized in randomizeAbilityIndex()
-
+$("#partTwoDisplay").hide();
 // console.log(randAgent);
 // console.log(randAbility);
 
@@ -147,6 +147,8 @@ function isCorrectAgent(userInput){
         console.log("yippie!");
         $('#dropdown').remove();
         printVictoryMessage();
+
+        setTimeout(displayPartTwo,2000);
     }
     else{
         newDiv.classList.add("wrongGuess")
@@ -185,11 +187,12 @@ function removeAgent(name){
 }
 
 function printVictoryMessage(){
-    $('#victoryMessage').text('nice')
-    displayPartTwo();
+    $('#victoryMessage').text('nice');
 }
 
 function displayPartTwo(){
     partTwoDisplay = document.getElementById("partTwoDisplay");
-    
+    $("#partTwoDisplay").show();
+    // partTwoDisplay.scrollIntoView();
+    partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }

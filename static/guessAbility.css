@@ -153,13 +153,15 @@ body{
     color:azure;
     font-size: 40px;
     text-align:center;
+    z-index: 100;
 }
 
 
 
 #partTwoDisplay{
     border: 20px solid white;
-    text-align:center;
- 
-
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    /* display:block; */
 }
