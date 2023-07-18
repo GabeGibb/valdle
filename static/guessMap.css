@@ -23,13 +23,10 @@ body::-webkit-scrollbar{
     float: left;
     color: #fa4454;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     text-decoration: none;
-    font-size: 6em;
-}
-
-.h1{
-    font-size:20px;
+    font-size: 3em;
 }
 
 .apple {
@@ -39,7 +36,7 @@ body::-webkit-scrollbar{
 .containerTab{
     display:grid;
     background-color: #000000;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 50px 50px;
 }
 
 .containerRow1{
@@ -57,9 +54,9 @@ body::-webkit-scrollbar{
     font-family: 'VALORANT', sans-serif;
     background-color: black;
     color: white;
-    font-size:25px;
+    font-size:20px;
     border-radius:10px;
-    margin:15px;
+    margin:5px;
     position:relative;
     font-weight:bold;
     user-select: none;
@@ -71,11 +68,11 @@ body::-webkit-scrollbar{
 }
 
 .mapImgChoice{
-    padding-top:30px;
+    padding-top:10px;
     background-color: #000000;
     display:grid;
-    grid-template-rows: 640px;
-    grid-template-columns: 1fr 640px 640px 1fr;
+    grid-template-rows: 320px;
+    grid-template-columns: 1fr 320px 320px 1fr;
 }
 
 #answerBox{
@@ -112,10 +109,10 @@ body::-webkit-scrollbar{
 
 
 .board {
-    grid-template-rows: repeat(5,170px);
+    grid-template-rows: repeat(5,70px);
     background-color: #000000;
     width: 500px;
-    height: 1100px;
+    /* height: 1100px; */
     display: grid;
     margin: 0 auto;
     
@@ -124,10 +121,11 @@ body::-webkit-scrollbar{
 
 .row {
 
-    min-width: 170px;
+    /* min-width: 170px;
     min-height: 170px;
     max-height: 170px;
-    max-width:170px;
+    max-width:170px; */
+    height: 70px;
     border-radius:10px;
     display: grid;
     grid-template-columns: 170px 170px 170px;
@@ -147,18 +145,20 @@ body::-webkit-scrollbar{
 .hint {
     color: white;
     position: relative;
-    top: 45%;
+    text-align: center;
 }
 
 .category{
     text-align: center;
+    vertical-align: bottom;
+    /* height: 50%; */
 } 
 
 .cata{
     border-bottom:solid #fa4454;
     color: white;
     position:relative;
-    top:80%;
+    top:50%;
     padding:10px;
     font-size: large;
 
@@ -171,11 +171,12 @@ body::-webkit-scrollbar{
     margin: auto;
     padding: 10px;
     position: relative;
+    /* height: 320px; */
 }
 
 #curMap{
     width: 100%;
-    object-fit: cover;
+    /* object-fit: fill; */
 }
 
 
@@ -185,4 +186,5 @@ body::-webkit-scrollbar{
     height: 15px;
     background: rgba(58,58,60,0.5);
     color: white;
+    font-size: x-small;
 } 
