@@ -1,6 +1,6 @@
 let dataList;
 
-var randAgent = Math.floor(Math.random() * 23);
+var randAgent = Math.floor(Math.random() * 22);
 var randAbility = Math.floor(Math.random() * 4);
 
 // console.log(randAgent);
@@ -124,15 +124,16 @@ function isCorrectAgent(userInput){
     if(agentAnswer == userInput){
         newDiv.classList.add("correctGuess")
         console.log("yippie!");
+        $('#dropdown').remove();
     }
     else{
         newDiv.classList.add("wrongGuess")
         console.log("NOOO!");
         $('#searchInput').val('');
+        removeAgent(userInput);
     }
     newDiv.classList.add("individualGuesses");
 
-    removeAgent(userInput);
    
 }
 
