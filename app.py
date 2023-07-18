@@ -1,8 +1,12 @@
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template, send_file, request
+
+from PIL import Image
+from random import randint
+from io import BytesIO
 
 app = Flask(__name__)
 
-# print(app.static_folder)
+
 @app.route('/')
 def hello():
     return render_template('index.html')
@@ -11,10 +15,29 @@ def hello():
 def guessAbility():
     return render_template('guessAbility.html')
 
+
 @app.route('/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
     path = f'Valorant Maps/{map}/{region} - {superRegion}.png'
-    return send_file(path)
+
+    if request.args['partial'] == 'true':
+        im = Image.open(path)
+        w,h = im.size
+        cropSize = 3
+        smallW = w / cropSize
+        smallH = h / cropSize
+        startX = randint(0, w-smallW)
+        startY = randint(0, h-smallH)
+        im2 = im.crop((startX, startY, startX + smallW, startY + smallH))
+        
+        img_io = BytesIO()
+        im2.save(img_io, 'PNG', quality=70)
+        img_io.seek(0)
+        return send_file(img_io, 'PNG')
+        
+    else:
+        return send_file(path)
 
 
 # app.run(host='0.0.0.0', debug=True)
+app.run(host='0.0.0.0')
