@@ -141,6 +141,7 @@ body::-webkit-scrollbar{
     border: 4px solid #3a3a3c;
 
     overflow-wrap:break-word;
+    font-size: x-large;
 }
 
 .hint {
@@ -159,6 +160,8 @@ body::-webkit-scrollbar{
     position:relative;
     top:80%;
     padding:10px;
+    font-size: large;
+
 }
 
 /* GABE */
