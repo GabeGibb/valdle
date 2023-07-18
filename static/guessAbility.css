@@ -43,6 +43,7 @@ body{
 
 #abilityImage{
     width: 100px;
+    height: 100px;
 }
 
 #dropdown{
@@ -160,6 +161,14 @@ body{
     position:relative;
 }
 
+#finalVictoryMessage{
+    color:azure;
+    font-size: 50px;
+    text-align:center;
+    z-index: 100;
+    /* top: 15px; */
+    position:relative;
+}
 
 
 #partTwoDisplay{
@@ -171,9 +180,6 @@ body{
     /* display:block; */
 }
 
-#whatAbilityName{
-
-}
 
 .abilityNameInButton{
     font-family: 'VALORANT', sans-serif;
