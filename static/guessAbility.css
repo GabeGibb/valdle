@@ -25,7 +25,7 @@ body{
 
 #prompt{
     color:aliceblue;
-    font-size: 3em;
+    font-size: 25px;
   /* width:960px;  */
     /* transform: translate(50%); */ 
     /* position:absolute; */
@@ -42,7 +42,7 @@ body{
 }
 
 #abilityImage{
-    width: 200px;
+    width: 100px;
 }
 
 #dropdown{
@@ -141,6 +141,7 @@ body{
 #victoryMessage{
     color:azure;
     font-size: 40px;
+    text-align:center;
 }
 
 
