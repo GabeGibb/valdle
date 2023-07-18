@@ -19,8 +19,7 @@ def guessAbility():
 @app.route('/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
     path = f'Valorant Maps/{map}/{region} - {superRegion}.png'
-
-    if request.args['partial'] == 'true':
+    if 'partial' in request.args and request.args['partial'] == 'true':
         im = Image.open(path)
         w,h = im.size
         cropSize = 4
