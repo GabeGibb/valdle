@@ -99,7 +99,7 @@ function createMap(mapName){
                 console.log(answer);
                 clearMap();
 
-                let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
+                let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2] + '?partial=true';
                 let mapImg = document.getElementById("trueImg");
                 mapImg.src = imgUrl;
 
