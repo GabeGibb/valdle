@@ -34,16 +34,20 @@ function makeButtons(){
     for(let i = 0; i < dataList.length; i++){
         let currName = (dataList[i]["displayName"]);
         // console.log(currName);
-        let text = document.createTextNode(currName);
+        // let name = document.createTextNode(currName);
+        let p = document.createElement('p');
+        p.textContent = currName;
+        p.classList.add("agentNameInButton");
         let button = document.createElement('BUTTON');
-        // text.classList.add("agentName");
         button.classList.add("agentButton");
         button.onclick = function(){
             document.getElementById("searchInput").value = currName;
             $("#agentNames").hide();
         }
+        console.log()
         button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
-        button.appendChild(text); //adds content to button
+        button.appendChild(p); //adds content to button
+
         names.appendChild(button); //appends button to div
     }
 }

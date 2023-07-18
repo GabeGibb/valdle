@@ -61,22 +61,22 @@ body{
 .agentButton{
     display:block;
     width: 255px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* height:40px; */
     font-size: 20px;
     font-family: 'VALORANT', sans-serif;
     padding:30px;
 }
 
 .buttonImages{
-    border: 30px red;
     width: 100px;
     left: 0px;
-    position:relative;
+    position:absolute;
+    
 }
 
-.agentName{
+.agentNameInButton{
+    font-size: 25px;
+    position:relative;
+    left: 35px;
     
 }
 
