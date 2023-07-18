@@ -212,6 +212,7 @@ function displayPartTwo(){
     partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
+let canGuessAbilityName = true;
 function isCorrectAbilityName(button, currAbility){
     let correctAbilityName = dataList[randAgent]["abilities"][randAbility]["displayName"];
     
@@ -219,8 +220,9 @@ function isCorrectAbilityName(button, currAbility){
         button.classList.add("correctAbilityName")
         whatAbilityNameDiv = document.getElementById("whatAbilityName");
         whatAbilityNameDiv.disabled = true;
+        canGuessAbilityName = false;
     }
-    else{
+    else if (canGuessAbilityName){
         button.classList.add("incorrectAbilityName")
     }
 }
