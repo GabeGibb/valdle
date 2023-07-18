@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+        <link rel="stylesheet" href="/static/guessAbility.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a>Valdle</a>
+        </nav>
+
+        <div id="promptDiv">
+        <p id="prompt">Guess Whose Ability</p>
+        </div>
+
+        <div id="abilityImageDiv">
+            <img id="abilityImage" src="">
+        </div>
+        <div id="wrongAgents">
+        <!--Add Wrong Answers-->
+        </div>
+
+        <div id="dropdown" class="dropdown-content">
+            <input type="text" class="dropdown-content" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
+            <div id="agentNames" class="dropdown-content"></div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="/static/guessAbility.js"></script>
+    </body>
+
+
+</html>

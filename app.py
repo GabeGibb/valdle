@@ -7,10 +7,14 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
+@app.route('/guessAbility')
+def guessAbility():
+    return render_template('guessAbility.html')
+
 @app.route('/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
     path = f'Valorant Maps/{map}/{region} - {superRegion}.png'
     return send_file(path)
 
 
-# app.run(host='0.0.0.0', debug=True)
+app.run(host='0.0.0.0', debug=True)

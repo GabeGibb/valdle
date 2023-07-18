@@ -21,7 +21,7 @@ body::-webkit-scrollbar{
 .navbar a {
     user-select: none;
     float: left;
-    color: #fa4454;;
+    color: #fa4454;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
