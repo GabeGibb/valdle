@@ -1,32 +1,5 @@
-body{
-    background-color: #000000;
-    margin: 0px;
-    padding: 0px;
-    overflow-x:hidden;
-    font-family: 'VALORANT', sans-serif;
-}
-
 body::-webkit-scrollbar{
     display:none;
-}
-
-.navbar {
-    background-color: #000000;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 4px #3a3a3c;
-}
-
-.navbar a {
-    user-select: none;
-    float: left;
-    color: #fa4454;
-    text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-decoration: none;
-    font-size: 3em;
 }
 
 .apple {
