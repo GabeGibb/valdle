@@ -216,7 +216,7 @@ let canGuessAbilityName = true;
 function isCorrectAbilityName(button, currAbility){
     let correctAbilityName = dataList[randAgent]["abilities"][randAbility]["displayName"];
     
-    if(currAbility == correctAbilityName){
+    if(currAbility == correctAbilityName && canGuessAbilityName){
         button.classList.add("correctAbilityName")
         whatAbilityNameDiv = document.getElementById("whatAbilityName");
         whatAbilityNameDiv.disabled = true;
