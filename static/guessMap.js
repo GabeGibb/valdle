@@ -86,12 +86,12 @@ function createMap(mapName){
         }
 
         map.src = maps[i]['displayIcon'];
-        
+
+        $('#mapChoice').css('visibility', 'hidden');
         for(let j = 0; j < maps[i]['callouts'].length; j++){
             callout = maps[i]['callouts'][j];
             makeCalloutDiv(callout, mapName)
         }
-
 
         if (start){
             answer[0] = maps[i]['displayName'];
@@ -110,6 +110,9 @@ function createMap(mapName){
         }
         start = false;
     }
+    setTimeout(function(){
+        $('#mapChoice').css('visibility', 'visible');
+    }, 10);
     
 }
 
