@@ -67,15 +67,16 @@ function makeButtons(){
         console.log()
         button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
         button.appendChild(p); //adds content to button
-
+        button.style.display = "none";
         names.appendChild(button); //appends button to div
     }
 }
 
 function showButtons(){
     // console.log($('#searchInput').val())
+    // console.log($('#searchInput').val())
     // if ($('#searchInput').val().length > 0){
-        $("#agentNames").show();
+    $("#agentNames").show();
     // }
 }
 
@@ -98,17 +99,19 @@ function filterFunction() {
     var input, filter, ul, li, button, i;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
+    
     // div = document.getElementById("dropdown");
     // button = div.getElementsByTagName("button");
     div = document.getElementById("agentNames");
     button = div.getElementsByTagName("button");
+
     for (i = 0; i < button.length; i++) {
-      txtValue = button[i].textContent || button[i].innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        button[i].style.display = "";
-      } else {
-        button[i].style.display = "none";
-      }
+        txtValue = button[i].textContent || button[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length > 0) {
+            button[i].style.display = "";
+        } else {
+            button[i].style.display = "none";
+        }
     }
   }
     

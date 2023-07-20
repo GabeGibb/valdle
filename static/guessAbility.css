@@ -56,6 +56,9 @@
 
 #agentNames{
     position: absolute;
+    max-height: 281px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .agentNameInButton{
     font-size: 25px;
