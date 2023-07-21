@@ -40,6 +40,3 @@ def callout(map, region, superRegion):
     else:
         return send_file(path)
 
-
-# app.run(host='0.0.0.0', debug=True)
-# app.run(host='0.0.0.0')
