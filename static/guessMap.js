@@ -28,29 +28,64 @@ function makeCalloutDiv(callout, mapName){
     div.onclick = function(){
 
 
-        div.style.background = "blue";
-        let row = document.getElementById("r" + rowNum.toString());
-        let i = 0;
+        // div.style.background = "blue";
+        // let row = document.getElementById("r" + rowNum.toString());
+        // let i = 0;
         let guess = [mapName, region, superRegion]
+        let listOfMapGuesses = document.getElementById("listOfMapGuesses");
+        // let win = true;
+        let win = false;
+        
+        while(win == false){
+            let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
+            console.log(listOfMapGuesses)
+            listOfMapGuesses.appendChild(currRow);
+            currRow.classList.add("row");
+            
 
-        let win = true;
-        for (child of row.children) {
-            if(guess[i] == answer[i]){
-                child.style.background = 'green';
-            }else{
-                child.style.background = 'red';
-                win = false;
-            }
-            let text = document.createTextNode(guess[i]);
-            child.firstChild.appendChild(text);
-            i++;
+        for(let j = 0; j < 3; j++){ //creates three tiles per row
+            // currRow.innerHTML("<div class=\"tile\"><span class=\"hint\"></span></div>")
+            tileDiv = document.createElement("div");
+            textSpan = document.createElement("span");
+            tileDiv.classList.add("tile");
+            textSpan.classList.add("hint");
+            tileDiv.appendChild(textSpan);
+            currRow.appendChild(tileDiv);
+            
         }
-        div.remove();
+
+        for(let k = 0; k < 3; k++){
+            if(guess[k] == answer[k]){
+                tileDiv.style.background = 'green';
+                win = true;
+            }
+            else{
+                tileDiv.style.background = 'red';
+            }
+            let text = document.createTextNode(guess[k]);
+            textSpan.appendChild(text);
+
+        }
 
 
-        rowNum++;
 
-        if (win || rowNum >= 6){
+        // for (child of row.children) {
+        //     if(guess[i] == answer[i]){
+        //         child.style.background = 'green';
+        //     }else{
+        //         child.style.background = 'red';
+        //         win = false;
+        //     }
+        //     let text = document.createTextNode(guess[i]);
+        //     child.firstChild.appendChild(text);
+        //     i++;
+        // }
+        // div.remove();
+
+
+        // rowNum++;
+    }
+        if (win){
             gameOver = true;
             let answerBox = document.getElementById("answerBox");
             answerBox.innerText = answer;
@@ -59,9 +94,9 @@ function makeCalloutDiv(callout, mapName){
             let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
             let mapImg = document.getElementById("curMap");
             mapImg.src = imgUrl;
-            if (win){
-                winConfetti();
-            }
+           
+            winConfetti();
+            
         }
     };
 

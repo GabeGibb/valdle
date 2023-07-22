@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script src="/static/confetti.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- <script src = "/static/guessMap.js"></script> -->
   
 </head>
 <body>
@@ -57,18 +58,18 @@
         
       </h2>
     </div>
-    <div class="board">
+    <div class="board" id="listOfMapGuesses">
       <div class="row">
         <div class="category"><span class="cata">Map Names</span></div>
         <div class="category"><span class="cata">Callout</span></div>
         <div class="category"><span class="cata">Location</span></div>
       </div>
-      <div class="row" id="r1">
+      <!-- <div class="row">
         <div class="tile"><span class="hint"></span></div>
         <div class="tile"><span class="hint"></span></div>
         <div class="tile"><span class="hint"></span></div>
-      </div>
-      <div class="row" id="r2">
+      </div> -->
+      <!-- <div class="row" id="r2">
         <div class="tile"><span class="hint"></span></div>
         <div class="tile"><span class="hint"></span></div>
         <div class="tile"><span class="hint"></span></div>
@@ -87,12 +88,12 @@
         <div class="tile"><span class="hint"></span></div>
         <div class="tile"><span class="hint"></span></div>
         <div class="tile"><span class="hint"></span></div>
-      </div>
+      </div> -->
     </div>
   </div>
   <a href="/guessAbility">guessAbility</a>
   
-  <script src="/static/guessMap.js"></script>
+  <script src="/static/guessMap.js" defer></script>
   
 </body>
 </html>
