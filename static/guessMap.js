@@ -3,6 +3,7 @@ let start = true;
 let gameOver = false;
 let rowNum = 1;
 let answer = ['', '', '']
+let win;
 
 
 // let mapSize = document.getElementById("mapChoice").height;
@@ -34,58 +35,38 @@ function makeCalloutDiv(callout, mapName){
         let guess = [mapName, region, superRegion]
         let listOfMapGuesses = document.getElementById("listOfMapGuesses");
         // let win = true;
-        let win = false;
         
-        while(win == false){
-            let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
-            console.log(listOfMapGuesses)
-            listOfMapGuesses.appendChild(currRow);
-            currRow.classList.add("row");
-            
-
+        win = false;
+        
+        let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
+        listOfMapGuesses.appendChild(currRow);
+        currRow.classList.add("row");
+        let counter = 0;
         for(let j = 0; j < 3; j++){ //creates three tiles per row
-            // currRow.innerHTML("<div class=\"tile\"><span class=\"hint\"></span></div>")
             tileDiv = document.createElement("div");
             textSpan = document.createElement("span");
             tileDiv.classList.add("tile");
             textSpan.classList.add("hint");
             tileDiv.appendChild(textSpan);
             currRow.appendChild(tileDiv);
-            
-        }
 
-        for(let k = 0; k < 3; k++){
-            if(guess[k] == answer[k]){
+            if(guess[j] == answer[j]){
                 tileDiv.style.background = 'green';
-                win = true;
+                counter++
             }
             else{
                 tileDiv.style.background = 'red';
             }
-            let text = document.createTextNode(guess[k]);
+            let text = document.createTextNode(guess[j]);
             textSpan.appendChild(text);
-
+            
+        }
+        if(counter == 3){
+            win = true;
         }
 
-
-
-        // for (child of row.children) {
-        //     if(guess[i] == answer[i]){
-        //         child.style.background = 'green';
-        //     }else{
-        //         child.style.background = 'red';
-        //         win = false;
-        //     }
-        //     let text = document.createTextNode(guess[i]);
-        //     child.firstChild.appendChild(text);
-        //     i++;
-        // }
-        // div.remove();
-
-
-        // rowNum++;
-        win = true;
-    }
+        
+    
         if (win){
             gameOver = true;
             let answerBox = document.getElementById("answerBox");
