@@ -80,6 +80,7 @@ function makeCalloutDiv(callout, mapName){
             winConfetti();
             
         }
+        div.remove();
     };
 
 
