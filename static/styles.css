@@ -40,5 +40,11 @@ body{
     background-color: black;
     color: #FA4454;
     border: 3px solid #FA4454;
+}
+
+button{
     cursor: pointer;
 }
+
+/* Game Page Stuff */
+

@@ -3,11 +3,13 @@
     <head>
         <title>Guess The Ability</title>
         <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
-        <link rel="stylesheet" href="/static/guessAbility.css">
+        <link rel="stylesheet" href="/static/guessTemplate.css">
         <link rel="stylesheet" href="/static/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
         <script src="/static/confetti.js"></script>
+        <script src="/static/guessAbility.js" defer></script>
+        <script src="/static/guessTemplate.js" defer></script>
     </head>
     <body>
         <nav class="navbar">
@@ -18,14 +20,14 @@
           <p class="prompt">Which Agent Has This Ability?</p>
         </div>
 
-        <div id="abilityImageDiv">
-            <img id="abilityImage" src="">
+        <div id="guessImageDiv">
+            <img id="guessImage" src="">
         </div>
 
 
-        <div id="dropdown" class="dropdown-content">
+        <div id="dropdown">
             <div id="userInputDiv">
-                <input type="text" class="dropdown-content" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
+                <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
                 <button id="submit" onclick="validateAgent()">></button>
             </div>
             <div id="agentNames" class="dropdown-content"></div>
@@ -42,7 +44,7 @@
 
         <div id="partTwoDisplay">
             <p class="prompt">What Is The Ability Name?</p>
-            <div id="whatAbilityName">
+            <div id="whatName">
             </div>
         </div>
 
@@ -51,7 +53,6 @@
         </div> -->
         
         <a href="/guessMap">guessMap</a>
-        <script src="/static/guessAbility.js"></script>
         
     </body>
 

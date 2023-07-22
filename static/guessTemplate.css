@@ -10,13 +10,11 @@
     text-align: center;
 }
 
-#abilityImageDiv{
+#guessImageDiv{
     text-align:center;
-    /* width:960px;
-    transform: translate(50%); */
 }
 
-#abilityImage{
+#guessImage{
     width: 100px;
     height: 100px;
 }
@@ -118,12 +116,13 @@
     background-color: rgb(255, 0, 0);
 }
 
-.agentGuessImg{
+.guessImg{
     /* border:10px solid blue; */
     width: 70px;
     position:relative;
     left: 5px;
 }
+
 .guessText{
     position:relative;
     top: -25px;
@@ -165,7 +164,7 @@
 }
 
 
-.abilityNameInButton{
+.nameInButton{
     font-family: 'VALORANT', sans-serif;
     display:block;
     margin-left: auto;
@@ -178,14 +177,11 @@
     margin-bottom: 10px;
 }
 
-.correctAbilityName{
+.correctGuessName{
     background-color: green;
 }
 
-.incorrectAbilityName{
+.incorrectGuessName{
     background-color: red;
 }
 
-button{
-    cursor: pointer;
-}
