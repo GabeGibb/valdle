@@ -84,6 +84,7 @@ function makeCalloutDiv(callout, mapName){
 
 
         // rowNum++;
+        win = true;
     }
         if (win){
             gameOver = true;
