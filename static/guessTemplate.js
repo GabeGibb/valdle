@@ -9,7 +9,7 @@ $.get("https://valorant-api.com/v1/agents?isPlayableCharacter=true", function(da
     
     // var abilityIndex = randomizeAbilityIndex();
     // createRandAbility(abilityIndex);
-    curWebPage(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
+    curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
     makeButtons();
     $("#agentNames").hide();
 });

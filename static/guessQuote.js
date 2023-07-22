@@ -1,5 +1,5 @@
 
-function curWebPage(){
+function curGamemode(){
     //WHAT TO DO ON LOAD
 }
 function displayPartTwo(){
