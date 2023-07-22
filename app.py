@@ -18,6 +18,10 @@ def guessMap():
 def guessAbility():
     return render_template('guessAbility.html')
 
+@app.route('/guessQuote')
+def guessQuote():
+    return render_template('guessQuote.html')
+
 
 @app.route('/guessMap/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
