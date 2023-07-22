@@ -74,25 +74,28 @@ function makeButtons(){
 }
 
 function showButtons(){
-    // console.log($('#searchInput').val())
-    // console.log($('#searchInput').val())
-    // if ($('#searchInput').val().length > 0){
     $("#agentNames").show();
-    // }
 }
 
 $(document).on("click", function(event){
     var $trigger = $('#dropdown');
     if($trigger !== event.target && !$trigger.has(event.target).length){
-        // $("#agentNames").slideUp("fast");
         $("#agentNames").hide();
     }
 });
 
-$('#searchInput').on('keypress', function(e){
-    if(e['originalEvent']['key'] == 'Enter'){
+$('#searchInput').keydown(function(e){
+    let key = e['originalEvent']['key'];
+    console.log(key)
+    if(key == 'Enter'){
         validateAgent();
     }
+    // if(key == 'ArrowDown'){
+
+    // }
+    // if(key == 'ArrowUp'){
+
+    // }
 });
 
 
@@ -122,11 +125,10 @@ function filterFunction() {
     
 function validateAgent(){
     let userInput = document.getElementById("searchInput")
-    console.log(userInput.value);
     // console.log(dataList);
     for(let i = 0; i < dataList.length; i++){ //TODO: case sens
-        if(userInput.value == dataList[i]["displayName"]){
-            isCorrectAgent(userInput.value);
+        if(userInput.value.toUpperCase() == dataList[i]["displayName"].toUpperCase()){
+            isCorrectAgent(dataList[i]["displayName"]);
         }
         
     }
