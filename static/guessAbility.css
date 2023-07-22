@@ -46,6 +46,7 @@
 
 }
 
+
 .buttonImages{
     width: 60px;
     left: -85px;
@@ -57,9 +58,11 @@
 #agentNames{
     position: absolute;
     max-height: 281px;
-    overflow: scroll;
+    overflow-y: clip;
     overflow-x: hidden;
 }
+
+
 .agentNameInButton{
     font-size: 25px;
     position:relative;
