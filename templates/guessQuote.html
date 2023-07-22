@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/guessTemplate.css">
     <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
 
     <title>Guess The Quote</title>
@@ -15,5 +16,35 @@
     <nav class="navbar">
         <a href="\">Valdle</a>
     </nav>
+
+    <div id="promptDiv">
+        <p class="prompt">Which Agent Has This Quote?</p>
+      </div>
+
+      <div id="guessImageDiv">
+          <img id="guessImage" src="">
+      </div>
+
+
+      <div id="dropdown">
+          <div id="userInputDiv">
+              <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
+              <button id="submit" onclick="validateAgent()">></button>
+          </div>
+          <div id="agentNames" class="dropdown-content"></div>
+      </div>
+
+      <div id="fullListOfGuesses">
+          <!--Add Guesses-->
+      </div>
+
+
+      <div>
+          <p id="victoryMessage"></p>
+      </div>
+
+
+    <script src="/static/guessQuote.js"></script>
+    <script src="/static/guessTemplate.js"></script>
 </body>
 </html>
