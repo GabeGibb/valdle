@@ -231,7 +231,7 @@ function isCorrectAbilityName(button, currAbility){
         whatAbilityNameDiv = document.getElementById("whatAbilityName");
         whatAbilityNameDiv.disabled = true;
         canGuessAbilityName = false;
-        $('#finalVictoryMessage').text('yippie!');
+        // $('#finalVictoryMessage').text('yippie!');
         
         winConfetti();
         
