@@ -1,3 +1,11 @@
+//This template lets other files use dataList and randAgent variables
+//In a given gamemode js file, one must specify two functions
+// function curGamemode(){
+//     //WHAT TO DO ON LOAD
+// }
+// function displayPartTwo(){
+//     //WHAT TO DO ON WINNING FIRST MODE (or just winning if there is only one part)
+// }
 
 let dataList;
 var randAgent = Math.floor(Math.random() * 22);
