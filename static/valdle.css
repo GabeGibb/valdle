@@ -10,24 +10,12 @@
 }
 
 .gameButton {
-    background-color: #FA4454; /* Valdle Red */
-    color: black;
-    border: 3px solid transparent;
     padding: 10px;
     padding-top: 17px;
     border-radius: 8px;
     width: 275px;
-    text-align: center;
-    text-decoration: none;
     font-size: 27px;
     margin: 5px;
-    transition-duration: 0.25s;
-  }
-
-.gameButton:hover {
-    background-color: black;
-    color: #FA4454; /* Valdle Red */
-    border: 3px solid #FA4454;
 }
 
 .icon{

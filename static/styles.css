@@ -26,3 +26,19 @@ body{
     text-decoration: none;
     font-size: 3em;
 }
+
+.gameButton {
+    background-color: #FA4454;
+    color: black;
+    border: 3px solid transparent;
+    text-align: center;
+    text-decoration: none;
+
+    transition-duration: 0s;
+  }
+
+.gameButton:hover {
+    background-color: black;
+    color: #FA4454;
+    border: 3px solid #FA4454;
+}
