@@ -62,6 +62,7 @@ function makeButtons(){
         button.classList.add("agentButton");
         button.onclick = function(){
             document.getElementById("searchInput").value = currName;
+            validateAgent();
             $("#agentNames").hide();
         }
         console.log()
@@ -92,7 +93,7 @@ $('#searchInput').on('keypress', function(e){
     if(e['originalEvent']['key'] == 'Enter'){
         validateAgent();
     }
-})
+});
 
 
 function filterFunction() {
