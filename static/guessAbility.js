@@ -105,10 +105,14 @@ function filterFunction() {
     div = document.getElementById("agentNames");
     button = div.getElementsByTagName("button");
 
+    let nameOrder = [];
+
     for (i = 0; i < button.length; i++) {
         txtValue = button[i].textContent || button[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length > 0) {
+        let filterIndex = txtValue.toUpperCase().indexOf(filter);
+        if (filterIndex == 0 && filter.length > 0){
             button[i].style.display = "";
+            nameOrder.push([i, filterIndex]);
         } else {
             button[i].style.display = "none";
         }
