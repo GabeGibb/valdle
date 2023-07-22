@@ -3,10 +3,8 @@ let dataList;
 var randAgent = Math.floor(Math.random() * 22);
 var randAbility; //initialized in randomizeAbilityIndex()
 $("#partTwoDisplay").hide();
-// console.log(randAgent);
-// console.log(randAbility);
 
-var abilityImage = document.getElementById("abilityImage")
+var abilityImage = document.getElementById("guessImage")
 
 $.get("https://valorant-api.com/v1/agents?isPlayableCharacter=true", function(data, status){
     console.log(data['data']);
@@ -147,22 +145,19 @@ function isCorrectAgent(userInput){
 
     let agentImg = document.createElement('img');
     agentImg.src = dataList[findUserIndex(userInput)]["displayIcon"];
-    agentImg.classList.add("agentGuessImg");
+    agentImg.classList.add("guessImg");
     newDiv.appendChild(agentImg);
     p.appendChild(text); //adds content to button
     newDiv.appendChild(p); //appends button to div
 
     if(agentAnswer == userInput){
         newDiv.classList.add("correctGuess")
-        console.log("yippie!");
         $('#dropdown').remove();
         printVictoryMessage();
         displayPartTwo();
-        // setTimeout(displayPartTwo,2000);
     }
     else{
         newDiv.classList.add("wrongGuess")
-        console.log("NOOO!");
         $('#searchInput').val('');
         removeAgent(userInput);
     }
@@ -205,13 +200,13 @@ function displayPartTwo(){
     $("#partTwoDisplay").show();
     // partTwoDisplay.scrollIntoView();
 
-    let whatAbilityNameDiv = document.getElementById("whatAbilityName")
+    let whatAbilityNameDiv = document.getElementById("whatName")
     for(i = 0; i < dataList[randAgent]["abilities"].length; i++){ 
         let button = document.createElement('button');
         let currAbility = dataList[randAgent]["abilities"][i]["displayName"];
         // console.log(currAbility)
         button.innerHTML = currAbility; //adds content to button
-        button.classList.add("abilityNameInButton");
+        button.classList.add("nameInButton");
         button.onclick = function(){
             isCorrectAbilityName(button, currAbility);
             
@@ -227,8 +222,8 @@ function isCorrectAbilityName(button, currAbility){
     let correctAbilityName = dataList[randAgent]["abilities"][randAbility]["displayName"];
     
     if(currAbility == correctAbilityName && canGuessAbilityName){
-        button.classList.add("correctAbilityName")
-        whatAbilityNameDiv = document.getElementById("whatAbilityName");
+        button.classList.add("correctGuessName")
+        whatAbilityNameDiv = document.getElementById("whatName");
         whatAbilityNameDiv.disabled = true;
         canGuessAbilityName = false;
         // $('#finalVictoryMessage').text('yippie!');
@@ -239,7 +234,7 @@ function isCorrectAbilityName(button, currAbility){
         
     }
     else if (canGuessAbilityName){
-        button.classList.add("incorrectAbilityName")
+        button.classList.add("incorrectGuessName")
     }
 }
 
