@@ -1,0 +1,11 @@
+Manually choose best voicelines (around 10-20 an agent)
+https://valorant.fandom.com/wiki/Category:Quotes
+
+Categories to choose from:
+- Agent Select and abilities (good options)
+- Buy Phase (maybe)
+- Kill (prob not)
+- Spike (prob not)
+- Round End / Match end (maybe)
+- Agent Specific Interactions (prob not)
+- Radio Commands / Pings (no)
