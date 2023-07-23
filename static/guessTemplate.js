@@ -61,12 +61,6 @@ $('#searchInput').keydown(function(e){
     if(key == 'Enter'){
         validateAgent();
     }
-    // if(key == 'ArrowDown'){
-
-    // }
-    // if(key == 'ArrowUp'){
-
-    // }
 });
 
 function filterFunction() {

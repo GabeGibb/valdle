@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-#map, #ability {
+#map, #ability, #quote {
     display: flex;
     align-items: center;
 }
@@ -19,5 +19,5 @@
 }
 
 .icon{
-    height: 60px;
+    width: 60px;
 }
