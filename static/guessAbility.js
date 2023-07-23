@@ -1,7 +1,7 @@
 var randAbility; //initialized in randomizeAbilityIndex()
 var guessImage = document.getElementById("guessImage");
 
-$("#partTwoDisplay").hide();
+// $("#partTwoDisplay").hide();
 function randomizeAbilityIndex(){
     // console.log(dataList[randAgent]["abilities"].length);
     if((dataList[randAgent]["abilities"].length == 5) && (dataList[randAgent]["abilities"][4]["displayIcon"] != null)){
