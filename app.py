@@ -22,6 +22,10 @@ def guessAbility():
 def guessQuote():
     return render_template('guessQuote.html')
 
+@app.route('/guessBundle')
+def guessBundle():
+    return render_template('guessBundle.html')
+
 
 @app.route('/guessMap/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
