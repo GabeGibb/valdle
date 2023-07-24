@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-#map, #ability, #quote {
+#map, #ability, #quote, #bundle {
     display: flex;
     align-items: center;
 }
