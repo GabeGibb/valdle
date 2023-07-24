@@ -6,7 +6,7 @@ var quoteArray;
 var audioArray;
 var numOfNewlines = 0;
 
-fs.readFile('/webscraper/AstraQuotes.txt', function read(err, data){
+fs.readFile('webscraper/AstraQuotes.txt', function read(err, data){
     if(err){
         throw err;
     }
