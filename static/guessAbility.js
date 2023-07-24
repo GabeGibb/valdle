@@ -1,41 +1,47 @@
-var randAbility; //initialized in randomizeAbilityIndex()
-var guessImage = document.getElementById("guessImage");
+var randAbility;
+let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-// $("#partTwoDisplay").hide();
-function randomizeAbilityIndex(){
-    // console.log(dataList[randAgent]["abilities"].length);
+function curGamemode(){ // Gets called on page load
+    var abilityIndex = randomizeAbilityIndex();
+    createRandAbility(abilityIndex);
+    removeRandTile();
+}
+
+function removeRandTile(){
+    randStartTile = Math.floor(Math.random() * coversLeft.length);
+    var name = "#cover" + coversLeft[randStartTile];
+    $(name).css({"background-color": "transparent", "border": "transparent"});
+    coversLeft.splice(randStartTile, 1);
+}
+
+function randomizeAbilityIndex(){ // Randomizes index from 1-4 if 4-ability agent, or 1-5 if 5-ability agent
     if((dataList[randAgent]["abilities"].length == 5) && (dataList[randAgent]["abilities"][4]["displayIcon"] != null)){
         randAbility = Math.floor(Math.random() * 5)
         console.log("randAbility = " + randAbility)
         return randAbility;
-        
     }
     else{
         randAbility = Math.floor(Math.random() * 4);
-        // console.log("randAbility = " + randAbility)
         return randAbility;
     }
 }
 
-function createRandAbility(abilityIndex){
+function createRandAbility(abilityIndex){ // Gets Ability object from original dataList
     var chosenAbility = dataList[randAgent]["abilities"][abilityIndex];
-    console.log(chosenAbility);
-    // console.log(dataList[randAgent]["abilities"][abilityIndex]["displayIcon"]);
     makeAbilityImage(chosenAbility);
 }
 
-function makeAbilityImage(chosenAbility){
-    guessImage.src = chosenAbility["displayIcon"];
+function makeAbilityImage(chosenAbility){ // Puts image of ability on webpage
+    $("#guessAbilityImage").attr("src", chosenAbility["displayIcon"]);
 }
 
-
-function curGamemode(){ //GETS CALLED ON PAGE LOAD
-    var abilityIndex = randomizeAbilityIndex();
-    createRandAbility(abilityIndex);
+function modeWrongActions() {
+    removeRandTile();
 }
-
 
 function displayPartTwo(){
+
+    revealTiles();
     partTwoDisplay = document.getElementById("partTwoDisplay");
     $("#partTwoDisplay").show();
 
@@ -71,5 +77,12 @@ function isCorrectAbilityName(button, currAbility){
     }
     else if (canGuessAbilityName){
         button.classList.add("incorrectGuessName")
+    }
+}
+
+async function revealTiles() {
+    while (coversLeft.length > 0) {
+        removeRandTile();
+        await new Promise(r => setTimeout(r, 500));
     }
 }
