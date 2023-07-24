@@ -1,13 +1,13 @@
 const axios = require('axios');
 const cheerio = require('cheerio')
 const fs = require('fs')
-const url = 'https://valorant.fandom.com/wiki/Astra/Quotes';
+const url = 'https://valorant.fandom.com/wiki/Chamber/Quotes';
     axios(url)
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html)
-            printQuotes();
-            // printAudio();
+            // printQuotes();
+            printAudio();
             function printQuotes(){
                 // const text = $('ul').find('li').remove('span').remove('audio').text()
                 // const text = $(''ul').find('li').not('span', 'audio').text()'
