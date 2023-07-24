@@ -26,8 +26,7 @@ var guessImage = document.getElementById("guessImage");
 $.get(url, function(data, status){ //url defined in current webpage js file
     dataList = data["data"];
     randIndex = Math.floor(Math.random() * dataList.length);
-    console.log(data['data']);
-    console.log(dataList[randIndex])
+    console.log(dataList[randIndex]["displayName"])
     
     curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
 

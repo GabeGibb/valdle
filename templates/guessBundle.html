@@ -14,40 +14,43 @@
     <script src="/static/guessBundle.js" defer></script>
     <script src="/static/guessTemplate.js" defer></script>
 </head>
+
 <body>
+
     <nav class="navbar">
         <a href="\">Valdle</a>
     </nav>
 
-    <div id="promptDiv">
-      <p class="prompt">Which Bundle Is This?</p>
-    </div>
-
-    <div id="guessImageDiv">
-        <img id="guessImage" src="">
-    </div>
-
-
-    <div id="dropdown">
-        <div id="userInputDiv">
-            <input type="text" placeholder="Search Bundle.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
-            <button id="submit" onclick="validateGuess()">></button>
+    <div id="gameArea">
+        <div class="prompt">
+            <p>Which Bundle Is This?</p>
         </div>
-        <div id="optionNames" class="dropdown-content"></div>
+        <div class="guessImageDiv">
+            <img id="guessImage" src="">
+        </div>
+        <div class="dropdown">
+            <div id="userInputDiv">
+                <input type="text" placeholder="Search Bundle.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
+                <button id="submit" onclick="validateGuess()">></button>
+            </div>
+            <div id="optionNames" class="dropdown-content"></div>
+        </div>
+
+        <div id="fullListOfGuesses">
+            <!--Add Guesses-->
+        </div>
+
+
+
+        <div>
+            <p id="victoryMessage"></p>
+        </div>
+
+        <div hidden id="partTwoDisplay">
+            <p class="prompt">What Is The Ability Name?</p>
+            <div id="whatName"></div>
+        </div>        
     </div>
-
-    <div id="fullListOfGuesses">
-        <!--Add Guesses-->
-    </div>
-
-
-    <div>
-        <p id="victoryMessage"></p>
-    </div>
-
-    
-    <a href="/guessMap">guessMap</a>
-
-
 </body>
+
 </html>
