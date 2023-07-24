@@ -1,3 +1,4 @@
+let url = "";
 function curGamemode(){
     //WHAT TO DO ON LOAD
 }
