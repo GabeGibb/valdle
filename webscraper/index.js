@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio')
 const fs = require('fs')
-const url = 'https://valorant.fandom.com/wiki/Harbor/Quotes';
+const url = 'https://valorant.fandom.com/wiki/Raze/Quotes';
     axios(url)
         .then(response => {
             const html = response.data;
