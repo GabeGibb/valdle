@@ -13,6 +13,9 @@
 - User experience should be prioritized (EX: if users need to search something there should be a button to execute the search, users could also press enter, if its an autofill search clicking on a possible option should also
 execute the search. 
 
+# Future Gamemodes
+- Valorant trivia
+- Guess agent by emoji
 
 # A Wordle-like game but adapted to the game of Valorant!
 Given just a picture, can you use your Valorant map knowledge to try and guess the exact callout?
