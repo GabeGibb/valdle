@@ -12,49 +12,56 @@
         <script src="/static/guessTemplate.js" defer></script>
     </head>
     <body>
+
         <nav class="navbar">
             <a href="\">Valdle</a>
         </nav>
 
-        <div id="promptDiv">
-          <p class="prompt">Which Agent Has This Ability?</p>
-        </div>
-
-        <div id="guessImageDiv">
-            <img id="guessImage" src="">
-        </div>
-
-
-        <div id="dropdown">
-            <div id="userInputDiv">
-                <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
-                <button id="submit" onclick="validateAgent()">></button>
+        <div id="gameArea">
+            <div class="prompt">
+                <p>Which Agent Has This Ability?</p>
             </div>
-            <div id="agentNames" class="dropdown-content"></div>
-        </div>
-
-        <div id="fullListOfGuesses">
-            <!--Add Guesses-->
-        </div>
-
-
-        <div>
-            <p id="victoryMessage"></p>
-        </div>
-
-        <div hidden id="partTwoDisplay">
-            <p class="prompt">What Is The Ability Name?</p>
-            <div id="whatName">
+            <div class="guessImageDiv">
+                <div class="covers" id="tileGrid">
+                    <!-- Covers added here through CSS -->
+                </div>
+                <img id="guessImage" src="">
             </div>
-        </div>
+            <div class="dropdown">
+                <div id="userInputDiv">
+                    <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
+                    <button id="submit" onclick="validateGuess()">></button>
+                </div>
+                <div id="optionNames" class="dropdown-content"></div>
+            </div>
 
-        <!-- <div>
-            <p id="finalVictoryMessage"></p>
-        </div> -->
-        
-        <a href="/guessMap">guessMap</a>
-        
+            <div id="fullListOfGuesses">
+                <!--Add Guesses-->
+            </div>
+
+
+
+            <div>
+                <p id="victoryMessage"></p>
+            </div>
+
+            <div hidden id="partTwoDisplay">
+                <p class="prompt">What Is The Ability Name?</p>
+                <div id="whatName"></div>
+            </div>        
+        </div>
     </body>
+
+    <script>
+        // Generate the 3x3 grid tiles
+        const gridContainer = document.getElementById("tileGrid");
+        for (let i = 0; i < 9; i++) {
+            const tile = document.createElement("div");
+            const name = "cover" + (i+1).toString();
+            tile.setAttribute("id", name)
+            gridContainer.appendChild(tile);
+        }
+    </script>
 
 
 </html>

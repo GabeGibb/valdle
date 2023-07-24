@@ -1,37 +1,50 @@
+.gameArea {
+    display: flex;
+    flex-direction: column;
+}
+
 .prompt{
     color:aliceblue;
     font-size: 25px;
-  /* width:960px;  */
-    /* transform: translate(50%); */ 
-    /* position:absolute; */
-}
-
-#promptDiv{
     text-align: center;
 }
 
-#guessImageDiv{
-    text-align:center;
+
+.guessImageDiv {
+    position: relative;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Horizontally center the content */
 }
 
-#guessImage{
-    width: 100px;
+#guessImage {
     height: 100px;
 }
 
-#dropdown{
-    text-align:center;
-    width: 300px;
-    position: relative;
-    z-index: 30;
-    margin:auto;
-    top: 30px;
-    /* border: 2px solid red; */
+.covers {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100px;
+    height: 100%;
+}
+
+.covers div {
+    border: 1px solid black;
+    background-color: #fa4454;
+    box-sizing: border-box;
 }
 
 
+.dropdown{
+    width: 300px;
+    z-index: 30; /* To keep dropdown options above previous guesses */
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
 
-.agentButton{
+.optionButton{
     display:block;
     width: 255px;
     font-size: 20px;
@@ -53,7 +66,7 @@
     
 }
 
-#agentNames{
+#optionNames{
     position: absolute;
     max-height: 281px;
     overflow-y: clip;
@@ -61,7 +74,7 @@
 }
 
 
-.agentNameInButton{
+.optionNameInButton{
     font-size: 25px;
     position:relative;
     left: 30px;
