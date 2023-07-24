@@ -43,9 +43,13 @@ const url = 'https://valorant.fandom.com/wiki/Astra/Quotes';
             function printAudio(){
                 // const text = $('ul').find('li').remove('span').remove('audio').text()
                 // const text = $(''ul').find('li').not('span', 'audio').text()'
-                // $('li').find('span').remove();
-                // $('li').find('a').remove();
-                let text = $('ul').find('li').find('span').find('span').find('audio').attr('src');
+    
+
+
+
+                // let text = $('ul').find('li').find('span').find('span').find('audio').attr('src');
+
+                
                 console.log(text)
                 // text = text.replace("\t", "")
                 // text = text.replace("  ", "")
