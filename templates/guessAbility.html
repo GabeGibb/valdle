@@ -25,20 +25,20 @@
                 <div class="covers" id="tileGrid">
                     <!-- Covers added here through CSS -->
                 </div>
-                <img id="guessAbilityImage" src="">
+                <img id="guessImage" src="">
             </div>
-            <div class="dropdown">
+            <div id="dropdown">
                 <div id="userInputDiv">
                     <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" onkeyup="filterFunction()">
-                    <button id="submit" onclick="validateAgent()">></button>
+                    <button id="submit" onclick="validateGuess()">></button>
                 </div>
-                <div id="agentNames" class="dropdown-content"></div>
+                <div id="optionNames" class="dropdown-content"></div>
             </div>
-
 
             <div id="fullListOfGuesses">
                 <!--Add Guesses-->
             </div>
+
 
 
             <div>
@@ -49,12 +49,7 @@
                 <p class="prompt">What Is The Ability Name?</p>
                 <div id="whatName">
                 </div>
-            </div>
-
-            
-            <a href="/guessMap">guessMap</a>
-        <div>
-        
+            </div>        
     </body>
 
     <script>

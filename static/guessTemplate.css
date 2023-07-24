@@ -44,7 +44,7 @@
     top: 30px;
 }
 
-.agentButton{
+.optionButton{
     display:block;
     width: 255px;
     font-size: 20px;
@@ -66,7 +66,7 @@
     
 }
 
-#agentNames{
+#optionNames{
     position: absolute;
     max-height: 281px;
     overflow-y: clip;
@@ -74,7 +74,7 @@
 }
 
 
-.agentNameInButton{
+.optionNameInButton{
     font-size: 25px;
     position:relative;
     left: 30px;

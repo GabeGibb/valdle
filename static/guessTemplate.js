@@ -1,3 +1,4 @@
+
 // This template lets other files use dataList and randAgent variables
 // In a given gamemode js file, one must specify two functions
 //   function curGamemode(){
@@ -5,33 +6,49 @@
 //   }
 //   function displayPartTwo(){
 //     //WHAT TO DO ON WINNING FIRST MODE (or just winning if there is only one part)
+
 //   }
 
-let dataList; // Will house list of all agent data
-var randAgent = Math.floor(Math.random() * 22);
 
-$.get("https://valorant-api.com/v1/agents?isPlayableCharacter=true", function(data, status){
-    dataList = data["data"]; // Organizes API data to JSON array
-    console.log("agent name: " + dataList[randAgent]["displayName"]);
+// }
+// let url
+
+// URLS 
+// "https://valorant-api.com/v1/agents?isPlayableCharacter=true"
+// "https://valorant-api.com/v1/bundles"
+
+
+let dataList;
+var randIndex;
+var guessImage = document.getElementById("guessImage");
+
+
+$.get(url, function(data, status){ //url defined in current webpage js file
+    dataList = data["data"];
+    randIndex = Math.floor(Math.random() * dataList.length);
+    console.log(data['data']);
+    console.log(dataList[randIndex])
     
-    curGamemode(); // IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
+    curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
+
     makeButtons();
-    $("#agentNames").hide();
+    $("#optionNames").hide();
 });
 
+
 function makeButtons(){
-    let names = document.getElementById("agentNames");
+    let names = document.getElementById("optionNames");
     for(let i = 0; i < dataList.length; i++){
         let currName = (dataList[i]["displayName"]);
         let p = document.createElement('p');
         p.textContent = currName;
-        p.classList.add("agentNameInButton");
+        p.classList.add("optionNameInButton");
         let button = document.createElement('BUTTON');
-        button.classList.add("agentButton");
+        button.classList.add("optionButton");
         button.onclick = function(){
             document.getElementById("searchInput").value = currName;
-            validateAgent();
-            $("#agentNames").hide();
+            validateGuess();
+            $("#optionNames").hide();
         }
         button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
         button.appendChild(p); //adds content to button
@@ -40,64 +57,22 @@ function makeButtons(){
     }
 }
 
-function validateAgent(){
-    let userInput = document.getElementById("searchInput")
-    for(let i = 0; i < dataList.length; i++){ //TODO: case sens
-        if(userInput.value.toUpperCase() == dataList[i]["displayName"].toUpperCase()){
-            isCorrectAgent(dataList[i]["displayName"]);
-        }
-    }
-}
-
-function isCorrectAgent(userInput){
-    let guessParent = document.getElementById("fullListOfGuesses");
-    let newDiv = document.createElement("div");
-    guessParent.appendChild(newDiv);
-
-    let agentAnswer = dataList[randAgent]["displayName"];
-
-    let text = document.createTextNode(userInput);
-    let p = document.createElement('p');
-    p.classList.add("guessText");
-
-    let agentImg = document.createElement('img');
-    agentImg.src = dataList[findUserIndex(userInput)]["displayIcon"];
-    agentImg.classList.add("guessImg");
-    newDiv.appendChild(agentImg);
-    p.appendChild(text); //adds content to button
-    newDiv.appendChild(p); //appends button to div
-
-    if(agentAnswer == userInput){
-        newDiv.classList.add("correctGuess")
-        $('.dropdown').remove();
-        printVictoryMessage();
-        displayPartTwo();
-    }
-    else{
-        newDiv.classList.add("wrongGuess")
-        $('#searchInput').val('');
-        removeAgent(userInput);
-        modeWrongActions();
-    }
-    newDiv.classList.add("individualGuesses");
-}
-
 function showButtons(){
-    $("#agentNames").show();
+    $("#optionNames").show();
 }
 
 $(document).on("click", function(event){
     var $trigger = $('.dropdown');
     if($trigger !== event.target && !$trigger.has(event.target).length){
-        $("#agentNames").hide();
+        $("#optionNames").hide();
     }
 });
 
 $('#searchInput').keydown(function(e){
     let key = e['originalEvent']['key'];
-    console.log(key)
+    // console.log(key)
     if(key == 'Enter'){
-        validateAgent();
+        validateGuess();
     }
 });
 
@@ -106,9 +81,7 @@ function filterFunction() {
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
 
-    // div = document.getElementById("dropdown");
-    // button = div.getElementsByTagName("button");
-    div = document.getElementById("agentNames");
+    div = document.getElementById("optionNames");
     button = div.getElementsByTagName("button");
 
     let nameOrder = [];
@@ -125,8 +98,54 @@ function filterFunction() {
     }
 }
 
+
+function validateGuess(){
+    let userInput = document.getElementById("searchInput")
+    // console.log(dataList);
+    for(let i = 0; i < dataList.length; i++){ //TODO: case sens
+        if(userInput.value.toUpperCase() == dataList[i]["displayName"].toUpperCase()){
+            isCorrectOption(dataList[i]["displayName"]);
+        }
+        
+    }
+}
+
 function printVictoryMessage(){
     $('#victoryMessage').text('nice');
+}
+
+function isCorrectOption(userInput){
+    let guessParent = document.getElementById("fullListOfGuesses");
+    let newDiv = document.createElement("div");
+    guessParent.appendChild(newDiv);
+
+    let optionAnswer = dataList[randIndex]["displayName"];
+
+    let text = document.createTextNode(userInput);
+    let p = document.createElement('p');
+    p.classList.add("guessText");
+
+    let optionImg = document.createElement('img');
+    optionImg.src = dataList[findUserIndex(userInput)]["displayIcon"];
+    optionImg.classList.add("guessImg");
+    newDiv.appendChild(optionImg);
+    p.appendChild(text); //adds content to button
+    newDiv.appendChild(p); //appends button to div
+
+    if(optionAnswer == userInput){
+        newDiv.classList.add("correctGuess")
+        $('#dropdown').remove();
+        printVictoryMessage();
+        displayPartTwo();
+    }
+    else{
+        newDiv.classList.add("wrongGuess")
+        $('#searchInput').val('');
+        removeOption(userInput);
+        modeWrongActions();
+    }
+    newDiv.classList.add("individualGuesses");
+   
 }
 
 function findUserIndex(userInput){
@@ -137,8 +156,8 @@ function findUserIndex(userInput){
     }
 }
 
-function removeAgent(name){
-    div = document.getElementById("agentNames");
+function removeOption(name){
+    div = document.getElementById("optionNames");
     button = div.getElementsByTagName("button");
     let index = 'empty';
     for (i = 0; i < button.length; i++) {
