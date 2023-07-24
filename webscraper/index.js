@@ -6,8 +6,8 @@ const url = 'https://valorant.fandom.com/wiki/Astra/Quotes';
         .then(response => {
             const html = response.data;
             const $ = cheerio.load(html)
-            // printQuotes();
-            printAudio();
+            printQuotes();
+            // printAudio();
             function printQuotes(){
                 // const text = $('ul').find('li').remove('span').remove('audio').text()
                 // const text = $(''ul').find('li').not('span', 'audio').text()'
@@ -22,54 +22,34 @@ const url = 'https://valorant.fandom.com/wiki/Astra/Quotes';
                 text = text.replace("  ", "")
                 text = text.replace(/(\r\n|\n|\r)/gm, "")
                 // let quotes = text.split("\" ")
-                quotes = text.split("\" ").join("\n")
-
-                // for(let i = 0; i < quotes.length; i++){
-                //     if(quotes.includes("\\t")){
-                //         continue;   
-                //     }
-                //     console.log(quotes[i]);
-                // }
-                // quotes = quotes.split("\t".ToCharAway)(2) 
+                quotes = text.split("\" ").join("\"\n")
 
                 fs.writeFile('quotes.txt', quotes, err =>{
                     if (err) throw err;
-                });
-
-                console.log(quotes);
-
+                    });
+                
             }
 
             function printAudio(){
-                // const text = $('ul').find('li').remove('span').remove('audio').text()
-                // const text = $(''ul').find('li').not('span', 'audio').text()'
-    
 
+                var voiceline;
 
+                // const text = $('ul').find('li').find('span').find('span').find('audio').attr('src');
 
-                // let text = $('ul').find('li').find('span').find('span').find('audio').attr('src');
+                let text = "";
 
                 
-                console.log(text)
-                // text = text.replace("\t", "")
-                // text = text.replace("  ", "")
-                // text = text.replace(/(\r\n|\n|\r)/gm, "")
-                // // let quotes = text.split("\" ")
-                // quotes = text.split("\" ").join("\n")
+                $('audio').each((index, audio)=>{
+                    voiceline = $(audio).attr('src');
 
-                // for(let i = 0; i < quotes.length; i++){
-                //     if(quotes.includes("\\t")){
-                //         continue;   
-                //     }
-                //     console.log(quotes[i]);
-                // }
-                // quotes = quotes.split("\t".ToCharAway)(2) 
+                    console.log(voiceline);
 
-                fs.writeFile('audio', text, err =>{
-                    if (err) throw err;
+                    text += (voiceline + "\n")
                 });
 
-                // console.log(audio);
+                fs.writeFile('audio.txt', text, err =>{
+                    if (err) throw err;
+                    });
             }
             
 
