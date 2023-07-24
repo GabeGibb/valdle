@@ -1,12 +1,23 @@
-//CODE FOR TEMPLATE
+
+var randAbility;
+let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 let url = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
 
-function curGamemode(){ //GETS CALLED ON PAGE LOAD
+function curGamemode(){ // Gets called on page load
     var abilityIndex = randomizeAbilityIndex();
     createRandAbility(abilityIndex);
+    removeRandTile();
+}
+
+function removeRandTile(){
+    randStartTile = Math.floor(Math.random() * coversLeft.length);
+    var name = "#cover" + coversLeft[randStartTile];
+    $(name).css({"background-color": "transparent", "border": "transparent"});
+    coversLeft.splice(randStartTile, 1);
 }
 
 function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
+    revealTiles();
     partTwoDisplay = document.getElementById("partTwoDisplay");
     $("#partTwoDisplay").show();
 
@@ -18,7 +29,6 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
         button.classList.add("nameInButton");
         button.onclick = function(){
             isCorrectAbilityName(button, currAbility);
-            
         }
         whatAbilityNameDiv.appendChild(button); //appends button to div
     }
@@ -28,34 +38,31 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
 
 //----------------
 
-var randAbility; //initialized in randomizeAbilityIndex()
-
 function randomizeAbilityIndex(){
-    // console.log(dataList[randIndex]["abilities"].length);
     if((dataList[randIndex]["abilities"].length == 5) && (dataList[randIndex]["abilities"][4]["displayIcon"] != null)){
         randAbility = Math.floor(Math.random() * 5)
-        console.log("randAbility = " + randAbility)
         return randAbility;
-        
     }
     else{
         randAbility = Math.floor(Math.random() * 4);
-        // console.log("randAbility = " + randAbility)
         return randAbility;
     }
 }
 
+
+
 function createRandAbility(abilityIndex){
     var chosenAbility = dataList[randIndex]["abilities"][abilityIndex];
-    console.log(chosenAbility);
-    // console.log(dataList[randIndex]["abilities"][abilityIndex]["displayIcon"]);
     makeAbilityImage(chosenAbility);
 }
 
-function makeAbilityImage(chosenAbility){
-    guessImage.src = chosenAbility["displayIcon"];
+function makeAbilityImage(chosenAbility){ // Puts image of ability on webpage
+    $("#guessImage").attr("src", chosenAbility["displayIcon"]);
 }
 
+function modeWrongActions() {
+    removeRandTile();
+}
 
 
 let canGuessAbilityName = true;
@@ -74,5 +81,12 @@ function isCorrectAbilityName(button, currAbility){
     }
     else if (canGuessAbilityName){
         button.classList.add("incorrectGuessName")
+    }
+}
+
+async function revealTiles() {
+    while (coversLeft.length > 0) {
+        removeRandTile();
+        await new Promise(r => setTimeout(r, 500));
     }
 }

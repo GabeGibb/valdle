@@ -1,11 +1,15 @@
-//This template lets other files use dataList and randIndex variables
-//
-//In a given gamemode js file, one must specify two functions and a url variable
-// function curGamemode(){
+
+// This template lets other files use dataList and randAgent variables
+// In a given gamemode js file, one must specify two functions
+//   function curGamemode(){
 //     //WHAT TO DO ON LOAD
-// }
-// function displayPartTwo(){
+//   }
+//   function displayPartTwo(){
 //     //WHAT TO DO ON WINNING FIRST MODE (or just winning if there is only one part)
+
+//   }
+
+
 // }
 // let url
 
@@ -26,6 +30,7 @@ $.get(url, function(data, status){ //url defined in current webpage js file
     console.log(dataList[randIndex])
     
     curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
+
     makeButtons();
     $("#optionNames").hide();
 });
@@ -57,7 +62,7 @@ function showButtons(){
 }
 
 $(document).on("click", function(event){
-    var $trigger = $('#dropdown');
+    var $trigger = $('.dropdown');
     if($trigger !== event.target && !$trigger.has(event.target).length){
         $("#optionNames").hide();
     }
@@ -92,6 +97,7 @@ function filterFunction() {
         }
     }
 }
+
 
 function validateGuess(){
     let userInput = document.getElementById("searchInput")
@@ -136,6 +142,7 @@ function isCorrectOption(userInput){
         newDiv.classList.add("wrongGuess")
         $('#searchInput').val('');
         removeOption(userInput);
+        modeWrongActions();
     }
     newDiv.classList.add("individualGuesses");
    
