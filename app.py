@@ -27,6 +27,11 @@ def guessBundle():
     return render_template('guessBundle.html')
 
 
+@app.errorhandler(404) 
+def default_handler(e):
+    return render_template('invalidRoute.html')
+
+
 @app.route('/guessMap/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
     path = f'Valorant Maps/{map}/{region} - {superRegion}.png'
