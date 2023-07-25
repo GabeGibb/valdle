@@ -198,3 +198,7 @@
     background-color: red;
 }
 
+#guessText{
+    color: aliceblue;
+    /* font-size: 10px; */
+}

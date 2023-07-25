@@ -11,3 +11,7 @@ function displayPartTwo(){
 function setImage(){
     guessImage.src = dataList[randIndex]['displayIcon'];
 }
+
+function modeWrongActions(){
+    
+}

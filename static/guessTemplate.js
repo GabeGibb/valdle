@@ -8,8 +8,6 @@
 //     //WHAT TO DO ON WINNING FIRST MODE (or just winning if there is only one part)
 
 //   }
-
-
 // }
 // let url
 
@@ -19,18 +17,13 @@
 
 
 let dataList;
-var randIndex;
+var randAnswer;
 var guessImage = document.getElementById("guessImage");
-
 
 $.get(url, function(data, status){ //url defined in current webpage js file
     dataList = data["data"];
-    randIndex = Math.floor(Math.random() * dataList.length);
     console.log(dataList);
-    console.log(dataList[randIndex]["displayName"])
-    
     curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
-
     makeButtons();
     $("#optionNames").hide();
 });
@@ -119,7 +112,7 @@ function isCorrectOption(userInput){
     let newDiv = document.createElement("div");
     guessParent.appendChild(newDiv);
 
-    let optionAnswer = dataList[randIndex]["displayName"];
+    let optionAnswer = randAnswer;
 
     let text = document.createTextNode(userInput);
     let p = document.createElement('p');

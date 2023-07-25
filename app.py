@@ -3,6 +3,8 @@ from flask import Flask, render_template, send_file, request
 from PIL import Image
 from random import randint
 from io import BytesIO
+from json import load
+from random import choice
 
 app = Flask(__name__)
 
@@ -52,4 +54,17 @@ def callout(map, region, superRegion):
         
     else:
         return send_file(path)
+
+
+@app.route('/guessQuote/quoteOfDay')
+def getQuote():
+    f = open('static/quotes.json')
+    data = load(f)
+    agent = choice(list(data.items()))
+    agentName = agent[0]
+    quoteInfo = choice(agent[1])
+    quoteInfo['displayName'] = agentName
+    f.close()
+    return quoteInfo
+
 

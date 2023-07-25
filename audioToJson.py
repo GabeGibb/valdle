@@ -27,7 +27,10 @@ for agent in agents:
         tempDict['quote'] = q
         curAgentList.append(tempDict)
 
-    agentsDict[agent] = curAgentList
+    if agent == 'KAYO':
+        agentsDict['KAY/O'] = curAgentList
+    else:
+        agentsDict[agent] = curAgentList
 
 jsonObject = json.dumps(agentsDict, indent=4)
 with open("static/quotes.json", "w") as outfile:
