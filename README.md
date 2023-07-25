@@ -11,7 +11,7 @@
 - Getting things working > everything else
 - Do not worry too much about mobile view at the moment, but plan designs to have things centered so it can easily be adapted to a mobile view
 - User experience should be prioritized (EX: if users need to search something there should be a button to execute the search, users could also press enter, if its an autofill search clicking on a possible option should also
-execute the search. 
+execute the search). 
 
 # Future Gamemodes
 - Valorant trivia
