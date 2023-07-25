@@ -21,3 +21,4 @@ function splitData(content){
 //[Name: Astra, quote: "insert quote", audio: "insert audio"]
 
 
+// {'agentName': [['quote', 'audio'], ]}
