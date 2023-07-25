@@ -3,6 +3,15 @@ var randAbility;
 let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 let url = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
 
+let abilityUrl = window.location.href + '/abilityOfDay';
+
+jQuery.ajaxSetup({async:false});
+$.get(abilityUrl, function(data, status){ //url defined in current webpage js file
+    console.log(data)
+    randIndex = data['randIndex']
+});
+
+
 function curGamemode(){ // Gets called on page load
     var abilityIndex = randomizeAbilityIndex();
     createRandAbility(abilityIndex);
@@ -39,6 +48,7 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
 //----------------
 
 function randomizeAbilityIndex(){
+    console.log(randIndex)
     if((dataList[randIndex]["abilities"].length == 5) && (dataList[randIndex]["abilities"][4]["displayIcon"] != null)){
         randAbility = Math.floor(Math.random() * 5)
         return randAbility;

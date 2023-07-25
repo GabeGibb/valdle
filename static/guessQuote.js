@@ -5,21 +5,16 @@ let quoteUrl = window.location.href + '/quoteOfDay';
 let audioFile;
 let quote;
 
+jQuery.ajaxSetup({async:false});
 $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
-    randAnswer = data['displayName'];
+    console.log(data)
+    randIndex = data['randIndex']
     quote = data['quote'];
     audioFile = data['audioFile'];
 
-    console.log(randAnswer)
-    $('#guessText').text(quote);
-
-    $('#quoteSound').attr('src', audioFile);
+    $('#guessText').text(quote)
 });
 
-function playQuote(){
-    var snd = new Audio(audioFile);
-    $('#quoteSound').play();
-}
 
 function curGamemode(){
     

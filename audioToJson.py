@@ -1,10 +1,11 @@
 import json
 
-agentsDict = {}
+agentsDict = []
 
 agents = ['Gekko', 'Fade', 'Breach', 'Deadlock', 'Raze', 'Chamber', 'KAYO', 'Skye', 'Cypher', 'Sova', 'Killjoy', 'Harbor', 'Viper', 'Phoenix', 'Astra', 'Brimstone', 'Neon', 'Yoru', 'Sage', 'Reyna', 'Omen', 'Jett']
 
 for agent in agents:
+    
     aFile = f'webscraper/{agent}Audio.txt'
     qFile = f'webscraper/{agent}Quotes.txt'
 
@@ -14,7 +15,7 @@ for agent in agents:
     aLines = audio.readlines()
     qLines = quotes.readlines()
 
-
+    curAgentDict = {}
     curAgentList = []
     for (a, q) in zip(aLines, qLines):
         if len(q.split()) < 10:
@@ -28,9 +29,12 @@ for agent in agents:
         curAgentList.append(tempDict)
 
     if agent == 'KAYO':
-        agentsDict['KAY/O'] = curAgentList
+        curAgentDict['displayName'] = 'KAY/O'
     else:
-        agentsDict[agent] = curAgentList
+        curAgentDict['displayName'] = agent
+
+    curAgentDict['voiceInfo'] = curAgentList
+    agentsDict.append(curAgentDict)
 
 jsonObject = json.dumps(agentsDict, indent=4)
 with open("static/quotes.json", "w") as outfile:

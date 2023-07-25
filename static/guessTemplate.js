@@ -17,12 +17,13 @@
 
 
 let dataList;
-var randAnswer;
+var randIndex;
 var guessImage = document.getElementById("guessImage");
 
+jQuery.ajaxSetup({async:false});
 $.get(url, function(data, status){ //url defined in current webpage js file
     dataList = data["data"];
-    console.log(dataList);
+    console.log(dataList)
     curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
     makeButtons();
     $("#optionNames").hide();
@@ -112,7 +113,7 @@ function isCorrectOption(userInput){
     let newDiv = document.createElement("div");
     guessParent.appendChild(newDiv);
 
-    let optionAnswer = randAnswer;
+    let optionAnswer = dataList[randIndex]["displayName"];
 
     let text = document.createTextNode(userInput);
     let p = document.createElement('p');
