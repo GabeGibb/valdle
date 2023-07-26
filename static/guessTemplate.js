@@ -21,7 +21,7 @@ let dataList;
 var randIndex;
 var guessImage = document.getElementById("guessImage");
 
-jQuery.ajaxSetup({async:false});
+// jQuery.ajaxSetup({async:false});
 $.get(url, function(data, status){ //url defined in current webpage js file
     dataList = data["data"];
     console.log(dataList)
@@ -96,7 +96,6 @@ function filterFunction() {
 
 function validateGuess(){
     let userInput = document.getElementById("searchInput")
-    // console.log(dataList);
     for(let i = 0; i < dataList.length; i++){ //TODO: case sens
         if(userInput.value.toUpperCase() == dataList[i]["displayName"].toUpperCase()){
             isCorrectOption(dataList[i]["displayName"]);

@@ -88,7 +88,7 @@ def getAbility():
 @app.route('/guessBundle/bundleOfDay')
 def getBundle():
     bundleOfDay = {}
-    index = randint(0, 87)
+    index = randint(0, 17)
     bundleOfDay['randIndex'] = index
     # bundleOfDay['displayName'] = agents[index]
     return bundleOfDay

@@ -1,4 +1,4 @@
-let url = "https://valorant-api.com/v1/bundles";
+let url = "https://valorant-api.com/v1/weapons";
 
 
 let bundleUrl = window.location.href + '/bundleOfDay';
@@ -12,7 +12,7 @@ $.get(bundleUrl, function(data, status){ //url defined in current webpage js fil
 
 
 function curGamemode(){
-    //WHAT TO DO ON LOAD
+    dataList = dataList[randIndex]['skins']
     setImage();
 }
 function displayPartTwo(){
