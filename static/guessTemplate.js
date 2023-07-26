@@ -9,6 +9,7 @@
 
 //   }
 // }
+//function modeWrongActions(){}
 // let url
 
 // URLS 
