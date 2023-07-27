@@ -14,7 +14,7 @@ console.log(mapSize)
 function makeCalloutDiv(callout, mapName){
     let div = document.createElement("div");
 
-    callout['location']['x'], callout['location']['y'], callout['regionName']
+    // callout['location']['x'], callout['location']['y'], callout['regionName']
     let x = callout['location']['x'];
     let y = callout['location']['y'];
     let region = callout['regionName'];
@@ -81,6 +81,7 @@ function makeCalloutDiv(callout, mapName){
             
         }
         div.remove();
+        callout['regionName'] = '';
     };
 
 
@@ -105,7 +106,7 @@ function createMap(mapName){
 
         map.src = maps[i]['displayIcon'];
 
-        $('#mapChoice').css('visibility', 'hidden');
+        // $('#mapChoice').css('visibility', 'hidden');
         for(let j = 0; j < maps[i]['callouts'].length; j++){
             callout = maps[i]['callouts'][j];
             makeCalloutDiv(callout, mapName)
@@ -128,9 +129,9 @@ function createMap(mapName){
         }
         start = false;
     }
-    setTimeout(function(){
-        $('#mapChoice').css('visibility', 'visible');
-    }, 10);
+    // setTimeout(function(){
+    //     $('#mapChoice').css('visibility', 'visible');
+    // }, 10);
     
 }
 
