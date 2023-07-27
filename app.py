@@ -27,9 +27,9 @@ def guessAbility():
 def guessQuote():
     return render_template('guessQuote.html')
 
-@app.route('/guessBundle')
-def guessBundle():
-    return render_template('guessBundle.html')
+@app.route('/guessGun')
+def guessGun():
+    return render_template('guessGun.html')
 
 
 @app.errorhandler(404) 
@@ -85,10 +85,10 @@ def getAbility():
     return abilityOfDay
 
 
-@app.route('/guessBundle/bundleOfDay')
-def getBundle():
-    bundleOfDay = {}
+@app.route('/guessGun/gunOfDay')
+def getGun():
+    gunOfDay = {}
     index = randint(0, 17)
-    bundleOfDay['randIndex'] = index
+    gunOfDay['randIndex'] = index
     # bundleOfDay['displayName'] = agents[index]
-    return bundleOfDay
+    return gunOfDay

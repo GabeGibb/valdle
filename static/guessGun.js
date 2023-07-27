@@ -1,18 +1,18 @@
 let url = "https://valorant-api.com/v1/weapons";
 
 
-let bundleUrl = window.location.href + '/bundleOfDay';
-console.log(bundleUrl)
+let gunUrl = window.location.href + '/gunOfDay';
+console.log(gunUrl)
 
 jQuery.ajaxSetup({async:false});
-$.get(bundleUrl, function(data, status){ //url defined in current webpage js file
+$.get(gunUrl, function(data, status){ //url defined in current webpage js file
     console.log(data)
     randIndex = data['randIndex']
 });
 
 
 function curGamemode(){
-    dataList = dataList[randIndex]['skins']
+    // dataList = dataList[randIndex]['skins']
     setImage();
 }
 function displayPartTwo(){
