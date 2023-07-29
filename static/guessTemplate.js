@@ -100,7 +100,7 @@ function validateGuess(){
         }
         
     }
-    filterFunction();
+    // filterFunction();
 }
 
 function printVictoryMessage(){

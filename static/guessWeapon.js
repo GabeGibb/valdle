@@ -1,11 +1,11 @@
 let url = "https://valorant-api.com/v1/weapons";
 
 
-let gunUrl = window.location.href + '/gunOfDay';
-console.log(gunUrl)
+let weaponUrl = window.location.href + '/weaponOfDay';
+console.log(weaponUrl)
 
 jQuery.ajaxSetup({async:false});
-$.get(gunUrl, function(data, status){ //url defined in current webpage js file
+$.get(weaponUrl, function(data, status){ //url defined in current webpage js file
     console.log(data)
     randIndex = data['randIndex']
 });
