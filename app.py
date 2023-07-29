@@ -87,8 +87,12 @@ def getAbility():
 
 @app.route('/guessWeapon/weaponOfDay')
 def getWeapon():
+    f = open('static/weapons.json')
+    data = load(f)['data']
+    weaponIndex = randint(0, len(data)-1)
+    skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
+
     weaponOfDay = {}
-    index = randint(0, 17)
-    weaponOfDay['randIndex'] = index
-    # bundleOfDay['displayName'] = agents[index]
+    weaponOfDay['weaponRandIndex'] = weaponIndex
+    weaponOfDay['skinRandIndex'] = skinIndex
     return weaponOfDay

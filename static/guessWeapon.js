@@ -4,10 +4,12 @@ let url = "https://valorant-api.com/v1/weapons";
 let weaponUrl = window.location.href + '/weaponOfDay';
 console.log(weaponUrl)
 
+let skinIndex;
 jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
     console.log(data)
-    randIndex = data['randIndex']
+    randIndex = data['weaponRandIndex'];
+    skinIndex = data['skinRandIndex'];
 });
 
 
@@ -17,12 +19,14 @@ function curGamemode(){
 }
 function displayPartTwo(){
     //WHAT TO DO ON WINNING FIRST MODE
-
-    // winConfetti();
+    // dataList = dataList[randIndex]['']
+    // randIndex = data['skinRandIndex'];
+    // makeButtons();
+    winConfetti();
 }
 
 function setImage(){
-    guessImage.src = dataList[randIndex]['displayIcon'];
+    guessImage.src = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
 }
 
 function modeWrongActions(){
