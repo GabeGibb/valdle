@@ -18,11 +18,16 @@ function curGamemode(){
     setImage();
 }
 function displayPartTwo(){
-    //WHAT TO DO ON WINNING FIRST MODE
-    // dataList = dataList[randIndex]['']
+    dataList = dataList[randIndex]['skins'][skinIndex];
+    randIndex = skinIndex;
     // randIndex = data['skinRandIndex'];
+    $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
+
+    jQuery('<div>', {
+        id:'fullListOfGuesses'
+    }).appendTo($('#gameArea'));
     // makeButtons();
-    winConfetti();
+    // winConfetti();
 }
 
 function setImage(){
@@ -32,3 +37,10 @@ function setImage(){
 function modeWrongActions(){
     
 }
+
+{/* <div class="dropdown">
+    <div id="userInputDiv">
+        <input type="text" placeholder="Search Bundle.." id="searchInput" onfocus="showButtons()" onkeyup="filterFunction()">
+        <button id="submit" onclick="validateGuess()">&gt;</button>
+    </div>
+</div> */}

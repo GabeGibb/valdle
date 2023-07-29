@@ -27,7 +27,6 @@ $.get(url, function(data, status){ //url defined in current webpage js file
     console.log(dataList)
     curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
     makeButtons();
-    $("#optionNames").hide();
 });
 
 
@@ -50,6 +49,7 @@ function makeButtons(){
         button.style.display = "none";
         names.appendChild(button); //appends button to div
     }
+    $("#optionNames").hide();
 }
 
 function showButtons(){
@@ -57,7 +57,7 @@ function showButtons(){
 }
 
 $(document).on("click", function(event){
-    var $trigger = $('.dropdown');
+    var $trigger = $('#dropdown');
     if($trigger !== event.target && !$trigger.has(event.target).length){
         $("#optionNames").hide();
     }
@@ -128,7 +128,6 @@ function isCorrectOption(userInput){
     if(optionAnswer == userInput){
         newDiv.classList.add("correctGuess")
         $('#dropdown').remove();
-        $('#userInputDiv').remove();
         printVictoryMessage();
         displayPartTwo();
     }
