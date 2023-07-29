@@ -4,7 +4,10 @@ let url = "static/weapons.json";
 let weaponUrl = window.location.href + '/weaponOfDay';
 console.log(weaponUrl)
 
+let dropdownClone = $('#dropdown').clone();
+
 let skinIndex;
+
 jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
     console.log(data)
@@ -17,8 +20,19 @@ function curGamemode(){
     // dataList = dataList[randIndex]['skins']
     setImage();
 }
+
+let secondPartStarted = false;
 function displayPartTwo(){
-    dataList = dataList[randIndex]['skins'][skinIndex];
+    if (secondPartStarted){
+        winConfetti();
+    }else{
+        guessGunSkinTime();
+        secondPartStarted = true;
+    }
+}
+
+function guessGunSkinTime(){
+    dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
     // randIndex = data['skinRandIndex'];
     $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
@@ -26,8 +40,9 @@ function displayPartTwo(){
     jQuery('<div>', {
         id:'fullListOfGuesses'
     }).appendTo($('#gameArea'));
-    // makeButtons();
-    // winConfetti();
+
+    dropdownClone.appendTo('#gameArea');
+    makeButtons();
 }
 
 function setImage(){
