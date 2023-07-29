@@ -83,7 +83,7 @@ function filterFunction() {
     for (i = 0; i < button.length; i++) {
         txtValue = button[i].textContent || button[i].innerText;
         let filterIndex = txtValue.toUpperCase().indexOf(filter);
-        if (filterIndex == 0){
+        if (filterIndex == 0 && filter.length > 0){
             button[i].style.display = "";
         } else {
             button[i].style.display = "none";
@@ -100,6 +100,7 @@ function validateGuess(){
         }
         
     }
+    filterFunction();
 }
 
 function printVictoryMessage(){
