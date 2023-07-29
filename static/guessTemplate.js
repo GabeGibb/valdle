@@ -129,6 +129,7 @@ function isCorrectOption(userInput){
     if(optionAnswer == userInput){
         newDiv.classList.add("correctGuess")
         $('#dropdown').remove();
+        $('#userInputDiv').remove();
         printVictoryMessage();
         displayPartTwo();
     }
