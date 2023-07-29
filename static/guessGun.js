@@ -17,7 +17,8 @@ function curGamemode(){
 }
 function displayPartTwo(){
     //WHAT TO DO ON WINNING FIRST MODE
-    winConfetti();
+
+    // winConfetti();
 }
 
 function setImage(){

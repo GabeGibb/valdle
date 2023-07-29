@@ -79,14 +79,12 @@ function filterFunction() {
     div = document.getElementById("optionNames");
     button = div.getElementsByTagName("button");
 
-    let nameOrder = [];
 
     for (i = 0; i < button.length; i++) {
         txtValue = button[i].textContent || button[i].innerText;
         let filterIndex = txtValue.toUpperCase().indexOf(filter);
-        if (filterIndex == 0 && filter.length > 0){
+        if (filterIndex == 0){
             button[i].style.display = "";
-            nameOrder.push([i, filterIndex]);
         } else {
             button[i].style.display = "none";
         }
