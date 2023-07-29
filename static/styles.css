@@ -21,10 +21,14 @@ body{
     float: left;
     color: #fa4454;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 10px;
     padding-bottom: 2px;
     text-decoration: none;
     font-size: 3.5em;
+}
+
+.navbar a:hover {
+    transform: scale(1.1); 
 }
 
 .gameButton {
