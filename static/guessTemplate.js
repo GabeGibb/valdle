@@ -32,10 +32,7 @@ $.get(url, function(data, status){ //url defined in current webpage js file
 
 function makeButtons(){
     let names = document.getElementById("optionNames");
-    console.log('hi')
-    console.log(dataList)
     for(let i = 0; i < dataList.length; i++){
-        console.log(i)
         let currName = (dataList[i]["displayName"]);
         let p = document.createElement('p');
         p.textContent = currName;

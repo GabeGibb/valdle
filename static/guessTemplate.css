@@ -202,3 +202,10 @@
     color: aliceblue;
     font-size: 20px;
 }
+
+#weaponSeparator{
+    text-align: center;
+    padding-top: 50px;
+    height: 100px;
+}
+

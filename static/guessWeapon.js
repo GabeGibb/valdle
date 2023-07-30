@@ -37,6 +37,7 @@ function guessGunSkinTime(){
     // randIndex = data['skinRandIndex'];
     $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
 
+    $('#weaponSeparator').removeAttr('hidden');
     jQuery('<div>', {
         id:'fullListOfGuesses'
     }).appendTo($('#gameArea'));
