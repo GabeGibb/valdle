@@ -41,7 +41,7 @@ function makeCalloutDiv(callout, mapName) {
         win = false;
 
         let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
-        listOfMapGuesses.prepend(currRow);
+        listOfMapGuesses.append(currRow);
         currRow.classList.add("row");
 
         let counter = 0;
@@ -140,10 +140,6 @@ function setScaleToInset() {
     let small = mapSize * (100 - (2 * insetValue)) / 100
     let big = mapSize;
     mapImg.style.scale = big / small
-    // // mapSize * scale = insetValue
-    // console.log(scale)
-    // insetValue = mapSize * scale / 4
-    // scale = insetValue / 4 / mapSize
 }
 
 function zoomOutMap() {
