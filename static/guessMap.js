@@ -52,11 +52,11 @@ function makeCalloutDiv(callout, mapName){
             currRow.appendChild(tileDiv);
 
             if(guess[j] == answer[j]){
-                tileDiv.style.background = 'green';
+                tileDiv.classList.add('green');
                 counter++
             }
             else{
-                tileDiv.style.background = 'red';
+                tileDiv.classList.add('red');
             }
             let text = document.createTextNode(guess[j]);
             textSpan.appendChild(text);

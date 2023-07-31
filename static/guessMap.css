@@ -218,16 +218,18 @@ body::-webkit-scrollbar{
 .board {
     grid-template-rows: repeat(5,70px);
     background-color: #000000;
-    width: 500px;
+    width: 550px;
     /* height: 1100px; */
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 0 auto;
     
   
 }
 
 .row {
-
+    
     /* min-width: 170px;
     min-height: 170px;
     max-height: 170px;
@@ -235,7 +237,7 @@ body::-webkit-scrollbar{
     height: 70px;
     border-radius:10px;
     display: grid;
-    grid-template-columns: 170px 170px 170px;
+    grid-template-columns: 170px 190px 170px;
 }
 
 .tile {
@@ -249,8 +251,14 @@ body::-webkit-scrollbar{
 
     overflow-wrap:break-word;
     font-size: x-large;
-   
-    
+}
+
+.red {
+    background-color: #ff4655;
+}
+
+.green {
+    background-color: #74CB71;
 }
 
 
