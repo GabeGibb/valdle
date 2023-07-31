@@ -20,15 +20,16 @@
 let dataList;
 var randIndex;
 var guessImage = document.getElementById("guessImage");
-let dontShowImage
 
 // jQuery.ajaxSetup({async:false});
-$.get(url, function(data, status){ //url defined in current webpage js file
-    dataList = data["data"];
-    console.log(dataList)
-    curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
-    makeButtons();
-});
+function loadTemplate(){
+    $.get(url, function(data, status){ //url defined in current webpage js file
+        dataList = data["data"];
+        console.log(dataList)
+        curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
+        makeButtons();
+    });    
+}
 
 
 function makeButtons(){
@@ -45,9 +46,9 @@ function makeButtons(){
             validateGuess();
             $("#optionNames").hide();
         }
-        if (dontShowImage == undefined){
-            button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
-        }
+        // if (dontShowImage == undefined){
+        button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
+        // }
         
         button.appendChild(p); //adds content to button
         button.style.display = "none";

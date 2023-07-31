@@ -5,8 +5,9 @@ let url = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
 
 let abilityUrl = window.location.href + '/abilityOfDay';
 
-jQuery.ajaxSetup({async:false});
+// jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
+    loadTemplate();
     console.log(data)
     randIndex = data['randIndex']
 });

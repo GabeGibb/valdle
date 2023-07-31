@@ -5,8 +5,9 @@ let quoteUrl = window.location.href + '/quoteOfDay';
 let audioFile;
 let quote;
 
-jQuery.ajaxSetup({async:false});
+// jQuery.ajaxSetup({async:false});
 $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
+    loadTemplate();
     console.log(data)
     randIndex = data['randIndex']
     quote = data['quote'];
