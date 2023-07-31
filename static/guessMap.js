@@ -7,11 +7,11 @@ let win;
 let imgUrl;
 
 
-// let mapSize = document.getElementById("mapChoice").height;
 let mapSize = 320;
 let divideFactor = 1000 / mapSize;
 
-console.log(mapSize)
+let calloutMap = $('#mapChoice').clone();
+let calloutMaps = [];
 
 function makeCalloutDiv(callout, mapName) {
     let div = document.createElement("div");
@@ -30,13 +30,8 @@ function makeCalloutDiv(callout, mapName) {
     div.style.cursor = 'pointer';
     div.onclick = function () {
 
-
-        // div.style.background = "blue";
-        // let row = document.getElementById("r" + rowNum.toString());
-        // let i = 0;
         let guess = [mapName, region, superRegion]
         let listOfMapGuesses = document.getElementById("listOfMapGuesses");
-        // let win = true;
 
         win = false;
 
@@ -86,30 +81,25 @@ function makeCalloutDiv(callout, mapName) {
         div.remove();
         callout['regionName'] = '';
     };
-
-
-    document.getElementById("mapChoice").appendChild(div);
+   
+    calloutMaps[calloutMaps.length-1].append(div)
 
 }
 
 
-function createMap(mapName) {
-    if (gameOver) {
-        return;
-    }
-    clearMap();
-    var map = document.getElementById("curMap");
-
+function createMaps() {
     let callout;
 
     for (let i = 0; i < maps.length; i++) {
-        if (maps[i]['displayName'] != mapName) {
+        if (maps[i]['displayName'] == 'The Range') {
             continue;
         }
+        let mapName = maps[i]['displayName']; 
 
-        map.src = maps[i]['displayIcon'];
+        calloutMaps.push(calloutMap.clone())
+        calloutMaps[calloutMaps.length - 1].children().attr('src', maps[i]["displayIcon"])
+        calloutMaps[calloutMaps.length - 1].val(mapName)
 
-        // $('#mapChoice').css('visibility', 'hidden');
         for (let j = 0; j < maps[i]['callouts'].length; j++) {
             callout = maps[i]['callouts'][j];
             makeCalloutDiv(callout, mapName)
@@ -118,6 +108,20 @@ function createMap(mapName) {
     }
 
 }
+
+
+function createMap(mapName){
+    if (gameOver) {
+        return;
+    }
+    for (let i = 0; i < calloutMaps.length; i++){
+        if (calloutMaps[i].val() == mapName){
+            $('#mapChoice').replaceWith(calloutMaps[i])
+        }
+    }
+}
+
+
 
 let insetValue = 40;
 
@@ -149,7 +153,6 @@ function clearMap() {
     }
     let mapPic = document.getElementById("curMap");
     mapPic.src = '';
-
 }
 
 function randomize(mapName){
@@ -161,9 +164,6 @@ function randomize(mapName){
         let randCall = Math.floor(Math.random() * maps[i]['callouts'].length);
         answer[1] = maps[i]['callouts'][randCall]['regionName']
         answer[2] = maps[i]['callouts'][randCall]['superRegionName']
-
-        console.log(answer);
-        clearMap();
 
         imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
         let mapImg = document.getElementById("trueImg");
@@ -178,7 +178,8 @@ mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus'
 
 
 $.get("static/maps.json", function (data, status) {
-    maps = data
+    maps = data;
     randomize(mapChoices[Math.floor(Math.random() * mapChoices.length)])
     zoomOutMap();
+    createMaps();
 });
