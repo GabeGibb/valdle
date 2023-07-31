@@ -206,6 +206,7 @@
 #weaponSeparator{
     text-align: center;
     padding-top: 50px;
-    height: 100px;
+    /* padding-bottom: 10px; */
+    /* height: 10px; */
 }
 

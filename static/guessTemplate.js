@@ -20,6 +20,7 @@
 let dataList;
 var randIndex;
 var guessImage = document.getElementById("guessImage");
+let dontShowImage
 
 // jQuery.ajaxSetup({async:false});
 $.get(url, function(data, status){ //url defined in current webpage js file
@@ -44,7 +45,10 @@ function makeButtons(){
             validateGuess();
             $("#optionNames").hide();
         }
-        button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
+        if (dontShowImage == undefined){
+            button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
+        }
+        
         button.appendChild(p); //adds content to button
         button.style.display = "none";
         names.appendChild(button); //appends button to div

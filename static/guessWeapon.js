@@ -35,6 +35,8 @@ function guessGunSkinTime(){
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
     // randIndex = data['skinRandIndex'];
+    dropdownClone.appendTo('#gameArea');
+
     $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
 
     $('#weaponSeparator').removeAttr('hidden');
@@ -42,7 +44,6 @@ function guessGunSkinTime(){
         id:'fullListOfGuesses'
     }).appendTo($('#gameArea'));
 
-    dropdownClone.appendTo('#gameArea');
     makeButtons();
 }
 
