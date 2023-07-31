@@ -9,11 +9,11 @@ let imgUrl;
 
 // let mapSize = document.getElementById("mapChoice").height;
 let mapSize = 320;
-let divideFactor = 1000/mapSize;
+let divideFactor = 1000 / mapSize;
 
 console.log(mapSize)
 
-function makeCalloutDiv(callout, mapName){
+function makeCalloutDiv(callout, mapName) {
     let div = document.createElement("div");
 
     // callout['location']['x'], callout['location']['y'], callout['regionName']
@@ -22,13 +22,13 @@ function makeCalloutDiv(callout, mapName){
     let region = callout['regionName'];
     let superRegion = callout['superRegionName']
 
-    div.style.left = (-10 +(x/divideFactor)).toString() + 'px'; //x
-    div.style.top = (-10 +(y/divideFactor)).toString() + 'px'; //y
+    div.style.left = (-10 + (x / divideFactor)).toString() + 'px'; //x
+    div.style.top = (-10 + (y / divideFactor)).toString() + 'px'; //y
     div.className = "callout";
     div.innerHTML = region;
 
     div.style.cursor = 'pointer';
-    div.onclick = function(){
+    div.onclick = function () {
 
 
         // div.style.background = "blue";
@@ -37,14 +37,15 @@ function makeCalloutDiv(callout, mapName){
         let guess = [mapName, region, superRegion]
         let listOfMapGuesses = document.getElementById("listOfMapGuesses");
         // let win = true;
-        
+
         win = false;
-        
+
         let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
-        listOfMapGuesses.appendChild(currRow);
+        listOfMapGuesses.prepend(currRow);
         currRow.classList.add("row");
+
         let counter = 0;
-        for(let j = 0; j < 3; j++){ //creates three tiles per row
+        for (let j = 0; j < 3; j++) { //creates three tiles per row
             tileDiv = document.createElement("div");
             textSpan = document.createElement("span");
             tileDiv.classList.add("tile");
@@ -52,25 +53,25 @@ function makeCalloutDiv(callout, mapName){
             tileDiv.appendChild(textSpan);
             currRow.appendChild(tileDiv);
 
-            if(guess[j] == answer[j]){
+            if (guess[j] == answer[j]) {
                 tileDiv.classList.add('green');
                 counter++
             }
-            else{
+            else {
                 tileDiv.classList.add('red');
             }
             let text = document.createTextNode(guess[j]);
             textSpan.appendChild(text);
-            
+
         }
         zoomOutMap();
-        if(counter == 3){
+        if (counter == 3) {
             win = true;
         }
 
-        
-    
-        if (win){
+
+
+        if (win) {
             gameOver = true;
             let answerBox = document.getElementById("answerBox");
             answerBox.innerText = answer;
@@ -78,9 +79,9 @@ function makeCalloutDiv(callout, mapName){
 
             let mapImg = document.getElementById("curMap");
             mapImg.src = imgUrl;
-           
+
             winConfetti();
-            
+
         }
         div.remove();
         callout['regionName'] = '';
@@ -92,8 +93,8 @@ function makeCalloutDiv(callout, mapName){
 }
 
 
-function createMap(mapName){
-    if (gameOver){
+function createMap(mapName) {
+    if (gameOver) {
         return;
     }
     clearMap();
@@ -101,22 +102,22 @@ function createMap(mapName){
 
     let callout;
 
-    for(let i = 0; i < maps.length; i++){
-        if (maps[i]['displayName'] != mapName){
+    for (let i = 0; i < maps.length; i++) {
+        if (maps[i]['displayName'] != mapName) {
             continue;
         }
 
         map.src = maps[i]['displayIcon'];
 
         // $('#mapChoice').css('visibility', 'hidden');
-        for(let j = 0; j < maps[i]['callouts'].length; j++){
+        for (let j = 0; j < maps[i]['callouts'].length; j++) {
             callout = maps[i]['callouts'][j];
             makeCalloutDiv(callout, mapName)
         }
 
-        if (start){
+        if (start) {
             answer[0] = maps[i]['displayName'];
-            let randCall = Math.floor(Math.random()*maps[i]['callouts'].length);
+            let randCall = Math.floor(Math.random() * maps[i]['callouts'].length);
             answer[1] = maps[i]['callouts'][randCall]['regionName']
             answer[2] = maps[i]['callouts'][randCall]['superRegionName']
 
@@ -129,12 +130,12 @@ function createMap(mapName){
         }
         start = false;
     }
-    
+
 }
 
 let insetValue = 40;
 
-function setScaleToInset(){
+function setScaleToInset() {
     let mapImg = document.getElementById("trueImg");
     let small = mapSize * (100 - (2 * insetValue)) / 100
     let big = mapSize;
@@ -145,8 +146,8 @@ function setScaleToInset(){
     // scale = insetValue / 4 / mapSize
 }
 
-function zoomOutMap(){
-    if (insetValue <= 0){
+function zoomOutMap() {
+    if (insetValue <= 0) {
         return;
     }
     insetValue -= 2.5;
@@ -156,10 +157,10 @@ function zoomOutMap(){
 }
 
 
-function clearMap(){
+function clearMap() {
     let map = document.getElementById("mapChoice");
-    for (child of map.children){
-        if (child.id == 'curMap'){
+    for (child of map.children) {
+        if (child.id == 'curMap') {
             continue;
         }
         child.innerHTML = '';
@@ -176,8 +177,8 @@ mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus'
 
 
 
-$.get("static/maps.json", function(data, status){
+$.get("static/maps.json", function (data, status) {
     maps = data
-    createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
+    createMap(mapChoices[Math.floor(Math.random() * mapChoices.length)])
     zoomOutMap();
 });
