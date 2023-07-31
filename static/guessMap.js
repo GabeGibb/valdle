@@ -126,22 +126,30 @@ function createMap(mapName){
             let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
             let mapImg = document.getElementById("trueImg");
             mapImg.style.clipPath = 'inset(' + insetValue + 'px ' + insetValue + 'px)';
+            mapImg.style.scale = 1;
             mapImg.src = imgUrl;
+            // setScaleToInset();
 
         }
         start = false;
     }
-    // setTimeout(function(){
-    //     $('#mapChoice').css('visibility', 'visible');
-    // }, 10);
     
 }
 
+function setScaleToInset(){
+    // let mapImg = document.getElementById("trueImg");
+    // mapImg.style.scale = (insetValue / mapSize) * 8;
+    // mapImg.style.scale -= 0.095;
+}
 
 function zoomOutMap(){
+    if (insetValue <= 0){
+        return;
+    }
     insetValue -= 5;
     let mapImg = document.getElementById("trueImg");
-    mapImg.style.clipPath = 'inset(' + insetValue + 'px ' + insetValue + 'px)';
+    mapImg.style.clipPath = 'inset(' + insetValue + 'px)';
+    setScaleToInset();
 }
 
 
