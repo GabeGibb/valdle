@@ -9,6 +9,7 @@ let win;
 // let mapSize = document.getElementById("mapChoice").height;
 let mapSize = 320;
 let divideFactor = 1000/mapSize;
+let insetValue = mapSize / 4;
 console.log(mapSize)
 
 function makeCalloutDiv(callout, mapName){
@@ -61,6 +62,7 @@ function makeCalloutDiv(callout, mapName){
             textSpan.appendChild(text);
             
         }
+        zoomOutMap();
         if(counter == 3){
             win = true;
         }
@@ -121,10 +123,10 @@ function createMap(mapName){
             console.log(answer);
             clearMap();
 
-            let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2] + '?partial=true';
+            let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
             let mapImg = document.getElementById("trueImg");
+            mapImg.style.clipPath = 'inset(' + insetValue + 'px ' + insetValue + 'px)';
             mapImg.src = imgUrl;
-
 
         }
         start = false;
@@ -135,6 +137,12 @@ function createMap(mapName){
     
 }
 
+
+function zoomOutMap(){
+    insetValue -= 5;
+    let mapImg = document.getElementById("trueImg");
+    mapImg.style.clipPath = 'inset(' + insetValue + 'px ' + insetValue + 'px)';
+}
 
 
 function clearMap(){
