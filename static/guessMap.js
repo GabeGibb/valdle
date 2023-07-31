@@ -4,12 +4,13 @@ let gameOver = false;
 let rowNum = 1;
 let answer = ['', '', '']
 let win;
+let imgUrl;
 
 
 // let mapSize = document.getElementById("mapChoice").height;
 let mapSize = 320;
 let divideFactor = 1000/mapSize;
-let insetValue = mapSize / 4;
+
 console.log(mapSize)
 
 function makeCalloutDiv(callout, mapName){
@@ -75,7 +76,6 @@ function makeCalloutDiv(callout, mapName){
             answerBox.innerText = answer;
             clearMap();
 
-            let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
             let mapImg = document.getElementById("curMap");
             mapImg.src = imgUrl;
            
@@ -123,32 +123,35 @@ function createMap(mapName){
             console.log(answer);
             clearMap();
 
-            let imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
+            imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
             let mapImg = document.getElementById("trueImg");
-            mapImg.style.clipPath = 'inset(' + insetValue + 'px ' + insetValue + 'px)';
-            mapImg.style.scale = 1;
             mapImg.src = imgUrl;
-            // setScaleToInset();
-
         }
         start = false;
     }
     
 }
 
+let insetValue = 40;
+
 function setScaleToInset(){
-    // let mapImg = document.getElementById("trueImg");
-    // mapImg.style.scale = (insetValue / mapSize) * 8;
-    // mapImg.style.scale -= 0.095;
+    let mapImg = document.getElementById("trueImg");
+    let small = mapSize * (100 - (2 * insetValue)) / 100
+    let big = mapSize;
+    mapImg.style.scale = big / small
+    // // mapSize * scale = insetValue
+    // console.log(scale)
+    // insetValue = mapSize * scale / 4
+    // scale = insetValue / 4 / mapSize
 }
 
 function zoomOutMap(){
     if (insetValue <= 0){
         return;
     }
-    insetValue -= 5;
+    insetValue -= 2.5;
     let mapImg = document.getElementById("trueImg");
-    mapImg.style.clipPath = 'inset(' + insetValue + 'px)';
+    mapImg.style.clipPath = 'inset(' + insetValue + '%)';
     setScaleToInset();
 }
 
@@ -176,4 +179,5 @@ mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus'
 $.get("static/maps.json", function(data, status){
     maps = data
     createMap(mapChoices[Math.floor(Math.random()*mapChoices.length)])
+    zoomOutMap();
 });
