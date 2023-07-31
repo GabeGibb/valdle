@@ -45,24 +45,25 @@
 }
 
 .optionButton{
-    display:block;
+    display:flex;
     width: 255px;
-    font-size: 20px;
     font-family: 'VALORANT', sans-serif;
-    padding:30px;
+    /* padding:30px; */
     height: 50px;
-    margin: 5px;
+    /* margin: 5px; */
     position:relative;
-    left:-5px;
+    /* left:-5px; */
 
 }
 
 
 .buttonImages{
-    width: 60px;
-    left: -85px;
-    position:relative;
-    top: -30px;
+    width: 50px;
+    vertical-align: top;
+    margin: auto;
+    /* left: -85px; */
+    /* position:relative; */
+    /* top: -30px; */
     
 }
 
@@ -76,9 +77,12 @@
 
 .optionNameInButton{
     font-size: 25px;
-    position:relative;
-    left: 30px;
-    top: -100px;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+    /* position:relative; */
+    /* left: 30px; */
+    /* top: -100px; */
 }
 
 #searchInput{

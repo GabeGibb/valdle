@@ -56,9 +56,3 @@ function modeWrongActions(){
     
 }
 
-{/* <div class="dropdown">
-    <div id="userInputDiv">
-        <input type="text" placeholder="Search Bundle.." id="searchInput" onfocus="showButtons()" onkeyup="filterFunction()">
-        <button id="submit" onclick="validateGuess()">&gt;</button>
-    </div>
-</div> */}
