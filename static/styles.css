@@ -25,10 +25,11 @@ body{
     padding-bottom: 2px;
     text-decoration: none;
     font-size: 3.5em;
+    transition: 75ms ease-out;
 }
 
 .navbar a:hover {
-    transform: scale(1.1); 
+    transform: scale(1.075); 
 }
 
 .gameButton {
