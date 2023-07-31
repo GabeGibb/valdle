@@ -1,8 +1,6 @@
 let url = "static/weapons.json";
 
-
 let weaponUrl = window.location.href + '/weaponOfDay';
-console.log(weaponUrl)
 
 let dropdownClone = $('#dropdown').clone();
 
@@ -10,7 +8,7 @@ let skinIndex;
 
 // jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate();
+    loadTemplate(url, false);
     console.log(data)
     randIndex = data['weaponRandIndex'];
     skinIndex = data['skinRandIndex'];

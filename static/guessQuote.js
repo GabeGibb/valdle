@@ -7,7 +7,7 @@ let quote;
 
 // jQuery.ajaxSetup({async:false});
 $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate();
+    loadTemplate(url, true);
     console.log(data)
     randIndex = data['randIndex']
     quote = data['quote'];
