@@ -22,17 +22,17 @@ var randIndex;
 var guessImage = document.getElementById("guessImage");
 
 // jQuery.ajaxSetup({async:false});
-function loadTemplate(){
+function loadTemplate(url, showButtonImages){
     $.get(url, function(data, status){ //url defined in current webpage js file
         dataList = data["data"];
         console.log(dataList)
         curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
-        makeButtons();
+        makeButtons(showButtonImages);
     });    
 }
 
 
-function makeButtons(){
+function makeButtons(showButtonImages){
     let names = document.getElementById("optionNames");
     for(let i = 0; i < dataList.length; i++){
         let currName = (dataList[i]["displayName"]);
@@ -46,9 +46,9 @@ function makeButtons(){
             validateGuess();
             $("#optionNames").hide();
         }
-        // if (dontShowImage == undefined){
-        button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
-        // }
+        if (showButtonImages == true){
+            button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
+        }
         
         button.appendChild(p); //adds content to button
         button.style.display = "none";

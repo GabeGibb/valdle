@@ -7,7 +7,7 @@ let abilityUrl = window.location.href + '/abilityOfDay';
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate();
+    loadTemplate(url, true);
     console.log(data)
     randIndex = data['randIndex']
 });
