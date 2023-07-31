@@ -115,20 +115,6 @@ function createMap(mapName) {
             makeCalloutDiv(callout, mapName)
         }
 
-        if (start) {
-            answer[0] = maps[i]['displayName'];
-            let randCall = Math.floor(Math.random() * maps[i]['callouts'].length);
-            answer[1] = maps[i]['callouts'][randCall]['regionName']
-            answer[2] = maps[i]['callouts'][randCall]['superRegionName']
-
-            console.log(answer);
-            clearMap();
-
-            imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
-            let mapImg = document.getElementById("trueImg");
-            mapImg.src = imgUrl;
-        }
-        start = false;
     }
 
 }
@@ -166,6 +152,24 @@ function clearMap() {
 
 }
 
+function randomize(mapName){
+    for (let i = 0; i < maps.length; i++) {
+        if (maps[i]['displayName'] != mapName) {
+            continue;
+        }
+        answer[0] = maps[i]['displayName'];
+        let randCall = Math.floor(Math.random() * maps[i]['callouts'].length);
+        answer[1] = maps[i]['callouts'][randCall]['regionName']
+        answer[2] = maps[i]['callouts'][randCall]['superRegionName']
+
+        console.log(answer);
+        clearMap();
+
+        imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
+        let mapImg = document.getElementById("trueImg");
+        mapImg.src = imgUrl;
+    }
+}
 
 
 
@@ -175,6 +179,6 @@ mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus'
 
 $.get("static/maps.json", function (data, status) {
     maps = data
-    createMap(mapChoices[Math.floor(Math.random() * mapChoices.length)])
+    randomize(mapChoices[Math.floor(Math.random() * mapChoices.length)])
     zoomOutMap();
 });
