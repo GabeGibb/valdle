@@ -99,9 +99,18 @@
     /* top: 50px; */
 }
 
+#userInputDiv input {
+    padding-left: 15px;
+}
+
+#userInputDiv button {
+    border: none;
+    /* text-decoration: none; */
+}
+
 #submit{
     width:50px;
-    height: 48px;
+ 
     background-color: #fa4454;
 
 }
@@ -146,6 +155,7 @@
     /* text-align:center; */
     /* padding:20px; */
     height:100px;
+    padding-top: 10px;
 }
 
 #victoryMessage{

@@ -100,7 +100,7 @@ body::-webkit-scrollbar{
 }
 
 .tile {
-  display: block;
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,13 +113,6 @@ body::-webkit-scrollbar{
     font-size: x-large;
 }
 
-.red {
-    background-color: #ff4655;
-}
-
-.green {
-    background-color: #74CB71;
-}
 
 
 
