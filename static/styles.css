@@ -38,12 +38,14 @@ body{
     text-align: center;
     text-decoration: none;
     transition-duration: 0s;
+    transition: 100ms ease-out;
   }
 
 .gameButton:hover {
     background-color: black;
     color: #FA4454;
     border: 3px solid #FA4454;
+    
 }
 
 button{

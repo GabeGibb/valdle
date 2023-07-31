@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="/static/guessMap.css">
@@ -14,6 +15,7 @@
   <script src="/static/guessMap.js" defer></script>
 
 </head>
+
 <body>
   <nav class="navbar">
     <a href="\">Valdle</a>
@@ -23,39 +25,93 @@
     <div class="map_selection">
       <div class="containerTab">
         <div class="containerRow1">
-            <div class="apple">apple</div>
-            <button class="gameButton" id = "chooseAscent" onclick="createMap('Ascent')">Ascent</button>
-            <button class="gameButton" id = "chooseBind" onclick="createMap('Bind')">Bind</button>
-            <button class="gameButton" id = "chooseBreeze" onclick="createMap('Breeze')">Breeze</button>
-            <button class="gameButton" id = "chooseFracture" onclick="createMap('Fracture')">Fracture</button>
-            <button class="gameButton" id = "chooseHaven" onclick="createMap('Haven')">Haven</button>
-            <div class="apple">apple</div>
+          
+          <button class="btn btn--light" id = "chooseAscent" onclick = "createMap('Ascent')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Ascent</span>
+            </span>
+          </button>
+          
+          <button class="btn btn--light" id = "chooseBind" onclick = "createMap('Bind')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Bind</span>
+            </span>
+          </button>
+
+          <button class="btn btn--light" id = "chooseBreeze" onclick = "createMap('Breeze')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Breeze</span>
+            </span>
+          </button>
+
+          <button class="btn btn--light" id = "chooseFracture" onclick = "createMap('Fracture')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Fracture</span>
+            </span>
+          </button>
+
+          <button class="btn btn--light" id = "chooseHaven" onclick = "createMap('Haven')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Haven</span>
+            </span>
+          </button>
+
         </div>
-        <div class="containerRow2">
-            <div class="apple">apple</div>
-            <button class="gameButton" id = "chooseIcebox" onclick="createMap('Icebox')">Icebox</button>
-            <button class="gameButton" id = "chooseLotus" onclick="createMap('Lotus')">Lotus</button>
-            <button class="gameButton" id = "choosePearl" onclick="createMap('Pearl')">Pearl</button>
-            <button class="gameButton" id = "chooseSplit" onclick="createMap('Split')">Split</button>
-            <div class="apple">apple</div>
+        <div class="containerRow1">
+
+          <button class="btn btn--light" id = "chooseIcebox" onclick = "createMap('Icebox')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">IceBox</span>
+            </span>
+          </button>
+
+          <button class="btn btn--light" id = "chooseLotus" onclick = "createMap('Lotus')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Lotus</span>
+            </span>
+          </button>
+
+          <button class="btn btn--light" id = "choosePearl" onclick = "createMap('Pearl')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Pearl</span>
+            </span>
+          </button>
+
+          <button class="btn btn--light" id = "chooseSplit" onclick = "createMap('Split')">
+            <span class="btn__inner">
+              <span class="btn__slide"></span>
+              <span class="btn__content">Split</span>
+            </span>
+          </button>
+
+        
+
         </div>
 
       </div>
-    
+
       <div class="map">
-    
+
       </div>
     </div>
 
     <div class="mapImgChoice" id="mapImgChoice">
-        <div class="fill1"></div>
-        <div class="mapChoice" id="mapChoice"><img class="" id="curMap"></div>
-        <div class="imgChoice"><img class ="trueImg" id ="trueImg"></div>
-        <div class="fill2"></div>
+      <div class="fill1"></div>
+      <div class="mapChoice" id="mapChoice"><img class="" id="curMap"></div>
+      <div class="imgChoice"><img class="trueImg" id="trueImg"></div>
+      <div class="fill2"></div>
     </div>
     <div>
       <h2 id="answerBox">
-        
+
       </h2>
     </div>
     <div class="board" id="listOfMapGuesses">
@@ -64,16 +120,16 @@
         <div class="category"><span class="cata">Callout</span></div>
         <div class="category"><span class="cata">Location</span></div>
       </div>
-      <!-- <div class="row" id="r2">
-        <div class="tile"><span class="hint"></span></div>
-        <div class="tile"><span class="hint"></span></div>
-        <div class="tile"><span class="hint"></span></div>
-      </div>-->
+      <div class="row" id="r2">
+        <div class="tile"><span class="hint">test</span></div>
+        <div class="tile"><span class="hint">test</span></div>
+        <div class="tile"><span class="hint">test</span></div>
+      </div>
     </div>
   </div>
   <a href="/guessAbility">guessAbility</a>
 
-  
-</body>
-</html>
 
+</body>
+
+</html>
