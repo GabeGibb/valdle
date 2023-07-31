@@ -63,7 +63,7 @@ button{
         white => #ece8e1
 */
 
-.btn, .tile {
+.btn {
     /* Clean style */
     -moz-appearance: none;
     -webkit-appearance: none;
