@@ -38,12 +38,17 @@ function guessGunSkinTime(){
 
     $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
 
-    $('#weaponSeparator').removeAttr('hidden');
+    $('#weaponSkinPrompt').removeAttr('hidden');
     jQuery('<div>', {
         id:'fullListOfGuesses'
     }).appendTo($('#gameArea'));
 
     makeButtons();
+
+    setTimeout(() => {
+        document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      }, 500);
+
 }
 
 function setImage(){
