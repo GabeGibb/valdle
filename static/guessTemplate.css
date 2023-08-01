@@ -136,11 +136,11 @@
 }
 
 .correctGuess{
-    background-color: green;
+    background-color: #74CB71;
 }
 
 .wrongGuess{
-    background-color: rgb(255, 0, 0);
+    background-color: #ff4655;
 }
 
 .guessImg{
@@ -206,11 +206,11 @@
 }
 
 .correctGuessName{
-    background-color: green;
+    background-color: #74CB71;
 }
 
 .incorrectGuessName{
-    background-color: red;
+    background-color: #ff4655;
 }
 
 #guessText{
