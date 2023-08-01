@@ -105,7 +105,6 @@ function validateGuess(){
         }
         
     }
-    // filterFunction();
 }
 
 function printVictoryMessage(){
@@ -115,7 +114,7 @@ function printVictoryMessage(){
 function isCorrectOption(userInput){
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
-    guessParent.appendChild(newDiv);
+    guessParent.prepend(newDiv);
 
     let optionAnswer = dataList[randIndex]["displayName"];
 

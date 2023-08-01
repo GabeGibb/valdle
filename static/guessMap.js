@@ -16,7 +16,6 @@ let calloutMaps = [];
 function makeCalloutDiv(callout, mapName) {
     let div = document.createElement("div");
 
-    // callout['location']['x'], callout['location']['y'], callout['regionName']
     let x = callout['location']['x'];
     let y = callout['location']['y'];
     let region = callout['regionName'];
@@ -36,7 +35,7 @@ function makeCalloutDiv(callout, mapName) {
         win = false;
 
         let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
-        listOfMapGuesses.append(currRow);
+        listOfMapGuesses.prepend(currRow);
         currRow.classList.add("row");
 
         let counter = 0;
