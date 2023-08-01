@@ -131,6 +131,7 @@
     text-align:center;
     position: relative;
     top: 45px;
+    padding-bottom: 70px;
 
 }
 
@@ -217,9 +218,8 @@
     font-size: 20px;
 }
 
-#weaponSeparator{
+#weaponSkinPrompt{
     text-align: center;
-    padding-top: 50px;
     /* padding-bottom: 10px; */
     /* height: 10px; */
 }

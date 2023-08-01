@@ -107,10 +107,6 @@ function validateGuess(){
     }
 }
 
-function printVictoryMessage(){
-    $('#victoryMessage').text('nice');
-}
-
 function isCorrectOption(userInput){
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
@@ -132,7 +128,7 @@ function isCorrectOption(userInput){
     if(optionAnswer == userInput){
         newDiv.classList.add("correctGuess")
         $('#dropdown').remove();
-        printVictoryMessage();
+        // printVictoryMessage();
         displayPartTwo();
     }
     else{
