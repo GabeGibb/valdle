@@ -16,7 +16,6 @@ $.get(weaponUrl, function(data, status){ //url defined in current webpage js fil
 
 
 function curGamemode(){
-    // dataList = dataList[randIndex]['skins']
     setImage();
 }
 
@@ -31,6 +30,7 @@ function displayPartTwo(){
 }
 
 function guessGunSkinTime(){
+    console.log('first')
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
     
@@ -48,6 +48,12 @@ function guessGunSkinTime(){
 }
 
 function setImage(){
+    let imgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
+    if (imgSrc == null){
+        console.log( dataList[randIndex]['skins'][skinIndex])
+        console.log(dataList)
+        imgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
+    }
     guessImage.src = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
 }
 
