@@ -24,6 +24,14 @@ let divideFactor = 1000 / mapSize;
 let calloutMap = $('#mapChoice').clone();
 let calloutMaps = [];
 
+
+function tileAnimation(currRow, tileDiv, delayAmount){
+    setTimeout(() => {
+        currRow.appendChild(tileDiv);
+        tileDiv.animate(tileSpin, tileSpinTiming);
+    }, delayAmount);
+}
+
 function makeCalloutDiv(callout, mapName) {
     let div = document.createElement("div");
 
@@ -51,25 +59,25 @@ function makeCalloutDiv(callout, mapName) {
 
         let counter = 0;
         for (let j = 0; j < 3; j++) { //creates three tiles per row
-            setTimeout(() => { 
-                tileDiv = document.createElement("div");
-                textSpan = document.createElement("span");
-                tileDiv.classList.add("tile");
-                textSpan.classList.add("hint");
-                tileDiv.appendChild(textSpan);
-                currRow.appendChild(tileDiv);
+            // setTimeout(() => { 
+            tileDiv = document.createElement("div");
+            textSpan = document.createElement("span");
+            tileDiv.classList.add("tile");
+            textSpan.classList.add("hint");
+            tileDiv.appendChild(textSpan);
 
-                if (guess[j] == answer[j]) {
-                    tileDiv.classList.add('green');
-                    counter++
-                }
-                else {
-                    tileDiv.classList.add('red');
-                }
-                let text = document.createTextNode(guess[j]);
-                textSpan.appendChild(text);
-                tileDiv.animate(tileSpin, tileSpinTiming);
-            }, j * 500);
+            if (guess[j] == answer[j]) {
+                tileDiv.classList.add('green');
+                counter++;
+            }
+            else {
+                tileDiv.classList.add('red');
+            }
+            let text = document.createTextNode(guess[j]);
+            textSpan.appendChild(text);
+            
+            tileAnimation(currRow, tileDiv, j * 500);
+
         }
         zoomOutMap();
         if (counter == 3) {
