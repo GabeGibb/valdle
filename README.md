@@ -1,4 +1,4 @@
-# Website (loads slow) https://valdle-nmdu.onrender.com/
+# Website (loads slow) [valdle.gg](https://valdle.gg/)
 
 # Setup Guide
 - Download python (ours is 3.10.6 but most recent versions should work)
