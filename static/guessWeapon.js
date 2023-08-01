@@ -30,7 +30,6 @@ function displayPartTwo(){
 }
 
 function guessGunSkinTime(){
-    console.log('first')
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
     

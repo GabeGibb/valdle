@@ -43,8 +43,10 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
         }
         whatAbilityNameDiv.appendChild(button); //appends button to div
     }
+    setTimeout(() => {
+        partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      }, 500);
 
-    partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
 //----------------
