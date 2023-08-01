@@ -6,7 +6,9 @@ body{
     padding: 0px;
     overflow-x: hidden;
     font-family: 'VALORANT', sans-serif;
-    /* background-image: url('https://whatifgaming.com/wp-content/uploads/2023/03/Mizuri-Jett-Logo.jpg.png'); */
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSea7P65AsQIZxEukPuaplbza-3w4jf70GEiQ&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .navbar {
