@@ -3,7 +3,6 @@ let url = "static/weapons.json";
 let weaponUrl = window.location.href + '/weaponOfDay';
 
 let dropdownClone = $('#dropdown').clone();
-
 let skinIndex;
 
 // jQuery.ajaxSetup({async:false});
@@ -33,8 +32,10 @@ function guessGunSkinTime(){
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
 
-    animateFullImage();
-    
+    let imgClone = document.getElementsByClassName('guessImageDiv')[0].cloneNode(true)
+    imgClone.children[0].style.clipPath = 'inset(' + 0 + '%)';
+    document.getElementById('gameArea').appendChild(imgClone)
+
     dropdownClone.appendTo('#gameArea');
     $('#searchInput').attr('placeholder','Search Weapon Skin..');
 
@@ -55,12 +56,7 @@ function guessGunSkinTime(){
 
 function setImage(){
     let imgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
-    if (imgSrc == null){
-        console.log( dataList[randIndex]['skins'][skinIndex])
-        console.log(dataList)
-        imgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
-    }
-    guessImage.src = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
+    guessImage.src = imgSrc
     zoomOutMap();
 }
 
@@ -70,20 +66,6 @@ function modeWrongActions(){
 
 let insetValue = 30;
 
-// function decreaseInset(){
-//     setTimeout(() => {
-//         document.getElementById("guessImage").style.clipPath  = 'inset(' + insetValue + '%)';
-//         insetValue -= 0.01
-//     }, 10);
-// }
-
-function animateFullImage(){
-    document.getElementById("guessImage").style.clipPath = 'inset(' + 0 + '%)';
-    // while(insetValue >= 0){
-    //     decreaseInset();
-        
-    // }
-}
 
 function setScaleToInset() {
     // let mapImg = document.getElementById("guessImg");
@@ -98,7 +80,6 @@ function zoomOutMap() {
     }
     insetValue -= 2.5;
     let guessImg = document.getElementById("guessImage");
-    console.log(guessImg)
     guessImg.style.clipPath = 'inset(' + insetValue + '%)';
     setScaleToInset();
 }
