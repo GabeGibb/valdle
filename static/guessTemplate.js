@@ -181,3 +181,10 @@ function removeOption(name){
         button[index].remove();
     }
 }
+
+
+// function createNextPageBox(){
+//     let nextPageBox = $('<div id="nextPageBox"><div id="victoryMessage"></div><div id="correctGuess"></div><div id="nextPageButton"></div></div>')
+//     $('body').append(nextPageBox)
+// }
+// createNextPageBox();

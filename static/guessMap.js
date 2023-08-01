@@ -88,8 +88,6 @@ function makeCalloutDiv(callout, mapName) {
 
         if (win) {
             gameOver = true;
-            let answerBox = document.getElementById("answerBox");
-            answerBox.innerText = answer;
             clearMap();
 
             let mapImg = document.getElementById("curMap");
