@@ -29,6 +29,9 @@ def guessQuote():
 def guessWeapon():
     return render_template('guessWeapon.html')
 
+@app.route('/about')
+def aboutPage():
+    return render_template('about.html')
 
 @app.errorhandler(404) 
 def default_handler(e):
