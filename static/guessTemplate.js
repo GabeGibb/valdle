@@ -16,6 +16,15 @@
 // "https://valorant-api.com/v1/agents?isPlayableCharacter=true"
 // "https://valorant-api.com/v1/bundles"
 
+const tileSpin = [
+    { transform: "rotateY(50deg)", opacity: 0},
+    { transform: "rotateY(0) ", opacity: 1 },
+  ];
+
+const tileSpinTiming = {
+    duration: 500,
+    iterations: 1,
+  };
 
 let dataList;
 var randIndex;
@@ -96,6 +105,12 @@ function filterFunction() {
     }
 }
 
+function animateGuess(parent, child, delayAmount){
+    setTimeout(() => {
+        parent.prepend(child);
+        child.animate(tileSpin, tileSpinTiming);
+    }, delayAmount);
+}
 
 function validateGuess(){
     let userInput = document.getElementById("searchInput")
@@ -110,7 +125,6 @@ function validateGuess(){
 function isCorrectOption(userInput){
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
-    guessParent.prepend(newDiv);
 
     let optionAnswer = dataList[randIndex]["displayName"];
 
@@ -139,7 +153,8 @@ function isCorrectOption(userInput){
         filterFunction();
     }
     newDiv.classList.add("individualGuesses");
-   
+    animateGuess(guessParent, newDiv, 200);
+    
 }
 
 function findUserIndex(userInput){

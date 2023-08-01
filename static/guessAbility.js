@@ -27,6 +27,7 @@ function removeRandTile(){
 }
 
 function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
+    winConfetti();
     revealTiles();
     partTwoDisplay = document.getElementById("partTwoDisplay");
     $("#partTwoDisplay").show();
@@ -87,7 +88,7 @@ function isCorrectAbilityName(button, currAbility){
         canGuessAbilityName = false;
         // $('#finalVictoryMessage').text('yippie!');
         
-        winConfetti();
+        // winConfetti();
         
     }
     else if (canGuessAbilityName){
