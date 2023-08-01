@@ -54,7 +54,6 @@ def getQuote():
     quoteOfDay['quote'] = qInfo['quote'] 
     quoteOfDay['displayName'] = data[index]['displayName']
     
-    f.close()
     return quoteOfDay
 
 
