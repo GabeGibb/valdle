@@ -140,6 +140,7 @@ function isCorrectOption(userInput){
         $('#searchInput').val('');
         removeOption(userInput);
         modeWrongActions();
+        filterFunction();
     }
     newDiv.classList.add("individualGuesses");
    
