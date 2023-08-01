@@ -32,6 +32,8 @@ function displayPartTwo(){
 function guessGunSkinTime(){
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
+
+    animateFullImage();
     
     dropdownClone.appendTo('#gameArea');
     $('#searchInput').attr('placeholder','Search Weapon Skin..');
@@ -59,9 +61,44 @@ function setImage(){
         imgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
     }
     guessImage.src = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
+    zoomOutMap();
 }
 
 function modeWrongActions(){
-    
+    zoomOutMap();
 }
 
+let insetValue = 30;
+
+// function decreaseInset(){
+//     setTimeout(() => {
+//         document.getElementById("guessImage").style.clipPath  = 'inset(' + insetValue + '%)';
+//         insetValue -= 0.01
+//     }, 10);
+// }
+
+function animateFullImage(){
+    document.getElementById("guessImage").style.clipPath = 'inset(' + 0 + '%)';
+    // while(insetValue >= 0){
+    //     decreaseInset();
+        
+    // }
+}
+
+function setScaleToInset() {
+    // let mapImg = document.getElementById("guessImg");
+    // let small = mapSize * (100 - (2 * insetValue)) / 100
+    // let big = mapSize;
+    // mapImg.style.scale = big / small
+}
+
+function zoomOutMap() {
+    if (insetValue <= 0) {
+        return;
+    }
+    insetValue -= 2.5;
+    let guessImg = document.getElementById("guessImage");
+    console.log(guessImg)
+    guessImg.style.clipPath = 'inset(' + insetValue + '%)';
+    setScaleToInset();
+}
