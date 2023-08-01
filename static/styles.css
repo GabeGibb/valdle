@@ -1,14 +1,23 @@
 /* Genric Styles */
 
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+
 body{
     background-color: #000000;
     margin: 0px;
     padding: 0px;
+    height: 100%;
     overflow-x: hidden;
     font-family: 'VALORANT', sans-serif;
     /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSea7P65AsQIZxEukPuaplbza-3w4jf70GEiQ&usqp=CAU');
     background-repeat: no-repeat;
     background-size: cover; */
+
+    /* background-image: linear-gradient(black, 90%, #fa4454); */
 }
 
 .navbar {
