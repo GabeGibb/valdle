@@ -33,7 +33,6 @@ function displayPartTwo(){
 function guessGunSkinTime(){
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
-    // randIndex = data['skinRandIndex'];
     
     dropdownClone.appendTo('#gameArea');
     $('#searchInput').attr('placeholder','Search Weapon Skin..');
