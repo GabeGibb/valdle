@@ -106,26 +106,7 @@ button{
     
   }
   
-  .btn::before,
-  .btn::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0; left: 0;
-    height: calc(50% - 5px);
-    border: 1px solid var(--border-color);
-    transition: all .15s ease;
-  }
-  
-  .btn::before {
-    top: 0;
-    border-bottom-width: 0;
-  }
-  
-  .btn::after {
-    bottom: 0;
-    border-top-width: 0;
-  }
+
   
   .btn:active,
   .btn:focus {
