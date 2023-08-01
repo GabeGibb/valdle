@@ -7,6 +7,17 @@ let win;
 let imgUrl;
 
 
+//animations
+const tileSpin = [
+    { transform: "rotateY(50deg)", opacity: 0},
+    { transform: "rotateY(0) ", opacity: 1 },
+  ];
+
+const tileSpinTiming = {
+    duration: 500,
+    iterations: 1,
+  };
+
 let mapSize = 320;
 let divideFactor = 1000 / mapSize;
 
@@ -41,23 +52,25 @@ function makeCalloutDiv(callout, mapName) {
 
         let counter = 0;
         for (let j = 0; j < 3; j++) { //creates three tiles per row
-            tileDiv = document.createElement("div");
-            textSpan = document.createElement("span");
-            tileDiv.classList.add("tile");
-            textSpan.classList.add("hint");
-            tileDiv.appendChild(textSpan);
-            currRow.appendChild(tileDiv);
+            setTimeout(() => { 
+                tileDiv = document.createElement("div");
+                textSpan = document.createElement("span");
+                tileDiv.classList.add("tile");
+                textSpan.classList.add("hint");
+                tileDiv.appendChild(textSpan);
+                currRow.appendChild(tileDiv);
 
-            if (guess[j] == answer[j]) {
-                tileDiv.classList.add('green');
-                counter++
-            }
-            else {
-                tileDiv.classList.add('red');
-            }
-            let text = document.createTextNode(guess[j]);
-            textSpan.appendChild(text);
-
+                if (guess[j] == answer[j]) {
+                    tileDiv.classList.add('green');
+                    counter++
+                }
+                else {
+                    tileDiv.classList.add('red');
+                }
+                let text = document.createTextNode(guess[j]);
+                textSpan.appendChild(text);
+                tileDiv.animate(tileSpin, tileSpinTiming);
+            }, j * 500);
         }
         zoomOutMap();
         if (counter == 3) {
