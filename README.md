@@ -26,4 +26,5 @@ Given just a picture, can you use your Valorant map knowledge to try and guess t
 - Kelly Serafico
 - Matthew Teng
 - Eleas Vrahnos
+- Anna Lee
 - Peter Lu
