@@ -23,6 +23,7 @@ function displayPartTwo(){
     if (secondPartStarted){
         winConfetti();
     }else{
+        winConfetti();
         guessGunSkinTime();
         secondPartStarted = true;
     }
