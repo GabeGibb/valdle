@@ -24,7 +24,7 @@ let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
         winConfetti();
-        createNextPageBox('');
+        // createNextPageBox('');
     }else{
         winConfetti();
         guessGunSkinTime();
@@ -52,9 +52,10 @@ function guessGunSkinTime(){
 
     makeButtons();
 
-    setTimeout(() => {
-        document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-      }, 500);
+    createNextPageBox('');
+    // setTimeout(() => {
+    //     document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    //   }, 500);
 
 }
 
