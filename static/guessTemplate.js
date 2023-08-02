@@ -185,7 +185,7 @@ function removeOption(name){
 }
 
 
-function createNextPageBox(){
+function createNextPageBox(nextGame){
     let nextPageBox = $('<div id="nextPageBox">\
                             <div id="victoryMessage"><p>GG!</p></div>\
                             <div id="correctGuessDiv">\
@@ -194,8 +194,26 @@ function createNextPageBox(){
                             </div>\
                             <div id="nextPageButton"></div>\
                         </div>');
+    let nextGameText = '';
+    let nextPageUrl = ''
+    if(nextGame != ''){
+        nextGameText = 'Guess the ' + nextGame;
+        nextPageUrl = 'guess' + nextGame;
+    }else{
+        nextGameText = 'Homepage';
+    }
+    
+    let nextButton = $('<img class="icon" src="static/images/' + nextGame + 'Icon.png">\
+                        <button class="btn btn--light" onclick="location.href=\'/' + nextPageUrl + '\'">\
+                            <span class="btn__inner">\
+                                <span class="btn__slide"></span>\
+                                <span class="btn__content">' + nextGameText + '</span>\
+                            </span>\
+                        </button>');
+
     
     $('body').append(nextPageBox)
+    $('#nextPageButton').append(nextButton)
     console.log($('#correctImg'))
     console.log(correctImgSrc)
     $('#correctImg').attr('src', correctImgSrc)

@@ -24,6 +24,7 @@ let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
         winConfetti();
+        createNextPageBox('');
     }else{
         winConfetti();
         guessGunSkinTime();

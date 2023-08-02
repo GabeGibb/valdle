@@ -48,6 +48,7 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     setTimeout(() => {
         partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }, 500);
+      createNextPageBox('Quote');
 
 }
 

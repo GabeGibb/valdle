@@ -172,6 +172,15 @@
     position:relative;
 }
 
+#correctGuess{
+    color:azure;
+    font-size: 40px;
+    text-align:center;
+    z-index: 100;
+    top: 15px;
+    position:relative;
+}
+
 #finalVictoryMessage{
     color:azure;
     font-size: 50px;
@@ -227,7 +236,8 @@
 
 #nextPageBox{
     width: 500px;
-    min-height: 300px;
+    min-height: 400px;
+    max-height:max-content;
     background-color: #74CB71;
     display: block;
     margin-left: auto;
