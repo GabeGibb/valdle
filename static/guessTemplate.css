@@ -224,3 +224,12 @@
     /* height: 10px; */
 }
 
+
+#nextPageBox{
+    width: 500px;
+    min-height: 300px;
+    background-color: #74CB71;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

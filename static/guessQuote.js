@@ -18,7 +18,8 @@ $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
 
 
 function curGamemode(){
-    
+    correctImgSrc = dataList[randIndex]['displayIcon'];
+    correctName = dataList[randIndex]['displayName'];
 }
 
 function displayPartTwo(){

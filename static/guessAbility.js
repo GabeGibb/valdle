@@ -17,6 +17,8 @@ function curGamemode(){ // Gets called on page load
     var abilityIndex = randomizeAbilityIndex();
     createRandAbility(abilityIndex);
     removeRandTile();
+    correctImgSrc = dataList[randIndex]["displayIcon"];
+    correctName = dataList[randIndex]["displayName"];
 }
 
 function removeRandTile(){

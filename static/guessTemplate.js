@@ -29,6 +29,8 @@ const tileSpinTiming = {
 let dataList;
 var randIndex;
 var guessImage;
+let correctImgSrc;
+let correctName;
 
 // jQuery.ajaxSetup({async:false});
 function loadTemplate(url, showButtonImages){
@@ -183,8 +185,22 @@ function removeOption(name){
 }
 
 
-// function createNextPageBox(){
-//     let nextPageBox = $('<div id="nextPageBox"><div id="victoryMessage"></div><div id="correctGuess"></div><div id="nextPageButton"></div></div>')
-//     $('body').append(nextPageBox)
-// }
-// createNextPageBox();
+function createNextPageBox(){
+    let nextPageBox = $('<div id="nextPageBox">\
+                            <div id="victoryMessage"><p>GG!</p></div>\
+                            <div id="correctGuessDiv">\
+                                <img id="correctImg">\
+                                <p id="correctGuess">\
+                            </div>\
+                            <div id="nextPageButton"></div>\
+                        </div>');
+    
+    $('body').append(nextPageBox)
+    console.log($('#correctImg'))
+    console.log(correctImgSrc)
+    $('#correctImg').attr('src', correctImgSrc)
+    $('#correctGuess').text(correctName)
+}
+// setTimeout(() => {
+//     createNextPageBox();
+//   }, "1000");
