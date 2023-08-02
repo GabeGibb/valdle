@@ -214,10 +214,12 @@ function createNextPageBox(nextGame){
     
     $('body').append(nextPageBox)
     $('#nextPageButton').append(nextButton)
-    console.log($('#correctImg'))
-    console.log(correctImgSrc)
     $('#correctImg').attr('src', correctImgSrc)
     $('#correctGuess').text(correctName)
+
+    setTimeout(() => {
+        document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }, 500);
 }
 // setTimeout(() => {
 //     createNextPageBox();
