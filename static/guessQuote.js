@@ -4,7 +4,7 @@ let quoteUrl = window.location.href + '/quoteOfDay';
 
 let audioFile;
 let quote;
-var audioHintTries = 1;
+var audioHintTries = 5;
 
 // jQuery.ajaxSetup({async:false});
 $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
@@ -27,6 +27,7 @@ function addAudioElement(audioSrc) {
     const audioContainer = document.getElementById('audioContainer');
     const audioPlayer = document.createElement('audio');
     audioPlayer.src = audioSrc;
+    audioPlayer.volume = 0.5;
     audioContainer.appendChild(audioPlayer);
 
     playAudioButton.addEventListener('click', function() {
