@@ -196,7 +196,7 @@ function createNextPageBox(nextGame){
                         </div>');
     let nextGameText = '';
     let nextPageUrl = ''
-    if(nextGame != ''){
+    if(nextGame != 'Home'){
         nextGameText = 'Guess the ' + nextGame;
         nextPageUrl = 'guess' + nextGame;
     }else{
