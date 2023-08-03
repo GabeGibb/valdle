@@ -255,3 +255,9 @@
     max-width: 50%;
     justify-content: center;
 }
+
+#nextPageButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
