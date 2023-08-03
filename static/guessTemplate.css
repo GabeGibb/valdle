@@ -156,6 +156,7 @@
     font-size: 20px;
     text-align: center;
 }
+
 .individualGuesses{
     /* text-align:center; */
     /* padding:20px; */
@@ -224,8 +225,29 @@
 }
 
 #guessText{
-    color: aliceblue;
+    color: #fa4454;
     font-size: 20px;
+}
+
+.hintDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#audioHintText {
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.playAudioButton {
+    background-color: transparent;
+    border: none;
+}
+
+#imgAudioButton {
+    height: 60px;
 }
 
 #weaponSkinPrompt{
