@@ -9,7 +9,7 @@
     margin-right: 10px;
 }
 
-#map, #ability, #quote, #bundle {
+#map, #ability, #quote, #weapon, #about {
     display: flex;
     align-items: center;
     margin-top: 5px;
