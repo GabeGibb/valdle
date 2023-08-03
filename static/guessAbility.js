@@ -48,7 +48,6 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     setTimeout(() => {
         partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }, 500);
-      createNextPageBox('Quote');
 
 }
 
@@ -94,7 +93,7 @@ function isCorrectAbilityName(button, currAbility){
         // $('#finalVictoryMessage').text('yippie!');
         
         // winConfetti();
-        
+        createNextPageBox('Quote');
     }
     else if (canGuessAbilityName){
         button.classList.add("incorrectGuessName")

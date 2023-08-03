@@ -84,4 +84,6 @@ def getWeapon():
     weaponOfDay = {}
     weaponOfDay['weaponRandIndex'] = weaponIndex
     weaponOfDay['skinRandIndex'] = skinIndex
+    weaponOfDay['gunName'] =  data[weaponIndex]['displayName']
+    weaponOfDay['skinName'] =  data[weaponIndex]['skins'][skinIndex]['displayName']
     return weaponOfDay
