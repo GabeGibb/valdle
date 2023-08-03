@@ -4,7 +4,7 @@ let quoteUrl = window.location.href + '/quoteOfDay';
 
 let audioFile;
 let quote;
-var audioHintTries = 5;
+var audioHintTries = 1;
 
 // jQuery.ajaxSetup({async:false});
 $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
@@ -12,7 +12,7 @@ $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     console.log(data)
     randIndex = data['randIndex']
     quote = data['quote'];
-    audioFile = data['audioFile'];
+    audioFile = data['audioFile'].slice(0, -34);
 
     $('#guessText').text(quote);
     $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
