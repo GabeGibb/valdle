@@ -8,15 +8,15 @@ let imgUrl;
 
 
 //animations
-const tileSpin = [
-    { transform: "rotateY(50deg)", opacity: 0},
-    { transform: "rotateY(0) ", opacity: 1 },
-  ];
+// const tileSpin = [
+//     { transform: "rotateY(50deg)", opacity: 0},
+//     { transform: "rotateY(0) ", opacity: 1 },
+//   ];
 
-const tileSpinTiming = {
-    duration: 500,
-    iterations: 1,
-  };
+// const tileSpinTiming = {
+//     duration: 500,
+//     iterations: 1,
+//   };
 
 let mapSize = 320;
 let divideFactor = 1000 / mapSize;
@@ -94,6 +94,9 @@ function makeCalloutDiv(callout, mapName) {
             mapImg.src = imgUrl;
 
             winConfetti();
+            correctImgSrc = imgUrl;
+            correctName = answer;
+            createNextPageBox('Ability')
 
         }
         div.remove();

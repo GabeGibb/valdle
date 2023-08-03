@@ -243,3 +243,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+#correctImg{
+    max-width: 50%;
+}
