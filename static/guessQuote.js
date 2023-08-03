@@ -55,7 +55,7 @@ function modeWrongActions(){
         $('.hintDiv').append("<div id='audioContainer' type='audio/mpeg'></div> <button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button>");
         addAudioElement(audioFile);
     }
-    else {
+    else if (audioHintTries > 0) {
         $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
     }
 }
