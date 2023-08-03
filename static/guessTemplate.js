@@ -196,9 +196,9 @@ function createNextPageBox(nextGame){
                         </div>');
     let nextGameText = '';
     let nextPageUrl = ''
-    if(nextGame != 'Home'){
+    if(nextGame != 'home'){
         nextGameText = 'Guess the ' + nextGame;
-        nextPageUrl = 'guess' + nextGame;
+        nextPageUrl = 'guess' + nextGame.charAt(0).toUpperCase() + nextGame.slice(1);
     }else{
         nextGameText = 'Homepage';
     }

@@ -45,7 +45,7 @@ function curGamemode(){
 function displayPartTwo(){
     //WHAT TO DO ON WINNING FIRST MODE
     winConfetti();
-    createNextPageBox('Weapon');
+    createNextPageBox('weapon');
 }
 
 function modeWrongActions(){

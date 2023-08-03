@@ -52,7 +52,7 @@ function guessGunSkinTime(){
 
     makeButtons();
 
-    createNextPageBox('Home');
+    createNextPageBox('home');
     // setTimeout(() => {
     //     document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     //   }, 500);
