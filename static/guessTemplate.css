@@ -10,7 +10,7 @@
 }
 
 
-.guessImageDiv {
+.guessImageDiv, .guessTextDiv {
     position: relative;
     display: flex; /* Use flexbox to center the content */
     justify-content: center; /* Horizontally center the content */
@@ -18,6 +18,14 @@
 
 #guessImage {
     height: 100px;
+}
+
+.guessTextDiv{
+    /* max-width: 800px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
 
 .covers {
@@ -283,3 +291,4 @@
     justify-content: center;
     align-items: center;
 }
+
