@@ -7,17 +7,6 @@ let win;
 let imgUrl;
 
 
-//animations
-// const tileSpin = [
-//     { transform: "rotateY(50deg)", opacity: 0},
-//     { transform: "rotateY(0) ", opacity: 1 },
-//   ];
-
-// const tileSpinTiming = {
-//     duration: 500,
-//     iterations: 1,
-//   };
-
 let mapSize = 320;
 let divideFactor = 1000 / mapSize;
 
@@ -201,6 +190,7 @@ mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus'
 $.get("static/maps.json", function (data, status) {
     maps = data;
     randomize(mapChoices[Math.floor(Math.random() * mapChoices.length)])
+    console.log(answer)
     zoomOutMap();
     createMaps();
 });
