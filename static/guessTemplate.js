@@ -67,6 +67,7 @@ function makeButtons(showButtonImages){
         names.appendChild(button); //appends button to div
     }
     $("#optionNames").hide();
+    $('#fullListOfGuesses').empty();
 }
 
 function showButtons(){
@@ -126,6 +127,8 @@ function validateGuess(){
 }
 
 function isCorrectOption(userInput){
+
+    console.log('wat')
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
 
@@ -154,6 +157,7 @@ function isCorrectOption(userInput){
         modeWrongActions();
         filterFunction();
     }
+    
     newDiv.classList.add("individualGuesses");
     animateGuess(guessParent, newDiv, 200);
     

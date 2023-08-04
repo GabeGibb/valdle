@@ -50,13 +50,18 @@ function guessGunSkinTime(){
         id:'fullListOfGuesses'
     }).appendTo($('#gameArea'));
 
-    $('#fullListOfGuesses').empty();
+    $('#fullListOfGuesses').hide()
 
-    makeButtons();
+
+    makeButtons(true);
 
     setTimeout(() => {
         document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        $('#fullListOfGuesses').empty();
+        $('#fullListOfGuesses').show()
       }, 500);
+
+      
 
 }
 

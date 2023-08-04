@@ -75,6 +75,7 @@ def getWeapon():
     f = open('static/weapons.json')
     data = load(f)['data']
     weaponIndex = randint(0, len(data)-1)
+    # weaponIndex = 17
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
     # print(data[weaponIndex]['skins'][skinIndex]['displayIcon'])
     while('Standard' in data[weaponIndex]['skins'][skinIndex]['displayName'] or 'Random' in data[weaponIndex]['skins'][skinIndex]['displayName'] or data[weaponIndex]['skins'][skinIndex]['displayIcon'] == None):
