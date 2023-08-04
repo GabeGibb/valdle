@@ -158,6 +158,13 @@
     left: 5px;
 }
 
+.guessText{
+    position:relative;
+    top: -25px;
+    font-size: 20px;
+    text-align: center;
+}
+
 #guessText{
     text-align: center;
 }
