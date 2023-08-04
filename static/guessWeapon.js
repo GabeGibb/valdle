@@ -15,9 +15,9 @@ $.get(weaponUrl, function(data, status){ //url defined in current webpage js fil
 
 
 function curGamemode(){
-    setImage();
     correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
-    correctName = dataList[randIndex]['skins'][skinIndex]['displayName']
+    correctName = dataList[randIndex]['skins'][skinIndex]['displayName'];
+    setImage();
 }
 
 let secondPartStarted = false;
@@ -69,22 +69,14 @@ function modeWrongActions(){
     zoomOutMap();
 }
 
-let insetValue = 30;
+let insetValue = 35;
 
-
-function setScaleToInset() {
-    // let mapImg = document.getElementById("guessImg");
-    // let small = mapSize * (100 - (2 * insetValue)) / 100
-    // let big = mapSize;
-    // mapImg.style.scale = big / small
-}
 
 function zoomOutMap() {
     if (insetValue <= 0) {
         return;
     }
     insetValue -= 2.5;
-    let guessImg = document.getElementById("guessImage");
-    guessImg.style.clipPath = 'inset(' + insetValue + '%)';
-    setScaleToInset();
+    // let guessImg = document.getElementById("guessImage");
+    guessImage.style.clipPath = 'inset(' + insetValue + '%)';
 }
