@@ -53,7 +53,7 @@ function guessGunSkinTime(){
     $('#fullListOfGuesses').hide()
 
 
-    makeButtons(true);
+    makeButtons(false);
 
     setTimeout(() => {
         document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
