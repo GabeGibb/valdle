@@ -9,6 +9,10 @@ agents = ['Gekko', 'Fade', 'Breach', 'Deadlock', 'Raze', 'Chamber', 'KAYO', 'Sky
 
 app = Flask(__name__)
 
+@app.route('/riot.txt')
+def riot():
+    return send_file('riot.txt')
+
 @app.route('/')
 def valdle():
     return render_template('valdle.html')
