@@ -74,7 +74,7 @@ function showButtons(){
     $("#optionNames").show();
 }
 
-$(document).on("click", function(event){
+$(document).on("mousedown", function(event){
     var $trigger = $('#dropdown');
     if($trigger !== event.target && !$trigger.has(event.target).length){
         $("#optionNames").hide();
