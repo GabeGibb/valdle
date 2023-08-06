@@ -83,21 +83,24 @@ function modeWrongActions() {
 
 let canGuessAbilityName = true;
 function isCorrectAbilityName(button, currAbility){
+    if (!canGuessAbilityName){
+        return;
+    }
     let correctAbilityName = dataList[randIndex]["abilities"][randAbility]["displayName"];
     
-    if(currAbility == correctAbilityName && canGuessAbilityName){
+    if(currAbility == correctAbilityName){
         button.classList.add("correctGuessName")
         whatAbilityNameDiv = document.getElementById("whatName");
         whatAbilityNameDiv.disabled = true;
-        canGuessAbilityName = false;
-        // $('#finalVictoryMessage').text('yippie!');
         
-        // winConfetti();
-        createNextPageBox('Quote');
+        winConfetti();
     }
-    else if (canGuessAbilityName){
+    else{
         button.classList.add("incorrectGuessName")
     }
+
+    canGuessAbilityName = false;
+    createNextPageBox('Quote');
 }
 
 async function revealTiles() {

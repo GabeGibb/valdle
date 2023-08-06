@@ -154,8 +154,8 @@ function isCorrectOption(userInput){
         newDiv.classList.add("wrongGuess")
         $('#searchInput').val('');
         removeOption(userInput);
-        modeWrongActions();
         filterFunction();
+        modeWrongActions();
     }
     
     newDiv.classList.add("individualGuesses");
@@ -196,6 +196,11 @@ function createNextPageBox(nextGame){
                                 <img id="correctImg">\
                                 <p id="correctGuess">\
                             </div>\
+                            <div id="numTriesDiv"><p id="numTries">Tries: </p></div>\
+                            <div "nextValdleDiv">\
+                                <p id="nextValdleText">Next Valdle:</p>\
+                                <p id="nextValdleCountdown">00:00:00</p>\
+                            </div>\
                             <div id="nextPageButton"></div>\
                         </div>');
     let nextGameText = '';
@@ -220,6 +225,7 @@ function createNextPageBox(nextGame){
     $('#nextPageButton').append(nextButton)
     $('#correctImg').attr('src', correctImgSrc)
     $('#correctGuess').text(correctName)
+    $('#numTries').append('0')
 
     setTimeout(() => {
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});

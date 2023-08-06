@@ -23,7 +23,6 @@ function curGamemode(){
 let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
-        winConfetti();
         createNextPageBox('home');
     }else{
         winConfetti();
@@ -71,7 +70,16 @@ function setImage(){
 }
 
 function modeWrongActions(){
-    zoomOutMap();
+    if (secondPartStarted){
+        if($('#dropdown') != null){
+            $('#dropdown').remove();
+            displayPartTwo();
+        }else{
+            winConfetti();
+        }
+    }else{
+        zoomOutMap();
+    }
 }
 
 let insetValue = 35;
