@@ -165,32 +165,22 @@ function clearMap() {
     mapPic.src = '';
 }
 
-function randomize(mapName){
-    for (let i = 0; i < maps.length; i++) {
-        if (maps[i]['displayName'] != mapName) {
-            continue;
-        }
-        answer[0] = maps[i]['displayName'];
-        let randCall = Math.floor(Math.random() * maps[i]['callouts'].length);
-        answer[1] = maps[i]['callouts'][randCall]['regionName']
-        answer[2] = maps[i]['callouts'][randCall]['superRegionName']
 
-        imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
-        let mapImg = document.getElementById("trueImg");
-        mapImg.src = imgUrl;
-    }
-}
+$.get(window.location.href + '/mapOfDay', function (data, status) {
+    answer[0] = data['mapName']
+    answer[1] = data['regionName']
+    answer[2] = data['superRegionName']
 
-
-
-mapChoices = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split']
-
+    imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
+    let mapImg = document.getElementById("trueImg");
+    mapImg.src = imgUrl;
+});
 
 
 $.get("static/maps.json", function (data, status) {
     maps = data;
-    randomize(mapChoices[Math.floor(Math.random() * mapChoices.length)])
     console.log(answer)
     zoomOutMap();
     createMaps();
 });
+

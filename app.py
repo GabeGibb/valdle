@@ -48,10 +48,40 @@ def callout(map, region, superRegion):
     return send_file(path)
 
 
+@app.route('/guessMap/mapOfDay')
+def getMap():
+    f = open('static/maps.json')
+    data = load(f)
+    f.close()
+    data.pop(8)
+
+    index = randint(0, len(data)-1)
+    mapOfDay = {}
+    mapOfDay['mapName'] = data[index]['displayName']
+
+    randCallout = choice(data[index]['callouts'])
+    mapOfDay['regionName'] = randCallout['regionName']
+    mapOfDay['superRegionName'] = randCallout['superRegionName']
+    
+    return mapOfDay
+
+
+
+
+@app.route('/guessAbility/abilityOfDay')
+def getAbility():
+    abilityOfDay = {}
+    index = randint(0, len(agents)-1)
+    abilityOfDay['randIndex'] = index
+    abilityOfDay['displayName'] = agents[index]
+    return abilityOfDay
+
+
 @app.route('/guessQuote/quoteOfDay')
 def getQuote():
     f = open('static/quotes.json')
     data = load(f)
+    f.close()
     index = randint(0, len(data)-1)
     qInfo = choice(data[index]['voiceInfo'])
     
@@ -64,20 +94,13 @@ def getQuote():
     return quoteOfDay
 
 
-@app.route('/guessAbility/abilityOfDay')
-def getAbility():
-    abilityOfDay = {}
-    index = randint(0, len(agents)-1)
-    abilityOfDay['randIndex'] = index
-    abilityOfDay['displayName'] = agents[index]
-    return abilityOfDay
-
 
 # Standard, Random
 @app.route('/guessWeapon/weaponOfDay')
 def getWeapon():
     f = open('static/weapons.json')
     data = load(f)['data']
+    f.close()
     weaponIndex = randint(0, len(data)-1)
     # weaponIndex = 17
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
