@@ -16,14 +16,14 @@ $.get(weaponUrl, function(data, status){ //url defined in current webpage js fil
 
 function curGamemode(){
     correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
-    correctName = dataList[randIndex]['skins'][skinIndex]['displayName'];
+    correctName = dataList[randIndex]['displayName']
     setImage();
 }
 
 let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
-        createNextPageBox('home');
+        // createNextPageBox('home');
     }else{
         winConfetti();
         guessGunSkinTime();
@@ -32,14 +32,17 @@ function displayPartTwo(){
 }
 
 function guessGunSkinTime(){
+    createNextPageBox('home');
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
 
-    let imgClone = document.getElementsByClassName('guessImageDiv')[0].cloneNode(true)
-    imgClone.children[0].style.clipPath = 'inset(' + 0 + '%)';
-    document.getElementById('gameArea').appendChild(imgClone)
+    // let imgClone = document.getElementsByClassName('guessImageDiv')[0].cloneNode(true)
+    // imgClone.children[0].style.clipPath = 'inset(' + 0 + '%)';
+    // document.getElementById('partTwoDiv').appendChild(imgClone)
 
-    dropdownClone.appendTo('#gameArea');
+    $('#weaponSkinPrompt').appendTo('#partTwoDiv')
+    $('#weaponSkinPrompt').show()
+    dropdownClone.appendTo('#partTwoDiv');
     $('#searchInput').attr('placeholder','Search Weapon Skin..');
 
     $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
@@ -47,7 +50,7 @@ function guessGunSkinTime(){
     $('#weaponSkinPrompt').removeAttr('hidden');
     jQuery('<div>', {
         id:'fullListOfGuesses'
-    }).appendTo($('#gameArea'));
+    }).appendTo($('#partTwoDiv'));
 
     $('#fullListOfGuesses').hide()
 

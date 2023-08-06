@@ -32,7 +32,6 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     winConfetti();
     revealTiles();
     partTwoDisplay = document.getElementById("partTwoDisplay");
-    $("#partTwoDisplay").show();
 
     let whatAbilityNameDiv = document.getElementById("whatName")
     for(i = 0; i < dataList[randIndex]["abilities"].length; i++){ 
@@ -48,7 +47,10 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     setTimeout(() => {
         partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }, 500);
-
+    
+      createNextPageBox('Quote');
+    $('#partTwoDisplay').appendTo('#partTwoDiv');
+    $("#partTwoDisplay").show();
 }
 
 //----------------
@@ -100,7 +102,6 @@ function isCorrectAbilityName(button, currAbility){
     }
 
     canGuessAbilityName = false;
-    createNextPageBox('Quote');
 }
 
 async function revealTiles() {

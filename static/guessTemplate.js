@@ -197,6 +197,7 @@ function createNextPageBox(nextGame){
                                 <p id="correctGuess">\
                             </div>\
                             <div id="numTriesDiv"><p id="numTries">Tries: </p></div>\
+                            <div id="partTwoDiv"></div>\
                             <div "nextValdleDiv">\
                                 <p id="nextValdleText">Next Valdle:</p>\
                                 <p id="nextValdleCountdown">00:00:00</p>\
