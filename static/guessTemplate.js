@@ -94,6 +94,12 @@ function addEnter(){
         if(key == 'Enter'){
             validateGuess();
         }
+        if (key == 'ArrowUp'){
+
+        }
+        if (key == 'ArrowDown'){
+            
+        }
     });
 }
 
@@ -201,6 +207,14 @@ function removeOption(name){
     }
 }
 
+function partTwoWin(){
+    $('#partTwoEndText').text('Nice!')
+}
+
+function partTwoLose(){
+    $('#dropdown').remove();
+    $('#partTwoEndText').text('Better Luck Next Time')
+}
 
 function createNextPageBox(nextGame){
     let nextPageBox = $('<div id="nextPageBox">\
