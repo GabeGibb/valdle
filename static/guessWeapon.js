@@ -24,7 +24,7 @@ let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
         winConfetti();
-        $('#partTwoEndText').text('Nice!')
+        partTwoWin();
     }else{
         winConfetti();
         guessGunSkinTime();
@@ -74,8 +74,7 @@ function setImage(){
 
 function modeWrongActions(){
     if (secondPartStarted){
-        $('#dropdown').remove();
-        $('#partTwoEndText').text('Better Luck Next Time')
+        partTwoLose();
         
     }else{
         zoomOutMap();
