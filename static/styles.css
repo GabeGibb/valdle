@@ -175,7 +175,7 @@ button{
   .btn__slide {
     display: block;
     position: absolute;
-    top: 0; bottom: -1px; left: -8px;
+    top: 0; bottom: -1px; left: -15px;
     width: 0;
     background-color: var(--highlight-color);
     transform: skew(-15deg);
@@ -191,7 +191,7 @@ button{
   }
   
   .btn:hover .btn__slide {
-    width: calc(100% + 15px);
+    width: calc(100% + 45px);
   }
   
   .btn:hover .btn__inner::after {
@@ -203,7 +203,6 @@ button{
     --button-text-color: var(--highlight-color);
     --button-inner-border-color: var(--highlight-color);
     --button-text-color-hover: #ece8e1;
-    --button-bits-color-hover: #ece8e1;
   }
 
 /* TEST VAL BUTTON END */

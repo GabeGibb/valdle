@@ -1,3 +1,10 @@
+#websiteSummary {
+    text-align: center;
+    color: #ece8e1;
+    margin: 30px;
+    font-size: 1em;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -15,15 +22,6 @@
     margin-top: 5px;
 }
 
-.gameButton {
-    padding: 10px;
-    padding-top: 17px;
-    border-radius: 8px;
-    width: 275px;
-    font-size: 27px;
-    margin: 5px;
-}
-
 .icon{
     width: 60px;
 }
@@ -34,18 +32,25 @@
 
 .btn__inner {
     min-width: 340px;
-    padding: 25px 0px; 
-  
+    padding: 25px 0px;  
+    display: flex;
+    flex-direction: column;
+    font-family: 'VALORANT', sans-serif;
 }
 
 .btn__content {
-    font-family: 'VALORANT', sans-serif;
-    font-size: 1.5em;
-  }
+    font-size: 1.6em;
+}
 
+.btn__description {
+    font-size: 0.85em;
+    color: #ece8e1;
+    z-index: 1;
+    margin-top: 10px;
+}
 
-  .btn::before,
-  .btn::after {
+.btn::before,
+.btn::after {
     content: '';
     display: block;
     position: absolute;
@@ -53,14 +58,14 @@
     height: calc(50% - 5px);
     border: 1px solid var(--border-color);
     transition: all .15s ease;
-  }
-  
-  .btn::before {
+}
+
+.btn::before {
     top: 0;
     border-bottom-width: 0;
-  }
-  
-  .btn::after {
+}
+
+.btn::after {
     bottom: 0;
     border-top-width: 0;
-  }
+}
