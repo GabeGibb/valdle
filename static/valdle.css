@@ -25,10 +25,6 @@ body {
     margin-top: 5px;
 }
 
-.icon{
-    width: 60px;
-}
-
 .btn {
     min-width: 340px;
 }
@@ -46,7 +42,7 @@ body {
 }
 
 .btn__description {
-    font-size: 0.85em;
+    font-size: 0.9em;
     color: #ece8e1;
     z-index: 1;
     margin-top: 10px;
