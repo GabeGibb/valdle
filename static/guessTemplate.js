@@ -40,6 +40,7 @@ function loadTemplate(url, showButtonImages){
         console.log(dataList)
         curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
         makeButtons(showButtonImages);
+        addEnter();
     });    
 }
 
@@ -91,7 +92,6 @@ function addEnter(){
         }
     });
 }
-addEnter();
 
 let secondPartFilter = false;
 function filterFunction() {
