@@ -97,10 +97,12 @@ function removeActive(){
 
 function addActive(){
     removeActive();
-    if (currentFocus == -1){
+    let curChildren = getCurButtons();
+    if (currentFocus <= -1 || currentFocus >= curChildren.length){
         return;
     }
-    let curChildren = getCurButtons();
+    
+    console.log(currentFocus)
     curChildren[currentFocus].classList.add('autocompleteActive');
     let agent = curChildren[currentFocus].children[curChildren[currentFocus].children.length-1].textContent;
     $('#searchInput').val(agent)
@@ -135,7 +137,7 @@ function goDownAutocomplete(){
         return;
     }
     currentFocus++;
-    if(currentFocus == curChildren.length){
+    if(currentFocus >= curChildren.length){
         currentFocus = -1;
     }
     addActive();
@@ -163,9 +165,7 @@ function addEnter(){
     $('#searchInput').keyup(function(e){
         let key = e['originalEvent']['key'];
 
-        if (key == 'ArrowUp' || key == 'ArrowDown'){
-
-        }
+        if (key == 'ArrowUp' || key == 'ArrowDown'){}
         else{
             filterFunction();
         }
