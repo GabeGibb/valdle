@@ -28,13 +28,17 @@ const tileSpinTiming = {
 
 let dataList;
 var randIndex;
-var guessImage;
 let correctImgSrc;
 let correctName;
 
 // jQuery.ajaxSetup({async:false});
 function loadTemplate(url, showButtonImages){
-    guessImage = document.getElementById("guessImage");
+    $("#guessImage").css({"-khtml-user-select": "none", 
+                            "-o-user-select": "none",
+                            "-moz-user-select": "none",
+                            "-webkit-user-select": "none",
+                            "user-select": "none",
+                            "pointer-events": "none"});
     $.get(url, function(data, status){ //url defined in current webpage js file
         dataList = data["data"];
         console.log(dataList)
