@@ -1,7 +1,11 @@
+body {
+    overflow-y: hidden;
+}
+
 #websiteSummary {
     text-align: center;
     color: #ece8e1;
-    margin: 30px;
+    margin-top: 35px;
     font-size: 1em;
 }
 
@@ -9,7 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
 }
 
 .buttons img {
