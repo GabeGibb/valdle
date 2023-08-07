@@ -87,21 +87,84 @@ $(document).on("mousedown", function(event){
     }
 });
 
+let currentFocus = -1;
+
+function removeActive(){
+    $('#optionNames').children().each( (index, element) => {
+        element.classList.remove('autocompleteActive')
+     });
+}
+
+function addActive(){
+    removeActive();
+    if (currentFocus == -1){
+        return;
+    }
+    let curChildren = getCurButtons();
+    curChildren[currentFocus].classList.add('autocompleteActive');
+}
+
+function getCurButtons(){
+    let curChildren = [];
+    $('#optionNames').children().each( (index, element) => {
+        if(element.style.display != "none"){
+            curChildren.push(element);
+        }
+     });
+    return curChildren;
+}
+
+function goUpAutocomplete(){
+    let curChildren = getCurButtons();
+    if (curChildren.length == 0){
+        currentFocus = -1;
+        return;
+    }
+    currentFocus--;
+    if (currentFocus < -1){
+        currentFocus = curChildren.length - 1;
+    }
+    addActive();
+}
+function goDownAutocomplete(){
+    let curChildren = getCurButtons();
+    if (curChildren.length == 0){
+        currentFocus = -1;
+        return;
+    }
+    currentFocus++;
+    if(currentFocus == curChildren.length){
+        currentFocus = -1;
+    }
+    addActive();
+}
+
 function addEnter(){
+    console.log(currentFocus)
     $('#searchInput').keydown(function(e){
         let key = e['originalEvent']['key'];
         // console.log(key)
         if(key == 'Enter'){
-            validateGuess();
-        }
-        if (key == 'ArrowUp'){
-
-        }
-        if (key == 'ArrowDown'){
+            if(!validateGuess()){
+                // if (currentFocus != -1){
+                //     let curChildren = getCurButtons();
+                //     validateGuess(curChildren[currentFocus]
+                // }
+            }
             
         }
+        if (key == 'ArrowUp'){
+            e.preventDefault();
+            goUpAutocomplete();
+        }
+        if (key == 'ArrowDown'){
+            e.preventDefault();
+            goDownAutocomplete();
+        }
+        console.log(currentFocus)
     });
 }
+
 
 let secondPartFilter = false;
 function filterFunction() {
@@ -137,9 +200,10 @@ function validateGuess(){
     for(let i = 0; i < dataList.length; i++){ //TODO: case sens
         if(userInput.value.toUpperCase() == dataList[i]["displayName"].toUpperCase()){
             isCorrectOption(dataList[i]["displayName"]);
+            return true;
         }
-        
     }
+    return false;
 }
 
 function isCorrectOption(userInput){

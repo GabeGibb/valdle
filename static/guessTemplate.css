@@ -297,3 +297,7 @@
     align-items: center;
 }
 
+
+.autocompleteActive{
+    background-color: blue;
+}
