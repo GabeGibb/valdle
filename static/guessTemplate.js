@@ -33,12 +33,12 @@ let correctName;
 
 // jQuery.ajaxSetup({async:false});
 function loadTemplate(url, showButtonImages){
-    $("#guessImage").css({"-khtml-user-select": "none", 
+    $("#gameArea").on('dragstart', function(event) { event.preventDefault(); });
+    $("#gameArea").css({"-khtml-user-select": "none", 
                             "-o-user-select": "none",
                             "-moz-user-select": "none",
                             "-webkit-user-select": "none",
-                            "user-select": "none",
-                            "pointer-events": "none"});
+                            "user-select": "none"});
     $.get(url, function(data, status){ //url defined in current webpage js file
         dataList = data["data"];
         console.log(dataList)
