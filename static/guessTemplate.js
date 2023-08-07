@@ -128,8 +128,6 @@ function validateGuess(){
 }
 
 function isCorrectOption(userInput){
-
-    console.log('wat')
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
 
@@ -144,7 +142,6 @@ function isCorrectOption(userInput){
     if (optionImgSrc == null){
         optionImgSrc = dataList[findUserIndex(userInput)]["levels"][0]["displayIcon"]
     }
-    console.log(optionImgSrc)
     optionImg.src = optionImgSrc;
 
     optionImg.classList.add("guessImg");
@@ -205,6 +202,7 @@ function createNextPageBox(nextGame){
                             </div>\
                             <div id="numTriesDiv"><p id="numTries">Tries: </p></div>\
                             <div id="partTwoDiv"></div>\
+                            <div><p id="partTwoEndText"></p></div>\
                             <div "nextValdleDiv">\
                                 <p id="nextValdleText">Next Valdle:</p>\
                                 <p id="nextValdleCountdown">00:00:00</p>\

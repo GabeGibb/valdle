@@ -77,8 +77,10 @@ function modeWrongActions(){
         if($('#dropdown') != null){
             $('#dropdown').remove();
             displayPartTwo();
+            $('#partTwoEndText').text('Incorrect')
         }else{
             winConfetti();
+            $('#partTwoEndText').text('Correct')
         }
     }else{
         zoomOutMap();
