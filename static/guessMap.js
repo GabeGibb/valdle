@@ -133,7 +133,7 @@ function createMap(mapName){
 
 
 
-let insetValue = 40;
+let insetValue = 42.5;
 
 function setScaleToInset() {
     let mapImg = document.getElementById("trueImg");
@@ -146,7 +146,7 @@ function zoomOutMap() {
     if (insetValue <= 0) {
         return;
     }
-    insetValue -= 2.5;
+    insetValue -= 1.25;
     let mapImg = document.getElementById("trueImg");
     mapImg.style.clipPath = 'inset(' + insetValue + '%)';
     setScaleToInset();

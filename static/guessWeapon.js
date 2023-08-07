@@ -23,7 +23,8 @@ function curGamemode(){
 let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
-        // createNextPageBox('home');
+        winConfetti();
+        $('#partTwoEndText').text('Nice!')
     }else{
         winConfetti();
         guessGunSkinTime();
@@ -35,10 +36,6 @@ function guessGunSkinTime(){
     createNextPageBox('home');
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
-
-    // let imgClone = document.getElementsByClassName('guessImageDiv')[0].cloneNode(true)
-    // imgClone.children[0].style.clipPath = 'inset(' + 0 + '%)';
-    // document.getElementById('partTwoDiv').appendChild(imgClone)
 
     $('#weaponSkinPrompt').appendTo('#partTwoDiv')
     $('#weaponSkinPrompt').show()
@@ -74,14 +71,9 @@ function setImage(){
 
 function modeWrongActions(){
     if (secondPartStarted){
-        if($('#dropdown') != null){
-            $('#dropdown').remove();
-            displayPartTwo();
-            $('#partTwoEndText').text('Incorrect')
-        }else{
-            winConfetti();
-            $('#partTwoEndText').text('Correct')
-        }
+        $('#dropdown').remove();
+        $('#partTwoEndText').text('Better Luck Next Time')
+        
     }else{
         zoomOutMap();
     }
