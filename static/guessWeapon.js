@@ -58,8 +58,11 @@ function guessGunSkinTime(){
         document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         $('#fullListOfGuesses').empty();
         $('#fullListOfGuesses').show()
+        addEnter();
+        secondPartFilter = true;
+        filterFunction();
       }, 500);
-
+    
       
 
 }
