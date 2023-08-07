@@ -59,7 +59,8 @@ function makeButtons(showButtonImages){
             $("#optionNames").hide();
         }
         if (showButtonImages == true){
-            button.innerHTML = "<img src=" + dataList[i]["displayIcon"] + " class = \"buttonImages\">";
+            let imgSrc = dataList[i]["displayIcon"]
+            button.innerHTML = "<img src=" + imgSrc + " class = \"buttonImages\">";
         }
         
         button.appendChild(p); //adds content to button
@@ -139,7 +140,13 @@ function isCorrectOption(userInput){
     p.classList.add("guessText");
 
     let optionImg = document.createElement('img');
-    optionImg.src = dataList[findUserIndex(userInput)]["displayIcon"];
+    let optionImgSrc = dataList[findUserIndex(userInput)]["displayIcon"]
+    if (optionImgSrc == null){
+        optionImgSrc = dataList[findUserIndex(userInput)]["levels"][0]["displayIcon"]
+    }
+    console.log(optionImgSrc)
+    optionImg.src = optionImgSrc;
+
     optionImg.classList.add("guessImg");
     newDiv.appendChild(optionImg);
     p.appendChild(text); //adds content to button
