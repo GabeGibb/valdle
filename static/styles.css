@@ -205,5 +205,8 @@ button{
     --button-text-color-hover: #ece8e1;
   }
 
+  .icon {
+    width: 60px;
+  }
 /* TEST VAL BUTTON END */
 

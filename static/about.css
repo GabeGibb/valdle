@@ -3,6 +3,7 @@ h1{
     color: aliceblue;
     font-size: 30px;
 }
+
 a{
     color:  #FA4454;
 }
@@ -11,4 +12,48 @@ a{
     margin: auto;
     text-align: center;
     width: 1000px;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    min-width: 250px;
+}
+
+.btn__inner {
+    min-width: 250px;
+    padding: 25px 0px;  
+    display: flex;
+    flex-direction: column;
+    font-family: 'VALORANT', sans-serif;
+}
+
+.btn__content {
+    font-size: 1.5em;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+}
+
+.btn::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+.btn::after {
+    bottom: 0;
+    border-top-width: 0;
 }

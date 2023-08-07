@@ -1,7 +1,11 @@
+body {
+    overflow-y: hidden;
+}
+
 #websiteSummary {
     text-align: center;
     color: #ece8e1;
-    margin: 30px;
+    margin-top: 35px;
     font-size: 1em;
 }
 
@@ -9,7 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
 }
 
 .buttons img {
@@ -20,10 +23,6 @@
     display: flex;
     align-items: center;
     margin-top: 5px;
-}
-
-.icon{
-    width: 60px;
 }
 
 .btn {
@@ -43,7 +42,7 @@
 }
 
 .btn__description {
-    font-size: 0.85em;
+    font-size: 0.9em;
     color: #ece8e1;
     z-index: 1;
     margin-top: 10px;
