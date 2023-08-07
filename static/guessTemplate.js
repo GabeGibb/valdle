@@ -88,7 +88,7 @@ $(document).on("mousedown", function(event){
 });
 
 let currentFocus = -1;
-
+let dontFilter = false;
 function removeActive(){
     $('#optionNames').children().each( (index, element) => {
         element.classList.remove('autocompleteActive')
@@ -102,6 +102,8 @@ function addActive(){
     }
     let curChildren = getCurButtons();
     curChildren[currentFocus].classList.add('autocompleteActive');
+    let agent = curChildren[currentFocus].children[curChildren[currentFocus].children.length-1].textContent;
+    $('#searchInput').val(agent)
 }
 
 function getCurButtons(){
@@ -145,12 +147,7 @@ function addEnter(){
         let key = e['originalEvent']['key'];
         // console.log(key)
         if(key == 'Enter'){
-            if(!validateGuess()){
-                // if (currentFocus != -1){
-                //     let curChildren = getCurButtons();
-                //     validateGuess(curChildren[currentFocus]
-                // }
-            }
+            validateGuess();
             
         }
         if (key == 'ArrowUp'){
@@ -161,7 +158,17 @@ function addEnter(){
             e.preventDefault();
             goDownAutocomplete();
         }
-        console.log(currentFocus)
+    });
+
+    $('#searchInput').keyup(function(e){
+        let key = e['originalEvent']['key'];
+
+        if (key == 'ArrowUp' || key == 'ArrowDown'){
+
+        }
+        else{
+            filterFunction();
+        }
     });
 }
 
