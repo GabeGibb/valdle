@@ -47,7 +47,7 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
         partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }, 500);
     
-    createNextPageBox('Quote');
+    createNextPageBox('Weapon');
     $('#partTwoDisplay').appendTo('#partTwoDiv');
     $("#partTwoDisplay").show();
 }
