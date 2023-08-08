@@ -47,6 +47,23 @@ body{
     transform: scale(1.075); 
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+
+
+
 .gameButton {
     background-color: #FA4454;
     color: black;
