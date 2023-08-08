@@ -4,9 +4,6 @@ from random import randint
 from json import load
 from random import choice, randint
 
-agents = ['Gekko', 'Fade', 'Breach', 'Deadlock', 'Raze', 'Chamber', 'KAYO', 'Skye', 'Cypher', 'Sova', 'Killjoy', 'Harbor', 'Viper', 'Phoenix', 'Astra', 'Brimstone', 'Neon', 'Yoru', 'Sage', 'Reyna', 'Omen', 'Jett']
-
-
 app = Flask(__name__)
 
 @app.route('/riot.txt')
@@ -70,10 +67,18 @@ def getMap():
 
 @app.route('/guessAbility/abilityOfDay')
 def getAbility():
+    f = open('static/agents.json')
+    data = load(f)['data']
+    f.close()
+
+    index = randint(0, len(data)-1)
+    abilityIndex = randint(0, len(data[index]['abilities']) - 1)
+
     abilityOfDay = {}
-    index = randint(0, len(agents)-1)
     abilityOfDay['randIndex'] = index
-    abilityOfDay['displayName'] = agents[index]
+    abilityOfDay['randAbilityIndex'] = abilityIndex
+    abilityOfDay['displayName'] = data[index]['displayName']
+    abilityOfDay['abilityName'] = data[index]['abilities'][abilityIndex]['displayName']
     return abilityOfDay
 
 

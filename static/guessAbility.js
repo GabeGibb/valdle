@@ -1,20 +1,19 @@
 
-var randAbility;
 let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-let url = "https://valorant-api.com/v1/agents";
+let url = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
 
 let abilityUrl = window.location.href + '/abilityOfDay';
-
+var abilityIndex;
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true);
     console.log(data)
     randIndex = data['randIndex']
+    abilityIndex = data['randAbilityIndex']
 });
 
 
 function curGamemode(){ // Gets called on page load
-    var abilityIndex = randomizeAbilityIndex();
     createRandAbility(abilityIndex);
     removeRandTile();
     correctImgSrc = dataList[randIndex]["displayIcon"];
@@ -48,25 +47,10 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
         partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }, 500);
     
-      createNextPageBox('Quote');
+    createNextPageBox('Quote');
     $('#partTwoDisplay').appendTo('#partTwoDiv');
     $("#partTwoDisplay").show();
 }
-
-//----------------
-
-function randomizeAbilityIndex(){
-    console.log(randIndex)
-    if((dataList[randIndex]["abilities"].length == 5) && (dataList[randIndex]["abilities"][4]["displayIcon"] != null)){
-        randAbility = Math.floor(Math.random() * 5)
-        return randAbility;
-    }
-    else{
-        randAbility = Math.floor(Math.random() * 4);
-        return randAbility;
-    }
-}
-
 
 
 function createRandAbility(abilityIndex){
@@ -88,7 +72,7 @@ function isCorrectAbilityName(button, currAbility){
     if (!canGuessAbilityName){
         return;
     }
-    let correctAbilityName = dataList[randIndex]["abilities"][randAbility]["displayName"];
+    let correctAbilityName = dataList[randIndex]["abilities"][abilityIndex]["displayName"];
     
     if(currAbility == correctAbilityName){
         button.classList.add("correctGuessName")
