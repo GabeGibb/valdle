@@ -46,6 +46,7 @@
     color: #ece8e1;
     z-index: 1;
     margin-top: 10px;
+    /* font-family:  'Arial'; */
 }
 
 .btn::before,
