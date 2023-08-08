@@ -88,7 +88,7 @@ $(document).on("mousedown", function(event){
 });
 
 let currentFocus = -1;
-let dontFilter = false;
+let pastInputText = '';
 function removeActive(){
     $('#optionNames').children().each( (index, element) => {
         element.classList.remove('autocompleteActive')
@@ -99,13 +99,14 @@ function addActive(){
     removeActive();
     let curChildren = getCurButtons();
     if (currentFocus <= -1 || currentFocus >= curChildren.length){
+        $('#searchInput').val(pastInputText);
         return;
     }
     
-    console.log(currentFocus)
     curChildren[currentFocus].classList.add('autocompleteActive');
     let agent = curChildren[currentFocus].children[curChildren[currentFocus].children.length-1].textContent;
-    $('#searchInput').val(agent)
+    $('#searchInput').val(agent);
+    curChildren[currentFocus].scrollIntoViewIfNeeded(false);
 }
 
 function getCurButtons(){
@@ -146,16 +147,16 @@ function goDownAutocomplete(){
 function addEnter(){
     $('#searchInput').keydown(function(e){
         let key = e['originalEvent']['key'];
-        // console.log(key)
+        
         if(key == 'Enter'){
             validateGuess();
             
         }
-        if (key == 'ArrowUp'){
+        else if (key == 'ArrowUp'){
             e.preventDefault();
             goUpAutocomplete();
         }
-        if (key == 'ArrowDown'){
+        else if (key == 'ArrowDown'){
             e.preventDefault();
             goDownAutocomplete();
         }
@@ -165,6 +166,10 @@ function addEnter(){
         let key = e['originalEvent']['key'];
 
         if (key == 'ArrowUp' || key == 'ArrowDown' || key == 'ArrowLeft' || key == 'ArrowRight'){}
+        // else if(e.keyCode >= 65 && e.keyCode <= 90){
+        //     pastInputText = $('#searchInput').val();
+        //     console.log(pastInputText)
+        // }
         else{
             filterFunction();
         }
@@ -187,7 +192,7 @@ function filterFunction() {
     for (i = 0; i < button.length; i++) {
         txtValue = button[i].textContent || button[i].innerText;
         let filterIndex = txtValue.toUpperCase().indexOf(filter);
-        if (secondPartFilter || filterIndex == 0 && filter.length > 0){
+        if (secondPartFilter && filterIndex == 0 || filterIndex == 0 && filter.length > 0){
             button[i].style.display = "";
         } else {
             button[i].style.display = "none";
