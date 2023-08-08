@@ -1,7 +1,7 @@
 
 var randAbility;
 let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-let url = "static/agents.json";
+let url = "https://valorant-api.com/v1/agents";
 
 let abilityUrl = window.location.href + '/abilityOfDay';
 

@@ -1,4 +1,4 @@
-let url = "static/weapons.json";
+let url = "https://valorant-api.com/v1/weapons";
 
 let weaponUrl = window.location.href + '/weaponOfDay';
 
@@ -18,6 +18,14 @@ function curGamemode(){
     correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
     correctName = dataList[randIndex]['displayName']
     setImage();
+    cleanWeaponData();
+}
+
+
+function cleanWeaponData(){
+    for(let i = 0; i < dataList.length; i++){ //Filter out random and standard weapon themes
+        dataList[i]['skins'] = dataList[i]['skins'].filter(item => item['themeUuid'] != '0d7a5bfb-4850-098e-1821-d989bbfd58a8' && item['themeUuid'] != '5a629df4-4765-0214-bd40-fbb96542941f')
+    }
 }
 
 let secondPartStarted = false;
