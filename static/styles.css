@@ -14,17 +14,17 @@ body{
     overflow-x: hidden;
     font-family: 'VALORANT', sans-serif;
     /* background-image: url('https://wallpapers.com/images/featured/valorant-logo-x0jet8s98hbbfi62.jpg'); */
-    background-repeat: no-repeat;
-    background-size: cover; 
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;  */
 
     /* background-image: linear-gradient(black, 90%, #fa4454); */
-    /* background-image: linear-gradient(#0a141eee 30%,#ff4654ee); */
+    background-image: radial-gradient(#0a141eee 100%,#ff4654ee);
     padding-bottom: 200px;
-    height: fit-content;
+    height: 100%;
 }
 
 .navbar {
-    background-color: #000000;
+    /* background-color: #000000; */
     overflow: hidden;
     display: flex;
     justify-content: center;
