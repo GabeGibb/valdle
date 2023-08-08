@@ -144,7 +144,6 @@ function goDownAutocomplete(){
 }
 
 function addEnter(){
-    console.log(currentFocus)
     $('#searchInput').keydown(function(e){
         let key = e['originalEvent']['key'];
         // console.log(key)
@@ -165,7 +164,7 @@ function addEnter(){
     $('#searchInput').keyup(function(e){
         let key = e['originalEvent']['key'];
 
-        if (key == 'ArrowUp' || key == 'ArrowDown'){}
+        if (key == 'ArrowUp' || key == 'ArrowDown' || key == 'ArrowLeft' || key == 'ArrowRight'){}
         else{
             filterFunction();
         }
@@ -175,6 +174,7 @@ function addEnter(){
 
 let secondPartFilter = false;
 function filterFunction() {
+    currentFocus = -1;
     var input, filter, ul, li, button, i;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
