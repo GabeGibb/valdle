@@ -77,14 +77,14 @@
 
 #optionNames{
     position: absolute;
-    max-height: 281px;
-    overflow-y: clip;
+    max-height: 200px;
+    /* overflow-y: clip; */
     overflow-x: hidden;
 }
 
 
 .optionNameInButton{
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     vertical-align: center;
     margin: auto;
