@@ -168,11 +168,7 @@ function addEnter(){
         if (key == 'ArrowUp' || key == 'ArrowDown' || key == 'ArrowLeft' || key == 'ArrowRight'){}
         else if(e.keyCode >= 65 && e.keyCode <= 90){
             pastInputText = $('#searchInput').val();
-            console.log(pastInputText)
             filterFunction();
-        }
-        else{
-            // filterFunction();
         }
     });
 }
