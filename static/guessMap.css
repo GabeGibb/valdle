@@ -5,7 +5,7 @@
 
 .containerTab{
     /* display:grid; */
-    background-color: #000000;
+    background-color: #0a141eee;
     /* grid-template-rows: 50px 50px; */
 }
 
@@ -36,7 +36,7 @@
 
 .mapImgChoice{
     padding-top:10px;
-    background-color: #000000;
+    background-color: #0a141eee;
     display:grid;
     grid-template-rows: 320px;
     grid-template-columns: 1fr 320px 320px 1fr;
@@ -79,7 +79,7 @@
 
 .board {
     grid-template-rows: repeat(5,70px);
-    background-color: #000000;
+    background-color: #0a141eee;
     width: 550px;
     /* height: 1100px; */
     display: flex;
