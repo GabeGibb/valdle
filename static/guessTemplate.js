@@ -166,8 +166,10 @@ function addEnter(){
         let key = e['originalEvent']['key'];
 
         if (key == 'ArrowUp' || key == 'ArrowDown' || key == 'ArrowLeft' || key == 'ArrowRight'){}
-        else if(e.keyCode >= 65 && e.keyCode <= 90){
-            pastInputText = $('#searchInput').val();
+        else{
+            if(e.keyCode >= 65 && e.keyCode <= 90){
+                pastInputText = $('#searchInput').val();
+            }
             filterFunction();
         }
     });
