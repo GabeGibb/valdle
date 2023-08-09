@@ -179,7 +179,7 @@ function addEnter(){
 let secondPartFilter = false;
 function filterFunction() {
     currentFocus = -1;
-    var input, filter, ul, li, button, i;
+    var input, filter, button, i;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
 
