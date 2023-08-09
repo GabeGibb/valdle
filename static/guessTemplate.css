@@ -301,3 +301,7 @@
 .autocompleteActive{
     background-color: blue;
 }
+
+#numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText {
+    text-align: center;
+}

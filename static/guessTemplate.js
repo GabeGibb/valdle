@@ -303,7 +303,7 @@ function createNextPageBox(nextGame){
                             <div><p id="partTwoEndText"></p></div>\
                             <div "nextValdleDiv">\
                                 <p id="nextValdleText">Next Valdle:</p>\
-                                <p id="nextValdleCountdown">00:00:00</p>\
+                                <p id="nextValdleCountdown"></p>\
                             </div>\
                             <div id="nextPageButton"></div>\
                         </div>');
@@ -324,7 +324,7 @@ function createNextPageBox(nextGame){
                             </span>\
                         </button>');
 
-    
+    setInterval(createAndUpdateTimer, 1000);
     $('body').append(nextPageBox)
     $('#nextPageButton').append(nextButton)
     $('#correctImg').attr('src', correctImgSrc)
@@ -335,6 +335,19 @@ function createNextPageBox(nextGame){
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }, 500);
 }
-// setTimeout(() => {
-//     createNextPageBox();
-//   }, "1000");
+
+function createAndUpdateTimer() {
+    let nextMidnight = new Date();
+    nextMidnight.setHours(24,0,0,0);
+    let now = new Date();
+    let rest = (nextMidnight.getTime() - now.getTime())/1000;
+
+    const hours = Math.floor(rest/3600);
+    rest = rest-(hours*3600);
+    const minutes = Math.floor(rest/60);
+    rest = rest-(minutes*60);
+    const seconds = Math.floor(rest);
+
+    let timeString = ((hours - 3) % 12).toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2); // hours-3 to convert it to EST
+    $("#nextValdleCountdown").text(timeString);
+}
