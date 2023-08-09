@@ -4,6 +4,8 @@ let url = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
 
 let abilityUrl = window.location.href + '/abilityOfDay';
 var abilityIndex;
+var abilityIcon;
+
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true);
@@ -49,6 +51,7 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     
     createNextPageBox('Weapon');
     $('#partTwoDisplay').appendTo('#partTwoDiv');
+    $('#partTwoAbilityIcon').attr("src", abilityIcon);
     $("#partTwoDisplay").show();
 }
 
@@ -59,7 +62,8 @@ function createRandAbility(abilityIndex){
 }
 
 function makeAbilityImage(chosenAbility){ // Puts image of ability on webpage
-    $("#guessImage").attr("src", chosenAbility["displayIcon"]);
+    abilityIcon = chosenAbility["displayIcon"]
+    $("#guessImage").attr("src", abilityIcon);
 }
 
 function modeWrongActions() {
