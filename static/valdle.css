@@ -15,10 +15,6 @@
     align-items: center;
 }
 
-.buttons img {
-    margin-right: 10px;
-}
-
 #map, #ability, #quote, #weapon, #about {
     display: flex;
     align-items: center;
@@ -68,4 +64,16 @@
 .btn::after {
     bottom: 0;
     border-top-width: 0;
+}
+
+.win_streak {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.streak_number {
+    top: 5px;
+    position: absolute;
+    font-size: 1.75em;
 }
