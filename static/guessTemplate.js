@@ -61,7 +61,6 @@ function makeButtons(showButtonImages){
         button.onclick = function(){
             document.getElementById("searchInput").value = currName;
             validateGuess();
-            $("#optionNames").hide();
         }
         if (showButtonImages == true){
             let imgSrc = dataList[i]["displayIcon"]
@@ -72,7 +71,6 @@ function makeButtons(showButtonImages){
         button.style.display = "none";
         names.appendChild(button); //appends button to div
     }
-    $("#optionNames").hide();
     $('#fullListOfGuesses').empty();
 }
 
@@ -207,6 +205,7 @@ function animateGuess(parent, child, delayAmount){
 }
 
 function validateGuess(){
+    $('#searchInput').focus();
     let userInput = document.getElementById("searchInput")
     for(let i = 0; i < dataList.length; i++){ //TODO: case sens
         if(userInput.value.toUpperCase() == dataList[i]["displayName"].toUpperCase()){
@@ -251,9 +250,9 @@ function isCorrectOption(userInput){
         filterFunction();
         modeWrongActions();
     }
-    
     newDiv.classList.add("individualGuesses");
     animateGuess(guessParent, newDiv, 200);
+
     
 }
 
