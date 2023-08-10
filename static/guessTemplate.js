@@ -282,12 +282,12 @@ function removeOption(name){
 }
 
 function partTwoWin(){
-    $('#partTwoEndText').text('Nice!')
+    $('#partTwoEndText').text('Correct!')
 }
 
-function partTwoLose(){
+function partTwoLose(correctAnswer){
     $('#dropdown').remove();
-    $('#partTwoEndText').text('Better Luck Next Time')
+    $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
 }
 
 function createNextPageBox(nextGame){

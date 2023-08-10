@@ -82,8 +82,7 @@ function setImage(){
 
 function modeWrongActions(){
     if (secondPartStarted){
-        partTwoLose();
-        
+        partTwoLose( dataList[skinIndex]['displayName']);
     }else{
         zoomOutMap();
     }

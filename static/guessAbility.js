@@ -90,7 +90,7 @@ function isCorrectAbilityName(button, currAbility){
     else{
         button.classList.add("incorrectGuessName")
         // $('#partTwoEndText').text('Better Luck Next Time')
-        partTwoLose();
+        partTwoLose(correctAbilityName);
     }
 
     canGuessAbilityName = false;
