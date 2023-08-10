@@ -305,3 +305,7 @@
 #numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText {
     text-align: center;
 }
+
+#partTwoAbilityIcon{
+    height: 100px;
+}
