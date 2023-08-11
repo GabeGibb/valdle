@@ -30,6 +30,9 @@ let dataList;
 var randIndex;
 let correctImgSrc;
 let correctName;
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
 
 // jQuery.ajaxSetup({async:false});
 function loadTemplate(url, showButtonImages){
