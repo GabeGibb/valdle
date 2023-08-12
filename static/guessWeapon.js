@@ -41,7 +41,7 @@ function displayPartTwo(){
 }
 
 function guessGunSkinTime(){
-    createNextPageBox('Quote');
+    createNextPageBox('quote');
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
 
