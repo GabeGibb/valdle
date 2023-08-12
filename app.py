@@ -72,7 +72,7 @@ def getAbility():
     f.close()
 
     index = randint(0, len(data)-1)
-    abilityIndex = randint(0, len(data[index]['abilities']) - 1)
+    abilityIndex = randint(0, 3)
 
     abilityOfDay = {}
     abilityOfDay['randIndex'] = index

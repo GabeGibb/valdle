@@ -35,7 +35,7 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     partTwoDisplay = document.getElementById("partTwoDisplay");
 
     let whatAbilityNameDiv = document.getElementById("whatName")
-    for(i = 0; i < dataList[randIndex]["abilities"].length; i++){ 
+    for(i = 0; i < 4; i++){ 
         let button = document.createElement('button');
         let currAbility = dataList[randIndex]["abilities"][i]["displayName"];
         button.innerHTML = currAbility; //adds content to button
