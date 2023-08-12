@@ -5,7 +5,8 @@
 
 .containerTab{
     /* display:grid; */
-    background-color: #0a141eee;
+    /* background-color: #0a141eee; */
+    background: transparent;
     /* grid-template-rows: 50px 50px; */
 }
 
@@ -36,7 +37,8 @@
 
 .mapImgChoice{
     padding-top:10px;
-    background-color: #0a141eee;
+    /* background-color: #0a141eee; */
+    background: transparent;
     display:grid;
     grid-template-rows: 320px;
     grid-template-columns: 1fr 320px 320px 1fr;
@@ -64,7 +66,7 @@
 }
 
 .trueImg{
-    background-color: #000000;
+    /* background-color: #000000; */
     /* scale: 1; */
     width: 100%;
     height: 100%;
@@ -79,7 +81,8 @@
 
 .board {
     grid-template-rows: repeat(5,70px);
-    background-color: #0a141eee;
+    /* background-color: #0a141eee; */
+    background: transparent;
     width: 550px;
     /* height: 1100px; */
     display: flex;
