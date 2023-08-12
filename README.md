@@ -1,4 +1,5 @@
 # Website (loads slow) [valdle.gg](https://valdle.gg/)
+https://docs.google.com/document/d/1rQcg78yGkaq6ZOd4PQuPMNvlB1rL86TeIrvt5ZrI3Wk/edit
 
 # Setup Guide
 - Download python (ours is 3.10.6 but most recent versions should work)
