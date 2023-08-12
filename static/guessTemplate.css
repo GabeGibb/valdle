@@ -284,6 +284,7 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    /* margin-bottom: 500px; */
 }
 
 #correctImg{
