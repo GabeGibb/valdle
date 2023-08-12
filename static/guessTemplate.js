@@ -340,7 +340,7 @@ function createNextPageBox(nextGame){
 
 function createAndUpdateTimer() {
     let nextMidnight = new Date();
-    nextMidnight.setHours(24,0,0,0);
+    nextMidnight.setHours(21,0,0,0);
     let now = new Date();
     let rest = (nextMidnight.getTime() - now.getTime())/1000;
 
@@ -350,6 +350,6 @@ function createAndUpdateTimer() {
     rest = rest-(minutes*60);
     const seconds = Math.floor(rest);
 
-    let timeString = ((hours - 3) % 12).toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2); // hours-3 to convert it to EST
+    let timeString = (hours).toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2); // hours-3 to convert it to EST
     $("#nextValdleCountdown").text(timeString);
 }
