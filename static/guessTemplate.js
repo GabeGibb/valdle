@@ -45,9 +45,9 @@ function loadTemplate(url, showButtonImages){
     $.get(url, function(data, status){ //url defined in current webpage js file
         dataList = data["data"];
         console.log(dataList)
-        curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
         makeButtons(showButtonImages);
         addEnter();
+        curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
     });    
 }
 
