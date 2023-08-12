@@ -298,9 +298,11 @@ function createNextPageBox(nextGame){
                             <div id="victoryMessage"><p>GG!</p></div>\
                             <div id="correctGuessDiv">\
                                 <img id="correctImg">\
-                                <p id="correctGuess">\
+                                <div id="correctTextDiv">\
+                                    <p id="correctGuess">\
+                                    <div id="numTriesDiv"><p id="numTries">Tries: </p></div>\
+                                </div>\
                             </div>\
-                            <div id="numTriesDiv"><p id="numTries">Tries: </p></div>\
                             <div id="partTwoDiv"></div>\
                             <div><p id="partTwoEndText"></p></div>\
                             <div "nextValdleDiv">\
