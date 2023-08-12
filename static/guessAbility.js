@@ -49,7 +49,7 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
         partTwoDisplay.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
       }, 500);
     
-    createNextPageBox('Weapon');
+    createNextPageBox('weapon');
     $('#partTwoDisplay').appendTo('#partTwoDiv');
     $('#partTwoAbilityIcon').attr("src", abilityIcon);
     $("#partTwoDisplay").show();
