@@ -1,8 +1,11 @@
-from flask import Flask, render_template, send_file, request
+from flask import Flask, render_template, send_file, request, jsonify
 
 from random import randint
 from json import load
 from random import choice, randint
+import schedule
+import time
+import threading
 
 app = Flask(__name__)
 
@@ -45,7 +48,15 @@ def callout(map, region, superRegion):
     return send_file(path)
 
 
+
+
+dailyGameAnswers = {}
+
 @app.route('/guessMap/mapOfDay')
+def retrieveDailyMap():
+    return dailyGameAnswers["map"]
+
+
 def getMap():
     f = open('static/api/maps.json')
     data = load(f)
@@ -63,10 +74,11 @@ def getMap():
     
     return mapOfDay
 
-
-
-
 @app.route('/guessAbility/abilityOfDay')
+def retrieveDailyAbility():
+    return dailyGameAnswers["ability"]
+
+
 def getAbility():
     f = open('static/api/agents.json')
     data = load(f)
@@ -84,6 +96,9 @@ def getAbility():
 
 
 @app.route('/guessQuote/quoteOfDay')
+def retrieveDailyQuote():
+    return dailyGameAnswers["quote"]
+
 def getQuote():
     f = open('static/api/quotes.json')
     data = load(f)
@@ -103,6 +118,9 @@ def getQuote():
 
 # Standard, Random
 @app.route('/guessWeapon/weaponOfDay')
+def retrieveDailyWeapon():
+    return dailyGameAnswers["weapon"]
+
 def getWeapon():
     f = open('static/api/weapons.json')
     data = load(f)
@@ -116,3 +134,46 @@ def getWeapon():
     weaponOfDay['gunName'] =  data[weaponIndex]['displayName']
     weaponOfDay['skinName'] =  data[weaponIndex]['skins'][skinIndex]['displayName']
     return weaponOfDay
+
+
+
+
+# # Gets daily answers when asked for
+# @app.route('/getDailyGameAnswers', methods=['GET'])
+# def getDailyGameAnswers():
+#     return dailyGameAnswers
+
+# Stores new daily game answers
+def generateDailyGameAnswers():
+    global dailyGameAnswers
+    dailyGameAnswers = {"map": getMap(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
+    print(dailyGameAnswers)
+    # return answers
+
+# Function to update when it is midnight EST
+schedule.every().day.at("00:02:00").do(generateDailyGameAnswers)
+
+def run_schedule():
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
+
+
+if __name__ == "__main__":
+    # Start the Flask app in a separate thread
+
+    generateDailyGameAnswers()
+
+    app_thread = threading.Thread(target=app.run, kwargs={'host': '0.0.0.0'})
+
+    # Start the schedule loop in another separate thread
+    schedule_thread = threading.Thread(target=run_schedule)
+
+    # Start both threads
+    app_thread.start()
+    schedule_thread.start()
+
+    # Wait for both threads to finish (optional)
+    app_thread.join()
+    schedule_thread.join()
