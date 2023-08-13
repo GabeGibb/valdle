@@ -53,9 +53,7 @@ function loadTemplate(url, showButtonImages, mode){
                             "-moz-user-select": "none",
                             "-webkit-user-select": "none",
                             "user-select": "none"});
-    console.log("test1");
     $.get(url, function(data, status){ //url defined in current webpage js file
-        console.log("test2");
         dataList = data;
         console.log(dataList)
         makeButtons(showButtonImages);
