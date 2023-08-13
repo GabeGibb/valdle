@@ -32,7 +32,7 @@ let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
         winConfetti();
-        partTwoWin(dataList[randIndex]['skins'][skinIndex]['displayName']);
+        partTwoWin(dataList[skinIndex]['displayName']);
     }else{
         winConfetti();
         guessGunSkinTime();
