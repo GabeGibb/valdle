@@ -1,4 +1,4 @@
-let url = "https://valorant-api.com/v1/weapons";
+let url = "static/api/weapons.json";
 
 let weaponUrl = window.location.href + '/weaponOfDay';
 

@@ -1,4 +1,4 @@
-let url = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
+let url = "static/api/agents.json";
 
 let quoteUrl = window.location.href + '/quoteOfDay';
 

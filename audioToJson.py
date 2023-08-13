@@ -37,6 +37,6 @@ for agent in agents:
     agentsDict.append(curAgentDict)
 
 jsonObject = json.dumps(agentsDict, indent=4)
-with open("static/quotes.json", "w") as outfile:
+with open("static/api/quotes.json", "w") as outfile:
     outfile.write(jsonObject)    
 

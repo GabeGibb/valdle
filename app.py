@@ -68,7 +68,7 @@ def getMap():
 @app.route('/guessAbility/abilityOfDay')
 def getAbility():
     f = open('static/api/agents.json')
-    data = load(f)['data']
+    data = load(f)
     f.close()
 
     index = randint(0, len(data)-1)
@@ -104,15 +104,10 @@ def getQuote():
 @app.route('/guessWeapon/weaponOfDay')
 def getWeapon():
     f = open('static/api/weapons.json')
-    data = load(f)['data']
+    data = load(f)
     f.close()
     weaponIndex = randint(0, len(data)-1)
-    # weaponIndex = 17
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
-    # print(data[weaponIndex]['skins'][skinIndex]['displayIcon'])
-    while('Standard' in data[weaponIndex]['skins'][skinIndex]['displayName'] or 'Random' in data[weaponIndex]['skins'][skinIndex]['displayName'] or data[weaponIndex]['skins'][skinIndex]['displayIcon'] == None):
-        skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
-
 
     weaponOfDay = {}
     weaponOfDay['weaponRandIndex'] = weaponIndex

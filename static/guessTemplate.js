@@ -43,7 +43,7 @@ function loadTemplate(url, showButtonImages){
                             "-webkit-user-select": "none",
                             "user-select": "none"});
     $.get(url, function(data, status){ //url defined in current webpage js file
-        dataList = data["data"];
+        dataList = data;
         console.log(dataList)
         makeButtons(showButtonImages);
         addEnter();
