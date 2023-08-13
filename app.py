@@ -65,7 +65,7 @@ def quoteOfDay():
     f = open("dailyAnswers.json")
     dailyGameAnswers = json.load(f)
     f.close()
-    print(dailyGameAnswers["quote"])
+    return dailyGameAnswers["quote"]
 
 @app.route('/guessWeapon/weaponOfDay')
 def weaponOfDay():
