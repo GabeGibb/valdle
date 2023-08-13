@@ -8,7 +8,7 @@ var abilityIcon;
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate(url, true);
+    loadTemplate(url, true, 'ability');
     console.log(data)
     randIndex = data['randIndex']
     abilityIndex = data['randAbilityIndex']
@@ -76,6 +76,8 @@ function isCorrectAbilityName(button, currAbility){
     if (!canGuessAbilityName){
         return;
     }
+    persistentData['p2Attempt'] = currAbility
+
     let correctAbilityName = dataList[randIndex]["abilities"][abilityIndex]["displayName"];
     
     if(currAbility == correctAbilityName){
@@ -85,7 +87,7 @@ function isCorrectAbilityName(button, currAbility){
         
         winConfetti();
         // $('#partTwoEndText').text('Nice!')
-        partTwoWin();
+        partTwoWin(correctAbilityName);
     }   
     else{
         button.classList.add("incorrectGuessName")

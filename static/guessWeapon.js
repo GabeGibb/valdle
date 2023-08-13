@@ -7,7 +7,7 @@ let skinIndex;
 
 // jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate(url, false);
+    loadTemplate(url, false, 'weapon');
     console.log(data)
     randIndex = data['weaponRandIndex'];
     skinIndex = data['skinRandIndex'];
@@ -32,7 +32,7 @@ let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
         winConfetti();
-        partTwoWin();
+        partTwoWin(dataList[randIndex]['skins'][skinIndex]['displayName']);
     }else{
         winConfetti();
         guessGunSkinTime();
