@@ -26,6 +26,9 @@ const tileSpinTiming = {
     iterations: 1,
   };
 
+//p1 p2 complete
+let persistentData = {'mode': '', 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
+
 let dataList;
 var randIndex;
 let correctImgSrc;
@@ -34,8 +37,16 @@ $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
 
+$(window).on('click', function(){
+    console.log(persistentData)
+})
+
+function loadPersistentData(mode){
+    persistentData['mode'] = mode;
+}
+
 // jQuery.ajaxSetup({async:false});
-function loadTemplate(url, showButtonImages){
+function loadTemplate(url, showButtonImages, mode){
     $("#gameArea").on('dragstart', function(event) { event.preventDefault(); });
     $("#gameArea").css({"-khtml-user-select": "none", 
                             "-o-user-select": "none",
@@ -50,6 +61,7 @@ function loadTemplate(url, showButtonImages){
         makeButtons(showButtonImages);
         addEnter();
         curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
+        loadPersistentData(mode)
     });    
 }
 
@@ -222,6 +234,12 @@ function validateGuess(){
 }
 
 function isCorrectOption(userInput){
+    if (persistentData['currentState'] == 'p1'){
+        persistentData['triesList'].push(userInput);
+    }else if (persistentData['currentState'] == 'p2'){
+        persistentData['p2Attempt'] = userInput;
+    }
+    
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
 
@@ -246,6 +264,7 @@ function isCorrectOption(userInput){
     if(optionAnswer == userInput){
         newDiv.classList.add("correctGuess")
         $('#dropdown').remove();
+        persistentData['currentState'] = 'p2';
         displayPartTwo();
     }
     else{
@@ -258,7 +277,6 @@ function isCorrectOption(userInput){
     newDiv.classList.add("individualGuesses");
     animateGuess(guessParent, newDiv, 200);
 
-    
 }
 
 function findUserIndex(userInput){
@@ -286,8 +304,9 @@ function removeOption(name){
     }
 }
 
-function partTwoWin(){
+function partTwoWin(correctAnswer){
     $('#partTwoEndText').text('Correct!')
+
 }
 
 function partTwoLose(correctAnswer){

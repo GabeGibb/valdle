@@ -38,6 +38,8 @@ function makeCalloutDiv(callout, mapName) {
     div.onclick = function () {
 
         let guess = [mapName, region, superRegion]
+
+        persistentData['triesList'].push(guess);
         let listOfMapGuesses = document.getElementById("listOfMapGuesses");
 
         win = false;
@@ -76,6 +78,7 @@ function makeCalloutDiv(callout, mapName) {
 
 
         if (win) {
+            persistentData['currentState'] = 'p2';
             gameOver = true;
             clearMap();
 
