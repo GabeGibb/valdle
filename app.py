@@ -52,7 +52,8 @@ def getMap():
     f.close()
     data.pop(8)
 
-    index = randint(0, len(data)-1)
+    # index = randint(0, len(data)-1)
+    index = 0
     mapOfDay = {}
     mapOfDay['mapName'] = data[index]['displayName']
 
