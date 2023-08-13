@@ -177,7 +177,7 @@ $.get(window.location.href + '/mapOfDay', function (data, status) {
 });
 
 
-$.get("static/maps.json", function (data, status) {
+$.get("static/api/maps.json", function (data, status) {
     maps = data;
     console.log(answer)
     zoomOutMap();

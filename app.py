@@ -47,7 +47,7 @@ def callout(map, region, superRegion):
 
 @app.route('/guessMap/mapOfDay')
 def getMap():
-    f = open('static/maps.json')
+    f = open('static/api/maps.json')
     data = load(f)
     f.close()
     data.pop(8)
@@ -67,7 +67,7 @@ def getMap():
 
 @app.route('/guessAbility/abilityOfDay')
 def getAbility():
-    f = open('static/agents.json')
+    f = open('static/api/agents.json')
     data = load(f)['data']
     f.close()
 
@@ -84,7 +84,7 @@ def getAbility():
 
 @app.route('/guessQuote/quoteOfDay')
 def getQuote():
-    f = open('static/quotes.json')
+    f = open('static/api/quotes.json')
     data = load(f)
     f.close()
     index = randint(0, len(data)-1)
@@ -103,7 +103,7 @@ def getQuote():
 # Standard, Random
 @app.route('/guessWeapon/weaponOfDay')
 def getWeapon():
-    f = open('static/weapons.json')
+    f = open('static/api/weapons.json')
     data = load(f)['data']
     f.close()
     weaponIndex = randint(0, len(data)-1)
