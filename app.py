@@ -13,6 +13,10 @@ def newDay():
     generateNewAnswers()
     return 'success'
 
+@app.route('/sitemap')
+def giveSiteMap():
+    return send_file('sitemap.xml')
+
 @app.route('/')
 def valdle():
     return render_template('valdle.html')
