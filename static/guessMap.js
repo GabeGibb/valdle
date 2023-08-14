@@ -14,7 +14,16 @@ let calloutMap = $('#mapChoice').clone();
 let calloutMaps = [];
 
 function addTries(tries){
-
+    for(let i = 0; i < tries.length; i++){
+        createMap(tries[i][0]);
+        for(let child of document.getElementById("mapChoice").children){
+            if (child.matches('.callout')){
+                if (child.innerHTML == tries[i][2] + ' ' + tries[i][1]){
+                    child.click();
+                }
+            }
+        }
+    }
 }
 
 function doP2Guess(attempt){}
@@ -37,7 +46,7 @@ function makeCalloutDiv(callout, mapName) {
     div.style.left = (-10 + (x / divideFactor)).toString() + 'px'; //x
     div.style.top = (-10 + (y / divideFactor)).toString() + 'px'; //y
     div.className = "callout";
-    div.innerHTML = region;
+    div.innerHTML = superRegion + ' ' + region;
 
     div.style.cursor = 'pointer';
     div.onclick = function () {

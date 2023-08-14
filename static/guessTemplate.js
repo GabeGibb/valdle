@@ -41,7 +41,6 @@ function loadPersistentData(mode){
     
     addTries(persistentData['triesList']);
     if (persistentData['currentState'] == 'p2'){
-        console.log('what')
         doP2Guess(persistentData['p2Attempt']);
     }
 }

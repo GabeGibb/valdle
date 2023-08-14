@@ -18,9 +18,9 @@ function addTries(tries){
 }
 
 function doP2Guess(attempt){
-    if (attempt != ''){
-        isCorrectOption(attempt);
-    }
+    // if (attempt != ''){
+    //     isCorrectOption(attempt);
+    // }
 }
 
 function curGamemode(){
