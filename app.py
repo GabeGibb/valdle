@@ -1,12 +1,17 @@
 from flask import Flask, render_template, send_file
 import json
-
+from generateDailyAnswers import generateNewAnswers
 
 app = Flask(__name__)
 
 @app.route('/riot.txt')
 def riot():
     return send_file('riot.txt')
+
+@app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
+def newDay():
+    generateNewAnswers()
+    return 'success'
 
 @app.route('/')
 def valdle():
