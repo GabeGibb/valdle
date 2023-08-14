@@ -13,6 +13,11 @@ let divideFactor = 1000 / mapSize;
 let calloutMap = $('#mapChoice').clone();
 let calloutMaps = [];
 
+function addTries(tries){
+
+}
+
+function doP2Guess(attempt){}
 
 function tileAnimation(currRow, tileDiv, delayAmount){
     setTimeout(() => {
@@ -39,7 +44,7 @@ function makeCalloutDiv(callout, mapName) {
 
         let guess = [mapName, region, superRegion]
 
-        persistentData['triesList'].push(guess);
+        persistAddTry(guess);
         let listOfMapGuesses = document.getElementById("listOfMapGuesses");
 
         win = false;
@@ -76,9 +81,8 @@ function makeCalloutDiv(callout, mapName) {
         }
 
 
-
         if (win) {
-            persistentData['currentState'] = 'p2';
+            persistP2State();
             gameOver = true;
             clearMap();
 
@@ -185,5 +189,6 @@ $.get("static/api/maps.json", function (data, status) {
     console.log(answer)
     zoomOutMap();
     createMaps();
+    loadPersistentData('map')
 });
 

@@ -18,6 +18,11 @@ $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
 });
 
+function addTries(tries){
+    templateAddTries(tries);
+}
+
+function doP2Guess(attempt){}
 
 function playAudio(audioPlayer) {
     audioPlayer.play();
