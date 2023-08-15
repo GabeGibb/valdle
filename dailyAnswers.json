@@ -1,25 +1,33 @@
 {
-    "map": {
-        "mapName": "Fracture",
-        "regionName": "Tunnel",
-        "superRegionName": "B"
+    "record": {
+        "map": {
+            "mapName": "Fracture",
+            "regionName": "Tower",
+            "superRegionName": "B"
+        },
+        "ability": {
+            "randIndex": 1,
+            "randAbilityIndex": 3,
+            "displayName": "Fade",
+            "abilityName": "Nightfall"
+        },
+        "weapon": {
+            "weaponRandIndex": 5,
+            "skinRandIndex": 1,
+            "gunName": "Judge",
+            "skinName": "Undercity Judge"
+        },
+        "quote": {
+            "randIndex": 11,
+            "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2b/HarborMatchStartDefense1.mp3/revision/latest?cb=20221028112547",
+            "quote": "History is full of senseless aggression. Some things don't change.",
+            "displayName": "Harbor"
+        }
     },
-    "ability": {
-        "randIndex": 5,
-        "randAbilityIndex": 3,
-        "displayName": "Chamber",
-        "abilityName": "Tour De Force"
-    },
-    "weapon": {
-        "weaponRandIndex": 14,
-        "skinRandIndex": 19,
-        "gunName": "Marshal",
-        "skinName": "POLYfrog Marshal"
-    },
-    "quote": {
-        "randIndex": 17,
-        "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/4f/YoruMatchStart2.mp3/revision/latest?cb=20210702142331",
-        "quote": "So much fuss over nothing. Someone get me a bat, I'll finish this.",
-        "displayName": "Yoru"
+    "metadata": {
+        "id": "64db06b59d312622a3915ec6",
+        "private": true,
+        "createdAt": "2023-08-15T05:01:41.730Z",
+        "name": "Valdle Answers"
     }
 }

@@ -69,8 +69,9 @@ def getWeapon():
 def generateDailyAnswers():
     dailyAnswers = {"map": getMap(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
 
-    json_object = dumps(dailyAnswers, indent=4)
+    return dailyAnswers
+    # json_object = dumps(dailyAnswers, indent=4)
 
-    with open("dailyAnswers.json", "w") as outfile:
-        outfile.write(json_object)
-        print('success')
+    # with open("dailyAnswers.json", "w") as outfile:
+    #     outfile.write(json_object)
+    #     print('success')
