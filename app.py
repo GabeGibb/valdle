@@ -17,7 +17,7 @@ def updateAnswers():
     }
 
     req = get(url, headers=headers)
-    json_object = dumps(req.json(), indent=4)
+    json_object = dumps(req.json()['record'], indent=4)
 
     with open("dailyAnswers.json", "w") as outfile:
         outfile.write(json_object)
