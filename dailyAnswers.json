@@ -1,25 +1,25 @@
 {
     "map": {
-        "mapName": "Fracture",
-        "regionName": "Tower",
-        "superRegionName": "B"
+        "mapName": "Breeze",
+        "regionName": "Nest",
+        "superRegionName": "Mid"
     },
     "ability": {
-        "randIndex": 1,
+        "randIndex": 13,
         "randAbilityIndex": 3,
-        "displayName": "Fade",
-        "abilityName": "Nightfall"
+        "displayName": "Phoenix",
+        "abilityName": "Run it Back"
     },
     "weapon": {
-        "weaponRandIndex": 5,
-        "skinRandIndex": 1,
-        "gunName": "Judge",
-        "skinName": "Undercity Judge"
+        "weaponRandIndex": 6,
+        "skinRandIndex": 5,
+        "gunName": "Bucky",
+        "skinName": "Red Alert Bucky"
     },
     "quote": {
-        "randIndex": 11,
-        "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2b/HarborMatchStartDefense1.mp3/revision/latest?cb=20221028112547",
-        "quote": "History is full of senseless aggression. Some things don't change.",
-        "displayName": "Harbor"
+        "randIndex": 7,
+        "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/0a/SkyeLead2.mp3/revision/latest?cb=20210702113945",
+        "quote": "*laughs* Well I reckon morale's gonna be pretty low over there.",
+        "displayName": "Skye"
     }
 }

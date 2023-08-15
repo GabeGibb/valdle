@@ -2,12 +2,22 @@ from flask import Flask, render_template, send_file
 import json
 from requests import get
 from json import dumps
+from generateDailyAnswers import generateDailyAnswers
 
 app = Flask(__name__)
 
 @app.route('/riot.txt')
 def riot():
     return send_file('riot.txt')
+
+@app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
+def updateAnswers():
+    json_object = dumps(generateDailyAnswers(), indent=4)
+
+    with open("dailyAnswers.json", "w") as outfile:
+        outfile.write(json_object)
+    return 'success'
+    
 
 # @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
 # def updateAnswers():
