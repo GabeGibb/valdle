@@ -11,19 +11,20 @@ def riot():
 
 @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
 def updateAnswers():
-    import requests
     url = 'https://api.jsonbin.io/v3/b/64db06b59d312622a3915ec6'
     headers = {
     'X-Master-Key': '$2b$10$354hGEwJOHs9iL8O0llsh.c/2xKZd0gHK/n1GPYUtyanzP25KANy6'
     }
 
-    req = requests.get(url, headers=headers)
+    req = get(url, headers=headers)
     json_object = dumps(req.json(), indent=4)
 
     with open("dailyAnswers.json", "w") as outfile:
         outfile.write(json_object)
 
     return json_object
+
+updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
 
 @app.route('/sitemap')
 def giveSiteMap():
