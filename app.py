@@ -1,6 +1,7 @@
 from flask import Flask, render_template, send_file
 import json
 from generateDailyAnswers import generateNewAnswers
+from requests import get
 
 app = Flask(__name__)
 
@@ -8,10 +9,10 @@ app = Flask(__name__)
 def riot():
     return send_file('riot.txt')
 
-@app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
-def newDay():
-    generateNewAnswers()
-    return 'success'
+# @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
+# def newDay():
+#     get()
+#     return 'success'
 
 @app.route('/sitemap')
 def giveSiteMap():
