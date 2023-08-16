@@ -18,7 +18,7 @@ def updateAnswers():
         outfile.write(json_object)
     return 'success'
     
-
+updateAnswers()
 # @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
 # def updateAnswers():
 #     url = 'https://api.jsonbin.io/v3/b/64db06b59d312622a3915ec6'

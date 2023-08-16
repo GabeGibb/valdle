@@ -1,25 +1,25 @@
 {
     "map": {
-        "mapName": "Breeze",
-        "regionName": "Nest",
-        "superRegionName": "Mid"
+        "mapName": "Icebox",
+        "regionName": "Spawn",
+        "superRegionName": "Attacker Side"
     },
     "ability": {
-        "randIndex": 13,
-        "randAbilityIndex": 3,
-        "displayName": "Phoenix",
-        "abilityName": "Run it Back"
+        "randIndex": 7,
+        "randAbilityIndex": 0,
+        "displayName": "Skye",
+        "abilityName": "Trailblazer"
     },
     "weapon": {
-        "weaponRandIndex": 6,
-        "skinRandIndex": 5,
-        "gunName": "Bucky",
-        "skinName": "Red Alert Bucky"
+        "weaponRandIndex": 12,
+        "skinRandIndex": 2,
+        "gunName": "Operator",
+        "skinName": "Araxys Operator"
     },
     "quote": {
-        "randIndex": 7,
-        "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/0a/SkyeLead2.mp3/revision/latest?cb=20210702113945",
-        "quote": "*laughs* Well I reckon morale's gonna be pretty low over there.",
-        "displayName": "Skye"
+        "randIndex": 11,
+        "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/26/HarborLastRoundDefense.mp3/revision/latest?cb=20221028112545",
+        "quote": "\u0938\u0941\u0928\u094b, treat yourself to something nice while you still can.",
+        "displayName": "Harbor"
     }
 }
