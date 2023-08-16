@@ -62,19 +62,22 @@
     position:relative;
     /* left:-5px; */
 
-    background: rgba(43,42,41,.8);
+    background: rgba(43,42,41,1);
+    /* margin-bottom: 1px; */
 }
 
 .optionButton:hover, .autocompleteActive {
-    background-color: grey;
+    background-color: rgba(128,128,128,1);
     
 }
 
 
 .buttonImages{
-    width: 50px;
+    /* width: 50px; */
     vertical-align: top;
     margin: auto;
+    overflow: hidden;
+    max-height: 100%;
     /* left: -85px; */
     /* position:relative; */
     /* top: -30px; */
@@ -84,6 +87,7 @@
 #optionNames{
     position: absolute;
     top: 50px;
+    height: 200px;
     max-height: 200px;
     /* overflow-y: clip; */
     overflow-x: hidden;
