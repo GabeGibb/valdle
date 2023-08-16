@@ -77,3 +77,11 @@
     position: absolute;
     font-size: 1.75em;
 }
+
+#about{
+    transition: 75ms ease-out;
+}
+#about:hover{
+    transform: scale(1.075); 
+    cursor: grab;
+}
