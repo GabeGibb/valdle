@@ -62,6 +62,12 @@
     position:relative;
     /* left:-5px; */
 
+    background: rgba(43,42,41,.8);
+}
+
+.optionButton:hover, .autocompleteActive {
+    background-color: grey;
+    
 }
 
 
@@ -77,9 +83,11 @@
 
 #optionNames{
     position: absolute;
+    top: 50px;
     max-height: 200px;
     /* overflow-y: clip; */
     overflow-x: hidden;
+    z-index: 1;
 }
 
 
@@ -88,6 +96,7 @@
     text-align: center;
     vertical-align: center;
     margin: auto;
+    color: white;
     /* position:relative; */
     /* left: 30px; */
     /* top: -100px; */
@@ -100,7 +109,11 @@
     display:block;
     height: 40px;
     font-family: 'VALORANT', sans-serif;
+    background: rgba(43,42,41,.8);
+    color: white;
+    border: white;
 }
+
 
 #userInputDiv{
     /* width: 100px; */
@@ -122,8 +135,10 @@
 
 #submit{
     width:50px;
+    margin-left: 5px;
+
  
-    background-color: #fa4454;
+    /* background-color: black; */
 
 }
 
@@ -135,6 +150,8 @@
     /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
+    /* margin-left: 50%; */
+    /* margin: auto; */
     width: 350px;
     text-align:center;
     position: relative;
@@ -153,7 +170,9 @@
 
 .guessImg{
     /* border:10px solid blue; */
-    width: 70px;
+    /* width: 70px; */
+    height: 70px;
+    max-width: 90%;
     position:relative;
     left: 5px;
 }
@@ -298,10 +317,6 @@
     align-items: center;
 }
 
-
-.autocompleteActive{
-    background-color: blue;
-}
 
 #numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText {
     text-align: center;

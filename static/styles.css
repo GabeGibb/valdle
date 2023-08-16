@@ -119,7 +119,7 @@ button{
     -webkit-appearance: none;
     appearance: none;
     border: none;
-    background: black;
+    background: rgba(0,0,0,.3);
     padding: 0;
     color: var(--button-text-color);
     cursor: pointer;
