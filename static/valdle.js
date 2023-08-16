@@ -49,7 +49,13 @@ const languageList = {
 
 // Changes content to stored language on load
 $(function() {
-    var value = localStorage.getItem("language");
+    var value;
+    if (localStorage.getItem("language")) {
+        value = localStorage.getItem("language");
+    }
+    else {
+        value = "en-US";
+    }
     $("#selectedOption").attr("value", value);
     $("#selected-flag").attr("src", '/static/images/flags/' + value + '.png');
     $("#selected-option").text(languageList[value]["languageName"]);
