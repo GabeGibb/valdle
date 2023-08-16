@@ -1,100 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valdle</title>
-    <link rel="icon" href="/static/images/tabIcon.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Valdle</title>
+        <link rel="icon" href="/static/images/tabIcon.png">
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="stylesheet" href="/static/valdle.css">
+        <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="/static/valdle.js"></script>
+        <style>
+            body{overflow-y: hidden;}
+        </style>
+    </head>
 
-    <link rel="stylesheet" href="/static/styles.css">
-    <link rel="stylesheet" href="/static/valdle.css">
-    <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <style>
-        body{overflow-y: hidden;}
-    </style>
-</head>
-
-<body>
-    <nav class="navbar">
-        <a>Valdle</a>
-    </nav>
-    <div id="websiteSummary">
-        <h1> Guess different parts of VALORANT with the given clues!
-    </div>
-    <div class="buttons">
-        <div id="map">
-            <img class="icon" src="static/images/mapIcon.png">
-            <button class="btn btn--light" onclick="location.href='/guessMap'">
-                <span class="btn__inner">
-                    <span class="btn__slide"></span>
-                    <span class="btn__content">Map</span>
-                    <span class="btn__description">Guess the map from an image</span>
-                </span>
-            </button>
-            <div class="win_streak">
-                <img class="icon streak_icon" src="static/images/streakIcon.png">
-                <h1 class="streak_number" id="mapWinStreak">0</h1>
+    <body>
+        <nav class="navbar">
+            <a>Valdle</a>
+        </nav>
+        <div id="topBar">
+            <h1 id="websiteSummary">Guess different parts of VALORANT with the given clues!</h1>
+            <div id="languageSelector">
+                <div id="changeLanguage">
+                    <button id="changeLanguageButton"><img class="icon" src="/static/images/languageIcon.png"></button>
+                </div>
+                <div class="custom-dropdown" id="languageDropdown">
+                    <div class="select-label" onclick="toggleOptions()">
+                        <img id="selected-flag" src="/static/images/flags/en-US.png">
+                        <span id="selected-option"></span>
+                    </div>
+                    <select id="language-select" onchange="updateSelected()">
+                        <option id="selectedOption" value="en-US">English</option>
+                    </select>
+                    <div class="options" id="options"> </div>
+                </div>
             </div>
         </div>
+        <div class="buttons">
+            <div id="map">
+                <img class="icon" src="static/images/mapIcon.png">
+                <button class="btn btn--light" id="mapRedirect" onclick="location.href='/guessMap'">
+                    <span class="btn__inner">
+                        <span class="btn__slide"></span>
+                        <span class="btn__content" id="button1Name">Map</span>
+                        <span class="btn__description" id="button1Desc">Guess the map from an image</span>
+                    </span>
+                </button>
+                <div class="win_streak">
+                    <img class="icon streak_icon" src="static/images/streakIcon.png">
+                    <h1 class="streak_number" id="mapWinStreak">0</h1>
+                </div>
+            </div>
 
-        <div id="ability">
-            <img class="icon" src="static/images/abilityIcon.png">
-            <button class="btn btn--light" onclick="location.href='/guessAbility'">
-                <span class="btn__inner">
-                    <span class="btn__slide"></span>
-                    <span class="btn__content">Ability</span>
-                    <span class="btn__description">9 tiles reveal an agent's ability icon</span>
-                </span>
-            </button>
-            <div class="win_streak">
-                <img class="icon streak_icon" src="static/images/streakIcon.png">
-                <h1 class="streak_number" id="abilityWinStreak">0</h1>
+            <div id="ability">
+                <img class="icon" src="static/images/abilityIcon.png">
+                <button class="btn btn--light" id="abilityRedirect" onclick="location.href='/guessAbility'">
+                    <span class="btn__inner">
+                        <span class="btn__slide"></span>
+                        <span class="btn__content" id="button2Name">Ability</span>
+                        <span class="btn__description" id="button2Desc">9 tiles reveal an agent's ability icon</span>
+                    </span>
+                </button>
+                <div class="win_streak">
+                    <img class="icon streak_icon" src="static/images/streakIcon.png">
+                    <h1 class="streak_number" id="abilityWinStreak">0</h1>
+                </div>
+            </div>
+
+            <div id="weapon">
+                <img class="icon" src="static/images/weaponIcon.png">
+                <button class="btn btn--light" id="weaponRedirect" onclick="location.href='/guessWeapon'">
+                    <span class="btn__inner">
+                        <span class="btn__slide"></span>
+                        <span class="btn__content" id="button3Name">Weapon</span>
+                        <span class="btn__description" id="button3Desc">Guess the weapon from an image</span>
+                    </span>
+                </button>
+                <div class="win_streak">
+                    <img class="icon streak_icon" src="static/images/streakIcon.png">
+                    <h1 class="streak_number" id="weaponWinStreak">0</h1>
+                </div>
+            </div>
+
+            <div id="quote">
+                <img class="icon" src="static/images/quoteIcon.png">
+                <button class="btn btn--light" id="quoteRedirect" onclick="location.href='/guessQuote'">
+                    <span class="btn__inner">
+                        <span class="btn__slide"></span>
+                        <span class="btn__content" id="button4Name">Quote</span>
+                        <span class="btn__description" id="button4Desc">Guess which agent said the quote</span>
+                    </span>
+                </button>
+                <div class="win_streak">
+                    <img class="icon streak_icon" src="static/images/streakIcon.png">
+                    <h1 class="streak_number" id="quoteWinStreak">0</h1>
+                </div>
+            </div>
+
+            <div id="about">
+                <img class="icon" src="static/images/aboutIcon.png">
+                <button class="btn btn--light" id="aboutRedirect" onclick="location.href='/about'">
+                    <span class="btn__inner">
+                        <span class="btn__slide"></span>
+                        <span class="btn__content" id="button5Name">About</span>
+                    </span>
+                </button>
+                <img class="icon" src="static/images/tabIcon.png">
             </div>
         </div>
-
-        <div id="weapon">
-            <img class="icon" src="static/images/weaponIcon.png">
-            <button class="btn btn--light" onclick="location.href='/guessWeapon'">
-                <span class="btn__inner">
-                    <span class="btn__slide"></span>
-                    <span class="btn__content">Weapon</span>
-                    <span class="btn__description">Guess the weapon from an image</span>
-                </span>
-            </button>
-            <div class="win_streak">
-                <img class="icon streak_icon" src="static/images/streakIcon.png">
-                <h1 class="streak_number" id="weaponWinStreak">0</h1>
-            </div>
-        </div>
-
-        <div id="quote">
-            <img class="icon" src="static/images/quoteIcon.png">
-            <button class="btn btn--light" onclick="location.href='/guessQuote'">
-                <span class="btn__inner">
-                    <span class="btn__slide"></span>
-                    <span class="btn__content">Quote</span>
-                    <span class="btn__description">Guess which agent said the quote</span>
-                </span>
-            </button>
-            <div class="win_streak">
-                <img class="icon streak_icon" src="static/images/streakIcon.png">
-                <h1 class="streak_number" id="quoteWinStreak">0</h1>
-            </div>
-        </div>
-
-        <div id="about">
-            <img class="icon" src="static/images/aboutIcon.png">
-            <button class="btn btn--light" onclick="location.href='/about'">
-                <span class="btn__inner">
-                    <span class="btn__slide"></span>
-                    <span class="btn__content">About</span>
-                </span>
-            </button>
-            <img class="icon" src="static/images/tabIcon.png">
-        </div>
-    </div>
-</body>
+    </body>
 
 </html>

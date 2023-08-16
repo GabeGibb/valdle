@@ -1,10 +1,40 @@
+const languageList = {
+    "en-US": {
+        "head": "Guess the agent by ability",
+        "bonus": "Bonus: Guess the ability name",
+        "triesCounter": "Tries:",
+        "correctMessage": "Correct!",
+        "incorrectMessage": "Better Luck Next Time\nCorrect Answer: ",
+        "nextValdle": "Next Valdle:",
+        "nextButton": "Guess the Weapon"
+    },
+    "es-ES": {
+        "head": "Adivina el agente por habilidad",
+        "bonus": "Bonus: Adivina el nombre de la habilidad",
+        "triesCounter": "Intentos:",
+        "correctMessage": "¡Correcto!",
+        "incorrectMessage": "Mejor suerte la próxima vez\nRespuesta Correcta: ",
+        "nextValdle": "Siguiente Valdle:",
+        "nextButton": "Adivina el Arma"
+    }
+}
+
+var value;
 
 let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-let url = "static/api/agents.json";
+let url = "static/api/agents_en-US.json";
 
 let abilityUrl = window.location.href + '/abilityOfDay';
 var abilityIndex;
 var abilityIcon;
+
+// DO NOT TOUCH
+$(document).ready(function() {
+    value = localStorage.getItem("language");
+    url = "static/api/agents_" + value + ".json";
+    $("#header").text(languageList[value]["head"]);
+    $("#bonusPrompt").text(languageList[value]["bonus"]);
+});
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
@@ -50,6 +80,15 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
       }, 500);
     
     createNextPageBox('weapon');
+
+
+    // Tries set to 0, will change after some more implementation of languages
+    $("#numTries").text(languageList[value]["triesCounter"] + " 0");
+    $("#bonusPrompt").text(languageList[value]["bonus"]);
+    $("#nextValdleText").text(languageList[value]["nextValdle"]);
+    $("#nextGameButton").text(languageList[value]["nextButton"]);
+
+
     $('#partTwoDisplay').appendTo('#partTwoDiv');
     $('#partTwoAbilityIcon').attr("src", abilityIcon);
     $("#partTwoDisplay").show();
@@ -79,6 +118,7 @@ function isCorrectAbilityName(button, currAbility){
     persistentData['p2Attempt'] = currAbility
 
     let correctAbilityName = dataList[randIndex]["abilities"][abilityIndex]["displayName"];
+    console.log(correctAbilityName);
     
     if(currAbility == correctAbilityName){
         button.classList.add("correctGuessName")
@@ -88,12 +128,16 @@ function isCorrectAbilityName(button, currAbility){
         winConfetti();
         // $('#partTwoEndText').text('Nice!')
         partTwoWin(correctAbilityName);
+        $("#partTwoEndText").text(languageList[value]["correctMessage"]);
     }   
     else{
         button.classList.add("incorrectGuessName")
         // $('#partTwoEndText').text('Better Luck Next Time')
         partTwoLose(correctAbilityName);
+        $("#partTwoEndText").text(languageList[value]["incorrectMessage"]);
     }
+
+    // Will change above implementations for language soon
 
     canGuessAbilityName = false;
 }

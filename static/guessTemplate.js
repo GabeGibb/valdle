@@ -55,7 +55,7 @@ function loadTemplate(url, showButtonImages, mode){
                             "user-select": "none"});
     $.get(url, function(data, status){ //url defined in current webpage js file
         dataList = data;
-        console.log(dataList)
+        console.log(dataList);
         makeButtons(showButtonImages);
         addEnter();
         curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
@@ -343,16 +343,16 @@ function createNextPageBox(nextGame){
                         <button class="btn btn--light" onclick="location.href=\'/' + nextPageUrl + '\'">\
                             <span class="btn__inner">\
                                 <span class="btn__slide"></span>\
-                                <span class="btn__content">' + nextGameText + '</span>\
+                                <span class="btn__content" id="nextGameButton">' + nextGameText + '</span>\
                             </span>\
                         </button>');
 
     setInterval(createAndUpdateTimer, 1000);
-    $('body').append(nextPageBox)
-    $('#nextPageButton').append(nextButton)
-    $('#correctImg').attr('src', correctImgSrc)
-    $('#correctGuess').text(correctName)
-    $('#numTries').append('0')
+    $('body').append(nextPageBox);
+    $('#nextPageButton').append(nextButton);
+    $('#correctImg').attr('src', correctImgSrc);
+    $('#correctGuess').text(correctName);
+    $('#numTries').append('0');
 
     setTimeout(() => {
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
