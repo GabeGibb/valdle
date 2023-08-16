@@ -44,6 +44,13 @@ $.get(abilityUrl, function(data, status){ //url defined in current webpage js fi
     abilityIndex = data['randAbilityIndex']
 });
 
+function addTries(tries){
+    templateAddTries(tries);
+}
+
+function doP2Guess(attempt){
+    
+}
 
 function curGamemode(){ // Gets called on page load
     createRandAbility(abilityIndex);
@@ -115,7 +122,7 @@ function isCorrectAbilityName(button, currAbility){
     if (!canGuessAbilityName){
         return;
     }
-    persistentData['p2Attempt'] = currAbility
+    persistP2Atempt(currAbility);
 
     let correctAbilityName = dataList[randIndex]["abilities"][abilityIndex]["displayName"];
     console.log(correctAbilityName);

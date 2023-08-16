@@ -13,6 +13,15 @@ $.get(weaponUrl, function(data, status){ //url defined in current webpage js fil
     skinIndex = data['skinRandIndex'];
 });
 
+function addTries(tries){
+    templateAddTries(tries);
+}
+
+function doP2Guess(attempt){
+    // if (attempt != ''){
+    //     isCorrectOption(attempt);
+    // }
+}
 
 function curGamemode(){
     correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];

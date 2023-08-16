@@ -1,12 +1,44 @@
 from flask import Flask, render_template, send_file
 import json
-
+from requests import get
+from json import dumps
+from generateDailyAnswers import generateDailyAnswers
 
 app = Flask(__name__)
 
 @app.route('/riot.txt')
 def riot():
     return send_file('riot.txt')
+
+@app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
+def updateAnswers():
+    json_object = dumps(generateDailyAnswers(), indent=4)
+
+    with open("dailyAnswers.json", "w") as outfile:
+        outfile.write(json_object)
+    return 'success'
+    
+updateAnswers()
+# @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
+# def updateAnswers():
+#     url = 'https://api.jsonbin.io/v3/b/64db06b59d312622a3915ec6'
+#     headers = {
+#     'X-Master-Key': '$2b$10$354hGEwJOHs9iL8O0llsh.c/2xKZd0gHK/n1GPYUtyanzP25KANy6'
+#     }
+
+#     req = get(url, headers=headers)
+#     json_object = dumps(req.json()['record'], indent=4)
+
+#     with open("dailyAnswers.json", "w") as outfile:
+#         outfile.write(json_object)
+
+#     return json_object
+
+# updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
+
+@app.route('/sitemap')
+def giveSiteMap():
+    return send_file('sitemap.xml')
 
 @app.route('/')
 def valdle():

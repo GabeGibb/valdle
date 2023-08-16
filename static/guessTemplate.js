@@ -29,6 +29,52 @@ const tileSpinTiming = {
 //p1 p2 complete
 let persistentData = {'mode': '', 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
 
+function loadPersistentData(mode){
+    console.log(localStorage.getItem(mode))
+    if (localStorage.getItem(mode) == null || 1){
+        persistentData = {'dayId' : 0, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
+        savePersistentData();
+    }
+    else{
+        persistentData = JSON.parse(localStorage.getItem(mode));
+    }
+    
+    addTries(persistentData['triesList']);
+    if (persistentData['currentState'] == 'p2'){
+        doP2Guess(persistentData['p2Attempt']);
+    }
+}
+
+function templateAddTries(tries){
+    for(let i = 0; i < tries.length; i++){
+        isCorrectOption(tries[i]);
+    }
+}
+
+function savePersistentData(){
+    localStorage.setItem(persistentData['mode'], JSON.stringify(persistentData));
+}
+
+function persistAddTry(attempt){
+    persistentData['triesList'].push(attempt);
+    savePersistentData();
+    
+}
+
+function persistP2Atempt(attempt){
+    if (persistentData['p2Attempt'] != ''){
+        return;
+    }
+    persistentData['p2Attempt'] = attempt;
+    savePersistentData();
+    
+}
+
+function persistP2State(){
+    persistentData['currentState'] = 'p2';
+    savePersistentData();
+}
+
 let dataList;
 var randIndex;
 let correctImgSrc;
@@ -41,9 +87,6 @@ $(window).on('click', function(){
     console.log(persistentData)
 })
 
-function loadPersistentData(mode){
-    persistentData['mode'] = mode;
-}
 
 // jQuery.ajaxSetup({async:false});
 function loadTemplate(url, showButtonImages, mode){
@@ -224,6 +267,11 @@ function validateGuess(){
     let userInput = document.getElementById("searchInput")
     for(let i = 0; i < dataList.length; i++){ //TODO: case sens
         if(userInput.value.toUpperCase() == dataList[i]["displayName"].toUpperCase()){
+            if (persistentData['currentState'] == 'p1'){
+                persistAddTry(dataList[i]["displayName"]);
+            }else if (persistentData['currentState'] == 'p2'){
+                persistP2Atempt(dataList[i]["displayName"]);
+            }
             isCorrectOption(dataList[i]["displayName"]);
             return true;
         }
@@ -232,11 +280,6 @@ function validateGuess(){
 }
 
 function isCorrectOption(userInput){
-    if (persistentData['currentState'] == 'p1'){
-        persistentData['triesList'].push(userInput);
-    }else if (persistentData['currentState'] == 'p2'){
-        persistentData['p2Attempt'] = userInput;
-    }
     
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
@@ -262,7 +305,7 @@ function isCorrectOption(userInput){
     if(optionAnswer == userInput){
         newDiv.classList.add("correctGuess")
         $('#dropdown').remove();
-        persistentData['currentState'] = 'p2';
+        persistP2State();
         displayPartTwo();
     }
     else{

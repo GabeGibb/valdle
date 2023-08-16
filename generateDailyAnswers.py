@@ -66,9 +66,12 @@ def getWeapon():
     weaponOfDay['skinName'] =  data[weaponIndex]['skins'][skinIndex]['displayName']
     return weaponOfDay
 
-dailyAnswers = {"map": getMap(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
+def generateDailyAnswers():
+    dailyAnswers = {"map": getMap(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
 
-json_object = dumps(dailyAnswers, indent=4)
- 
-with open("dailyAnswers.json", "w") as outfile:
-    outfile.write(json_object)
+    return dailyAnswers
+    # json_object = dumps(dailyAnswers, indent=4)
+
+    # with open("dailyAnswers.json", "w") as outfile:
+    #     outfile.write(json_object)
+    #     print('success')
