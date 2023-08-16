@@ -162,11 +162,21 @@
     position: absolute;
     /* padding: 2px 2px; */
     height: 15px;
-    background: rgba(58,58,60,0.5);
+    line-height: 15px;
+
+    background: rgba(43,42,41,.8);
     color: white;
     font-size: x-small;
 } 
 
+.calloutText{
+    text-align: center;
+}
+
+.callout:hover{
+    transform: scale(1.065); 
+    z-index: 1;
+}
 /* nextGameBox */
 
 .gameResults {

@@ -37,6 +37,7 @@ function tileAnimation(currRow, tileDiv, delayAmount){
 
 function makeCalloutDiv(callout, mapName) {
     let div = document.createElement("div");
+    let textDiv = document.createElement("div");
 
     let x = callout['location']['x'];
     let y = callout['location']['y'];
@@ -46,7 +47,9 @@ function makeCalloutDiv(callout, mapName) {
     div.style.left = (-10 + (x / divideFactor)).toString() + 'px'; //x
     div.style.top = (-10 + (y / divideFactor)).toString() + 'px'; //y
     div.className = "callout";
-    div.innerHTML = superRegion + ' ' + region;
+    textDiv.innerHTML = superRegion + ' ' + region;
+    textDiv.className = "calloutText"
+    div.appendChild(textDiv)
 
     div.style.cursor = 'pointer';
     div.onclick = function () {
