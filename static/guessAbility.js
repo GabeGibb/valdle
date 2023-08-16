@@ -1,23 +1,23 @@
-const languageList = {
-    "en-US": {
-        "head": "Guess the agent by ability",
-        "bonus": "Bonus: Guess the ability name",
-        "triesCounter": "Tries:",
-        "correctMessage": "Correct!",
-        "incorrectMessage": "Better Luck Next Time\nCorrect Answer: ",
-        "nextValdle": "Next Valdle:",
-        "nextButton": "Guess the Weapon"
-    },
-    "es-ES": {
-        "head": "Adivina el agente por habilidad",
-        "bonus": "Bonus: Adivina el nombre de la habilidad",
-        "triesCounter": "Intentos:",
-        "correctMessage": "¡Correcto!",
-        "incorrectMessage": "Mejor suerte la próxima vez\nRespuesta Correcta: ",
-        "nextValdle": "Siguiente Valdle:",
-        "nextButton": "Adivina el Arma"
-    }
-}
+// const languageList = {
+//     "en-US": {
+//         "head": "Guess the agent by ability",
+//         "bonus": "Bonus: Guess the ability name",
+//         "triesCounter": "Tries:",
+//         "correctMessage": "Correct!",
+//         "incorrectMessage": "Better Luck Next Time\nCorrect Answer: ",
+//         "nextValdle": "Next Valdle:",
+//         "nextButton": "Guess the Weapon"
+//     },
+//     "es-ES": {
+//         "head": "Adivina el agente por habilidad",
+//         "bonus": "Bonus: Adivina el nombre de la habilidad",
+//         "triesCounter": "Intentos:",
+//         "correctMessage": "¡Correcto!",
+//         "incorrectMessage": "Mejor suerte la próxima vez\nRespuesta Correcta: ",
+//         "nextValdle": "Siguiente Valdle:",
+//         "nextButton": "Adivina el Arma"
+//     }
+// }
 
 var value;
 
@@ -29,12 +29,12 @@ var abilityIndex;
 var abilityIcon;
 
 // DO NOT TOUCH
-$(document).ready(function() {
-    value = localStorage.getItem("language");
-    url = "static/api/agents_" + value + ".json";
-    $("#header").text(languageList[value]["head"]);
-    $("#bonusPrompt").text(languageList[value]["bonus"]);
-});
+// $(document).ready(function() {
+//     value = localStorage.getItem("language");
+//     url = "static/api/agents_" + value + ".json";
+//     $("#header").text(languageList[value]["head"]);
+//     $("#bonusPrompt").text(languageList[value]["bonus"]);
+// });
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
@@ -90,10 +90,10 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
 
 
     // Tries set to 0, will change after some more implementation of languages
-    $("#numTries").text(languageList[value]["triesCounter"] + " 0");
-    $("#bonusPrompt").text(languageList[value]["bonus"]);
-    $("#nextValdleText").text(languageList[value]["nextValdle"]);
-    $("#nextGameButton").text(languageList[value]["nextButton"]);
+    // $("#numTries").text(languageList[value]["triesCounter"] + " 0");
+    // $("#bonusPrompt").text(languageList[value]["bonus"]);
+    // $("#nextValdleText").text(languageList[value]["nextValdle"]);
+    // $("#nextGameButton").text(languageList[value]["nextButton"]);
 
 
     $('#partTwoDisplay').appendTo('#partTwoDiv');
@@ -125,7 +125,6 @@ function isCorrectAbilityName(button, currAbility){
     persistP2Atempt(currAbility);
 
     let correctAbilityName = dataList[randIndex]["abilities"][abilityIndex]["displayName"];
-    console.log(correctAbilityName);
     
     if(currAbility == correctAbilityName){
         button.classList.add("correctGuessName")
