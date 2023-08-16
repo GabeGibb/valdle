@@ -15,10 +15,10 @@ body{
     overflow-x: hidden;
     font-family: 'VALORANT', sans-serif;
 
-    background-image: url('images/pxfuel2.jpg');
+    background-image: url('images/pxfuel3.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
-    /* backdrop-filter: brightness(20%); */
+    /* backdrop-filter: brightness(50%); */
     /* background-image: linear-gradient(black, 90%, #fa4454); */
     /* background-image: linear-gradient(#0a141eee 90%,#ff4654ee); */
     /* background-image: linear-gradient(#FFFBF5, 0%, #0a141eee); */
@@ -35,7 +35,7 @@ body{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    border-bottom: solid 4px #3a3a3c;
+    /* border-bottom: solid 4px #3a3a3c; */
 }
 
 .navbar a {
@@ -46,7 +46,7 @@ body{
     padding-top: 10px;
     padding-bottom: 2px;
     text-decoration: none;
-    font-size: 3.5em;
+    font-size: 3.75em;
     transition: 75ms ease-out;
 }
 
@@ -119,7 +119,7 @@ button{
     -webkit-appearance: none;
     appearance: none;
     border: none;
-    background: none;
+    background: black;
     padding: 0;
     color: var(--button-text-color);
     cursor: pointer;
@@ -142,7 +142,6 @@ button{
     font-size: 14px;
     transition: all .15s ease;
 
-    
   }
   
 
