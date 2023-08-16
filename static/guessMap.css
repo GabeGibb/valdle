@@ -65,6 +65,10 @@
     user-select: none;
 }
 
+.imgChoice, .mapChoice{
+    border: 1px solid hsla(38,22%,90%,.5);
+}
+
 .trueImg{
     /* background-color: #000000; */
     /* scale: 1; */
@@ -147,13 +151,16 @@
 
 #mapChoice{
     margin: auto;
-    padding: 10px;
+    /* padding: 10px; */
     position: relative;
-    /* height: 320px; */
+    width: 318px;
+    height: 318px;
+
 }
 
 #curMap{
     width: 100%;
+
     /* object-fit: fill; */
 }
 

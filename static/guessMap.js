@@ -7,7 +7,7 @@ let win;
 let imgUrl;
 
 
-let mapSize = 320;
+let mapSize = document.getElementById('mapChoice').clientHeight;
 let divideFactor = 1000 / mapSize;
 
 let calloutMap = $('#mapChoice').clone();
