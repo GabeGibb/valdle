@@ -17,7 +17,7 @@
 }
 
 #guessImage {
-    height: 100px;
+    height: 175px;
 }
 
 .guessTextDiv{
@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 100px;
+    width: 175px;
     height: 100%;
 }
 
