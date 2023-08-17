@@ -21,7 +21,7 @@
 
 var value;
 
-let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
 let url = "static/api/agents_en-US.json";
 
 let abilityUrl = window.location.href + '/abilityOfDay';
