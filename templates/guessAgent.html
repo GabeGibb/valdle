@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guess The Agent</title>
+        <link rel="icon" href="/static/images/tabIcon.png">
+        <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+        <link rel="stylesheet" href="/static/guessTemplate.css">
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="stylesheet" href="/static/valdle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <script src="/static/confetti.js"></script>
+        <script src="/static/guessTemplate.js" defer></script>
+        <script src="/static/guessAgent.js" defer></script>
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <a href="\">vAldle</a>
+        </nav>
+
+        <div id="gameArea">
+            <div class="prompt">
+                <p id="header">Guess The Agent</p>
+            </div>
+
+            <div id="dropdown">
+                <div id="userInputDiv">
+                    <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
+                    <button id="submit" onclick="validateGuess()">></button>
+                </div>
+                <div id="optionNames" class="dropdown-content"></div>
+            </div>
+
+            <div class = "board" id="topRow">
+                <div class="row">
+                  <div class="category"><span class="cata">Agent</span></div>
+                  <div class="category"><span class="cata">Gender</span></div>
+                  <div class="category"><span class="cata">Role</span></div>
+                </div>
+              </div>
+              
+              <div class="board" id="listOfGuesses">
+        </div>
+
+    </body>
+
+
+
+
+</html>

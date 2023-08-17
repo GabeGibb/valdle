@@ -48,6 +48,10 @@ def valdle():
 def guessMap():
     return render_template('guessMap.html')
 
+@app.route('/guessAgent')
+def guessAgent():
+    return render_template('guessAgent.html')
+
 @app.route('/guessAbility')
 def guessAbility():
     return render_template('guessAbility.html')
@@ -84,6 +88,13 @@ def mapOfDay():
     dailyGameAnswers = json.load(f)
     f.close()
     return dailyGameAnswers["map"]
+
+@app.route('/guessAgent/agentOfDay')
+def agentOfDay():
+    f = open("dailyAnswers.json")
+    dailyGameAnswers = json.load(f)
+    f.close()
+    return dailyGameAnswers["agent"]
 
 @app.route('/guessAbility/abilityOfDay')
 def abilityOfDay():

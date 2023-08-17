@@ -21,6 +21,18 @@ def getMap():
     
     return mapOfDay
 
+def getAgent():
+    f = open('static/api/agents.json')
+    data = load(f)
+    f.close()
+
+    index = randint(0, len(data)-1)
+
+    agentOfDay = {}
+    agentOfDay['randIndex'] = index
+    agentOfDay['displayName'] = data[index]['displayName']
+    return agentOfDay
+
 def getAbility():
     f = open('static/api/agents.json')
     data = load(f)
@@ -67,7 +79,7 @@ def getWeapon():
     return weaponOfDay
 
 def generateDailyAnswers():
-    dailyAnswers = {"map": getMap(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
+    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
 
     return dailyAnswers
     # json_object = dumps(dailyAnswers, indent=4)
