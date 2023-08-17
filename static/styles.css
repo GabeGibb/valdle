@@ -65,7 +65,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: grey;
+    background-color: rgba(128,128,128,1);
 }
 
 

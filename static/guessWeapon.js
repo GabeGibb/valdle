@@ -27,7 +27,7 @@ function curGamemode(){
     correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
     correctName = dataList[randIndex]['displayName']
     setImage();
-    
+
 }
 
 
@@ -93,12 +93,18 @@ function modeWrongActions(){
 
 let insetValue = 35;
 
+let blurVal = 40;
 
 function zoomOutMap() {
-    if (insetValue <= 0) {
+    // if (insetValue <= 0) {
+    //     return;
+    // }
+    // insetValue -= 2.5;
+    // // let guessImg = document.getElementById("guessImage");
+    // guessImage.style.clipPath = 'inset(' + insetValue + '%)';
+    if (blurVal < 0){
         return;
     }
-    insetValue -= 2.5;
-    // let guessImg = document.getElementById("guessImage");
-    guessImage.style.clipPath = 'inset(' + insetValue + '%)';
+    guessImage.style.filter = "blur(" + blurVal + "px)";
+    blurVal -= 5
 }
