@@ -1,24 +1,3 @@
-// const languageList = {
-//     "en-US": {
-//         "head": "Guess the agent by ability",
-//         "bonus": "Bonus: Guess the ability name",
-//         "triesCounter": "Tries:",
-//         "correctMessage": "Correct!",
-//         "incorrectMessage": "Better Luck Next Time\nCorrect Answer: ",
-//         "nextValdle": "Next Valdle:",
-//         "nextButton": "Guess the Weapon"
-//     },
-//     "es-ES": {
-//         "head": "Adivina el agente por habilidad",
-//         "bonus": "Bonus: Adivina el nombre de la habilidad",
-//         "triesCounter": "Intentos:",
-//         "correctMessage": "¡Correcto!",
-//         "incorrectMessage": "Mejor suerte la próxima vez\nRespuesta Correcta: ",
-//         "nextValdle": "Siguiente Valdle:",
-//         "nextButton": "Adivina el Arma"
-//     }
-// }
-
 var value;
 
 let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
@@ -87,14 +66,6 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
       }, 500);
     
     createNextPageBox('weapon');
-
-
-    // Tries set to 0, will change after some more implementation of languages
-    // $("#numTries").text(languageList[value]["triesCounter"] + " 0");
-    // $("#bonusPrompt").text(languageList[value]["bonus"]);
-    // $("#nextValdleText").text(languageList[value]["nextValdle"]);
-    // $("#nextGameButton").text(languageList[value]["nextButton"]);
-
 
     $('#partTwoDisplay').appendTo('#partTwoDiv');
     $('#partTwoAbilityIcon').attr("src", abilityIcon);
