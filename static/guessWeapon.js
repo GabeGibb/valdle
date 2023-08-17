@@ -27,6 +27,7 @@ function curGamemode(){
     correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
     correctName = dataList[randIndex]['displayName']
     setImage();
+    
 }
 
 
