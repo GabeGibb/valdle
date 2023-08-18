@@ -84,7 +84,7 @@
     border-top-width: 0;
 }
 
-.win_streak {
+/* .win_streak {
     position: relative;
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@
     top: 5px;
     position: absolute;
     font-size: 1.75em;
-}
+} */
 
 #about{
     transition: 75ms ease-out;
