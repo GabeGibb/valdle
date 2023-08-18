@@ -362,14 +362,17 @@ function createNextPageBox(nextGame){
                                 <img id="correctImg">\
                                 <div id="correctTextDiv">\
                                     <p id="correctGuess">\
-                                    <div id="numTriesDiv"><p id="numTries">Tries: </p></div>\
+                                    <div id="numTriesDiv"><p id="tries">Tries:&nbsp;</p><p id = "numTries"></p>\
                                 </div>\
                             </div>\
                             <div id="partTwoDiv"></div>\
-                            <div><p id="partTwoEndText"></p></div>\
-                            <div "nextValdleDiv">\
-                                <p id="nextValdleText">Next Valdle:</p>\
-                                <p id="nextValdleCountdown"></p>\
+                            <div id = "endTextDiv"><p id="partTwoEndText"></p></div>\
+                            <div id = "nextValdleDiv">\
+                                <hr>\
+                                <div id = "cd">\
+                                    <p id="nextValdleText">Next Valdle:&nbsp;</p>\
+                                    <p id="nextValdleCountdown"></p>\
+                                </div>\
                             </div>\
                             <div id="nextPageButton"></div>\
                         </div>');
@@ -383,10 +386,10 @@ function createNextPageBox(nextGame){
     }
     
     let nextButton = $('<img class="icon" src="static/images/' + nextGame + 'Icon.png">\
-                        <button class="btn btn--light" onclick="location.href=\'/' + nextPageUrl + '\'">\
+                        <button id="nextGameButton" class="btn btn--light" onclick="location.href=\'/' + nextPageUrl + '\'">\
                             <span class="btn__inner">\
                                 <span class="btn__slide"></span>\
-                                <span class="btn__content" id="nextGameButton">' + nextGameText + '</span>\
+                                <span class="btn__content" >' + nextGameText + '</span>\
                             </span>\
                         </button>');
 
