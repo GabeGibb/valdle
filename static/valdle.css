@@ -84,17 +84,20 @@
     border-top-width: 0;
 }
 
-/* .win_streak {
-    position: relative;
-    display: flex;
-    justify-content: center;
+.win_streak {
+    position: absolute;
+    scale: .4;
+    top: -5px;
+    right: -5px;
+
 }
 
 .streak_number {
-    top: 5px;
     position: absolute;
-    font-size: 1.75em;
-} */
+    top: 6px;
+    right: 22px;
+    color: white;
+}
 
 #about{
     transition: 75ms ease-out;
@@ -103,3 +106,25 @@
     transform: scale(1.075); 
     cursor: grab;
 }
+
+.btnIcon {
+    position: absolute;
+    scale: .8;
+    top: 20px;
+    left: 10px;
+
+}
+
+.buttons button {
+    text-align: left;
+}
+
+.buttons .btn__content, .buttons .btn__description {
+    margin-left: 20%;
+}
+
+.buttons .btn__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
