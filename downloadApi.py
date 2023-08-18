@@ -30,7 +30,7 @@ def downloadMaps():
         for i in range(len(mapsContent)):
             if mapsContent[i]['displayName'] in mapList:
                 alteredMaps.append(mapsContent[i])
-                alteredMaps[-1]['rotation'] = ''
+                alteredMaps[-1]['rotation'] = 0
 
         mapsFile = open("static/api/newMaps.json", "w")
 

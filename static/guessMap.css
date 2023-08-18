@@ -168,15 +168,17 @@
 .callout{
     position: absolute;
     /* padding: 2px 2px; */
-    height: 15px;
-    line-height: 15px;
+    /* height: 15px;
+    line-height: 15px; */
 
-    background: rgba(43,42,41,.8);
-    color: white;
-    font-size: x-small;
+    background: rgba(43,42,41,.9);
+    
 } 
 
 .calloutText{
+    padding: 2px;
+    color: white;
+    font-size: x-small;
     text-align: center;
 }
 

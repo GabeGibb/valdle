@@ -44,8 +44,12 @@ function makeCalloutDiv(callout, mapName) {
     let region = callout['regionName'];
     let superRegion = callout['superRegionName']
 
-    div.style.left = (-10 + (x / divideFactor)).toString() + 'px'; //x
-    div.style.top = (-10 + (y / divideFactor)).toString() + 'px'; //y
+    let calcX = (-10 + (x / divideFactor)).toString() + 'px'; //x
+    let calcY = (-10 + (y / divideFactor)).toString() + 'px'; //y
+
+    div.style.left = calcX;
+    div.style.top = calcY;
+
     div.className = "callout";
     textDiv.innerHTML = superRegion + ' ' + region;
     // textDiv.innerHTML = region;
@@ -125,6 +129,8 @@ function createMaps() {
 
         calloutMaps.push(calloutMap.clone())
         calloutMaps[calloutMaps.length - 1].children().attr('src', maps[i]["displayIcon"])
+        // calloutMaps[calloutMaps.length - 1].children().css({'transform': 'rotate(' + maps[i]['rotation'] +'deg)'})
+
         calloutMaps[calloutMaps.length - 1].val(mapName)
 
         for (let j = 0; j < maps[i]['callouts'].length; j++) {
