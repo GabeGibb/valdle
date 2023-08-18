@@ -303,11 +303,15 @@
     width: 500px;
     min-height: 400px;
     max-height:max-content;
-    background-color: #74CB71;
+    background-color: black;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+
+    border-color: green;
+    border: 5px solid green;
+    border-radius: 20px;
     /* margin-bottom: 500px; */
 }
 
@@ -325,6 +329,10 @@
 
 #numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText {
     text-align: center;
+}
+
+#numTries{
+    color: white;
 }
 
 #partTwoAbilityIcon{

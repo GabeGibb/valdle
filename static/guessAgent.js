@@ -97,6 +97,8 @@ function curGamemode(){ // Gets called on page load
     console.log(dataList[randIndex])
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
+    
+createNextPageBox('ability')
 }
 
 function modeWrongActions(){
@@ -115,7 +117,6 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     $('#partTwoDisplay').appendTo('#partTwoDiv');
     $("#partTwoDisplay").show();
 }
-
 
 
 
