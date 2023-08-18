@@ -387,7 +387,7 @@ function createNextPageBox(nextGame){
     
     let nextButton = $('\
                         <button id="nextGameButton" class="btn btn--light" onclick="location.href=\'/' + nextPageUrl + '\'">\
-                            <span class="btn__inner">\
+                            <span id = "nextGameButton_inner" class="btn__inner">\
                                 <span class="btn__slide"></span>\
                                 <span class="btn__content" >' + nextGameText + '</span>\
                             </span>\

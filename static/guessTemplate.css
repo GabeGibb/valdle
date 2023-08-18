@@ -317,6 +317,8 @@
     border: 5px solid green;
     border-radius: 20px;
     padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     transition: all .4s ease;
     margin-top: 35px;
