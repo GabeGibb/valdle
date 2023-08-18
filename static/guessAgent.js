@@ -98,7 +98,6 @@ function curGamemode(){ // Gets called on page load
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
     
-createNextPageBox('ability')
 }
 
 function modeWrongActions(){

@@ -319,11 +319,12 @@
     padding-bottom: 50px;
 
     transition: all .4s ease;
+    margin-top: 35px;
 }
 
 
 #nextPageBox:hover {
-    background-color: rgb(0, 22, 0);
+    background-color: rgb(0, 12, 0);
 }
 
 #correctImg{
