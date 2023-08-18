@@ -103,8 +103,6 @@ function makeCalloutDiv(callout, mapName) {
             gameOver = true;
             clearMap();
 
-            let mapImg = document.getElementById("curMap");
-            mapImg.src = imgUrl;
 
             winConfetti();
             correctImgSrc = imgUrl;
