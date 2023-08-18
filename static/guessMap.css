@@ -40,8 +40,8 @@
     /* background-color: #0a141eee; */
     background: transparent;
     display:grid;
-    grid-template-rows: 320px;
-    grid-template-columns: 1fr 320px 320px 1fr;
+    grid-template-rows: 400px;
+    grid-template-columns: 1fr 400px 400px 1fr;
 }
 
 #answerBox{
@@ -153,8 +153,8 @@
     margin: auto;
     /* padding: 10px; */
     position: relative;
-    width: 318px;
-    height: 318px;
+    width: 398px;
+    height: 398px;
 
 }
 

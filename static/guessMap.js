@@ -18,7 +18,7 @@ function addTries(tries){
         createMap(tries[i][0]);
         for(let child of document.getElementById("mapChoice").children){
             if (child.matches('.callout')){
-                if (child.innerHTML == tries[i][1]){//tries[i][2] + ' ' + 
+                if (child.innerHTML == tries[i][2] + ' ' + tries[i][1]){//tries[i][2] + ' ' + 
                     child.click();
                 }
             }
@@ -47,8 +47,8 @@ function makeCalloutDiv(callout, mapName) {
     div.style.left = (-10 + (x / divideFactor)).toString() + 'px'; //x
     div.style.top = (-10 + (y / divideFactor)).toString() + 'px'; //y
     div.className = "callout";
-    // textDiv.innerHTML = superRegion + ' ' + region;
-    textDiv.innerHTML = region;
+    textDiv.innerHTML = superRegion + ' ' + region;
+    // textDiv.innerHTML = region;
     textDiv.className = "calloutText"
     div.appendChild(textDiv)
 
@@ -121,9 +121,6 @@ function createMaps() {
     let callout;
 
     for (let i = 0; i < maps.length; i++) {
-        if (maps[i]['displayName'] == 'The Range') {
-            continue;
-        }
         let mapName = maps[i]['displayName']; 
 
         calloutMaps.push(calloutMap.clone())
