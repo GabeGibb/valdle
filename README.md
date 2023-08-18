@@ -31,7 +31,8 @@ Given just a picture, can you use your Valorant map knowledge to try and guess t
 # Contributors
 - Gabriel Gibb
 - Kelly Serafico
-- Matthew Teng
 - Eleas Vrahnos
 - Anna Lee
+- Steph Ton
+- Matthew Teng
 - Peter Lu
