@@ -64,6 +64,7 @@
 
     background: rgba(43,42,41,1);
     /* margin-bottom: 1px; */
+    border: 0.1px solid white !important;
 }
 
 .optionButton:hover, .autocompleteActive {
