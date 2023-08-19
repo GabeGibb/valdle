@@ -34,43 +34,50 @@
     </div>
     <div class="buttons">
         <div id="map">
-           
+
             <button class="btn btn--light" id="mapRedirect" onclick="location.href='/guessMap'">
                 <span class="btn__inner">
                     <span class="btn__slide"></span>
-                    <img class="btnIcon icon" src="static/images/mapIcon.png">
-                    
+                    <img id="mapRed" class="btnIcon icon" src="static/images/mapIcon.png" alt="map icon">
+                    <img id="mapWhite" class="btnIcon icon" src="static/images/mapIcon-WHITE.png" alt="map icon">
                     <span class="btn__content" id="button1Name">Map</span>
                     <span class="btn__description" id="button1Desc">Guess the map from an image</span>
                     <div class="win_streak">
-                        <img class="icon streak_icon" src="static/images/streakIcon.png">
-                        <h1 class="streak_number" id="mapWinStreak">0</h1>
+                        <img id="mapStreak" class="icon streak_icon" src="static/images/streakIcon.png"
+                            alt="streak icon">
+                        <img id="mapStreakWhite" class="icon streak_icon" src="static/images/streakIcon-WHITE.png"
+                            alt="white streak icon">
+                            <div class = "streakBox">
+                                <p class="streak_number" id="mapWinStreak">3</p>
+                            </div>
                     </div>
                 </span>
             </button>
-            <!-- <div class="icon"></div> -->
+
 
         </div>
 
         <div id="agent">
-
+            <!-- ADD AGENT ICON IN SRC -->
             <button class="btn btn--light" id="abilityRedirect" onclick="location.href='/guessAgent'">
                 <span class="btn__inner">
                     <span class="btn__slide"></span>
-                    <img class="btnIcon icon" src="static/images/agentIcon.png">
+                    <img id = "agentRed" class="btnIcon icon" src="static/images/agentIcon.png" alt = "agent icon">
+                    <img id = "agentWhite" class = "btnIcon icon" src="" alt="white agent icon">
                     <span class="btn__content" id="button2Name">Agent</span>
                     <span class="btn__description" id="button2Desc">Guess the agent</span>
                     <div class="win_streak">
                         <img class="icon streak_icon" src="static/images/streakIcon.png">
-                        <h1 class="streak_number" id="mapWinStreak">0</h1>
+                        <img id="agentStreakWhite" class="icon streak_icon" src="static/images/streakIcon-WHITE.png"
+                        alt="white streak icon">
+                        <div class = "streakBox">
+                            <p class="streak_number" id="mapWinStreak">3</p>
+                        </div>
+                        
                     </div>
                 </span>
             </button>
-            <!-- <div class="icon"></div> -->
-            <!-- <div class="win_streak">
-                    <img class="icon streak_icon" src="static/images/streakIcon.png">
-                    <h1 class="streak_number" id="abilityWinStreak">0</h1>
-                </div> -->
+
         </div>
 
         <div id="ability">
@@ -78,20 +85,21 @@
             <button class="btn btn--light" id="abilityRedirect" onclick="location.href='/guessAbility'">
                 <span class="btn__inner">
                     <span class="btn__slide"></span>
-                    <img class="btnIcon icon" src="static/images/abilityIcon.png">
+                    <img id = "abilityRed" class="btnIcon icon" src="static/images/abilityIcon.png" alt = "ability icon">
+                    <img id = "abilityWhite" class = "btnIcon icon" src="static/images/abilityIcon-WHITE.png" alt="white ability icon">
                     <span class="btn__content" id="button2Name">Ability</span>
                     <span class="btn__description" id="button2Desc">Nine tiles reveal an agent's ability</span>
                     <div class="win_streak">
-                        <img class="icon streak_icon" src="static/images/streakIcon.png">
-                        <h1 class="streak_number" id="mapWinStreak">0</h1>
+                        <img id = "abilityStreak" class="icon streak_icon" src="static/images/streakIcon.png">
+                        <img id = "abilityStreakWhite" class="icon streak_icon" src="static/images/streakIcon-WHITE.png"
+                            alt="white streak icon">
+                            <div class = "streakBox">
+                                <p class="streak_number" id="mapWinStreak">1</p>
+                            </div>
                     </div>
                 </span>
             </button>
-            <!-- <div class="icon"></div> -->
-            <!-- <div class="win_streak">
-                    <img class="icon streak_icon" src="static/images/streakIcon.png">
-                    <h1 class="streak_number" id="abilityWinStreak">0</h1>
-                </div> -->
+
         </div>
 
         <div id="weapon">
@@ -99,20 +107,21 @@
             <button class="btn btn--light" id="weaponRedirect" onclick="location.href='/guessWeapon'">
                 <span class="btn__inner">
                     <span class="btn__slide"></span>
-                    <img class="btnIcon icon" src="static/images/weaponIcon.png">
+                    <img id = "weaponRed" class="btnIcon icon" src="static/images/weaponIcon.png" alt = "weapon icon">
+                    <img id = "weaponWhite" class = "btnIcon icon" src="static/images/weaponIcon-WHITE.png" alt="white weapon icon">
                     <span class="btn__content" id="button3Name">Weapon</span>
                     <span class="btn__description" id="button3Desc">Guess the weapon from an image</span>
                     <div class="win_streak">
-                        <img class="icon streak_icon" src="static/images/streakIcon.png">
-                        <h1 class="streak_number" id="mapWinStreak">0</h1>
+                        <img id = "weaponStreak" class="icon streak_icon" src="static/images/streakIcon.png">
+                        <img id = "weaponStreakWhite" class="icon streak_icon" src="static/images/streakIcon-WHITE.png"
+                            alt="white streak icon">
+                        <div class = "streakBox">
+                            <p class="streak_number" id="mapWinStreak">2</p>
+                        </div>
                     </div>
                 </span>
             </button>
-            <!-- <div class="icon"></div> -->
-            <!-- <div class="win_streak">
-                    <img class="icon streak_icon" src="static/images/streakIcon.png">
-                    <h1 class="streak_number" id="weaponWinStreak">0</h1>
-                </div> -->
+
         </div>
 
         <div id="quote">
@@ -120,20 +129,21 @@
             <button class="btn btn--light" id="quoteRedirect" onclick="location.href='/guessQuote'">
                 <span class="btn__inner">
                     <span class="btn__slide"></span>
-                    <img class="btnIcon icon" src="static/images/quoteIcon.png">
+                    <img id = "quoteRed" class="btnIcon icon" src="static/images/quoteIcon.png" alt = "quote icon">
+                    <img id = "quoteWhite" class = "btnIcon icon" src="static/images/quoteIcon-WHITE.png" alt="white quote icon">
                     <span class="btn__content" id="button4Name">Quote</span>
                     <span class="btn__description" id="button4Desc">Guess which agent said the quote</span>
                     <div class="win_streak">
-                        <img class="icon streak_icon" src="static/images/streakIcon.png">
-                        <h1 class="streak_number" id="mapWinStreak">0</h1>
+                        <img id = "quoteStreak" class="icon streak_icon" src="static/images/streakIcon.png">
+                        <img id = "quoteStreakWhite" class="icon streak_icon" src="static/images/streakIcon-WHITE.png"
+                            alt="white streak icon">
+                        <div class = "streakBox">
+                            <p class="streak_number" id="mapWinStreak">0</p>
+                        </div>
                     </div>
                 </span>
             </button>
-            <!-- <div class="icon"></div> -->
-            <!-- <div class="win_streak">
-                    <img class="icon streak_icon" src="static/images/streakIcon.png">
-                    <h1 class="streak_number" id="quoteWinStreak">0</h1>
-                </div> -->
+
         </div>
 
         <div id="about">

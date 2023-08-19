@@ -85,18 +85,39 @@
 }
 
 .win_streak {
+
+
+}
+
+.streak_icon {
     position: absolute;
     scale: .4;
     top: -5px;
     right: -5px;
-
 }
 
-.streak_number {
+.streakBox {
     position: absolute;
-    top: 6px;
-    right: 22px;
+    width: 24px;
+    height: 24px;
+
+    top: 14px;
+    right: 13px;
+
+}
+.streak_number {
+
+    scale: .8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    bottom: 7px;
+
     color: white;
+    transition: all .2s ease;
 }
 
 #about{
@@ -110,7 +131,7 @@
 .btnIcon {
     position: absolute;
     scale: .8;
-    top: 20px;
+    top: 22px;
     left: 10px;
 
 }
@@ -126,5 +147,52 @@
 .buttons .btn__inner {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+
+
+
+/* icons */
+
+#mapRed, #mapStreak,
+#agentRed, #agentStreak,
+#abilityRed, #abilityStreak,
+#weaponRed, #weaponStreak,
+#quoteRed, #quoteStreak
+{
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+#mapWhite, #mapStreakWhite,
+#agentWhite, #agentStreakWhite,
+#abilityWhite, #abilityStreakWhite,
+#weaponWhite, #weaponStreakWhite,
+#quoteWhite, #quoteStreakWhite
+{
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+#mapRedirect:hover #mapRed, #mapRedirect:hover #mapStreak,
+#agentRedirect:hover #agentRed, #agentRedirect:hover #agentStreak,
+#abilityRedirect:hover #abilityRed, #abilityRedirect:hover #abilityStreak,
+#weaponRedirect:hover #weaponRed, #weaponRedirect:hover #weaponStreak,
+#quoteRedirect:hover #quoteRed, #quoteRedirect:hover #quoteStreak
+{
+    opacity: 0;
+}
+
+#mapRedirect:hover #mapWhite, #mapRedirect:hover #mapStreakWhite,
+#agentRedirect:hover #agentWhite, #agentRedirect:hover #agentStreakWhite,
+#abilityRedirect:hover #abilityWhite, #abilityRedirect:hover #abilityStreakWhite,
+#weaponRedirect:hover #weaponWhite, #weaponRedirect:hover #weaponStreakWhite,
+#quoteRedirect:hover #quoteWhite, #quoteRedirect:hover #quoteStreakWhite
+{
+    opacity: 1;
+}
+
+.btn:hover .streak_number {
+    color: #ff4655;
 }
 
