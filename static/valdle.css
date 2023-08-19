@@ -1,12 +1,7 @@
-#topBar {
-    display: flex;
-    flex-direction: column;
-}
-
 #websiteSummary {
     text-align: center;
     color: #ece8e1;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 2em;
     margin-bottom: 0px;
 }
@@ -18,11 +13,97 @@
     justify-content: center;
 }
 
+#topBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#languageDropdown {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    visibility: hidden;
+}
+
 #changeLanguageButton {
     transform: scale(0.75);
     border: none;
+    cursor: pointer;
     appearance: none;
     background-color: inherit;
+}
+
+#changeLanguageButton:hover {
+    transform: scale(0.8);
+}
+
+
+/* Google stuff */
+
+.goog-te-gadget-simple {
+    background-color: black !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
+    color: white !important;
+}
+
+.goog-te-gadget-icon {
+    display: none !important;
+    background-position: 0px !important;
+}
+
+/* Disables top translation pop-up */
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    display: none !important;
+}
+
+/* Selection border */
+.VIpgJd-ZVi9od-vH1Gmf {
+    border: none;
+}
+
+
+
+.custom-dropdown {
+    background-color: transparent;
+}
+
+.custom-dropdown select {
+    display: none;
+}
+
+.custom-dropdown .select-label {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ece8e1;
+    cursor: pointer;
+    color: #ece8e1
+}
+
+/* .custom-dropdown img {
+    width: 20px;
+} */
+
+.custom-dropdown .options {
+    position: absolute;
+    align-items: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.custom-dropdown .option {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.custom-dropdown .option:hover {
+    background-color: #f0f0f0;
 }
 
 
@@ -33,7 +114,7 @@
     align-items: center;
 }
 
-#map, #ability, #quote, #weapon, #about {
+#map, #agent, #ability, #quote, #weapon, #about {
     display: flex;
     align-items: center;
     margin-top: 5px;
@@ -60,7 +141,6 @@
     color: #ece8e1;
     z-index: 1;
     margin-top: 10px;
-    /* font-family:  'Arial'; */
 }
 
 .btn::before,
