@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/static/valdle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="/static/pixelate.min.js"></script>
     <script src="/static/confetti.js"></script>
     <script src="/static/guessTemplate.js" defer></script>
     <script src="/static/guessWeapon.js" defer></script>
@@ -22,13 +23,13 @@
     <nav class="navbar">
         <a href="\">vAldle</a>
     </nav>
-
     <div id="gameArea">
         <div class="prompt">
             <p>Guess The Weapon</p>
         </div>
         <div class="guessImageDiv">
             <img id="guessImage" src="">
+            <!-- <canvas id="guessImage"></canvas> -->
         </div>
         <div id="dropdown">
             <div id="userInputDiv">
