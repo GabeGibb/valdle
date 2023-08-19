@@ -19,7 +19,7 @@
     justify-content: center;
 }
 
-#languageDropdown {
+#google_translate_element {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     visibility: hidden;
@@ -51,11 +51,6 @@
 .goog-te-gadget-icon {
     display: none !important;
     background-position: 0px !important;
-}
-
-/* Disables top translation pop-up */
-.VIpgJd-ZVi9od-ORHb-OEVmcd {
-    display: none !important;
 }
 
 /* Selection border */

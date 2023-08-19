@@ -236,3 +236,9 @@ button{
   }
 /* TEST VAL BUTTON END */
 
+/* Disables top translation pop-up */
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none !important;
+}
+
+
