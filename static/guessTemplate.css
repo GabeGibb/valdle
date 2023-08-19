@@ -368,6 +368,10 @@
     height: 100px;
 }
 
+hr{
+    width: 160px;
+}
+
 
 .board{
     grid-template-rows: repeat(3,70px);
