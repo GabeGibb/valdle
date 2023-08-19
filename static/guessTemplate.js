@@ -409,7 +409,14 @@ function createAndUpdateTimer() {
     let nextMidnight = new Date();
     nextMidnight.setHours(21,0,0,0);
     let now = new Date();
+
+    if ((nextMidnight - now) < 0) {
+        nextMidnight.setHours(45,0,0,0);
+    }
+    
     let rest = (nextMidnight.getTime() - now.getTime())/1000;
+
+    console.log(nextMidnight.getTime(), now.getTime());
 
     const hours = Math.floor(rest/3600);
     rest = rest-(hours*3600);
