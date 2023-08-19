@@ -2,14 +2,14 @@
     {
         "uuid": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
         "displayName": "Ascent",
-        "coordinates": "45°26'BF'N,12°20'Q'E",
+        "coordinates": "45\u00b026'BF'N,12\u00b020'Q'E",
         "displayIcon": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Ascent/Ascent_PrimaryAsset",
         "mapUrl": "/Game/Maps/Ascent/Ascent",
-        "xMultiplier": 7E-05,
-        "yMultiplier": -7E-05,
+        "xMultiplier": 7e-05,
+        "yMultiplier": -7e-05,
         "xScalarToAdd": 0.813895,
         "yScalarToAdd": 0.573242,
         "callouts": [
@@ -189,19 +189,20 @@
                     "y": 70
                 }
             }
-        ]
+        ],
+        "rotation": 90
     },
     {
         "uuid": "d960549e-485c-e861-8d71-aa9d1aed12a2",
         "displayName": "Split",
-        "coordinates": "35°41'CD'N,139°41'WX'E",
+        "coordinates": "35\u00b041'CD'N,139\u00b041'WX'E",
         "displayIcon": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Bonsai/Bonsai_PrimaryAsset",
         "mapUrl": "/Game/Maps/Bonsai/Bonsai",
-        "xMultiplier": 7.8E-05,
-        "yMultiplier": -7.8E-05,
+        "xMultiplier": 7.8e-05,
+        "yMultiplier": -7.8e-05,
         "xScalarToAdd": 0.842188,
         "yScalarToAdd": 0.697578,
         "callouts": [
@@ -397,19 +398,20 @@
                     "y": 430
                 }
             }
-        ]
+        ],
+        "rotation": 90
     },
     {
         "uuid": "b529448b-4d60-346e-e89e-00a4c527a405",
         "displayName": "Fracture",
-        "coordinates": "35°48'BI\"N 106°08'YQ\"W",
+        "coordinates": "35\u00b048'BI\"N 106\u00b008'YQ\"W",
         "displayIcon": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Canyon/Canyon_PrimaryAsset",
         "mapUrl": "/Game/Maps/Canyon/Canyon",
-        "xMultiplier": 7.8E-05,
-        "yMultiplier": -7.8E-05,
+        "xMultiplier": 7.8e-05,
+        "yMultiplier": -7.8e-05,
         "xScalarToAdd": 0.556952,
         "yScalarToAdd": 1.155886,
         "callouts": [
@@ -589,19 +591,20 @@
                     "y": 885
                 }
             }
-        ]
+        ],
+        "rotation": 0
     },
     {
         "uuid": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
         "displayName": "Bind",
-        "coordinates": "34°2'A'N,6°51'Z'W",
+        "coordinates": "34\u00b02'A'N,6\u00b051'Z'W",
         "displayIcon": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Duality/Duality_PrimaryAsset",
         "mapUrl": "/Game/Maps/Duality/Duality",
-        "xMultiplier": 5.9E-05,
-        "yMultiplier": -5.9E-05,
+        "xMultiplier": 5.9e-05,
+        "yMultiplier": -5.9e-05,
         "xScalarToAdd": 0.576941,
         "yScalarToAdd": 0.967566,
         "callouts": [
@@ -797,19 +800,20 @@
                     "y": 215
                 }
             }
-        ]
+        ],
+        "rotation": 0
     },
     {
         "uuid": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
         "displayName": "Breeze",
-        "coordinates": "26°11'AG\"N 71°10'WY\"W",
+        "coordinates": "26\u00b011'AG\"N 71\u00b010'WY\"W",
         "displayIcon": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Foxtrot/Foxtrot_PrimaryAsset",
         "mapUrl": "/Game/Maps/Foxtrot/Foxtrot",
-        "xMultiplier": 7E-05,
-        "yMultiplier": -7E-05,
+        "xMultiplier": 7e-05,
+        "yMultiplier": -7e-05,
         "xScalarToAdd": 0.465123,
         "yScalarToAdd": 0.833078,
         "callouts": [
@@ -1045,19 +1049,20 @@
                     "y": 900
                 }
             }
-        ]
+        ],
+        "rotation": 0
     },
     {
         "uuid": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
         "displayName": "Lotus",
-        "coordinates": "14°07'AD.4\"N8 74°53'XY\"E8",
+        "coordinates": "14\u00b007'AD.4\"N8 74\u00b053'XY\"E8",
         "displayIcon": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Jam/Jam_PrimaryAsset",
         "mapUrl": "/Game/Maps/Jam/Jam",
-        "xMultiplier": 7.2E-05,
-        "yMultiplier": -7.2E-05,
+        "xMultiplier": 7.2e-05,
+        "yMultiplier": -7.2e-05,
         "xScalarToAdd": 0.454789,
         "yScalarToAdd": 0.917752,
         "callouts": [
@@ -1286,19 +1291,20 @@
                     "y": 825
                 }
             }
-        ]
+        ],
+        "rotation": 0
     },
     {
         "uuid": "fd267378-4d1d-484f-ff52-77821ed10dc2",
         "displayName": "Pearl",
-        "coordinates": "38°42'ED\"N8 9°08'XS\"W8",
+        "coordinates": "38\u00b042'ED\"N8 9\u00b008'XS\"W8",
         "displayIcon": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Pitt/Pitt_PrimaryAsset",
         "mapUrl": "/Game/Maps/Pitt/Pitt",
-        "xMultiplier": 7.8E-05,
-        "yMultiplier": -7.8E-05,
+        "xMultiplier": 7.8e-05,
+        "yMultiplier": -7.8e-05,
         "xScalarToAdd": 0.480469,
         "yScalarToAdd": 0.916016,
         "callouts": [
@@ -1511,19 +1517,20 @@
                     "y": 900
                 }
             }
-        ]
+        ],
+        "rotation": 0
     },
     {
         "uuid": "e2ad5c54-4114-a870-9641-8ea21279579a",
         "displayName": "Icebox",
-        "coordinates": "76°44' A\"N 149°30' Z\"E",
+        "coordinates": "76\u00b044' A\"N 149\u00b030' Z\"E",
         "displayIcon": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Port/Port_PrimaryAsset",
         "mapUrl": "/Game/Maps/Port/Port",
-        "xMultiplier": 7.2E-05,
-        "yMultiplier": -7.2E-05,
+        "xMultiplier": 7.2e-05,
+        "yMultiplier": -7.2e-05,
         "xScalarToAdd": 0.460214,
         "yScalarToAdd": 0.304687,
         "callouts": [
@@ -1735,34 +1742,20 @@
                     "y": 850
                 }
             }
-        ]
-    },
-    {
-        "uuid": "ee613ee9-28b7-4beb-9666-08db13bb2244",
-        "displayName": "The Range",
-        "coordinates": "45°26'FF'N,12°20'Q'E",
-        "displayIcon": null,
-        "listViewIcon": "https://media.valorant-api.com/maps/ee613ee9-28b7-4beb-9666-08db13bb2244/listviewicon.png",
-        "splash": "https://media.valorant-api.com/maps/ee613ee9-28b7-4beb-9666-08db13bb2244/splash.png",
-        "assetPath": "ShooterGame/Content/Maps/Poveglia/Poveglia_PrimaryAsset",
-        "mapUrl": "/Game/Maps/Poveglia/Range",
-        "xMultiplier": 0,
-        "yMultiplier": 0,
-        "xScalarToAdd": 0,
-        "yScalarToAdd": 0,
-        "callouts": null
+        ],
+        "rotation": -90
     },
     {
         "uuid": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
         "displayName": "Haven",
-        "coordinates": "27°28'A'N,89°38'WZ'E",
+        "coordinates": "27\u00b028'A'N,89\u00b038'WZ'E",
         "displayIcon": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/splash.png",
         "assetPath": "ShooterGame/Content/Maps/Triad/Triad_PrimaryAsset",
         "mapUrl": "/Game/Maps/Triad/Triad",
-        "xMultiplier": 7.5E-05,
-        "yMultiplier": -7.5E-05,
+        "xMultiplier": 7.5e-05,
+        "yMultiplier": -7.5e-05,
         "xScalarToAdd": 1.09345,
         "yScalarToAdd": 0.642728,
         "callouts": [
@@ -1934,6 +1927,7 @@
                     "y": 150
                 }
             }
-        ]
+        ],
+        "rotation": 90
     }
 ]

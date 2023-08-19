@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="/static/guessMap.css">
   <link rel="stylesheet" href="/static/styles.css">
+  
   <link rel="stylesheet" href="/static/guessTemplate.css">
   <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
   <title>Guess The Map</title>
@@ -28,36 +29,36 @@
     <div class="map_selection">
       <div class="containerTab">
         <div class="containerRow1">
-          
-          <button class="btn btn--light" id = "chooseAscent" onclick = "createMap('Ascent')">
+
+          <button class="btn btn--light" id="chooseAscent" onclick="createMap('Ascent')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Ascent</span>
             </span>
           </button>
-          
-          <button class="btn btn--light" id = "chooseBind" onclick = "createMap('Bind')">
+
+          <button class="btn btn--light" id="chooseBind" onclick="createMap('Bind')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Bind</span>
             </span>
           </button>
 
-          <button class="btn btn--light" id = "chooseBreeze" onclick = "createMap('Breeze')">
+          <button class="btn btn--light" id="chooseBreeze" onclick="createMap('Breeze')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Breeze</span>
             </span>
           </button>
 
-          <button class="btn btn--light" id = "chooseFracture" onclick = "createMap('Fracture')">
+          <button class="btn btn--light" id="chooseFracture" onclick="createMap('Fracture')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Fracture</span>
             </span>
           </button>
 
-          <button class="btn btn--light" id = "chooseHaven" onclick = "createMap('Haven')">
+          <button class="btn btn--light" id="chooseHaven" onclick="createMap('Haven')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Haven</span>
@@ -67,35 +68,35 @@
         </div>
         <div class="containerRow1">
 
-          <button class="btn btn--light" id = "chooseIcebox" onclick = "createMap('Icebox')">
+          <button class="btn btn--light" id="chooseIcebox" onclick="createMap('Icebox')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">IceBox</span>
             </span>
           </button>
 
-          <button class="btn btn--light" id = "chooseLotus" onclick = "createMap('Lotus')">
+          <button class="btn btn--light" id="chooseLotus" onclick="createMap('Lotus')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Lotus</span>
             </span>
           </button>
 
-          <button class="btn btn--light" id = "choosePearl" onclick = "createMap('Pearl')">
+          <button class="btn btn--light" id="choosePearl" onclick="createMap('Pearl')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Pearl</span>
             </span>
           </button>
 
-          <button class="btn btn--light" id = "chooseSplit" onclick = "createMap('Split')">
+          <button class="btn btn--light" id="chooseSplit" onclick="createMap('Split')">
             <span class="btn__inner">
               <span class="btn__slide"></span>
               <span class="btn__content">Split</span>
             </span>
           </button>
 
-        
+
 
         </div>
 
@@ -114,27 +115,30 @@
     </div>
 
 
-    <div class = "board">
+    <div class="board">
       <div class="row">
         <div class="category"><span class="cata">Map Name</span></div>
         <div class="category"><span class="cata">Callout</span></div>
         <div class="category"><span class="cata">Location</span></div>
       </div>
     </div>
-    
+
     <div class="board" id="listOfMapGuesses">
 
     </div>
   </div>
 
-  <div class = "gameResults" style="display: none;">
-    <div class = "NGleftSide">
-      <p class = "gg" >GG!</p>
+
+
+
+  <div class="gameResults" style="display: none;">
+    <div class="NGleftSide">
+      <p class="gg">GG!</p>
       <p>Tries: 0</p>
       <p>Next Valdle:</p>
       <p>00:00:00</p>
 
-      <button class="btn btn--light" id = "guessAbilityButton" onclick = "location.href='/guessAbility'">
+      <button class="btn btn--light" id="guessAbilityButton" onclick="location.href='/guessAbility'">
         <span class="btn__inner">
           <span class="btn__slide"></span>
           <span class="btn__content">Guess Ability</span>
@@ -142,9 +146,9 @@
       </button>
 
     </div>
-    <div class = "NGrightSide">
-      <img class = "imgAnswer" src="http://127.0.0.1:5000/guessMap/Lotus/Spawn/Attacker%20Side" alt="correct image">
-      
+    <div class="NGrightSide">
+      <img class="imgAnswer" src="http://127.0.0.1:5000/guessMap/Lotus/Spawn/Attacker%20Side" alt="correct image">
+
     </div>
 
   </div>

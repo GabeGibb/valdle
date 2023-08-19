@@ -18,7 +18,7 @@ function addTries(tries){
         createMap(tries[i][0]);
         for(let child of document.getElementById("mapChoice").children){
             if (child.matches('.callout')){
-                if (child.innerHTML == tries[i][1]){//tries[i][2] + ' ' + 
+                if (child.innerHTML == tries[i][2] + ' ' + tries[i][1]){//tries[i][2] + ' ' + 
                     child.click();
                 }
             }
@@ -44,11 +44,15 @@ function makeCalloutDiv(callout, mapName) {
     let region = callout['regionName'];
     let superRegion = callout['superRegionName']
 
-    div.style.left = (-10 + (x / divideFactor)).toString() + 'px'; //x
-    div.style.top = (-10 + (y / divideFactor)).toString() + 'px'; //y
+    let calcX = (-10 + (x / divideFactor)).toString() + 'px'; //x
+    let calcY = (-10 + (y / divideFactor)).toString() + 'px'; //y
+
+    div.style.left = calcX;
+    div.style.top = calcY;
+
     div.className = "callout";
-    // textDiv.innerHTML = superRegion + ' ' + region;
-    textDiv.innerHTML = region;
+    textDiv.innerHTML = superRegion + ' ' + region;
+    // textDiv.innerHTML = region;
     textDiv.className = "calloutText"
     div.appendChild(textDiv)
 
@@ -99,8 +103,6 @@ function makeCalloutDiv(callout, mapName) {
             gameOver = true;
             clearMap();
 
-            let mapImg = document.getElementById("curMap");
-            mapImg.src = imgUrl;
 
             winConfetti();
             correctImgSrc = imgUrl;
@@ -121,13 +123,12 @@ function createMaps() {
     let callout;
 
     for (let i = 0; i < maps.length; i++) {
-        if (maps[i]['displayName'] == 'The Range') {
-            continue;
-        }
         let mapName = maps[i]['displayName']; 
 
         calloutMaps.push(calloutMap.clone())
         calloutMaps[calloutMaps.length - 1].children().attr('src', maps[i]["displayIcon"])
+        // calloutMaps[calloutMaps.length - 1].children().css({'transform': 'rotate(' + maps[i]['rotation'] +'deg)'})
+
         calloutMaps[calloutMaps.length - 1].val(mapName)
 
         for (let j = 0; j < maps[i]['callouts'].length; j++) {

@@ -40,8 +40,8 @@
     /* background-color: #0a141eee; */
     background: transparent;
     display:grid;
-    grid-template-rows: 320px;
-    grid-template-columns: 1fr 320px 320px 1fr;
+    grid-template-rows: 400px;
+    grid-template-columns: 1fr 400px 400px 1fr;
 }
 
 #answerBox{
@@ -153,8 +153,8 @@
     margin: auto;
     /* padding: 10px; */
     position: relative;
-    width: 318px;
-    height: 318px;
+    width: 398px;
+    height: 398px;
 
 }
 
@@ -168,15 +168,17 @@
 .callout{
     position: absolute;
     /* padding: 2px 2px; */
-    height: 15px;
-    line-height: 15px;
+    /* height: 15px;
+    line-height: 15px; */
 
-    background: rgba(43,42,41,.8);
-    color: white;
-    font-size: x-small;
+    background: rgba(43,42,41,.9);
+    
 } 
 
 .calloutText{
+    padding: 2px;
+    color: white;
+    font-size: x-small;
     text-align: center;
 }
 
@@ -184,6 +186,8 @@
     transform: scale(1.065); 
     z-index: 1;
 }
+
+
 /* nextGameBox */
 
 .gameResults {
@@ -240,6 +244,36 @@
 #guessAbilityButton {
     margin-top: 20px;
     padding: 0;
+}
+
+
+#nextGameButton::before,
+#nextGameButton::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+}
+
+#nextGameButton::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+#nextGameButton::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+#nextGameButton_inner {
+    min-width: 400px;
+    padding: 25px 0px;  
+    display: flex;
+    flex-direction: column;
+
 }
 
 
