@@ -107,4 +107,6 @@ function zoomOutMap() {
     }
     guessImage.style.filter = "blur(" + blurVal + "px)";
     blurVal -= 2
+    
 }
+
