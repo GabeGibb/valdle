@@ -289,6 +289,7 @@ function isCorrectOption(userInput){
     let text = document.createTextNode(userInput);
     let p = document.createElement('p');
     p.classList.add("guessText");
+    p.classList.add("notranslate");
 
     let optionImg = document.createElement('img');
     let optionImgSrc = dataList[findUserIndex(userInput)]["displayIcon"]
@@ -346,7 +347,7 @@ function removeOption(name){
 }
 
 function partTwoWin(correctAnswer){
-    $('#partTwoEndText').text('Correct!')
+    $('#partTwoEndText').text('Correct!<br>Correct Answer: ' + correctAnswer)
 
 }
 
@@ -357,11 +358,11 @@ function partTwoLose(correctAnswer){
 
 function createNextPageBox(nextGame){
     let nextPageBox = $('<div id="nextPageBox">\
-                            <div id="victoryMessage"><p>GG!</p></div>\
+                            <div class="notranslate" id="victoryMessage"><p>GG!</p></div>\
                             <div id="correctGuessDiv">\
                                 <img id="correctImg">\
                                 <div id="correctTextDiv">\
-                                    <p id="correctGuess">\
+                                    <p class="notranslate" id="correctGuess">\
                                     <div id="numTriesDiv"><p id="tries">Tries:&nbsp;</p><p id = "numTries"></p>\
                                 </div>\
                             </div>\
@@ -370,7 +371,7 @@ function createNextPageBox(nextGame){
                             <div id = "nextValdleDiv">\
                                 <hr>\
                                 <div id = "cd">\
-                                    <p id="nextValdleText">Next Valdle:&nbsp;</p>\
+                                    <p id="nextValdleText">Refreshes in:&nbsp;</p>\
                                     <p id="nextValdleCountdown"></p>\
                                 </div>\
                             </div>\
@@ -415,8 +416,6 @@ function createAndUpdateTimer() {
     }
     
     let rest = (nextMidnight.getTime() - now.getTime())/1000;
-
-    console.log(nextMidnight.getTime(), now.getTime());
 
     const hours = Math.floor(rest/3600);
     rest = rest-(hours*3600);

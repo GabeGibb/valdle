@@ -12,14 +12,24 @@
         <script src="/static/confetti.js"></script>
         <script src="/static/guessTemplate.js" defer></script>
         <script src="/static/guessAbility.js" defer></script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="/static/translate.js"></script>
     </head>
+
+    <style>
+        body {
+            padding-bottom: 10px;
+        }
+    </style>
+
     <body>
 
         <nav class="navbar">
-            <a href="\">vAldle</a>
+            <a href="\" class="notranslate">vAldle</a>
         </nav>
 
         <div id="gameArea">
+            <div id="google_translate_element"></div>
             <div class="prompt">
                 <p id="header">Guess The Agent By Ability</p>
             </div>
@@ -34,7 +44,7 @@
                     <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
                     <button id="submit" onclick="validateGuess()">></button>
                 </div>
-                <div id="optionNames" class="dropdown-content"></div>
+                <div id="optionNames" class="dropdown-content notranslate"></div>
             </div>
 
             <div id="fullListOfGuesses">
@@ -53,7 +63,7 @@
     </body>
 
     <script>
-        // Generate the 3x3 grid tiles
+        // Generate the 4x4 grid tiles
         const gridContainer = document.getElementById("tileGrid");
         for (let i = 0; i < 16; i++) {
             const tile = document.createElement("div");

@@ -1,19 +1,18 @@
 var value;
 
 let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
-let url = "static/api/agents_en-US.json";
+
+function getLanguageCookie() {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; googtrans=`);
+    return parts.pop().split(';').shift().substring(6);
+}
+let url = "static/api/agents_" + getLanguageCookie() + ".json";
+
 
 let abilityUrl = window.location.href + '/abilityOfDay';
 var abilityIndex;
 var abilityIcon;
-
-// DO NOT TOUCH
-// $(document).ready(function() {
-//     value = localStorage.getItem("language");
-//     url = "static/api/agents_" + value + ".json";
-//     $("#header").text(languageList[value]["head"]);
-//     $("#bonusPrompt").text(languageList[value]["bonus"]);
-// });
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
@@ -51,6 +50,7 @@ function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
     partTwoDisplay = document.getElementById("partTwoDisplay");
 
     let whatAbilityNameDiv = document.getElementById("whatName")
+    whatAbilityNameDiv.classList.add("notranslate");
     for(i = 0; i < 4; i++){ 
         let button = document.createElement('button');
         let currAbility = dataList[randIndex]["abilities"][i]["displayName"];
@@ -103,15 +103,13 @@ function isCorrectAbilityName(button, currAbility){
         whatAbilityNameDiv.disabled = true;
         
         winConfetti();
-        // $('#partTwoEndText').text('Nice!')
         partTwoWin(correctAbilityName);
-        $("#partTwoEndText").text(languageList[value]["correctMessage"]);
+        $('#partTwoEndText').text('Good job!');
     }   
     else{
         button.classList.add("incorrectGuessName")
-        // $('#partTwoEndText').text('Better Luck Next Time')
         partTwoLose(correctAbilityName);
-        $("#partTwoEndText").text(languageList[value]["incorrectMessage"]);
+        $('#partTwoEndText').text('Better Luck Next Time');
     }
 
     // Will change above implementations for language soon

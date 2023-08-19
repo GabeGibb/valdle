@@ -345,6 +345,10 @@
     text-align: center;
 }
 
+#partTwoEndText {
+    color: white;
+}
+
 #numTriesDiv {
     display: flex;
     justify-content: center;

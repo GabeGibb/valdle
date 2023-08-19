@@ -14,7 +14,7 @@ body{
     height: 100%;
     overflow-x: hidden;
     font-family: 'VALORANT', sans-serif;
-
+    
     background-image: url('images/pxfuel3.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
@@ -241,4 +241,13 @@ button{
   display: none !important;
 }
 
+/* Disables GT tooltips and highlights */
+#goog-gt-tt {display: none !important;} 
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  display: none !important;
+}

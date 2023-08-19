@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/static/valdle.css">
     <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/translate.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="/static/translate.js"></script>
 
     <style>
         body {
@@ -30,7 +30,7 @@
             <div id="changeLanguage">
                 <button id="changeLanguageButton"><img class="icon" src="/static/images/languageIcon.png"></button>
             </div>
-            <div class="custom-dropdown" id="google_translate_element"></div>
+            <div id="google_translate_element"></div>
         </div>
     </div>
     <div class="buttons">
@@ -152,5 +152,18 @@
         </div>
     </div>
 </body>
+
+<script>
+    $(document).ready(function() {
+        // Allows toggle with globe button, between visible and hidden dropdown language menu
+        const button = document.getElementById('changeLanguageButton');
+        const dropdown = document.getElementById('google_translate_element');
+    
+        button.addEventListener('click', function () {
+            dropdown.style.visibility = dropdown.style.visibility == "visible" ? "hidden" : "visible";
+            dropdown.style.position = dropdown.style.position == "relative" ? "absolute" : "relative";
+        });
+    });
+</script>
 
 </html>
