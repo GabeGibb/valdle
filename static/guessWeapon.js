@@ -1,4 +1,9 @@
-let url = "static/api/weapons.json";
+function getLanguageCookie() {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; googtrans=`);
+    return parts.pop().split(';').shift().substring(6);
+}
+let url = "static/api/weapons_" + getLanguageCookie() + ".json";
 
 let weaponUrl = window.location.href + '/weaponOfDay';
 

@@ -347,13 +347,16 @@ function removeOption(name){
 }
 
 function partTwoWin(correctAnswer){
-    $('#partTwoEndText').text('Correct!<br>Correct Answer: ' + correctAnswer)
+    $('#dropdown').remove();
+    $('#partTwoEndText').text('Correct!');
+    // $('#partTwoEndText').text('Correct!<br>Correct Answer: ' + correctAnswer);
 
 }
 
 function partTwoLose(correctAnswer){
     $('#dropdown').remove();
-    $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
+    $('#partTwoEndText').html('Better Luck Next Time');
+    // $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
 }
 
 function createNextPageBox(nextGame){
