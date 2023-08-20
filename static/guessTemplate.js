@@ -31,7 +31,7 @@ let persistentData = {'mode': '', 'triesList': [], 'currentState': 'p1', 'p2Atte
 
 function loadPersistentData(mode){
     console.log(localStorage.getItem(mode))
-    if (localStorage.getItem(mode) == null || 1){
+    if (localStorage.getItem(mode) == null){
         persistentData = {'dayId' : 0, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
         savePersistentData();
     }

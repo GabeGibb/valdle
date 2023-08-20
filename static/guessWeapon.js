@@ -16,9 +16,11 @@ function addTries(tries){
 }
 
 function doP2Guess(attempt){
-    // if (attempt != ''){
-    //     isCorrectOption(attempt);
-    // }
+    setTimeout(() => {
+        if (attempt != ''){
+            isCorrectOption(attempt);
+        }
+    }, 500);
 }
 
 function curGamemode(){
@@ -64,7 +66,7 @@ function guessGunSkinTime(){
     makeButtons(false);
 
     setTimeout(() => {
-        document.getElementById("userInputDiv").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         $('#fullListOfGuesses').empty();
         $('#fullListOfGuesses').show()
         addEnter();

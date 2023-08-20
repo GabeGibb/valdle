@@ -18,7 +18,14 @@ function addTries(tries){
 }
 
 function doP2Guess(attempt){
-    
+    let buttons = $('#whatName')
+    console.log('p2')
+    buttons.children().each(function(){
+        if (this.innerHTML == attempt){
+            isCorrectAbilityName(this, attempt)
+        }
+    })
+
 }
 
 function curGamemode(){ // Gets called on page load
@@ -102,8 +109,6 @@ function isCorrectAbilityName(button, currAbility){
         partTwoLose(correctAbilityName);
         $('#partTwoEndText').text('Better Luck Next Time');
     }
-
-    // Will change above implementations for language soon
 
     canGuessAbilityName = false;
 }
