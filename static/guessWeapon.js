@@ -3,7 +3,7 @@ function getLanguageCookie() {
     const parts = value.split(`; googtrans=`);
     return parts.pop().split(';').shift().substring(6);
 }
-let url = "static/api/weapons_" + getLanguageCookie() + ".json";
+let url = "static/api/weapons/weapons_" + getLanguageCookie() + ".json";
 
 let weaponUrl = window.location.href + '/weaponOfDay';
 

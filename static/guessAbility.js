@@ -7,7 +7,7 @@ function getLanguageCookie() {
     const parts = value.split(`; googtrans=`);
     return parts.pop().split(';').shift().substring(6);
 }
-let url = "static/api/agents_" + getLanguageCookie() + ".json";
+let url = "static/api/agents/agents_" + getLanguageCookie() + ".json";
 
 
 let abilityUrl = window.location.href + '/abilityOfDay';

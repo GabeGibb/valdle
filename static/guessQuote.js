@@ -1,4 +1,4 @@
-let url = "static/api/agents.json";
+let url = "static/api/agents/agents_en.json";
 
 let quoteUrl = window.location.href + '/quoteOfDay';
 
