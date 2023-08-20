@@ -1,15 +1,6 @@
-var value;
-
 let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
 
-function getLanguageCookie() {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; googtrans=`);
-    return parts.pop().split(';').shift().substring(6);
-}
-let url = "static/api/agents_" + getLanguageCookie() + ".json";
-
-
+let url = "static/api/agents/agents_" + getLanguageCookie() + ".json";
 let abilityUrl = window.location.href + '/abilityOfDay';
 var abilityIndex;
 var abilityIcon;

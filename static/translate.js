@@ -7,3 +7,11 @@ function googleTranslateElementInit() {
     }, 'google_translate_element');
 }
 
+function getLanguageCookie() {
+    const value = `; ${document.cookie}`;
+    if (document.cookie.indexOf('googtrans=') == -1) {
+        return "en"
+    }
+    const parts = value.split(`; googtrans=`);
+    return parts.pop().split(';').shift().substring(6);
+}
