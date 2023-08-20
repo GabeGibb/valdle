@@ -13,7 +13,6 @@ def riot():
 @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
 def updateAnswers():
     dailyAnswers = generateDailyAnswers()
-    dailyAnswers['dayId'] = dailyAnswers['dayId']
 
     json_object = dumps(generateDailyAnswers(), indent=4)
 
@@ -98,39 +97,20 @@ def blankOfDay(mode):
 @app.route('/guessMap/mapOfDay')
 def mapOfDay():
     return blankOfDay('map')
-    # f = open("dailyAnswers.json")
-    # dailyGameAnswers = json.load(f)
-    # f.close()
-    # return dailyGameAnswers["map"]
+
 
 @app.route('/guessAgent/agentOfDay')
 def agentOfDay():
     return blankOfDay('agent')
-    # f = open("dailyAnswers.json")
-    # dailyGameAnswers = json.load(f)
-    # f.close()
-    # return dailyGameAnswers["agent"]
 
 @app.route('/guessAbility/abilityOfDay')
 def abilityOfDay():
     return blankOfDay('ability')
-    # f = open("dailyAnswers.json")
-    # dailyGameAnswers = json.load(f)
-    # f.close()
-    # return dailyGameAnswers["ability"]
 
 @app.route('/guessQuote/quoteOfDay')
 def quoteOfDay():
     return blankOfDay('quote')
-    # f = open("dailyAnswers.json")
-    # dailyGameAnswers = json.load(f)
-    # f.close()
-    # return dailyGameAnswers["quote"]
 
 @app.route('/guessWeapon/weaponOfDay')
 def weaponOfDay():
     return blankOfDay('weapon')
-    # f = open("dailyAnswers.json")
-    # dailyGameAnswers = json.load(f)
-    # f.close()
-    # return dailyGameAnswers["weapon"]

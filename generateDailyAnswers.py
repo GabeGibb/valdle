@@ -80,6 +80,7 @@ def getWeapon():
     return weaponOfDay
 
 def generateDailyAnswers():
-    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote(), 'dayId' : randint(1, 10)}
+    # dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
+    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote(), 'dayId': randint(1,100)}
 
     return dailyAnswers
