@@ -7,7 +7,7 @@ var abilityIcon;
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate(url, true, 'ability');
+    loadTemplate(url, true, 'ability', data['dayId']);
     console.log(data)
     randIndex = data['randIndex']
     abilityIndex = data['randAbilityIndex']

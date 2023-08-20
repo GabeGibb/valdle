@@ -4,6 +4,7 @@ from generateDailyAnswers import generateDailyAnswers
 
 
 # dailyGameAnswers = generateDailyAnswers()
+# dailyGameAnswers['valdleNum'] = 1
 
 # binId = '64db06b59d312622a3915ec6'
 # apiKey = '$2b$10$354hGEwJOHs9iL8O0llsh.c/2xKZd0gHK/n1GPYUtyanzP25KANy6'

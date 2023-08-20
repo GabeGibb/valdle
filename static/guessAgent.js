@@ -30,7 +30,7 @@ let genderMap = {
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate(url, true, 'agent');
+    loadTemplate(url, true, 'agent', data['dayId']);
     console.log(data)
     randIndex = data['randIndex']
 });

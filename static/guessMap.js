@@ -17,9 +17,8 @@ function addTries(tries){
     for(let i = 0; i < tries.length; i++){
         createMap(tries[i][0]);
         for(let child of document.getElementById("mapChoice").children){
-            if (child.matches('.callout')){
-                if (child.children[0].innerHTML == tries[i][2] + ' ' + tries[i][1]){//tries[i][2] + ' ' + 
-                    
+            if (child.matches('.callout') && child.children[0] != undefined){
+                if (child.children[0].innerHTML == tries[i][2] + ' ' + tries[i][1]){  
                     child.click();
                 }
             }
@@ -188,7 +187,10 @@ function clearMap() {
 }
 
 
+let curDayId;
+jQuery.ajaxSetup({async:false});
 $.get(window.location.href + '/mapOfDay', function (data, status) {
+    console.log(data)
     answer[0] = data['mapName']
     answer[1] = data['regionName']
     answer[2] = data['superRegionName']
@@ -196,6 +198,8 @@ $.get(window.location.href + '/mapOfDay', function (data, status) {
     imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
     let mapImg = document.getElementById("trueImg");
     mapImg.src = imgUrl;
+
+    curDayId = data['dayId'];
 });
 
 
@@ -204,6 +208,7 @@ $.get("static/api/maps.json", function (data, status) {
     console.log(answer)
     zoomOutMap();
     createMaps();
-    loadPersistentData('map')
+    loadPersistentData('map', curDayId)
+
 });
 

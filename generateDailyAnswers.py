@@ -4,6 +4,7 @@ from random import randint
 from json import load, dumps
 import json
 from random import choice, randint
+from requests import get
 
 def getMap():
     f = open('static/api/maps.json')
@@ -79,11 +80,6 @@ def getWeapon():
     return weaponOfDay
 
 def generateDailyAnswers():
-    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
+    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote(), 'dayId' : randint(1, 10)}
 
     return dailyAnswers
-    # json_object = dumps(dailyAnswers, indent=4)
-
-    # with open("dailyAnswers.json", "w") as outfile:
-    #     outfile.write(json_object)
-    #     print('success')

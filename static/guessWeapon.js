@@ -5,7 +5,7 @@ let skinIndex;
 
 // jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate(url, false, 'weapon');
+    loadTemplate(url, false, 'weapon', data['dayId']);
     console.log(data)
     randIndex = data['weaponRandIndex'];
     skinIndex = data['skinRandIndex'];

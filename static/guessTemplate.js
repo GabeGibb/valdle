@@ -26,18 +26,22 @@ const tileSpinTiming = {
     iterations: 1,
   };
 
+let dayId;
 //p1 p2 complete
-let persistentData = {'mode': '', 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
+let persistentData;
 
-function loadPersistentData(mode){
-    console.log(localStorage.getItem(mode))
-    if (localStorage.getItem(mode) == null){
-        persistentData = {'dayId' : 0, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
+function loadPersistentData(mode, curDayId){
+    dayId = curDayId;
+    persistentData = JSON.parse(localStorage.getItem(mode));
+    
+    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId){//|| persistentData['dayId'] != dayId
+        persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
         savePersistentData();
     }
-    else{
-        persistentData = JSON.parse(localStorage.getItem(mode));
-    }
+    // else{
+    //     persistentData = JSON.parse(localStorage.getItem(mode));
+    // }
+    console.log(persistentData)
     
     addTries(persistentData['triesList']);
     if (persistentData['currentState'] == 'p2'){
@@ -89,7 +93,7 @@ $(window).on('click', function(){
 
 
 // jQuery.ajaxSetup({async:false});
-function loadTemplate(url, showButtonImages, mode){
+function loadTemplate(url, showButtonImages, mode, curDayId){
     $("#gameArea").on('dragstart', function(event) { event.preventDefault(); });
     $("#gameArea").css({"-khtml-user-select": "none", 
                             "-o-user-select": "none",
@@ -102,7 +106,7 @@ function loadTemplate(url, showButtonImages, mode){
         makeButtons(showButtonImages);
         addEnter();
         curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
-        loadPersistentData(mode)
+        loadPersistentData(mode, curDayId)
     });    
 }
 

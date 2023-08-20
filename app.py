@@ -12,6 +12,9 @@ def riot():
 
 @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
 def updateAnswers():
+    dailyAnswers = generateDailyAnswers()
+    dailyAnswers['dayId'] = dailyAnswers['dayId']
+
     json_object = dumps(generateDailyAnswers(), indent=4)
 
     with open("dailyAnswers.json", "w") as outfile:
@@ -82,37 +85,52 @@ def callout(map, region, superRegion):
 
 # Retrieves daily answers from JSON file
 
-@app.route('/guessMap/mapOfDay')
-def mapOfDay():
+def blankOfDay(mode):
     f = open("dailyAnswers.json")
     dailyGameAnswers = json.load(f)
     f.close()
-    return dailyGameAnswers["map"]
+    blankOfDay = {}
+    blankOfDay = dailyGameAnswers[mode]
+    blankOfDay['dayId'] = dailyGameAnswers['dayId']
+    return blankOfDay
+
+
+@app.route('/guessMap/mapOfDay')
+def mapOfDay():
+    return blankOfDay('map')
+    # f = open("dailyAnswers.json")
+    # dailyGameAnswers = json.load(f)
+    # f.close()
+    # return dailyGameAnswers["map"]
 
 @app.route('/guessAgent/agentOfDay')
 def agentOfDay():
-    f = open("dailyAnswers.json")
-    dailyGameAnswers = json.load(f)
-    f.close()
-    return dailyGameAnswers["agent"]
+    return blankOfDay('agent')
+    # f = open("dailyAnswers.json")
+    # dailyGameAnswers = json.load(f)
+    # f.close()
+    # return dailyGameAnswers["agent"]
 
 @app.route('/guessAbility/abilityOfDay')
 def abilityOfDay():
-    f = open("dailyAnswers.json")
-    dailyGameAnswers = json.load(f)
-    f.close()
-    return dailyGameAnswers["ability"]
+    return blankOfDay('ability')
+    # f = open("dailyAnswers.json")
+    # dailyGameAnswers = json.load(f)
+    # f.close()
+    # return dailyGameAnswers["ability"]
 
 @app.route('/guessQuote/quoteOfDay')
 def quoteOfDay():
-    f = open("dailyAnswers.json")
-    dailyGameAnswers = json.load(f)
-    f.close()
-    return dailyGameAnswers["quote"]
+    return blankOfDay('quote')
+    # f = open("dailyAnswers.json")
+    # dailyGameAnswers = json.load(f)
+    # f.close()
+    # return dailyGameAnswers["quote"]
 
 @app.route('/guessWeapon/weaponOfDay')
 def weaponOfDay():
-    f = open("dailyAnswers.json")
-    dailyGameAnswers = json.load(f)
-    f.close()
-    return dailyGameAnswers["weapon"]
+    return blankOfDay('weapon')
+    # f = open("dailyAnswers.json")
+    # dailyGameAnswers = json.load(f)
+    # f.close()
+    # return dailyGameAnswers["weapon"]
