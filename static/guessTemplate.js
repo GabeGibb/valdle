@@ -407,7 +407,7 @@ function createNextPageBox(nextGame){
     $('#correctImg').attr('src', correctImgSrc);
     $('#correctGuess').text(correctName);
     $('#numTries').append('0');
-
+    
     setTimeout(() => {
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }, 500);

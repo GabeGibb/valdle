@@ -79,7 +79,7 @@ function guessGunSkinTime(){
 }
 
 function setImage(){
-    guessImage.src = dataList[randIndex]['skins'][skinIndex]['displayIcon']
+    guessImage.src = dataList[randIndex]['displayIcon'];
     zoomOutMap();
 }
 
@@ -96,17 +96,17 @@ let insetValue = 30;
 let blurVal = 20;
 
 function zoomOutMap() {
-    if (insetValue <= 0) {
-        return;
-    }
-    insetValue -= 2.5;
-    // let guessImg = document.getElementById("guessImage");
-    guessImage.style.clipPath = 'inset(0 ' + insetValue + '% 0)';
-    if (blurVal < 0){
-        return;
-    }
-    guessImage.style.filter = "blur(" + blurVal + "px)";
-    blurVal -= 2
+    // if (insetValue <= 0) {
+    //     return;
+    // }
+    // insetValue -= 2.5;
+    // // let guessImg = document.getElementById("guessImage");
+    // guessImage.style.clipPath = 'inset(0 ' + insetValue + '% 0)';
+    // if (blurVal < 0){
+    //     return;
+    // }
+    // guessImage.style.filter = "blur(" + blurVal + "px)";
+    // blurVal -= 2
     
 }
 
