@@ -96,17 +96,10 @@ let insetValue = 30;
 let blurVal = 20;
 
 function zoomOutMap() {
-    // if (insetValue <= 0) {
-    //     return;
-    // }
-    // insetValue -= 2.5;
-    // // let guessImg = document.getElementById("guessImage");
-    // guessImage.style.clipPath = 'inset(0 ' + insetValue + '% 0)';
-    // if (blurVal < 0){
-    //     return;
-    // }
-    // guessImage.style.filter = "blur(" + blurVal + "px)";
-    // blurVal -= 2
+
+    var image = document.querySelector('#guessImage');
+    var pixelate = new Pixelate(image);
+    $("#guessImage").css("visibility", "hidden");
     
 }
 
