@@ -97,6 +97,7 @@ function curGamemode(){ // Gets called on page load
     console.log(dataList[randIndex])
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
+    guessImage.src = correctImgSrc;
     
 }
 
