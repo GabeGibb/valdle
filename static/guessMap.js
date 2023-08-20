@@ -18,7 +18,6 @@ function addTries(tries){
         createMap(tries[i][0]);
         for(let child of document.getElementById("mapChoice").children){
             if (child.matches('.callout')){
-                console.log(child.innerHTML)
                 if (child.children[0].innerHTML == tries[i][2] + ' ' + tries[i][1]){//tries[i][2] + ' ' + 
                     
                     child.click();
