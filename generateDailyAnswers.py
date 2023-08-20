@@ -22,7 +22,7 @@ def getMap():
     return mapOfDay
 
 def getAgent():
-    f = open('static/api/agents.json')
+    f = open('static/api/agents/agents_en.json')
     data = load(f)
     f.close()
 
@@ -34,7 +34,7 @@ def getAgent():
     return agentOfDay
 
 def getAbility():
-    f = open('static/api/agents.json')
+    f = open('static/api/agents/agents_en.json')
     data = load(f)
     f.close()
 
@@ -65,7 +65,7 @@ def getQuote():
 
 def getWeapon():
 
-    f = open('static/api/weapons.json')
+    f = open('static/api/weapons/weapons_en.json')
     data = load(f)
     f.close()
     weaponIndex = randint(0, len(data)-1)
