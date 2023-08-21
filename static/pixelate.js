@@ -19,8 +19,12 @@
         this.imageUrl = image.src;
         this.width = image.clientWidth;
         this.height = image.clientHeight;
-  
+        if ( document.getElementsByTagName('canvas').length > 0){
+            document.getElementsByTagName('canvas')[0].remove()
+        }
+        
         this.canvas = document.createElement('canvas');
+        
         this.canvas.style.display = 'none';
         this.canvas.width = this.width;
         this.canvas.height = this.height;
