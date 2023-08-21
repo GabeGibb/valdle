@@ -28,10 +28,13 @@ def getAgent():
     f.close()
 
     index = randint(0, len(data)-1)
+    index2 = randint(0, len(data)-1)
 
     agentOfDay = {}
     agentOfDay['randIndex'] = index
     agentOfDay['displayName'] = data[index]['displayName']
+    agentOfDay['randIndex2'] = index2
+    agentOfDay['displayName2'] = data[index2]['displayName']
     return agentOfDay
 
 def getAbility():

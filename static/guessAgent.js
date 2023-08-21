@@ -2,6 +2,9 @@
 let url = "static/api/agents/agents_en.json";
 
 let abilityUrl = window.location.href + '/agentOfDay';
+let dropdownClone = $('#dropdown').clone();
+let randIndex2;
+agentP1 = true;
 
 let genderMap = {
     "Gekko": "Male",
@@ -33,6 +36,7 @@ $.get(abilityUrl, function(data, status){ //url defined in current webpage js fi
     loadTemplate(url, true, 'agent', data['dayId']);
     console.log(data)
     randIndex = data['randIndex']
+    randIndex2 = data['randIndex2']
 });
 
 function addTries(tries){
@@ -50,7 +54,7 @@ function tileAnimation(currRow, tileDiv, delayAmount){
     }, delayAmount);
 }
 
-function isCorrectOption(userInput){ //overwritten from template
+function isCorrectAgentOption(userInput){ 
     let optionAnswer = dataList[randIndex]["displayName"];
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName']]
     let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInput)]['role']['displayName']]
@@ -93,34 +97,66 @@ function isCorrectOption(userInput){ //overwritten from template
 }
 
 function curGamemode(){ // Gets called on page load
-    console.log(randIndex)
-    console.log(dataList[randIndex])
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
-    guessImage.src = correctImgSrc;
-
-    var image = document.querySelector('#guessImage');
-    var pixelate = new Pixelate(image);
-
-    $("#guessImage").css("visibility", "hidden");
-    
 }
 
 function modeWrongActions(){
-
+    if (secondPartStarted){
+        partTwoLose( dataList[randIndex]['displayName']);
+    }
 }
 
 
+let secondPartStarted = false;
+function displayPartTwo(){
+    if (secondPartStarted){
+        winConfetti();
+        partTwoWin(dataList[randIndex]['displayName']);
+    }else{
+        winConfetti();
+        guessAgentTime2();
+        secondPartStarted = true;
+    }
+}
 
-function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
+function guessAgentTime2(){ 
     winConfetti();
-
-    partTwoDisplay = document.getElementById("partTwoDisplay");
+    agentP1 = false;
+    randIndex = randIndex2;
 
     createNextPageBox('ability');
+    
+    $('#agent2Prompt').appendTo('#partTwoDiv')
+    $('#agent2Prompt').show()
+    dropdownClone.appendTo('#partTwoDiv');
+    $('#searchInput').attr('placeholder','Search Agent..');
 
-    $('#partTwoDisplay').appendTo('#partTwoDiv');
-    $("#partTwoDisplay").show();
+    $('#agent2Prompt').removeAttr('hidden');
+    jQuery('<div>', {
+        id:'fullListOfGuesses'
+    }).appendTo($('#partTwoDiv'));
+
+    let pixImgDiv = $('<div class="guessImageDiv">\
+                        <img id="guessImage" src="">\
+                    </div>');
+    pixImgDiv.insertAfter('#agent2Prompt')
+
+    correctImgSrc = dataList[randIndex]["displayIcon"];
+    correctName = dataList[randIndex]["displayName"];
+    guessImage.src = correctImgSrc;
+    var image = document.querySelector('#guessImage');
+    var pixelate = new Pixelate(image);
+    $("#guessImage").css("visibility", "hidden");
+    
+    makeButtons(false);
+
+    setTimeout(() => {
+        document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        addEnter();
+        secondPartFilter = true;
+        filterFunction();
+      }, 500);
 }
 
 
