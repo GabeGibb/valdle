@@ -145,7 +145,7 @@
     bottom: 7px;
 
     color: white;
-    transition: all .2s ease-in;
+    transition: all .2s ease-out;
 }
 
 #about{
@@ -177,6 +177,11 @@
     padding-bottom: 30px;
 }
 
+.buttons .btn__description {
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    font-weight: 100;
+}
+
 
 
 
@@ -190,6 +195,14 @@
 {
     opacity: 1;
     transition: all .2s ease;
+}
+
+#mapStreak, #agentStreak, #abilityStreak, #weaponStreak, #quoteStreak {
+    transition: all .2s ease-out;
+}
+
+#mapStreakWhite, #agentStreakWhite, #abilityStreakWhite, #weaponStreakWhite, #quoteStreakWhite {
+    transition: all .2s ease-out;
 }
 
 #mapWhite, #mapStreakWhite,
