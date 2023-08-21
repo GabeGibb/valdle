@@ -146,8 +146,9 @@ function guessAgentTime2(){
     correctName = dataList[randIndex]["displayName"];
     guessImage.src = correctImgSrc;
     var image = document.querySelector('#guessImage');
-    var pixelate = new Pixelate(image);
+    var pixelate = new Pixelate(image, 50);
     $("#guessImage").css("visibility", "hidden");
+
     
     makeButtons(false);
 
