@@ -97,12 +97,12 @@ function curGamemode(){ // Gets called on page load
     console.log(dataList[randIndex])
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
-    guessImage.src = correctImgSrc;
+    // guessImage.src = correctImgSrc;
 
-    var image = document.querySelector('#guessImage');
-    var pixelate = new Pixelate(image);
+    // var image = document.querySelector('#guessImage');
+    // var pixelate = new Pixelate(image);
 
-    $("#guessImage").css("visibility", "hidden");
+    // $("#guessImage").css("visibility", "hidden");
     
 }
 
