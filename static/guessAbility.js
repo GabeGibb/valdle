@@ -102,12 +102,10 @@ function isCorrectAbilityName(button, currAbility){
         
         winConfetti();
         partTwoWin(correctAbilityName);
-        $('#partTwoEndText').text('Good job!');
     }   
     else{
         button.classList.add("incorrectGuessName")
         partTwoLose(correctAbilityName);
-        $('#partTwoEndText').text('Better Luck Next Time');
     }
 
     canGuessAbilityName = false;
