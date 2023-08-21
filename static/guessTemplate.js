@@ -1,21 +1,4 @@
 
-// This template lets other files use dataList and randAgent variables
-// In a given gamemode js file, one must specify two functions
-//   function curGamemode(){
-//     //WHAT TO DO ON LOAD
-//   }
-//   function displayPartTwo(){
-//     //WHAT TO DO ON WINNING FIRST MODE (or just winning if there is only one part)
-
-//   }
-// }
-//function modeWrongActions(){}
-// let url
-
-// URLS 
-// "https://valorant-api.com/v1/agents?isPlayableCharacter=true"
-// "https://valorant-api.com/v1/bundles"
-
 const tileSpin = [
     { transform: "rotateY(50deg)", opacity: 0},
     { transform: "rotateY(0) ", opacity: 1 },
@@ -38,9 +21,7 @@ function loadPersistentData(mode, curDayId){
         persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
         savePersistentData();
     }
-    // else{
-    //     persistentData = JSON.parse(localStorage.getItem(mode));
-    // }
+
     console.log(persistentData)
     
     addTries(persistentData['triesList']);
