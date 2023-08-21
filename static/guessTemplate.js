@@ -336,15 +336,19 @@ function removeOption(name){
 
 function partTwoWin(correctAnswer){
     $('#dropdown').remove();
-    $('#partTwoEndText').text('Correct!');
+    // $('#partTwoEndText').text('Correct!');
     // $('#partTwoEndText').text('Correct!<br>Correct Answer: ' + correctAnswer);
+    $('#partTwoEndText').html('Correct!<br>Correct Answer:');
+    $('#partTwoEndTextAnswer').text(correctAnswer);
 
 }
 
 function partTwoLose(correctAnswer){
     $('#dropdown').remove();
-    // $('#partTwoEndText').html('Better Luck Next Time');
-    $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
+    // $('#partTwoEndText').text('Better Luck Next Time');
+    // $('#partTwoEndText').text('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
+    $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer:')
+    $('#partTwoEndTextAnswer').text(correctAnswer);
 }
 
 function createNextPageBox(nextGame){
@@ -358,7 +362,7 @@ function createNextPageBox(nextGame){
                                 </div>\
                             </div>\
                             <div id="partTwoDiv"></div>\
-                            <div id = "endTextDiv"><p id="partTwoEndText"></p></div>\
+                            <div id = "endTextDiv"><p id="partTwoEndText"></p><p class="notranslate" id="partTwoEndTextAnswer"></p></div>\
                             <div id = "nextValdleDiv">\
                                 <hr>\
                                 <div id = "cd">\

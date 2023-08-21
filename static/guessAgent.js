@@ -70,6 +70,9 @@ function isCorrectAgentOption(userInput){
         textSpan = document.createElement("span");
         tileDiv.classList.add("tile");
         textSpan.classList.add("hint");
+        if (i == 0) {
+            textSpan.classList.add("notranslate");
+        }
         tileDiv.appendChild(textSpan);
 
         if (guessList[i] == correctAnswers[i]) {

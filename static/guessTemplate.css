@@ -341,11 +341,11 @@
 }
 
 
-#numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText {
+#numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText, #partTwoEndTextAnswer {
     text-align: center;
 }
 
-#partTwoEndText {
+#partTwoEndText, #partTwoEndTextAnswer {
     color: white;
 }
 
@@ -454,3 +454,8 @@ hr{
 
 
 /* button changes end */
+
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+    display: none !important;
+}
