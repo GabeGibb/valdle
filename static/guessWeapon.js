@@ -78,28 +78,29 @@ function guessGunSkinTime(){
 
 }
 
+// Pixelation
+
+let blurFactor = 50; // higher blurFactor means less pixels
+var pixelate; // class that houses the pixel functions and images
+
 function setImage(){
-    guessImage.src = dataList[randIndex]['displayIcon'];
-    zoomOutMap();
+    guessImage.src = dataList[randIndex]['displayIcon']; // Defines guessImage image
+    var image = document.querySelector('#guessImage');
+    pixelate = new Pixelate(image, blurFactor);
+    pixelate.initialLoadIn();
 }
 
 function modeWrongActions(){
     if (secondPartStarted){
         partTwoLose( dataList[skinIndex]['displayName']);
     }else{
-        zoomOutMap();
+        if (blurFactor == 0) {return;}
+        blurFactor -= 5;
+        if (blurFactor != 0) {
+            pixelate.updateBlurFactor(blurFactor);
+        }
+        else { // Pixelated image now updates to original unpixelated image
+            pixelate.turnIntoOriginalImage();
+        }
     }
 }
-
-let insetValue = 30;
-
-let blurVal = 20;
-
-function zoomOutMap() {
-
-    var image = document.querySelector('#guessImage');
-    var pixelate = new Pixelate(image);
-    $("#guessImage").css("visibility", "hidden");
-    
-}
-
