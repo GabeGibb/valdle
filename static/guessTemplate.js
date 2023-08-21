@@ -362,8 +362,8 @@ function partTwoWin(correctAnswer){
 
 function partTwoLose(correctAnswer){
     $('#dropdown').remove();
-    $('#partTwoEndText').html('Better Luck Next Time');
-    // $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
+    // $('#partTwoEndText').html('Better Luck Next Time');
+    $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
 }
 
 function createNextPageBox(nextGame){
@@ -409,7 +409,7 @@ function createNextPageBox(nextGame){
     $('#nextPageButton').append(nextButton);
     $('#correctImg').attr('src', correctImgSrc);
     $('#correctGuess').text(correctName);
-    $('#numTries').append('0');
+    $('#numTries').append(persistentData['triesList'].length);
     
     setTimeout(() => {
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});

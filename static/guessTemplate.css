@@ -230,10 +230,9 @@
     position:relative;
 }
 
-#endTextDiv {
-    /* display: none; */
-    height: 0;
-}
+/* #endTextDiv {
+
+} */
 
 #partTwoDisplay{
     /* border: 20px solid white; */
