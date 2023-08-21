@@ -265,7 +265,7 @@ function animateGuess(parent, child, delayAmount){
         child.animate(tileSpin, tileSpinTiming);
     }, delayAmount);
 }
-
+let agentP1 = false;
 function validateGuess(){
     $('#searchInput').focus();
     let userInput = document.getElementById("searchInput")
@@ -276,7 +276,12 @@ function validateGuess(){
             }else if (persistentData['currentState'] == 'p2'){
                 persistP2Atempt(dataList[i]["displayName"]);
             }
-            isCorrectOption(dataList[i]["displayName"]);
+            if (agentP1){
+                isCorrectAgentOption(dataList[i]["displayName"]);
+            }else{
+                isCorrectOption(dataList[i]["displayName"]);
+            }
+            
             return true;
         }
     }
@@ -284,7 +289,6 @@ function validateGuess(){
 }
 
 function isCorrectOption(userInput){
-    
     let guessParent = document.getElementById("fullListOfGuesses");
     let newDiv = document.createElement("div");
 
@@ -322,7 +326,6 @@ function isCorrectOption(userInput){
     }
     newDiv.classList.add("individualGuesses");
     animateGuess(guessParent, newDiv, 200);
-
 }
 
 function findUserIndex(userInput){

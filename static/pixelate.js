@@ -81,7 +81,7 @@
       this.ctx.drawImage(this.pixelImage, 0, 0, w, h);
       // stretch the smaller image
       this.ctx.drawImage(this.canvas, 0, 0, w, h, 0, 0, this.width, this.height);
-      this.image.src = this.canvas.toDataURL('image/png');
+    //   this.image.src = this.canvas.toDataURL('image/png');
       return this;
     };
   
