@@ -127,7 +127,7 @@ function createMaps() {
 
         calloutMaps.push(calloutMap.clone())
         calloutMaps[calloutMaps.length - 1].children().attr('src', maps[i]["displayIcon"])
-        // calloutMaps[calloutMaps.length - 1].children().css({'transform': 'rotate(' + maps[i]['rotation'] +'deg)'})
+        calloutMaps[calloutMaps.length - 1].children().css({'transform': 'rotate(' + maps[i]['rotation'] +'deg)'})
 
         calloutMaps[calloutMaps.length - 1].val(mapName)
 
