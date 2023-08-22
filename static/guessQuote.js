@@ -12,10 +12,11 @@ $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true, 'quote', data['dayId']);
     console.log(data)
     randIndex = data['randIndex'];
+    randQuoteIndex = data['randQuoteIndex']
     getQuoteAndAF(randIndex).then((data) => {
-        $('#guessText').text(data["voiceInfo"][0]["quote"]);
+        $('#guessText').text(data["voiceInfo"][randQuoteIndex]["quote"]);
         $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'></div> <button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button>");
-        addAudioElement(data["voiceInfo"][0]["audioFile"]);
+        addAudioElement(data["voiceInfo"][randQuoteIndex]["audioFile"]);
     })
     $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
 });
