@@ -116,9 +116,16 @@
     display:block;
     height: 40px;
     font-family: 'VALORANT', sans-serif;
-    background: rgba(43,42,41,.8);
+    background: rgba(0,0,0,.8);
     color: white;
     border: white;
+}
+
+#searchInput:focus{
+    /* background: rgba(43,42,41,.8);
+    border: none;
+    height: 40px; */
+    outline: none;
 }
 
 
