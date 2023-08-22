@@ -57,13 +57,9 @@ def getQuote():
     data = load(f)
     f.close()
     index = randint(0, len(data)-1)
-    qInfo = choice(data[index]['voiceInfo'])
     
     quoteOfDay = {}
-    quoteOfDay['randIndex'] = index
-    quoteOfDay['audioFile'] = qInfo['audioFile'] 
-    quoteOfDay['quote'] = qInfo['quote'] 
-    quoteOfDay['displayName'] = data[index]['displayName']
+    quoteOfDay['randIndex'] = index # Must only be index, because it needs to decide language later (cannot decide voiceline right now)
     
     return quoteOfDay
 

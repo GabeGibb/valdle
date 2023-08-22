@@ -2,21 +2,30 @@ let url = "static/api/agents/agents_en.json"
 let qUrl = "static/api/quotes/quotes_" + getLanguageCookie() + ".json";
 let quoteUrl = window.location.href + '/quoteOfDay';
 
-let audioFile;
-let quote;
+var tempData;
+var audioFile;
+var quote;
 var audioHintTries = 5;
 
 // jQuery.ajaxSetup({async:false});
 $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true, 'quote', data['dayId']);
     console.log(data)
-    randIndex = data['randIndex']
-    quote = data['quote'];
-    audioFile = data['audioFile'];
-
-    $('#guessText').text(quote);
+    randIndex = data['randIndex'];
+    getQuoteAndAF(randIndex).then((data) => {
+        $('#guessText').text(data["voiceInfo"][0]["quote"]);
+        $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'></div> <button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button>");
+        addAudioElement(data["voiceInfo"][0]["audioFile"]);
+    })
     $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
 });
+
+function getQuoteAndAF(randIndex) {
+    return fetch(qUrl)
+    .then((response) => response.json())
+    .then((json) => json[randIndex]);
+}
+
 
 function addTries(tries){
     templateAddTries(tries);
@@ -57,8 +66,7 @@ function modeWrongActions(){
     audioHintTries--;
     if (audioHintTries == 0) {
         $('#audioHintText').text("Audio clue:");
-        $('.hintDiv').append("<div id='audioContainer' type='audio/mpeg'></div> <button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button>");
-        addAudioElement(audioFile);
+        $("#audioContainer").css("display", "flex");
     }
     else if (audioHintTries > 0) {
         var text = $('#audioHintText').text();
