@@ -61,7 +61,7 @@ function guessGunSkinTime(){
     }).appendTo($('#partTwoDiv'));
 
     $('#fullListOfGuesses').hide()
-
+    $('#optionNames').hide();
 
     makeButtons(false);
 

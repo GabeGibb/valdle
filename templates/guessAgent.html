@@ -29,18 +29,25 @@
             <a href="\" class="notranslate">vAldle</a>
         </nav>
 
-        <div id="gameArea">
-            <div class="prompt">
-                <p id="header">Guess The Agent</p>
-            </div>
-            <div id="dropdown">
-                <div id="userInputDiv">
-                    <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
-                    <button id="submit" onclick="validateGuess()">></button>
-                </div>
-                <div id="optionNames" class="dropdown-content notranslate"></div>
-            </div>
+        <div class = "linedeco">
+            <hr>
+            <p>	&#9670;</p>
+        </div>
 
+        <div id="gameArea">
+            <div id="modeBox">
+                <div class="prompt">
+                    <p id="header">Guess The Agent</p>
+                    <hr>
+                </div>
+                <div id="dropdown">
+                    <div id="userInputDiv">
+                        <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
+                        <button id="submit" onclick="validateGuess()">></button>
+                    </div>
+                    <div id="optionNames" class="dropdown-content notranslate"></div>
+                </div>
+            </div>
             <div class = "board" id="topRow">
                 <div class="row">
                   <div class="category"><span class="cata">Agent</span></div>
