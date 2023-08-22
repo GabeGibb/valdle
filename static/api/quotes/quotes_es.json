@@ -1,0 +1,200 @@
+[
+    {
+        "displayName": "Gekko",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/818856552.wav",
+                "quote": "Cuidado, que llega mi gente."
+            }
+        ]
+    },
+    {
+        "displayName": "Fade",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/115037037.wav",
+                "quote": "Todo el mundo le tiene miedo a algo."
+            }
+        ]
+    },
+    {
+        "displayName": "Breach",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/889497682.wav",
+                "quote": "No te cruces en mi camino."
+            }
+        ]
+    },
+    {
+        "displayName": "Deadlock",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/706230603.wav",
+                "quote": "La muerte no es una opción."
+            }
+        ]
+    },
+    {
+        "displayName": "Raze",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/447076332.wav",
+                "quote": "¿Sí, qué ganas?"
+            }
+        ]
+    },
+    {
+        "displayName": "Chamber",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/805670557.wav",
+                "quote": "Tienes buen gusto, la verdad."
+            }
+        ]
+    },
+    {
+        "displayName": "KAY/O",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/57017951.wav",
+                "quote": "Vamos a ello."
+            }
+        ]
+    },
+    {
+        "displayName": "Skye",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/843849993.wav",
+                "quote": "¡Bueno! ¿Dónde está la pelea?"
+            }
+        ]
+    },
+    {
+        "displayName": "Cypher",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/644416416.wav",
+                "quote": "Nada se me escapa. Absolutamente nada."
+            }
+        ]
+    },
+    {
+        "displayName": "Sova",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/768465326.wav",
+                "quote": "Da igual que huyan, los encontraré."
+            }
+        ]
+    },
+    {
+        "displayName": "Killjoy",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/243794410.wav",
+                "quote": "Tranquilidad, lo tengo todo pensado."
+            }
+        ]
+    },
+    {
+        "displayName": "Harbor",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/901794352.wav",
+                "quote": "Juntos, los machacaremos."
+            }
+        ]
+    },
+    {
+        "displayName": "Viper",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/1230340510.wav",
+                "quote": "Todo el mundo necesita respirar."
+            }
+        ]
+    },
+    {
+        "displayName": "Phoenix",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/1191472000.wav",
+                "quote": "Go man, yo me encargo." 
+            }
+        ]
+    },
+    {
+        "displayName": "Astra",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/290798023.wav",
+                "quote": "Estoy en un plano superior, colega, literalmente!"
+            }
+        ]
+    },
+    {
+        "displayName": "Brimstone",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/402707296.wav",
+                "quote": "Se creen que ya no soy lo que era, pero me sé todos los trucos."
+            }
+        ]
+    },
+    {
+        "displayName": "Neon",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/463613759.wav",
+                "quote": "Aparta, o te doy un calambrazo."
+            }
+        ]
+    },
+    {
+        "displayName": "Yoru",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/882516082.wav",
+                "quote": "Lucharé con quien sea. Lucharé contra todos."
+            }
+        ]
+    },
+    {
+        "displayName": "Sage",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/790724182.wav",
+                "quote": "Soy la espada y el escudo. No lo olvides."
+            }
+        ]
+    },
+    {
+        "displayName": "Reyna",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/1621478802.wav",
+                "quote": "Ni se imaginan lo despiadada que soy."
+            }
+        ]
+    },
+    {
+        "displayName": "Omen",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/1738990501.wav",
+                "quote": "Soy el principio y el final."
+            }
+        ]
+    },
+    {
+        "displayName": "Jett",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/1249607464.wav",
+                "quote": "Estupendo. Vamos."
+            }
+        ]
+    }
+]

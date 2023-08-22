@@ -1,0 +1,200 @@
+[
+    {
+        "displayName": "Gekko",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/464327068.wav",
+                "quote": "Wachale güey, my crew is coming through."
+            }
+        ]
+    },
+    {
+        "displayName": "Fade",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/963067082.wav",
+                "quote": "Everyone is afraid of something."
+            }
+        ]
+    },
+    {
+        "displayName": "Breach",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/802792402.wav",
+                "quote": "Stand in my way. I dare you."
+            }
+        ]
+    },
+    {
+        "displayName": "Deadlock",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/727149664.wav",
+                "quote": "Death is not an option."
+            }
+        ]
+    },
+    {
+        "displayName": "Raze",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/632864455.wav",
+                "quote": "Yes, I'm pumped!"
+            }
+        ]
+    },
+    {
+        "displayName": "Chamber",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/765052468.wav",
+                "quote": "You have good taste, my friend."
+            }
+        ]
+    },
+    {
+        "displayName": "KAY/O",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/170847866.wav",
+                "quote": "Let's do this."
+            }
+        ]
+    },
+    {
+        "displayName": "Skye",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/452875258.wav",
+                "quote": "Alright! Where's the fight?"
+            }
+        ]
+    },
+    {
+        "displayName": "Cypher",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/246514732.wav",
+                "quote": "Nothing stays hidden from me. Nothing."
+            }
+        ]
+    },
+    {
+        "displayName": "Sova",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/130865070.wav",
+                "quote": "Wherever they run, I will find them."
+            }
+        ]
+    },
+    {
+        "displayName": "Killjoy",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/1062625853.wav",
+                "quote": "Relax. I've already thought of everything."
+            }
+        ]
+    },
+    {
+        "displayName": "Harbor",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/409447225.wav",
+                "quote": "Together, we'll crush them."
+            }
+        ]
+    },
+    {
+        "displayName": "Viper",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/204662687.wav",
+                "quote": "No one can hold their breath forever."
+            }
+        ]
+    },
+    {
+        "displayName": "Phoenix",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/384959611.wav",
+                "quote": "Just take a seat, I got this."
+            }
+        ]
+    },
+    {
+        "displayName": "Astra",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/594322343.wav",
+                "quote": "I am on a higher plane, chale, literally!"
+            }
+        ]
+    },
+    {
+        "displayName": "Brimstone",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/421554800.wav",
+                "quote": "They think I'm an old dog? Heh, I'll show 'em just how many tricks I know."
+            }
+        ]
+    },
+    {
+        "displayName": "Neon",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/5690468.wav",
+                "quote": "Move, or get zapped."
+            }
+        ]
+    },
+    {
+        "displayName": "Yoru",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/107320642.wav",
+                "quote": "I'll fight anybody. I'll fight everybody."
+            }
+        ]
+    },
+    {
+        "displayName": "Sage",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/119342169.wav",
+                "quote": "I am both shield and sword."
+            }
+        ]
+    },
+    {
+        "displayName": "Reyna",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/847719523.wav",
+                "quote": "They have no idea how heartless I am."
+            }
+        ]
+    },
+    {
+        "displayName": "Omen",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/717842149.wav",
+                "quote": "I am the beginning. I am the end."
+            }
+        ]
+    },
+    {
+        "displayName": "Jett",
+        "voiceInfo": [
+            {
+                "audioFile": "https://media.valorant-api.com/sounds/878055936.wav",
+                "quote": "Cool. Let's go."
+            }
+        ]
+    }
+]

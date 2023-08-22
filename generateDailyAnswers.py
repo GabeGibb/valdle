@@ -53,7 +53,7 @@ def getAbility():
     return abilityOfDay
 
 def getQuote():
-    f = open('static/api/quotes.json')
+    f = open('static/api/quotes/quotes_en.json')
     data = load(f)
     f.close()
     index = randint(0, len(data)-1)

@@ -1,5 +1,5 @@
-let url = "static/api/agents/agents_en.json";
-
+let url = "static/api/agents/agents_en.json"
+let qUrl = "static/api/quotes/quotes_" + getLanguageCookie() + ".json";
 let quoteUrl = window.location.href + '/quoteOfDay';
 
 let audioFile;
@@ -12,7 +12,7 @@ $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     console.log(data)
     randIndex = data['randIndex']
     quote = data['quote'];
-    audioFile = data['audioFile'].slice(0, -34);
+    audioFile = data['audioFile'];
 
     $('#guessText').text(quote);
     $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
