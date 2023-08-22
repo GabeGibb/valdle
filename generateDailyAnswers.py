@@ -57,10 +57,15 @@ def getQuote():
     data = load(f)
     f.close()
     index = randint(0, len(data)-1)
-    quoteIndex = randint(0, len(data[0]["voiceInfo"])-1)
+    quoteIndex = randint(0, len(data[index]["voiceInfo"])-1) 
     
+    """
+    If a quotes json is updated, the quote must be added for all available languages.
+    It's not necessary for all the agents to have the same amount of quotes.
+    """
+
     quoteOfDay = {}
-    quoteOfDay['randIndex'] = index # Must only be index, because it needs to decide language later (cannot decide voiceline right now)
+    quoteOfDay['randIndex'] = index
     quoteOfDay['randQuoteIndex'] = quoteIndex 
     
     return quoteOfDay
