@@ -106,7 +106,7 @@ function makeCalloutDiv(callout, mapName) {
 
             winConfetti();
             correctImgSrc = imgUrl;
-            correctName = answer;
+            correctName = answer[0] + ': ' + answer[2] + ' ' + answer[1];
             createNextPageBox('agent')
 
         }

@@ -31,18 +31,27 @@
     <nav class="navbar">
         <a href="\" class="notranslate">vAldle</a>
     </nav>
+
+    <div class = "linedeco">
+        <hr>
+        <p>	&#9670;</p>
+    </div>
+    
     <div id="gameArea">
-        <div class="prompt">
-            <p>Guess The Weapon</p>
-        </div>
-        <div class="guessImageDiv">
-            <img id="guessImage" src="">
-        </div>
-        <div id="dropdown">
-            <div id="userInputDiv">
-                <input type="text" placeholder="Search Weapon.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
-                <button id="submit" onclick="validateGuess()">></button>
-            <div id="optionNames" class="dropdown-content notranslate"></div>
+        <div id="modeBox">
+            <div class="prompt">
+                <p>Guess The Weapon</p>
+                <hr>
+            </div>
+            <div class="guessImageDiv">
+                <img id="guessImage" src="">
+            </div>
+            <div id="dropdown">
+                <div id="userInputDiv">
+                    <input type="text" placeholder="Search Weapon.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
+                    <button id="submit" onclick="validateGuess()">></button>
+                <div id="optionNames" class="dropdown-content notranslate"></div>
+                </div>
             </div>
         </div>
         <div id="fullListOfGuesses">

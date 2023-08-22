@@ -18,6 +18,7 @@
 
 #guessImage {
     height: 150px;
+    max-width: 500px;
 }
 
 .guessTextDiv{
@@ -115,9 +116,16 @@
     display:block;
     height: 40px;
     font-family: 'VALORANT', sans-serif;
-    background: rgba(43,42,41,.8);
+    background: rgba(0,0,0,.8);
     color: white;
     border: white;
+}
+
+#searchInput:focus{
+    /* background: rgba(43,42,41,.8);
+    border: none;
+    height: 40px; */
+    outline: none;
 }
 
 
@@ -187,19 +195,22 @@
     height: 70px;
     max-width: 90%;
     position:relative;
-    left: 5px;
+    left: 5%;
 }
 
 .guessText{
     position: absolute;
-    left: 35%;
+    left: 45%;
     color: white;
     font-size: 2em;
     text-align: center;
+
 }
 
 #guessText{
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .individualGuesses{
@@ -390,7 +401,7 @@
     height: 100px;
 }
 
-hr{
+#nextValdleDiv hr{
     width: 160px;
 }
 
@@ -477,3 +488,38 @@ hr{
 .VIpgJd-ZVi9od-aZ2wEe-wOHMyf.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
     display: none !important;
 }
+
+#modeBox {
+    background-color: rgba(71, 82, 95, 0.37);
+    padding-top: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.prompt hr {
+    width: 42%;
+    margin-top: -15px;
+    margin-bottom: 35px;
+}
+
+hr {
+    width: 500px;
+    position: relative;
+    top: 10px;
+    
+}
+
+.linedeco {
+    position: relative;
+}
+
+.linedeco p {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: -13px;
+   
+}
+

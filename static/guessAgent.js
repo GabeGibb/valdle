@@ -151,7 +151,7 @@ function guessAgentTime2(){
     var image = document.querySelector('#guessImage');
     var pixelate = new Pixelate(image, 50);
     $("#guessImage").css("visibility", "hidden");
-
+    $('#optionNames').hide();
     
     makeButtons(false);
 
