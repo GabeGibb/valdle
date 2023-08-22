@@ -61,6 +61,7 @@ function modeWrongActions(){
         addAudioElement(audioFile);
     }
     else if (audioHintTries > 0) {
-        $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
+        var text = $('#audioHintText').text();
+        $('#audioHintText').text(text.slice(0, -1) + audioHintTries);
     }
 }
