@@ -84,7 +84,8 @@ let blurFactor = 50; // higher blurFactor means less pixels
 var pixelate; // class that houses the pixel functions and images
 
 function setImage(){
-    guessImage.src = correctImgSrc; // Defines guessImage image
+    $("#guessImage").css("visibility", "hidden");
+    guessImage.src = dataList[randIndex]['displayIcon']; // Defines guessImage image
     var image = document.querySelector('#guessImage');
     pixelate = new Pixelate(image, blurFactor);
     pixelate.initialLoadIn();

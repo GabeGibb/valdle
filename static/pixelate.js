@@ -89,5 +89,5 @@ Pixelate.prototype.updateBlurFactor = function(newBlurFactor) {
 
 Pixelate.prototype.turnIntoOriginalImage = function() {
   this.canvas.style.display = 'none';
-  $(this.image).css("display", "flex");
+  $(this.image).css({"visibility": "visible", "display": "flex"});
 }
