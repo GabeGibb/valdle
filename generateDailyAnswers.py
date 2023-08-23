@@ -53,17 +53,20 @@ def getAbility():
     return abilityOfDay
 
 def getQuote():
-    f = open('static/api/quotes.json')
+    f = open('static/api/quotes/quotes_en.json')
     data = load(f)
     f.close()
     index = randint(0, len(data)-1)
-    qInfo = choice(data[index]['voiceInfo'])
+    quoteIndex = randint(0, len(data[index]["voiceInfo"])-1) 
     
+    """
+    If a quotes json is updated, the quote must be added for all available languages.
+    It's not necessary for all the agents to have the same amount of quotes.
+    """
+
     quoteOfDay = {}
     quoteOfDay['randIndex'] = index
-    quoteOfDay['audioFile'] = qInfo['audioFile'] 
-    quoteOfDay['quote'] = qInfo['quote'] 
-    quoteOfDay['displayName'] = data[index]['displayName']
+    quoteOfDay['randQuoteIndex'] = quoteIndex 
     
     return quoteOfDay
 

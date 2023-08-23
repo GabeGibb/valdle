@@ -55,6 +55,7 @@
 
 .optionButton{
     display:flex;
+    align-items: center;
     width: 255px;
     font-family: 'VALORANT', sans-serif;
     /* padding:30px; */
@@ -77,12 +78,12 @@
 .buttonImages{
     /* width: 50px; */
     vertical-align: top;
-    margin: auto;
+    /* margin: auto; */
     overflow: hidden;
     max-height: 100%;
     /* background-color: #74CB71; */
-    /* left: -85px; */
-    /* position:relative; */
+    left: 5%;
+    position:relative;
     /* top: -30px; */
     
 }
@@ -100,12 +101,13 @@
 
 .optionNameInButton{
     font-size: 22px;
-    text-align: center;
-    vertical-align: center;
-    margin: auto;
+    /* text-align: center; */
+    /* margin: auto; */
     color: white;
     /* position:relative; */
-    /* left: 30px; */
+    /* justify-content: center; */
+    width: 100%;
+    /* left: 10%; */
     /* top: -100px; */
 }
 
@@ -193,18 +195,27 @@
     /* width: 70px; */
     scale: .9;
     height: 70px;
+    left: 5%;
     max-width: 90%;
     position:relative;
-    left: 5%;
+}
+
+.guessImgWeapons {
+    left: auto;
+    bottom: auto;
 }
 
 .guessText{
-    position: absolute;
-    left: 45%;
+    position: relative;
+    width: 100%;
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
 
+}
+
+.guessTextWeapons {
+    margin-block-start: 5px;
 }
 
 #guessText{
@@ -218,17 +229,24 @@
     /* padding:20px; */
     position:relative;
     display: flex;
+
     /* justify-content: space-between; */
     align-items: center;
 
     width: 360px;
     height:100px;
     padding: 3px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 
     border-radius: 2px;
 
     margin-bottom: 10px;
+}
+
+.individualGuessesWeapons {
+    flex-direction: column;
+    font-size: 12px;
+    margin-block-start: 0em;
 }
 
 #victoryMessage{
@@ -410,7 +428,7 @@
     grid-template-rows: repeat(3,70px);
     /* background-color: #0a141eee; */
     background: transparent;
-    width: 550px;
+    width: 630px;
     /* height: 1100px; */
     display: flex;
     justify-content: center;
@@ -427,7 +445,7 @@
     height: 70px;
     border-radius:10px;
     display: grid;
-    grid-template-columns: 170px 190px 170px;
+    grid-template-columns: 210px 210px 210px;
 }
 
 .tile {
