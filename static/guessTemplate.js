@@ -288,6 +288,14 @@ function isCorrectOption(userInput){
     optionImg.src = optionImgSrc;
 
     optionImg.classList.add("guessImg");
+    
+    // Apply different styling for weapons
+    if (window.location.href.slice(-11) == "guessWeapon") {
+        newDiv.classList.add("individualGuessesWeapons");
+        p.classList.add("guessTextWeapons");
+        optionImg.classList.add("guessImgWeapons");
+    }
+
     newDiv.appendChild(optionImg);
     p.appendChild(text); //adds content to button
     newDiv.appendChild(p); //appends button to div
@@ -306,6 +314,7 @@ function isCorrectOption(userInput){
         modeWrongActions();
     }
     newDiv.classList.add("individualGuesses");
+
     animateGuess(guessParent, newDiv, 200);
 }
 
