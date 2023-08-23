@@ -40,7 +40,9 @@ $.get(abilityUrl, function(data, status){ //url defined in current webpage js fi
 });
 
 function addTries(tries){
-    templateAddTries(tries);
+    for(let i = 0; i < tries.length; i++){
+        isCorrectAgentOption(tries[i]);
+    }
 }
 
 function doP2Guess(attempt){

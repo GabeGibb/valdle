@@ -11,28 +11,47 @@ const tileSpinTiming = {
 
 let dayId;
 let persistentData;
-// let defaultStats = 'temp';
+let stats;
+let hasAlreadyWon = false;
 
+//TO ENABLE LOCAL STORAGE, DELETE RETURN AT addWinToStats and delete || 1 at end of loadPersistenData if statement
 
-// function loadStats(mode){
-//     if (localStorage.getItem(mode + 'Stats') == null){
-//         localStorage.setItem(mode + 'Stats', '[]');
-//     }
+function loadStats(mode){
+    stats = JSON.parse(localStorage.getItem(mode + 'Stats'))
+    if (localStorage.getItem(mode + 'Stats') == null){
+        stats = {'dayIds': [], 'triesList': []};
+        localStorage.setItem(mode + 'Stats',  JSON.stringify(stats));
+    }
 
-// }
+}
+
+function addWinToStats(){
+    return;
+    if (hasAlreadyWon){
+        return;
+    }
+    console.log(stats)
+    console.log(dayId)
+    stats['dayIds'].push(dayId);
+    stats['triesList'].push(persistentData['triesList'].length);
+    localStorage.setItem(persistentData['mode'] + 'Stats', JSON.stringify(stats));
+}
 
 function loadPersistentData(mode, curDayId){
-    // loadStats(mode, curDayId);
+    loadStats(mode, curDayId);
 
     dayId = curDayId;
     persistentData = JSON.parse(localStorage.getItem(mode));
     
-    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || 1){
+    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || 1){ 
         persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
         savePersistentData();
     }
 
     console.log(persistentData)
+    if (persistentData['currentState'] == 'p2'){
+        hasAlreadyWon = true;
+    }
     
     addTries(persistentData['triesList']);
     if (persistentData['currentState'] == 'p2'){
@@ -68,6 +87,7 @@ function persistP2Atempt(attempt){
 function persistP2State(){
     persistentData['currentState'] = 'p2';
     savePersistentData();
+    addWinToStats();
 }
 
 let dataList;
@@ -80,6 +100,7 @@ $(window).on('beforeunload', function() {
 
 $(window).on('click', function(){
     console.log(persistentData)
+    console.log(stats)
 })
 
 

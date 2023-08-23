@@ -87,6 +87,10 @@ def getWeapon():
 
 def generateDailyAnswers():
     # dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
-    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote(), 'dayId': randint(1,100)}
+    f = open('dailyAnswers.json')
+    data = load(f)
+    f.close()
 
+    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote(), 'dayId': data['dayId'] + 1}
+    
     return dailyAnswers

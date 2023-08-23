@@ -12,7 +12,6 @@ def riot():
 
 @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
 def updateAnswers():
-    dailyAnswers = generateDailyAnswers()
 
     json_object = dumps(generateDailyAnswers(), indent=4)
 
