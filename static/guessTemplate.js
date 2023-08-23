@@ -10,10 +10,20 @@ const tileSpinTiming = {
   };
 
 let dayId;
-//p1 p2 complete
 let persistentData;
+// let defaultStats = 'temp';
+
+
+// function loadStats(mode){
+//     if (localStorage.getItem(mode + 'Stats') == null){
+//         localStorage.setItem(mode + 'Stats', '[]');
+//     }
+
+// }
 
 function loadPersistentData(mode, curDayId){
+    // loadStats(mode, curDayId);
+
     dayId = curDayId;
     persistentData = JSON.parse(localStorage.getItem(mode));
     
