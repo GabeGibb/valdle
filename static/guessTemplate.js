@@ -26,7 +26,7 @@ function loadStats(mode){
 }
 
 function addWinToStats(){
-    return;
+    // return;
     if (hasAlreadyWon){
         return;
     }
@@ -43,7 +43,7 @@ function loadPersistentData(mode, curDayId){
     dayId = curDayId;
     persistentData = JSON.parse(localStorage.getItem(mode));
     
-    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || 1){ 
+    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId){ 
         persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
         savePersistentData();
     }

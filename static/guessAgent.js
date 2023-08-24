@@ -146,7 +146,7 @@ function guessAgentTime2(){
                         <img id="guessImage" src="">\
                     </div>');
     pixImgDiv.insertAfter('#agent2Prompt')
-
+    
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
     guessImage.src = correctImgSrc;

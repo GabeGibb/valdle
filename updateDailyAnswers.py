@@ -28,7 +28,6 @@ putReq = put(url, json=dailyGameAnswers, headers=headers)
 
 
 
-
-# serverUrl = 'https://valdle.gg/ifYouAreAUserPleaseDontDoThisEndpoint'
-# changeAnswers = get(serverUrl)
-# print(changeAnswers.content)
+serverUrl = 'https://valdle.gg/ifYouAreAUserPleaseDontDoThisEndpoint'
+changeAnswers = get(serverUrl)
+print(changeAnswers.content)
