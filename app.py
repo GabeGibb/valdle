@@ -83,6 +83,15 @@ def callout(map, region, superRegion):
 
 # Retrieves daily answers from JSON file
 
+@app.route('/dayId')
+def getDayId():
+    f = open("dailyAnswers.json")
+    dailyGameAnswers = json.load(f)
+    f.close()
+    dayIdDict = {}
+    dayIdDict['dayId'] = dailyGameAnswers['dayId']
+    return dayIdDict
+
 def blankOfDay(mode):
     f = open("dailyAnswers.json")
     dailyGameAnswers = json.load(f)
@@ -96,7 +105,6 @@ def blankOfDay(mode):
 @app.route('/guessMap/mapOfDay')
 def mapOfDay():
     return blankOfDay('map')
-
 
 @app.route('/guessAgent/agentOfDay')
 def agentOfDay():
