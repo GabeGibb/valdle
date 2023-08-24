@@ -186,3 +186,32 @@
     transform: scale(1.065); 
     z-index: 1;
 }
+
+#nextGameButton::before,
+#nextGameButton::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+}
+
+#nextGameButton::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+#nextGameButton::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+#nextGameButton_inner {
+    min-width: 400px;
+    padding: 25px 0px;  
+    display: flex;
+    flex-direction: column;
+
+}
