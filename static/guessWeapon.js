@@ -25,6 +25,13 @@ function doP2Guess(attempt){
 
 function curGamemode(){
     correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
+    if (correctImgSrc == null){
+        for(let i=0; i < dataList[randIndex]['skins'][skinIndex]['levels'].length; i++){
+            if (dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon'] != null){
+                correctImgSrc = dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon']
+            }
+        }
+    }
     correctName = dataList[randIndex]['displayName']
     setImage();
 
