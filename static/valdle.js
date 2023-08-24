@@ -13,7 +13,7 @@ function getWinStreak(statsObj){
         if (statsObj['dayIds'][i] >= pastId - 1){
             counter++;
         }else{
-            return 0
+            return counter
         }
         pastId = statsObj['dayIds'][i]
     }
