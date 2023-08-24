@@ -40,6 +40,9 @@ $.get(abilityUrl, function(data, status){ //url defined in current webpage js fi
 });
 
 function addTries(tries){
+    if (tries.length == 0){
+        $('#guessText').show()
+    }
     for(let i = 0; i < tries.length; i++){
         isCorrectAgentOption(tries[i]);
     }
@@ -61,6 +64,7 @@ function tileAnimation(currRow, tileDiv, delayAmount){
     }, delayAmount);
 }
 
+let hasTakenAGuess = false;
 function isCorrectAgentOption(userInput){ 
     let optionAnswer = dataList[randIndex]["displayName"];
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName']]
@@ -103,6 +107,9 @@ function isCorrectAgentOption(userInput){
         removeOption(userInput);
         filterFunction();
         modeWrongActions();
+    }
+    if (hasTakenAGuess == false){
+        $('#guessText').hide()
     }
 }
 

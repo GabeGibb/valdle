@@ -9,6 +9,14 @@
     text-align: center;
 }
 
+#header{
+    margin-bottom: 10px;
+}
+#sub_header{
+    font-size: small;
+    color: grey;
+}
+
 
 .guessImageDiv, .guessTextDiv {
     position: relative;
