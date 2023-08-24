@@ -23,7 +23,7 @@ def downloadAgents():
 
 def downloadMaps():
     mapList = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split']
-    maps = get('https://valorant-api.com/v1/maps')
+    maps = get('https://valorant-api.com/v1/maps?language=es-ES')
     alteredMaps = []
     if maps.status_code == 200:
         mapsContent = maps.json()['data']

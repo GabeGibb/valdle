@@ -3,22 +3,23 @@
 from random import randint
 from json import load, dumps
 import json
-from random import choice, randint
-from requests import get
+from random import randint
 
 def getMap():
-    f = open('static/api/maps.json')
+    f = open('static/api/maps/maps_en.json')
     data = json.load(f)
     f.close()
     data.pop(8)
 
     index = randint(0, len(data)-1)
     mapOfDay = {}
+    mapOfDay['mapIndex'] = index
     mapOfDay['mapName'] = data[index]['displayName']
 
-    randCallout = choice(data[index]['callouts'])
-    mapOfDay['regionName'] = randCallout['regionName']
-    mapOfDay['superRegionName'] = randCallout['superRegionName']
+    randCalloutIndex = randint(0, len(data[index]['callouts'])-1)
+    mapOfDay['randCalloutIndex'] = randCalloutIndex
+    mapOfDay['randCalloutEnglishRegion'] = data[index]['callouts'][randCalloutIndex]['regionName']
+    mapOfDay['randCalloutEnglishSuperRegion'] = data[index]['callouts'][randCalloutIndex]['superRegionName']
     
     return mapOfDay
 

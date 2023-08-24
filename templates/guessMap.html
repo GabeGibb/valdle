@@ -17,16 +17,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="/static/guessTemplate.js" defer></script>
   <script src="/static/guessMap.js" defer></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="/static/translate.js"></script>
 
 </head>
 
 <body>
   <nav class="navbar">
-    <a href="\">vAldle</a>
+    <a class="notranslate" href="\">vAldle</a>
   </nav>
 
   <div class="content">
-    <div class="map_selection">
+    <div class="map_selection notranslate">
       <div class="containerTab">
         <div class="containerRow1">
 
@@ -123,7 +125,7 @@
       </div>
     </div>
 
-    <div class="board" id="listOfMapGuesses">
+    <div class="board notranslate" id="listOfMapGuesses">
 
     </div>
   </div>
