@@ -13,9 +13,10 @@ $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     console.log(data)
     randIndex = data['randIndex'];
     randQuoteIndex = data['randQuoteIndex']
+
+    $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'><button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button></div>");
     getQuoteAndAF(randIndex).then((data) => {
         $('#guessText').text(data["voiceInfo"][randQuoteIndex]["quote"]);
-        $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'></div> <button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button>");
         addAudioElement(data["voiceInfo"][randQuoteIndex]["audioFile"]);
     })
     $('#audioHintText').text("Tries until audio clue: " + audioHintTries);
@@ -32,7 +33,9 @@ function addTries(tries){
     templateAddTries(tries);
 }
 
-function doP2Guess(attempt){}
+function doP2Guess(attempt){
+
+}
 
 function playAudio(audioPlayer) {
     audioPlayer.play();
@@ -68,6 +71,7 @@ function modeWrongActions(){
     if (audioHintTries == 0) {
         $('#audioHintText').text("Audio clue:");
         $("#audioContainer").css("display", "flex");
+        
     }
     else if (audioHintTries > 0) {
         var text = $('#audioHintText').text();
