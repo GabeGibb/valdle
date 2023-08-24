@@ -42,14 +42,24 @@ def getAbility():
     data = load(f)
     f.close()
 
+    nums16 = [x for x in range(1,17)]
+    randNums16 = []
+    for i in range(16):
+        randNumsIndex = randint(0, len(nums16) -1)
+        randNums16.append(nums16[randNumsIndex])
+        nums16.pop(randNumsIndex)
+    
+
     index = randint(0, len(data)-1)
     abilityIndex = randint(0, 3)
+
 
     abilityOfDay = {}
     abilityOfDay['randIndex'] = index
     abilityOfDay['randAbilityIndex'] = abilityIndex
     abilityOfDay['displayName'] = data[index]['displayName']
     abilityOfDay['abilityName'] = data[index]['abilities'][abilityIndex]['displayName']
+    abilityOfDay['tileOrder'] = randNums16
     return abilityOfDay
 
 def getQuote():
@@ -87,10 +97,5 @@ def getWeapon():
 
 def generateDailyAnswers():
     dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
-    # f = open('dailyAnswers.json')
-    # data = load(f)
-    # f.close()
-
-    # dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote(), 'dayId': data['dayId'] + 1}
     
     return dailyAnswers

@@ -1,9 +1,8 @@
-let coversLeft = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
-
 let url = "static/api/agents/agents_" + getLanguageCookie() + ".json";
 let abilityUrl = window.location.href + '/abilityOfDay';
 var abilityIndex;
 var abilityIcon;
+let tileOrder;
 
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
@@ -11,6 +10,7 @@ $.get(abilityUrl, function(data, status){ //url defined in current webpage js fi
     console.log(data)
     randIndex = data['randIndex']
     abilityIndex = data['randAbilityIndex']
+    tileOrder = data['tileOrder']
 });
 
 function addTries(tries){
@@ -19,7 +19,6 @@ function addTries(tries){
 
 function doP2Guess(attempt){
     let buttons = $('#whatName')
-    console.log('p2')
     buttons.children().each(function(){
         if (this.innerHTML == attempt){
             isCorrectAbilityName(this, attempt)
@@ -30,16 +29,15 @@ function doP2Guess(attempt){
 
 function curGamemode(){ // Gets called on page load
     createRandAbility(abilityIndex);
-    removeRandTile();
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
+    removeRandTile();
 }
 
 function removeRandTile(){
-    randStartTile = Math.floor(Math.random() * coversLeft.length);
-    var name = "#cover" + coversLeft[randStartTile];
+    var name = "#cover" + tileOrder[0];
+    tileOrder.shift();
     $(name).css({"background-color": "transparent", "border": "transparent"});
-    coversLeft.splice(randStartTile, 1);
 }
 
 function displayPartTwo(){ //GETS CALLED AFTER FIRST PART IS COMPLETED
@@ -112,7 +110,7 @@ function isCorrectAbilityName(button, currAbility){
 }
 
 async function revealTiles() {
-    while (coversLeft.length > 0) {
+    while (tileOrder.length > 0) {
         removeRandTile();
         await new Promise(r => setTimeout(r, 500));
     }
