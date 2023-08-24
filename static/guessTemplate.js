@@ -399,7 +399,7 @@ function createNextPageBox(nextGame){
                                 <img id="correctImg">\
                                 <div id="correctTextDiv">\
                                     <p class="notranslate" id="correctGuess">\
-                                    <div id="numTriesDiv"><p id="tries">Tries:&nbsp;</p><p id = "numTries"></p>\
+                                    <div id="numTriesDiv"><p id="tries">Tries:&nbsp;</p><p class="notranslate" id="numTries"></p>\
                                 </div>\
                             </div>\
                             <div id="partTwoDiv"></div>\
