@@ -46,6 +46,11 @@ function addTries(tries){
 }
 
 function doP2Guess(attempt){
+    setTimeout(() => {
+        if (attempt != ''){
+            isCorrectOption(attempt);
+        }
+      }, 500);
     
 }
 

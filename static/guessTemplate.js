@@ -30,6 +30,7 @@ function addWinToStats(){
     if (hasAlreadyWon){
         return;
     }
+    hasAlreadyWon = true;
     console.log(stats)
     console.log(dayId)
     stats['dayIds'].push(dayId);
