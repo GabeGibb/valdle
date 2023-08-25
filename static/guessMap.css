@@ -214,3 +214,11 @@
     flex-direction: column;
 
 }
+
+#correctGuessDiv{
+    flex-direction: column !important;
+}
+
+#correctImg{
+    width: 50% !important;
+}

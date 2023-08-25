@@ -388,7 +388,7 @@ function partTwoLose(correctAnswer){
     $('#dropdown').remove();
     // $('#partTwoEndText').text('Better Luck Next Time');
     // $('#partTwoEndText').text('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
-    $('#partTwoEndText').html('Better Luck Next Time<br>Correct Answer:')
+    $('#partTwoEndText').html('Better Luck Next Time!<br><br>Correct Answer:')
     $('#partTwoEndTextAnswer').text(correctAnswer);
 }
 
@@ -399,7 +399,7 @@ function createNextPageBox(nextGame){
                                 <img id="correctImg">\
                                 <div id="correctTextDiv">\
                                     <p class="notranslate" id="correctGuess">\
-                                    <div id="numTriesDiv"><p id="tries">Tries:&nbsp;</p><p class="notranslate" id="numTries"></p>\
+                                    <div id="numTriesDiv"><p id="tries">Tries:&nbsp;</p><p class="notranslate" id="numTries"></p></div>\
                                 </div>\
                             </div>\
                             <div id="partTwoDiv"></div>\
