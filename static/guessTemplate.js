@@ -379,7 +379,7 @@ function partTwoWin(correctAnswer){
     $('#dropdown').remove();
     // $('#partTwoEndText').text('Correct!');
     // $('#partTwoEndText').text('Correct!<br>Correct Answer: ' + correctAnswer);
-    $('#partTwoEndText').html('Correct!<br>Correct Answer:');
+    $('#partTwoEndText').html('Nice Job!<br>Correct Answer:');
     $('#partTwoEndTextAnswer').text(correctAnswer);
 
 }
