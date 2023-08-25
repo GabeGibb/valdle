@@ -18,7 +18,7 @@ body{
     overflow-x: hidden;
     font-family: 'VALORANT', sans-serif;
     
-    background-image: url('images/pxfuel3.jpg');
+    background-image: url('images/pxfuel2.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
     /* backdrop-filter: brightness(50%); */
@@ -123,7 +123,7 @@ button{
     -webkit-appearance: none;
     appearance: none;
     border: none;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.9);
     padding: 0;
     color: var(--button-text-color);
     cursor: pointer;
