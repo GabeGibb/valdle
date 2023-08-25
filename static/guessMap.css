@@ -41,7 +41,7 @@
     background: transparent;
     display:grid;
     grid-template-rows: 360px;
-    grid-template-columns: 1fr 360px 360px 1fr;
+    grid-template-columns: 1fr 370px 370px 1fr;
 }
 
 #answerBox{
@@ -160,7 +160,6 @@
 
 #curMap{
     width: 100%;
-
     /* object-fit: fill; */
 }
 
