@@ -4,27 +4,27 @@
 <url>
 	<loc>https://valdle.gg/</loc>
 	<lastmod>2023-08-25T21:50:23+01:00</lastmod>
-	<priority>0.8</priority>
+	<priority>1</priority>
 </url>
 <url>
 	<loc>https://valdle.gg/about</loc>
 	<lastmod>2023-08-25T21:50:23+01:00</lastmod>
-	<priority>1.0</priority>
+	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://valdle.gg/guessMap</loc>
 	<lastmod>2023-08-25T21:50:23+01:00</lastmod>
-	<priority>0.8</priority>
+	<priority>0.9</priority>
 </url>
 <url>
 	<loc>https://valdle.gg/guessAgent</loc>
 	<lastmod>2023-08-25T21:50:23+01:00</lastmod>
-	<priority>0.8</priority>
+	<priority>0.9</priority>
 </url>
 <url>
 	<loc>https://valdle.gg/guessAbility</loc>
 	<lastmod>2023-08-25T21:50:23+01:00</lastmod>
-	<priority>0.8</priority>
+	<priority>0.9</priority>
 </url>
 <url>
 	<loc>https://valdle.gg/guessWeapon</loc>
@@ -39,6 +39,6 @@
 <url>
 	<loc>https://valdle.gg/%5C</loc>
 	<lastmod>2023-08-25T21:50:23+01:00</lastmod>
-	<priority>1.0</priority>
+	<priority>0.5</priority>
 </url>
 </urlset>
