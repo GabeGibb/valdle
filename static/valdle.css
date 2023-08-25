@@ -1,3 +1,18 @@
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 60px;
+}
+
+#title {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
 #websiteSummary {
     text-align: center;
     color: #ece8e1;
@@ -25,17 +40,26 @@
     visibility: hidden;
 }
 
-#changeLanguageButton {
+#changeLanguage {
     transform: scale(0.75);
+    transition: 75ms ease-out;
+}
+
+#changeLanguage:hover {
+    transform: scale(0.8);
+}
+
+#changeLanguageButton {
+    /* transform: scale(0.75); */
     border: none;
     cursor: pointer;
     appearance: none;
     background-color: inherit;
 }
 
-#changeLanguageButton:hover {
+/* #changeLanguageButton:hover {
     transform: scale(0.8);
-}
+} */
 
 
 /* Google stuff */
@@ -64,7 +88,7 @@
     align-items: center;
 }
 
-#map, #agent, #ability, #quote, #weapon, #about {
+#map, #agent, #ability, #quote, #weapon {
     display: flex;
     align-items: center;
     margin-top: 5px;
@@ -150,9 +174,10 @@
 
 #about{
     transition: 75ms ease-out;
+    transform: scale(0.75);
 }
 #about:hover{
-    transform: scale(1.075); 
+    transform: scale(0.8); 
     cursor: grab;
 }
 

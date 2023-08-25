@@ -18,20 +18,22 @@
 
 <body>
     <nav class="navbar">
-        <a class="notranslate">vAldle</a>
-    </nav>
-    <div id="topBar">
-        <h1 id="websiteSummary">Test your valorant knowledge!</h1>
-        <div id="languageSelector">
+        <div id="about">
+            <img class="icon" src="static/images/aboutIcon.png" onclick="location.href='about'">
+        </div>
+        <a class="notranslate" id="title">vAldle</a>
+        <div class="icon" id="languageSelector">
             <div id="changeLanguage">
-                <button id="changeLanguageButton"><img class="icon" src="/static/images/languageIcon.png"></button>
+                <!-- <button id="changeLanguageButton"> --> <img class="icon" src="/static/images/languageIcon.png"></button>
             </div>
             <div id="google_translate_element"></div>
         </div>
+    </nav>
+    <div id="topBar">
+        <h1 id="websiteSummary">Test your valorant knowledge!</h1>
     </div>
     <div class="buttons">
         <div id="map">
-
             <button class="btn btn--light" id="mapRedirect" onclick="location.href='/guessMap'">
                 <span class="btn__inner">
                     <span class="btn__slide"></span>
@@ -141,15 +143,11 @@
             </button>
 
         </div>
-
-        <div id="about">
-            <img class="icon" src="static/images/aboutIcon.png" onclick="location.href='about'">
-        </div>
     </div>
 </body>
 
 <script>
-    $(document).ready(function() {
+    /* $(document).ready(function() {
         // Allows toggle with globe button, between visible and hidden dropdown language menu
         const button = document.getElementById('changeLanguageButton');
         const dropdown = document.getElementById('google_translate_element');
@@ -158,7 +156,7 @@
             dropdown.style.visibility = dropdown.style.visibility == "visible" ? "hidden" : "visible";
             dropdown.style.position = dropdown.style.position == "relative" ? "absolute" : "relative";
         });
-    });
+    }); */
 </script>
 
 </html>
