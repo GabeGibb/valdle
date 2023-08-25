@@ -168,12 +168,9 @@ function guessAgentTime2(){
     
     makeButtons(false);
 
-    setTimeout(() => {
-        document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        addEnter();
-        secondPartFilter = true;
-        filterFunction();
-      }, 500);
+    addEnter();
+    secondPartFilter = true;
+    filterFunction();
 }
 
 

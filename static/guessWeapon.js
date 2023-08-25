@@ -72,21 +72,11 @@ function guessGunSkinTime(){
 
     makeButtons(false);
 
-    setTimeout(() => {
-        $('#fullListOfGuesses').empty();
-        $('#fullListOfGuesses').show()
-        addEnter();
-        secondPartFilter = true;
-        filterFunction();
-        
-      }, 500);
-
-    // setTimeout(() => {
-    //     document.getElementById("fullListOfGuesses").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    // }, 1000);
-    
-      
-
+    $('#fullListOfGuesses').empty();
+    $('#fullListOfGuesses').show()
+    addEnter();
+    secondPartFilter = true;
+    filterFunction();
 }
 
 // Pixelation

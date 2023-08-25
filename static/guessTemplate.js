@@ -439,7 +439,7 @@ function createNextPageBox(nextGame){
     
     setTimeout(() => {
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    }, 500);
+    }, 600);
 }
 
 function createAndUpdateTimer() {
