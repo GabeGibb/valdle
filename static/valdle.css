@@ -18,7 +18,7 @@
     color: #ece8e1;
     margin-top: 10px;
     font-size: 2em;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 #languageSelector {
@@ -40,13 +40,14 @@
     visibility: hidden;
 }
 
-#changeLanguage {
-    transform: scale(0.75);
+#changeLanguage, #about {
+    transform: scale(0.6);
     transition: 75ms ease-out;
 }
 
-#changeLanguage:hover {
-    transform: scale(0.8);
+#changeLanguage:hover, #about:hover {
+    transform: scale(0.7);
+    cursor: grab;
 }
 
 #changeLanguageButton {
@@ -56,6 +57,8 @@
     appearance: none;
     background-color: inherit;
 }
+
+
 
 /* #changeLanguageButton:hover {
     transform: scale(0.8);
@@ -172,14 +175,7 @@
     transition: all .2s ease-out;
 }
 
-#about{
-    transition: 75ms ease-out;
-    transform: scale(0.75);
-}
-#about:hover{
-    transform: scale(0.8); 
-    cursor: grab;
-}
+
 
 .btnIcon {
     position: absolute;
