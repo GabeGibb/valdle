@@ -146,7 +146,7 @@
 
 .streak_icon {
     position: absolute;
-    scale: .4;
+    scale: .5;
     top: -5px;
     right: -5px;
 }
@@ -162,7 +162,7 @@
 }
 .streak_number {
 
-    scale: .8;
+    scale: 1;
     text-align: center;
     display: flex;
     align-items: center;
