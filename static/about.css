@@ -23,6 +23,8 @@ a{
     padding-left: 5px;
     padding-right: 5px;
     max-width: 700px;
+    background-color: rgba(71, 82, 95, 0.37);
+    margin-bottom: 10px;
 }
 
 #home {
