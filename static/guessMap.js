@@ -62,7 +62,10 @@ function makeCalloutDiv(callout, mapName) {
 
         let guess = [mapName, region, superRegion]
 
-        persistAddTry(guess);
+        if (persistentData['currentState'] == 'p1'){
+            persistAddTry(guess);
+        }
+        // persistAddTry(guess);
         let listOfMapGuesses = document.getElementById("listOfMapGuesses");
 
         win = false;

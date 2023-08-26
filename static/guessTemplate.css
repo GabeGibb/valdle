@@ -181,12 +181,13 @@
     text-align:center;
     position: relative;
     top: 45px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0px;
 
 }
 
@@ -381,7 +382,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 #correctImg{
@@ -437,8 +438,8 @@
 
 #partTwoEndText, #partTwoEndTextAnswer {
     color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #numTriesDiv {
