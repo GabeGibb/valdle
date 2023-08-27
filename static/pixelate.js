@@ -86,8 +86,3 @@ Pixelate.prototype.updateBlurFactor = function(newBlurFactor) {
   this.blurFactor = newBlurFactor; // Update the stored blurFactor
   this.updatePixelImage(); // Recreate the pixelated image with the new blurFactor
 };
-
-Pixelate.prototype.turnIntoOriginalImage = function() {
-  this.canvas.style.display = 'none';
-  $(this.image).css({"visibility": "visible", "display": "flex"});
-}

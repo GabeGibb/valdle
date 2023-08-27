@@ -94,13 +94,14 @@ function modeWrongActions(){
     if (secondPartStarted){
         partTwoLose( dataList[skinIndex]['displayName']);
     }else{
-        if (blurFactor == 0) {return;}
+        console.log(blurFactor)
+        if (blurFactor <= 0) {return;}
         blurFactor -= 5;
-        if (blurFactor != 0) {
+        if (blurFactor > 0) {
             pixelate.updateBlurFactor(blurFactor);
         }
         else { // Pixelated image now updates to original unpixelated image
-            pixelate.turnIntoOriginalImage();
+            pixelate.updateBlurFactor(1);
         }
     }
 }
