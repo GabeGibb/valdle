@@ -108,7 +108,8 @@
 
 
 .optionNameInButton{
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 82%;
     /* text-align: center; */
     /* margin: auto; */
     color: white;
