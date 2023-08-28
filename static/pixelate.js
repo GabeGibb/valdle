@@ -83,6 +83,9 @@ Pixelate.prototype.updatePixelImage = function() {
 };
 
 Pixelate.prototype.updateBlurFactor = function(newBlurFactor) {
+  if(newBlurFactor <= 0){
+    newBlurFactor = 0.1
+  }
   this.blurFactor = newBlurFactor; // Update the stored blurFactor
   this.updatePixelImage(); // Recreate the pixelated image with the new blurFactor
 };

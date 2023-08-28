@@ -114,9 +114,29 @@ function curGamemode(){ // Gets called on page load
     correctName = dataList[randIndex]["displayName"];
 }
 
+
+let pixelate;
+let startPixelate = 65;
+function unPixelate(count){
+    if(count < 0){
+        pixelate.canvas.addEventListener("mouseover", (event) =>{
+            pixelate.updateBlurFactor(startPixelate);
+        })
+        pixelate.canvas.addEventListener("mouseout", (event) =>{
+            pixelate.updateBlurFactor(0);
+        })
+        return;
+    }
+    pixelate.updateBlurFactor(count);
+    setTimeout(() => {
+        unPixelate(count-2)
+    }, 100);
+}
+
 function modeWrongActions(){
     if (secondPartStarted){
         partTwoLose( dataList[randIndex]['displayName']);
+        unPixelate(startPixelate)
     }
 }
 
@@ -126,6 +146,8 @@ function displayPartTwo(){
     if (secondPartStarted){
         winConfetti();
         partTwoWin(dataList[randIndex]['displayName']);
+        unPixelate(startPixelate)
+
     }else{
         winConfetti();
         guessAgentTime2();
@@ -159,7 +181,7 @@ function guessAgentTime2(){
     correctName = dataList[randIndex]["displayName"];
     guessImage.src = correctImgSrc;
     var image = document.querySelector('#guessImage');
-    var pixelate = new Pixelate(image, 50);
+    pixelate = new Pixelate(image, 50);
     $("#guessImage").css("visibility", "hidden");
     $('#optionNames').hide();
     

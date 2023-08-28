@@ -26,7 +26,6 @@ function loadStats(mode){
 }
 
 function addWinToStats(){
-    // return;
     if (hasAlreadyWon){
         return;
     }
