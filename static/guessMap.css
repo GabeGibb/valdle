@@ -169,8 +169,6 @@
 
 
 
-
-
 .callout{
     position: absolute;
     /* padding: 2px 2px; */
@@ -184,9 +182,22 @@
 .calloutText{
     padding: 2px;
     color: white;
-    font-size: x-small;
+    font-size: 10px;
     text-align: center;
 }
+
+@media (max-width: 750px) {
+    /* .callout{
+        height: 21px;
+        width: 21px;
+        
+    }  */
+    
+    .calloutText{
+        font-size: 8.5px;
+    }
+}
+
 
 .callout:hover{
     transform: scale(1.065); 

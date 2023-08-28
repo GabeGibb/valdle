@@ -23,7 +23,10 @@ var viewport_set = function() {
 // Set the correct viewport value on page load
 viewport_set();
 
+
 // Set the correct viewport after device orientation change or resize
 window.onresize = function() { 
-	viewport_set(); 
+    if (window.screen.availWidth >= threshhold){
+        viewport_set(); 
+    }
 }
