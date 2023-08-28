@@ -43,12 +43,16 @@ function loadPersistentData(mode, curDayId){
     dayId = curDayId;
     persistentData = JSON.parse(localStorage.getItem(mode));
     
-    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId){ 
-        persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': ''}
+    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || (persistentData != null && persistentData['language'] != getLanguageCookie())){
+        if (persistentData != null && persistentData['language'] != getLanguageCookie()){
+            if (persistentData['currentState'] == 'p2'){
+                hasAlreadyWon = true;
+            }
+        }
+        persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': '', 'language': getLanguageCookie()}
         savePersistentData();
     }
 
-    console.log(persistentData)
     if (persistentData['currentState'] == 'p2'){
         hasAlreadyWon = true;
     }

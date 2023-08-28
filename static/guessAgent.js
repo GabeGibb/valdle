@@ -129,8 +129,8 @@ function unPixelate(count){
     }
     pixelate.updateBlurFactor(count);
     setTimeout(() => {
-        unPixelate(count-2)
-    }, 100);
+        unPixelate(count-1)
+    }, 30);
 }
 
 function modeWrongActions(){
