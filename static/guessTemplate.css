@@ -339,11 +339,11 @@
 }
 
 .correctGuessName{
-    background-color: #74CB71;
+    background-color: #74CB71 !important;
 }
 
 .incorrectGuessName{
-    background-color: #ff4655;
+    background-color: #ff4655 !important;
 }
 
 #guessText{
