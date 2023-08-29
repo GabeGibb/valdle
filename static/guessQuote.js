@@ -10,7 +10,7 @@ var audioHintTries = 5;
 // jQuery.ajaxSetup({async:false});
 $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true, 'quote', data['dayId']);
-    console.log(data)
+    // console.log(data)
     randIndex = data['randIndex'];
     randQuoteIndex = data['randQuoteIndex']
 

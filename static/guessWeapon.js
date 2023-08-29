@@ -6,7 +6,7 @@ let skinIndex;
 // jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, false, 'weapon', data['dayId']);
-    console.log(data)
+    // console.log(data)
     randIndex = data['weaponRandIndex'];
     skinIndex = data['skinRandIndex'];
 });
@@ -93,7 +93,7 @@ function modeWrongActions(){
     if (secondPartStarted){
         partTwoLose( dataList[skinIndex]['displayName']);
     }else{
-        console.log(blurFactor)
+        // console.log(blurFactor)
         if (blurFactor <= 0) {return;}
         blurFactor -= 5;
         if (blurFactor > 0) {

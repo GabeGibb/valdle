@@ -30,8 +30,8 @@ function addWinToStats(){
         return;
     }
     hasAlreadyWon = true;
-    console.log(stats)
-    console.log(dayId)
+    // console.log(stats)
+    // console.log(dayId)
     stats['dayIds'].push(dayId);
     stats['triesList'].push(persistentData['triesList'].length);
     localStorage.setItem(persistentData['mode'] + 'Stats', JSON.stringify(stats));
@@ -103,8 +103,8 @@ $(window).on('beforeunload', function() {
 });
 
 $(window).on('click', function(){
-    console.log(persistentData)
-    console.log(stats)
+    // console.log(persistentData)
+    // console.log(stats)
 })
 
 
@@ -118,7 +118,7 @@ function loadTemplate(url, showButtonImages, mode, curDayId){
                             "user-select": "none"});
     $.get(url, function(data, status){ //url defined in current webpage js file
         dataList = data;
-        console.log(dataList);
+        // console.log(dataList);
         makeButtons(showButtonImages);
         addEnter();
         curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE

@@ -194,7 +194,7 @@ function clearMap() {
 let curDayId;
 jQuery.ajaxSetup({async:false});
 $.get(window.location.href + '/mapOfDay', function (data, status) {
-    console.log(data)
+    // console.log(data)
     answer[0] = data['mapName']
     answer[1] = data['randCalloutEnglishRegion']
     answer[2] = data['randCalloutEnglishSuperRegion']
@@ -219,7 +219,7 @@ $.get(url, function (data, status) {
         answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"]
         answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"]
     });
-    console.log(answer)
+    // console.log(answer)
     loadPersistentData('map', curDayId)
 
 });

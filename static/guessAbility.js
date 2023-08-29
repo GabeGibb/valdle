@@ -7,7 +7,7 @@ let tileOrder;
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true, 'ability', data['dayId']);
-    console.log(data)
+    // console.log(data)
     randIndex = data['randIndex']
     abilityIndex = data['randAbilityIndex']
     tileOrder = data['tileOrder']

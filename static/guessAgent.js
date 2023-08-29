@@ -58,7 +58,7 @@ let dateMap = {
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true, 'agent', data['dayId']);
-    console.log(data)
+    // console.log(data)
     randIndex = data['randIndex']
     randIndex2 = data['randIndex2']
 });
@@ -89,7 +89,7 @@ let hasTakenAGuess = false;
 function isCorrectAgentOption(userInput){ 
     let optionAnswer = dataList[randIndex]["displayName"];
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName'], dateMap[optionAnswer]]
-    console.log(correctAnswers)
+    // console.log(correctAnswers)
     let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInput)]['role']['displayName'], dateMap[userInput]]
     
     let listOfGuesses = document.getElementById("listOfGuesses");
