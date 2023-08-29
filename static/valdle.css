@@ -110,7 +110,7 @@
 }
 
 .btn__content {
-    font-size: 1.6em;
+    font-size: 24px;
 }
 
 .btn__description {
@@ -201,6 +201,7 @@
 .buttons .btn__description {
     font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
     font-weight: 100;
+    font-size: 13.5px;
 }
 
 

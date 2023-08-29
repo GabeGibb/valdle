@@ -1,13 +1,17 @@
 
 // Change the viewport value based on screen.width
-let threshhold = 650;
+let threshhold = 575;
 
 if (document.title == 'Guess The Map'){
-    threshhold = 775;
+    threshhold = 750;
+}
+
+if (document.title == 'Guess The Agent'){
+    threshhold = 630;
 }
 
 if (document.title == 'Valdle'){
-    threshhold = 550;
+    threshhold = 525;
 }
 
 var viewport_set = function() {
@@ -26,7 +30,7 @@ viewport_set();
 
 // Set the correct viewport after device orientation change or resize
 window.onresize = function() { 
-    if (window.screen.availWidth >= threshhold){
+    if (window.screen.availWidth > 1280){
         viewport_set(); 
     }
 }
