@@ -98,7 +98,6 @@ function isCorrectAbilityName(button, currAbility){
         whatAbilityNameDiv = document.getElementById("whatName");
         whatAbilityNameDiv.disabled = true;
         
-        winConfetti();
         partTwoWin(correctAbilityName);
     }   
     else{

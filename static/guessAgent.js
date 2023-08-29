@@ -144,7 +144,6 @@ function modeWrongActions(){
 let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
-        winConfetti();
         partTwoWin(dataList[randIndex]['displayName']);
         unPixelate(startPixelate)
 

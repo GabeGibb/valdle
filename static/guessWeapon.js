@@ -39,7 +39,6 @@ function curGamemode(){
 let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
-        winConfetti();
         partTwoWin(dataList[skinIndex]['displayName']);
     }else{
         winConfetti();
