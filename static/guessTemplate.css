@@ -480,7 +480,7 @@
     grid-template-rows: repeat(4,70px);
     /* background-color: #0a141eee; */
     background: transparent;
-    width: 552px;
+    width: 568px;
     /* height: 1100px; */
     display: flex;
     justify-content: center;
@@ -497,7 +497,7 @@
     height: 70px;
     border-radius:10px;
     display: grid;
-    grid-template-columns: 138px 138px 138px 138px;
+    grid-template-columns: 142px 142px 142px 142px;
 }
 
 .tile {
@@ -507,7 +507,7 @@
     align-items: center;
     /* background-color:black; */
     
-    margin: 5px;
+    margin: 3px;
     border: 1px solid #7D8082;
 
     overflow-wrap:break-word;
@@ -517,7 +517,7 @@
 .hint {
     color: white;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .category{
