@@ -1,11 +1,11 @@
-// let myCanvas = document.createElement('canvas');
-// myCanvas.id = 'confettiCanvas'
-// document.body.appendChild(myCanvas);
+let myCanvas = document.createElement('canvas');
+myCanvas.id = 'confettiCanvas'
+document.body.appendChild(myCanvas);
 
-// var myConfetti = confetti.create(myCanvas, {
-//     resize: true,
-//     useWorker: true
-//   });
+var myConfetti = confetti.create(myCanvas, {
+    resize: true,
+    useWorker: true
+  });
 
 function winConfetti(){
 
@@ -14,18 +14,18 @@ function winConfetti(){
     var colors = ['#bb0000', '#ffffff'];
     
     (function frame() {
-      confetti({
+        myConfetti({
         particleCount: 2,
         angle: 60,
         spread: 55,
         origin: { x: 0 },
         colors: colors
       });
-      confetti({
+      myConfetti({
         particleCount: 2,
         angle: 120,
         spread: 55,
-        origin: { x: 1 },
+        origin: { x: 1},
         colors: colors
       });
     
