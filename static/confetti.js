@@ -1,3 +1,12 @@
+// let myCanvas = document.createElement('canvas');
+// myCanvas.id = 'confettiCanvas'
+// document.body.appendChild(myCanvas);
+
+// var myConfetti = confetti.create(myCanvas, {
+//     resize: true,
+//     useWorker: true
+//   });
+
 function winConfetti(){
 
     var end = Date.now() + (1.25 * 1000);

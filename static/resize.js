@@ -3,12 +3,12 @@
 let threshhold = 575;
 
 if (document.title == 'Guess The Map'){
-    threshhold = 750;
+    threshhold = 760;
 }
 
-if (document.title == 'Guess The Agent'){
-    threshhold = 630;
-}
+// if (document.title == 'Guess The Agent'){
+//     threshhold = 650;
+// }
 
 if (document.title == 'Valdle'){
     threshhold = 525;
