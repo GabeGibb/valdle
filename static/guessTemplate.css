@@ -477,10 +477,10 @@
 
 
 .board{
-    grid-template-rows: repeat(3,70px);
+    grid-template-rows: repeat(4,70px);
     /* background-color: #0a141eee; */
     background: transparent;
-    width: 531px;
+    width: 552px;
     /* height: 1100px; */
     display: flex;
     justify-content: center;
@@ -497,7 +497,7 @@
     height: 70px;
     border-radius:10px;
     display: grid;
-    grid-template-columns: 177px 177px 177px;
+    grid-template-columns: 138px 138px 138px 138px;
 }
 
 .tile {
@@ -517,6 +517,7 @@
 .hint {
     color: white;
     text-align: center;
+    font-size: 22px;
 }
 
 .category{

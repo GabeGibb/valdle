@@ -30,6 +30,31 @@ let genderMap = {
     "Jett": "Female"
 }
 
+let dateMap = {
+    "Gekko": "2023",
+    "Fade": "2022",
+    "Breach": "2020",
+    "Deadlock": "2023",
+    "Raze": "2020",
+    "Chamber": "2021",
+    "KAY/O": "2021",
+    "Skye": "2020",
+    "Cypher": "2020",
+    "Sova": "2020",
+    "Killjoy": "2020",
+    "Harbor": "2022",
+    "Viper": "2020",
+    "Phoenix": "2020",
+    "Astra": "2021",
+    "Brimstone": "2020",
+    "Neon": "2022",
+    "Yoru": "2021",
+    "Sage": "2020",
+    "Reyna": "2020",
+    "Omen": "2020",
+    "Jett": "2020"
+}
+
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true, 'agent', data['dayId']);
@@ -63,8 +88,9 @@ function tileAnimation(currRow, tileDiv, delayAmount){
 let hasTakenAGuess = false;
 function isCorrectAgentOption(userInput){ 
     let optionAnswer = dataList[randIndex]["displayName"];
-    let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName']]
-    let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInput)]['role']['displayName']]
+    let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName'], dateMap[optionAnswer]]
+    console.log(correctAnswers)
+    let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInput)]['role']['displayName'], dateMap[userInput]]
     
     let listOfGuesses = document.getElementById("listOfGuesses");
 
@@ -72,7 +98,7 @@ function isCorrectAgentOption(userInput){
     listOfGuesses.prepend(currRow);
     currRow.classList.add("row");
 
-    for(let i = 0; i < 3; i++){
+    for(let i = 0; i < 4; i++){
         tileDiv = document.createElement("div");
         textSpan = document.createElement("span");
         tileDiv.classList.add("tile");
