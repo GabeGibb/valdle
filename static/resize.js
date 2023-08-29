@@ -1,6 +1,6 @@
 
 // Change the viewport value based on screen.width
-let threshhold = 575;
+let threshhold = 585;
 
 if (document.title == 'Guess The Map'){
     threshhold = 760;
