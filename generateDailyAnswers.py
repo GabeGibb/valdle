@@ -9,7 +9,6 @@ def getMap():
     f = open('static/api/maps/maps_en.json')
     data = json.load(f)
     f.close()
-    data.pop(8)
 
     index = randint(0, len(data)-1)
     mapOfDay = {}

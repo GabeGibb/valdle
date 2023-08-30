@@ -4,7 +4,7 @@ from json import dump
 def downloadWeapons():
     weapons = get('https://valorant-api.com/v1/weapons')
     if weapons.status_code == 200:
-        weaponsFile = open("static/api/weapons.json", "w")
+        weaponsFile = open("static/api/newweapons.json", "w")
         weaponContent = weapons.json()['data']
 
         for i in range(len(weaponContent)):
@@ -16,14 +16,14 @@ def downloadWeapons():
 def downloadAgents():
     agents = get('https://valorant-api.com/v1/agents?isPlayableCharacter=true')
     if agents.status_code == 200:
-        agentsFile = open("static/api/agents.json", "w")
+        agentsFile = open("static/api/newagents.json", "w")
         agentsContent = agents.json()['data']
         dump(agentsContent, agentsFile, indent=4)
         agentsFile.close()
 
 def downloadMaps():
-    mapList = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split']
-    maps = get('https://valorant-api.com/v1/maps?language=es-ES')
+    mapList = ['Ascent', 'Bind', 'Breeze', 'Fracture', 'Haven', 'Icebox', 'Lotus', 'Pearl', 'Split', 'Sunset']
+    maps = get('https://valorant-api.com/v1/maps')
     alteredMaps = []
     if maps.status_code == 200:
         mapsContent = maps.json()['data']
@@ -32,12 +32,12 @@ def downloadMaps():
                 alteredMaps.append(mapsContent[i])
                 alteredMaps[-1]['rotation'] = 0
 
-        mapsFile = open("static/api/newMaps.json", "w")
+        mapsFile = open("static/api/newmaps.json", "w")
 
         dump(alteredMaps, mapsFile, indent=4)
         mapsFile.close()
 
 
-# downloadWeapons()
+downloadWeapons()
 # downloadAgents()
 downloadMaps()
