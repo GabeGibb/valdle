@@ -240,3 +240,10 @@
 #correctImg{
     width: 50% !important;
 }
+
+#instructions{
+    color: #fa4454;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}

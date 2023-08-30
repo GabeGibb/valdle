@@ -11,6 +11,15 @@ let mapSize = document.getElementById('mapChoice').clientHeight;
 let divideFactor = 1000 / mapSize;
 
 let calloutMap = $('#mapChoice').clone();
+let instructionsDiv = $('#mapChoice').clone();
+instructionsDiv.css('background-color', 'black')
+let instruction = $('<div id="instructions">Press a map name and select a callout to begin!</div>')
+instructionsDiv.append(instruction);
+$('#mapChoice').replaceWith(instructionsDiv)
+
+
+
+
 let calloutMaps = [];
 
 function addTries(tries){
@@ -53,7 +62,6 @@ function makeCalloutDiv(callout, mapName) {
     div.className = "callout";
     div.classList.add("notranslate");
     textDiv.innerHTML = superRegion + ' ' + region;
-    // textDiv.innerHTML = region;
     textDiv.className = "calloutText"
     div.appendChild(textDiv)
 
@@ -68,7 +76,7 @@ function makeCalloutDiv(callout, mapName) {
         if (persistentData['currentState'] == 'p1'){
             persistAddTry(guess);
         }
-        // persistAddTry(guess);
+
         let listOfMapGuesses = document.getElementById("listOfMapGuesses");
 
         win = false;
@@ -79,7 +87,6 @@ function makeCalloutDiv(callout, mapName) {
 
         let counter = 0;
         for (let j = 0; j < 3; j++) { //creates three tiles per row
-            // setTimeout(() => { 
             tileDiv = document.createElement("div");
             textSpan = document.createElement("span");
             tileDiv.classList.add("tile");
@@ -149,9 +156,7 @@ function createMaps() {
 
 
 function createMap(mapName){
-    // if (gameOver) {
-    //     return;
-    // }
+
     for (let i = 0; i < calloutMaps.length; i++){
         if (calloutMaps[i].val() == mapName){
             $('#mapChoice').replaceWith(calloutMaps[i])
