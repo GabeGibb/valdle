@@ -10,16 +10,6 @@ app = Flask(__name__)
 def riot():
     return send_file('riot.txt')
 
-# @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
-# def updateAnswers():
-
-#     json_object = dumps(generateDailyAnswers(), indent=4)
-
-#     with open("dailyAnswers.json", "w") as outfile:
-#         outfile.write(json_object)
-#     return 'success'
-    
-# updateAnswers()
 @app.route('/ifYouAreAUserPleaseDontDoThisEndpoint')
 def updateAnswers():
     url = 'https://api.jsonbin.io/v3/b/64db06b59d312622a3915ec6'
