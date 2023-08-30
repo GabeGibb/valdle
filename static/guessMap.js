@@ -13,7 +13,7 @@ let divideFactor = 1000 / mapSize;
 let calloutMap = $('#mapChoice').clone();
 let instructionsDiv = $('#mapChoice').clone();
 instructionsDiv.css('background-color', 'black')
-let instruction = $('<div id="instructions">Press a map name and select a callout to begin!</div>')
+let instruction = $('<div id="instructions">Select a map name and choose a callout to begin!</div>')
 instructionsDiv.append(instruction);
 $('#mapChoice').replaceWith(instructionsDiv)
 
