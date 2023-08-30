@@ -59,6 +59,9 @@ function makeCalloutDiv(callout, mapName) {
 
     div.style.cursor = 'pointer';
     div.onclick = function () {
+        if (gameOver){
+            return;
+        }
 
         let guess = [mapName, region, superRegion]
 
@@ -105,7 +108,7 @@ function makeCalloutDiv(callout, mapName) {
         if (win) {
             persistP2State();
             gameOver = true;
-            clearMap();
+            // clearMap();
 
 
             winConfetti();
@@ -146,9 +149,9 @@ function createMaps() {
 
 
 function createMap(mapName){
-    if (gameOver) {
-        return;
-    }
+    // if (gameOver) {
+    //     return;
+    // }
     for (let i = 0; i < calloutMaps.length; i++){
         if (calloutMaps[i].val() == mapName){
             $('#mapChoice').replaceWith(calloutMaps[i])
