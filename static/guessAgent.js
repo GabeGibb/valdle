@@ -206,7 +206,7 @@ function guessAgentTime2(){
     correctName = dataList[randIndex]["displayName"];
     guessImage.src = correctImgSrc;
     var image = document.querySelector('#guessImage');
-    pixelate = new Pixelate(image, 50);
+    pixelate = new Pixelate(image, 45);
     $("#guessImage").css("visibility", "hidden");
     $('#optionNames').hide();
     
