@@ -226,6 +226,8 @@
 }
 
 #nextGameButton_inner {
+    font-size: 25px;
+    font-family: 'VALORANT', sans-serif;
     min-width: 400px;
     padding: 25px 0px;  
     display: flex;

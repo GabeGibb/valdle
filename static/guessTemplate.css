@@ -594,3 +594,6 @@ hr {
    
 }
 
+canvas{
+    border: 0.1px solid white
+}

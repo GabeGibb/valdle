@@ -207,6 +207,7 @@ function guessAgentTime2(){
     guessImage.src = correctImgSrc;
     var image = document.querySelector('#guessImage');
     pixelate = new Pixelate(image, 45);
+    
     $("#guessImage").css("visibility", "hidden");
     $('#optionNames').hide();
     
