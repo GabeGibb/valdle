@@ -597,3 +597,16 @@ hr {
 canvas{
     border: 0.1px solid white
 }
+
+#confettiCanvas{
+    border: 0px !important;
+}
+
+.searchArrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
