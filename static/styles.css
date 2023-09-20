@@ -50,7 +50,7 @@ body{
     padding-bottom: 2px;
     text-decoration: none;
     font-size: 4em;
-    transition: 75ms ease-out;
+    transition: 150ms ease-out;
 }
 
 .navbar a:hover {
