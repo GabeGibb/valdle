@@ -119,6 +119,6 @@ function isCorrectAbilityName(button, currAbility){
 async function revealTiles() {
     while (tileOrder.length > 0) {
         removeRandTile();
-        await new Promise(r => setTimeout(r, 500));
+        await new Promise(r => setTimeout(r, 175));
     }
 }
