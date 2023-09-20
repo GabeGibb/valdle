@@ -16,24 +16,22 @@ function addTries(tries){
 }
 
 function doP2Guess(attempt){
-    if (attempt != ''){
-        isCorrectOption(attempt);
-    }
+    // if (attempt != ''){
+    //     isCorrectOption(attempt);
+    // }
 }
 
 function curGamemode(){
     dataList = dataList[gunIndex]['skins'];
     correctImgSrc = dataList[randIndex]['displayIcon'];
-    // console.log(correctImgSrc)
-    // console.log(dataList)
-    // if (correctImgSrc == null){
+
     for(let i=0; i < dataList[randIndex]['levels'].length; i++){
         if (dataList[randIndex]['levels'][i]['displayIcon'] != null){
             correctImgSrc = dataList[randIndex]['levels'][i]['displayIcon']
             break;
         }
     }
-    // }
+
     correctName = dataList[randIndex]['displayName']
 
     $("#weaponGuessImage").attr("src", correctImgSrc);
