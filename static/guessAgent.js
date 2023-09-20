@@ -155,12 +155,18 @@ function unPixelate(count){
     }
     pixelate.updateBlurFactor(count);
     setTimeout(() => {
-        unPixelate(count-1)
+        unPixelate(count-(count/15))
     }, 30);
+}
+
+function revealAgentName(){
+    let agentName = $('#secondAgentName')
+    agentName.text(dataList[randIndex]['displayName']);
 }
 
 function modeWrongActions(){
     if (secondPartStarted){
+        revealAgentName();
         partTwoLose( dataList[randIndex]['displayName']);
         unPixelate(startPixelate)
     }
@@ -170,6 +176,7 @@ function modeWrongActions(){
 let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){
+        revealAgentName();
         partTwoWin(dataList[randIndex]['displayName']);
         unPixelate(startPixelate)
 
@@ -199,7 +206,8 @@ function guessAgentTime2(){
 
     let pixImgDiv = $('<div class="guessImageDiv">\
                         <img id="guessImage" src="">\
-                    </div>');
+                    </div>\
+                    <p id="secondAgentName"></p>');
     pixImgDiv.insertAfter('#agent2Prompt')
     
     correctImgSrc = dataList[randIndex]["displayIcon"];

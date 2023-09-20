@@ -203,6 +203,15 @@
     background-color: #ff4655;
 }
 
+.correctTextGuess{
+    color: #74CB71;
+}
+
+.wrongTextGuess{
+    color: #ff4655;
+}
+
+
 .guessImg{
     /* border:10px solid blue; */
     /* width: 70px; */
@@ -344,10 +353,38 @@
 .correctGuessName{
     background-color: #74CB71 !important;
 }
+.correctGuessNameAnimation{
+    animation: grow 1.5s;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 .incorrectGuessName{
     background-color: #ff4655 !important;
 }
+
+.incorrectGuessNameAnimation{
+    animation-iteration-count: 100;
+    animation: shake .25s 0s 6;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
 
 #guessText{
     color: #fa4454;
@@ -440,18 +477,25 @@
 }
 
 
-#numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText, #partTwoEndTextAnswer {
+#numTries, #nextValdleText, #nextValdleCountdown, #partTwoEndText, #partTwoEndTextAnswer, #secondAgentName {
     text-align: center;
 }
 
 
-#partTwoEndText, #partTwoEndTextAnswer {
-    color: white;
+#partTwoEndText, #partTwoEndTextAnswer{
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
+#secondAgentName{
+    color: white;
+    font-size: 20px;
+    margin-bottom: -25px;
+}
+
+
 #numTriesDiv {
+    font-size: 20px;
     display: flex;
     justify-content: center;
 

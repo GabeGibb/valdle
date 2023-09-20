@@ -95,6 +95,7 @@ function isCorrectAbilityName(button, currAbility){
     
     if(currAbility == correctAbilityName){
         button.classList.add("correctGuessName")
+        button.classList.add("correctGuessNameAnimation")
         whatAbilityNameDiv = document.getElementById("whatName");
         whatAbilityNameDiv.disabled = true;
         
@@ -102,7 +103,14 @@ function isCorrectAbilityName(button, currAbility){
     }   
     else{
         button.classList.add("incorrectGuessName")
+        button.classList.add("incorrectGuessNameAnimation")
         partTwoLose(correctAbilityName);
+        let buttons = $('#whatName')
+        buttons.children().each(function(){
+            if (this.innerHTML == correctAbilityName){
+                this.classList.add("correctGuessName")
+            }
+        })
     }
 
     canGuessAbilityName = false;

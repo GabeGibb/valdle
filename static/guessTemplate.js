@@ -380,19 +380,21 @@ function removeOption(name){
 
 function partTwoWin(correctAnswer){
     $('#dropdown').remove();
-    // $('#partTwoEndText').text('Correct!');
-    // $('#partTwoEndText').text('Correct!<br>Correct Answer: ' + correctAnswer);
-    $('#partTwoEndText').html('Nice Job!<br>Correct Answer:');
-    $('#partTwoEndTextAnswer').text(correctAnswer);
+    $('#partTwoEndText').html('You Got It!')
+    $('#partTwoEndText').addClass('correctTextGuess');
+    // $('#partTwoEndText').html('Nice Job!<br>Correct Answer:');
+    // $('#partTwoEndTextAnswer').text(correctAnswer);
+    // $('#partTwoEndTextAnswer').addClass('correctTextGuess');
 
 }
 
 function partTwoLose(correctAnswer){
     $('#dropdown').remove();
-    // $('#partTwoEndText').text('Better Luck Next Time');
-    // $('#partTwoEndText').text('Better Luck Next Time<br>Correct Answer: ' + correctAnswer)
-    $('#partTwoEndText').html('Better Luck Next Time!<br><br>Correct Answer:')
-    $('#partTwoEndTextAnswer').text(correctAnswer);
+    $('#partTwoEndText').text('Better Luck Next Time');
+    $('#partTwoEndText').addClass('wrongTextGuess');
+    // $('#partTwoEndText').html('Better Luck Next Time!<br><br>Correct Answer:')
+    // $('#partTwoEndTextAnswer').text(correctAnswer);
+    // $('#partTwoEndTextAnswer').addClass('correctTextGuess');
 }
 
 function createNextPageBox(nextGame){
