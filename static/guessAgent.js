@@ -144,7 +144,8 @@ function curGamemode(){ // Gets called on page load
 let pixelate;
 let startPixelate = 65;
 function unPixelate(count){
-    if(count < 0){
+    console.log(count)
+    if(count < 1){
         pixelate.canvas.addEventListener("mouseover", (event) =>{
             pixelate.updateBlurFactor(startPixelate);
         })
