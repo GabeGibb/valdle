@@ -119,9 +119,9 @@ function loadTemplate(url, showButtonImages, mode, curDayId){
     $.get(url, function(data, status){ //url defined in current webpage js file
         dataList = data;
         // console.log(dataList);
+        curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
         makeButtons(showButtonImages);
         addEnter();
-        curGamemode(); //IMPORTANT FUNCTION CALLS A MADE FUNCTION TO DO ANYTHING SPECIAL ON LOAD OF GIVEN PAGE
         loadPersistentData(mode, curDayId)
     });    
 }

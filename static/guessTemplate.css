@@ -26,6 +26,9 @@
 
 #guessImage {
     height: 150px;
+}
+
+#weaponGuessImage{
     max-width: 410px;
 }
 

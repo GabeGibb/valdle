@@ -7,8 +7,8 @@ let skinIndex;
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, false, 'weapon', data['dayId']);
     // console.log(data)
-    randIndex = data['weaponRandIndex'];
-    skinIndex = data['skinRandIndex'];
+    randIndex = data['skinRandIndex'];
+    gunIndex = data['weaponRandIndex'];
 });
 
 function addTries(tries){
@@ -22,88 +22,95 @@ function doP2Guess(attempt){
 }
 
 function curGamemode(){
-    correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon'];
+    dataList = dataList[gunIndex]['skins'];
+    correctImgSrc = dataList[randIndex]['displayIcon'];
     // console.log(correctImgSrc)
     // console.log(dataList)
     // if (correctImgSrc == null){
-    for(let i=0; i < dataList[randIndex]['skins'][skinIndex]['levels'].length; i++){
-        if (dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon'] != null){
-            correctImgSrc = dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon']
+    for(let i=0; i < dataList[randIndex]['levels'].length; i++){
+        if (dataList[randIndex]['levels'][i]['displayIcon'] != null){
+            correctImgSrc = dataList[randIndex]['levels'][i]['displayIcon']
             break;
         }
     }
     // }
     correctName = dataList[randIndex]['displayName']
-    setImage();
 
+    $("#weaponGuessImage").attr("src", correctImgSrc);
 }
 
+function modeWrongActions(){}
 
-let secondPartStarted = false;
 function displayPartTwo(){
-    if (secondPartStarted){
-        partTwoWin(dataList[skinIndex]['displayName']);
-    }else{
-        winConfetti();
-        guessGunSkinTime();
-        secondPartStarted = true;
-    }
+    winConfetti();
+    createNextPageBox('quote')
 }
 
-function guessGunSkinTime(){
-    createNextPageBox('quote');
-    dataList = dataList[randIndex]['skins'];
-    randIndex = skinIndex;
+// let secondPartStarted = false;
+// function displayPartTwo(){
+//     if (secondPartStarted){
+//         partTwoWin(dataList[skinIndex]['displayName']);
+//     }else{
+//         winConfetti();
+//         guessGunSkinTime();
+//         secondPartStarted = true;
+//     }
+// }
 
-    $('#weaponSkinPrompt').appendTo('#partTwoDiv')
-    $('#weaponSkinPrompt').show()
-    dropdownClone.appendTo('#partTwoDiv');
-    $('#searchInput').attr('placeholder','Search Weapon Skin..');
+// function guessGunSkinTime(){
+//     createNextPageBox('quote');
+//     dataList = dataList[randIndex]['skins'];
+//     randIndex = skinIndex;
 
-    $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
+//     $('#weaponSkinPrompt').appendTo('#partTwoDiv')
+//     $('#weaponSkinPrompt').show()
+//     dropdownClone.appendTo('#partTwoDiv');
+//     $('#searchInput').attr('placeholder','Search Weapon Skin..');
 
-    $('#weaponSkinPrompt').removeAttr('hidden');
-    jQuery('<div>', {
-        id:'fullListOfGuesses'
-    }).appendTo($('#partTwoDiv'));
+//     $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
 
-    $('#fullListOfGuesses').hide()
-    $('#optionNames').hide();
+//     $('#weaponSkinPrompt').removeAttr('hidden');
+//     jQuery('<div>', {
+//         id:'fullListOfGuesses'
+//     }).appendTo($('#partTwoDiv'));
 
-    makeButtons(false);
+//     $('#fullListOfGuesses').hide()
+//     $('#optionNames').hide();
 
-    $('#fullListOfGuesses').empty();
-    $('#fullListOfGuesses').show()
-    addEnter();
-    secondPartFilter = true;
-    filterFunction();
-}
+//     makeButtons(false);
 
-// Pixelation
+//     $('#fullListOfGuesses').empty();
+//     $('#fullListOfGuesses').show()
+//     addEnter();
+//     secondPartFilter = true;
+//     filterFunction();
+// }
 
-let blurFactor = 50; // higher blurFactor means less pixels
-var pixelate; // class that houses the pixel functions and images
+// // Pixelation
 
-function setImage(){
-    $("#guessImage").css("visibility", "hidden");
-    guessImage.src = correctImgSrc // Defines guessImage image
-    var image = document.querySelector('#guessImage');
-    pixelate = new Pixelate(image, blurFactor);
-    pixelate.initialLoadIn();
-}
+// let blurFactor = 50; // higher blurFactor means less pixels
+// var pixelate; // class that houses the pixel functions and images
 
-function modeWrongActions(){
-    if (secondPartStarted){
-        partTwoLose( dataList[skinIndex]['displayName']);
-    }else{
-        // console.log(blurFactor)
-        if (blurFactor <= 0) {return;}
-        blurFactor -= 5;
-        if (blurFactor > 0) {
-            pixelate.updateBlurFactor(blurFactor);
-        }
-        else { // Pixelated image now updates to original unpixelated image
-            pixelate.updateBlurFactor(1);
-        }
-    }
-}
+// function setImage(){
+//     $("#guessImage").css("visibility", "hidden");
+//     guessImage.src = correctImgSrc // Defines guessImage image
+//     var image = document.querySelector('#guessImage');
+//     pixelate = new Pixelate(image, blurFactor);
+//     pixelate.initialLoadIn();
+// }
+
+// function modeWrongActions(){
+//     if (secondPartStarted){
+//         partTwoLose( dataList[skinIndex]['displayName']);
+//     }else{
+//         // console.log(blurFactor)
+//         if (blurFactor <= 0) {return;}
+//         blurFactor -= 5;
+//         if (blurFactor > 0) {
+//             pixelate.updateBlurFactor(blurFactor);
+//         }
+//         else { // Pixelated image now updates to original unpixelated image
+//             pixelate.updateBlurFactor(1);
+//         }
+//     }
+// }
