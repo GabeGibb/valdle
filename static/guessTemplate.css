@@ -391,7 +391,12 @@
 
 #correctImg{
     width: 200px;
-    max-width: 50%;
+    justify-content: center;
+    border: 0.05px solid white
+}
+
+#correctWeaponImg{
+    width: 400px;
     justify-content: center;
 }
 

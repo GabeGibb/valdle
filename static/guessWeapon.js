@@ -41,7 +41,8 @@ function modeWrongActions(){}
 
 function displayPartTwo(){
     winConfetti();
-    createNextPageBox('quote')
+    createNextPageBox('quote');
+    $('#correctImg').attr('id', 'correctWeaponImg')
 }
 
 // let secondPartStarted = false;
