@@ -196,7 +196,7 @@
 }
 
 #correctGuess{
-    background-color: green; 
+    background-color: darkgreen; 
     padding: 5px;
     padding-top: 10px;
     border-radius: 10px;
