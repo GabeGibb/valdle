@@ -255,3 +255,7 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+#correctGuess{
+    max-width: 300px;
+}

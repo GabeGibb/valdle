@@ -195,6 +195,13 @@
 
 }
 
+#correctGuess{
+    background-color: green; 
+    padding: 5px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
 .correctGuess{
     background-color: #74CB71;
 }
