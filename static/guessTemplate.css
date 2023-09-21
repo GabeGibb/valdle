@@ -423,13 +423,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 
 #correctImg{
     width: 200px;
     justify-content: center;
-    border: 0.05px solid white
 }
 
 #correctWeaponImg{
@@ -437,6 +436,9 @@
     justify-content: center;
 }
 
+#whatName{
+    margin-bottom: 15px;
+}
 
 #correctTextDiv, #correctImg{
     margin-left: 20px;
@@ -466,7 +468,7 @@
 
 
 #nextPageBox:hover {
-    background-color: rgb(4, 4, 4);
+    background-color: rgb(10, 10, 10);
 }
 
 
@@ -498,7 +500,7 @@
     font-size: 20px;
     display: flex;
     justify-content: center;
-
+    margin-bottom: -14px;
 }
 
 #tries, #nextValdleDiv p {
