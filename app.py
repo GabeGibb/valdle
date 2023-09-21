@@ -2,7 +2,7 @@ from flask import Flask, render_template, send_file
 import json
 from requests import get
 from json import dumps
-from generateDailyAnswers import generateDailyAnswers
+from generateDailyAnswers import *
 
 app = Flask(__name__)
 
@@ -111,3 +111,35 @@ def quoteOfDay():
 @app.route('/guessWeapon/weaponOfDay')
 def weaponOfDay():
     return blankOfDay('weapon')
+
+#DEBUGGING
+
+# @app.route('/guessMap/mapOfDay/unlimited')
+# def unlimitedMapOfDay():
+#     ofDay = getMap()
+#     ofDay['dayId'] = -1
+#     return ofDay
+
+# @app.route('/guessAgent/agentOfDay/unlimited')
+# def unlimitedAgentOfDay():
+#     ofDay = getAgent()
+#     ofDay['dayId'] = -1
+#     return ofDay
+
+# @app.route('/guessAbility/abilityOfDay/unlimited')
+# def unlimitedAbilityOfDay():
+#     ofDay = getAbility()
+#     ofDay['dayId'] = -1
+#     return ofDay
+
+# @app.route('/guessQuote/quoteOfDay/unlimited')
+# def unlimitedQuoteOfDay():
+#     ofDay = getQuote()
+#     ofDay['dayId'] = -1
+#     return ofDay
+
+# @app.route('/guessWeapon/weaponOfDay/unlimited')
+# def unlimitedWeaponOfDay():
+#     ofDay = getWeapon()
+#     ofDay['dayId'] = -1
+#     return ofDay
