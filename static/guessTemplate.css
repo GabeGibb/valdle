@@ -519,7 +519,7 @@
 }
 
 #cd {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     font-size: larger;
@@ -529,7 +529,15 @@
     height: 100px;
 }
 
+#nextValdleCountdown{
+    font-size: 22px;
+    margin: 2px;
+}
 
+#nextValdleText{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
 
 #nextValdleDiv hr{
     width: 160px;
@@ -603,7 +611,7 @@
 
 /* button changes */
 
-#nextGameButton {
+#nextGameButton, #statsButton {
 
     --button-text-color: #ece8e1;
     --button-inner-border-color: #ece8e1;
@@ -613,6 +621,23 @@
 
 }
 
+/* #statsButton .btn__inner {
+    width: 200px;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'VALORANT', sans-serif;
+    border: none;
+    font-size: 22px;
+}
+
+#statsButton .btn__content{
+    width: 200px;
+} */
+
+/* #statsButton .btn{
+    width: 200px !important;
+} */
 
 /* button changes end */
 

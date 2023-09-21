@@ -412,7 +412,7 @@ function createNextPageBox(nextGame){
                             <div id = "nextValdleDiv">\
                                 <hr>\
                                 <div id = "cd">\
-                                    <p id="nextValdleText">Refreshes in:&nbsp;</p>\
+                                    <p id="nextValdleText">Refreshes in&nbsp;</p>\
                                     <p id="nextValdleCountdown"></p>\
                                 </div>\
                             </div>\
@@ -467,3 +467,10 @@ function createAndUpdateTimer() {
     let timeString = (hours).toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2); // hours-3 to convert it to EST
     $("#nextValdleCountdown").text(timeString);
 }
+
+{/* <button id="statsButton" class="btn btn--light" onclick="">\
+                                <span id = "statsButton_inner" class="btn__inner">\
+                                    <span class="btn__slide"></span>\
+                                    <span class="btn__content">Stats</span>\
+                                </span>\
+                            </button>\ */}
