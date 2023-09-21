@@ -655,12 +655,8 @@ hr {
    
 }
 
-canvas{
-    border: 0.1px solid white
-}
-
-#confettiCanvas{
-    border: 0px !important;
+canvas:not(#confettiCanvas){
+    border: 0.1px solid white;
 }
 
 .searchArrow{
