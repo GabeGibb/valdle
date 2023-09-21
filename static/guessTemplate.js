@@ -26,7 +26,7 @@ function loadStats(mode){
 }
 
 function addWinToStats(){
-    if (hasAlreadyWon || dayId == -1){
+    if (hasAlreadyWon){
         return;
     }
     hasAlreadyWon = true;
@@ -43,7 +43,7 @@ function loadPersistentData(mode, curDayId){
 
     persistentData = JSON.parse(localStorage.getItem(mode));
     
-    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || (persistentData != null && persistentData['language'] != getLanguageCookie()) || dayId == -1){
+    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || (persistentData != null && persistentData['language'] != getLanguageCookie())){
         if (persistentData != null && persistentData['language'] != getLanguageCookie()){
             if (persistentData['currentState'] == 'p2'){
                 hasAlreadyWon = true;
