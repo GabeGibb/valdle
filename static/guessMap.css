@@ -245,7 +245,6 @@
 }
 
 #instructions{
-    font-family: Arial;
     color: #fa4454;
     font-size: 30px;
     text-align: center;
@@ -253,7 +252,6 @@
     margin-top: 25%;
 
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 #correctGuess{
