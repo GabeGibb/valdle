@@ -14,6 +14,7 @@ let persistentData;
 let stats;
 let hasAlreadyWon = false;
 
+
 //TO ENABLE LOCAL STORAGE, DELETE RETURN AT addWinToStats and delete || 1 at end of loadPersistenData if statement
 
 function loadStats(mode){
@@ -409,6 +410,31 @@ function createNextPageBox(nextGame){
                             </div>\
                             <div id="partTwoDiv"></div>\
                             <div id = "endTextDiv"><p id="partTwoEndText"></p><p class="notranslate" id="partTwoEndTextAnswer"></p></div>\
+                            <button id="statsButton" onclick="toggleStats()">\
+                                <span id="statsButtonInner">Stats</span>\
+                            </button>\
+                            <div id="statsColumns" style="display: none;">\
+                                <div class="statColumn">\
+                                    <div class="statCategory">Total<br>Wins\
+                                    <div class="statBorder"></div></div>\
+                                    <div class="statInfo"></div>\
+                                </div>\
+                                <div class="statColumn">\
+                                    <div class="statCategory">Average<br>Guesses\
+                                    <div class="statBorder"></div></div>\
+                                    <div class="statInfo"></div>\
+                                </div>\
+                                <div class="statColumn">\
+                                    <div class="statCategory">Current<br>Winstreak\
+                                    <div class="statBorder"></div></div>\
+                                    <div class="statInfo"></div>\
+                                </div>\
+                                <div class="statColumn">\
+                                    <div class="statCategory">Highest<br>Winstreak\
+                                    <div class="statBorder"></div></div>\
+                                    <div class="statInfo"></div>\
+                                </div>\
+                            </div>\
                             <div id = "nextValdleDiv">\
                                 <hr>\
                                 <div id = "cd">\
@@ -445,6 +471,8 @@ function createNextPageBox(nextGame){
     setTimeout(() => {
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }, 600);
+
+    showStats();
 }
 
 function createAndUpdateTimer() {
@@ -468,9 +496,53 @@ function createAndUpdateTimer() {
     $("#nextValdleCountdown").text(timeString);
 }
 
-{/* <button id="statsButton" class="btn btn--light" onclick="">\
-                                <span id = "statsButton_inner" class="btn__inner">\
-                                    <span class="btn__slide"></span>\
-                                    <span class="btn__content">Stats</span>\
-                                </span>\
-                            </button>\ */}
+function toggleStats(){
+    if ($('#statsColumns').css('display') == 'none'){
+        $('#statsColumns').show();
+    }else{
+        $('#statsColumns').hide();
+    }
+}
+
+function showStats(){
+    console.log(stats)
+    let columns = $('#statsColumns').children();
+    columns[0].children[1].innerText = stats['dayIds'].length
+
+    let tempSum = stats['triesList'].reduce((a, b) => a + b, 0);
+    columns[1].children[1].innerText = Math.round((tempSum/stats['triesList'].length)*100)/100;
+
+    columns[2].children[1].innerText = getCurrentWinStreak(stats)
+    columns[3].children[1].innerText = getHighestWinStreak(stats)
+}
+
+function getCurrentWinStreak(statsObj){
+    let pastId = dayId;
+    let counter = 0;
+    for(let i = statsObj['dayIds'].length - 1; i >= 0; i--){
+        if (statsObj['dayIds'][i] >= pastId - 1){
+            counter++;
+        }else{
+            return counter
+        }
+        pastId = statsObj['dayIds'][i]
+    }
+    return counter;
+}
+
+function getHighestWinStreak(statsObj){
+    let pastId = dayId;
+    let counter = 0;
+    let highest = 0
+    for(let i = statsObj['dayIds'].length - 1; i >= 0; i--){
+        if (statsObj['dayIds'][i] >= pastId - 1){
+            counter++;
+        }else{
+            highest = Math.max(highest, counter);
+            counter = 1
+        }
+        pastId = statsObj['dayIds'][i]
+    }
+    highest = Math.max(highest, counter);
+    return highest;
+}

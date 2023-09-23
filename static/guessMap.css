@@ -255,5 +255,6 @@
 }
 
 #correctGuess{
-    max-width: 300px;
+    width: 300px;
+    white-space: pre-line;
 }
