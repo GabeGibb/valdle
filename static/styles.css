@@ -9,6 +9,7 @@ html {
  }
 
 body{
+    visibility: hidden;
     background-color: #000000;
     margin: 0px;
     padding: 0px;
@@ -258,4 +259,14 @@ button{
     height: 100%;
     cursor: not-allowed;
     pointer-events: none;
+}
+
+#loading{
+    visibility: visible;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

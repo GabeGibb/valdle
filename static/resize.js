@@ -20,9 +20,7 @@ var viewport_set = function() {
     }
 }
 
-// Set the correct viewport value on page load
 viewport_set();
-
 
 // Set the correct viewport after device orientation change or resize
 window.onresize = function() { 
@@ -30,3 +28,15 @@ window.onresize = function() {
         viewport_set(); 
     }
 }
+
+// document.body.style.visibility = 'hidden'
+let gif = $('<img src="static/images/loading.gif" id="loading">')
+$('body').prepend(gif)
+
+
+document.body.onload = function(){
+    gif.css('visibility', 'hidden')
+    document.body.style.visibility = 'visible'
+}
+
+
