@@ -4,6 +4,8 @@ from requests import get
 from json import dumps
 from generateDailyAnswers import *
 
+
+
 app = Flask(__name__)
 
 @app.route('/riot.txt')
