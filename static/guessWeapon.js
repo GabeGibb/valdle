@@ -2,7 +2,7 @@ let url = "static/api/weapons/weapons_" + getLanguageCookie() + ".json";
 let weaponUrl = window.location.href + '/weaponOfDay';
 let dropdownClone = $('#dropdown').clone();
 let skinIndex;
-audioLength = 1000;
+audioLength = 500;
 
 // jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
@@ -47,7 +47,7 @@ function modeWrongActions(){
         $('#trueSkinName').text(dataList[skinIndex]['displayName']);
         partTwoLose( dataList[skinIndex]['displayName']);
     }else{
-        audioLength += 350;
+        audioLength += 500;
     }
 }
 
