@@ -44,7 +44,6 @@ function addAudioElement(audioSrc) {
 
     audioPlayer.addEventListener('canplaythrough',  function(){
         totalAudioLength = audioPlayer.duration * 1000;
-        console.log(totalAudioLength)
         if (audioLength == 0){
             audioLength = totalAudioLength;
         }

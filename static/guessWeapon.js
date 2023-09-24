@@ -51,11 +51,6 @@ function modeWrongActions(){
     }
 }
 
-function displayPartTwo(){
-    winConfetti();
-    createNextPageBox('quote');
-    $('#correctImg').attr('id', 'correctWeaponImg')
-}
 
 let secondPartStarted = false;
 function displayPartTwo(){
@@ -70,6 +65,7 @@ function displayPartTwo(){
 }
 
 function guessGunSkinTime(){
+    audioLength = 4000;
     createNextPageBox('quote');
     dataList = dataList[randIndex]['skins'];
     randIndex = skinIndex;
