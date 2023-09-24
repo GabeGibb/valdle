@@ -28,7 +28,7 @@
     <script src="/static/guessWeapon.js" defer></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript" src="/static/translate.js"></script>
-    <script type="text/javascript" src="/static/pixelate.js"></script>
+    <script type="text/javascript" src="/static/audio.js"></script>
     <script type="text/javascript" src="/static/resize.js" defer></script>
     <style>
         #correctGuessDiv{
@@ -55,9 +55,13 @@
     
     <div id="gameArea">
         <div id="modeBox">
-            <div class="prompt">
-                <p id="header">Guess The Weapon Skin</p>
+            <div class="prompt" id="weaponPrompt">
+                <p id="header">Guess The Weapon By Sound</p>
+                <p id="sub_header">Each Try Increases Audio Length</p>
                 <hr>
+            </div>
+            <div class="hintDiv">
+                <h2 id="audioHintText"></h2>
             </div>
             <div class="guessImageDiv">
                 <img id="weaponGuessImage" src="">
@@ -76,6 +80,7 @@
 
         <div hidden class="prompt" id="weaponSkinPrompt">
             <p>Bonus: Guess The Weapon Skin</p>
+            <p id="trueSkinName"></p>
         </div>
     </div>
 </body>

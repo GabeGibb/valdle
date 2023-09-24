@@ -14,7 +14,7 @@ $.get(quoteUrl, function(data, status){ //url defined in current webpage js file
     randIndex = data['randIndex'];
     randQuoteIndex = data['randQuoteIndex']
 
-    $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'><button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button></div>");
+    makeAudioElement();
     getQuoteAndAF(randIndex).then((data) => {
         $('#guessText').text(data["voiceInfo"][randQuoteIndex]["quote"]);
         addAudioElement(data["voiceInfo"][randQuoteIndex]["audioFile"]);
@@ -35,23 +35,6 @@ function addTries(tries){
 
 function doP2Guess(attempt){
 
-}
-
-function playAudio(audioPlayer) {
-    audioPlayer.play();
-}
-
-function addAudioElement(audioSrc) {
-    const audioContainer = document.getElementById('audioContainer');
-    const audioPlayer = document.createElement('audio');
-    audioPlayer.src = audioSrc;
-    audioPlayer.volume = 0.5;
-    audioContainer.appendChild(audioPlayer);
-
-    playAudioButton.addEventListener('click', function() {
-        playAudio(audioPlayer);
-    });
-    audioContainer.appendChild(playAudioButton);
 }
 
 

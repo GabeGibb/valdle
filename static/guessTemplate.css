@@ -403,6 +403,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -20px;
 }
 
 #audioHintText {
@@ -475,7 +476,7 @@
 
 
 #nextPageBox:hover {
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(3, 3, 3);
 }
 
 
@@ -636,7 +637,9 @@
     margin-top: 10px;
     margin-bottom: 5px;
     border: none;
+    border-radius: 10px;
 }
+
 
 #statsColumns{
     margin-top: 10px;
@@ -644,7 +647,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     align-items: center;
-    /* background-color: #7D8082; */
+    background-color: rgb(30, 30, 30);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
 
 .statColumn{
@@ -658,8 +665,8 @@
 
 .statCategory{
     /* border-bottom: solid #fa4454; */
-    margin-bottom: 0px;
-    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
     padding-bottom: 2px;
     height: 50px;
     /* width: 80px; */
@@ -673,7 +680,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 3px;
+    font-size: 26px;
 
 }
 
@@ -683,6 +690,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-top: 5px;
 
 }
 
@@ -691,7 +699,7 @@
 }
 
 #statsButtonInner{
-    font-size: 22px;
+    font-size: 23px;
 }
 
 
@@ -745,4 +753,16 @@ canvas:not(#confettiCanvas){
     padding: 3px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+}
+
+#weaponSkinPrompt{
+    margin-bottom: -20px;
+}
+
+#trueSkinName, #secondAgentName{
+    color: #74CB71;
+}
+
+#trueSkinName{
+    margin: 0px;
 }
