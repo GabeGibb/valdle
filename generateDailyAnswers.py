@@ -5,30 +5,37 @@ from json import load, dumps
 import json
 from random import randint
 
-def getMap():
+def getMap(past):
     f = open('static/api/maps/maps_en.json')
     data = json.load(f)
     f.close()
 
     index = randint(0, len(data)-1)
+    while index == past['mapIndex']:
+        index = randint(0, len(data)-1)
+
+    randCalloutIndex = randint(0, len(data[index]['callouts'])-1)
+
     mapOfDay = {}
     mapOfDay['mapIndex'] = index
     mapOfDay['mapName'] = data[index]['displayName']
 
-    randCalloutIndex = randint(0, len(data[index]['callouts'])-1)
     mapOfDay['randCalloutIndex'] = randCalloutIndex
     mapOfDay['randCalloutEnglishRegion'] = data[index]['callouts'][randCalloutIndex]['regionName']
     mapOfDay['randCalloutEnglishSuperRegion'] = data[index]['callouts'][randCalloutIndex]['superRegionName']
     
     return mapOfDay
 
-def getAgent():
+def getAgent(past):
     f = open('static/api/agents/agents_en.json')
     data = load(f)
     f.close()
 
     index = randint(0, len(data)-1)
     index2 = randint(0, len(data)-1)
+    while past['randIndex'] == index or past['randIndex2'] == index2:
+        index = randint(0, len(data)-1)
+        index2 = randint(0, len(data)-1)
 
     agentOfDay = {}
     agentOfDay['randIndex'] = index
@@ -37,7 +44,7 @@ def getAgent():
     agentOfDay['displayName2'] = data[index2]['displayName']
     return agentOfDay
 
-def getAbility():
+def getAbility(past):
     f = open('static/api/agents/agents_en.json')
     data = load(f)
     f.close()
@@ -49,8 +56,9 @@ def getAbility():
         randNums16.append(nums16[randNumsIndex])
         nums16.pop(randNumsIndex)
     
-
     index = randint(0, len(data)-1)
+    while index == past['randIndex']:
+        index = randint(0, len(data)-1)
     abilityIndex = randint(0, 3)
 
 
@@ -62,11 +70,15 @@ def getAbility():
     abilityOfDay['tileOrder'] = randNums16
     return abilityOfDay
 
-def getQuote():
+def getQuote(past):
     f = open('static/api/quotes/quotes_en.json')
     data = load(f)
     f.close()
     index = randint(0, len(data)-1)
+
+    while index == past['randIndex']:
+        index = randint(0, len(data)-1)
+
     quoteIndex = randint(0, len(data[index]["voiceInfo"])-1) 
     
     """
@@ -80,12 +92,15 @@ def getQuote():
     
     return quoteOfDay
 
-def getWeapon():
+def getWeapon(past):
 
     f = open('static/api/weapons/weapons_en.json')
     data = load(f)
     f.close()
     weaponIndex = randint(0, len(data)-1)
+    while weaponIndex == past['weaponRandIndex']:
+        weaponIndex = randint(0, len(data)-1)
+
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
 
     weaponOfDay = {}
@@ -95,7 +110,65 @@ def getWeapon():
     weaponOfDay['skinName'] =  data[weaponIndex]['skins'][skinIndex]['displayName']
     return weaponOfDay
 
-def generateDailyAnswers():
-    dailyAnswers = {"map": getMap(), "agent": getAgent(), "ability": getAbility(), "weapon": getWeapon(), "quote": getQuote()}
+def generateDailyAnswers(past):
+    dailyAnswers = {"map": getMap(past['map']), "agent": getAgent(past['agent']), "ability": getAbility(past['ability']), "weapon": getWeapon(past['weapon']), "quote": getQuote(past['quote'])}
+    dailyAnswers['dayId'] = past['dayId'] + 1
     
     return dailyAnswers
+
+# pastAns = {
+#   "map": {
+#     "mapIndex": 0,
+#     "mapName": "Ascent",
+#     "randCalloutIndex": 14,
+#     "randCalloutEnglishRegion": "Garden",
+#     "randCalloutEnglishSuperRegion": "A"
+#   },
+#   "agent": {
+#     "randIndex": 10,
+#     "displayName": "Killjoy",
+#     "randIndex2": 3,
+#     "displayName2": "Deadlock"
+#   },
+#   "ability": {
+#     "randIndex": 0,
+#     "randAbilityIndex": 1,
+#     "displayName": "Gekko",
+#     "abilityName": "Dizzy",
+#     "tileOrder": [
+#       5,
+#       6,
+#       10,
+#       1,
+#       13,
+#       4,
+#       2,
+#       11,
+#       9,
+#       12,
+#       7,
+#       8,
+#       14,
+#       3,
+#       16,
+#       15
+#     ]
+#   },
+#   "weapon": {
+#     "weaponRandIndex": 7,
+#     "skinRandIndex": 25,
+#     "gunName": "Frenzy",
+#     "skinName": "Aero Frenzy"
+#   },
+#   "quote": {
+#     "randIndex": 0,
+#     "randQuoteIndex": 0
+#   },
+#   "dayId": 63
+# }
+# print(pastAns['map']['mapName'], pastAns['agent']['displayName'], pastAns['ability']['displayName'], pastAns['weapon']['gunName'], pastAns['quote']['randIndex'])
+
+# for _ in range(100):
+#     x = generateDailyAnswers(pastAns)
+#     print(x['map']['mapName'], x['agent']['displayName'], x['ability']['displayName'], x['weapon']['gunName'], x['quote']['randIndex'])
+#     print(x['dayId'])

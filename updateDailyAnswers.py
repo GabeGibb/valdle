@@ -3,7 +3,7 @@ from requests import put, get, post
 from generateDailyAnswers import generateDailyAnswers
 
 
-dailyGameAnswers = generateDailyAnswers()
+
 
 
 url = 'https://api.jsonbin.io/v3/b/64db06b59d312622a3915ec6'
@@ -13,7 +13,7 @@ headers = {
 
 req = get(url, headers=headers).json()['record']
 
-dailyGameAnswers['dayId'] = req['dayId'] + 1
+dailyGameAnswers = generateDailyAnswers(req)
 
 
 binId = '64db06b59d312622a3915ec6'
