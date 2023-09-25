@@ -627,19 +627,40 @@
 /* button changes end */
 
 #statsButton {
+    display: grid;
+    grid-template-columns: 40px 80px;
+
+
+    /* width: 120px; */
     margin: auto;
-    width: 156px;
     z-index: 10;
     font-family: 'VALORANT', sans-serif;
     /* background-color: rgba(43,42,41,1); */
-    background-color: rgba(200,200,200,1);
-    padding: 10px 0px;
+    /* background-color: rgba(200,200,200,1); */
+    background: none;
+    padding: 10px;
     margin-top: 10px;
     margin-bottom: 5px;
-    border: none;
+    border: 2.5px solid white;
     border-radius: 10px;
+    transition: 150ms ease-out;
 }
 
+
+#statsButton:hover {
+    transform: scale(1.05); 
+}
+
+
+#statsButtonInner{
+    font-size: 23px;
+    color: white;
+    margin: auto;
+}
+
+#statsImg{
+    width: 40px;
+}
 
 #statsColumns{
     margin-top: 10px;
@@ -694,14 +715,6 @@
 
 }
 
-#statsButton:hover{
-    background-color: rgba(225,225,225,1);;
-}
-
-#statsButtonInner{
-    font-size: 23px;
-    color: black;
-}
 
 
 
