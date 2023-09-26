@@ -12,7 +12,7 @@ let genderMap = {
     "Deadlock": "Female",
     "Raze": "Female",
     "Chamber": "Male",
-    "KAY/O": "Robot",
+    "KAY/O": "Male",
     "Skye": "Female",
     "Cypher": "Male",
     "Sova": "Male",
@@ -58,7 +58,7 @@ let dateMap = {
 // jQuery.ajaxSetup({async:false});
 $.get(abilityUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, true, 'agent', data['dayId']);
-    // console.log(data)
+    // console.log()
     randIndex = data['randIndex']
     randIndex2 = data['randIndex2']
 });
