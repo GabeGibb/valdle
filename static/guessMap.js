@@ -232,3 +232,50 @@ $.get(url, function (data, status) {
 
 });
 
+
+// function setZoom(zoom,el,coords=[0.5,0.5]) {
+      
+//     transformOrigin = coords;
+//       el = el || instance.getContainer();
+//       var p = ["webkit", "moz", "ms", "o"],
+//           s = "scale(" + zoom + ")",
+//           oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
+
+//       for (var i = 0; i < p.length; i++) {
+//           el.style[p[i] + "Transform"] = s;
+//           el.style[p[i] + "TransformOrigin"] = oString;
+//       }
+
+//       el.style["transform"] = s;
+//       el.style["transformOrigin"] = oString;
+    
+// }
+
+// let curZoom = 1;
+
+// function doZoom(e){
+//     // e = Mouse click event.
+//     let mapChoice = document.getElementById('mapChoiceContainer')
+
+//     var rect = mapChoice.getBoundingClientRect();
+//     var x = (e.clientX - rect.left) / mapChoice.clientWidth ;
+//     var y = (e.clientY - rect.top) / mapChoice.clientHeight;  
+//     setZoom(curZoom, document.getElementById('mapChoice'), [x,y])
+// }
+
+// document.getElementById('mapChoice').addEventListener('mousewheel',  function(e) {
+//     e.preventDefault();
+//     if (e['deltaY'] < 0 && curZoom <= 2){
+//         curZoom += 0.1;
+//     }else if (e['deltaY'] > 0 && curZoom > 1){
+//         curZoom -= 0.1;
+//     }
+//     doZoom(e);
+// })
+
+// document.getElementById('mapChoice').addEventListener('mousedown mouseup',  function(e) {
+//     e.preventDefault();
+//     if (e.type == "mousedown") {
+//         doZoom(e);
+//     }
+// })

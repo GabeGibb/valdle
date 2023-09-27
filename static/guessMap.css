@@ -43,6 +43,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
 }
 
 #answerBox{
@@ -79,12 +80,19 @@
 
 }
 
+#mapChoiceContainer{
+    overflow: hidden;
+    border: 1px solid hsla(38,22%,90%,.5);
+    width: 360px;
+    height: 360px;
+}
+
 #curMap{
     width: 100%;
     /* object-fit: fill; */
 }
 
-.imgChoice, .mapChoice{
+.imgChoice{
     border: 1px solid hsla(38,22%,90%,.5);
 }
 
