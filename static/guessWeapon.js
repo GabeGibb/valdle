@@ -31,15 +31,18 @@ function curGamemode(){
     $('#audioContainer').css('display', '');
     addAudioElement("static/audio/gunsounds/" + dataList[randIndex]['displayName'] + ".mp3");
 
-    for(let i=0; i < dataList[randIndex]['skins'][skinIndex]['levels'].length; i++){
-        if (dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon'] != null){
-            correctImgSrc = dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon']
-            break;
+    correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
+    if (correctImgSrc == null){
+        for(let i=0; i < dataList[randIndex]['skins'][skinIndex]['levels'].length; i++){
+            if (dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon'] != null){
+                correctImgSrc = dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon']
+                console.log('hi')
+                break;
+            }
         }
     }
 
     correctName = dataList[randIndex]['displayName']//[randIndex]['displayName']
-    correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
 }
 
 function modeWrongActions(){
