@@ -3,7 +3,7 @@
 let threshhold = 585;
 
 if (document.title == 'Guess The Map'){
-    threshhold = 760;
+    threshhold = 730;
 }
 
 if (document.title == 'Valdle'){

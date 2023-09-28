@@ -1,12 +1,13 @@
-
-.apple {
-    user-select: none;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .containerTab{
     /* display:grid; */
     /* background-color: #0a141eee; */
     background: transparent;
+    margin: auto;
     /* grid-template-rows: 50px 50px; */
 }
 
@@ -14,6 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: auto;
     
 }
 
@@ -34,67 +36,39 @@
 
 }
 
-
-.mapImgChoice{
-    padding-top:10px;
-    /* background-color: #0a141eee; */
-    background: transparent;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow:hidden;
-}
-
-#answerBox{
-    /* background-color: #fa4454 !important; */
-    color: white;
-    font-size: xx-large;
-    text-align: center;
-    width: fit-content;
-    margin: auto; 
-
+.imgChoice, #mapChoice{
+    width: 510px;
+    height: 510px;
 }
 
 .imgChoice{
-    grid-column-start: 2;
-    grid-column-start: 3;
-    pointer-events: none;
-    -khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    width: 360px;
-    height: 360px;
-    margin-left: 2px;
+    /* margin-left: 25.35%; */
+    margin: auto;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+    z-index: -10;
+    border: 1px solid hsla(38,22%,90%,1);
+    margin-bottom: -10px;
 }
 
 #mapChoice{
     /* margin: auto; */
     /* padding: 10px; */
-    margin-right: 2px;
-    position: relative;
-    width: 360px;
-    height: 360px;
-
+    /* position: absolute; */
+    z-index: 10;
 }
 
 #mapChoiceContainer{
-    overflow: hidden;
-    border: 1px solid hsla(38,22%,90%,.5);
-    width: 360px;
-    height: 360px;
+    position: absolute;
 }
+
 
 #curMap{
     width: 100%;
     /* object-fit: fill; */
 }
 
-.imgChoice{
-    border: 1px solid hsla(38,22%,90%,.5);
-}
 
 .trueImg{
     /* background-color: #000000; */
@@ -104,6 +78,13 @@
     object-fit:cover;
     overflow: hidden;
     box-sizing: content-box;
+    image-rendering: pixelated;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    z-index: -10;
+    /* image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast; */
     /* object-position:100% 0; */
     /* clip-path: inset(50% 50%); */
 }
@@ -111,16 +92,15 @@
 
 
 .board {
-    grid-template-rows: repeat(5,70px);
+    /* grid-template-rows: repeat(5,70px); */
     /* background-color: #0a141eee; */
     background: transparent;
-    width: 550px;
+    width: 530px;
     /* height: 1100px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    
   
 }
 
@@ -184,13 +164,14 @@
     line-height: 15px; */
 
     background: rgba(43,42,41,.9);
+    z-index: 100;
     
 } 
 
 .calloutText{
     padding: 2px;
     color: white;
-    font-size: 10.5px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -202,7 +183,7 @@
     }  */
     
     .calloutText{
-        font-size: 8.5px;
+        font-size: 9px;
     }
 }
 
@@ -257,12 +238,99 @@
     font-size: 30px;
     text-align: center;
     padding: 10px;
+    margin: auto;
     margin-top: 25%;
+    width: 70%;
 
+
+    border-radius: 10px;
     text-transform: uppercase;
+    background-color: black;
 }
 
 #correctGuess{
     width: 300px;
     white-space: pre-line;
+}
+
+.switchOption{
+    color: white;
+    font-size: 18px;
+    /* padding: 10px; */
+    width: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+
+#switchContainer{
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 140px 100px 140px;
+    width: fit-content;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 74px;
+    height: 34px;
+    transform: scale(1.2);
+    margin: auto;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    border-radius: 5px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+input:checked + .slider {
+    background-color: #fa4454; 
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #fa4454;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(39.5px);
+    -ms-transform: translateX(39.5px);
+    transform: translateX(39.5px);
 }

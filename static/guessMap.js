@@ -5,6 +5,7 @@ let rowNum = 1;
 let answer = ['', '', '']
 let win;
 let imgUrl;
+let shouldSave = true;
 
 
 let mapSize = document.getElementById('mapChoice').clientHeight;
@@ -12,7 +13,6 @@ let divideFactor = 1000 / mapSize;
 
 let calloutMap = $('#mapChoice').clone();
 let instructionsDiv = $('#mapChoice').clone();
-instructionsDiv.css('background-color', 'black')
 let instruction = $('<div id="instructions">Select a map name and choose a callout to begin!</div>')
 instructionsDiv.append(instruction);
 $('#mapChoice').replaceWith(instructionsDiv)
@@ -23,6 +23,7 @@ $('#mapChoice').replaceWith(instructionsDiv)
 let calloutMaps = [];
 
 function addTries(tries){
+    shouldSave = false;
     for(let i = 0; i < tries.length; i++){
         createMap(tries[i][0]);
         for(let child of document.getElementById("mapChoice").children){
@@ -33,6 +34,7 @@ function addTries(tries){
             }
         }
     }
+    shouldSave = true;
 }
 
 function doP2Guess(attempt){}
@@ -73,7 +75,7 @@ function makeCalloutDiv(callout, mapName) {
 
         let guess = [mapName, region, superRegion]
 
-        if (persistentData['currentState'] == 'p1'){
+        if (persistentData['currentState'] == 'p1' && shouldSave){
             persistAddTry(guess);
         }
 
@@ -156,7 +158,6 @@ function createMaps() {
 
 
 function createMap(mapName){
-
     for (let i = 0; i < calloutMaps.length; i++){
         if (calloutMaps[i].val() == mapName){
             $('#mapChoice').replaceWith(calloutMaps[i])
@@ -166,7 +167,7 @@ function createMap(mapName){
 
 
 
-let insetValue = 42.5;
+let insetValue = 42;
 
 function setScaleToInset() {
     let mapImg = document.getElementById("trueImg");
@@ -179,7 +180,7 @@ function zoomOutMap() {
     if (insetValue <= 0) {
         return;
     }
-    insetValue -= 1.25;
+    insetValue -= 1;
     let mapImg = document.getElementById("trueImg");
     mapImg.style.clipPath = 'inset(' + insetValue + '%)';
     setScaleToInset();
@@ -233,49 +234,10 @@ $.get(url, function (data, status) {
 });
 
 
-// function setZoom(zoom,el,coords=[0.5,0.5]) {
-      
-//     transformOrigin = coords;
-//       el = el || instance.getContainer();
-//       var p = ["webkit", "moz", "ms", "o"],
-//           s = "scale(" + zoom + ")",
-//           oString = (transformOrigin[0] * 100) + "% " + (transformOrigin[1] * 100) + "%";
-
-//       for (var i = 0; i < p.length; i++) {
-//           el.style[p[i] + "Transform"] = s;
-//           el.style[p[i] + "TransformOrigin"] = oString;
-//       }
-
-//       el.style["transform"] = s;
-//       el.style["transformOrigin"] = oString;
-    
-// }
-
-// let curZoom = 1;
-
-// function doZoom(e){
-//     // e = Mouse click event.
-//     let mapChoice = document.getElementById('mapChoiceContainer')
-
-//     var rect = mapChoice.getBoundingClientRect();
-//     var x = (e.clientX - rect.left) / mapChoice.clientWidth ;
-//     var y = (e.clientY - rect.top) / mapChoice.clientHeight;  
-//     setZoom(curZoom, document.getElementById('mapChoice'), [x,y])
-// }
-
-// document.getElementById('mapChoice').addEventListener('mousewheel',  function(e) {
-//     e.preventDefault();
-//     if (e['deltaY'] < 0 && curZoom <= 2){
-//         curZoom += 0.1;
-//     }else if (e['deltaY'] > 0 && curZoom > 1){
-//         curZoom -= 0.1;
-//     }
-//     doZoom(e);
-// })
-
-// document.getElementById('mapChoice').addEventListener('mousedown mouseup',  function(e) {
-//     e.preventDefault();
-//     if (e.type == "mousedown") {
-//         doZoom(e);
-//     }
-// })
+function toggleSwitch(box){
+    if(box.checked){
+        $('#mapChoiceContainer').show();
+    }else{
+        $('#mapChoiceContainer').hide();
+    }
+}

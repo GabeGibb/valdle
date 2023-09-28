@@ -109,23 +109,24 @@
               <span class="btn__content">Split</span>
             </span>
           </button>
-
-
-
         </div>
-
-      </div>
-
-      <div class="map">
-
       </div>
     </div>
 
-    <div class="mapImgChoice" id="mapImgChoice">
-      <div id="mapChoiceContainer">
-        <div class="mapChoice" id="mapChoice"><img class="" id="curMap"></div>
-      </div>
-      <div class="imgChoice"><img class="trueImg" id="trueImg"></div>
+    <div id="switchContainer">
+        <div class="switchOption">Hide Map</div>
+        <label class="switch">
+            <input type="checkbox" id="inputToggle" onclick="toggleSwitch(this)" checked>
+            <span class="slider"></span>
+        </label>
+        <div class="switchOption">Show Map</div>
+    </div>
+    
+    <div class="imgChoice">
+        <div id="mapChoiceContainer">
+            <div class="mapChoice" id="mapChoice"><img class="" id="curMap"></div>
+        </div>
+        <img class="trueImg" id="trueImg">
     </div>
 
 

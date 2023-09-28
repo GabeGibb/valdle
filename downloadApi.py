@@ -38,6 +38,6 @@ def downloadMaps():
         mapsFile.close()
 
 
-downloadWeapons()
+# downloadWeapons()
 # downloadAgents()
 downloadMaps()
