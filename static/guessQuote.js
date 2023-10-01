@@ -43,18 +43,22 @@ function curGamemode(){
     correctName = dataList[randIndex]['displayName'];
 }
 
+function revealAudio() {
+    $('#audioHintText').text("Audio clue:");
+    $("#audioContainer").css("display", "flex");
+}
+
 function displayPartTwo(){
     //WHAT TO DO ON WINNING FIRST MODE
     winConfetti();
     createNextPageBox('home');
+    revealAudio();
 }
 
 function modeWrongActions(){
     audioHintTries--;
     if (audioHintTries == 0) {
-        $('#audioHintText').text("Audio clue:");
-        $("#audioContainer").css("display", "flex");
-        
+        revealAudio();
     }
     else if (audioHintTries > 0) {
         var text = $('#audioHintText').text();
