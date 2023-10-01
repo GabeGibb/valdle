@@ -2,97 +2,96 @@ let url = "static/api/weapons/weapons_" + getLanguageCookie() + ".json";
 let weaponUrl = window.location.href + '/weaponOfDay';
 let dropdownClone = $('#dropdown').clone();
 let skinIndex;
-audioLength = 500;
+let weaponOptions;
+let shouldSave = true;
 
 // jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, false, 'weapon', data['dayId']);
     // console.log(data)
     // randIndex = data['skinRandIndex'];
-    skinIndex = data['skinRandIndex'];
-    randIndex = data['weaponRandIndex'];
-
+    randIndex = data['skinRandIndex'];
+    weaponIndex = data['weaponRandIndex'];
+    weaponOptions = data['weaponOptions'];
+    // console.log(weaponOptions)
 });
 
+function doTry(rows, curTry){
+    
+    for(let i = 0; i < 5; i++){
+        let curRow = rows[i].children;
+        for(let j = 0; j < 3; j++){
+            if (curRow[j].innerHTML == curTry){
+                curRow[j].click();
+                return;
+            }
+        }
+    }
 
+}
 
 function addTries(tries){
-    templateAddTries(tries);
+    shouldSave = false;
+
+    let rows = $('#weaponOptions').children();
+    for(let x = 0; x < tries.length; x++){
+        doTry(rows, tries[x])
+    }
+    shouldSave = true;
 }
 
 function doP2Guess(attempt){
-    if (attempt != ''){
-        isCorrectOption(attempt);
-    }
+    // if (attempt != ''){
+    //     isCorrectOption(attempt);
+    // }
 }
 
 function curGamemode(){
-    makeAudioElement();
-    $('#audioContainer').css('display', '');
-    addAudioElement("static/audio/gunsounds/" + dataList[randIndex]['displayName'] + ".mp3");
+    dataList = dataList[weaponIndex]['skins']
 
-    correctImgSrc = dataList[randIndex]['skins'][skinIndex]['displayIcon']
+    correctImgSrc = dataList[randIndex]['displayIcon']
     if (correctImgSrc == null){
-        for(let i=0; i < dataList[randIndex]['skins'][skinIndex]['levels'].length; i++){
-            if (dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon'] != null){
-                correctImgSrc = dataList[randIndex]['skins'][skinIndex]['levels'][i]['displayIcon']
-                console.log('hi')
+        for(let i=0; i < dataList[randIndex]['levels'].length; i++){
+            if (dataList[randIndex]['levels'][i]['displayIcon'] != null){
+                correctImgSrc = dataList[randIndex]['levels'][i]['displayIcon']
                 break;
             }
         }
     }
 
     correctName = dataList[randIndex]['displayName']//[randIndex]['displayName']
+    $("#weaponGuessImage").attr("src", correctImgSrc);
 }
 
-function modeWrongActions(){
-    if (secondPartStarted){
-        $('#trueSkinName').text(dataList[skinIndex]['displayName']);
-        partTwoLose( dataList[skinIndex]['displayName']);
-    }else{
-        audioLength += 500;
+
+function makeButtons(){ //OVERWRITE TEMPLATE
+    let weaponOptionsDiv = $('#weaponOptions');
+    for(let i = 0; i < 5; i++){
+        let curRow = $('<div class="weaponRow"></div>')
+        for(let j = 0; j < 3; j++){
+            let option = weaponOptions[(i * 3) + j];
+            let weaponOption = $('<button class="weaponOption">' + option + '</button>');
+            weaponOption.click(function(){ 
+                if (!weaponGameOver){
+                    if (shouldSave){
+                        persistAddTry(option);
+                    }     
+                    isCorrectOption(option);
+                    weaponOption.css("visibility", "hidden"); 
+                }
+            });
+            curRow.append(weaponOption)
+        }
+        weaponOptionsDiv.append(curRow);
     }
+
 }
 
+function modeWrongActions(){}
 
-let secondPartStarted = false;
+let weaponGameOver = false;
 function displayPartTwo(){
-    if (secondPartStarted){
-        // $('#trueSkinName').text(dataList[skinIndex]['displayName']);
-        partTwoWin(dataList[skinIndex]['displayName']);
-    }else{
-        winConfetti();
-        guessGunSkinTime();
-        secondPartStarted = true;
-    }
-}
-
-function guessGunSkinTime(){
-    audioLength = 4000;
+    weaponGameOver = true;
+    winConfetti();
     createNextPageBox('quote');
-    dataList = dataList[randIndex]['skins'];
-    randIndex = skinIndex;
-
-    $('#weaponSkinPrompt').appendTo('#partTwoDiv')
-    $('#weaponSkinPrompt').show()
-    dropdownClone.appendTo('#partTwoDiv');
-    $('#searchInput').attr('placeholder','Search Weapon Skin..');
-
-    $('#fullListOfGuesses').attr('id', 'pastListOfGuesses');
-
-    $('#weaponSkinPrompt').removeAttr('hidden');
-    jQuery('<div>', {
-        id:'fullListOfGuesses'
-    }).appendTo($('#partTwoDiv'));
-
-    $('#fullListOfGuesses').hide()
-    $('#optionNames').hide();
-
-    makeButtons(false);
-
-    $('#fullListOfGuesses').empty();
-    $('#fullListOfGuesses').show()
-    addEnter();
-    secondPartFilter = true;
-    filterFunction();
 }

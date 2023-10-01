@@ -3,7 +3,7 @@
 from random import randint
 from json import load, dumps
 import json
-from random import randint
+from random import randint, shuffle
 
 def getMap(past):
     f = open('static/api/maps/maps_en.json')
@@ -103,11 +103,21 @@ def getWeapon(past):
 
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
 
+    weaponSkins = [data[weaponIndex]['skins'][skinIndex]['displayName']]
+    indexes = [x for x in range(0, len(data[weaponIndex]['skins']))]
+    indexes.pop(skinIndex)
+    for _ in range(14):
+        randNumsIndex = randint(0, len(indexes) -1)
+        weaponSkins.append(data[weaponIndex]['skins'][indexes[randNumsIndex]]['displayName'])
+        indexes.pop(randNumsIndex)
+    shuffle(weaponSkins)
+
     weaponOfDay = {}
     weaponOfDay['weaponRandIndex'] = weaponIndex
     weaponOfDay['skinRandIndex'] = skinIndex
     weaponOfDay['gunName'] =  data[weaponIndex]['displayName']
     weaponOfDay['skinName'] =  data[weaponIndex]['skins'][skinIndex]['displayName']
+    weaponOfDay['weaponOptions'] = weaponSkins
     return weaponOfDay
 
 def generateDailyAnswers(past):
@@ -166,9 +176,9 @@ def generateDailyAnswers(past):
 #   },
 #   "dayId": 63
 # }
-# print(pastAns['map']['mapName'], pastAns['agent']['displayName'], pastAns['ability']['displayName'], pastAns['weapon']['gunName'], pastAns['quote']['randIndex'])
+# # print(pastAns['map']['mapName'], pastAns['agent']['displayName'], pastAns['ability']['displayName'], pastAns['weapon']['gunName'], pastAns['quote']['randIndex'])
 
-# for _ in range(100):
-#     x = generateDailyAnswers(pastAns)
-#     print(x['map']['mapName'], x['agent']['displayName'], x['ability']['displayName'], x['weapon']['gunName'], x['quote']['randIndex'])
-#     print(x['dayId'])
+# # for _ in range(100):
+# x = generateDailyAnswers(pastAns)
+# #     print(x['map']['mapName'], x['agent']['displayName'], x['ability']['displayName'], x['weapon']['gunName'], x['quote']['randIndex'])
+# #     print(x['dayId'])

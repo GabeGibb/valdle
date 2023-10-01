@@ -13,6 +13,17 @@ let dayId;
 let persistentData;
 let stats;
 let hasAlreadyWon = false;
+// let debug = false;
+
+
+// if(location.protocol == 'http:' && debug){ 
+//     let debugUrl = window.location.origin + '/doThisIfYouWantToDebug';
+//     $.get(debugUrl, function(data, status){
+//         // console.log(data)
+//     })
+// }else{
+//     debug = false;
+// }
 
 
 //TO ENABLE LOCAL STORAGE, DELETE RETURN AT addWinToStats and delete || 1 at end of loadPersistenData if statement
@@ -23,11 +34,10 @@ function loadStats(mode){
         stats = {'dayIds': [], 'triesList': []};
         localStorage.setItem(mode + 'Stats',  JSON.stringify(stats));
     }
-
 }
 
 function addWinToStats(){
-    if (hasAlreadyWon){
+    if (hasAlreadyWon){// || debug){
         return;
     }
     hasAlreadyWon = true;
@@ -41,6 +51,12 @@ function addWinToStats(){
 function loadPersistentData(mode, curDayId){
     dayId = curDayId;
     loadStats(mode);
+
+    // if (debug){
+    //     persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': '', 'language': getLanguageCookie()}
+    //     savePersistentData();
+    //     return;
+    // }
 
     persistentData = JSON.parse(localStorage.getItem(mode));
     
@@ -351,7 +367,7 @@ function isCorrectOption(userInput){
     }
     newDiv.classList.add("individualGuesses");
 
-    animateGuess(guessParent, newDiv, 200);
+    animateGuess(guessParent, newDiv, 0);
 }
 
 function findUserIndex(userInput){
@@ -506,8 +522,8 @@ function toggleStats(){
 }
 
 function showStats(){
-    // console.log(stats)
-    // console.log(persistentData)
+    console.log(stats)
+    console.log(persistentData)
     let columns = $('#statsColumns').children();
     columns[0].children[1].innerText = stats['dayIds'].length
 

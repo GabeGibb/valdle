@@ -30,6 +30,7 @@
 
 #weaponGuessImage{
     max-width: 410px;
+    max-height: 120px;
 }
 
 .guessTextDiv{
@@ -274,6 +275,7 @@
 
     margin-bottom: 10px;
     height: min-content;
+    border: 1px solid #7D8082;
 }
 
 .individualGuessesWeapons {
@@ -780,4 +782,42 @@ canvas:not(#confettiCanvas){
 
 #trueSkinName{
     margin: 0px;
+}
+
+#weaponOptions{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.weaponRow{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.weaponOption{
+    font-family: 'VALORANT', sans-serif;
+    display:block;
+    text-align: center;
+    height: 65px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    /* background: rgba(43,42,41,1); */
+    background: rgb(10, 10, 10);
+    color: white;
+    border: none;
+    width: 160px;
+    border-radius: 5px;
+}
+
+
+.weaponOption:hover{
+    background-color: rgba(100,100,100,1);
+    
 }
