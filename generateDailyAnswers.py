@@ -176,9 +176,9 @@ def generateDailyAnswers(past):
 #   },
 #   "dayId": 63
 # }
-# # print(pastAns['map']['mapName'], pastAns['agent']['displayName'], pastAns['ability']['displayName'], pastAns['weapon']['gunName'], pastAns['quote']['randIndex'])
+# print(pastAns['map']['mapName'], pastAns['agent']['displayName'], pastAns['ability']['displayName'], pastAns['weapon']['gunName'], pastAns['quote']['randIndex'])
 
-# # for _ in range(100):
-# x = generateDailyAnswers(pastAns)
-# #     print(x['map']['mapName'], x['agent']['displayName'], x['ability']['displayName'], x['weapon']['gunName'], x['quote']['randIndex'])
-# #     print(x['dayId'])
+# for _ in range(100):
+#     x = generateDailyAnswers(pastAns)
+#     print(x['map']['mapName'], x['map']['randCalloutEnglishRegion'], x['map']['randCalloutEnglishSuperRegion'], x['weapon']['gunName'], x['quote']['randIndex'])
+#     print(x['dayId'])

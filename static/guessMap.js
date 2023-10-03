@@ -55,20 +55,34 @@ function makeCalloutDiv(callout, mapName) {
     let region = callout['regionName'];
     let superRegion = callout['superRegionName']
 
-    let calcX = (-10 + (x / divideFactor)).toString() + 'px'; //x
-    let calcY = (-10 + (y / divideFactor)).toString() + 'px'; //y
+    div.className = "callout";
+    div.classList.add("notranslate");
+    let calloutString = superRegion + ' ' + region;
+    textDiv.innerHTML = calloutString;
+    textDiv.className = "calloutText"
+
+    let xOffset = calloutString.length * 6;
+    let yOffset = 0;
+    if (calloutString.length > 10){
+        yOffset = 10;
+    }
+    let calcX = (((x - xOffset) / divideFactor)).toString() + 'px'; //x
+    let calcY = (((y - yOffset) / divideFactor)).toString() + 'px'; //y
 
     div.style.left = calcX;
     div.style.top = calcY;
 
-    div.className = "callout";
-    div.classList.add("notranslate");
-    textDiv.innerHTML = superRegion + ' ' + region;
-    textDiv.className = "calloutText"
     div.appendChild(textDiv)
 
     div.style.cursor = 'pointer';
     div.onclick = function () {
+        // imgUrl = window.location.href + '/' + mapName + '/' + region + '/' + superRegion;
+        // let mapImg = document.getElementById("trueImg");
+        // mapImg.style.clipPath = 'inset(' + 1 + '%)';
+        // mapImg.style.scale = 1
+        // mapImg.src = imgUrl;
+        // return;
+
         if (gameOver){
             return;
         }
@@ -219,6 +233,7 @@ $.get(window.location.href + '/mapOfDay', function (data, status) {
 
 
 let url = "static/api/maps/maps_" + getLanguageCookie() + ".json";
+// let url = "/static/api/maps/maps_en.json"
 
 $.get(url, function (data, status) {
     maps = data;
@@ -230,7 +245,6 @@ $.get(url, function (data, status) {
     });
     // console.log(answer)
     loadPersistentData('map', curDayId)
-
 });
 
 
