@@ -20,7 +20,10 @@ body{
     background-image: url('images/pxfuelLogoRemoved.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size:cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 
     background-attachment: fixed;
 
@@ -29,6 +32,13 @@ body{
     height: auto;
     /* top: 0px !important; */
     
+}
+
+@media screen and (max-width: 768px){
+    body{
+       background-attachment:scroll;
+       background-repeat: repeat;
+    }
 }
 
 .navbar {

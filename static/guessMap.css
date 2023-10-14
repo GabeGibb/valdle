@@ -180,7 +180,7 @@ html, body {
     max-width: 120px;
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 768px) {
     /* .callout{
         height: 21px;
         width: 21px;
