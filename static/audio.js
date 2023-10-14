@@ -7,32 +7,6 @@ function makeAudioElement(){
     $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'><button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button></div>");
 }
 
-// function playAudio(audioPlayer) {
-//     // if (audioPlayer.currentTime != 0){
-//     //     audioPlayer.pause();
-//     //     audioPlayer.currentTime = 0;
-//     //     return
-//     // }
-
-//     // if (audioPlayer.currentTime * 1000 > audioLength){
-//     //     audioPlayer.pause();
-//     //     audioPlayer.currentTime = 0;
-//     // }
-//     // playCounter += 1;
-//     // let curCounter = playCounter;
-
-//     audioPlayer.play();
-//     // setTimeout(()=> {
-//     //     if(curCounter == playCounter){
-//     //         audioPlayer.pause();
-//     //         audioPlayer.currentTime = 0;
-//     //     }
-//     // }, audioLength);
-//     playAudioButton.addEventListener('click', function() {
-//         audioPlayer.pause();
-//     });
-// }
-
 function test() {
     let audioPlayerImg = document.getElementById("imgAudioButton");
     audioPlayerImg.src = "/static/images/audioPlay.png";
@@ -61,13 +35,4 @@ function addAudioElement(audioSrc) {
         }
     });
     audioContainer.appendChild(playAudioButton);
-
-    // audioPlayer.addEventListener('canplaythrough',  function(){
-    //     totalAudioLength = audioPlayer.duration * 1000;
-    //     if (audioLength == totalAudioLength){
-    //         console.log("test");
-    //         // audioLength = totalAudioLength;
-    //         audioPlayerImg.src = "/static/images/audioPlay.png";
-    //     }
-    // })
 }
