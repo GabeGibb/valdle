@@ -25,6 +25,7 @@ a{
     max-width: 550px;
     background-color: rgba(71, 82, 95, 0.37);
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 #home {

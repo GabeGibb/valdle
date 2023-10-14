@@ -4,6 +4,11 @@ from requests import get
 from json import dumps
 from generateDailyAnswers import *
 
+from dotenv import load_dotenv
+load_dotenv()
+import os
+masterKey = os.getenv('MASTER')
+
 
 
 app = Flask(__name__)
@@ -29,7 +34,7 @@ def riot():
 def updateAnswers():
     url = 'https://api.jsonbin.io/v3/b/64db06b59d312622a3915ec6'
     headers = {
-    'X-Master-Key': '$2b$10$354hGEwJOHs9iL8O0llsh.c/2xKZd0gHK/n1GPYUtyanzP25KANy6'
+    'X-Master-Key': masterKey
     }
 
     req = get(url, headers=headers)

@@ -2,13 +2,16 @@ import json
 from requests import put, get, post
 from generateDailyAnswers import generateDailyAnswers
 
-
+from dotenv import load_dotenv
+load_dotenv()
+import os
+masterKey = os.getenv('MASTER')
 
 
 
 url = 'https://api.jsonbin.io/v3/b/64db06b59d312622a3915ec6'
 headers = {
-'X-Master-Key': '$2b$10$354hGEwJOHs9iL8O0llsh.c/2xKZd0gHK/n1GPYUtyanzP25KANy6'
+'X-Master-Key': masterKey
 }
 
 req = get(url, headers=headers).json()['record']
@@ -17,11 +20,10 @@ dailyGameAnswers = generateDailyAnswers(req)
 
 
 binId = '64db06b59d312622a3915ec6'
-apiKey = '$2b$10$354hGEwJOHs9iL8O0llsh.c/2xKZd0gHK/n1GPYUtyanzP25KANy6'
 url = f'https://api.jsonbin.io/v3/b/{binId}'
 headers = {
   'Content-Type': 'application/json',
-  'X-Master-Key': apiKey
+  'X-Master-Key': masterKey
 }
 
 putReq = put(url, json=dailyGameAnswers, headers=headers)
