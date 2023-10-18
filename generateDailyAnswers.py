@@ -11,7 +11,7 @@ def getMap(past):
     f.close()
 
     index = randint(0, len(data)-1)
-    while index == past['mapIndex']:
+    while index in past['mapIndex']:
         index = randint(0, len(data)-1)
 
     randCalloutIndex = randint(0, len(data[index]['callouts'])-1)
@@ -33,7 +33,7 @@ def getAgent(past):
 
     index = randint(0, len(data)-1)
     index2 = randint(0, len(data)-1)
-    while past['randIndex'] == index or past['randIndex2'] == index2:
+    while index in past['randIndex'] or index2 in past['randIndex2']:
         index = randint(0, len(data)-1)
         index2 = randint(0, len(data)-1)
 
@@ -57,7 +57,7 @@ def getAbility(past):
         nums16.pop(randNumsIndex)
     
     index = randint(0, len(data)-1)
-    while index == past['randIndex']:
+    while index in past['randIndex']:
         index = randint(0, len(data)-1)
     abilityIndex = randint(0, 3)
 
@@ -76,7 +76,7 @@ def getQuote(past):
     f.close()
     index = randint(0, len(data)-1)
 
-    while index == past['randIndex']:
+    while index in past['randIndex']:
         index = randint(0, len(data)-1)
 
     quoteIndex = randint(0, len(data[index]["voiceInfo"])-1) 
@@ -98,7 +98,7 @@ def getWeapon(past):
     data = load(f)
     f.close()
     weaponIndex = randint(0, len(data)-1)
-    while weaponIndex == past['weaponRandIndex']:
+    while weaponIndex in past['weaponRandIndex']:
         weaponIndex = randint(0, len(data)-1)
 
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
@@ -121,64 +121,130 @@ def getWeapon(past):
     return weaponOfDay
 
 def generateDailyAnswers(past):
-    dailyAnswers = {"map": getMap(past['map']), "agent": getAgent(past['agent']), "ability": getAbility(past['ability']), "weapon": getWeapon(past['weapon']), "quote": getQuote(past['quote'])}
+    pastAnswers = past['past']
+    dailyAnswers = {"map": getMap(pastAnswers['map']), "agent": getAgent(pastAnswers['agent']), "ability": getAbility(pastAnswers['ability']), "weapon": getWeapon(pastAnswers['weapon']), "quote": getQuote(pastAnswers['quote'])}
     dailyAnswers['dayId'] = past['dayId'] + 1
+
+    pastAnswers['map']['mapIndex'].append(dailyAnswers['map']['mapIndex'])
+    pastAnswers['agent']['randIndex'].append(dailyAnswers['agent']['randIndex'])
+    pastAnswers['agent']['randIndex2'].append(dailyAnswers['agent']['randIndex2'])
+    pastAnswers['ability']['randIndex'].append(dailyAnswers['ability']['randIndex'])
+    pastAnswers['weapon']['weaponRandIndex'].append(dailyAnswers['weapon']['weaponRandIndex'])
+    pastAnswers['quote']['randIndex'].append(dailyAnswers['quote']['randIndex'])
+
+    n = 7
+    pastAnswers['map']['mapIndex'] = pastAnswers['map']['mapIndex'][-n:]
+    pastAnswers['agent']['randIndex'] = pastAnswers['agent']['randIndex'][-n:]
+    pastAnswers['agent']['randIndex2'] = pastAnswers['agent']['randIndex2'][-n:]
+    pastAnswers['ability']['randIndex'] = pastAnswers['ability']['randIndex'][-n:]
+    pastAnswers['weapon']['weaponRandIndex'] = pastAnswers['weapon']['weaponRandIndex'][-n:]
+    pastAnswers['quote']['randIndex'] = pastAnswers['quote']['randIndex'][-n:]
+
+    dailyAnswers['past'] = pastAnswers
     
     return dailyAnswers
 
 # pastAns = {
 #   "map": {
-#     "mapIndex": 0,
-#     "mapName": "Ascent",
-#     "randCalloutIndex": 14,
-#     "randCalloutEnglishRegion": "Garden",
-#     "randCalloutEnglishSuperRegion": "A"
+#     "mapIndex": 2,
+#     "mapName": "Fracture",
+#     "randCalloutIndex": 2,
+#     "randCalloutEnglishRegion": "Arcade",
+#     "randCalloutEnglishSuperRegion": "B"
 #   },
 #   "agent": {
-#     "randIndex": 10,
-#     "displayName": "Killjoy",
-#     "randIndex2": 3,
-#     "displayName2": "Deadlock"
+#     "randIndex": 11,
+#     "displayName": "Harbor",
+#     "randIndex2": 9,
+#     "displayName2": "Sova"
 #   },
 #   "ability": {
-#     "randIndex": 0,
+#     "randIndex": 1,
 #     "randAbilityIndex": 1,
-#     "displayName": "Gekko",
-#     "abilityName": "Dizzy",
+#     "displayName": "Fade",
+#     "abilityName": "Haunt",
 #     "tileOrder": [
-#       5,
 #       6,
-#       10,
-#       1,
-#       13,
-#       4,
-#       2,
-#       11,
-#       9,
-#       12,
-#       7,
 #       8,
-#       14,
+#       9,
+#       7,
+#       1,
+#       10,
+#       12,
+#       2,
 #       3,
 #       16,
-#       15
+#       14,
+#       13,
+#       11,
+#       15,
+#       4,
+#       5
 #     ]
 #   },
 #   "weapon": {
-#     "weaponRandIndex": 7,
-#     "skinRandIndex": 25,
-#     "gunName": "Frenzy",
-#     "skinName": "Aero Frenzy"
+#     "weaponRandIndex": 1,
+#     "skinRandIndex": 10,
+#     "gunName": "Ares",
+#     "skinName": "Infantry Ares",
+#     "weaponOptions": [
+#       "Outpost Ares",
+#       "Endeavour Ares",
+#       "Spitfire Ares",
+#       "Premiere Collision Ares",
+#       "Magepunk Ares",
+#       "Sakura Ares",
+#       "Hivemind Ares",
+#       "Infantry Ares",
+#       "Divine Swine Ares",
+#       "Nunca Olvidados Ares",
+#       "Oni Ares",
+#       "Nebula Ares",
+#       "Rush Ares",
+#       "Sentinels of Light Ares",
+#       "Monstrocity Ares"
+#     ]
 #   },
 #   "quote": {
-#     "randIndex": 0,
+#     "randIndex": 9,
 #     "randQuoteIndex": 0
 #   },
-#   "dayId": 63
+#   "dayId": 86,
+#   "past": {
+#     "map": {
+#       "mapIndex": [
+#         2
+#       ]
+#     },
+#     "agent": {
+#       "randIndex": [
+#         11
+#       ],
+#       "randIndex2": [
+#         9
+#       ]
+#     },
+#     "ability": {
+#       "randIndex": [
+#         1
+#       ]
+#     },
+#     "weapon": {
+#       "weaponRandIndex": [
+#         1
+#       ]
+#     },
+#     "quote": {
+#       "randIndex": [
+#         9
+#       ]
+#     }
+#   }
 # }
-# print(pastAns['map']['mapName'], pastAns['agent']['displayName'], pastAns['ability']['displayName'], pastAns['weapon']['gunName'], pastAns['quote']['randIndex'])
 
-# for _ in range(100):
-#     x = generateDailyAnswers(pastAns)
-#     print(x['map']['mapName'], x['map']['randCalloutEnglishRegion'], x['map']['randCalloutEnglishSuperRegion'], x['weapon']['gunName'], x['quote']['randIndex'])
-#     print(x['dayId'])
+
+# cur = pastAns
+# for _ in range(10):
+#     cur = generateDailyAnswers(cur)
+#     print(cur)
+#     print()
