@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
 .gameArea {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
 
 .prompt{
     color:aliceblue;
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -198,9 +199,10 @@
 
 #correctGuess{
     background-color: darkgreen; 
-    padding: 5px;
-    padding-top: 10px;
+    padding: 10px;
     border-radius: 10px;
+    padding-top: 15px;
+    font-family: 'VALORANT', sans-serif;
 }
 
 .correctGuess{
@@ -255,6 +257,8 @@
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    text-transform: uppercase;
 }
 
 .individualGuesses{
@@ -276,6 +280,7 @@
     margin-bottom: 10px;
     height: min-content;
     border: 1px solid #7D8082;
+    font-family: 'VALORANT', sans-serif;
 }
 
 .individualGuessesWeapons {
@@ -406,11 +411,14 @@
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    text-transform: uppercase;
 }
 
 #audioHintText {
     color: aliceblue;
     font-size: 17px;
+    font-family: 'VALORANT', sans-serif;
 }
 
 .playAudioButton {
@@ -474,6 +482,8 @@
 
     transition: all .4s ease;
     margin-top: 35px;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    text-transform: uppercase;
 }
 
 
@@ -497,6 +507,10 @@
 #partTwoEndText, #partTwoEndTextAnswer{
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 20px;
+}
+#endTextDiv{
+    margin-bottom: 10px;
 }
 
 #secondAgentName{
@@ -507,7 +521,7 @@
 
 
 #numTriesDiv {
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     margin-bottom: -14px;
@@ -539,7 +553,7 @@
 }
 
 #nextValdleText{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 0px;
 }
 
@@ -548,6 +562,9 @@
     margin-top: 0px;
 }
 
+#nextValdleDiv{
+    margin-bottom: 10px;
+}
 
 .board{
     grid-template-rows: repeat(4,70px);
@@ -671,7 +688,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     align-items: center;
-    background-color: rgb(30, 30, 30);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid white;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-bottom: 5px;
@@ -761,6 +779,7 @@ hr {
 
 canvas:not(#confettiCanvas){
     border: 0.1px solid white;
+    border-radius: 5px;
 }
 
 .searchArrow{
@@ -799,7 +818,8 @@ canvas:not(#confettiCanvas){
 }
 
 .weaponOption{
-    font-family: 'VALORANT', sans-serif;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    text-transform: uppercase;
     display:block;
     text-align: center;
     height: 65px;
