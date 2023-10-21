@@ -273,8 +273,8 @@ button{
 
 #loading{
     visibility: visible;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     position: fixed;
     left: 50%;
     top: 50%;
