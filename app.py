@@ -51,6 +51,10 @@ updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATE
 def giveSiteMap():
     return send_file('sitemap.xml')
 
+@app.route('/robots.txt')
+def giveRobots():
+    return send_file('robots.txt')
+
 @app.route('/')
 def valdle():
     return render_template('valdle.html')
