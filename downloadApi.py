@@ -24,7 +24,10 @@ def downloadAgents(lan):
         dump(agentsContent, agentsFile, indent=4)
         agentsFile.close()
 
-# NOTE: ENGLISH MAPS_EN FILE MUST BE MANUALLY UPDATED FIRST. DO **NOT** UPDATE OTHER LANGUAGES FIRST
+# NOTE: ENGLISH MAPS_EN FILE MUST BE MANUALLY UPDATED FIRST. 
+# THE MAPS_EN MUST BE MANUALLY UPDATED WITH THE API'S UPDATED CALLOUTS/MAPS, AND THEN OUR CUSTOM COORDINATES.
+# DO **NOT** UPDATE OTHER LANGUAGES FIRST.
+
 def downloadMaps(lan):
     if lan == "en-US":
         return -1
