@@ -41,6 +41,10 @@ body{
     }
 }
 
+.title {
+  font-size: 4em;
+}
+
 .navbar {
     /* background-color: #000000; */
     overflow: hidden;
@@ -54,10 +58,9 @@ body{
     float: left;
     color: #fa4454;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 2px;
+    /* padding-top: 10px;
+    padding-bottom: 2px; */
     text-decoration: none;
-    font-size: 4em;
     transition: 150ms ease-out;
 }
 

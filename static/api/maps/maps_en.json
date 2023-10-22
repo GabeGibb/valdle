@@ -930,14 +930,6 @@
                 }
             },
             {
-                "regionName": "Stack",
-                "superRegionName": "Mid",
-                "location": {
-                    "x": 385,
-                    "y": 440
-                }
-            },
-            {
                 "regionName": "Switch",
                 "superRegionName": "A",
                 "location": {

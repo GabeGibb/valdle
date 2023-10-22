@@ -646,10 +646,10 @@
 /* button changes end */
 
 #statsButton {
-    display: grid;
+    display: flex;
     grid-template-columns: 40px 80px;
 
-
+    width: auto;
     /* width: 120px; */
     margin: auto;
     z-index: 10;
@@ -699,6 +699,7 @@
 .statColumn{
     /* width: 100px; */
     /* display: flex; */
+    height: auto;
     align-items: center;
     justify-content: center;
     color: white;

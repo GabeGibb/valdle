@@ -109,7 +109,10 @@ function makeCalloutDiv(callout, mapName) {
             textSpan.classList.add("hint");
             tileDiv.appendChild(textSpan);
 
-            if (guess[j] == answer[j]) {
+            let string = (guess[j]).toLowerCase();
+            let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
+
+            if (fixedMapName == answer[j]) {
                 tileDiv.classList.add('green');
                 counter++;
             }
@@ -173,7 +176,9 @@ function createMaps() {
 
 function createMap(mapName){
     for (let i = 0; i < calloutMaps.length; i++){
-        if (calloutMaps[i].val() == mapName){
+        let string = (calloutMaps[i].val()).toLowerCase();
+        let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
+        if (fixedMapName == mapName){
             $('#mapChoice').replaceWith(calloutMaps[i])
         }
     }
@@ -225,6 +230,7 @@ $.get(window.location.href + '/mapOfDay', function (data, status) {
     imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
     let mapImg = document.getElementById("trueImg");
     mapImg.src = imgUrl;
+    console.log(imgUrl);
 
     curDayId = data['dayId'];
 });
@@ -243,7 +249,6 @@ $.get(url, function (data, status) {
         answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"]
         answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"]
     });
-    // console.log(answer)
     loadPersistentData('map', curDayId)
 });
 

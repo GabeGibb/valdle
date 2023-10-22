@@ -30,6 +30,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -46,7 +47,7 @@
             {
                 "slot": "Grenade",
                 "displayName": "Mosh Pit",
-                "description": "EQUIP Mosh. FIRE to throw Mosh like a grenade. ALT FIRE to lob. Upon landing Mosh duplicates across a large area then after a short delay explodes.",
+                "description": "EQUIP Mosh. FIRE to throw Mosh like a grenade. ALT FIRE to lob. Upon landing Mosh duplicates across a large area that deals a small amount of damage over time then after a short delay explodes.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
             },
             {
@@ -56,17 +57,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.717865,
-            "maxDuration": 2.717865,
-            "mediaList": [
-                {
-                    "id": 464327068,
-                    "wwise": "https://media.valorant-api.com/sounds/464327068.wem",
-                    "wave": "https://media.valorant-api.com/sounds/464327068.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "dade69b4-4f5a-8528-247b-219e5a1facd6",
@@ -99,6 +90,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -125,17 +117,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.578,
-            "maxDuration": 2.578,
-            "mediaList": [
-                {
-                    "id": 963067082,
-                    "wwise": "https://media.valorant-api.com/sounds/963067082.wem",
-                    "wave": "https://media.valorant-api.com/sounds/963067082.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "5f8d3a7f-467b-97f3-062c-13acf203c006",
@@ -168,6 +150,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -194,17 +177,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.456469,
-            "maxDuration": 2.456469,
-            "mediaList": [
-                {
-                    "id": 802792402,
-                    "wwise": "https://media.valorant-api.com/sounds/802792402.wem",
-                    "wave": "https://media.valorant-api.com/sounds/802792402.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
@@ -237,6 +210,15 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
+        "recruitmentData": {
+            "counterId": "7ec37a1e-4526-77dd-1afd-e2ab3b624085",
+            "milestoneId": "fcca98dc-4a83-2837-9512-f88a0a08fcfd",
+            "milestoneThreshold": 200000,
+            "useLevelVpCostOverride": false,
+            "levelVpCostOverride": 0,
+            "startDate": "2023-06-27T00:00:00Z",
+            "endDate": "2023-07-25T21:00:00Z"
+        },
         "abilities": [
             {
                 "slot": "Ability1",
@@ -263,17 +245,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.761667,
-            "maxDuration": 1.761667,
-            "mediaList": [
-                {
-                    "id": 727149664,
-                    "wwise": "https://media.valorant-api.com/sounds/727149664.wem",
-                    "wave": "https://media.valorant-api.com/sounds/727149664.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "f94c3b30-42be-e959-889c-5aa313dba261",
@@ -308,6 +280,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -334,17 +307,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.541198,
-            "maxDuration": 1.541198,
-            "mediaList": [
-                {
-                    "id": 632864455,
-                    "wwise": "https://media.valorant-api.com/sounds/632864455.wem",
-                    "wave": "https://media.valorant-api.com/sounds/632864455.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
@@ -377,6 +340,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability2",
@@ -403,17 +367,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.939385,
-            "maxDuration": 1.939385,
-            "mediaList": [
-                {
-                    "id": 765052468,
-                    "wwise": "https://media.valorant-api.com/sounds/765052468.wem",
-                    "wave": "https://media.valorant-api.com/sounds/765052468.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "601dbbe7-43ce-be57-2a40-4abd24953621",
@@ -446,6 +400,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Grenade",
@@ -472,17 +427,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.034417,
-            "maxDuration": 1.034417,
-            "mediaList": [
-                {
-                    "id": 170847866,
-                    "wwise": "https://media.valorant-api.com/sounds/170847866.wem",
-                    "wave": "https://media.valorant-api.com/sounds/170847866.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "6f2a04ca-43e0-be17-7f36-b3908627744d",
@@ -515,6 +460,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -541,17 +487,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.807344,
-            "maxDuration": 1.807344,
-            "mediaList": [
-                {
-                    "id": 452875258,
-                    "wwise": "https://media.valorant-api.com/sounds/452875258.wem",
-                    "wave": "https://media.valorant-api.com/sounds/452875258.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
@@ -587,6 +523,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -613,17 +550,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.807927,
-            "maxDuration": 2.807927,
-            "mediaList": [
-                {
-                    "id": 246514732,
-                    "wwise": "https://media.valorant-api.com/sounds/246514732.wem",
-                    "wave": "https://media.valorant-api.com/sounds/246514732.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
@@ -659,6 +586,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -691,17 +619,7 @@
                 "displayIcon": null
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.021729,
-            "maxDuration": 2.021729,
-            "mediaList": [
-                {
-                    "id": 130865070,
-                    "wwise": "https://media.valorant-api.com/sounds/130865070.wem",
-                    "wave": "https://media.valorant-api.com/sounds/130865070.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "1e58de9c-4950-5125-93e9-a0aee9f98746",
@@ -737,6 +655,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Grenade",
@@ -763,17 +682,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.689708,
-            "maxDuration": 2.689708,
-            "mediaList": [
-                {
-                    "id": 1062625853,
-                    "wwise": "https://media.valorant-api.com/sounds/1062625853.wem",
-                    "wave": "https://media.valorant-api.com/sounds/1062625853.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "95b78ed7-4637-86d9-7e41-71ba8c293152",
@@ -806,6 +715,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -832,17 +742,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.554083,
-            "maxDuration": 1.554083,
-            "mediaList": [
-                {
-                    "id": 409447225,
-                    "wwise": "https://media.valorant-api.com/sounds/409447225.wem",
-                    "wave": "https://media.valorant-api.com/sounds/409447225.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "707eab51-4836-f488-046a-cda6bf494859",
@@ -877,6 +777,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -909,17 +810,7 @@
                 "displayIcon": null
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.445958,
-            "maxDuration": 2.445958,
-            "mediaList": [
-                {
-                    "id": 204662687,
-                    "wwise": "https://media.valorant-api.com/sounds/204662687.wem",
-                    "wave": "https://media.valorant-api.com/sounds/204662687.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "eb93336a-449b-9c1b-0a54-a891f7921d69",
@@ -955,6 +846,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Grenade",
@@ -987,17 +879,7 @@
                 "displayIcon": null
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.258333,
-            "maxDuration": 2.258333,
-            "mediaList": [
-                {
-                    "id": 384959611,
-                    "wwise": "https://media.valorant-api.com/sounds/384959611.wem",
-                    "wave": "https://media.valorant-api.com/sounds/384959611.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
@@ -1030,6 +912,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -1052,7 +935,7 @@
             {
                 "slot": "Ultimate",
                 "displayName": "Astral Form / Cosmic Divide",
-                "description": "ACTIVATE to enter Astral Form where you can place Stars with FIRE. Stars can be reactivated later, transforming them into a Nova Pulse, Nebula, or Gravity Well.\r\n\r\nWhen Cosmic Divide is charged, use ALT FIRE in Astral Form to begin aiming it, then FIRE to select two locations. An infinite Cosmic Divide connects the two points you select. Cosmic Divide blocks bullets and heavily dampens audio.",
+                "description": "ACTIVATE to enter Astral Form where you can place Stars with FIRE. Stars can be reactivated later, transforming them into a Nova Pulse, Nebula, or Gravity Well.\r\n\r\nWhen Cosmic Divide is charged, use ALT FIRE in Astral Form to begin aiming it, then FIRE to select two locations. An infinite Cosmic Divide connects the two points you select. Cosmic Divide blocks bullets and sound.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ultimate/displayicon.png"
             },
             {
@@ -1062,17 +945,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/passive/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 3.18301,
-            "maxDuration": 3.18301,
-            "mediaList": [
-                {
-                    "id": 594322343,
-                    "wwise": "https://media.valorant-api.com/sounds/594322343.wem",
-                    "wave": "https://media.valorant-api.com/sounds/594322343.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
@@ -1108,6 +981,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Grenade",
@@ -1134,17 +1008,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 4.969511,
-            "maxDuration": 4.969511,
-            "mediaList": [
-                {
-                    "id": 421554800,
-                    "wwise": "https://media.valorant-api.com/sounds/421554800.wem",
-                    "wave": "https://media.valorant-api.com/sounds/421554800.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "bb2a4828-46eb-8cd1-e765-15848195d751",
@@ -1177,6 +1041,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability2",
@@ -1203,17 +1068,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.26851,
-            "maxDuration": 1.26851,
-            "mediaList": [
-                {
-                    "id": 5690468,
-                    "wwise": "https://media.valorant-api.com/sounds/5690468.wem",
-                    "wave": "https://media.valorant-api.com/sounds/5690468.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
@@ -1246,6 +1101,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Grenade",
@@ -1272,17 +1128,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 4.105177,
-            "maxDuration": 4.105177,
-            "mediaList": [
-                {
-                    "id": 107320642,
-                    "wwise": "https://media.valorant-api.com/sounds/107320642.wem",
-                    "wave": "https://media.valorant-api.com/sounds/107320642.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "569fdd95-4d10-43ab-ca70-79becc718b46",
@@ -1318,6 +1164,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -1344,17 +1191,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 2.07,
-            "maxDuration": 2.07,
-            "mediaList": [
-                {
-                    "id": 119342169,
-                    "wwise": "https://media.valorant-api.com/sounds/119342169.wem",
-                    "wave": "https://media.valorant-api.com/sounds/119342169.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
@@ -1390,6 +1227,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -1416,17 +1254,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 3.430208,
-            "maxDuration": 3.430208,
-            "mediaList": [
-                {
-                    "id": 847719523,
-                    "wwise": "https://media.valorant-api.com/sounds/847719523.wem",
-                    "wave": "https://media.valorant-api.com/sounds/847719523.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "8e253930-4c05-31dd-1b6c-968525494517",
@@ -1462,6 +1290,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -1488,17 +1317,7 @@
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ultimate/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 3.758667,
-            "maxDuration": 3.758667,
-            "mediaList": [
-                {
-                    "id": 717842149,
-                    "wwise": "https://media.valorant-api.com/sounds/717842149.wem",
-                    "wave": "https://media.valorant-api.com/sounds/717842149.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     },
     {
         "uuid": "add6443a-41bd-e414-f6ad-e58d267f4e95",
@@ -1534,6 +1353,7 @@
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
+        "recruitmentData": null,
         "abilities": [
             {
                 "slot": "Ability1",
@@ -1566,16 +1386,6 @@
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/passive/displayicon.png"
             }
         ],
-        "voiceLine": {
-            "minDuration": 1.048729,
-            "maxDuration": 1.048729,
-            "mediaList": [
-                {
-                    "id": 878055936,
-                    "wwise": "https://media.valorant-api.com/sounds/878055936.wem",
-                    "wave": "https://media.valorant-api.com/sounds/878055936.wav"
-                }
-            ]
-        }
+        "voiceLine": null
     }
 ]

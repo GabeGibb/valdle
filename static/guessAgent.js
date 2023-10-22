@@ -61,6 +61,8 @@ $.get(abilityUrl, function(data, status){ //url defined in current webpage js fi
     // console.log()
     randIndex = data['randIndex']
     randIndex2 = data['randIndex2']
+    console.log(data)
+    console.log(randIndex);
 });
 
 function addTries(tries){
@@ -86,11 +88,18 @@ function tileAnimation(currRow, tileDiv, delayAmount){
 }
 
 let hasTakenAGuess = false;
-function isCorrectAgentOption(userInput){ 
-    let optionAnswer = dataList[randIndex]["displayName"];
+function isCorrectAgentOption(userInputUPPER){ 
+    let string = (dataList[randIndex]["displayName"]).toLowerCase();
+    console.log(dataList);
+    let optionAnswer = string[0].toUpperCase() + string.slice(1);
+    let string2 = (userInputUPPER).toLowerCase();
+    userInput = string2[0].toUpperCase() + string2.slice(1);
+    console.log(userInput);
+    console.log(optionAnswer);
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName'], dateMap[optionAnswer]]
-    // console.log(correctAnswers)
-    let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInput)]['role']['displayName'], dateMap[userInput]]
+    console.log(correctAnswers);
+    let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInputUPPER)]['role']['displayName'], dateMap[userInput]]
+    console.log(userInput);
     
     let listOfGuesses = document.getElementById("listOfGuesses");
 
@@ -207,7 +216,7 @@ function guessAgentTime2(){
     let pixImgDiv = $('<div class="guessImageDiv">\
                         <img id="guessImage" src="">\
                     </div>\
-                    <p id="secondAgentName"></p>');
+                    <p class="notranslate" id="secondAgentName"></p>');
     pixImgDiv.insertAfter('#agent2Prompt')
     
     correctImgSrc = dataList[randIndex]["displayIcon"];

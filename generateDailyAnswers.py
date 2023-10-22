@@ -103,20 +103,23 @@ def getWeapon(past):
 
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
 
-    weaponSkins = [data[weaponIndex]['skins'][skinIndex]['displayName']]
+    weaponSkins = [skinIndex]
+    print(weaponSkins)
     indexes = [x for x in range(0, len(data[weaponIndex]['skins']))]
     indexes.pop(skinIndex)
     for _ in range(14):
         randNumsIndex = randint(0, len(indexes) -1)
-        weaponSkins.append(data[weaponIndex]['skins'][indexes[randNumsIndex]]['displayName'])
+        weaponSkins.append(indexes[randNumsIndex])
         indexes.pop(randNumsIndex)
+        # print(indexes)
     shuffle(weaponSkins)
 
     weaponOfDay = {}
     weaponOfDay['weaponRandIndex'] = weaponIndex
     weaponOfDay['skinRandIndex'] = skinIndex
-    weaponOfDay['gunName'] =  data[weaponIndex]['displayName']
-    weaponOfDay['skinName'] =  data[weaponIndex]['skins'][skinIndex]['displayName']
+    # weaponOfDay['gunName'] =  data[weaponIndex]['displayName']
+    # weaponOfDay['skinName'] =  data[weaponIndex]['skins'][skinIndex]['displayName']
+
     weaponOfDay['weaponOptions'] = weaponSkins
     return weaponOfDay
 

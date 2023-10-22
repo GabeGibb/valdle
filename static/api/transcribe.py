@@ -2,15 +2,15 @@ import speech_recognition as sr
 import requests
 r = sr.Recognizer()
 
-link = "https://media.valorant-api.com/sounds/1249607464.wav"
+link = "https://media.valorant-api.com/sounds/2031818483.wav"
 resp = requests.get(link, stream=True)
 
 # open the file
-with sr.AudioFile(resp.raw) as source:
+with sr.AudioFile("mywav_reduced_noise.wav") as source:
     # listen for the data (load audio to memory)
     audio_data = r.record(source)
     # recognize (convert from speech to text)
-    text = r.recognize_google(audio_data, language="es-ES")
+    text = r.recognize_google(audio_data, language="tr-TR")
     print(text)
 
 

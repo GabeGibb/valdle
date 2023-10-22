@@ -12,8 +12,10 @@ $.get(weaponUrl, function(data, status){ //url defined in current webpage js fil
     // randIndex = data['skinRandIndex'];
     randIndex = data['skinRandIndex'];
     weaponIndex = data['weaponRandIndex'];
+    // console.log(data)
     weaponOptions = data['weaponOptions'];
-    // console.log(weaponOptions)
+    // console.log(weaponOptions);
+    // console.log(weaponOptions);
 });
 
 function doTry(rows, curTry){
@@ -50,6 +52,9 @@ function curGamemode(){
     dataList = dataList[weaponIndex]['skins']
 
     correctImgSrc = dataList[randIndex]['displayIcon']
+    // console.log(correctImgSrc);
+    // console.log(dataList)
+    console.log(dataList[randIndex]);
     if (correctImgSrc == null){
         for(let i=0; i < dataList[randIndex]['levels'].length; i++){
             if (dataList[randIndex]['levels'][i]['displayIcon'] != null){
@@ -65,12 +70,17 @@ function curGamemode(){
 
 
 function makeButtons(){ //OVERWRITE TEMPLATE
+
+    // console.log(dataList)
+
+
     let weaponOptionsDiv = $('#weaponOptions');
     for(let i = 0; i < 5; i++){
         let curRow = $('<div class="weaponRow"></div>')
         for(let j = 0; j < 3; j++){
-            let option = weaponOptions[(i * 3) + j];
-            let weaponOption = $('<button class="weaponOption">' + option + '</button>');
+            // let option = weaponOptions[(i * 3) + j];
+            let option = dataList[weaponOptions[(i * 3) + j]]["displayName"];
+            let weaponOption = $('<button class="weaponOption notranslate">' + option + '</button>');
             weaponOption.click(function(){ 
                 if (!weaponGameOver){
                     if (shouldSave){
