@@ -30,7 +30,7 @@
     <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/0201813274259c3d4f78760d19270bab?family=DIN+Next+LT+W04+Medium" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
     <script type="text/javascript" src="/static/translate.js"></script>
     <script type="text/javascript" src="/static/valdle.js" defer></script>
     <script type="text/javascript" src="/static/resize.js" defer></script>
@@ -39,18 +39,14 @@
 
 <body>
     <div class="navbar">
-        <div id="about">
-            <img class="icon" src="static/images/aboutIcon.png" onclick="location.href='about'">
-        </div>
-        <img src="static/images/tabIcon.png" style="display: none;" alt="valdle">
-        <a class="notranslate title" id="title">vAldle</a>
-        <div id="languageSelector">
+        <a class="notranslate title">vAldle</a>
+        <!-- <div id="languageSelector">
             <div id="google_translate_element" ></div>
-        </div>
+        </div> -->
     </div>
     <div id="topBar">
         <h1 id="websiteSummary">Test your valorant knowledge!</h1>
-        <span id="languageDisclaimer">( More languages coming soon! )</span>
+        <!-- <span id="languageDisclaimer">( More languages coming soon! )</span> -->
         <h2 id="websiteSummary" style="color: #74CB71;">Thanks Warlicia!</h2>
     </div>
     <div class="buttons">
@@ -163,6 +159,12 @@
                 </span>
             </button>
 
+        </div>
+    </div>
+
+    <div id="bottomButtons">
+        <div id="about">
+            <img class="icon" src="static/images/aboutIcon.png" onclick="location.href='about'">
         </div>
     </div>
 </body>
