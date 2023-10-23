@@ -522,8 +522,8 @@ function toggleStats(){
 }
 
 function showStats(){
-    console.log(stats)
-    console.log(persistentData)
+    // console.log(stats)
+    // console.log(persistentData)
     let columns = $('#statsColumns').children();
     columns[0].children[1].innerText = stats['dayIds'].length
 

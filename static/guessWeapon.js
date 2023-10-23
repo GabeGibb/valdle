@@ -54,7 +54,7 @@ function curGamemode(){
     correctImgSrc = dataList[randIndex]['displayIcon']
     // console.log(correctImgSrc);
     // console.log(dataList)
-    console.log(dataList[randIndex]);
+    // console.log(dataList[randIndex]);
     if (correctImgSrc == null){
         for(let i=0; i < dataList[randIndex]['levels'].length; i++){
             if (dataList[randIndex]['levels'][i]['displayIcon'] != null){

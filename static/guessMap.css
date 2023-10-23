@@ -42,6 +42,13 @@ html, body {
     height: 510px;
 }
 
+.imgChoice, .callout, .trueImg, .mapChoice, #curMap, #mapChoiceContainer{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    touch-action: manipulation;
+}
+
 .imgChoice{
     /* margin-left: 25.35%; */
     margin: auto;
@@ -51,6 +58,9 @@ html, body {
     z-index: -10;
     border: 1px solid hsla(38,22%,90%,1);
     margin-bottom: -10px;
+    position: relative;
+    z-index: 10;
+
 }
 
 #mapChoice{
@@ -62,6 +72,9 @@ html, body {
 
 #mapChoiceContainer{
     position: absolute;
+    z-index: 1;
+    /* top: 0;
+    left: 0; */
 }
 
 
@@ -80,9 +93,6 @@ html, body {
     overflow: hidden;
     box-sizing: content-box;
     image-rendering: pixelated;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
     z-index: -10;
     /* image-rendering: pixelated;
     image-rendering: -webkit-optimize-contrast; */
@@ -167,9 +177,6 @@ html, body {
     background: rgba(40,40,40,.8);
     border-radius: 5px;
     z-index: 100;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 } 
 
 .calloutText{

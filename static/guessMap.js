@@ -230,7 +230,7 @@ $.get(window.location.href + '/mapOfDay', function (data, status) {
     imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
     let mapImg = document.getElementById("trueImg");
     mapImg.src = imgUrl;
-    console.log(imgUrl);
+    // console.log(imgUrl);
 
     curDayId = data['dayId'];
 });
