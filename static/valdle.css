@@ -7,25 +7,29 @@
     height: 60px;
 }
 
-#title {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-
 #websiteSummary {
     text-align: center;
     color: #ece8e1;
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     font-size: 2em;
-    margin-bottom: 10px;
+}
+
+#languageDisclaimer {
+    text-align: center;
+    color: #ece8e1;
+    /* font-size: 2em; */
+    /* margin-bottom: 10px; */
 }
 
 #languageSelector {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    font-size: 1em !important;
+    margin-left: 150px;
+    position: relative;
 }
 
 #topBar {
@@ -34,16 +38,22 @@
     justify-content: center;
 }
 
+#bottomButtons{
+    margin: auto;
+    width: fit-content;
+    display: flex;
+}
+
 #google_translate_element {
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    visibility: hidden;
+    position: relative;
 }
 
 #changeLanguage, #about {
     transform: scale(0.8);
     transition: 75ms ease-out;
 }
+
 
 #changeLanguage:hover, #about:hover {
     transform: scale(0.9);

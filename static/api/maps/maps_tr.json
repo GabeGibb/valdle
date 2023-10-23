@@ -1,7 +1,7 @@
 [
     {
         "uuid": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
-        "displayName": "Ascent",
+        "displayName": "ASCENT",
         "narrativeDescription": "An open playground for small wars of position and attrition divide two sites on Ascent. Each site can be fortified by irreversible bomb doors; once they\u2019re down, you\u2019ll have to destroy them or find another way. Yield as little territory as possible.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "45\u00b026'BF'N,12\u00b020'Q'E",
@@ -16,7 +16,7 @@
         "yScalarToAdd": 0.573242,
         "callouts": [
             {
-                "regionName": "\u00c1rbol",
+                "regionName": "A\u011fa\u00e7",
                 "superRegionName": "A",
                 "location": {
                     "x": 700,
@@ -24,7 +24,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "A",
                 "location": {
                     "x": 720,
@@ -32,7 +32,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "A",
                 "location": {
                     "x": 780,
@@ -40,7 +40,7 @@
                 }
             },
             {
-                "regionName": "Vent.",
+                "regionName": "Pencere",
                 "superRegionName": "A",
                 "location": {
                     "x": 675,
@@ -48,7 +48,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 850,
@@ -56,15 +56,15 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 435,
                     "y": 760
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "B",
                 "location": {
                     "x": 270,
@@ -72,7 +72,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "B",
                 "location": {
                     "x": 300,
@@ -80,7 +80,7 @@
                 }
             },
             {
-                "regionName": "Cobertizo",
+                "regionName": "Kay\u0131khane",
                 "superRegionName": "B",
                 "location": {
                     "x": 80,
@@ -88,15 +88,15 @@
                 }
             },
             {
-                "regionName": "Bot",
-                "superRegionName": "Mid",
+                "regionName": "Alt",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 460,
                     "y": 380
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 200,
@@ -104,31 +104,31 @@
                 }
             },
             {
-                "regionName": "Pasarela",
-                "superRegionName": "Mid",
+                "regionName": "Ge\u00e7it",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 570,
                     "y": 520
                 }
             },
             {
-                "regionName": "Cub\u00edculo",
-                "superRegionName": "Mid",
+                "regionName": "H\u00fccre",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 620,
                     "y": 430
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 560,
                     "y": 90
                 }
             },
             {
-                "regionName": "Jard\u00edn",
+                "regionName": "Bah\u00e7e",
                 "superRegionName": "A",
                 "location": {
                     "x": 650,
@@ -136,24 +136,24 @@
                 }
             },
             {
-                "regionName": "Mercado",
-                "superRegionName": "Mid",
+                "regionName": "Pazar Yeri",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 400,
                     "y": 260
                 }
             },
             {
-                "regionName": "Patio",
-                "superRegionName": "Mid",
+                "regionName": "Avlu",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 400,
                     "y": 440
                 }
             },
             {
-                "regionName": "Link",
-                "superRegionName": "Mid",
+                "regionName": "Ba\u011flant\u0131",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 380,
                     "y": 505
@@ -161,14 +161,14 @@
             },
             {
                 "regionName": "Pizza",
-                "superRegionName": "Mid",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 530,
                     "y": 300
                 }
             },
             {
-                "regionName": "Vigas",
+                "regionName": "Kiri\u015fler",
                 "superRegionName": "A",
                 "location": {
                     "x": 870,
@@ -176,15 +176,15 @@
                 }
             },
             {
-                "regionName": "Top",
-                "superRegionName": "Mid",
+                "regionName": "\u00dcst",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 600,
                     "y": 650
                 }
             },
             {
-                "regionName": "Vino",
+                "regionName": "\u015earap",
                 "superRegionName": "A",
                 "location": {
                     "x": 930,
@@ -196,7 +196,7 @@
     },
     {
         "uuid": "d960549e-485c-e861-8d71-aa9d1aed12a2",
-        "displayName": "Split",
+        "displayName": "SPLIT",
         "narrativeDescription": "If you want to go far, you\u2019ll have to go up. A pair of sites split by an elevated center allows for rapid movement using two rope ascenders. Each site is built with a looming tower vital for control. Remember to watch above before it all blows sky-high.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "35\u00b041'CD'N,139\u00b041'WX'E",
@@ -211,7 +211,7 @@
         "yScalarToAdd": 0.697578,
         "callouts": [
             {
-                "regionName": "Back",
+                "regionName": "Arka",
                 "superRegionName": "A",
                 "location": {
                     "x": 880,
@@ -219,7 +219,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "A",
                 "location": {
                     "x": 830,
@@ -227,7 +227,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "A",
                 "location": {
                     "x": 800,
@@ -235,7 +235,7 @@
                 }
             },
             {
-                "regionName": "Vigas",
+                "regionName": "Kiri\u015fler",
                 "superRegionName": "A",
                 "location": {
                     "x": 710,
@@ -243,7 +243,7 @@
                 }
             },
             {
-                "regionName": "Rampas",
+                "regionName": "Rampalar",
                 "superRegionName": "A",
                 "location": {
                     "x": 650,
@@ -251,7 +251,7 @@
                 }
             },
             {
-                "regionName": "Pantallas",
+                "regionName": "Ekranlar",
                 "superRegionName": "A",
                 "location": {
                     "x": 750,
@@ -259,7 +259,7 @@
                 }
             },
             {
-                "regionName": "Cloaca",
+                "regionName": "Kanalizasyon",
                 "superRegionName": "A",
                 "location": {
                     "x": 690,
@@ -267,7 +267,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 900,
@@ -275,7 +275,7 @@
                 }
             },
             {
-                "regionName": "Torre",
+                "regionName": "Kule",
                 "superRegionName": "A",
                 "location": {
                     "x": 630,
@@ -283,15 +283,15 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 450,
                     "y": 840
                 }
             },
             {
-                "regionName": "Callej\u00f3n",
+                "regionName": "Ara Sokak",
                 "superRegionName": "B",
                 "location": {
                     "x": 220,
@@ -299,7 +299,7 @@
                 }
             },
             {
-                "regionName": "Back",
+                "regionName": "Arka",
                 "superRegionName": "B",
                 "location": {
                     "x": 50,
@@ -307,7 +307,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 300,
@@ -315,7 +315,7 @@
                 }
             },
             {
-                "regionName": "Garaje",
+                "regionName": "Garaj",
                 "superRegionName": "B",
                 "location": {
                     "x": 90,
@@ -323,7 +323,7 @@
                 }
             },
             {
-                "regionName": "Vigas",
+                "regionName": "Kiri\u015fler",
                 "superRegionName": "B",
                 "location": {
                     "x": 240,
@@ -331,7 +331,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 130,
@@ -339,7 +339,7 @@
                 }
             },
             {
-                "regionName": "Escaleras",
+                "regionName": "Merdivenler",
                 "superRegionName": "B",
                 "location": {
                     "x": 390,
@@ -347,7 +347,7 @@
                 }
             },
             {
-                "regionName": "Torre",
+                "regionName": "Kule",
                 "superRegionName": "B",
                 "location": {
                     "x": 300,
@@ -355,7 +355,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "B",
                 "location": {
                     "x": 200,
@@ -363,40 +363,40 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 475,
                     "y": 100
                 }
             },
             {
-                "regionName": "Bot",
-                "superRegionName": "Mid",
+                "regionName": "Alt",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 450,
                     "y": 600
                 }
             },
             {
-                "regionName": "Mensajer\u00eda",
-                "superRegionName": "Mid",
+                "regionName": "Posta",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 380,
                     "y": 450
                 }
             },
             {
-                "regionName": "Top",
-                "superRegionName": "Mid",
+                "regionName": "\u00dcst",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 460,
                     "y": 500
                 }
             },
             {
-                "regionName": "Conducto",
-                "superRegionName": "Mid",
+                "regionName": "Havaland\u0131rma",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 540,
                     "y": 385
@@ -407,7 +407,7 @@
     },
     {
         "uuid": "b529448b-4d60-346e-e89e-00a4c527a405",
-        "displayName": "Fracture",
+        "displayName": "FRACTURE",
         "narrativeDescription": "A top secret research facility split apart by a failed radianite experiment. With defender options as divided as the map, the choice is yours: meet the attackers on their own turf or batten down the hatches to weather the assault.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "35\u00b048'BI\"N 106\u00b008'YQ\"W",
@@ -422,15 +422,15 @@
         "yScalarToAdd": 1.155886,
         "callouts": [
             {
-                "regionName": "Puente",
-                "superRegionName": "del lado atacante",
+                "regionName": "K\u00f6pr\u00fc",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 460,
                     "y": 105
                 }
             },
             {
-                "regionName": "Banco",
+                "regionName": "Bank",
                 "superRegionName": "B",
                 "location": {
                     "x": 320,
@@ -438,7 +438,7 @@
                 }
             },
             {
-                "regionName": "Arcade",
+                "regionName": "Avlu",
                 "superRegionName": "B",
                 "location": {
                     "x": 200,
@@ -446,7 +446,7 @@
                 }
             },
             {
-                "regionName": "Torre",
+                "regionName": "Kule",
                 "superRegionName": "B",
                 "location": {
                     "x": 75,
@@ -454,7 +454,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 100,
@@ -462,7 +462,7 @@
                 }
             },
             {
-                "regionName": "Generador",
+                "regionName": "Jenerat\u00f6r",
                 "superRegionName": "B",
                 "location": {
                     "x": 280,
@@ -470,7 +470,7 @@
                 }
             },
             {
-                "regionName": "Enlace",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 320,
@@ -478,7 +478,7 @@
                 }
             },
             {
-                "regionName": "Cafeter\u00eda",
+                "regionName": "Kantin",
                 "superRegionName": "B",
                 "location": {
                     "x": 330,
@@ -486,7 +486,7 @@
                 }
             },
             {
-                "regionName": "Enlace",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "A",
                 "location": {
                     "x": 650,
@@ -494,15 +494,15 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 510,
                     "y": 420
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "B",
                 "location": {
                     "x": 115,
@@ -510,7 +510,7 @@
                 }
             },
             {
-                "regionName": "\u00c1rbol",
+                "regionName": "A\u011fa\u00e7",
                 "superRegionName": "B",
                 "location": {
                     "x": 250,
@@ -518,7 +518,7 @@
                 }
             },
             {
-                "regionName": "T\u00fanel",
+                "regionName": "T\u00fcnel",
                 "superRegionName": "B",
                 "location": {
                     "x": 230,
@@ -526,7 +526,7 @@
                 }
             },
             {
-                "regionName": "Sala",
+                "regionName": "Hol",
                 "superRegionName": "A",
                 "location": {
                     "x": 750,
@@ -534,7 +534,7 @@
                 }
             },
             {
-                "regionName": "Puerta",
+                "regionName": "Kap\u0131",
                 "superRegionName": "A",
                 "location": {
                     "x": 715,
@@ -542,7 +542,7 @@
                 }
             },
             {
-                "regionName": "Cuerda",
+                "regionName": "Halat",
                 "superRegionName": "A",
                 "location": {
                     "x": 625,
@@ -550,7 +550,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "A",
                 "location": {
                     "x": 815,
@@ -558,7 +558,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 875,
@@ -566,7 +566,7 @@
                 }
             },
             {
-                "regionName": "Drop",
+                "regionName": "Rampa",
                 "superRegionName": "A",
                 "location": {
                     "x": 760,
@@ -574,7 +574,7 @@
                 }
             },
             {
-                "regionName": "Plato",
+                "regionName": "\u00c7anak",
                 "superRegionName": "A",
                 "location": {
                     "x": 690,
@@ -582,7 +582,7 @@
                 }
             },
             {
-                "regionName": "Port\u00f3n",
+                "regionName": "Giri\u015f",
                 "superRegionName": "A",
                 "location": {
                     "x": 675,
@@ -590,8 +590,8 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 500,
                     "y": 830
@@ -602,7 +602,7 @@
     },
     {
         "uuid": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
-        "displayName": "Bind",
+        "displayName": "BIND",
         "narrativeDescription": "Two sites. No middle. Gotta pick left or right. What\u2019s it going to be then? Both offer direct paths for attackers and a pair of one-way teleporters make it easier to flank.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "34\u00b02'A'N,6\u00b051'Z'W",
@@ -617,7 +617,7 @@
         "yScalarToAdd": 0.967566,
         "callouts": [
             {
-                "regionName": "Salida",
+                "regionName": "\u00c7\u0131k\u0131\u015f",
                 "superRegionName": "A",
                 "location": {
                     "x": 880,
@@ -625,7 +625,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "A",
                 "location": {
                     "x": 500,
@@ -633,7 +633,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "A",
                 "location": {
                     "x": 750,
@@ -641,7 +641,7 @@
                 }
             },
             {
-                "regionName": "Corto",
+                "regionName": "K\u0131sa",
                 "superRegionName": "A",
                 "location": {
                     "x": 600,
@@ -649,7 +649,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 730,
@@ -657,7 +657,7 @@
                 }
             },
             {
-                "regionName": "Telep.",
+                "regionName": "I\u015f\u0131nlay\u0131c\u0131",
                 "superRegionName": "A",
                 "location": {
                     "x": 570,
@@ -665,15 +665,15 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 590,
                     "y": 860
                 }
             },
             {
-                "regionName": "Salida",
+                "regionName": "\u00c7\u0131k\u0131\u015f",
                 "superRegionName": "B",
                 "location": {
                     "x": 460,
@@ -681,7 +681,7 @@
                 }
             },
             {
-                "regionName": "Hall",
+                "regionName": "Salon",
                 "superRegionName": "B",
                 "location": {
                     "x": 280,
@@ -689,7 +689,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 400,
@@ -697,7 +697,7 @@
                 }
             },
             {
-                "regionName": "Fuente",
+                "regionName": "\u00c7e\u015fme",
                 "superRegionName": "B",
                 "location": {
                     "x": 210,
@@ -705,7 +705,7 @@
                 }
             },
             {
-                "regionName": "Largo",
+                "regionName": "Uzun",
                 "superRegionName": "B",
                 "location": {
                     "x": 180,
@@ -713,7 +713,7 @@
                 }
             },
             {
-                "regionName": "Corto",
+                "regionName": "K\u0131sa",
                 "superRegionName": "B",
                 "location": {
                     "x": 380,
@@ -721,7 +721,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 285,
@@ -729,7 +729,7 @@
                 }
             },
             {
-                "regionName": "Telep.",
+                "regionName": "I\u015f\u0131nlay\u0131c\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 110,
@@ -737,7 +737,7 @@
                 }
             },
             {
-                "regionName": "Vent.",
+                "regionName": "Pencere",
                 "superRegionName": "B",
                 "location": {
                     "x": 300,
@@ -745,7 +745,7 @@
                 }
             },
             {
-                "regionName": "Ba\u00f1os",
+                "regionName": "Hamam",
                 "superRegionName": "A",
                 "location": {
                     "x": 810,
@@ -753,15 +753,15 @@
                 }
             },
             {
-                "regionName": "Cueva",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ma\u011fara",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 600,
                     "y": 700
                 }
             },
             {
-                "regionName": "Cub\u00edculo",
+                "regionName": "H\u00fccre",
                 "superRegionName": "A",
                 "location": {
                     "x": 600,
@@ -769,15 +769,15 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 500,
                     "y": 100
                 }
             },
             {
-                "regionName": "Esquina",
+                "regionName": "D\u00f6neme\u00e7",
                 "superRegionName": "B",
                 "location": {
                     "x": 145,
@@ -785,7 +785,7 @@
                 }
             },
             {
-                "regionName": "Jard\u00edn",
+                "regionName": "Bah\u00e7e",
                 "superRegionName": "B",
                 "location": {
                     "x": 230,
@@ -793,7 +793,7 @@
                 }
             },
             {
-                "regionName": "L\u00e1mp.",
+                "regionName": "Lambalar",
                 "superRegionName": "A",
                 "location": {
                     "x": 580,
@@ -801,7 +801,7 @@
                 }
             },
             {
-                "regionName": "Torre",
+                "regionName": "Kule",
                 "superRegionName": "A",
                 "location": {
                     "x": 745,
@@ -813,7 +813,7 @@
     },
     {
         "uuid": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
-        "displayName": "Breeze",
+        "displayName": "BREEZE",
         "narrativeDescription": "Take in the sights of historic ruins or seaside caves on this tropical paradise. But bring some cover. You'll need them for the wide open spaces and long range engagements. Watch your flanks and this will be a Breeze.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "26\u00b011'AG\"N 71\u00b010'WY\"W",
@@ -828,7 +828,7 @@
         "yScalarToAdd": 0.833078,
         "callouts": [
             {
-                "regionName": "Hall",
+                "regionName": "Salon",
                 "superRegionName": "A",
                 "location": {
                     "x": 660,
@@ -836,7 +836,7 @@
                 }
             },
             {
-                "regionName": "Puente",
+                "regionName": "K\u00f6pr\u00fc",
                 "superRegionName": "A",
                 "location": {
                     "x": 720,
@@ -844,55 +844,55 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 580,
                     "y": 100
                 }
             },
             {
-                "regionName": "Arcos",
-                "superRegionName": "del lado defensor",
+                "regionName": "Kemerler",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 330,
                     "y": 110
                 }
             },
             {
-                "regionName": "Madera",
-                "superRegionName": "Mid",
+                "regionName": "Ah\u015fap Kap\u0131lar",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 600,
                     "y": 450
                 }
             },
             {
-                "regionName": "Pilar",
-                "superRegionName": "Mid",
+                "regionName": "S\u00fctun",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 440,
                     "y": 510
                 }
             },
             {
-                "regionName": "Top",
-                "superRegionName": "Mid",
+                "regionName": "\u00dcst",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 440,
                     "y": 340
                 }
             },
             {
-                "regionName": "Nido",
-                "superRegionName": "Mid",
+                "regionName": "Kule",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 410,
                     "y": 210
                 }
             },
             {
-                "regionName": "Ventana",
+                "regionName": "Pencere",
                 "superRegionName": "B",
                 "location": {
                     "x": 120,
@@ -900,7 +900,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "B",
                 "location": {
                     "x": 130,
@@ -908,15 +908,15 @@
                 }
             },
             {
-                "regionName": "Curva",
-                "superRegionName": "del lado atacante",
+                "regionName": "K\u0131vr\u0131m",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 265,
                     "y": 760
                 }
             },
             {
-                "regionName": "Esquina",
+                "regionName": "D\u00f6neme\u00e7",
                 "superRegionName": "B",
                 "location": {
                     "x": 270,
@@ -924,7 +924,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 145,
@@ -932,7 +932,7 @@
                 }
             },
             {
-                "regionName": "T\u00fanel",
+                "regionName": "T\u00fcnel",
                 "superRegionName": "B",
                 "location": {
                     "x": 310,
@@ -940,7 +940,7 @@
                 }
             },
             {
-                "regionName": "Interruptor",
+                "regionName": "\u015ealter",
                 "superRegionName": "A",
                 "location": {
                     "x": 625,
@@ -948,15 +948,15 @@
                 }
             },
             {
-                "regionName": "Conducto",
-                "superRegionName": "Mid",
+                "regionName": "Oluk",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 510,
                     "y": 550
                 }
             },
             {
-                "regionName": "Back",
+                "regionName": "Arka",
                 "superRegionName": "B",
                 "location": {
                     "x": 50,
@@ -964,7 +964,7 @@
                 }
             },
             {
-                "regionName": "Muro",
+                "regionName": "Duvar",
                 "superRegionName": "B",
                 "location": {
                     "x": 250,
@@ -972,7 +972,7 @@
                 }
             },
             {
-                "regionName": "Cuerda",
+                "regionName": "Halat",
                 "superRegionName": "A",
                 "location": {
                     "x": 635,
@@ -980,15 +980,15 @@
                 }
             },
             {
-                "regionName": "Ca\u00f1\u00f3n",
-                "superRegionName": "Mid",
+                "regionName": "Top",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 260,
                     "y": 565
                 }
             },
             {
-                "regionName": "Metal",
+                "regionName": "Metal Kap\u0131lar",
                 "superRegionName": "A",
                 "location": {
                     "x": 600,
@@ -996,15 +996,15 @@
                 }
             },
             {
-                "regionName": "Bot",
-                "superRegionName": "Mid",
+                "regionName": "Alt",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 450,
                     "y": 610
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "A",
                 "location": {
                     "x": 650,
@@ -1012,7 +1012,7 @@
                 }
             },
             {
-                "regionName": "Cueva",
+                "regionName": "Ma\u011fara",
                 "superRegionName": "A",
                 "location": {
                     "x": 840,
@@ -1020,7 +1020,7 @@
                 }
             },
             {
-                "regionName": "Tienda",
+                "regionName": "D\u00fckk\u00e2n",
                 "superRegionName": "A",
                 "location": {
                     "x": 750,
@@ -1028,7 +1028,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 840,
@@ -1036,7 +1036,7 @@
                 }
             },
             {
-                "regionName": "Pir\u00e1mides",
+                "regionName": "Piramitler",
                 "superRegionName": "A",
                 "location": {
                     "x": 800,
@@ -1044,8 +1044,8 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 400,
                     "y": 900
@@ -1056,7 +1056,7 @@
     },
     {
         "uuid": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
-        "displayName": "Lotus",
+        "displayName": "LOTUS",
         "narrativeDescription": "A mysterious structure housing an astral conduit radiates with ancient power. Great stone doors provide a variety of movement opportunities and unlock the paths to three mysterious sites.",
         "tacticalDescription": "A/B/C Sites",
         "coordinates": "14\u00b007'AD.4\"N8 74\u00b053'XY\"E8",
@@ -1071,7 +1071,7 @@
         "yScalarToAdd": 0.917752,
         "callouts": [
             {
-                "regionName": "Top",
+                "regionName": "\u00dcst",
                 "superRegionName": "A",
                 "location": {
                     "x": 770,
@@ -1079,7 +1079,7 @@
                 }
             },
             {
-                "regionName": "Ca\u00edda",
+                "regionName": "Yama\u00e7",
                 "superRegionName": "A",
                 "location": {
                     "x": 870,
@@ -1087,7 +1087,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 845,
@@ -1095,7 +1095,7 @@
                 }
             },
             {
-                "regionName": "Caba\u00f1a",
+                "regionName": "Kul\u00fcbe",
                 "superRegionName": "A",
                 "location": {
                     "x": 850,
@@ -1103,7 +1103,7 @@
                 }
             },
             {
-                "regionName": "\u00c1rbol",
+                "regionName": "A\u011fa\u00e7",
                 "superRegionName": "A",
                 "location": {
                     "x": 850,
@@ -1111,7 +1111,7 @@
                 }
             },
             {
-                "regionName": "Puerta",
+                "regionName": "Kap\u0131",
                 "superRegionName": "A",
                 "location": {
                     "x": 820,
@@ -1119,7 +1119,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "A",
                 "location": {
                     "x": 720,
@@ -1127,7 +1127,7 @@
                 }
             },
             {
-                "regionName": "Escombros",
+                "regionName": "Harabe",
                 "superRegionName": "A",
                 "location": {
                     "x": 770,
@@ -1135,7 +1135,7 @@
                 }
             },
             {
-                "regionName": "Ra\u00edz",
+                "regionName": "K\u00f6k",
                 "superRegionName": "A",
                 "location": {
                     "x": 690,
@@ -1143,7 +1143,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "A",
                 "location": {
                     "x": 660,
@@ -1151,7 +1151,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "C",
                 "location": {
                     "x": 310,
@@ -1159,7 +1159,7 @@
                 }
             },
             {
-                "regionName": "Pilares",
+                "regionName": "S\u00fctunlar",
                 "superRegionName": "B",
                 "location": {
                     "x": 480,
@@ -1167,7 +1167,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "B",
                 "location": {
                     "x": 500,
@@ -1175,7 +1175,7 @@
                 }
             },
             {
-                "regionName": "Puerta",
+                "regionName": "Kap\u0131",
                 "superRegionName": "C",
                 "location": {
                     "x": 360,
@@ -1183,7 +1183,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 480,
@@ -1191,7 +1191,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ge\u00e7it",
                 "superRegionName": "A",
                 "location": {
                     "x": 610,
@@ -1199,7 +1199,7 @@
                 }
             },
             {
-                "regionName": "Upper",
+                "regionName": "Yukar\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 520,
@@ -1207,7 +1207,7 @@
                 }
             },
             {
-                "regionName": "Cascada",
+                "regionName": "\u015eelale",
                 "superRegionName": "C",
                 "location": {
                     "x": 300,
@@ -1215,7 +1215,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ge\u00e7it",
                 "superRegionName": "C",
                 "location": {
                     "x": 340,
@@ -1223,7 +1223,7 @@
                 }
             },
             {
-                "regionName": "Escaleras",
+                "regionName": "Merdivenler",
                 "superRegionName": "A",
                 "location": {
                     "x": 740,
@@ -1231,7 +1231,7 @@
                 }
             },
             {
-                "regionName": "Colina",
+                "regionName": "Tepe",
                 "superRegionName": "C",
                 "location": {
                     "x": 270,
@@ -1239,7 +1239,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "C",
                 "location": {
                     "x": 210,
@@ -1247,7 +1247,7 @@
                 }
             },
             {
-                "regionName": "Giro",
+                "regionName": "D\u00f6neme\u00e7",
                 "superRegionName": "C",
                 "location": {
                     "x": 80,
@@ -1255,7 +1255,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "C",
                 "location": {
                     "x": 150,
@@ -1263,7 +1263,7 @@
                 }
             },
             {
-                "regionName": "Hall",
+                "regionName": "Hol",
                 "superRegionName": "C",
                 "location": {
                     "x": 180,
@@ -1271,7 +1271,7 @@
                 }
             },
             {
-                "regionName": "Gravilla",
+                "regionName": "\u00c7ak\u0131ll\u0131k",
                 "superRegionName": "C",
                 "location": {
                     "x": 310,
@@ -1279,16 +1279,16 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 585,
                     "y": 160
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 510,
                     "y": 800
@@ -1299,10 +1299,10 @@
     },
     {
         "uuid": "92584fbe-486a-b1b2-9faa-39b0f486b498",
-        "displayName": "Sunset",
+        "displayName": "SUNSET",
         "narrativeDescription": "A disaster at a local kingdom facility threatens to engulf the whole neighborhood. Stop at your favorite food truck then fight across the city in this traditional three lane map.",
         "tacticalDescription": "A/B Sites",
-        "coordinates": "34\u00b0 2' C\" N, 118\u00b0 12' YT\" O",
+        "coordinates": "34\u00b0 2\u2032 C\u2033 N, 118\u00b0 12\u2032 YT\u2033 W",
         "displayIcon": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/listviewicon.png",
         "splash": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/splash.png",
@@ -1314,7 +1314,7 @@
         "yScalarToAdd": 0.515625,
         "callouts": [
             {
-                "regionName": "Cafeter\u00eda",
+                "regionName": "Boba",
                 "superRegionName": "B",
                 "location": {
                     "x": 200,
@@ -1322,15 +1322,15 @@
                 }
             },
             {
-                "regionName": "Baldosas",
-                "superRegionName": "Mid",
+                "regionName": "Seramikler",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 565,
                     "y": 530
                 }
             },
             {
-                "regionName": "Mercado",
+                "regionName": "\u00c7ar\u015f\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 295,
@@ -1338,7 +1338,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 130,
@@ -1346,7 +1346,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "B",
                 "location": {
                     "x": 210,
@@ -1354,7 +1354,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "B",
                 "location": {
                     "x": 355,
@@ -1362,23 +1362,23 @@
                 }
             },
             {
-                "regionName": "Bot",
-                "superRegionName": "Mid",
+                "regionName": "Alt",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 480,
                     "y": 610
                 }
             },
             {
-                "regionName": "Patio",
-                "superRegionName": "Mid",
+                "regionName": "Avlu",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 430,
                     "y": 410
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "A",
                 "location": {
                     "x": 740,
@@ -1386,7 +1386,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "A",
                 "location": {
                     "x": 740,
@@ -1394,7 +1394,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "A",
                 "location": {
                     "x": 640,
@@ -1402,7 +1402,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 810,
@@ -1410,7 +1410,7 @@
                 }
             },
             {
-                "regionName": "Esquina",
+                "regionName": "D\u00f6neme\u00e7",
                 "superRegionName": "A",
                 "location": {
                     "x": 870,
@@ -1418,7 +1418,7 @@
                 }
             },
             {
-                "regionName": "Callej\u00f3n",
+                "regionName": "Ara Sokak",
                 "superRegionName": "A",
                 "location": {
                     "x": 765,
@@ -1426,24 +1426,24 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 480,
                     "y": 70
                 }
             },
             {
-                "regionName": "Top",
-                "superRegionName": "Mid",
+                "regionName": "\u00dcst",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 480,
                     "y": 300
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 530,
                     "y": 880
@@ -1454,7 +1454,7 @@
     },
     {
         "uuid": "fd267378-4d1d-484f-ff52-77821ed10dc2",
-        "displayName": "Pearl",
+        "displayName": "PEARL",
         "narrativeDescription": "Attackers push down into the Defenders on this two-site map set in a vibrant, underwater city. Pearl is a geo-driven map with no mechanics. Take the fight through a compact mid or the longer range wings in our first map set in Omega Earth.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "38\u00b042'ED\"N8 9\u00b008'XS\"W8",
@@ -1469,7 +1469,7 @@
         "yScalarToAdd": 0.916016,
         "callouts": [
             {
-                "regionName": "Sala",
+                "regionName": "Salon",
                 "superRegionName": "B",
                 "location": {
                     "x": 170,
@@ -1477,39 +1477,39 @@
                 }
             },
             {
-                "regionName": "Puertas",
-                "superRegionName": "Mid",
+                "regionName": "Kap\u0131lar",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 490,
                     "y": 520
                 }
             },
             {
-                "regionName": "Conector",
-                "superRegionName": "Mid",
+                "regionName": "Ba\u011flant\u0131",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 470,
                     "y": 370
                 }
             },
             {
-                "regionName": "Agua",
-                "superRegionName": "del lado defensor",
+                "regionName": "Su",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 560,
                     "y": 290
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 550,
                     "y": 100
                 }
             },
             {
-                "regionName": "Flores",
+                "regionName": "\u00c7i\u00e7ek\u00e7i",
                 "superRegionName": "A",
                 "location": {
                     "x": 710,
@@ -1517,7 +1517,7 @@
                 }
             },
             {
-                "regionName": "Secreto",
+                "regionName": "Gizem",
                 "superRegionName": "A",
                 "location": {
                     "x": 830,
@@ -1525,7 +1525,7 @@
                 }
             },
             {
-                "regionName": "Refugio",
+                "regionName": "\u00c7ukur",
                 "superRegionName": "A",
                 "location": {
                     "x": 890,
@@ -1533,7 +1533,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 830,
@@ -1541,23 +1541,23 @@
                 }
             },
             {
-                "regionName": "Discos",
-                "superRegionName": "del lado defensor",
+                "regionName": "Plak\u00e7\u0131",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 410,
                     "y": 215
                 }
             },
             {
-                "regionName": "Top",
-                "superRegionName": "Mid",
+                "regionName": "\u00dcst",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 590,
                     "y": 715
                 }
             },
             {
-                "regionName": "T\u00fanel",
+                "regionName": "T\u00fcnel",
                 "superRegionName": "B",
                 "location": {
                     "x": 300,
@@ -1565,7 +1565,7 @@
                 }
             },
             {
-                "regionName": "Torre",
+                "regionName": "Kule",
                 "superRegionName": "B",
                 "location": {
                     "x": 275,
@@ -1573,7 +1573,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "A",
                 "location": {
                     "x": 890,
@@ -1581,7 +1581,7 @@
                 }
             },
             {
-                "regionName": "Restaurante",
+                "regionName": "Restoran",
                 "superRegionName": "A",
                 "location": {
                     "x": 735,
@@ -1589,7 +1589,7 @@
                 }
             },
             {
-                "regionName": "Enlace",
+                "regionName": "Ge\u00e7it",
                 "superRegionName": "B",
                 "location": {
                     "x": 300,
@@ -1597,7 +1597,7 @@
                 }
             },
             {
-                "regionName": "Arte",
+                "regionName": "Resim",
                 "superRegionName": "A",
                 "location": {
                     "x": 685,
@@ -1605,7 +1605,7 @@
                 }
             },
             {
-                "regionName": "Enlace",
+                "regionName": "Ge\u00e7it",
                 "superRegionName": "A",
                 "location": {
                     "x": 680,
@@ -1613,23 +1613,23 @@
                 }
             },
             {
-                "regionName": "Plaza",
-                "superRegionName": "Mid",
+                "regionName": "Meydan",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 540,
                     "y": 630
                 }
             },
             {
-                "regionName": "Tiendas",
-                "superRegionName": "Mid",
+                "regionName": "D\u00fckk\u00e2n",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 385,
                     "y": 680
                 }
             },
             {
-                "regionName": "Club",
+                "regionName": "Kul\u00fcp",
                 "superRegionName": "B",
                 "location": {
                     "x": 275,
@@ -1645,7 +1645,7 @@
                 }
             },
             {
-                "regionName": "Main",
+                "regionName": "Ana",
                 "superRegionName": "B",
                 "location": {
                     "x": 80,
@@ -1653,7 +1653,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 175,
@@ -1661,7 +1661,7 @@
                 }
             },
             {
-                "regionName": "Pantalla",
+                "regionName": "Ekran",
                 "superRegionName": "B",
                 "location": {
                     "x": 65,
@@ -1669,8 +1669,8 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 525,
                     "y": 860
@@ -1681,7 +1681,7 @@
     },
     {
         "uuid": "e2ad5c54-4114-a870-9641-8ea21279579a",
-        "displayName": "Icebox",
+        "displayName": "ICEBOX",
         "narrativeDescription": "Your next battleground is a secret Kingdom excavation site overtaken by the arctic. The two plant sites protected by snow and metal require some horizontal finesse. Take advantage of the ziplines and they\u2019ll never see you coming.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "76\u00b044' A\"N 149\u00b030' Z\"E",
@@ -1696,7 +1696,7 @@
         "yScalarToAdd": 0.304687,
         "callouts": [
             {
-                "regionName": "Garaje",
+                "regionName": "Garaj",
                 "superRegionName": "B",
                 "location": {
                     "x": 380,
@@ -1704,7 +1704,7 @@
                 }
             },
             {
-                "regionName": "Cintur\u00f3n",
+                "regionName": "Bant",
                 "superRegionName": "A",
                 "location": {
                     "x": 850,
@@ -1712,7 +1712,7 @@
                 }
             },
             {
-                "regionName": "Nido",
+                "regionName": "Kule",
                 "superRegionName": "A",
                 "location": {
                     "x": 780,
@@ -1720,7 +1720,7 @@
                 }
             },
             {
-                "regionName": "Tuber\u00edas",
+                "regionName": "Boru",
                 "superRegionName": "A",
                 "location": {
                     "x": 790,
@@ -1728,7 +1728,7 @@
                 }
             },
             {
-                "regionName": "Vigas",
+                "regionName": "Kiri\u015fler",
                 "superRegionName": "A",
                 "location": {
                     "x": 790,
@@ -1736,7 +1736,7 @@
                 }
             },
             {
-                "regionName": "Pantalla",
+                "regionName": "Ekran",
                 "superRegionName": "A",
                 "location": {
                     "x": 650,
@@ -1744,7 +1744,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 800,
@@ -1752,15 +1752,15 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 590,
                     "y": 800
                 }
             },
             {
-                "regionName": "Amarillo",
+                "regionName": "Sar\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 130,
@@ -1768,7 +1768,7 @@
                 }
             },
             {
-                "regionName": "Back",
+                "regionName": "Arka",
                 "superRegionName": "B",
                 "location": {
                     "x": 260,
@@ -1776,7 +1776,7 @@
                 }
             },
             {
-                "regionName": "Valla",
+                "regionName": "\u00c7it",
                 "superRegionName": "B",
                 "location": {
                     "x": 210,
@@ -1784,7 +1784,7 @@
                 }
             },
             {
-                "regionName": "Cub\u00edculo",
+                "regionName": "H\u00fccre",
                 "superRegionName": "B",
                 "location": {
                     "x": 210,
@@ -1792,7 +1792,7 @@
                 }
             },
             {
-                "regionName": "Verde",
+                "regionName": "Ye\u015fil",
                 "superRegionName": "B",
                 "location": {
                     "x": 350,
@@ -1800,7 +1800,7 @@
                 }
             },
             {
-                "regionName": "Hall",
+                "regionName": "Salon",
                 "superRegionName": "B",
                 "location": {
                     "x": 335,
@@ -1808,7 +1808,7 @@
                 }
             },
             {
-                "regionName": "Caba\u00f1a",
+                "regionName": "Kul\u00fcbe",
                 "superRegionName": "B",
                 "location": {
                     "x": 380,
@@ -1816,7 +1816,7 @@
                 }
             },
             {
-                "regionName": "Cocina",
+                "regionName": "Mutfak",
                 "superRegionName": "B",
                 "location": {
                     "x": 460,
@@ -1824,7 +1824,7 @@
                 }
             },
             {
-                "regionName": "Naranja",
+                "regionName": "Turuncu",
                 "superRegionName": "B",
                 "location": {
                     "x": 400,
@@ -1832,7 +1832,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 220,
@@ -1840,7 +1840,7 @@
                 }
             },
             {
-                "regionName": "Mu\u00f1eco de nieve",
+                "regionName": "Kardan Adam",
                 "superRegionName": "B",
                 "location": {
                     "x": 120,
@@ -1848,7 +1848,7 @@
                 }
             },
             {
-                "regionName": "Nieve",
+                "regionName": "Kar Y\u0131\u011f\u0131n\u0131",
                 "superRegionName": "B",
                 "location": {
                     "x": 430,
@@ -1856,7 +1856,7 @@
                 }
             },
             {
-                "regionName": "Tubo",
+                "regionName": "Ge\u00e7it",
                 "superRegionName": "B",
                 "location": {
                     "x": 460,
@@ -1864,39 +1864,39 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 560,
                     "y": 100
                 }
             },
             {
-                "regionName": "Azul",
-                "superRegionName": "Mid",
+                "regionName": "Mavi",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 520,
                     "y": 560
                 }
             },
             {
-                "regionName": "Caldera",
-                "superRegionName": "Mid",
+                "regionName": "Kazan Dairesi",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 550,
                     "y": 260
                 }
             },
             {
-                "regionName": "Pal\u00e9",
-                "superRegionName": "Mid",
+                "regionName": "Palet",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 590,
                     "y": 400
                 }
             },
             {
-                "regionName": "Valla",
+                "regionName": "\u00c7it",
                 "superRegionName": "B",
                 "location": {
                     "x": 850,
@@ -1908,7 +1908,7 @@
     },
     {
         "uuid": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
-        "displayName": "Haven",
+        "displayName": "HAVEN",
         "narrativeDescription": "Beneath a forgotten monastery, a clamour emerges from rival Agents clashing to control three sites. There\u2019s more territory to control, but defenders can use the extra real estate for aggressive pushes.",
         "tacticalDescription": "A/B/C Sites",
         "coordinates": "27\u00b028'A'N,89\u00b038'WZ'E",
@@ -1923,7 +1923,7 @@
         "yScalarToAdd": 0.642728,
         "callouts": [
             {
-                "regionName": "Jard\u00edn",
+                "regionName": "Bah\u00e7e",
                 "superRegionName": "A",
                 "location": {
                     "x": 610,
@@ -1931,7 +1931,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "A",
                 "location": {
                     "x": 640,
@@ -1939,7 +1939,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "A",
                 "location": {
                     "x": 610,
@@ -1947,7 +1947,7 @@
                 }
             },
             {
-                "regionName": "Largo",
+                "regionName": "Uzun",
                 "superRegionName": "A",
                 "location": {
                     "x": 790,
@@ -1955,7 +1955,7 @@
                 }
             },
             {
-                "regionName": "Cloaca",
+                "regionName": "Kanalizasyon",
                 "superRegionName": "A",
                 "location": {
                     "x": 620,
@@ -1963,7 +1963,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "A",
                 "location": {
                     "x": 850,
@@ -1971,15 +1971,15 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado atacante",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Sald\u0131ran Taraf",
                 "location": {
                     "x": 460,
                     "y": 885
                 }
             },
             {
-                "regionName": "Back",
+                "regionName": "Arka",
                 "superRegionName": "B",
                 "location": {
                     "x": 490,
@@ -1987,7 +1987,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "B",
                 "location": {
                     "x": 490,
@@ -1995,7 +1995,7 @@
                 }
             },
             {
-                "regionName": "Link",
+                "regionName": "Ba\u011flant\u0131",
                 "superRegionName": "C",
                 "location": {
                     "x": 340,
@@ -2003,7 +2003,7 @@
                 }
             },
             {
-                "regionName": "Lobby",
+                "regionName": "Lobi",
                 "superRegionName": "C",
                 "location": {
                     "x": 250,
@@ -2011,7 +2011,7 @@
                 }
             },
             {
-                "regionName": "Largo",
+                "regionName": "Uzun",
                 "superRegionName": "C",
                 "location": {
                     "x": 150,
@@ -2019,7 +2019,7 @@
                 }
             },
             {
-                "regionName": "Garaje",
+                "regionName": "Garaj",
                 "superRegionName": "C",
                 "location": {
                     "x": 350,
@@ -2027,7 +2027,7 @@
                 }
             },
             {
-                "regionName": "Vent.",
+                "regionName": "Pencere",
                 "superRegionName": "C",
                 "location": {
                     "x": 350,
@@ -2035,7 +2035,7 @@
                 }
             },
             {
-                "regionName": "Site",
+                "regionName": "B\u00f6lge",
                 "superRegionName": "C",
                 "location": {
                     "x": 160,
@@ -2043,7 +2043,7 @@
                 }
             },
             {
-                "regionName": "Cub\u00edculo",
+                "regionName": "H\u00fccre",
                 "superRegionName": "C",
                 "location": {
                     "x": 170,
@@ -2051,39 +2051,39 @@
                 }
             },
             {
-                "regionName": "Zona de aparici\u00f3n",
-                "superRegionName": "del lado defensor",
+                "regionName": "Ba\u015flang\u0131\u00e7",
+                "superRegionName": "Savunan Taraf",
                 "location": {
                     "x": 600,
                     "y": 120
                 }
             },
             {
-                "regionName": "Puertas",
-                "superRegionName": "Mid",
+                "regionName": "Kap\u0131lar",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 370,
                     "y": 680
                 }
             },
             {
-                "regionName": "Patio",
-                "superRegionName": "Mid",
+                "regionName": "Avlu",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 500,
                     "y": 520
                 }
             },
             {
-                "regionName": "Vent.",
-                "superRegionName": "Mid",
+                "regionName": "Pencere",
+                "superRegionName": "Orta",
                 "location": {
                     "x": 480,
                     "y": 640
                 }
             },
             {
-                "regionName": "Torre",
+                "regionName": "Kule",
                 "superRegionName": "A",
                 "location": {
                     "x": 850,

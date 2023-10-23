@@ -1,8 +1,8 @@
 [
     {
         "uuid": "e370fa57-4757-3604-3648-499e1f642d3f",
-        "displayName": "Gekko",
-        "description": "Gekko, de Los \u00c1ngeles, lidera una peque\u00f1a pandilla de calamitosas criaturas. Sus colegas toman la delantera para dispersar a los enemigos, mientras que Gekko los persigue para luego reagruparse y repetir el proceso.",
+        "displayName": "GEKKO",
+        "description": "Los Angeles \u00e7ocu\u011fu Gekko yarat\u0131klardan olu\u015fan belal\u0131 tayfas\u0131na liderlik etmekte. Gekko'nun tayfas\u0131 ileri at\u0131larak d\u00fc\u015fmanlar\u0131n ba\u015f\u0131na bela olur. Sonras\u0131nda Gekko onlar\u0131 toplar ve birlikte tekrar bela olacak d\u00fc\u015fman aramaya koyulurlar.",
         "developerName": "Aggrobot",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png",
@@ -25,8 +25,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "\u00d6nc\u00fc",
+            "description": "\u00d6nc\u00fcler, ilerlemesi tehlikeli k\u00f6\u015feleri a\u015fabilmeleri i\u00e7in tak\u0131mlar\u0131na olanaklar yarat\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -34,26 +34,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Wingman",
-                "description": "EQUIPA a Wingman. DISPARA para mandar a Wingman hacia delante en busca de enemigos. Wingman libera una explosi\u00f3n aturdidora en direcci\u00f3n al primer enemigo que ve. ALTERNA EL MODO DE DISPARO mientras apuntas a una zona de la Spike o a una Spike colocada para que Wingman la coloque o la desarme. Para colocarla, Gekko debe tener la Spike en su inventario. Cuando Wingman desaparece, vuelve a su estado de gl\u00f3bulo en reposo. INTERACT\u00daA para recuperar el gl\u00f3bulo y obtener otra carga de Wingman tras un breve enfriamiento.",
+                "displayName": "KANKU\u015e",
+                "description": "Kanku\u015f'u KU\u015eAN. Kanku\u015f'u d\u00fc\u015fmanlar\u0131 aray\u0131p bulmak \u00fczere g\u00f6ndermek i\u00e7in ATE\u015e ET. Kanku\u015f g\u00f6rd\u00fc\u011f\u00fc ilk d\u00fc\u015fmana do\u011fru Sersemletici bir patlama olu\u015fturur. Kanku\u015f'un Spike'\u0131 yerle\u015ftirmesini ya da imha etmesini sa\u011flamak i\u00e7in bir Spike b\u00f6lgesine ya da yerle\u015ftirilmi\u015f bir Spike'a ni\u015fan al\u0131rken ALT. ATI\u015e kullan. Spike'\u0131 yerle\u015ftirmek i\u00e7in Gekko'nun Spike'\u0131 alm\u0131\u015f olmas\u0131 gerekir. Kanku\u015f s\u00fcresi doldu\u011funda pasif bir k\u00fcreye d\u00f6n\u00fc\u015f\u00fcr. Onu geri almak ve k\u0131sa bir bekleme s\u00fcresinin ard\u0131ndan bir Kanku\u015f y\u00fck\u00fc daha edinmek i\u00e7in k\u00fcreyle ETK\u0130LE\u015e\u0130ME G\u0130R.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Dizzy",
-                "description": "EQUIPA a Dizzy. DISPARA para lanzar a Dizzy volando hacia delante. Dizzy carga y libera explosiones de plasma hacia los enemigos en su campo de visi\u00f3n. El plasma ciega a los enemigos alcanzados. Cuando Dizzy desaparece, vuelve a su estado de gl\u00f3bulo en reposo. INTERACT\u00daA para recuperar el gl\u00f3bulo y obtener otra carga de Dizzy tras un breve enfriamiento.",
+                "displayName": "\u015eA\u015eKIN",
+                "description": "\u015ea\u015fk\u0131n'\u0131 KU\u015eAN. \u015ea\u015fk\u0131n'\u0131 havada s\u00fcz\u00fclecek \u015fekilde f\u0131rlatmak i\u00e7in ATE\u015e ET. \u015ea\u015fk\u0131n enerji toplad\u0131ktan sonra g\u00f6r\u00fc\u015f\u00fcne giren d\u00fc\u015fmanlara plazma atar. Plazman\u0131n isabet etti\u011fi d\u00fc\u015fmanlar K\u00f6r olur. \u015ea\u015fk\u0131n s\u00fcresi doldu\u011funda pasif bir k\u00fcreye d\u00f6n\u00fc\u015f\u00fcr. Onu geri almak ve k\u0131sa bir bekleme s\u00fcresinin ard\u0131ndan bir \u015ea\u015fk\u0131n y\u00fck\u00fc daha edinmek i\u00e7in k\u00fcreyle ETK\u0130LE\u015e\u0130ME G\u0130R.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Mosh",
-                "description": "EQUIPA a Mosh. DISPARA para lanzar a Mosh como una granada. ALTERNA EL MODO DE DISPARO para tirarlo. Al caer, Mosh se divide en varias copias en un \u00e1rea grande, que inflige una peque\u00f1a cantidad de da\u00f1o prolongado y, tras un breve lapso, explota.",
+                "displayName": "POFUDUK TARLASI",
+                "description": "Pofu'yu KU\u015eAN. Pofu'yu bomba gibi f\u0131rlatmak i\u00e7in ATE\u015e ET. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. Pofu indi\u011fi yerde b\u00fcy\u00fck bir alana yay\u0131l\u0131r, bu alandaki d\u00fc\u015fmanlara her saniye d\u00fc\u015f\u00fck miktarda hasar verir ve k\u0131sa bir gecikmenin ard\u0131ndan patlar.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Thrash",
-                "description": "EQUIPA a Thrash. DISPARA para vincular tu mente con la de Thrash y manejarla a trav\u00e9s del territorio enemigo. ACT\u00cdVALA para embestir hacia delante y explotar, lo que detendr\u00e1 a cualquier jugador en un peque\u00f1o radio. Cuando Thrash desaparece, vuelve a su estado de gl\u00f3bulo en reposo. INTERACT\u00daA para recuperar el gl\u00f3bulo y obtener otra carga de Thrash tras un breve enfriamiento. Thrash se puede recuperar una vez.",
+                "displayName": "ZORBA",
+                "description": "Zorba'y\u0131 KU\u015eAN. Zorba'n\u0131n zihnine girerek onunla d\u00fc\u015fman b\u00f6lgesinde gezinmek i\u00e7in ATE\u015e ET. Zorba'n\u0131n ileri at\u0131l\u0131p patlayarak k\u00fc\u00e7\u00fck bir alandaki t\u00fcm oyuncular\u0131 Al\u0131koymas\u0131 i\u00e7in ETK\u0130NLE\u015eT\u0130R. Zorba s\u00fcresi doldu\u011funda pasif bir k\u00fcreye d\u00f6n\u00fc\u015f\u00fcr. Onu geri almak ve k\u0131sa bir bekleme s\u00fcresinin ard\u0131ndan bir Zorba y\u00fck\u00fc daha edinmek i\u00e7in k\u00fcreyle ETK\u0130LE\u015e\u0130ME G\u0130R. Zorba yaln\u0131zca bir kere geri al\u0131nabilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png"
             }
         ],
@@ -61,8 +61,8 @@
     },
     {
         "uuid": "dade69b4-4f5a-8528-247b-219e5a1facd6",
-        "displayName": "Fade",
-        "description": "Fade, la cazarrecompensas turca, controla el poder de las pesadillas para poner al descubierto los secretos de los enemigos. Ataviada con el propio terror, da caza a sus objetivos y revela sus miedos m\u00e1s profundos, para despu\u00e9s acabar con ellos en la oscuridad.",
+        "displayName": "FADE",
+        "description": "T\u00fcrk kelle avc\u0131s\u0131 Fade, d\u00fc\u015fmanlar\u0131n s\u0131rlar\u0131n\u0131 gasp etmek i\u00e7in saf k\u00e2bus g\u00fcc\u00fcn\u00fc kullan\u0131r. Korkuyla uyum i\u00e7inde \u00e7al\u0131\u015farak hedeflerini avlar ve hedeflerinin i\u015fini bitirmeden \u00f6nce en b\u00fcy\u00fck korkular\u0131n\u0131 a\u00e7\u0131\u011fa \u00e7\u0131kar\u0131r.",
         "developerName": "BountyHunter",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/displayicon.png",
@@ -85,8 +85,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "\u00d6nc\u00fc",
+            "description": "\u00d6nc\u00fcler, ilerlemesi tehlikeli k\u00f6\u015feleri a\u015fabilmeleri i\u00e7in tak\u0131mlar\u0131na olanaklar yarat\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -94,26 +94,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Apresar",
-                "description": "EQUIPA un N\u00f3dulo de terror puro. DISPARA para lanzarlo. El N\u00f3dulo cae tras un periodo de tiempo determinado. VUELVE A USAR la habilidad para que el N\u00f3dulo caiga antes. El N\u00f3dulo estalla al impactar y retiene a los enemigos cercanos. Ensordece y aplica declive a los enemigos retenidos.",
+                "displayName": "MIHLA",
+                "description": "Bir saf korku yuma\u011f\u0131 KU\u015eAN. F\u0131rlatmak i\u00e7in ATE\u015e ET. Yumak belli bir s\u00fcre sonra yere iner. Yuma\u011f\u0131 yere erken indirmek i\u00e7in TEKRAR KULLAN. Yumak yere indi\u011finde a\u00e7\u0131larak yak\u0131ndaki d\u00fc\u015fmanlar\u0131 oldu\u011fu yere sabitler. Sabitlenmi\u015f d\u00fc\u015fmanlar Sa\u011f\u0131r olur ve \u00c7\u00fcr\u00fcme hasar\u0131 almaya ba\u015flar.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Tormento",
-                "description": "EQUIPA un Vig\u00eda aterrador. DISPARA para lanzarlo. El Vig\u00eda cae tras un periodo de tiempo determinado. VUELVE A USAR la habilidad para que el Vig\u00eda caiga antes. El Vig\u00eda ataca al caer, lo que revela a los enemigos que est\u00e9n en su campo de visi\u00f3n y crea rastros de terror que llevan hasta ellos. Los enemigos pueden destruir al Vig\u00eda.",
+                "displayName": "MUSALLAT",
+                "description": "Musallat olan bir g\u00f6zc\u00fc KU\u015eAN. F\u0131rlatmak i\u00e7in ATE\u015e ET. G\u00f6zc\u00fc belli bir s\u00fcre sonra yere iner. G\u00f6zc\u00fcy\u00fc yere erken indirmek i\u00e7in TEKRAR KULLAN. G\u00f6zc\u00fc yere indi\u011finde etkinle\u015ferek g\u00f6r\u00fc\u015f menzili i\u00e7inde kalan d\u00fc\u015fmanlar\u0131 A\u00e7\u0131\u011fa \u00c7\u0131kar\u0131r ve hepsine deh\u015fet izi uygular. D\u00fc\u015fmanlar g\u00f6zc\u00fcy\u00fc yok edebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Acechador",
-                "description": "EQUIPA un Acechador. DISPARA para lanzarlo hacia adelante. MANT\u00c9N PULSADO DISPARAR para dirigir al Acechador en la direcci\u00f3n de la mira. El Acechador seguir\u00e1 al primer enemigo o rastro que vea y reducir\u00e1 el campo de visi\u00f3n del enemigo al impactar.",
+                "displayName": "ECEL",
+                "description": "Bir Ecel KU\u015eAN. Ecel'i ileri g\u00f6ndermek i\u00e7in ATE\u015e ET. Ecel'i ni\u015fang\u00e2h\u0131n\u0131n bakt\u0131\u011f\u0131 tarafa do\u011fru y\u00f6nlendirmek i\u00e7in ATE\u015e TU\u015eUNU BASILI TUT. Ecel g\u00f6rd\u00fc\u011f\u00fc ilk d\u00fc\u015fman\u0131n veya deh\u015fet izinin pe\u015fine tak\u0131l\u0131r ve yakalad\u0131\u011f\u0131 d\u00fc\u015fman\u0131n G\u00f6r\u00fc\u015f\u00fcn\u00fc K\u0131s\u0131tlar.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Ocaso",
-                "description": "EQUIPA el poder de las pesadillas. DISPARA para desatar una ola imparable de energ\u00eda de pesadillas. Marca con rastros de terror, ensordece y aplica declive a los enemigos golpeados por la ola.",
+                "displayName": "GECE KARANLI\u011eI",
+                "description": "K\u00e2busun g\u00fcc\u00fcn\u00fc KU\u015eAN. Durdurulamaz bir k\u00e2bus enerjisi g\u00f6ndermek i\u00e7in ATE\u015e ET. Dalgaya maruz kalan d\u00fc\u015fmanlar deh\u015fet izleriyle \u0130\u015faretlenir, Sa\u011f\u0131r olur ve \u00c7\u00fcr\u00fcme hasar\u0131 almaya ba\u015flar.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ultimate/displayicon.png"
             }
         ],
@@ -121,8 +121,8 @@
     },
     {
         "uuid": "5f8d3a7f-467b-97f3-062c-13acf203c006",
-        "displayName": "Breach",
-        "description": "Breach, el sueco bi\u00f3nico, dispara una serie de explosiones cin\u00e9ticas controladas para abrirse paso por el territorio enemigo. Su capacidad para infligir da\u00f1o y sembrar el caos garantiza que los combates siempre est\u00e9n de su parte.",
+        "displayName": "BREACH",
+        "description": "\u0130nsan\u00fcst\u00fc g\u00fc\u00e7lere sahip \u0130sve\u00e7li Breach, d\u00fc\u015fman zemininde sert bir \u015fekilde yolu a\u00e7an, hedeflenebilir kinetik dalgalar g\u00f6nderir. Sebep oldu\u011fu hasar ve darbeler, sava\u015f\u0131n dengelerini de\u011fi\u015ftirecek niteliktedir.",
         "developerName": "Breach",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/displayicon.png",
@@ -145,8 +145,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "\u00d6nc\u00fc",
+            "description": "\u00d6nc\u00fcler, ilerlemesi tehlikeli k\u00f6\u015feleri a\u015fabilmeleri i\u00e7in tak\u0131mlar\u0131na olanaklar yarat\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -154,26 +154,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Explosi\u00f3n cegadora",
-                "description": "EQUIPA una carga explosiva cegadora. DISPARA la carga para liberar una r\u00e1pida explosi\u00f3n que atraviesa la pared. Cuando detona, la carga ciega a todos los jugadores que la est\u00e9n mirando.",
+                "displayName": "G\u00d6Z KAMA\u015eTIRAN",
+                "description": "K\u00f6r Edici bir y\u00fck KU\u015eAN. Duvar\u0131n i\u00e7inden ge\u00e7tikten sonra art arda h\u0131zla ger\u00e7ekle\u015fen patlamalar olu\u015fturmak i\u00e7in ATE\u015e ET. Patlayan y\u00fck, ona bakan herkesi K\u00f6r eder.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Falla",
-                "description": "EQUIPA una bomba s\u00edsmica. MANT\u00c9N PULSADO DISPARAR para aumentar la distancia. SUELTA para liberar un se\u00edsmo que aturdir\u00e1 a todos los jugadores dentro de la zona y en una l\u00ednea hasta ella.",
+                "displayName": "FAY HATTI",
+                "description": "Sismik bir darbe KU\u015eAN. Darbenin etkili olaca\u011f\u0131 mesafeyi artt\u0131rmak i\u00e7in BASILI TUT. Bir sars\u0131nt\u0131 olu\u015fturarak etki alan\u0131nda ve alan hatt\u0131 \u00fczerinde kalan t\u00fcm oyuncular\u0131 Sersemletmek i\u00e7in SERBEST BIRAK.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "R\u00e9plica",
-                "description": "EQUIPA una carga explosiva de fusi\u00f3n. DISPARA la carga para liberar una explosi\u00f3n que atraviesa la pared tras un retardo. La explosi\u00f3n inflige mucho da\u00f1o a cualquiera que est\u00e9 dentro del \u00e1rea afectada.",
+                "displayName": "ART\u00c7I SARSINTI",
+                "description": "Termon\u00fckleer bir y\u00fck KU\u015eAN. Duvar\u0131n i\u00e7inden ge\u00e7tikten sonra zamanla ger\u00e7ekle\u015fen patlamalar i\u00e7in ATE\u015e ET. Patlayan y\u00fck, etki alan\u0131nda kalan herkese a\u011f\u0131r hasar verir.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Fragor imparable",
-                "description": "EQUIPA una carga explosiva s\u00edsmica. DISPARA para liberar un se\u00edsmo que se extender\u00e1 por una gran zona en forma de cono. El se\u00edsmo aturde y lanza por los aires a todos los jugadores que est\u00e9n en el interior de la zona.",
+                "displayName": "ZELZELE",
+                "description": "Sismik bir y\u00fck KU\u015eAN. Geni\u015f ve koni bi\u00e7imindeki bir alan\u0131n i\u00e7inde kalan zemini dalga dalga etkileyen bir deprem tetiklemek i\u00e7in ATE\u015e ET. Depreme yakalanan herkes Sersemler ve havaya savrulur.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ultimate/displayicon.png"
             }
         ],
@@ -181,8 +181,8 @@
     },
     {
         "uuid": "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
-        "displayName": "Deadlock",
-        "description": "Deadlock, la agente noruega, despliega un surtido de avanzados nanocables para defender el campo de batalla de cualquier asalto, por letal que sea. Nadie escapa a su atenta mirada ni sobrevive a su implacable ferocidad.",
+        "displayName": "DEADLOCK",
+        "description": "Norve\u00e7li ajan Deadlock, sava\u015f esnas\u0131nda en \u00f6l\u00fcmc\u00fcl sald\u0131r\u0131lar\u0131 bile savu\u015fturabilecek son teknoloji bir nanoba\u011f a\u011f\u0131 kullan\u0131r. Keskin g\u00f6zlerinden ka\u00e7an, vah\u015fetinden kurtulan olmam\u0131\u015ft\u0131r.",
         "developerName": "Cable",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/displayicon.png",
@@ -205,8 +205,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "G\u00f6zc\u00fc",
+            "description": "G\u00f6zc\u00fcler hem sald\u0131ran hem savunan turlar\u0131nda b\u00f6lgeleri kapatabilen ve kanatlar\u0131 kola\u00e7an eden savunma uzmanlar\u0131d\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -222,26 +222,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Sensor s\u00f3nico",
-                "description": "EQUIPA un sensor s\u00f3nico. DISPARA para desplegarlo. El sensor rastrea la zona en busca de enemigos que hagan ruido. Si detecta sonidos de pisadas, disparos o cualquier otro ruido considerable, aturde en \u00e1rea.",
+                "displayName": "SON\u0130K SENS\u00d6R",
+                "description": "Bir Sonik Sens\u00f6r KU\u015eAN. Sens\u00f6r\u00fc yerle\u015ftirmek i\u00e7in ATE\u015e ET. Sens\u00f6r, d\u00fc\u015fman seslerini alg\u0131lamak \u00fczere b\u00f6lgeyi tarar. E\u011fer tarad\u0131\u011f\u0131 b\u00f6lgede ayak sesi, silah sesi veya y\u00fcksek ses tespit ederse b\u00f6lgeye sersemletme uygular.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Malla barrera",
-                "description": "EQUIPA un disco de Malla barrera. DISPARA para lanzarlo hacia delante. Al aterrizar, el disco genera barreras a partir de su punto de origen que detienen el movimiento de los personajes.",
+                "displayName": "BAR\u0130YER A\u011eI",
+                "description": "Bir Bariyer A\u011f\u0131 diski KU\u015eAN. Diski ileri f\u0131rlatmak i\u00e7in ATE\u015e ET. Diskin indi\u011fi noktada yanlara do\u011fru a\u00e7\u0131lan ve karakterlerin hareketini engelleyen bariyerler olu\u015fur.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Red de gravedad",
-                "description": "EQUIPA una granada de Red de gravedad. DISPARA para lanzarla. ALTERNA EL MODO DE DISPARO para tirarla. La Red de gravedad explota al aterrizar, lo que fuerza a los agentes alcanzados a agacharse y moverse lentamente.",
+                "displayName": "NANO\u00c7EK\u0130M",
+                "description": "Bir Nano\u00c7ekim bombas\u0131 KU\u015eAN. F\u0131rlatmak i\u00e7in ATE\u015e ET. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. Nano\u00c7ekim bombas\u0131 yere temas etti\u011finde patlayarak etki alan\u0131nda kalanlar\u0131n \u00e7\u00f6melmelerine neden olur ve onlar\u0131 yava\u015flat\u0131r.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Aniquilaci\u00f3n",
-                "description": "EQUIPA un acelerador de nanocables. DISPARA para emitir un pulso de nanocables que capturan al primer enemigo con el que entran en contacto. El enemigo atrapado se ve arrastrado y muere si llega al final del recorrido, a menos que sea liberado. La envoltura de los nanocables se puede destruir.",
+                "displayName": "KISKIVRAK",
+                "description": "Bir Nanoba\u011f H\u0131zland\u0131r\u0131c\u0131 KU\u015eAN. Yakalad\u0131\u011f\u0131 ilk d\u00fc\u015fman\u0131 sar\u0131p k\u0131sk\u0131vrak yakalayan bir nanoba\u011f dalgas\u0131 g\u00f6ndermek i\u00e7in ATE\u015e ET. Kozaya yakalanan d\u00fc\u015fman, olu\u015fan nanoba\u011f yolu boyunca \u00e7ekilir. D\u00fc\u015fman, nanoba\u011f kozas\u0131ndan kurtar\u0131lmazsa yolun sonuna ula\u015f\u0131nca \u00f6l\u00fcr. Nanoba\u011f kozas\u0131 yok edilebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ultimate/displayicon.png"
             }
         ],
@@ -249,11 +249,11 @@
     },
     {
         "uuid": "f94c3b30-42be-e959-889c-5aa313dba261",
-        "displayName": "Raze",
-        "description": "Raze llega desde Brasil con ganas de hacer que todo salte por los aires. Con su estilo de juego basado en la fuerza bruta, destaca a la hora de barrer a grupos de enemigos atrincherados y de despejar \u00e1reas estrechas con explosi\u00f3n y sin compasi\u00f3n.",
+        "displayName": "RAZE",
+        "description": "Bomba gibi bir ki\u015fili\u011fe ve kocaman silahlara sahip olan Raze, aram\u0131za Brezilya'dan kat\u0131l\u0131yor. Kafa g\u00f6z dalan oyun tarz\u0131yla d\u00fc\u015fmanlar\u0131 sakland\u0131klar\u0131 deliklerden \u00e7\u0131karmakta ve dar alanlar\u0131 ''bam bam bam'' temizlemekte \u00fcst\u00fcne yoktur.",
         "developerName": "Clay",
         "characterTags": [
-            "Especialista en da\u00f1o en \u00e1rea"
+            "Alan Hasar\u0131 Uzman\u0131"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayiconsmall.png",
@@ -275,8 +275,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "D\u00fcellocu",
+            "description": "D\u00fcellocular yetenek ve becerilerini kullanarak tak\u0131mlar\u0131 i\u00e7in rakibe hasar ya\u011fd\u0131ran ve \u00e7at\u0131\u015fma ba\u015flatan, kendi kendilerine yeten, etkili sava\u015f\u00e7\u0131lard\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -284,26 +284,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Fardo explosivo",
-                "description": "Lanza AL INSTANTE un fardo explosivo que se adhiere a las superficies. VUELVE A USAR la habilidad despu\u00e9s de que el fardo se adhiera para detonarlo y que da\u00f1e y desplace a todo aquello que alcance.",
+                "displayName": "PATLAYICI \u00c7ANTA",
+                "description": "Zemine yap\u0131\u015fan bir Patlay\u0131c\u0131 \u00c7anta'y\u0131 ANINDA f\u0131rlat. Elinden \u00e7\u0131kan \u00e7antay\u0131 patlatmak i\u00e7in yetene\u011fi TEKRAR KULLAN. \u00c7anta isabet etti\u011fi her \u015feye hasar verir ve onlar\u0131 yerinden oynat\u0131r.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Balas de pintura",
-                "description": "EQUIPA una granada de racimo. DISPARA para lanzar la granada, lo que causa da\u00f1o y crea submuniciones que infligen da\u00f1o a cualquiera que est\u00e9 dentro del rango. ALTERNA EL MODO DE DISPARO para tirarlo. La carga de Balas de pintura se reinicia cada dos asesinatos.",
+                "displayName": "RENK TES\u0130RL\u0130 BOMBA",
+                "description": "Bir par\u00e7a tesirli el bombas\u0131 KU\u015eAN. F\u0131rlatmak i\u00e7in ATE\u015e ET. Bomba patlay\u0131p hasar verdikten sonra her biri menzilindeki herkese hasar veren bombac\u0131klar olu\u015fturur. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. Renk Tesirli Bomba'n\u0131n y\u00fck\u00fc her iki skorda bir dolar.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Bot explosivo",
-                "description": "EQUIPA un bot explosivo. DISPARA para desplegar el bot y hacer que se desplace en l\u00ednea recta por el terreno, rebotando por las paredes. El bot explosivo se fijar\u00e1 a los enemigos que encuentre en un cono frontal y los perseguir\u00e1. Si los alcanza, explotar\u00e1 e infligir\u00e1 una gran cantidad de da\u00f1o.",
+                "displayName": "BOMBOT",
+                "description": "Bir Bombot KU\u015eAN. G\u00f6ndermek i\u00e7in ATE\u015e ET; bot yerde d\u00fcz bir hat halinde ilerler ve duvarlardan seker. Bombot \u00f6n\u00fcndeki koni \u015feklindeki alana giren t\u00fcm d\u00fc\u015fmanlara kilitlenir ve onlar\u0131 kovalar. Yakalayabilirse, a\u011f\u0131r hasar vererek patlar.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Cierratelones",
-                "description": "EQUIPA un lanzacohetes. DISPARA para lanzar un cohete que inflige un da\u00f1o en \u00e1rea masivo al entrar en contacto con cualquier cosa.",
+                "displayName": "NEFES KESEN",
+                "description": "Bir roketatar KU\u015eAN. Herhangi bir \u015feye temas etti\u011finde patlay\u0131p muazzam alan hasar\u0131 veren bir roket f\u0131rlatmak i\u00e7in ATE\u015e ET.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ultimate/displayicon.png"
             }
         ],
@@ -311,8 +311,8 @@
     },
     {
         "uuid": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
-        "displayName": "Chamber",
-        "description": "El dise\u00f1ador de armas franc\u00e9s, siempre bien vestido y bien pertrechado, expulsa a los agresores con precisi\u00f3n letal. Chamber aprovecha su arsenal personalizado para resistir, elimina enemigos a distancia y crea la contingencia perfecta para cada plan.",
+        "displayName": "CHAMBER",
+        "description": "Her daim \u015f\u0131k ve tam te\u00e7hizat dola\u015fan Frans\u0131z silah tasar\u0131mc\u0131s\u0131 Chamber, \u00f6l\u00fcmc\u00fcl isabetlili\u011fiyle rakipleri ortadan kald\u0131r\u0131yor. \u00d6zel yeteneklerini kullanarak g\u00f6r\u00fc\u015f mesafesi sa\u011flar, uzaktaki rakipleri avlar ve her plana m\u00fckemmel bir \u015fekilde uyum sa\u011flar.",
         "developerName": "Deadeye",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png",
@@ -335,8 +335,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "G\u00f6zc\u00fc",
+            "description": "G\u00f6zc\u00fcler hem sald\u0131ran hem savunan turlar\u0131nda b\u00f6lgeleri kapatabilen ve kanatlar\u0131 kola\u00e7an eden savunma uzmanlar\u0131d\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -344,26 +344,26 @@
         "abilities": [
             {
                 "slot": "Ability2",
-                "displayName": "Rendez-vous",
-                "description": "EQUIPA un anclaje de teleportaci\u00f3n. DISPARA para colocarlo en el suelo. Mientras est\u00e9 en el suelo y al alcance, REACTIVA la habilidad para teleportarte r\u00e1pidamente al anclaje. El anclaje se puede recoger para VOLVER A COLOCARLO.",
+                "displayName": "BULU\u015eMA",
+                "description": "Bir \u0131\u015f\u0131nlay\u0131c\u0131 KU\u015eAN. I\u015f\u0131nlay\u0131c\u0131y\u0131 zemine yerle\u015ftirmek i\u00e7in ATE\u015e ET. I\u015f\u0131nlay\u0131c\u0131n\u0131n menzilinde ve yerde dururken h\u0131zl\u0131ca \u0131\u015f\u0131nlay\u0131c\u0131ya \u0131\u015f\u0131nlanmak i\u00e7in TEKRAR ETK\u0130NLE\u015eT\u0130R. I\u015f\u0131nlay\u0131c\u0131y\u0131 TEKRAR YERLE\u015eT\u0130RMEK \u00fczere b\u0131rakt\u0131\u011f\u0131n yerden alabilirsin.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Marca registrada",
-                "description": "EQUIPA una trampa que escanea en busca de enemigos. DISPARA para colocarla en el suelo. Cuando un enemigo visible entra en el alcance, la trampa inicia una cuenta atr\u00e1s y, a continuaci\u00f3n, desestabiliza el terreno a su alrededor, lo que crea un campo persistente que ralentiza a los jugadores que se encuentren en su interior. La trampa se puede recoger para VOLVER A COLOCARLA.",
+                "displayName": "KARTV\u0130Z\u0130T",
+                "description": "D\u00fc\u015fmanlar i\u00e7in etraf\u0131 tarayan bir tuzak KU\u015eAN. Tuza\u011f\u0131 zemine yerle\u015ftirmek i\u00e7in ATE\u015e ET. G\u00f6r\u00fcnen d\u00fc\u015fmanlar tuza\u011f\u0131n menzili i\u00e7ine girdi\u011finde, tuzak geri say\u0131ma ba\u015flar. Tuzak devreye girdi\u011finde etki alan\u0131n\u0131 stabil olmayan bir hale getirerek i\u00e7inde bulunan d\u00fc\u015fmanlar\u0131 Yava\u015flat\u0131r. Tuza\u011f\u0131 TEKRAR YERLE\u015eT\u0130RMEK \u00fczere b\u0131rakt\u0131\u011f\u0131n yerden alabilirsin.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Cazador de cabezas",
-                "description": "ACT\u00cdVALA para equipar una pistola pesada. Utiliza el DISPARO ALTERNATIVO para apuntar con la mira.",
+                "displayName": "KELLE AVCISI",
+                "description": "A\u011f\u0131r bir tabanca ku\u015fanmak i\u00e7in ETK\u0130NLE\u015eT\u0130R. Tabancan\u0131n ALT. ATI\u015eI ni\u015fan alman\u0131 sa\u011flar.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Tour de force",
-                "description": "ACT\u00cdVALA para invocar un poderoso rifle de francotirador personalizado que mata a los enemigos con cualquier impacto directo en la parte superior del cuerpo. ALTERNA EL MODO DE DISPARO para apuntar con la mira. Matar a un enemigo genera un campo persistente que ralentiza a los jugadores que se encuentren en su interior.",
+                "displayName": "KESK\u0130N TARZ",
+                "description": "G\u00f6vdeye do\u011frudan isabet etti\u011fi d\u00fc\u015fmanlar\u0131 an\u0131nda \u00f6ld\u00fcren g\u00fc\u00e7l\u00fc ve \u00f6zel bir keskin ni\u015fanc\u0131 t\u00fcfe\u011fi ku\u015fanmak i\u00e7in ETK\u0130NLE\u015eT\u0130R. Ni\u015fan almak i\u00e7in ALT. ATI\u015e kullan. D\u00fc\u015fman\u0131 \u00f6ld\u00fcrd\u00fc\u011f\u00fcn yerde, i\u00e7ine giren d\u00fc\u015fmanlar\u0131 Yava\u015flatan bir etki alan\u0131 olu\u015fur.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ultimate/displayicon.png"
             }
         ],
@@ -372,7 +372,7 @@
     {
         "uuid": "601dbbe7-43ce-be57-2a40-4abd24953621",
         "displayName": "KAY/O",
-        "description": "KAY/O es una m\u00e1quina de guerra construida con un \u00fanico prop\u00f3sito: neutralizar a los radiantes. Su poder para suprimir habilidades enemigas incapacita a sus adversarios, lo que asegura la ventaja para \u00e9l y sus aliados.",
+        "description": "KAY/O, Radyantlar\u0131 etkisiz hale getirmek i\u00e7in \u00fcretilmi\u015f bir sava\u015f makinesi. D\u00fc\u015fmanlar\u0131n\u0131n yeteneklerini Sindirerek kar\u015f\u0131 koyma yetilerini bast\u0131r\u0131r. B\u00f6ylece hem kendisini hem de tak\u0131m arkada\u015flar\u0131n\u0131 korur.",
         "developerName": "Grenadier",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png",
@@ -395,8 +395,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "\u00d6nc\u00fc",
+            "description": "\u00d6nc\u00fcler, ilerlemesi tehlikeli k\u00f6\u015feleri a\u015fabilmeleri i\u00e7in tak\u0131mlar\u0131na olanaklar yarat\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -404,26 +404,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "FRAG/mento",
-                "description": "EQUIPA un fragmento explosivo. DISPARA para lanzar. ALTERNA EL MODO DE DISPARO para tirarlo. El fragmento se adhiere al suelo y explota varias veces, lo que inflige da\u00f1o casi letal en el centro con cada explosi\u00f3n.",
+                "displayName": "PAR\u00c7A/Tesirli",
+                "description": "Patlay\u0131c\u0131 bir \u015farapnel KU\u015eAN. F\u0131rlatmak i\u00e7in ATE\u015e ET. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. \u015earapnel yere yap\u0131\u015f\u0131r, sonras\u0131nda birden fazla kez patlar ve tam merkezinde bulunanlara neredeyse \u00f6l\u00fcmc\u00fcl hasar verir.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Unidad/FLASH",
-                "description": "EQUIPA una granada cegadora. DISPARA para lanzar la granada por arriba. ALTERNA EL MODO DE DISPARO para lanzar una granada m\u00e1s d\u00e9bil que explota r\u00e1pidamente. La cegadora explota tras un breve tiempo y ciega a todo el que se encuentre en la l\u00ednea de visi\u00f3n.",
+                "displayName": "FLA\u015e/Bellek",
+                "description": "Bir K\u00f6r Edici bomba KU\u015eAN. Y\u00fcksekten f\u0131rlatmak i\u00e7in ATE\u015e ET. Daha zay\u0131f ama h\u0131zl\u0131 patlayan bir K\u00f6r Edici bomba atmak i\u00e7in ALT. ATI\u015e kullan. K\u00f6r Edici bomba k\u0131sa bir s\u00fcre sonra patlayarak g\u00f6r\u00fc\u015f menzili i\u00e7inde bulunan herkesi K\u00f6r eder.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Punto/CERO",
-                "description": "EQUIPA una cuchilla de supresi\u00f3n. DISPARA para lanzar. La cuchilla se adhiere a la primera superficie a la que golpee, se carga y suprime a cualquiera que se encuentre en el radio de la explosi\u00f3n. Los enemigos pueden destruir la cuchilla.",
+                "displayName": "SIFIR/Noktas\u0131",
+                "description": "D\u00fc\u015fmanlar\u0131 Sindirmeni sa\u011flayan bir b\u0131\u00e7ak KU\u015eAN. F\u0131rlatmak i\u00e7in ATE\u015e ET. B\u0131\u00e7ak isabet etti\u011fi ilk y\u00fczeye saplan\u0131r ve k\u0131sa bir s\u00fcre sonra patlayarak menzili i\u00e7indeki d\u00fc\u015fmanlar\u0131 Sindirir. D\u00fc\u015fmanlar bu b\u0131\u00e7a\u011f\u0131 yok edebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Cmd/ANULAR",
-                "description": "Experimenta una sobrecarga INSTANT\u00c1NEA de energ\u00eda de radianita polarizada en forma de pulsos de gran radio que se emiten desde KAY/O. Los enemigos que reciban el impacto de pulsos quedan silenciados durante un breve periodo de tiempo. Cuando est\u00e1 sobrecargado, KAY/O se aplica Estimulante de combate y puede volver a estabilizarse si resulta derribado.",
+                "displayName": "\u0130PTAL/Komut",
+                "description": "KAY/O, kutupla\u015fm\u0131\u015f radyanit enerjisiyle ANINDA a\u015f\u0131r\u0131 y\u00fcklenir ve bulundu\u011fu konumdan devasa bir etki alan\u0131na sahip enerji dalgalar\u0131 yayar. Enerji dalgalar\u0131n\u0131n isabet etti\u011fi d\u00fc\u015fmanlar k\u0131sa bir s\u00fcreli\u011fine Sindirilir. A\u015f\u0131r\u0131 y\u00fckleme durumundayken KAY/O Kuvvetli Sava\u015f kazan\u0131r ve \u00e7\u00f6kt\u00fc\u011f\u00fcnde yeniden stabil hale getirilebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png"
             }
         ],
@@ -431,8 +431,8 @@
     },
     {
         "uuid": "6f2a04ca-43e0-be17-7f36-b3908627744d",
-        "displayName": "Skye",
-        "description": "Skye y su manada de bestias se abren paso desde Australia y a trav\u00e9s de territorio hostil. Sus creaciones obstaculizan los avances enemigos y su capacidad para curar a los dem\u00e1s se ocupa de que, a su lado, su equipo est\u00e9 a salvo.",
+        "displayName": "SKYE",
+        "description": "Aram\u0131za Avustralya'dan kat\u0131lan Skye, beraberinde getirdi\u011fi vah\u015fi hayvan ordusuyla birlikte \u00e7at\u0131\u015fmay\u0131 iyiden iyiye k\u0131z\u0131\u015ft\u0131r\u0131yor. D\u00fc\u015fmana ayak ba\u011f\u0131 olan hayvanlar\u0131 ve tak\u0131m arkada\u015flar\u0131n\u0131 iyile\u015ftirme yetisiyle, tak\u0131m\u0131n\u0131n g\u00fcc\u00fcn\u00fc peki\u015ftiriyor ve tak\u0131mdaki herkesi kolluyor.",
         "developerName": "Guide",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png",
@@ -455,8 +455,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "\u00d6nc\u00fc",
+            "description": "\u00d6nc\u00fcler, ilerlemesi tehlikeli k\u00f6\u015feleri a\u015fabilmeleri i\u00e7in tak\u0131mlar\u0131na olanaklar yarat\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -464,26 +464,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Precursor",
-                "description": "EQUIPA un amuleto de lobo marsupial. DISPARA para desplegar al depredador y controlarlo.  Mientras se est\u00e1 controlando al lobo, DISPARA para hacer que salte hacia delante y explote, lo que aturde e inflige da\u00f1o a los enemigos que golpee.",
+                "displayName": "AV PE\u015e\u0130NDE",
+                "description": "Bir Tazmanya kaplan\u0131 fig\u00fcr\u00fc KU\u015eAN. Avc\u0131y\u0131 g\u00f6nderip onu kontrol etmek i\u00e7in ATE\u015e ET. Hayvan\u0131 kontrol ederken birden ileri at\u0131larak Sersemletici bir patlamaya sebep olmak ve do\u011frudan isabet alan d\u00fc\u015fmanlara hasar vermek i\u00e7in ATE\u015e ET.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Luz gu\u00eda",
-                "description": "EQUIPA un amuleto de halc\u00f3n.  DISPARA para lanzarlo hacia adelante. MANT\u00c9N PULSADO DISPARAR para guiar al halc\u00f3n en la direcci\u00f3n de la mira. VUELVE A ACTIVAR la habilidad cuando el halc\u00f3n est\u00e9 en el aire para transformarlo en un destello cegador. La ceguera alcanza su m\u00e1xima potencia tras un breve periodo de tiempo durante el vuelo del halc\u00f3n.",
+                "displayName": "KILAVUZ I\u015eIK",
+                "description": "Bir \u015fahin fig\u00fcr\u00fc KU\u015eAN. \u015eahini ileri g\u00f6ndermek i\u00e7in ATE\u015e ET. \u015eahini ni\u015fang\u00e2h\u0131n\u0131n bakt\u0131\u011f\u0131 tarafa y\u00f6neltmek i\u00e7in ATE\u015e TU\u015eUNU BASILI TUT. \u015eahini havada u\u00e7arken K\u00f6r Edici bir bombaya \u00e7evirmek i\u00e7in yetene\u011fi TEKRAR KULLAN. \u015eahinin u\u00e7u\u015fu ba\u015flad\u0131ktan k\u0131sa bir s\u00fcre sonra K\u00f6r etme maksimum potansiyeline ula\u015f\u0131r.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Reforestaci\u00f3n",
-                "description": "EQUIPA un amuleto de curaci\u00f3n.  MANT\u00c9N PULSADO para canalizar la habilidad, que cura a los aliados que est\u00e9n dentro del alcance y del campo de visi\u00f3n.  Se puede volver a utilizar hasta que se quede sin curaci\u00f3n disponible.  Skye no se puede curar a s\u00ed misma.",
+                "displayName": "DO\u011eANIN \u015e\u0130FASI",
+                "description": "\u0130yile\u015ftiren bir fig\u00fcr KU\u015eAN. \u015eifa g\u00fcc\u00fcn\u00fc odaklayarak menzil i\u00e7inde ve g\u00f6r\u00fc\u015f hatt\u0131ndaki tak\u0131m arkada\u015flar\u0131n\u0131 \u0130yile\u015ftirmek i\u00e7in ATE\u015e TU\u015eUNU BASILI TUT. Bu yetenek, \u015fifa g\u00fcc\u00fc tamamen t\u00fckenene kadar birden fazla kez kullan\u0131labilir. Skye kendini iyile\u015ftiremez.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Buscadores",
-                "description": "EQUIPA un amuleto de buscador.  DISPARA para desplegar tres buscadores que localizan a los tres enemigos m\u00e1s cercanos.  Si un buscador alcanza a su objetivo, limita su visi\u00f3n. Los enemigos pueden destruir a los Buscadores.",
+                "displayName": "\u0130ZS\u00dcRENLER",
+                "description": "Bir \u0130zs\u00fcren fig\u00fcr\u00fc KU\u015eAN. En yak\u0131ndaki \u00fc\u00e7 d\u00fc\u015fman\u0131n pe\u015fine d\u00fc\u015fecek \u00fc\u00e7 tane \u0130zs\u00fcren g\u00f6ndermek i\u00e7in ATE\u015e ET. Bir \u0130zs\u00fcren hedefine ula\u015ft\u0131\u011f\u0131nda, hedefin G\u00f6r\u00fc\u015f\u00fcn\u00fc K\u0131s\u0131tlar. D\u00fc\u015fmanlar \u0130zs\u00fcrenleri yok edebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png"
             }
         ],
@@ -491,12 +491,12 @@
     },
     {
         "uuid": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
-        "displayName": "Cypher",
-        "description": "Cypher es un experto en informaci\u00f3n de Marruecos que se especializa en redes de vigilancia y es capaz de seguirle la pista al enemigo constantemente. No hay secreto a salvo ni maniobra que pase desapercibida. Cypher siempre est\u00e1 alerta.",
+        "displayName": "CYPHER",
+        "description": "Fasl\u0131 bilgi uzman\u0131 ve tek ki\u015filik g\u00f6zetleme a\u011f\u0131 Cypher, d\u00fc\u015fman\u0131n her hareketini bilir. Her s\u0131rr\u0131n\u0131 duyar. Her manevras\u0131n\u0131 g\u00f6r\u00fcr. Cypher'\u0131n g\u00f6zleri hep \u00fczerinizdedir.",
         "developerName": "Gumshoe",
         "characterTags": [
-            "Detecci\u00f3n",
-            "Bloqueo defensivo"
+            "Tespit",
+            "Savunma Tecriti"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayiconsmall.png",
@@ -518,8 +518,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "G\u00f6zc\u00fc",
+            "description": "G\u00f6zc\u00fcler hem sald\u0131ran hem savunan turlar\u0131nda b\u00f6lgeleri kapatabilen ve kanatlar\u0131 kola\u00e7an eden savunma uzmanlar\u0131d\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -527,26 +527,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Prisi\u00f3n cibern\u00e9tica",
-                "description": "Lanza de INMEDIATO la prisi\u00f3n cibern\u00e9tica frente a Cypher. ACT\u00cdVALA para crear una zona que bloquea la visi\u00f3n y emite un sonido cuando los enemigos la atraviesan.",
+                "displayName": "S\u0130BER KAFES",
+                "description": "Siber kafesi ANINDA Cypher'\u0131n \u00f6n\u00fcne f\u0131rlat. D\u00fc\u015fmanlar i\u00e7erisinden ge\u00e7ti\u011finde ses \u00e7\u0131karan ve g\u00f6r\u00fc\u015f engelleyen bir alan olu\u015fturmak i\u00e7in ETK\u0130NLE\u015eT\u0130R.",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "C\u00e1mara esp\u00eda",
-                "description": "EQUIPA una c\u00e1mara esp\u00eda. DISPARA para colocar la c\u00e1mara esp\u00eda en la ubicaci\u00f3n objetivo. VUELVE A USAR esta habilidad para controlar la visi\u00f3n de la c\u00e1mara. Cuando tengas control de la c\u00e1mara, DISPARA para lanzar un dardo marcador Que revelar\u00e1 la ubicaci\u00f3n de cualquier jugador alcanzado. La c\u00e1mara esp\u00eda se puede recoger para VOLVER A COLOCARLA.",
+                "displayName": "G\u0130ZL\u0130 KAMERA",
+                "description": "Bir gizli kamera KU\u015eAN. Gizli kameray\u0131 hedef konuma yerle\u015ftirmek i\u00e7in ATE\u015e ET. Kamera g\u00f6r\u00fc\u015f\u00fcn\u00fc kontrol etmek i\u00e7in bu yetene\u011fi TEKRAR KULLAN. Kamera kontrol\u00fc sendeyken d\u00fc\u015fmanlar\u0131 i\u015faretleyen bir i\u011fne f\u0131rlatmak i\u00e7in ATE\u015e ET. Bu i\u011fne, isabet etti\u011fi herhangi bir d\u00fc\u015fman\u0131n konumunu A\u00e7\u0131\u011fa \u00c7\u0131kar\u0131r. Bu yetene\u011fi TEKRAR YERLE\u015eT\u0130RMEK \u00fczere b\u0131rakt\u0131\u011f\u0131n yerden alabilirsin.",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Cable trampa",
-                "description": "EQUIPA un cable trampa. DISPARA para colocar un cable trampa destructible pero oculto en la ubicaci\u00f3n objetivo. Crear\u00e1 una l\u00ednea que se extiende entre la ubicaci\u00f3n en la que se ha colocado y la pared opuesta. Los jugadores enemigos que atraviesen un cable trampa quedar\u00e1n anclados, revelados y aturdidos tras un breve lapso si no logran destruir el dispositivo a tiempo. El cable trampa se puede recoger para VOLVER A COLOCARLO.",
+                "displayName": "BUB\u0130 TUZA\u011eI",
+                "description": "Bir bubi tuza\u011f\u0131 KU\u015eAN. Hedef konuma yok edilebilir, gizli bir bubi tuza\u011f\u0131 yerle\u015ftirmek i\u00e7in ATE\u015e ET. Yerle\u015ftirilen konum ile kar\u015f\u0131s\u0131ndaki duvar aras\u0131na bir hat \u00e7ekilir. Yakalanan d\u00fc\u015fmanlar cihaz\u0131 zaman\u0131nda yok edemedikleri takdirde k\u0131sa s\u00fcre i\u00e7inde K\u0131s\u0131tlan\u0131r, A\u00e7\u0131\u011fa \u00c7\u0131kar ve Sersemler. Bu yetene\u011fi TEKRAR YERLE\u015eT\u0130RMEK \u00fczere b\u0131rakt\u0131\u011f\u0131n yerden alabilirsin.",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Hurto neuronal",
-                "description": "\u00dasalo INSTANT\u00c1NEAMENTE sobre un enemigo muerto para descargar informaci\u00f3n sobre su equipo.  Tras un breve lapso de tiempo, se revelar\u00e1 dos veces la posici\u00f3n de todos los jugadores enemigos vivos.",
+                "displayName": "N\u00d6RON HIRSIZI",
+                "description": "\u00d6l\u00fc bir d\u00fc\u015fman \u00fczerinde ANINDA kullan ve tak\u0131m\u0131 hakk\u0131nda bilgi indir. K\u0131sa bir gecikmenin ard\u0131ndan hayatta olan di\u011fer d\u00fc\u015fmanlar\u0131n konumu iki kere A\u00e7\u0131\u011fa \u00c7\u0131kar.",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ultimate/displayicon.png"
             }
         ],
@@ -554,12 +554,12 @@
     },
     {
         "uuid": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
-        "displayName": "Sova",
-        "description": "Nacido en el eterno invierno de la tundra rusa, Sova destaca a la hora de localizar, perseguir y eliminar a los enemigos con una eficiencia y una precisi\u00f3n inclementes. Su arco personalizado junto con su sobrenatural capacidad de rastreamiento hacen que sea imposible escapar. ",
+        "displayName": "SOVA",
+        "description": "Rusya'n\u0131n u\u00e7suz bucaks\u0131z tundralar\u0131nda yeti\u015fen Sova d\u00fc\u015fmanlar\u0131n\u0131 ac\u0131mas\u0131z bir verimlilik ve titizlikle tespit eder, izlerini s\u00fcrer ve onlar\u0131 yok eder. \u00d6zel yay\u0131 ve s\u0131ra d\u0131\u015f\u0131 iz s\u00fcrme yetenekleri ile ondan ka\u00e7san\u0131z da asla saklanamazs\u0131n\u0131z. ",
         "developerName": "Hunter",
         "characterTags": [
-            "Detecci\u00f3n",
-            "Da\u00f1o en \u00e1rea"
+            "Tespit",
+            "Alan Hasar\u0131"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayiconsmall.png",
@@ -581,8 +581,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "\u00d6nc\u00fc",
+            "description": "\u00d6nc\u00fcler, ilerlemesi tehlikeli k\u00f6\u015feleri a\u015fabilmeleri i\u00e7in tak\u0131mlar\u0131na olanaklar yarat\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -590,32 +590,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Flecha explosiva",
-                "description": "EQUIPA un arco con una flecha explosiva. DISPARA para lanzar la flecha explosiva hacia delante. Explotar\u00e1 cuando impacte e infligir\u00e1 da\u00f1o a los enemigos cercanos. MANT\u00c9N PULSADO para ampliar su alcance. ALTERNA EL MODO DE DISPARO para a\u00f1adir hasta dos rebotes a la flecha.",
+                "displayName": "\u015eOK OKU",
+                "description": "\u015eok okuna sahip bir yay KU\u015eAN. Patlay\u0131c\u0131 oku ileri yollamak i\u00e7in ATE\u015e ET. Ok \u00e7arp\u0131\u015fma an\u0131nda infilak eder ve yak\u0131ndaki oyunculara hasar verir. At\u0131\u015f mesafesini uzatmak i\u00e7in ATE\u015e TU\u015eUNU BASILI TUT. Oku iki kereye kadar sektirmek i\u00e7in ALT. ATI\u015e kullan.",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Proyectil de reconocimiento",
-                "description": "EQUIPA un arco con un proyectil de reconocimiento. Se activar\u00e1 cuando impacte y revelar\u00e1 la posici\u00f3n de los enemigos que se encuentren en la l\u00ednea de visi\u00f3n del proyectil. El proyectil puede ser destruido. MANT\u00c9N PULSADO para ampliar su alcance. ALTERNA EL MODO DE DISPARO para a\u00f1adir hasta dos rebotes a la flecha. ",
+                "displayName": "KE\u015e\u0130F OKU",
+                "description": "Ke\u015fif okuna sahip bir yay KU\u015eAN. Ke\u015fif okunu ileri yollamak i\u00e7in ATE\u015e ET. Ok \u00e7arp\u0131\u015fma an\u0131nda etkinle\u015fir ve g\u00f6r\u00fc\u015f hatt\u0131 yak\u0131n\u0131nda kalan d\u00fc\u015fmanlar\u0131n konumunu A\u00e7\u0131\u011fa \u00c7\u0131kar\u0131r. D\u00fc\u015fmanlar bu oku yok edebilir. At\u0131\u015f mesafesini uzatmak i\u00e7in ATE\u015e TU\u015eUNU BASILI TUT. Oku iki kereye kadar sektirmek i\u00e7in ALT. ATI\u015e kullan. ",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Dron de reconocimiento",
-                "description": "EQUIPA un dron de reconocimiento. DISPARA para desplegar el dron y controlar su movimiento. Cuando tengas el control del dron, DISPARA para lanzar un dardo marcador Que revelar\u00e1 la ubicaci\u00f3n de cualquier jugador alcanzado. Los enemigos pueden destruir el Dron de reconocimiento.",
+                "displayName": "BAYKU\u015e DRON",
+                "description": "Bir Bayku\u015f Dron KU\u015eAN. Dronu g\u00f6ndermek ve hareketlerini kontrol etmek i\u00e7in ATE\u015e ET. Dronun kontrol\u00fc sendeyken d\u00fc\u015fmanlar\u0131 i\u015faretleyen bir i\u011fne f\u0131rlatmak i\u00e7in ATE\u015e ET. Bu i\u011fne, isabet etti\u011fi herhangi bir d\u00fc\u015fman\u0131n konumunu A\u00e7\u0131\u011fa \u00c7\u0131kar\u0131r. D\u00fc\u015fmanlar Bayku\u015f Dron'u yok edebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Furia del cazador",
-                "description": "EQUIPA un arco con tres proyectiles de energ\u00eda de largo alcance que atraviesan paredes. DISPARA para lanzar un proyectil de energ\u00eda en l\u00ednea recta frente a Sova, que infligir\u00e1 da\u00f1o y revelar\u00e1 la posici\u00f3n de los enemigos que se encuentren a su paso. Esta habilidad puede VOLVERSE A USAR hasta dos veces m\u00e1s mientras el temporizador de la habilidad est\u00e9 activo.",
+                "displayName": "AVCININ H\u0130DDET\u0130",
+                "description": "\u00dc\u00e7 taneye kadar duvar delici enerji patlamas\u0131 ate\u015fleyebilen bir yay KU\u015eAN. Sova'n\u0131n \u00f6n\u00fcndeki bir hat \u00fczerinde enerji patlamalar\u0131 olu\u015fturmak ve isabet alan d\u00fc\u015fmanlara hasar verip konumlar\u0131n\u0131 A\u00e7\u0131\u011fa \u00c7\u0131karmak i\u00e7in ATE\u015e ET. Bu yetenek, yetenek sayac\u0131 etkinken iki kez daha YEN\u0130DEN KULLANILAB\u0130L\u0130R.",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Tirador infalible",
-                "description": "El arco personalizado de Sova permite que sus flechas reboten contra los obst\u00e1culos del terreno. Mantener pulsado el bot\u00f3n de disparo aumenta la potencia del mismo, y soltarlo lanza la flecha. Utiliza el disparo alternativo para cambiar el n\u00famero de rebotes. Las flechas pueden rebotar en los obst\u00e1culos del terreno. Mantener pulsado el clic izquierdo aumenta el alcance de la trayectoria del proyectil. Clic derecho - Hacer clic derecho permite seleccionar la cantidad de rebotes en el terreno. La flecha sale disparada cuando se deja de pulsar el clic izquierdo.",
+                "displayName": "Tekinsiz Ni\u015fanc\u0131",
+                "description": "Sova'n\u0131n \u00f6zel yap\u0131m yay\u0131, oklar\u0131 atar ve onlar\u0131 \u00e7evredeki y\u00fczeylerden sektirebilir. At\u0131\u015f\u0131 bas\u0131l\u0131 tutmak yay\u0131n g\u00fcc\u00fcn\u00fc y\u00fckler, at\u0131\u015f tu\u015funu b\u0131rakmak da oku serbest b\u0131rak\u0131r. Sekme say\u0131s\u0131n\u0131 ayarlamak i\u00e7in alternatif at\u0131\u015fa bas. Oklar\u0131n y\u00fczeylerden sekebilir. Sol fare tu\u015funu bas\u0131l\u0131 tutmak, yay\u0131n menzil do\u011frultusunu geni\u015fletir. Sa\u011f fare tu\u015fuyla y\u00fczey sekme say\u0131lar\u0131 aras\u0131nda ge\u00e7i\u015f yap. Sol fare tu\u015fu b\u0131rak\u0131ld\u0131\u011f\u0131nda ok serbest kal\u0131r.",
                 "displayIcon": null
             }
         ],
@@ -623,12 +623,12 @@
     },
     {
         "uuid": "1e58de9c-4950-5125-93e9-a0aee9f98746",
-        "displayName": "Killjoy",
-        "description": "Killjoy es una brillante agente alemana que se encarga de tomar posiciones clave del campo de batalla con su arsenal de inventos. Si su da\u00f1o no acaba con los enemigos, su horda de robots ayudar\u00e1n a su equipo a despejarlos en un abrir y cerrar de ojos.",
+        "displayName": "KILLJOY",
+        "description": "Alman d\u00e2hi Killjoy, kendi icatlar\u0131ndan olu\u015fan cephaneli\u011fiyle sava\u015f meydan\u0131n\u0131 kontrol alt\u0131na al\u0131r. Cihazlar\u0131n\u0131n verdi\u011fi hasar rakiplerini durdurmaya yetmezse robotlar\u0131n\u0131n yard\u0131m\u0131yla rakiplerini zay\u0131flatarak onlar\u0131n ortadan kald\u0131r\u0131lmalar\u0131n\u0131 kolayla\u015ft\u0131r\u0131r.",
         "developerName": "Killjoy",
         "characterTags": [
-            "Bloqueo defensivo",
-            "Da\u00f1o en \u00e1rea"
+            "Savunma Tecriti",
+            "Alan Hasar\u0131"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayiconsmall.png",
@@ -650,8 +650,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "G\u00f6zc\u00fc",
+            "description": "G\u00f6zc\u00fcler hem sald\u0131ran hem savunan turlar\u0131nda b\u00f6lgeleri kapatabilen ve kanatlar\u0131 kola\u00e7an eden savunma uzmanlar\u0131d\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -659,26 +659,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Nanoenjambre",
-                "description": "EQUIPA una granada de nanoenjambre. DISPARA para lanzar la granada. Cuando aterriza, la granada enjambre se camufla. ALTERNA EL MODO DE DISPARO para tirarla. ACTIVA el nanoenjambre para desplegar un enjambre de nanobots.  ",
+                "displayName": "NANOS\u00dcR\u00dc",
+                "description": "Nanos\u00fcr\u00fc bombas\u0131 KU\u015eAN. Bombay\u0131 f\u0131rlatmak i\u00e7in ATE\u015e ET. Nanos\u00fcr\u00fc bir yere isabet etti\u011fi anda gizlenir. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. Hasar veren nano robot s\u00fcr\u00fcs\u00fcn\u00fc salmak i\u00e7in Nanos\u00fcr\u00fc'y\u00fc ETK\u0130NLE\u015eT\u0130R.",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Bot de alarma",
-                "description": "EQUIPA un bot de alarma camuflado. DISPARA para desplegar un bot que dar\u00e1 caza a los enemigos que est\u00e9n dentro del alcance. Tras alcanzar su objetivo, el bot explota y aplica vulnerabilidad a los enemigos de la zona. MANT\u00c9N PULSADO EQUIPAR para recoger un bot desplegado.",
+                "displayName": "ALARM BOTU",
+                "description": "Gizli bir Alarm Botu KU\u015eAN. Menzili i\u00e7ine giren d\u00fc\u015fmanlar\u0131n pe\u015fine d\u00fc\u015fen bir robot g\u00f6ndermek i\u00e7in ATE\u015e ET. Robot hedefine ula\u015ft\u0131\u011f\u0131nda patlayarak b\u00f6lge i\u00e7indeki d\u00fc\u015fmanlar\u0131 Savunmas\u0131z hale getirir. G\u00f6nderdi\u011fin botu geri \u00e7a\u011f\u0131rmak i\u00e7in KU\u015eANMA TU\u015eUNU BASILI TUT.",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Torreta",
-                "description": "EQUIPA una torreta. DISPARA para desplegar una torreta que dispara a los enemigos en un cono de 180 grados. ALTERNA EL MODO DE DISPARO para cambiar la direcci\u00f3n de la torreta. MANT\u00c9N PULSADO EQUIPAR para recoger la torreta desplegada. ",
+                "displayName": "TARET",
+                "description": "Bir taret KU\u015eAN. 180 derecelik bir koni i\u00e7indeki d\u00fc\u015fmanlara ate\u015f eden bir taret yerle\u015ftirmek i\u00e7in ATE\u015e ET. ALT. ATI\u015e ile taretin y\u00f6n\u00fcn\u00fc de\u011fi\u015ftir. Yerle\u015ftirdi\u011fin tareti kald\u0131rmak i\u00e7in KU\u015eANMA TU\u015eUNU BASILI TUT. ",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Bloqueo",
-                "description": "EQUIPA el dispositivo de bloqueo. DISPARA para desplegar el dispositivo. Tras un largo periodo de carga, el dispositivo detiene a todos los enemigos que est\u00e9n dentro del radio de efecto. Los enemigos pueden destruir el dispositivo.",
+                "displayName": "TECR\u0130T",
+                "description": "Tecrit cihaz\u0131n\u0131 KU\u015eAN. Cihaz\u0131 yerle\u015ftirmek i\u00e7in ATE\u015e ET. Uzun bir haz\u0131rl\u0131k s\u00fcresinin ard\u0131ndan cihaz\u0131n etki alan\u0131nda kalan d\u00fc\u015fmanlar\u0131n hepsi Al\u0131koyulur. Bu cihaz d\u00fc\u015fmanlar taraf\u0131ndan yok edilebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png"
             }
         ],
@@ -686,8 +686,8 @@
     },
     {
         "uuid": "95b78ed7-4637-86d9-7e41-71ba8c293152",
-        "displayName": "Harbor",
-        "description": "Desde las costas de la India, Harbor llega al campo de batalla armado con tecnolog\u00eda ancestral capaz de controlar el agua. Libera espumosos torrentes y demoledoras olas para escudar a sus aliados o machacar a quien se interponga en su camino.",
+        "displayName": "HARBOR",
+        "description": "Hindistan'\u0131n k\u0131y\u0131lar\u0131ndan gelen Harbor, kadim teknolojilerle suya h\u00fckmederek sahada f\u0131rt\u0131nalar kopar\u0131yor. Dostlar\u0131n\u0131 korumak ve d\u00fc\u015fmanlar\u0131n\u0131 alt etmek i\u00e7in g\u00fc\u00e7l\u00fc ak\u0131nt\u0131lar ve co\u015fkun dalgalar \u00e7a\u011f\u0131r\u0131yor.",
         "developerName": "Mage",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/displayicon.png",
@@ -710,8 +710,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Kontrol Uzman\u0131",
+            "description": "Kontrol uzmanlar\u0131 tak\u0131mlar\u0131n\u0131 ba\u015far\u0131ya g\u00f6t\u00fcrmek i\u00e7in tehlikeli b\u00f6lgeleri ayr\u0131\u015ft\u0131rmakta uzmand\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -719,26 +719,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Cala",
-                "description": "EQUIPA una esfera de agua protectora. DISPARA para lanzarla. ALTERNA EL MODO DE DISPARO para tirarla. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea las balas.",
+                "displayName": "DALGAKIRAN",
+                "description": "Kalkan g\u00f6revi g\u00f6ren bir su k\u00fcresi KU\u015eAN. F\u0131rlatmak i\u00e7in ATE\u015e ET. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. K\u00fcre yere temas edince mermileri engelleyen ve yok edilebilen bir su kalkan\u0131 ortaya \u00e7\u0131kar.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Cascada",
-                "description": "EQUIPA una ola de agua. DISPARA para enviarla hacia delante y hacer que atraviese las paredes. VUELVE A USAR la habilidad para detener la oleada. Los jugadores golpeados se ven ralentizados.",
+                "displayName": "\u00c7A\u011eLAYAN",
+                "description": "Bir su dalgas\u0131 KU\u015eAN. Dalgan\u0131n duvarlar\u0131n i\u00e7inden ge\u00e7erek d\u00fcz bir \u015fekilde ilerlemesi i\u00e7in ATE\u015e ET. Dalgay\u0131 durdurmak i\u00e7in TEKRAR KULLAN. Dalgan\u0131n isabet etti\u011fi oyuncular Yava\u015flar.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Marea alta",
-                "description": "EQUIPA una pared de agua. DISPARA para lanzarla hacia adelante por el suelo. MANT\u00c9N PULSADO DISPARAR para guiar el agua en la direcci\u00f3n de la mira, atravesando los obst\u00e1culos del terreno y creando una pared por todo el recorrido. ALTERNA EL MODO DE DISPARO mientras trazas la pared para acabarla antes de tiempo. Los jugadores golpeados se ven ralentizados.",
+                "displayName": "TA\u015eKIN",
+                "description": "Bir su duvar\u0131 KU\u015eAN. Suyu zemin boyunca hareket ettirmek i\u00e7in ATE\u015e ET. Suyu haritan\u0131n i\u00e7inden ge\u00e7ecek \u015fekilde ni\u015fang\u00e2h\u0131n\u0131n bakt\u0131\u011f\u0131 tarafa y\u00f6neltmek ve g\u00fczerg\u00e2h\u0131 boyunca bir duvar olu\u015fturmak i\u00e7in ATE\u015e TU\u015eUNU BASILI TUT. Suyu erkenden durdurmak i\u00e7in ALT. ATI\u015e'a bas. Dalgan\u0131n isabet etti\u011fi oyuncular Yava\u015flar.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Ajuste de cuentas",
-                "description": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar un g\u00e9iser que nace del suelo. Los enemigos de la zona ser\u00e1n objetivo de varios ataques del g\u00e9iser. Los jugadores que se vean atrapados por un impacto quedan aturdidos.",
+                "displayName": "KAYNAMA NOKTASI",
+                "description": "Yadig\u00e2r\u0131n\u0131n ger\u00e7ek g\u00fcc\u00fcn\u00fc KU\u015eAN. Yerde bir gayzer olu\u015fturmak i\u00e7in ATE\u015e ET. Alan\u0131n i\u00e7indeki d\u00fc\u015fmanlar art arda ger\u00e7ekle\u015fen gayzer patlamalar\u0131n\u0131n hedefi olur. Patlamalar isabet ettikleri oyuncular\u0131 Sersemletir.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ultimate/displayicon.png"
             }
         ],
@@ -746,11 +746,11 @@
     },
     {
         "uuid": "707eab51-4836-f488-046a-cda6bf494859",
-        "displayName": "Viper",
-        "description": "Viper es una qu\u00edmica estadounidense con un amplio arsenal de dispositivos venenosos que le sirven para tomar el control del campo de batalla y cegar a los enemigos. Si las toxinas no acaban con su presa, la paranoia la rematar\u00e1.",
+        "displayName": "VIPER",
+        "description": "Amerikal\u0131 kimyager Viper zehir y\u00fckl\u00fc, \u00e7e\u015fit \u00e7e\u015fit kimyasal cihaz\u0131yla sava\u015f alan\u0131n\u0131 kontrol alt\u0131nda tutarken d\u00fc\u015fman\u0131n g\u00f6r\u00fc\u015f\u00fcn\u00fc de sekteye u\u011frat\u0131r. Av\u0131n\u0131 zehriyle de\u011filse bile akl\u0131yla mutlaka avcunun i\u00e7ine al\u0131r.",
         "developerName": "Pandemic",
         "characterTags": [
-            "Especialista en control de visi\u00f3n"
+            "G\u00f6r\u00fc\u015f Kontrol Uzman\u0131"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayiconsmall.png",
@@ -772,8 +772,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Kontrol Uzman\u0131",
+            "description": "Kontrol uzmanlar\u0131 tak\u0131mlar\u0131n\u0131 ba\u015far\u0131ya g\u00f6t\u00fcrmek i\u00e7in tehlikeli b\u00f6lgeleri ayr\u0131\u015ft\u0131rmakta uzmand\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -781,32 +781,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Nube venenosa",
-                "description": "EQUIPA una granada de gas. DISPARA para lanzar la granada, que permanecer\u00e1 toda la ronda. ALTERNA EL MODO DE DISPARO para tirarla. VUELVE A USAR la habilidad para generar una nube de gas t\u00f3xico a cambio de combustible. La granada se puede VOLVER A USAR m\u00e1s de una vez y se puede recoger para VOLVER A COLOCARLA.",
+                "displayName": "ZEH\u0130R BULUTU",
+                "description": "Bir gaz salg\u0131lay\u0131c\u0131 KU\u015eAN. Tur boyunca devaml\u0131 yerde kalacak salg\u0131lay\u0131c\u0131y\u0131 f\u0131rlatmak i\u00e7in ATE\u015e ET. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. Yak\u0131t harcayarak zehirli bir duman bulutu olu\u015fturmak i\u00e7in TEKRAR KULLAN. Bu yetene\u011fi birden fazla kez TEKRAR KULLANAB\u0130L\u0130R ve TEKRAR YERLE\u015eT\u0130RMEK \u00fczere b\u0131rakt\u0131\u011f\u0131n yerden alabilirsin.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Pantalla t\u00f3xica",
-                "description": "EQUIPA un lanzagranadas de gas que atraviesa los obst\u00e1culos del terreno. DISPARA para desplegar una larga hilera de granadas de gas. VUELVE A USAR la habilidad para crear un alto muro de gas t\u00f3xico a cambio de combustible. Se puede VOLVER A USAR m\u00e1s de una vez.",
+                "displayName": "ZEH\u0130R PERDES\u0130",
+                "description": "Y\u00fczeyleri delip ge\u00e7en bir gaz salg\u0131lay\u0131c\u0131 f\u0131rlat\u0131c\u0131s\u0131 KU\u015eAN. Gaz salg\u0131lay\u0131c\u0131lardan uzun bir hat olu\u015fturmak i\u00e7in ATE\u015e ET. Yetene\u011fi TEKRAR KULLAN ve yak\u0131t kar\u015f\u0131l\u0131\u011f\u0131nda y\u00fcksek bir zehir duvar\u0131 olu\u015ftur. Bu yetenek birden fazla kez TEKRAR KULLANILAB\u0130L\u0130R.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Veneno de serpiente",
-                "description": "EQUIPA un lanzador qu\u00edmico. DISPARA para lanzar un cartucho que se rompe al impactar contra el suelo, lo que genera una zona qu\u00edmica persistente que inflige da\u00f1o y aplica vulnerabilidad.",
+                "displayName": "AS\u0130T HAVUZU",
+                "description": "Bir kimyasal f\u0131rlat\u0131c\u0131 KU\u015eAN. Yere \u00e7arpt\u0131\u011f\u0131nda par\u00e7alanan bir kaps\u00fcl f\u0131rlatmak i\u00e7in ATE\u015e ET. Olu\u015fturdu\u011fu uzun s\u00fcreli kimyasal alanda kalan d\u00fc\u015fmanlar hasar al\u0131r ve Savunmas\u0131z hale gelir.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Pozo de la v\u00edbora",
-                "description": "EQUIPA un pulverizador qu\u00edmico. DISPARA para pulverizar una nube qu\u00edmica en todas direcciones alrededor de Viper, lo que genera una gran nube que limita la visi\u00f3n de los jugadores y aplica declive a la vida de los enemigos que se encuentren dentro de ella. MANT\u00c9N PULSADA la tecla de habilidad para hacer que la nube se disperse antes de tiempo.",
+                "displayName": "VIPER'IN \u0130N\u0130",
+                "description": "Bir kimyasal p\u00fcsk\u00fcrt\u00fcc\u00fc KU\u015eAN. Viper'\u0131n etraf\u0131nda her y\u00f6ne yay\u0131lan kimyasal bir bulut olu\u015fturmak i\u00e7in ATE\u015e ET. Olu\u015fan geni\u015f bulut, i\u00e7inde kalan oyuncular\u0131n G\u00f6r\u00fc\u015f\u00fcn\u00fc K\u0131s\u0131tlar ve i\u00e7inde kalan d\u00fc\u015fmanlar\u0131n canlar\u0131n\u0131 \u00c7\u00fcr\u00fct\u00fcr. Bulutu erken da\u011f\u0131tmak i\u00e7in yetenek tu\u015funu BASILI TUT.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Toxicidad",
-                "description": "Tus habilidades emplean como combustible una toxina que vas generando de forma gradual.  Los enemigos que atraviesan Nube venenosa, Pantalla t\u00f3xica o Pozo de la v\u00edbora de Viper reciben al menos 30 de descomposici\u00f3n al instante. El nivel de descomposici\u00f3n aumenta cuanto m\u00e1s tiempo permanecen en contacto con la fuente.",
+                "displayName": "Zehirli",
+                "description": "Yeteneklerini kullanman\u0131 sa\u011flayan zehri zamanla \u00fcretir ve yenilersin. Viper'\u0131n Zehir Bulutu, Zehir Perdesi veya Viper'\u0131n \u0130ni'nin i\u00e7inden ge\u00e7en d\u00fc\u015fmanlara an\u0131nda en az 30 \u00c7\u00fcr\u00fcme uygulan\u0131r. Bu yeteneklere maruz kalma s\u00fcresine g\u00f6re \u00c7\u00fcr\u00fcme oran\u0131 artar.",
                 "displayIcon": null
             }
         ],
@@ -814,12 +814,12 @@
     },
     {
         "uuid": "eb93336a-449b-9c1b-0a54-a891f7921d69",
-        "displayName": "Phoenix",
-        "description": "Phoenix proviene del Reino Unido y sus poderes estelares salen a relucir con su estilo de combate, que prende fuego al campo de batalla de forma deslumbrante. Con apoyo o en solitario, \u00e9l es quien decide cu\u00e1ndo y c\u00f3mo se lucha.",
+        "displayName": "PHOENIX",
+        "description": "Aram\u0131za Birle\u015fik Krall\u0131k'tan kat\u0131lan ve y\u0131ld\u0131zlardan ald\u0131\u011f\u0131 g\u00fcc\u00fc d\u00f6v\u00fc\u015f stilinin her noktas\u0131na yans\u0131tan Phoenix, sava\u015f alan\u0131n\u0131 alevlerle ve patlamalarla ayd\u0131nlat\u0131r. Arkas\u0131nda destek olsun olmas\u0131n, bildi\u011fi gibi sava\u015fmak i\u00e7in ileri at\u0131laca\u011f\u0131ndan \u015f\u00fcpheniz olmas\u0131n.",
         "developerName": "Phoenix",
         "characterTags": [
-            "Flexibilidad",
-            "Aguante"
+            "Esneklik",
+            "Kendine Yetme"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayiconsmall.png",
@@ -841,8 +841,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "D\u00fcellocu",
+            "description": "D\u00fcellocular yetenek ve becerilerini kullanarak tak\u0131mlar\u0131 i\u00e7in rakibe hasar ya\u011fd\u0131ran ve \u00e7at\u0131\u015fma ba\u015flatan, kendi kendilerine yeten, etkili sava\u015f\u00e7\u0131lard\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -850,32 +850,32 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Llamarada",
-                "description": "EQUIPA una pared de llamas. DISPARA para crear una l\u00ednea de llamas que avanza hacia adelante, lo que forma una pared de fuego que bloquea la visi\u00f3n e inflige da\u00f1o a los jugadores enemigos que la atraviesen. El muro de fuego cura a Phoenix, en lugar de infligirle da\u00f1o. MANT\u00c9N PULSADO DISPARAR para curvar la pared en la direcci\u00f3n de la mira.",
+                "displayName": "ATE\u015eTEN DUVAR",
+                "description": "Bir ate\u015f duvar\u0131 KU\u015eAN. \u0130lerleyen, i\u00e7inden ge\u00e7enlerin g\u00f6r\u00fc\u015f\u00fcn\u00fc engelleyen ve onlara hasar veren ate\u015f duvar\u0131n\u0131 g\u00f6ndermek i\u00e7in ATE\u015e ET. Ate\u015f duvar\u0131 Phoenix'e hasar vermek yerine onu iyile\u015ftirir. Ate\u015f duvar\u0131n\u0131 ni\u015fang\u00e2h\u0131n y\u00f6n\u00fcnde b\u00fckmek i\u00e7in BASILI TUTARAK ATE\u015e ET.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Bola curva",
-                "description": "EQUIPA un orbe fulgurante que dibuja una trayectoria curva y explota poco despu\u00e9s de haberlo lanzado. DISPARA para lanzar el orbe fulgurante hacia la izquierda, lo que har\u00e1 que detone y ciegue a cualquier jugador que lo vea. ALTERNA EL MODO DE DISPARO para lanzar el orbe fulgurante hacia la derecha.",
+                "displayName": "FALSO",
+                "description": "Kavisli giden ve f\u0131rlat\u0131ld\u0131ktan k\u0131sa bir s\u00fcre sonra patlayan bir i\u015faret k\u00fcresi KU\u015eAN. \u0130\u015faret k\u00fcresine sola do\u011fru y\u00f6n vermek i\u00e7in ATE\u015e ET. K\u00fcre patlad\u0131\u011f\u0131nda onu g\u00f6ren t\u00fcm oyuncular K\u00f6r olur. K\u00fcreyi sa\u011fa do\u011fru g\u00f6ndermek i\u00e7in ALT. ATI\u015e kullan.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Combusti\u00f3n",
-                "description": "EQUIPA una bola de fuego. DISPARA para lanzar una bola de fuego que explota transcurrido un tiempo determinado o al impactar contra el suelo, lo que crea una zona de fuego persistente que inflige da\u00f1o a los enemigos. La zona de fuego cura a Phoenix, en lugar de infligirle da\u00f1o. ALTERNA EL MODO DE DISPARO para tirarlo.",
+                "displayName": "YAKAR TOP",
+                "description": "Bir alev topu KU\u015eAN. Yere temas etti\u011finde ya da bir gecikmenin ard\u0131ndan patlayan alev topunu f\u0131rlatmak i\u00e7in ATE\u015e ET. Yerde bir s\u00fcre kalan alev b\u00f6lgesi d\u00fc\u015fmanlara hasar verir. Alev b\u00f6lgesi Phoenix'e hasar vermek yerine onu iyile\u015ftirir. Yava\u015f\u00e7a f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Cenizas",
-                "description": "Coloca INSTANT\u00c1NEAMENTE un marcador en la ubicaci\u00f3n de Phoenix. Mientras esta habilidad est\u00e9 activa, morir o dejar que se agote el temporizador har\u00e1 que se termine la habilidad y devolver\u00e1 a Phoenix a esta ubicaci\u00f3n con toda la vida y la cantidad de armadura que ten\u00eda cuando lanz\u00f3 la habilidad.",
+                "displayName": "YAKARD\u00d6NER",
+                "description": "Phoenix'in bulundu\u011fu konumu ANINDA i\u015faretle. Yetenek etkinken \u00f6lmek veya s\u00fcresinin dolmas\u0131 yetene\u011fi sonland\u0131r\u0131r ve Phoenix'i i\u015faretlenen konumda dolu canla ve yetene\u011fi kulland\u0131\u011f\u0131 esnadaki z\u0131rh miktar\u0131yla hayata d\u00f6nd\u00fcr\u00fcr.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Calentamiento",
-                "description": "Al pisar su propio fuego, cura a Phoenix DE FORMA PASIVA en lugar de recibir da\u00f1o.",
+                "displayName": "Tutu\u015fuyor",
+                "description": "Phoenix kendi ate\u015finin i\u00e7inde dururken hasar almak yerine PAS\u0130F olarak \u0130yile\u015fir",
                 "displayIcon": null
             }
         ],
@@ -883,8 +883,8 @@
     },
     {
         "uuid": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
-        "displayName": "Astra",
-        "description": "Astra, la agente ghanesa, controla las energ\u00edas del cosmos para dar forma al campo de batalla a su antojo. Con pleno dominio de su forma astral y un gran talento para la anticipaci\u00f3n estrat\u00e9gica, siempre va eones por delante de los movimientos de sus enemigos.",
+        "displayName": "ASTRA",
+        "description": "Ganal\u0131 ajan Astra, kozmosun enerjisini kullanarak sava\u015f meydan\u0131n\u0131 lehine de\u011fi\u015ftirebiliyor. Astral yolculu\u011fu \u00fczerinde tam kontrole sahip olmas\u0131 ve engin stratejik \u00f6ng\u00f6r\u00fcs\u00fcyle, d\u00fc\u015fman\u0131n bir sonraki hamlesinden her zaman birka\u00e7 \u0131\u015f\u0131k y\u0131l\u0131 \u00f6nde.",
         "developerName": "Rift",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/displayicon.png",
@@ -907,8 +907,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Kontrol Uzman\u0131",
+            "description": "Kontrol uzmanlar\u0131 tak\u0131mlar\u0131n\u0131 ba\u015far\u0131ya g\u00f6t\u00fcrmek i\u00e7in tehlikeli b\u00f6lgeleri ayr\u0131\u015ft\u0131rmakta uzmand\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -916,32 +916,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Pulso nova",
-                "description": "Coloca estrellas en Forma astral (tecla de la definitiva).\nACTIVA una estrella para detonar un Pulso nova. El Pulso nova se carga brevemente y explota, lo que aturde a todos los jugadores en la zona.",
+                "displayName": "NOVA DARBES\u0130",
+                "description": "Astral Yolcu halindeyken y\u0131ld\u0131z yerle\u015ftir (ulti tu\u015fu).\n\nPatlayarak Nova Darbesi olu\u015fturmas\u0131 i\u00e7in bir y\u0131ld\u0131z\u0131 ETK\u0130NLE\u015eT\u0130R. Nova Darbesi k\u0131sa bir s\u00fcre g\u00fc\u00e7 toplad\u0131ktan sonra patlayarak etki alan\u0131 i\u00e7indeki t\u00fcm oyuncular\u0131 Sersemletir.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Nebulosa / Disipar",
-                "description": "Coloca estrellas en Forma astral (tecla de la definitiva). \nACTIVA una estrella para transformarla en una Nebulosa (humo).\nUSA una estrella para disiparla, lo que recupera la estrella para poder volver a colocarla tras un tiempo.\nDisipar una estrella crea una breve Nebulosa falsa en su ubicaci\u00f3n antes de recuperarla.",
+                "displayName": "YILDIZ BULUTU / KOZM\u0130K \u00c7\u00d6Z\u00dcN\u00dcM",
+                "description": "Astral Yolcu halindeyken y\u0131ld\u0131z yerle\u015ftir (ulti tu\u015fu). \n\nD\u00f6n\u00fc\u015ferek Y\u0131ld\u0131z Bulutu (duman) olu\u015fturmas\u0131 i\u00e7in bir y\u0131ld\u0131z\u0131 ETK\u0130NLE\u015eT\u0130R.\n\nBir y\u0131ld\u0131z\u0131 Kozmik \u00c7\u00f6z\u00fcn\u00fcm'le geri almak i\u00e7in KULLAN. Geri al\u0131nan y\u0131ld\u0131z\u0131 belli bir s\u00fcre sonra tekrar yerle\u015ftirebilirsin.\n\nKozmik \u00c7\u00f6z\u00fcn\u00fcm, d\u00f6nmeden \u00f6nce y\u0131ld\u0131z\u0131n yerinde k\u0131sa s\u00fcreli\u011fine sahte bir Y\u0131ld\u0131z Bulutu olu\u015fturur.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Pozo gravitatorio",
-                "description": "Coloca estrellas en Forma astral (tecla de la definitiva).\nACTIVA una estrella para crear un Pozo gravitatorio. Atrae hacia el centro a todos los jugadores en la zona antes de que explote, lo que causa que todos los jugadores atrapados en el interior se vuelvan vulnerables.",
+                "displayName": "\u00c7EK\u0130M ALANI",
+                "description": "Astral Yolcu halindeyken y\u0131ld\u0131z yerle\u015ftir (ulti tu\u015fu).\n\n\u00c7ekim Alan\u0131 olu\u015fturmak i\u00e7in bir y\u0131ld\u0131z\u0131 ETK\u0130NLE\u015eT\u0130R. Etki alan\u0131 i\u00e7indeki oyuncular merkeze \u00e7ekilir ve ard\u0131ndan merkez patlayarak i\u00e7erideki oyuncular\u0131 Savunmas\u0131z hale getirir.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Forma astral / Separaci\u00f3n\nc\u00f3smica",
-                "description": "ACTIVA para entrar en Forma astral y poder colocar estrellas con el DISPARO. Las estrellas se pueden reactivar m\u00e1s tarde para transformarlas en un Pulso nova, una Nebulosa o un Pozo gravitatorio.\nCuando Separaci\u00f3n c\u00f3smica est\u00e1 cargada, usa el DISPARO ALTERNATIVO en Forma astral para empezar a apuntar y, a continuaci\u00f3n, el DISPARO para elegir dos ubicaciones. Se crear\u00e1 una Separaci\u00f3n c\u00f3smica infinita que conecte los dos puntos. Separaci\u00f3n c\u00f3smica bloquea las balas y el sonido.",
+                "displayName": "ASTRAL YOLCU / KOZM\u0130K AYRIM",
+                "description": "ATI\u015e tu\u015fuyla y\u0131ld\u0131z yerle\u015ftirebilece\u011fin Astral Yolcu haline ge\u00e7mek i\u00e7in ETK\u0130NLE\u015eT\u0130R. Yerle\u015ftirilen y\u0131ld\u0131zlar daha sonra etkinle\u015ftirilerek Nova Darbesi, Y\u0131ld\u0131z Bulutu ve \u00c7ekim Alan\u0131'na d\u00f6n\u00fc\u015ft\u00fcr\u00fclebilir.\n\nKozmik Ayr\u0131m yetene\u011fi haz\u0131r oldu\u011funda Astral Yolcu halindeyken ALT. ATI\u015e kullanarak hedef al ve ATI\u015e tu\u015funa basarak iki konum se\u00e7. Bu iki konum aras\u0131nda sonsuz bir Kozmik Ayr\u0131m ba\u011flant\u0131s\u0131 olu\u015fur. Kozmik Ayr\u0131m mermileri ve sesleri engeller.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Forma astral",
-                "description": "ACTIVA la definitiva para entrar en Forma astral y colocar estrellas con el DISPARO PRINCIPAL. Apunta a las estrellas con Pulso nova, Nebulosa y Pozo gravitatorio para usar dichas habilidades.",
+                "displayName": "ASTRAL YOLCU",
+                "description": "Astral Yolcu haline ge\u00e7mek i\u00e7in ultiyi ETK\u0130NLE\u015eT\u0130R ve TEMEL ATI\u015e tu\u015fuyla y\u0131ld\u0131z yerle\u015ftir. Yeteneklerini kullanmak i\u00e7in y\u0131ld\u0131zlar\u0131 Nova Darbesi, Y\u0131ld\u0131z Bulutu veya \u00c7ekim Alan\u0131'yla hedef al.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/passive/displayicon.png"
             }
         ],
@@ -949,12 +949,12 @@
     },
     {
         "uuid": "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
-        "displayName": "Brimstone",
-        "description": "De origen estadounidense, Brimstone cuenta con un arsenal de \u00f3rbita que garantiza que su equipo siempre vaya por delante. Su capacidad para aportar herramientas de utilidad de una forma segura y precisa lo convierte en un comandante de primera l\u00ednea sin igual.",
+        "displayName": "BRIMSTONE",
+        "description": "Aram\u0131za ABD'den kat\u0131lan Brimstone'un hava ara\u00e7lar\u0131 sayesinde tak\u0131m\u0131 her zaman 1-0 \u00f6ndedir. Gereken her t\u00fcrl\u00fc i\u015flevselli\u011fi titizlikle ve g\u00fcvenle sa\u011flamas\u0131, muharebe alan\u0131nda bu kumandan\u0131 e\u015fsiz k\u0131lar.",
         "developerName": "Sarge",
         "characterTags": [
-            "Control de visi\u00f3n",
-            "Da\u00f1o en \u00e1rea"
+            "G\u00f6r\u00fc\u015f Kontrol\u00fc",
+            "Alan Hasar\u0131"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayiconsmall.png",
@@ -976,8 +976,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Kontrol Uzman\u0131",
+            "description": "Kontrol uzmanlar\u0131 tak\u0131mlar\u0131n\u0131 ba\u015far\u0131ya g\u00f6t\u00fcrmek i\u00e7in tehlikeli b\u00f6lgeleri ayr\u0131\u015ft\u0131rmakta uzmand\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -985,26 +985,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Baliza estimulante",
-                "description": "Lanza INSTANT\u00c1NEAMENTE una baliza estimulante. Al aterrizar, crea un campo que otorga Estimulante de combate y un aumento de velocidad a los jugadores.",
+                "displayName": "KUVVET \u0130\u015eARET\u0130",
+                "description": "ANINDA bir Kuvvet \u0130\u015fareti at. Yere inen Kuvvet \u0130\u015fareti oyunculara Kuvvetli Sava\u015f ve H\u0131z Takviyesi sa\u011flayan bir alan olu\u015fturur.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Incendiario",
-                "description": "EQUIPA un lanzagranadas incendiarias. DISPARA una granada que detona cuando se detiene en el suelo, lo que genera una zona de fuego persistente que da\u00f1a a los jugadores que est\u00e9n en su interior.",
+                "displayName": "YAKICI",
+                "description": "Bir yang\u0131n bombas\u0131 atar KU\u015eAN. Yerde durdu\u011fu anda infilak eden bir bomba f\u0131rlatmak i\u00e7in ATE\u015e ET. Yerde bir s\u00fcre kalan alev b\u00f6lgesi, i\u00e7indeki oyunculara hasar verir.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Cortina de humo",
-                "description": "EQUIPA un mapa t\u00e1ctico. DISPARA para fijar ubicaciones en las que aparecer\u00e1n nubes de humo de Brimstone. ALTERNA EL MODO DE DISPARO para confirmar. Esto liberar\u00e1 nubes de humo de larga duraci\u00f3n que bloquear\u00e1n la visi\u00f3n en la zona seleccionada.",
+                "displayName": "DUMANLI HAVA SAHASI",
+                "description": "Bir taktik harita KU\u015eAN. Brimstone'un duman bulutlar\u0131n\u0131n inece\u011fi konumlar\u0131 belirlemek i\u00e7in ATE\u015e ET. Se\u00e7ili alanda g\u00f6r\u00fc\u015f engelleyen uzun s\u00fcreli duman bulutlar\u0131 olu\u015fturmak i\u00e7in ALT. ATI\u015e ile onayla.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Golpe orbital",
-                "description": "EQUIPA un mapa t\u00e1ctico. DISPARA para lanzar un golpe orbital en la ubicaci\u00f3n objetivo con un l\u00e1ser persistente, que provocar\u00e1 un gran da\u00f1o prolongado a los jugadores que se encuentren en la zona seleccionada.",
+                "displayName": "UYDU SALDIRISI",
+                "description": "Bir taktik harita KU\u015eAN. Se\u00e7ili konuma bir s\u00fcre yerde kalan bir uydu sald\u0131r\u0131s\u0131 lazeri f\u0131rlatmak i\u00e7in ATE\u015e ET. Se\u00e7ili alanda kalan oyuncular zaman i\u00e7inde y\u00fcksek hasar al\u0131r.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1012,8 +1012,8 @@
     },
     {
         "uuid": "bb2a4828-46eb-8cd1-e765-15848195d751",
-        "displayName": "Neon",
-        "description": "Neon, una agente filipina, se lanza hacia la batalla a una velocidad trepidante, disparando descargas bioel\u00e9ctricas tan r\u00e1pido como las genera su cuerpo. Se adelanta para pillar a sus enemigos desprevenidos y acabar con ellos m\u00e1s r\u00e1pida que el rayo.",
+        "displayName": "NEON",
+        "description": "Filipinli Ajan Neon, \u015foke edici bir h\u0131zla \u00f6ne at\u0131l\u0131r ve bedeninin \u00fcretti\u011fi biyoelektrik dalgalar\u0131n\u0131 d\u00fc\u015fmanlar\u0131n \u00fcst\u00fcne salar. D\u00fc\u015fmanlar\u0131 gafil avlamak i\u00e7in yar\u0131\u015f\u0131rcas\u0131na ko\u015far ve hepsini y\u0131ld\u0131r\u0131m h\u0131z\u0131yla indirir.",
         "developerName": "Sprinter",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/displayicon.png",
@@ -1036,8 +1036,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "D\u00fcellocu",
+            "description": "D\u00fcellocular yetenek ve becerilerini kullanarak tak\u0131mlar\u0131 i\u00e7in rakibe hasar ya\u011fd\u0131ran ve \u00e7at\u0131\u015fma ba\u015flatan, kendi kendilerine yeten, etkili sava\u015f\u00e7\u0131lard\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1045,26 +1045,26 @@
         "abilities": [
             {
                 "slot": "Ability2",
-                "displayName": "Cambio de marcha",
-                "description": "Canaliza INSTANT\u00c1NEAMENTE el poder de Neon para aumentar su velocidad. Cuando est\u00e9 cargada, utiliza el DISPARO ALTERNATIVO para activar un deslizamiento el\u00e9ctrico. La carga del deslizamiento se reinicia cada dos asesinatos.",
+                "displayName": "Y\u00dcKSEK DEV\u0130R",
+                "description": "Neon'u H\u0131zland\u0131rmak i\u00e7in ANINDA g\u00fcc\u00fcn\u00fc odakla. Y\u00fck\u00fc doldu\u011funda, ALT. ATI\u015e'la elektrikli kayma hareketini etkinle\u015ftir. Her iki skorda bir kayma hareketinin y\u00fck\u00fc dolar.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Proyectil electrizante",
-                "description": "Lanza INSTANT\u00c1NEAMENTE un rayo de energ\u00eda que rebota una vez. Al golpear una superficie, el rayo electrifica el suelo de debajo con una explosi\u00f3n aturdidora.",
+                "displayName": "ELEKTRO OK",
+                "description": "ANINDA bir enerji oku f\u0131rlat. Ok bir kere seker. Ok bir y\u00fczeye \u00e7arpt\u0131\u011f\u0131nda Sersemletici bir patlamayla alt\u0131ndaki zemine elektrik ak\u0131m\u0131 verir.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "V\u00eda r\u00e1pida",
-                "description": "DISPARA dos l\u00edneas de energ\u00eda hacia delante por el suelo. Se desplazan una corta distancia o hasta chocar contra alg\u00fan obst\u00e1culo. Entonces, se alzan para convertirse en muros de energ\u00eda est\u00e1tica que bloquean la visi\u00f3n.",
+                "displayName": "HIZ \u015eER\u0130D\u0130",
+                "description": "\u00d6n\u00fcne do\u011fru, k\u0131sa bir mesafe veya bir y\u00fczeye \u00e7arpana kadar ilerleyen iki enerji hatt\u0131 \u00e7\u0131karmak i\u00e7in ATE\u015e ET. Bu enerji hatlar\u0131, g\u00f6r\u00fc\u015f engelleyen statik elektrik duvarlar\u0131na d\u00f6n\u00fc\u015f\u00fcr.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Sobrecarga",
-                "description": "Neon desata todo su poder y velocidad durante un breve periodo de tiempo. DISPARA para canalizar su poder en forma de un mort\u00edfero rayo que permite apuntar con precisi\u00f3n al moverse.",
+                "displayName": "ENERJ\u0130 PATLAMASI",
+                "description": "Neon'un t\u00fcm g\u00fcc\u00fcn\u00fc ve h\u0131z\u0131n\u0131 k\u0131sa bir s\u00fcreli\u011fine etkinle\u015ftir. G\u00fcc\u00fcn\u00fc, hareket ederken isabetlili\u011fi y\u00fcksek olan \u00f6l\u00fcmc\u00fcl bir \u0131\u015f\u0131n sald\u0131r\u0131s\u0131na d\u00f6n\u00fc\u015ft\u00fcrmek i\u00e7in ATE\u015e ET.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1072,8 +1072,8 @@
     },
     {
         "uuid": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
-        "displayName": "Yoru",
-        "description": "Yoru, nacido en Jap\u00f3n, abre agujeros en el tejido de la realidad para infiltrarse tras las l\u00edneas enemigas sin ser visto. Utiliza el enga\u00f1o y la agresividad por igual para acabar con sus objetivos antes de que sepan qu\u00e9 ha pasado.",
+        "displayName": "YORU",
+        "description": "Japon Yoru, ger\u00e7eklikte a\u00e7t\u0131\u011f\u0131 ge\u00e7itlerden ge\u00e7erek d\u00fc\u015fman hatt\u0131na sinsice s\u0131z\u0131yor. Yan\u0131lsamalardan ve kaba kuvvetten e\u015fit oranda faydalanarak hedeflerini g\u00f6z a\u00e7\u0131p kapay\u0131ncaya kadar indiriyor.",
         "developerName": "Stealth",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/displayicon.png",
@@ -1096,8 +1096,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "D\u00fcellocu",
+            "description": "D\u00fcellocular yetenek ve becerilerini kullanarak tak\u0131mlar\u0131 i\u00e7in rakibe hasar ya\u011fd\u0131ran ve \u00e7at\u0131\u015fma ba\u015flatan, kendi kendilerine yeten, etkili sava\u015f\u00e7\u0131lard\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1105,26 +1105,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Enga\u00f1o",
-                "description": "EQUIPA un eco que se transforma en una imagen id\u00e9ntica de Yoru al activarse. DISPARA para activar la imagen al instante y enviarla hacia delante. ALTERNA el modo de disparo para colocar un eco inactivo. USA para transformar un eco inactivo en una imagen y enviarla hacia delante.  Las im\u00e1genes explotan con un destello al ser destruidas por enemigos.",
+                "displayName": "FAKE AT",
+                "description": "Etkinle\u015ftirildi\u011finde Yoru'nun birebir kopyas\u0131 bi\u00e7iminde bir yan\u0131lsama KU\u015eAN. Yan\u0131lsamay\u0131 etkinle\u015ftirerek ileri g\u00f6ndermek i\u00e7in ATE\u015e ET. Hareketsiz bir yan\u0131lsama yerle\u015ftirmek i\u00e7in ALT. ATI\u015e'a bas. Yerle\u015ftirilmi\u015f hareketsiz yan\u0131lsaman\u0131n ileri y\u00fcr\u00fcmesi i\u00e7in KULLAN'a bas. Yan\u0131lsamalar d\u00fc\u015fmanlar taraf\u0131ndan yok edildi\u011finde K\u00f6r Edici bir fla\u015fla patlar.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Punto ciego",
-                "description": "EQUIPA para arrancar un fragmento dimensional inestable de la realidad. DISPARA para lanzar el fragmento, lo que activa un destello que se carga al impactar contra una superficie s\u00f3lida.",
+                "displayName": "K\u00d6R NOKTA",
+                "description": "Karars\u0131z bir boyut par\u00e7ac\u0131\u011f\u0131n\u0131 ger\u00e7eklikten kopar\u0131p almak i\u00e7in KU\u015eAN. Par\u00e7ac\u0131\u011f\u0131 f\u0131rlatmak i\u00e7in ATE\u015e ET. F\u0131rlatt\u0131\u011f\u0131n par\u00e7ac\u0131k sert bir y\u00fczeye \u00e7arpt\u0131\u011f\u0131nda K\u00f6r Edici bir \u0131\u015f\u0131k sa\u00e7ar.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Infiltraci\u00f3n",
-                "description": "EQUIPA un v\u00ednculo de grietas. DISPARA para lanzarlo hacia delante. ALTERNA EL MODO DE DISPARO para colocarlo en el sitio. ACTIVA para teleportarte a la ubicaci\u00f3n del v\u00ednculo. USA para activar un teleportar falso.",
+                "displayName": "\u00c7ATKAPI",
+                "description": "Bir boyut ge\u00e7idi k\u00fcresi KU\u015eAN. K\u00fcreyi ilerletmek i\u00e7in ATE\u015e ET. K\u00fcreyi sabit bir yere yerle\u015ftirmek i\u00e7in ALT. ATI\u015e kullan. K\u00fcrenin bulundu\u011fu konuma \u0131\u015f\u0131nlanmak i\u00e7in k\u00fcreyi ETK\u0130NLE\u015eT\u0130R. Sahte bir \u0131\u015f\u0131nlanma g\u00f6r\u00fcnt\u00fcs\u00fc vermek i\u00e7in KULLAN.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Viaje interdimensional",
-                "description": "EQUIPA una m\u00e1scara que te permite ver entre dimensiones. DISPARA para adentrarte en la dimensi\u00f3n de Yoru. Los enemigos que est\u00e9n fuera no podr\u00e1n verte ni hacerte da\u00f1o. REACTIVA la habilidad para salir antes de la dimensi\u00f3n de Yoru.",
+                "displayName": "BOYUTLARARASI GE\u00c7\u0130\u015e",
+                "description": "Boyutlararas\u0131n\u0131 g\u00f6rebilen bir maske KU\u015eAN. Yoru'nun boyutuna ge\u00e7mek i\u00e7in ATE\u015e ET. Yoru'nun boyutundayken d\u0131\u015far\u0131daki d\u00fc\u015fmanlar taraf\u0131ndan g\u00f6r\u00fclemez ve onlardan etkilenmezsin. Yoru'nun boyutundan erken ayr\u0131lmak i\u00e7in TEKRAR ETK\u0130NLE\u015eT\u0130R.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1132,12 +1132,12 @@
     },
     {
         "uuid": "569fdd95-4d10-43ab-ca70-79becc718b46",
-        "displayName": "Sage",
-        "description": "Originaria de China, Sage destaca a la hora de crear espacios seguros para su equipo all\u00e1 donde va. Sus capacidades especiales para revivir a compa\u00f1eros ca\u00eddos en batalla y para mantener a raya los asaltos enemigos la convierten en la calma en mitad de la tormenta para su equipo.",
+        "displayName": "SAGE",
+        "description": "\u00c7inli ve kap\u0131 gibi Sage gitti\u011fi her yerde kendisini ve tak\u0131m\u0131n\u0131 g\u00fcvende tutar. \u00d6ld\u00fcr\u00fclen silah arkada\u015flar\u0131n\u0131 hayata d\u00f6nd\u00fcrme yetene\u011fi ve agresif sald\u0131r\u0131lar\u0131 bertaraf edebilmesiyle, cehennemvari sava\u015f meydan\u0131nda etraf\u0131na huzur verir.",
         "developerName": "Thorne",
         "characterTags": [
-            "Recuperaci\u00f3n",
-            "Paralizaci\u00f3n"
+            "\u0130yile\u015fme",
+            "Oyalama"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayiconsmall.png",
@@ -1159,8 +1159,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "G\u00f6zc\u00fc",
+            "description": "G\u00f6zc\u00fcler hem sald\u0131ran hem savunan turlar\u0131nda b\u00f6lgeleri kapatabilen ve kanatlar\u0131 kola\u00e7an eden savunma uzmanlar\u0131d\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -1168,26 +1168,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Orbe de ralentizaci\u00f3n",
-                "description": "EQUIPA un orbe de ralentizaci\u00f3n. DISPARA para lanzar hacia adelante un orbe de ralentizaci\u00f3n que explota al aterrizar, lo que genera un campo persistente que ralentiza a los jugadores que se encuentren en su interior.",
+                "displayName": "YAVA\u015eLATAN K\u00dcRE",
+                "description": "Bir yava\u015flatma k\u00fcresi KU\u015eAN. Yere temas etti\u011finde patlayarak bir s\u00fcre yerde kalan ve olu\u015fturdu\u011fu alanda kalan oyuncular\u0131 Yava\u015flatan bir yava\u015flatma k\u00fcresi g\u00f6ndermek i\u00e7in ATE\u015e ET.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Orbe de sanaci\u00f3n",
-                "description": "EQUIPA un orbe de sanaci\u00f3n. DISPARA con la mira sobre un aliado herido para curarlo durante un breve periodo. ALTERNA EL MODO DE DISPARO cuando Sage est\u00e9 herida para que se cure a s\u00ed misma durante un breve periodo.",
+                "displayName": "CAN K\u00dcRES\u0130",
+                "description": "Bir iyile\u015ftirme k\u00fcresi KU\u015eAN. Ni\u015fang\u00e2h\u0131n\u0131 hasar alm\u0131\u015f bir silah arkada\u015f\u0131na do\u011frult ve onu Zaman \u0130\u00e7inde \u0130yile\u015ftirmek i\u00e7in ATE\u015e ET. Sage hasar ald\u0131ysa, kendini Zaman \u0130\u00e7inde \u0130yile\u015ftirmek i\u00e7in ALT. ATI\u015e kullan.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Orbe barrera",
-                "description": "EQUIPA un orbe barrera. DISPARA para colocar una pared que se fortalece tras unos segundos. Utiliza el DISPARO ALTERNATIVO para rotarla antes de crearla.",
+                "displayName": "BAR\u0130YER K\u00dcRES\u0130",
+                "description": "Bir Bariyer K\u00fcresi KU\u015eAN. Birka\u00e7 saniye sonra g\u00fc\u00e7lenen bir duvar yerle\u015ftirmek i\u00e7in ATE\u015e ET. ALT. ATI\u015e, hedefleyiciyi d\u00f6nd\u00fcr\u00fcr.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Resurrecci\u00f3n",
-                "description": "EQUIPA una habilidad de resurrecci\u00f3n. DISPARA con la mira sobre un aliado muerto para empezar a resucitarlo. Tras un breve periodo de canalizaci\u00f3n, el aliado resucitar\u00e1 con toda la vida.",
+                "displayName": "D\u0130R\u0130L\u0130\u015e",
+                "description": "Bir diriltme yetene\u011fi KU\u015eAN. Ni\u015fang\u00e2h\u0131n\u0131 dost bir cesede do\u011frult ve onu hayata d\u00f6nd\u00fcrmek i\u00e7in ATE\u015e ET. Silah arkada\u015f\u0131n k\u0131sa bir s\u00fcrenin ard\u0131ndan tamamen iyile\u015fmi\u015f olarak hayata d\u00f6ner.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1195,12 +1195,12 @@
     },
     {
         "uuid": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
-        "displayName": "Reyna",
-        "description": "Desde el coraz\u00f3n de M\u00e9xico, Reyna llega para dominar los combates uno contra uno y cada asesinato que consigue la hace m\u00e1s fuerte. Su potencial es pr\u00e1cticamente infinito y la destreza individual es el \u00fanico factor determinante de su \u00e9xito. ",
+        "displayName": "REYNA",
+        "description": "Meksika'n\u0131n kalbinden kopup gelmi\u015f Reyna teke tek \u00e7at\u0131\u015fmalarda d\u00fc\u015fman\u0131n\u0131 ezer ve ald\u0131\u011f\u0131 her skorla daha da co\u015far. Yapabilecekleri tamamen saf beceri gerektirir ve onu ciddi \u015fekilde performansa dayal\u0131 k\u0131lar. ",
         "developerName": "Vampire",
         "characterTags": [
-            "Evasi\u00f3n",
-            "Aguante"
+            "Ka\u00e7\u0131nma",
+            "Kendine Yetme"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayiconsmall.png",
@@ -1222,8 +1222,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "D\u00fcellocu",
+            "description": "D\u00fcellocular yetenek ve becerilerini kullanarak tak\u0131mlar\u0131 i\u00e7in rakibe hasar ya\u011fd\u0131ran ve \u00e7at\u0131\u015fma ba\u015flatan, kendi kendilerine yeten, etkili sava\u015f\u00e7\u0131lard\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1231,26 +1231,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Devorar",
-                "description": "Cosecha de almas: Los enemigos asesinados por Reyna o que mueran en los 3 segundos siguientes a recibir da\u00f1o de Reyna dejan tras de s\u00ed orbes de alma que duran 3 segundos.\nDevorar: Consume INSTANT\u00c1NEAMENTE un orbe de alma cercano y se cura durante un breve periodo. Si se obtienen m\u00e1s de 100 puntos de vida con esta habilidad, la cantidad adicional se ir\u00e1 perdiendo con el tiempo. Si EMPERATRIZ est\u00e1 activa, esta habilidad se lanzar\u00e1 de forma autom\u00e1tica y no consumir\u00e1 el orbe.",
+                "displayName": "S\u00d6M\u00dcR",
+                "description": "Ruh Hasad\u0131: Reyna'n\u0131n \u00f6ld\u00fcrd\u00fc\u011f\u00fc veya Reyna'dan hasar ald\u0131ktan sonra 3 saniye i\u00e7inde \u00f6len d\u00fc\u015fmanlar, arkalar\u0131nda 3 saniyeli\u011fine Ruh K\u00fcreleri b\u0131rak\u0131r.\nS\u00f6m\u00fcr: ANINDA yak\u0131nlardaki bir ruh k\u00fcresini t\u00fcket ve k\u0131sa s\u00fcreli\u011fine h\u0131zla \u0130yile\u015f. Bu yetenek yoluyla edinilen 100'\u00fc a\u015fan can miktar\u0131 zaman i\u00e7inde erir. \u0130MPARATOR\u0130\u00c7E etkinse yetenek otomatik olarak kullan\u0131l\u0131r ve Ruh K\u00fcresi harcamaz.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Despreciar",
-                "description": "Consume INSTANT\u00c1NEAMENTE un orbe de alma cercano y se vuelve intangible durante un breve periodo. Si EMPERATRIZ est\u00e1 activa, se vuelve tambi\u00e9n invisible.",
+                "displayName": "AZLET",
+                "description": "Yak\u0131nlardaki bir Ruh K\u00fcresi'ni ANINDA t\u00fcketerek k\u0131sa s\u00fcreli\u011fine Saydamla\u015f. \u0130MPARATOR\u0130\u00c7E etkinse, ayn\u0131 zamanda G\u00f6r\u00fcnmez olursun.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Mirada lasciva",
-                "description": "EQUIPA un ojo et\u00e9reo destructible. ACT\u00cdVALA para lanzar el ojo hacia delante una corta distancia. El ojo limitar\u00e1 la visi\u00f3n de todos los enemigos que lo miren.",
+                "displayName": "KEM G\u00d6Z",
+                "description": "Yok edilebilir, ruhtan bir g\u00f6z KU\u015eAN. G\u00f6z\u00fc yak\u0131n mesafede ileri do\u011fru kullanmak i\u00e7in ETK\u0130NLE\u015eT\u0130R. G\u00f6z, ona bakan t\u00fcm d\u00fc\u015fmanlar\u0131n G\u00f6r\u00fc\u015f\u00fcn\u00fc K\u0131s\u0131tlar.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Emperatriz",
-                "description": "Entra en un frenes\u00ed INSTANT\u00c1NEO que otorga Estimulante de combate, lo que aumenta dr\u00e1sticamente la velocidad de disparo, de equipamiento y de recarga. Consigue cargas infinitas de habilidades de Cosecha de almas. Cuando Reyna mata a un enemigo o este muere 3 segundos despu\u00e9s de que ella le haya infligido da\u00f1o, la duraci\u00f3n se reinicia.",
+                "displayName": "\u0130MPARATOR\u0130\u00c7E",
+                "description": "ANINDA bir co\u015fku haline ge\u00e7erek at\u0131\u015f, ku\u015fanma ve doldurma h\u0131z\u0131n\u0131 ciddi \u015fekilde artt\u0131ran bir Kuvvetli Sava\u015f edin. Ruh Hasad\u0131 yetenekleri i\u00e7in sonsuz y\u00fck kazan\u0131rs\u0131n. Reyna bir d\u00fc\u015fman\u0131 \u00f6ld\u00fcrd\u00fc\u011f\u00fcnde veya Reyna'n\u0131n hasar verdi\u011fi bir d\u00fc\u015fman ondan hasar ald\u0131ktan sonraki 3 saniye i\u00e7inde \u00f6ld\u00fc\u011f\u00fcnde bekleme s\u00fcresi yenilenir.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1258,12 +1258,12 @@
     },
     {
         "uuid": "8e253930-4c05-31dd-1b6c-968525494517",
-        "displayName": "Omen",
-        "description": "Omen es un fantasma de tiempos pasados que acecha en las sombras. Es capaz de cegar al enemigo, teleportarse a trav\u00e9s del campo de batalla y sembrar el caos y la paranoia mientras sus rivales se preguntan d\u00f3nde atacar\u00e1 la pr\u00f3xima vez.",
+        "displayName": "OMEN",
+        "description": "Bir an\u0131n\u0131n hayaleti olan Omen g\u00f6lgelerin i\u00e7inde avlan\u0131r. D\u00fc\u015fmanlar\u0131n\u0131 k\u00f6r eder, sava\u015f alan\u0131n\u0131 boydan boya kat eder ve paranoyan\u0131n, onun ne taraftan sald\u0131raca\u011f\u0131n\u0131 anlamaya \u00e7al\u0131\u015fan rakiplerinin damarlar\u0131nda gezinmesini sa\u011flar.",
         "developerName": "Wraith",
         "characterTags": [
-            "Movilidad",
-            "Control de visi\u00f3n"
+            "Hareketlilik",
+            "G\u00f6r\u00fc\u015f Kontrol\u00fc"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayiconsmall.png",
@@ -1285,8 +1285,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Kontrol Uzman\u0131",
+            "description": "Kontrol uzmanlar\u0131 tak\u0131mlar\u0131n\u0131 ba\u015far\u0131ya g\u00f6t\u00fcrmek i\u00e7in tehlikeli b\u00f6lgeleri ayr\u0131\u015ft\u0131rmakta uzmand\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -1294,26 +1294,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Paranoia",
-                "description": "EQUIPA un orbe cegador.  DISPARA para lanzarlo hacia delante, lo que limita la visi\u00f3n y ensordece a todos los jugadores que toca durante un breve periodo. El proyectil puede atravesar paredes.",
+                "displayName": "PARANOYA",
+                "description": "K\u00f6r edici bir k\u00fcre KU\u015eAN. \u0130leri f\u0131rlatmak i\u00e7in ATE\u015e ET. K\u00fcre k\u0131sa s\u00fcreli\u011fine, dokundu\u011fu d\u00fc\u015fmanlar\u0131n G\u00f6r\u00fc\u015f\u00fcn\u00fc K\u0131s\u0131tlar ve onlar\u0131 Sa\u011f\u0131r eder. Bu yetenek do\u011frudan duvarlardan ge\u00e7ebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Velo tenebroso",
-                "description": "EQUIPA un orbe sombr\u00edo y te adentras en un mundo paralelo para colocarlo y marcar el objetivo de los orbes. PULSA la tecla de la habilidad para lanzar el orbe sombr\u00edo a la ubicaci\u00f3n se\u00f1alada, lo que genera una esfera sombr\u00eda de larga duraci\u00f3n que bloquea la visi\u00f3n. MANT\u00c9N PULSADO el bot\u00f3n de disparar al apuntar para que el marcador se aleje m\u00e1s. MANT\u00c9N PULSADO el DISPARO ALTERNATIVO al apuntar para que el marcador se acerque m\u00e1s. PULSA RECARGAR para cambiar al modo de apuntado normal.",
+                "displayName": "KARANLIK \u00d6RT\u00dc",
+                "description": "Bir g\u00f6lge k\u00fcresi KU\u015eAN, k\u00fcreleri yerle\u015ftirmek ve hedef almak i\u00e7in soyut bir d\u00fcnyaya ad\u0131m at. K\u00fcreyi i\u015faretlenen konuma f\u0131rlatarak g\u00f6r\u00fc\u015f engelleyen uzun s\u00fcreli bir g\u00f6lge k\u00fcresi olu\u015fturmak i\u00e7in yetenek tu\u015funa BAS. Hedef alma esnas\u0131nda i\u015faret\u00e7iyi daha uza\u011fa g\u00f6t\u00fcrmek i\u00e7in ATE\u015e TU\u015eUNU BASILI TUT. \u0130\u015faret\u00e7iyi daha yak\u0131na getirmek i\u00e7in ALT. ATI\u015e TU\u015eUNU BASILI TUT. Normal hedef almaya ge\u00e7mek i\u00e7in DOLDURMA TU\u015eUNA BAS.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Aparici\u00f3n tenebrosa",
-                "description": "EQUIPA una habilidad para caminar entre las sombras y ve su indicador de alcance. DISPARA para iniciar un breve periodo de canalizaci\u00f3n y despu\u00e9s teleportarte a la ubicaci\u00f3n se\u00f1alada.",
+                "displayName": "G\u0130ZL\u0130 ADIM",
+                "description": "Bir gizli ad\u0131m yetene\u011fi KU\u015eAN ve menzil g\u00f6stergesini g\u00f6r\u00fcnt\u00fcle. K\u0131sa bir beklemenin ard\u0131ndan i\u015faretli konuma \u0131\u015f\u0131nlanmak i\u00e7in ATE\u015e ET.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Desde las sombras",
-                "description": "EQUIPA un mapa t\u00e1ctico. DISPARA para empezar a teleportarte a la zona seleccionada. Mientras se teleporta, Omen aparecer\u00e1 como una sombra que los enemigos pueden destruir para cancelar su teleportaci\u00f3n. PULSA EQUIPAR para cancelar la teleportaci\u00f3n.",
+                "displayName": "G\u00d6LGELER\u0130N \u0130\u00c7\u0130NDEN",
+                "description": "Bir taktik harita KU\u015eAN. Se\u00e7ili konuma \u0131\u015f\u0131nlanmaya ba\u015flamak i\u00e7in ATE\u015e ET. Omen, \u0131\u015f\u0131nlanma esnas\u0131nda G\u00f6lge suretine b\u00fcr\u00fcn\u00fcr ve d\u00fc\u015fmanlar\u0131 onu yok ederek \u0131\u015f\u0131nlanmay\u0131 iptal edebilir ya da Omen KU\u015eANMAYA BASARAK \u0131\u015f\u0131nlanmas\u0131n\u0131 kendisi iptal edebilir.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1321,12 +1321,12 @@
     },
     {
         "uuid": "add6443a-41bd-e414-f6ad-e58d267f4e95",
-        "displayName": "Jett",
-        "description": "Jett viene de Corea del Sur y su estilo de lucha \u00e1gil y evasivo le permite asumir grandes riesgos. En las refriegas, recorre el terreno en c\u00edrculos y hace trizas a los enemigos con una rapidez espectacular.",
+        "displayName": "JETT",
+        "description": "Anavatan\u0131 G\u00fcney Kore'yi temsil eden Jett'in \u00e7evik ve darbelerden ka\u00e7maya dayal\u0131 d\u00f6v\u00fc\u015f tarz\u0131, ba\u015fkalar\u0131n\u0131n alamad\u0131\u011f\u0131 riskleri almas\u0131n\u0131 sa\u011flar. Her \u00e7at\u0131\u015fmada \u00fcst\u00fcnl\u00fc\u011f\u00fcn\u00fc belli eder ve rakipleri daha nerede oldu\u011funu anlamadan onlar\u0131 kesip bi\u00e7meye ba\u015flar.",
         "developerName": "Wushu",
         "characterTags": [
-            "Evasi\u00f3n",
-            "Movilidad"
+            "Ka\u00e7\u0131nma",
+            "Hareketlilik"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png",
@@ -1348,8 +1348,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "D\u00fcellocu",
+            "description": "D\u00fcellocular yetenek ve becerilerini kullanarak tak\u0131mlar\u0131 i\u00e7in rakibe hasar ya\u011fd\u0131ran ve \u00e7at\u0131\u015fma ba\u015flatan, kendi kendilerine yeten, etkili sava\u015f\u00e7\u0131lard\u0131r.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1357,32 +1357,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Vendaval",
-                "description": "Propulsa INSTANT\u00c1NEAMENTE a Jett a mucha altura hacia arriba.",
+                "displayName": "HAF\u0130FLE",
+                "description": "Jett'i ANINDA havaya do\u011fru f\u0131rlat.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Viento de cola",
-                "description": "ACTIVA para preparar una r\u00e1faga de viento durante un tiempo limitado. VUELVE A USAR el viento para propulsar a Jett en la direcci\u00f3n en la que se est\u00e9 moviendo. Si Jett est\u00e1 quieta, se propulsa hacia delante. La carga de Viento de cola se reinicia cada dos asesinatos.",
+                "displayName": "R\u00dcZG\u00c2R G\u0130B\u0130",
+                "description": "K\u0131sa s\u00fcreli\u011fine sert bir r\u00fczg\u00e2r estirmeye haz\u0131rlanmak i\u00e7in ETK\u0130NLE\u015eT\u0130R. Jett'i hareket etti\u011fi y\u00f6nde f\u0131rlatmak i\u00e7in TEKRAR KULLAN. Jett hareketsiz durursa ileriye do\u011fru at\u0131l\u0131r. R\u00fczg\u00e2r Gibi'nin y\u00fck\u00fc her iki skorda bir dolar.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Borrasca",
-                "description": "Lanza un proyectil INSTANT\u00c1NEAMENTE que se expande en una nube la cual bloquea la visi\u00f3n de forma breve al impactar contra una superficie. MANT\u00c9N PULSADO el bot\u00f3n de la habilidad para que el humo se curve en la direcci\u00f3n de la mira.",
+                "displayName": "DUMAN BULUTU",
+                "description": "ANINDA yapt\u0131\u011f\u0131n at\u0131\u015f, y\u00fczeye \u00e7arpt\u0131\u011f\u0131nda patlayarak k\u0131sa s\u00fcreli\u011fine g\u00f6r\u00fc\u015f engelleyen bir sis bulutuna d\u00f6n\u00fc\u015f\u00fcr. Duman bulutuna ni\u015fang\u00e2h\u0131n y\u00f6n\u00fcnde falso vermek i\u00e7in yetenek tu\u015funu BASILI TUT.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Tormenta de cuchillas",
-                "description": "EQUIPA un conjunto de cuchillos volantes de alta precisi\u00f3n. DISPARA para lanzar un \u00fanico cuchillo y recarga los cuchillos con un asesinato. ALTERNA EL MODO DE DISPARO para lanzar todos los cuchillos restantes, pero no se recargan con un asesinato.",
+                "displayName": "KESK\u0130N FIRTINA",
+                "description": "Olduk\u00e7a isabetli f\u0131rlatma b\u0131\u00e7aklar\u0131 KU\u015eAN. Hedefine tek bir b\u0131\u00e7ak f\u0131rlatmak i\u00e7in ATE\u015e ET. D\u00fc\u015fman\u0131 \u00f6ld\u00fcrd\u00fc\u011f\u00fcnde y\u00fck\u00fc dolacak. Kalan t\u00fcm han\u00e7erleri hedefine f\u0131rlatmak i\u00e7in ALT. ATI\u015e kullan. Bu sald\u0131r\u0131 d\u00fc\u015fman\u0131 \u00f6ld\u00fcrd\u00fc\u011f\u00fcnde y\u00fck doldurmaz.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Planeo",
-                "description": "Mantener pulsado el bot\u00f3n de salto mientras caes te permite planear por los aires.",
+                "displayName": "S\u00dcZ\u00dcL",
+                "description": "D\u00fc\u015ferken z\u0131plama tu\u015funu bas\u0131l\u0131 tutmak, havada s\u00fcz\u00fclmeni sa\u011flar.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/passive/displayicon.png"
             }
         ],

@@ -61,6 +61,8 @@ $.get(abilityUrl, function(data, status){ //url defined in current webpage js fi
     // console.log()
     randIndex = data['randIndex']
     randIndex2 = data['randIndex2']
+    // console.log(data)
+    // console.log(randIndex);
 });
 
 function addTries(tries){
@@ -86,11 +88,13 @@ function tileAnimation(currRow, tileDiv, delayAmount){
 }
 
 let hasTakenAGuess = false;
-function isCorrectAgentOption(userInput){ 
-    let optionAnswer = dataList[randIndex]["displayName"];
+function isCorrectAgentOption(userInputUPPER){ 
+    let string = (dataList[randIndex]["displayName"]).toLowerCase();
+    let optionAnswer = string[0].toUpperCase() + string.slice(1);
+    let string2 = (userInputUPPER).toLowerCase();
+    userInput = string2[0].toUpperCase() + string2.slice(1);
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName'], dateMap[optionAnswer]]
-    // console.log(correctAnswers)
-    let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInput)]['role']['displayName'], dateMap[userInput]]
+    let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInputUPPER)]['role']['displayName'], dateMap[userInput]]
     
     let listOfGuesses = document.getElementById("listOfGuesses");
 
@@ -187,6 +191,11 @@ function displayPartTwo(){
     }
 }
 
+function pixelateAgentImage(_callback){
+    var image = document.querySelector('#guessImage');
+    pixelate = new Pixelate(image, 45);
+}
+
 function guessAgentTime2(){ 
     winConfetti();
     agentP1 = false;
@@ -207,17 +216,21 @@ function guessAgentTime2(){
     let pixImgDiv = $('<div class="guessImageDiv">\
                         <img id="guessImage" src="">\
                     </div>\
-                    <p id="secondAgentName"></p>');
+                    <p class="notranslate" id="secondAgentName"></p>');
     pixImgDiv.insertAfter('#agent2Prompt')
     
     correctImgSrc = dataList[randIndex]["displayIcon"];
     correctName = dataList[randIndex]["displayName"];
     guessImage.src = correctImgSrc;
-    var image = document.querySelector('#guessImage');
-    pixelate = new Pixelate(image, 45);
+
+    pixelateAgentImage(function(){
+        pixelate.updateBlurFactor(0);
+        pixelate.updateBlurFactor(startPixelate);
+    })
+
     
-    $("#guessImage").css("visibility", "hidden");
-    $('#optionNames').hide();
+    // $("#guessImage").css("visibility", "hidden");
+    // $('#optionNames').hide();
     
     makeButtons(false);
 

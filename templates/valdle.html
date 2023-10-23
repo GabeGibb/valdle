@@ -30,7 +30,7 @@
     <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/0201813274259c3d4f78760d19270bab?family=DIN+Next+LT+W04+Medium" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
     <script type="text/javascript" src="/static/translate.js"></script>
     <script type="text/javascript" src="/static/valdle.js" defer></script>
     <script type="text/javascript" src="/static/resize.js" defer></script>
@@ -38,18 +38,15 @@
 </head>
 
 <body>
-    <img src="static/images/tabIcon.png" style="display: none;" alt="valdle">
-    <nav class="navbar">
-        <a class="notranslate" id="title">vAldle</a>
-        <!-- <div class="icon" id="languageSelector">
-            <div id="changeLanguage">
-                <button id="changeLanguageButton"><img class="icon" src="/static/images/languageIcon.png"></button>
-            </div>
-            <div id="google_translate_element"></div>
+    <div class="navbar">
+        <a class="notranslate title">vAldle</a>
+        <!-- <div id="languageSelector">
+            <div id="google_translate_element" ></div>
         </div> -->
-    </nav>
+    </div>
     <div id="topBar">
         <h1 id="websiteSummary">Test your valorant knowledge!</h1>
+        <!-- <span id="languageDisclaimer">( More languages coming soon! )</span> -->
         <h2 id="websiteSummary" style="color: #74CB71;">Thanks Warlicia!</h2>
     </div>
     <div class="buttons">
@@ -163,23 +160,13 @@
             </button>
 
         </div>
+    </div>
+
+    <div id="bottomButtons">
         <div id="about">
             <img class="icon" src="static/images/aboutIcon.png" onclick="location.href='about'">
         </div>
     </div>
 </body>
-
-<script>
-    // $(document).ready(function() {
-    //     // Allows toggle with globe button, between visible and hidden dropdown language menu
-    //     const button = document.getElementById('changeLanguageButton');
-    //     const dropdown = document.getElementById('google_translate_element');
-    
-    //     button.addEventListener('click', function () {
-    //         dropdown.style.visibility = dropdown.style.visibility == "visible" ? "hidden" : "visible";
-    //         dropdown.style.position = dropdown.style.position == "relative" ? "absolute" : "relative";
-    //     });
-    // });
-</script>
 
 </html>
