@@ -94,7 +94,7 @@ function isCorrectAgentOption(userInputUPPER){
     let string2 = (userInputUPPER).toLowerCase();
     userInput = string2[0].toUpperCase() + string2.slice(1);
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName'], dateMap[optionAnswer]]
-    let guessList = [userInput, genderMap[userInput], dataList[findUserIndex(userInputUPPER)]['role']['displayName'], dateMap[userInput]]
+    let guessList = [userInput, genderMap[userInputUPPER], dataList[findUserIndex(userInputUPPER)]['role']['displayName'], dateMap[userInputUPPER]]
     
     let listOfGuesses = document.getElementById("listOfGuesses");
 
