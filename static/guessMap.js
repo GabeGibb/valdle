@@ -112,7 +112,7 @@ function makeCalloutDiv(callout, mapName) {
             let string = (guess[j]).toLowerCase();
             let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
 
-            if (fixedMapName.toLowerCase() == guess[j].toLowerCase()) {
+            if (fixedMapName.toLowerCase() == answer[j].toLowerCase()) {
                 tileDiv.classList.add('green');
                 counter++;
             }
