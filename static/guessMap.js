@@ -112,7 +112,7 @@ function makeCalloutDiv(callout, mapName) {
             let string = (guess[j]).toLowerCase();
             let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
 
-            if (fixedMapName == answer[j]) {
+            if (fixedMapName.toLowerCase() == guess[j].toLowerCase()) {
                 tileDiv.classList.add('green');
                 counter++;
             }
@@ -248,6 +248,7 @@ $.get(url, function (data, status) {
     $.get(window.location.href + '/mapOfDay', function (data, status) {
         answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"]
         answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"]
+        console.log(answer)
     });
     loadPersistentData('map', curDayId)
 });
