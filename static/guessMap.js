@@ -175,6 +175,11 @@ function createMaps() {
 
 
 function createMap(mapName){
+    //Toggle if map clicked
+    let box = document.getElementById('inputToggle');
+    if (!box.checked){
+        $('#inputToggle').click();
+    }
     for (let i = 0; i < calloutMaps.length; i++){
         let string = (calloutMaps[i].val()).toLowerCase();
         let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
