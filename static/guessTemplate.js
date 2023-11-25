@@ -13,20 +13,6 @@ let dayId;
 let persistentData;
 let stats;
 let hasAlreadyWon = false;
-// let debug = false;
-
-
-// if(location.protocol == 'http:' && debug){ 
-//     let debugUrl = window.location.origin + '/doThisIfYouWantToDebug';
-//     $.get(debugUrl, function(data, status){
-//         // console.log(data)
-//     })
-// }else{
-//     debug = false;
-// }
-
-
-//TO ENABLE LOCAL STORAGE, DELETE RETURN AT addWinToStats and delete || 1 at end of loadPersistenData if statement
 
 function loadStats(mode){
     stats = JSON.parse(localStorage.getItem(mode + 'Stats'))
@@ -37,7 +23,7 @@ function loadStats(mode){
 }
 
 function addWinToStats(){
-    if (hasAlreadyWon){// || debug){
+    if (hasAlreadyWon){
         return;
     }
     hasAlreadyWon = true;

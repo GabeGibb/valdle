@@ -2,7 +2,7 @@
     {
         "uuid": "e370fa57-4757-3604-3648-499e1f642d3f",
         "displayName": "Gekko",
-        "description": "Gekko, de Los \u00c1ngeles, lidera una peque\u00f1a pandilla de calamitosas criaturas. Sus colegas toman la delantera para dispersar a los enemigos, mientras que Gekko los persigue para luego reagruparse y repetir el proceso.",
+        "description": "Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.",
         "developerName": "Aggrobot",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png",
@@ -25,8 +25,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "Initiator",
+            "description": "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -35,25 +35,25 @@
             {
                 "slot": "Ability1",
                 "displayName": "Wingman",
-                "description": "EQUIPA a Wingman. DISPARA para mandar a Wingman hacia delante en busca de enemigos. Wingman libera una explosi\u00f3n aturdidora en direcci\u00f3n al primer enemigo que ve. ALTERNA EL MODO DE DISPARO mientras apuntas a una zona de la Spike o a una Spike colocada para que Wingman la coloque o la desarme. Para colocarla, Gekko debe tener la Spike en su inventario. Cuando Wingman desaparece, vuelve a su estado de gl\u00f3bulo en reposo. INTERACT\u00daA para recuperar el gl\u00f3bulo y obtener otra carga de Wingman tras un breve enfriamiento.",
+                "description": "EQUIP Wingman. FIRE to send Wingman forward seeking enemies. Wingman unleashes a concussive blast toward the first enemy he sees. ALT FIRE when targeting a Spike site or planted Spike to have Wingman defuse or plant the Spike. To plant, Gekko must have the Spike in his inventory. When Wingman expires he reverts into a dormant globule. INTERACT to reclaim the globule and gain another Wingman charge after a short cooldown.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
                 "displayName": "Dizzy",
-                "description": "EQUIPA a Dizzy. DISPARA para lanzar a Dizzy volando hacia delante. Dizzy carga y libera explosiones de plasma hacia los enemigos en su campo de visi\u00f3n. El plasma ciega a los enemigos alcanzados. Cuando Dizzy desaparece, vuelve a su estado de gl\u00f3bulo en reposo. INTERACT\u00daA para recuperar el gl\u00f3bulo y obtener otra carga de Dizzy tras un breve enfriamiento.",
+                "description": "EQUIP Dizzy. FIRE to send Dizzy soaring forward through the air. Dizzy charges then unleashes plasma blasts at enemies in line of sight. Enemies hit by her plasma are Blinded. When Dizzy expires she reverts into a dormant globule. INTERACT to reclaim the globule and gain another Dizzy charge after a short cooldown.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Mosh",
-                "description": "EQUIPA a Mosh. DISPARA para lanzar a Mosh como una granada. ALTERNA EL MODO DE DISPARO para tirarlo. Al caer, Mosh se divide en varias copias en un \u00e1rea grande, que inflige una peque\u00f1a cantidad de da\u00f1o prolongado y, tras un breve lapso, explota.",
+                "displayName": "Mosh Pit",
+                "description": "EQUIP Mosh. FIRE to throw Mosh like a grenade. ALT FIRE to lob. Upon landing Mosh duplicates across a large area that deals a small amount of damage over time then after a short delay explodes.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
                 "displayName": "Thrash",
-                "description": "EQUIPA a Thrash. DISPARA para vincular tu mente con la de Thrash y manejarla a trav\u00e9s del territorio enemigo. ACT\u00cdVALA para embestir hacia delante y explotar, lo que detendr\u00e1 a cualquier jugador en un peque\u00f1o radio. Cuando Thrash desaparece, vuelve a su estado de gl\u00f3bulo en reposo. INTERACT\u00daA para recuperar el gl\u00f3bulo y obtener otra carga de Thrash tras un breve enfriamiento. Thrash se puede recuperar una vez.",
+                "description": "EQUIP Thrash. FIRE to link with Thrash\u2019s mind and steer her through enemy territory. ACTIVATE to lunge forward and explode, Detaining any players in a small radius. When Thrash expires she reverts into a dormant globule. INTERACT to reclaim the globule and gain another Thrash charge after a short cooldown. Thrash can be reclaimed once.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png"
             }
         ],
@@ -62,7 +62,7 @@
     {
         "uuid": "dade69b4-4f5a-8528-247b-219e5a1facd6",
         "displayName": "Fade",
-        "description": "Fade, la cazarrecompensas turca, controla el poder de las pesadillas para poner al descubierto los secretos de los enemigos. Ataviada con el propio terror, da caza a sus objetivos y revela sus miedos m\u00e1s profundos, para despu\u00e9s acabar con ellos en la oscuridad.",
+        "description": "Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the dark.",
         "developerName": "BountyHunter",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/displayicon.png",
@@ -85,8 +85,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "Initiator",
+            "description": "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -94,26 +94,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Apresar",
-                "description": "EQUIPA un N\u00f3dulo de terror puro. DISPARA para lanzarlo. El N\u00f3dulo cae tras un periodo de tiempo determinado. VUELVE A USAR la habilidad para que el N\u00f3dulo caiga antes. El N\u00f3dulo estalla al impactar y retiene a los enemigos cercanos. Ensordece y aplica declive a los enemigos retenidos.",
+                "displayName": "Seize",
+                "description": "EQUIP a knot of raw fear. FIRE to throw. The knot drops down after a set time. RE-USE to drop the knot early. The knot ruptures on impact, holding nearby enemies in place. Held enemies are Deafened, and Decayed.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Tormento",
-                "description": "EQUIPA un Vig\u00eda aterrador. DISPARA para lanzarlo. El Vig\u00eda cae tras un periodo de tiempo determinado. VUELVE A USAR la habilidad para que el Vig\u00eda caiga antes. El Vig\u00eda ataca al caer, lo que revela a los enemigos que est\u00e9n en su campo de visi\u00f3n y crea rastros de terror que llevan hasta ellos. Los enemigos pueden destruir al Vig\u00eda.",
+                "displayName": "Haunt",
+                "description": "EQUIP a haunting watcher. FIRE to throw. The watcher drops down after a set time. RE-USE to drop the watcher early. The watcher lashes out on impact, Revealing enemies in its line of sight and creating terror trails to them. Enemies can destroy the watcher.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Acechador",
-                "description": "EQUIPA un Acechador. DISPARA para lanzarlo hacia adelante. MANT\u00c9N PULSADO DISPARAR para dirigir al Acechador en la direcci\u00f3n de la mira. El Acechador seguir\u00e1 al primer enemigo o rastro que vea y reducir\u00e1 el campo de visi\u00f3n del enemigo al impactar.",
+                "displayName": "Prowler",
+                "description": "EQUIP a prowler. FIRE to send the prowler forward. HOLD FIRE to steer the prowler towards your crosshair. The prowler will chase down the first enemy or terror trail it sees, and Nearsight the enemy on impact.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Ocaso",
-                "description": "EQUIPA el poder de las pesadillas. DISPARA para desatar una ola imparable de energ\u00eda de pesadillas. Marca con rastros de terror, ensordece y aplica declive a los enemigos golpeados por la ola.",
+                "displayName": "Nightfall",
+                "description": "EQUIP the power of nightmare itself. FIRE to unleash a wave of unstoppable nightmare energy. Enemies caught in the wave are Marked by terror trails, Deafened, and Decayed.",
                 "displayIcon": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ultimate/displayicon.png"
             }
         ],
@@ -122,7 +122,7 @@
     {
         "uuid": "5f8d3a7f-467b-97f3-062c-13acf203c006",
         "displayName": "Breach",
-        "description": "Breach, el sueco bi\u00f3nico, dispara una serie de explosiones cin\u00e9ticas controladas para abrirse paso por el territorio enemigo. Su capacidad para infligir da\u00f1o y sembrar el caos garantiza que los combates siempre est\u00e9n de su parte.",
+        "description": "The bionic Swede Breach fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
         "developerName": "Breach",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/displayicon.png",
@@ -145,8 +145,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "Initiator",
+            "description": "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -154,26 +154,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Explosi\u00f3n cegadora",
-                "description": "EQUIPA una carga explosiva cegadora. DISPARA la carga para liberar una r\u00e1pida explosi\u00f3n que atraviesa la pared. Cuando detona, la carga ciega a todos los jugadores que la est\u00e9n mirando.",
+                "displayName": "Flashpoint",
+                "description": "EQUIP a Blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to Blind all players looking at it.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Falla",
-                "description": "EQUIPA una bomba s\u00edsmica. MANT\u00c9N PULSADO DISPARAR para aumentar la distancia. SUELTA para liberar un se\u00edsmo que aturdir\u00e1 a todos los jugadores dentro de la zona y en una l\u00ednea hasta ella.",
+                "displayName": "Fault Line",
+                "description": "EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, Concussing all players in its zone and in a line up to the zone.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "R\u00e9plica",
-                "description": "EQUIPA una carga explosiva de fusi\u00f3n. DISPARA la carga para liberar una explosi\u00f3n que atraviesa la pared tras un retardo. La explosi\u00f3n inflige mucho da\u00f1o a cualquiera que est\u00e9 dentro del \u00e1rea afectada.",
+                "displayName": "Aftershock",
+                "description": "EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Fragor imparable",
-                "description": "EQUIPA una carga explosiva s\u00edsmica. DISPARA para liberar un se\u00edsmo que se extender\u00e1 por una gran zona en forma de cono. El se\u00edsmo aturde y lanza por los aires a todos los jugadores que est\u00e9n en el interior de la zona.",
+                "displayName": "Rolling Thunder",
+                "description": "EQUIP a Seismic Charge. FIRE to send a cascading quake through all terrain in a large cone. The quake Concusses and knocks up anyone caught in it.",
                 "displayIcon": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ultimate/displayicon.png"
             }
         ],
@@ -182,7 +182,7 @@
     {
         "uuid": "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
         "displayName": "Deadlock",
-        "description": "Deadlock, la agente noruega, despliega un surtido de avanzados nanocables para defender el campo de batalla de cualquier asalto, por letal que sea. Nadie escapa a su atenta mirada ni sobrevive a su implacable ferocidad.",
+        "description": "Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.",
         "developerName": "Cable",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/displayicon.png",
@@ -205,8 +205,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "Sentinel",
+            "description": "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -222,26 +222,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Sensor s\u00f3nico",
-                "description": "EQUIPA un sensor s\u00f3nico. DISPARA para desplegarlo. El sensor rastrea la zona en busca de enemigos que hagan ruido. Si detecta sonidos de pisadas, disparos o cualquier otro ruido considerable, aturde en \u00e1rea.",
+                "displayName": "Sonic Sensor",
+                "description": "EQUIP a Sonic Sensor. FIRE to deploy. The sensor monitors an area for enemies making sound. It concusses that area if footsteps, weapons fire, or significant noise are detected.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Malla barrera",
-                "description": "EQUIPA un disco de Malla barrera. DISPARA para lanzarlo hacia delante. Al aterrizar, el disco genera barreras a partir de su punto de origen que detienen el movimiento de los personajes.",
+                "displayName": "Barrier Mesh",
+                "description": "EQUIP a Barrier Mesh disc. FIRE to throw forward. Upon landing, the disc generates barriers from the origin point that block character movement.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Red de gravedad",
-                "description": "EQUIPA una granada de Red de gravedad. DISPARA para lanzarla. ALTERNA EL MODO DE DISPARO para tirarla. La Red de gravedad explota al aterrizar, lo que fuerza a los agentes alcanzados a agacharse y moverse lentamente.",
+                "displayName": "GravNet",
+                "description": "EQUIP a GravNet grenade. FIRE to throw. ALT FIRE to lob. The GravNet detonates upon landing, forcing any characters caught within to crouch and move slowly.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Aniquilaci\u00f3n",
-                "description": "EQUIPA un acelerador de nanocables. DISPARA para emitir un pulso de nanocables que capturan al primer enemigo con el que entran en contacto. El enemigo atrapado se ve arrastrado y muere si llega al final del recorrido, a menos que sea liberado. La envoltura de los nanocables se puede destruir.",
+                "displayName": "Annihilation",
+                "description": "EQUIP a Nanowire Accelerator. FIRE to unleash a pulse of nanowires that captures the first enemy contacted. The cocooned enemy is pulled along a nanowire path and will die if they reach the end, unless they are freed. The nanowire cocoon is destructible.",
                 "displayIcon": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/abilities/ultimate/displayicon.png"
             }
         ],
@@ -250,10 +250,10 @@
     {
         "uuid": "f94c3b30-42be-e959-889c-5aa313dba261",
         "displayName": "Raze",
-        "description": "Raze llega desde Brasil con ganas de hacer que todo salte por los aires. Con su estilo de juego basado en la fuerza bruta, destaca a la hora de barrer a grupos de enemigos atrincherados y de despejar \u00e1reas estrechas con explosi\u00f3n y sin compasi\u00f3n.",
+        "description": "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of \"boom.\"",
         "developerName": "Clay",
         "characterTags": [
-            "Especialista en da\u00f1o en \u00e1rea"
+            "Area Damage Specialist"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/displayiconsmall.png",
@@ -275,8 +275,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "Duelist",
+            "description": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -284,26 +284,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Fardo explosivo",
-                "description": "Lanza AL INSTANTE un fardo explosivo que se adhiere a las superficies. VUELVE A USAR la habilidad despu\u00e9s de que el fardo se adhiera para detonarlo y que da\u00f1e y desplace a todo aquello que alcance.",
+                "displayName": "Blast Pack",
+                "description": "INSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Balas de pintura",
-                "description": "EQUIPA una granada de racimo. DISPARA para lanzar la granada, lo que causa da\u00f1o y crea submuniciones que infligen da\u00f1o a cualquiera que est\u00e9 dentro del rango. ALTERNA EL MODO DE DISPARO para tirarlo. La carga de Balas de pintura se reinicia cada dos asesinatos.",
+                "displayName": "Paint Shells",
+                "description": "EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range. ALT FIRE to lob. Paint Shells charge resets every two kills.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Bot explosivo",
-                "description": "EQUIPA un bot explosivo. DISPARA para desplegar el bot y hacer que se desplace en l\u00ednea recta por el terreno, rebotando por las paredes. El bot explosivo se fijar\u00e1 a los enemigos que encuentre en un cono frontal y los perseguir\u00e1. Si los alcanza, explotar\u00e1 e infligir\u00e1 una gran cantidad de da\u00f1o.",
+                "displayName": "Boom Bot",
+                "description": "EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Cierratelones",
-                "description": "EQUIPA un lanzacohetes. DISPARA para lanzar un cohete que inflige un da\u00f1o en \u00e1rea masivo al entrar en contacto con cualquier cosa.",
+                "displayName": "Showstopper",
+                "description": "EQUIP a rocket launcher. FIRE to shoot a rocket that does massive area damage on contact with anything.",
                 "displayIcon": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ultimate/displayicon.png"
             }
         ],
@@ -312,7 +312,7 @@
     {
         "uuid": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
         "displayName": "Chamber",
-        "description": "El dise\u00f1ador de armas franc\u00e9s, siempre bien vestido y bien pertrechado, expulsa a los agresores con precisi\u00f3n letal. Chamber aprovecha su arsenal personalizado para resistir, elimina enemigos a distancia y crea la contingencia perfecta para cada plan.",
+        "description": "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
         "developerName": "Deadeye",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png",
@@ -335,8 +335,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "Sentinel",
+            "description": "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -344,26 +344,26 @@
         "abilities": [
             {
                 "slot": "Ability2",
-                "displayName": "Rendez-vous",
-                "description": "EQUIPA un anclaje de teleportaci\u00f3n. DISPARA para colocarlo en el suelo. Mientras est\u00e9 en el suelo y al alcance, REACTIVA la habilidad para teleportarte r\u00e1pidamente al anclaje. El anclaje se puede recoger para VOLVER A COLOCARLO.",
+                "displayName": "Rendezvous",
+                "description": "EQUIP a teleport anchor. FIRE to place it on the ground. While on the ground and in range of the anchor, REACTIVATE to quickly teleport to the anchor. The anchor can be picked up to be REDEPLOYED.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Marca registrada",
-                "description": "EQUIPA una trampa que escanea en busca de enemigos. DISPARA para colocarla en el suelo. Cuando un enemigo visible entra en el alcance, la trampa inicia una cuenta atr\u00e1s y, a continuaci\u00f3n, desestabiliza el terreno a su alrededor, lo que crea un campo persistente que ralentiza a los jugadores que se encuentren en su interior. La trampa se puede recoger para VOLVER A COLOCARLA.",
+                "displayName": "Trademark",
+                "description": "EQUIP a trap that scans for enemies. FIRE to place it on the ground. When a visible enemy comes in range, the trap counts down and then destabilizes the terrain around them, creating a lingering field that Slows players caught inside of it. The trap can be picked up to be REDEPLOYED.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Cazador de cabezas",
-                "description": "ACT\u00cdVALA para equipar una pistola pesada. Utiliza el DISPARO ALTERNATIVO para apuntar con la mira.",
+                "displayName": "Headhunter",
+                "description": "ACTIVATE to equip a heavy pistol. ALT FIRE with the pistol equipped to aim down sights.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Tour de force",
-                "description": "ACT\u00cdVALA para invocar un poderoso rifle de francotirador personalizado que mata a los enemigos con cualquier impacto directo en la parte superior del cuerpo. ALTERNA EL MODO DE DISPARO para apuntar con la mira. Matar a un enemigo genera un campo persistente que ralentiza a los jugadores que se encuentren en su interior.",
+                "displayName": "Tour De Force",
+                "description": "ACTIVATE to summon a powerful, custom sniper rifle that will kill an enemy with any direct hit to the upper body. ALT FIRE to aim down sights. Killing an enemy creates a lingering field that Slows players caught inside of it.",
                 "displayIcon": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ultimate/displayicon.png"
             }
         ],
@@ -372,7 +372,7 @@
     {
         "uuid": "601dbbe7-43ce-be57-2a40-4abd24953621",
         "displayName": "KAY/O",
-        "description": "KAY/O es una m\u00e1quina de guerra construida con un \u00fanico prop\u00f3sito: neutralizar a los radiantes. Su poder para suprimir habilidades enemigas incapacita a sus adversarios, lo que asegura la ventaja para \u00e9l y sus aliados.",
+        "description": "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities dismantles his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
         "developerName": "Grenadier",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png",
@@ -395,8 +395,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "Initiator",
+            "description": "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -404,26 +404,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "FRAG/mento",
-                "description": "EQUIPA un fragmento explosivo. DISPARA para lanzar. ALTERNA EL MODO DE DISPARO para tirarlo. El fragmento se adhiere al suelo y explota varias veces, lo que inflige da\u00f1o casi letal en el centro con cada explosi\u00f3n.",
+                "displayName": "FRAG/ment",
+                "description": "EQUIP an explosive fragment. FIRE to throw. ALT FIRE to lob. The fragment sticks to the floor and explodes multiple times, dealing near lethal damage at the center with each explosion.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Unidad/FLASH",
-                "description": "EQUIPA una granada cegadora. DISPARA para lanzar la granada por arriba. ALTERNA EL MODO DE DISPARO para lanzar una granada m\u00e1s d\u00e9bil que explota r\u00e1pidamente. La cegadora explota tras un breve tiempo y ciega a todo el que se encuentre en la l\u00ednea de visi\u00f3n.",
+                "displayName": "FLASH/drive",
+                "description": "EQUIP a flash grenade. FIRE to overhand throw. ALT FIRE to lob a weaker version that explodes quickly. The flash grenade explodes after a short fuse, Blinding anyone in line of sight.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Punto/CERO",
-                "description": "EQUIPA una cuchilla de supresi\u00f3n. DISPARA para lanzar. La cuchilla se adhiere a la primera superficie a la que golpee, se carga y suprime a cualquiera que se encuentre en el radio de la explosi\u00f3n. Los enemigos pueden destruir la cuchilla.",
+                "displayName": "ZERO/point",
+                "description": "EQUIP a suppression blade. FIRE to throw. The blade sticks to the first surface it hits, winds up, and Suppresses anyone in the radius of the explosion. Enemies can destroy this blade.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Cmd/ANULAR",
-                "description": "Experimenta una sobrecarga INSTANT\u00c1NEA de energ\u00eda de radianita polarizada en forma de pulsos de gran radio que se emiten desde KAY/O. Los enemigos que reciban el impacto de pulsos quedan silenciados durante un breve periodo de tiempo. Cuando est\u00e1 sobrecargado, KAY/O se aplica Estimulante de combate y puede volver a estabilizarse si resulta derribado.",
+                "displayName": "NULL/cmd",
+                "description": "INSTANTLY overload with polarized radianite energy that pulses from KAY/O in a massive radius. Enemies hit with pulses are Suppressed for a short duration. While overloaded, KAY/O gains Combat Stim and can be re-stabilized if downed.",
                 "displayIcon": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png"
             }
         ],
@@ -432,7 +432,7 @@
     {
         "uuid": "6f2a04ca-43e0-be17-7f36-b3908627744d",
         "displayName": "Skye",
-        "description": "Skye y su manada de bestias se abren paso desde Australia y a trav\u00e9s de territorio hostil. Sus creaciones obstaculizan los avances enemigos y su capacidad para curar a los dem\u00e1s se ocupa de que, a su lado, su equipo est\u00e9 a salvo.",
+        "description": "Hailing from Australia, Skye and her band of beasts trailblaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
         "developerName": "Guide",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png",
@@ -455,8 +455,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "Initiator",
+            "description": "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -464,26 +464,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Precursor",
-                "description": "EQUIPA un amuleto de lobo marsupial. DISPARA para desplegar al depredador y controlarlo.  Mientras se est\u00e1 controlando al lobo, DISPARA para hacer que salte hacia delante y explote, lo que aturde e inflige da\u00f1o a los enemigos que golpee.",
+                "displayName": "Trailblazer",
+                "description": "EQUIP a Tasmanian tiger trinket. FIRE to send out and take control of the predator.  While in control, FIRE to leap forward, exploding in a Concussive blast and damaging directly hit enemies.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Luz gu\u00eda",
-                "description": "EQUIPA un amuleto de halc\u00f3n.  DISPARA para lanzarlo hacia adelante. MANT\u00c9N PULSADO DISPARAR para guiar al halc\u00f3n en la direcci\u00f3n de la mira. VUELVE A ACTIVAR la habilidad cuando el halc\u00f3n est\u00e9 en el aire para transformarlo en un destello cegador. La ceguera alcanza su m\u00e1xima potencia tras un breve periodo de tiempo durante el vuelo del halc\u00f3n.",
+                "displayName": "Guiding Light",
+                "description": "EQUIP a hawk trinket.  FIRE to send it forward. HOLD FIRE to guide the hawk in the direction of your crosshair. RE-USE while the hawk is in flight to transform it into a flash. The flash reaches max potency after a short duration during the hawk's flight.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Reforestaci\u00f3n",
-                "description": "EQUIPA un amuleto de curaci\u00f3n.  MANT\u00c9N PULSADO para canalizar la habilidad, que cura a los aliados que est\u00e9n dentro del alcance y del campo de visi\u00f3n.  Se puede volver a utilizar hasta que se quede sin curaci\u00f3n disponible.  Skye no se puede curar a s\u00ed misma.",
+                "displayName": "Regrowth",
+                "description": "EQUIP a healing trinket.  HOLD FIRE to channel, Healing allies in range and line of sight.  Can be reused until her healing pool is depleted.  Skye cannot heal herself.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Buscadores",
-                "description": "EQUIPA un amuleto de buscador.  DISPARA para desplegar tres buscadores que localizan a los tres enemigos m\u00e1s cercanos.  Si un buscador alcanza a su objetivo, limita su visi\u00f3n. Los enemigos pueden destruir a los Buscadores.",
+                "displayName": "Seekers",
+                "description": "EQUIP a Seeker trinket.  FIRE to send out three Seekers to track down the three closest enemies.  If a Seeker reaches its target, it Nearsights them. Enemies can destroy the Seekers.",
                 "displayIcon": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png"
             }
         ],
@@ -492,11 +492,11 @@
     {
         "uuid": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
         "displayName": "Cypher",
-        "description": "Cypher es un experto en informaci\u00f3n de Marruecos que se especializa en redes de vigilancia y es capaz de seguirle la pista al enemigo constantemente. No hay secreto a salvo ni maniobra que pase desapercibida. Cypher siempre est\u00e1 alerta.",
+        "description": "The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.",
         "developerName": "Gumshoe",
         "characterTags": [
-            "Detecci\u00f3n",
-            "Bloqueo defensivo"
+            "Detection",
+            "Defensive Lockdown"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/displayiconsmall.png",
@@ -518,8 +518,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "Sentinel",
+            "description": "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -527,26 +527,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Prisi\u00f3n cibern\u00e9tica",
-                "description": "Lanza de INMEDIATO la prisi\u00f3n cibern\u00e9tica frente a Cypher. ACT\u00cdVALA para crear una zona que bloquea la visi\u00f3n y emite un sonido cuando los enemigos la atraviesan.",
+                "displayName": "Cyber Cage",
+                "description": "INSTANTLY toss the cyber cage in front of Cypher. ACTIVATE to create a zone that blocks vision and plays an audio cue when enemies pass through it",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "C\u00e1mara esp\u00eda",
-                "description": "EQUIPA una c\u00e1mara esp\u00eda. DISPARA para colocar la c\u00e1mara esp\u00eda en la ubicaci\u00f3n objetivo. VUELVE A USAR esta habilidad para controlar la visi\u00f3n de la c\u00e1mara. Cuando tengas control de la c\u00e1mara, DISPARA para lanzar un dardo marcador Que revelar\u00e1 la ubicaci\u00f3n de cualquier jugador alcanzado. La c\u00e1mara esp\u00eda se puede recoger para VOLVER A COLOCARLA.",
+                "displayName": "Spycam",
+                "description": "EQUIP a spycam. FIRE to place the spycam at the targeted location. RE-USE this ability to take control of the camera's view. While in control of the camera, FIRE to shoot a marking dart. This dart will Reveal the location of any player struck by the dart. This ability can be picked up to be REDEPLOYED.",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Cable trampa",
-                "description": "EQUIPA un cable trampa. DISPARA para colocar un cable trampa destructible pero oculto en la ubicaci\u00f3n objetivo. Crear\u00e1 una l\u00ednea que se extiende entre la ubicaci\u00f3n en la que se ha colocado y la pared opuesta. Los jugadores enemigos que atraviesen un cable trampa quedar\u00e1n anclados, revelados y aturdidos tras un breve lapso si no logran destruir el dispositivo a tiempo. El cable trampa se puede recoger para VOLVER A COLOCARLO.",
+                "displayName": "Trapwire",
+                "description": "EQUIP a trapwire. FIRE to place a destructible and covert tripwire at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be Tethered, Revealed, and Concussed after a short period if they do not destroy the device in time. This ability can be picked up to be REDEPLOYED.",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Hurto neuronal",
-                "description": "\u00dasalo INSTANT\u00c1NEAMENTE sobre un enemigo muerto para descargar informaci\u00f3n sobre su equipo.  Tras un breve lapso de tiempo, se revelar\u00e1 dos veces la posici\u00f3n de todos los jugadores enemigos vivos.",
+                "displayName": "Neural Theft",
+                "description": "INSTANTLY use on a targeted dead enemy to download information on their team.  After a brief delay, the location of all living enemy players will be Revealed twice.",
                 "displayIcon": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ultimate/displayicon.png"
             }
         ],
@@ -555,11 +555,11 @@
     {
         "uuid": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
         "displayName": "Sova",
-        "description": "Nacido en el eterno invierno de la tundra rusa, Sova destaca a la hora de localizar, perseguir y eliminar a los enemigos con una eficiencia y una precisi\u00f3n inclementes. Su arco personalizado junto con su sobrenatural capacidad de rastreamiento hacen que sea imposible escapar. ",
+        "description": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide. ",
         "developerName": "Hunter",
         "characterTags": [
-            "Detecci\u00f3n",
-            "Da\u00f1o en \u00e1rea"
+            "Detection",
+            "Area Damage"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/displayiconsmall.png",
@@ -581,8 +581,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "1b47567f-8f7b-444b-aae3-b0c634622d10",
-            "displayName": "Iniciador",
-            "description": "Los iniciadores se centran en servirse de \u00e1ngulos inusuales para ayudar a su equipo a adentrarse en territorios clave y alejar a los defensores.",
+            "displayName": "Initiator",
+            "description": "Initiators challenge angles by setting up their team to enter contested ground and push defenders away.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Breaker_PrimaryDataAsset"
         },
@@ -590,32 +590,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Flecha explosiva",
-                "description": "EQUIPA un arco con una flecha explosiva. DISPARA para lanzar la flecha explosiva hacia delante. Explotar\u00e1 cuando impacte e infligir\u00e1 da\u00f1o a los enemigos cercanos. MANT\u00c9N PULSADO para ampliar su alcance. ALTERNA EL MODO DE DISPARO para a\u00f1adir hasta dos rebotes a la flecha.",
+                "displayName": "Shock Bolt",
+                "description": "EQUIP a bow with a shock bolt. FIRE to send the explosive bolt forward, detonating upon collision and damaging players nearby. HOLD FIRE to extend the range of the projectile. ALT FIRE to add up to two bounces to this arrow.",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Proyectil de reconocimiento",
-                "description": "EQUIPA un arco con un proyectil de reconocimiento. Se activar\u00e1 cuando impacte y revelar\u00e1 la posici\u00f3n de los enemigos que se encuentren en la l\u00ednea de visi\u00f3n del proyectil. El proyectil puede ser destruido. MANT\u00c9N PULSADO para ampliar su alcance. ALTERNA EL MODO DE DISPARO para a\u00f1adir hasta dos rebotes a la flecha. ",
+                "displayName": "Recon Bolt",
+                "description": "EQUIP a bow with recon bolt. FIRE to send the recon bolt forward, activating upon collision and Revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. HOLD FIRE to extend the range of the projectile. ALT FIRE to add up to two bounces to this arrow. ",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Dron de reconocimiento",
-                "description": "EQUIPA un dron de reconocimiento. DISPARA para desplegar el dron y controlar su movimiento. Cuando tengas el control del dron, DISPARA para lanzar un dardo marcador Que revelar\u00e1 la ubicaci\u00f3n de cualquier jugador alcanzado. Los enemigos pueden destruir el Dron de reconocimiento.",
+                "displayName": "Owl Drone",
+                "description": "EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, FIRE to shoot a marking dart. This dart will Reveal the location of any player struck by the dart. Enemies can destroy the Owl Drone.",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Furia del cazador",
-                "description": "EQUIPA un arco con tres proyectiles de energ\u00eda de largo alcance que atraviesan paredes. DISPARA para lanzar un proyectil de energ\u00eda en l\u00ednea recta frente a Sova, que infligir\u00e1 da\u00f1o y revelar\u00e1 la posici\u00f3n de los enemigos que se encuentren a su paso. Esta habilidad puede VOLVERSE A USAR hasta dos veces m\u00e1s mientras el temporizador de la habilidad est\u00e9 activo.",
+                "displayName": "Hunter's Fury",
+                "description": "EQUIP a bow with three long-range, wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and Revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.",
                 "displayIcon": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Tirador infalible",
-                "description": "El arco personalizado de Sova permite que sus flechas reboten contra los obst\u00e1culos del terreno. Mantener pulsado el bot\u00f3n de disparo aumenta la potencia del mismo, y soltarlo lanza la flecha. Utiliza el disparo alternativo para cambiar el n\u00famero de rebotes. Las flechas pueden rebotar en los obst\u00e1culos del terreno. Mantener pulsado el clic izquierdo aumenta el alcance de la trayectoria del proyectil. Clic derecho - Hacer clic derecho permite seleccionar la cantidad de rebotes en el terreno. La flecha sale disparada cuando se deja de pulsar el clic izquierdo.",
+                "displayName": "Uncanny Marksman",
+                "description": "Sova's custom bow can fire his arrows and bounce them off terrain. Holding fire charges the bow's power, and the bolt is loosed when released. Press alt fire to change the number of bounces.Your arrows can bounce off terrain. Holding left click increases the bow's range trajectory. Right clicking Toggle through the desired number of terrain bounces by right clicking. The arrow is loosed when left click is released.",
                 "displayIcon": null
             }
         ],
@@ -624,11 +624,11 @@
     {
         "uuid": "1e58de9c-4950-5125-93e9-a0aee9f98746",
         "displayName": "Killjoy",
-        "description": "Killjoy es una brillante agente alemana que se encarga de tomar posiciones clave del campo de batalla con su arsenal de inventos. Si su da\u00f1o no acaba con los enemigos, su horda de robots ayudar\u00e1n a su equipo a despejarlos en un abrir y cerrar de ojos.",
+        "description": "The genius of Germany, Killjoy effortlessly secures key battlefield positions with her arsenal of inventions. If their damage doesn't take her enemies out, the debuff her robots provide will make short work of them.",
         "developerName": "Killjoy",
         "characterTags": [
-            "Bloqueo defensivo",
-            "Da\u00f1o en \u00e1rea"
+            "Defensive Lockdown",
+            "Area Damage"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayiconsmall.png",
@@ -650,8 +650,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "Sentinel",
+            "description": "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -659,26 +659,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Nanoenjambre",
-                "description": "EQUIPA una granada de nanoenjambre. DISPARA para lanzar la granada. Cuando aterriza, la granada enjambre se camufla. ALTERNA EL MODO DE DISPARO para tirarla. ACTIVA el nanoenjambre para desplegar un enjambre de nanobots.  ",
+                "displayName": "Nanoswarm",
+                "description": "EQUIP a Nanoswarm grenade. FIRE to throw the grenade. Upon landing, the Nanoswarm goes covert. ALT FIRE to lob. ACTIVATE the Nanoswarm to deploy a damaging swarm of nanobots.  ",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Bot de alarma",
-                "description": "EQUIPA un bot de alarma camuflado. DISPARA para desplegar un bot que dar\u00e1 caza a los enemigos que est\u00e9n dentro del alcance. Tras alcanzar su objetivo, el bot explota y aplica vulnerabilidad a los enemigos de la zona. MANT\u00c9N PULSADO EQUIPAR para recoger un bot desplegado.",
+                "displayName": "ALARMBOT",
+                "description": "EQUIP a covert Alarmbot. FIRE to deploy a bot that hunts down enemies that get in range.  After reaching its target, the bot explodes and applies Vulnerable to enemies in the area. HOLD EQUIP to recall a deployed bot.",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Torreta",
-                "description": "EQUIPA una torreta. DISPARA para desplegar una torreta que dispara a los enemigos en un cono de 180 grados. ALTERNA EL MODO DE DISPARO para cambiar la direcci\u00f3n de la torreta. MANT\u00c9N PULSADO EQUIPAR para recoger la torreta desplegada. ",
+                "displayName": "TURRET",
+                "description": "EQUIP a Turret. FIRE to deploy a turret that fires at enemies in a 180 degree cone. ALT FIRE to swap turret direction. HOLD EQUIP to recall the deployed turret. ",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Bloqueo",
-                "description": "EQUIPA el dispositivo de bloqueo. DISPARA para desplegar el dispositivo. Tras un largo periodo de carga, el dispositivo detiene a todos los enemigos que est\u00e9n dentro del radio de efecto. Los enemigos pueden destruir el dispositivo.",
+                "displayName": "Lockdown",
+                "description": "EQUIP the Lockdown device. FIRE to deploy the device. After a long windup, the device Detains all enemies caught in the radius. The device can be destroyed by enemies.",
                 "displayIcon": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ultimate/displayicon.png"
             }
         ],
@@ -687,7 +687,7 @@
     {
         "uuid": "95b78ed7-4637-86d9-7e41-71ba8c293152",
         "displayName": "Harbor",
-        "description": "Desde las costas de la India, Harbor llega al campo de batalla armado con tecnolog\u00eda ancestral capaz de controlar el agua. Libera espumosos torrentes y demoledoras olas para escudar a sus aliados o machacar a quien se interponga en su camino.",
+        "description": "Hailing from India\u2019s coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
         "developerName": "Mage",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/displayicon.png",
@@ -710,8 +710,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Controller",
+            "description": "Controllers are experts in slicing up dangerous territory to set their team up for success.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -719,26 +719,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Cala",
-                "description": "EQUIPA una esfera de agua protectora. DISPARA para lanzarla. ALTERNA EL MODO DE DISPARO para tirarla. Al impactar contra el suelo, genera un escudo de agua destructible que bloquea las balas.",
+                "displayName": "Cove",
+                "description": "EQUIP a sphere of shielding water. FIRE to throw. ALT FIRE to lob. Upon impacting the ground, spawn a destructible water shield that blocks bullets.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Cascada",
-                "description": "EQUIPA una ola de agua. DISPARA para enviarla hacia delante y hacer que atraviese las paredes. VUELVE A USAR la habilidad para detener la oleada. Los jugadores golpeados se ven ralentizados.",
+                "displayName": "Cascade",
+                "description": "EQUIP a wave of water. FIRE to send the wave rolling forward and through walls. RE-USE to stop the wave. Players hit are Slowed.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Marea alta",
-                "description": "EQUIPA una pared de agua. DISPARA para lanzarla hacia adelante por el suelo. MANT\u00c9N PULSADO DISPARAR para guiar el agua en la direcci\u00f3n de la mira, atravesando los obst\u00e1culos del terreno y creando una pared por todo el recorrido. ALTERNA EL MODO DE DISPARO mientras trazas la pared para acabarla antes de tiempo. Los jugadores golpeados se ven ralentizados.",
+                "displayName": "High Tide",
+                "description": "EQUIP a wall of water. FIRE to send the water forward along the ground. HOLD FIRE to guide the water in the direction of your crosshair, passing through the world, spawning a wall along the water\u2019s path. ALT FIRE while bending to stop the water early. Players hit are Slowed.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Ajuste de cuentas",
-                "description": "EQUIPA todo el poder de tu artefacto. DISPARA para invocar un g\u00e9iser que nace del suelo. Los enemigos de la zona ser\u00e1n objetivo de varios ataques del g\u00e9iser. Los jugadores que se vean atrapados por un impacto quedan aturdidos.",
+                "displayName": "Reckoning",
+                "description": "EQUIP the full power of your Artifact. FIRE to summon a geyser pool on the ground. Enemy players in the area are targeted by successive geyser strikes. Players caught within a strike are Concussed.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ultimate/displayicon.png"
             }
         ],
@@ -747,10 +747,10 @@
     {
         "uuid": "707eab51-4836-f488-046a-cda6bf494859",
         "displayName": "Viper",
-        "description": "Viper es una qu\u00edmica estadounidense con un amplio arsenal de dispositivos venenosos que le sirven para tomar el control del campo de batalla y cegar a los enemigos. Si las toxinas no acaban con su presa, la paranoia la rematar\u00e1.",
+        "description": "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
         "developerName": "Pandemic",
         "characterTags": [
-            "Especialista en control de visi\u00f3n"
+            "Vision Control Specialist"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/displayiconsmall.png",
@@ -772,8 +772,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Controller",
+            "description": "Controllers are experts in slicing up dangerous territory to set their team up for success.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -781,32 +781,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Nube venenosa",
-                "description": "EQUIPA una granada de gas. DISPARA para lanzar la granada, que permanecer\u00e1 toda la ronda. ALTERNA EL MODO DE DISPARO para tirarla. VUELVE A USAR la habilidad para generar una nube de gas t\u00f3xico a cambio de combustible. La granada se puede VOLVER A USAR m\u00e1s de una vez y se puede recoger para VOLVER A COLOCARLA.",
+                "displayName": "Poison Cloud",
+                "description": "EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. ALT FIRE to lob. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Pantalla t\u00f3xica",
-                "description": "EQUIPA un lanzagranadas de gas que atraviesa los obst\u00e1culos del terreno. DISPARA para desplegar una larga hilera de granadas de gas. VUELVE A USAR la habilidad para crear un alto muro de gas t\u00f3xico a cambio de combustible. Se puede VOLVER A USAR m\u00e1s de una vez.",
+                "displayName": "Toxic Screen",
+                "description": "EQUIP a gas emitter launcher that penetrates terrain. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Veneno de serpiente",
-                "description": "EQUIPA un lanzador qu\u00edmico. DISPARA para lanzar un cartucho que se rompe al impactar contra el suelo, lo que genera una zona qu\u00edmica persistente que inflige da\u00f1o y aplica vulnerabilidad.",
+                "displayName": "Snake Bite",
+                "description": "EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and applies Vulnerable.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Pozo de la v\u00edbora",
-                "description": "EQUIPA un pulverizador qu\u00edmico. DISPARA para pulverizar una nube qu\u00edmica en todas direcciones alrededor de Viper, lo que genera una gran nube que limita la visi\u00f3n de los jugadores y aplica declive a la vida de los enemigos que se encuentren dentro de ella. MANT\u00c9N PULSADA la tecla de habilidad para hacer que la nube se disperse antes de tiempo.",
+                "displayName": "Viper's Pit",
+                "description": "EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that Nearsights players and Decays the health of enemies inside of it. HOLD the ability key to disperse the cloud early.",
                 "displayIcon": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Toxicidad",
-                "description": "Tus habilidades emplean como combustible una toxina que vas generando de forma gradual.  Los enemigos que atraviesan Nube venenosa, Pantalla t\u00f3xica o Pozo de la v\u00edbora de Viper reciben al menos 30 de descomposici\u00f3n al instante. El nivel de descomposici\u00f3n aumenta cuanto m\u00e1s tiempo permanecen en contacto con la fuente.",
+                "displayName": "Toxic",
+                "description": "You gradually generate and replenish the toxin that fuels your abilities.  Enemies that cross through Viper's Poison Cloud, Toxic Screen, or Viper's Pit are instantly inflicted with at least 30 Decay. Their Decay level increases the longer they remain in contact with it.",
                 "displayIcon": null
             }
         ],
@@ -815,11 +815,11 @@
     {
         "uuid": "eb93336a-449b-9c1b-0a54-a891f7921d69",
         "displayName": "Phoenix",
-        "description": "Phoenix proviene del Reino Unido y sus poderes estelares salen a relucir con su estilo de combate, que prende fuego al campo de batalla de forma deslumbrante. Con apoyo o en solitario, \u00e9l es quien decide cu\u00e1ndo y c\u00f3mo se lucha.",
+        "description": "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.",
         "developerName": "Phoenix",
         "characterTags": [
-            "Flexibilidad",
-            "Aguante"
+            "Flexibility",
+            "Self-Sustain"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/displayiconsmall.png",
@@ -841,8 +841,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "Duelist",
+            "description": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -850,32 +850,32 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Llamarada",
-                "description": "EQUIPA una pared de llamas. DISPARA para crear una l\u00ednea de llamas que avanza hacia adelante, lo que forma una pared de fuego que bloquea la visi\u00f3n e inflige da\u00f1o a los jugadores enemigos que la atraviesen. El muro de fuego cura a Phoenix, en lugar de infligirle da\u00f1o. MANT\u00c9N PULSADO DISPARAR para curvar la pared en la direcci\u00f3n de la mira.",
+                "displayName": "Blaze",
+                "description": "EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. The fire wall heals Phoenix instead of dealing damage. HOLD FIRE to bend the wall in the direction of your crosshair.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Bola curva",
-                "description": "EQUIPA un orbe fulgurante que dibuja una trayectoria curva y explota poco despu\u00e9s de haberlo lanzado. DISPARA para lanzar el orbe fulgurante hacia la izquierda, lo que har\u00e1 que detone y ciegue a cualquier jugador que lo vea. ALTERNA EL MODO DE DISPARO para lanzar el orbe fulgurante hacia la derecha.",
+                "displayName": "Curveball",
+                "description": "EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and Blinding any player who sees the orb. ALT FIRE to curve the flare orb to the right.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Combusti\u00f3n",
-                "description": "EQUIPA una bola de fuego. DISPARA para lanzar una bola de fuego que explota transcurrido un tiempo determinado o al impactar contra el suelo, lo que crea una zona de fuego persistente que inflige da\u00f1o a los enemigos. La zona de fuego cura a Phoenix, en lugar de infligirle da\u00f1o. ALTERNA EL MODO DE DISPARO para tirarlo.",
+                "displayName": "Hot Hands",
+                "description": "EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies. The fire zone heals Phoenix instead of dealing damage. ALT FIRE to lob.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Cenizas",
-                "description": "Coloca INSTANT\u00c1NEAMENTE un marcador en la ubicaci\u00f3n de Phoenix. Mientras esta habilidad est\u00e9 activa, morir o dejar que se agote el temporizador har\u00e1 que se termine la habilidad y devolver\u00e1 a Phoenix a esta ubicaci\u00f3n con toda la vida y la cantidad de armadura que ten\u00eda cuando lanz\u00f3 la habilidad.",
+                "displayName": "Run it Back",
+                "description": "INSTANTLY place a marker at Phoenix's location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health and the amount of armor he had when the ability was cast.",
                 "displayIcon": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Calentamiento",
-                "description": "Al pisar su propio fuego, cura a Phoenix DE FORMA PASIVA en lugar de recibir da\u00f1o.",
+                "displayName": "Heating Up",
+                "description": "PASSIVELY Heal Phoenix instead of taking damage when standing in Phoenix's own fire",
                 "displayIcon": null
             }
         ],
@@ -884,7 +884,7 @@
     {
         "uuid": "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
         "displayName": "Astra",
-        "description": "Astra, la agente ghanesa, controla las energ\u00edas del cosmos para dar forma al campo de batalla a su antojo. Con pleno dominio de su forma astral y un gran talento para la anticipaci\u00f3n estrat\u00e9gica, siempre va eones por delante de los movimientos de sus enemigos.",
+        "description": "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.",
         "developerName": "Rift",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/displayicon.png",
@@ -907,8 +907,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Controller",
+            "description": "Controllers are experts in slicing up dangerous territory to set their team up for success.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -916,32 +916,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Pulso nova",
-                "description": "Coloca estrellas en Forma astral (tecla de la definitiva).\nACTIVA una estrella para detonar un Pulso nova. El Pulso nova se carga brevemente y explota, lo que aturde a todos los jugadores en la zona.",
+                "displayName": "Nova Pulse",
+                "description": "Place Stars in Astral Form (Ultimate Key).\r\n\r\nACTIVATE a Star to detonate a Nova Pulse. The Nova Pulse charges briefly then strikes, Concussing all players in its area.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Nebulosa / Disipar",
-                "description": "Coloca estrellas en Forma astral (tecla de la definitiva). \nACTIVA una estrella para transformarla en una Nebulosa (humo).\nUSA una estrella para disiparla, lo que recupera la estrella para poder volver a colocarla tras un tiempo.\nDisipar una estrella crea una breve Nebulosa falsa en su ubicaci\u00f3n antes de recuperarla.",
+                "displayName": "Nebula  / Dissipate",
+                "description": "Place Stars in Astral Form (Ultimate Key). \r\n\r\nACTIVATE a Star to transform it into a Nebula (smoke).\r\n\r\nUSE a Star to Dissipate it, returning the Star to be placed in a new location after a delay.\r\n\r\nDissipate briefly forms a fake Nebula at the Star's location before returning.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Pozo gravitatorio",
-                "description": "Coloca estrellas en Forma astral (tecla de la definitiva).\nACTIVA una estrella para crear un Pozo gravitatorio. Atrae hacia el centro a todos los jugadores en la zona antes de que explote, lo que causa que todos los jugadores atrapados en el interior se vuelvan vulnerables.",
+                "displayName": "Gravity Well",
+                "description": "Place Stars in Astral Form (Ultimate Key).\r\n\r\nACTIVATE a Star to form a Gravity Well. Players in the area are pulled toward the center before it explodes, making all players still trapped inside Vulnerable.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Forma astral / Separaci\u00f3n\nc\u00f3smica",
-                "description": "ACTIVA para entrar en Forma astral y poder colocar estrellas con el DISPARO. Las estrellas se pueden reactivar m\u00e1s tarde para transformarlas en un Pulso nova, una Nebulosa o un Pozo gravitatorio.\nCuando Separaci\u00f3n c\u00f3smica est\u00e1 cargada, usa el DISPARO ALTERNATIVO en Forma astral para empezar a apuntar y, a continuaci\u00f3n, el DISPARO para elegir dos ubicaciones. Se crear\u00e1 una Separaci\u00f3n c\u00f3smica infinita que conecte los dos puntos. Separaci\u00f3n c\u00f3smica bloquea las balas y el sonido.",
+                "displayName": "Astral Form / Cosmic Divide",
+                "description": "ACTIVATE to enter Astral Form where you can place Stars with FIRE. Stars can be reactivated later, transforming them into a Nova Pulse, Nebula, or Gravity Well.\r\n\r\nWhen Cosmic Divide is charged, use ALT FIRE in Astral Form to begin aiming it, then FIRE to select two locations. An infinite Cosmic Divide connects the two points you select. Cosmic Divide blocks bullets and sound.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Forma astral",
-                "description": "ACTIVA la definitiva para entrar en Forma astral y colocar estrellas con el DISPARO PRINCIPAL. Apunta a las estrellas con Pulso nova, Nebulosa y Pozo gravitatorio para usar dichas habilidades.",
+                "displayName": "Astral Form",
+                "description": "ACTIVATE Ultimate to enter Astral Form and PRIMARY FIRE to place Stars. Target Stars with your Nova Pulse, Nebula, or Gravity Well to use those abilities.",
                 "displayIcon": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/abilities/passive/displayicon.png"
             }
         ],
@@ -950,11 +950,11 @@
     {
         "uuid": "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
         "displayName": "Brimstone",
-        "description": "De origen estadounidense, Brimstone cuenta con un arsenal de \u00f3rbita que garantiza que su equipo siempre vaya por delante. Su capacidad para aportar herramientas de utilidad de una forma segura y precisa lo convierte en un comandante de primera l\u00ednea sin igual.",
+        "description": "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
         "developerName": "Sarge",
         "characterTags": [
-            "Control de visi\u00f3n",
-            "Da\u00f1o en \u00e1rea"
+            "Vision Control",
+            "Area Damage"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/displayiconsmall.png",
@@ -976,8 +976,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Controller",
+            "description": "Controllers are experts in slicing up dangerous territory to set their team up for success.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -985,26 +985,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Baliza estimulante",
-                "description": "Lanza INSTANT\u00c1NEAMENTE una baliza estimulante. Al aterrizar, crea un campo que otorga Estimulante de combate y un aumento de velocidad a los jugadores.",
+                "displayName": "Stim Beacon",
+                "description": "INSTANTLY toss down a stim beacon. Upon landing, it creates a field that grants players a Combat Stim and a Speed Boost.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Incendiario",
-                "description": "EQUIPA un lanzagranadas incendiarias. DISPARA una granada que detona cuando se detiene en el suelo, lo que genera una zona de fuego persistente que da\u00f1a a los jugadores que est\u00e9n en su interior.",
+                "displayName": "Incendiary",
+                "description": "EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Cortina de humo",
-                "description": "EQUIPA un mapa t\u00e1ctico. DISPARA para fijar ubicaciones en las que aparecer\u00e1n nubes de humo de Brimstone. ALTERNA EL MODO DE DISPARO para confirmar. Esto liberar\u00e1 nubes de humo de larga duraci\u00f3n que bloquear\u00e1n la visi\u00f3n en la zona seleccionada.",
+                "displayName": "Sky Smoke",
+                "description": "EQUIP a tactical map. FIRE to set locations where Brimstone's smoke clouds will land. ALT FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Golpe orbital",
-                "description": "EQUIPA un mapa t\u00e1ctico. DISPARA para lanzar un golpe orbital en la ubicaci\u00f3n objetivo con un l\u00e1ser persistente, que provocar\u00e1 un gran da\u00f1o prolongado a los jugadores que se encuentren en la zona seleccionada.",
+                "displayName": "Orbital Strike",
+                "description": "EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.",
                 "displayIcon": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1013,7 +1013,7 @@
     {
         "uuid": "bb2a4828-46eb-8cd1-e765-15848195d751",
         "displayName": "Neon",
-        "description": "Neon, una agente filipina, se lanza hacia la batalla a una velocidad trepidante, disparando descargas bioel\u00e9ctricas tan r\u00e1pido como las genera su cuerpo. Se adelanta para pillar a sus enemigos desprevenidos y acabar con ellos m\u00e1s r\u00e1pida que el rayo.",
+        "description": "Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard then strikes them down quicker than lightning.",
         "developerName": "Sprinter",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/displayicon.png",
@@ -1036,8 +1036,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "Duelist",
+            "description": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1045,26 +1045,26 @@
         "abilities": [
             {
                 "slot": "Ability2",
-                "displayName": "Cambio de marcha",
-                "description": "Canaliza INSTANT\u00c1NEAMENTE el poder de Neon para aumentar su velocidad. Cuando est\u00e9 cargada, utiliza el DISPARO ALTERNATIVO para activar un deslizamiento el\u00e9ctrico. La carga del deslizamiento se reinicia cada dos asesinatos.",
+                "displayName": "High Gear",
+                "description": "INSTANTLY channel Neon\u2019s power for Increased Speed. When charged, ALT FIRE to trigger an electric slide. Slide charge resets every two kills.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Proyectil electrizante",
-                "description": "Lanza INSTANT\u00c1NEAMENTE un rayo de energ\u00eda que rebota una vez. Al golpear una superficie, el rayo electrifica el suelo de debajo con una explosi\u00f3n aturdidora.",
+                "displayName": "Relay Bolt",
+                "description": "INSTANTLY throw an energy bolt that bounces once. Upon hitting each surface, the bolt electrifies the ground below with a Concussive blast.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "V\u00eda r\u00e1pida",
-                "description": "DISPARA dos l\u00edneas de energ\u00eda hacia delante por el suelo. Se desplazan una corta distancia o hasta chocar contra alg\u00fan obst\u00e1culo. Entonces, se alzan para convertirse en muros de energ\u00eda est\u00e1tica que bloquean la visi\u00f3n.",
+                "displayName": "Fast Lane",
+                "description": "FIRE two energy lines forward on the ground that extend a short distance or until they hit a surface. The lines rise into walls of static electricity that block vision.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Sobrecarga",
-                "description": "Neon desata todo su poder y velocidad durante un breve periodo de tiempo. DISPARA para canalizar su poder en forma de un mort\u00edfero rayo que permite apuntar con precisi\u00f3n al moverse.",
+                "displayName": "Overdrive",
+                "description": "Unleash Neon\u2019s full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1073,7 +1073,7 @@
     {
         "uuid": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
         "displayName": "Yoru",
-        "description": "Yoru, nacido en Jap\u00f3n, abre agujeros en el tejido de la realidad para infiltrarse tras las l\u00edneas enemigas sin ser visto. Utiliza el enga\u00f1o y la agresividad por igual para acabar con sus objetivos antes de que sepan qu\u00e9 ha pasado.",
+        "description": "Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
         "developerName": "Stealth",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/displayicon.png",
@@ -1096,8 +1096,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "Duelist",
+            "description": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1105,26 +1105,26 @@
         "abilities": [
             {
                 "slot": "Grenade",
-                "displayName": "Enga\u00f1o",
-                "description": "EQUIPA un eco que se transforma en una imagen id\u00e9ntica de Yoru al activarse. DISPARA para activar la imagen al instante y enviarla hacia delante. ALTERNA el modo de disparo para colocar un eco inactivo. USA para transformar un eco inactivo en una imagen y enviarla hacia delante.  Las im\u00e1genes explotan con un destello al ser destruidas por enemigos.",
+                "displayName": "FAKEOUT",
+                "description": "EQUIP an echo that transforms into a mirror image of Yoru when activated. FIRE to instantly activate the mirror image and send it forward. ALT FIRE to place an inactive echo. USE to transform an inactive echo into a mirror image and send it forward.  Mirror images explode in a Blinding flash when destroyed by enemies.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ability1",
-                "displayName": "Punto ciego",
-                "description": "EQUIPA para arrancar un fragmento dimensional inestable de la realidad. DISPARA para lanzar el fragmento, lo que activa un destello que se carga al impactar contra una superficie s\u00f3lida.",
+                "displayName": "BLINDSIDE",
+                "description": "EQUIP to rip an unstable dimensional fragment from reality. FIRE to throw the fragment, activating a flash that winds up once it collides with a hard surface.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Infiltraci\u00f3n",
-                "description": "EQUIPA un v\u00ednculo de grietas. DISPARA para lanzarlo hacia delante. ALTERNA EL MODO DE DISPARO para colocarlo en el sitio. ACTIVA para teleportarte a la ubicaci\u00f3n del v\u00ednculo. USA para activar un teleportar falso.",
+                "displayName": "GATECRASH",
+                "description": "EQUIP a rift tether FIRE to send the tether forward. ALT FIRE to place a stationary tether. ACTIVATE to teleport to the tether's location. USE to trigger a fake teleport.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Viaje interdimensional",
-                "description": "EQUIPA una m\u00e1scara que te permite ver entre dimensiones. DISPARA para adentrarte en la dimensi\u00f3n de Yoru. Los enemigos que est\u00e9n fuera no podr\u00e1n verte ni hacerte da\u00f1o. REACTIVA la habilidad para salir antes de la dimensi\u00f3n de Yoru.",
+                "displayName": "DIMENSIONAL DRIFT",
+                "description": "EQUIP a mask that can see between dimensions. FIRE to drift into Yoru's dimension, unable to be affected or seen by enemies from the outside. REACTIVATE to exit Yoru's dimension early.",
                 "displayIcon": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1133,11 +1133,11 @@
     {
         "uuid": "569fdd95-4d10-43ab-ca70-79becc718b46",
         "displayName": "Sage",
-        "description": "Originaria de China, Sage destaca a la hora de crear espacios seguros para su equipo all\u00e1 donde va. Sus capacidades especiales para revivir a compa\u00f1eros ca\u00eddos en batalla y para mantener a raya los asaltos enemigos la convierten en la calma en mitad de la tormenta para su equipo.",
+        "description": "The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off forceful assaults, she provides a calm center to a hellish battlefield.",
         "developerName": "Thorne",
         "characterTags": [
-            "Recuperaci\u00f3n",
-            "Paralizaci\u00f3n"
+            "Recovery",
+            "Stalling"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/displayiconsmall.png",
@@ -1159,8 +1159,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "5fc02f99-4091-4486-a531-98459a3e95e9",
-            "displayName": "Centinela",
-            "description": "Los centinelas son expertos en defensa que se centran en bloquear \u00e1reas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa.",
+            "displayName": "Sentinel",
+            "description": "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Sentinel_PrimaryDataAsset"
         },
@@ -1168,26 +1168,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Orbe de ralentizaci\u00f3n",
-                "description": "EQUIPA un orbe de ralentizaci\u00f3n. DISPARA para lanzar hacia adelante un orbe de ralentizaci\u00f3n que explota al aterrizar, lo que genera un campo persistente que ralentiza a los jugadores que se encuentren en su interior.",
+                "displayName": "Slow Orb",
+                "description": "EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that Slows players caught inside of it.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Orbe de sanaci\u00f3n",
-                "description": "EQUIPA un orbe de sanaci\u00f3n. DISPARA con la mira sobre un aliado herido para curarlo durante un breve periodo. ALTERNA EL MODO DE DISPARO cuando Sage est\u00e9 herida para que se cure a s\u00ed misma durante un breve periodo.",
+                "displayName": "Healing Orb",
+                "description": "EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a Heal-Over-Time on them. ALT FIRE while Sage is damaged to activate a self Heal-Over-Time.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Orbe barrera",
-                "description": "EQUIPA un orbe barrera. DISPARA para colocar una pared que se fortalece tras unos segundos. Utiliza el DISPARO ALTERNATIVO para rotarla antes de crearla.",
+                "displayName": "Barrier Orb",
+                "description": "EQUIP a barrier orb. FIRE places a wall that fortifies after a few seconds. ALT FIRE rotates the targeter.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Resurrecci\u00f3n",
-                "description": "EQUIPA una habilidad de resurrecci\u00f3n. DISPARA con la mira sobre un aliado muerto para empezar a resucitarlo. Tras un breve periodo de canalizaci\u00f3n, el aliado resucitar\u00e1 con toda la vida.",
+                "displayName": "Resurrection",
+                "description": "EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.",
                 "displayIcon": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1196,11 +1196,11 @@
     {
         "uuid": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
         "displayName": "Reyna",
-        "description": "Desde el coraz\u00f3n de M\u00e9xico, Reyna llega para dominar los combates uno contra uno y cada asesinato que consigue la hace m\u00e1s fuerte. Su potencial es pr\u00e1cticamente infinito y la destreza individual es el \u00fanico factor determinante de su \u00e9xito. ",
+        "description": "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply dependant on performance. ",
         "developerName": "Vampire",
         "characterTags": [
-            "Evasi\u00f3n",
-            "Aguante"
+            "Evasion",
+            "Self-Sustain"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayiconsmall.png",
@@ -1222,8 +1222,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "Duelist",
+            "description": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1231,26 +1231,26 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Devorar",
-                "description": "Cosecha de almas: Los enemigos asesinados por Reyna o que mueran en los 3 segundos siguientes a recibir da\u00f1o de Reyna dejan tras de s\u00ed orbes de alma que duran 3 segundos.\nDevorar: Consume INSTANT\u00c1NEAMENTE un orbe de alma cercano y se cura durante un breve periodo. Si se obtienen m\u00e1s de 100 puntos de vida con esta habilidad, la cantidad adicional se ir\u00e1 perdiendo con el tiempo. Si EMPERATRIZ est\u00e1 activa, esta habilidad se lanzar\u00e1 de forma autom\u00e1tica y no consumir\u00e1 el orbe.",
+                "displayName": "Devour",
+                "description": "Soul Harvest: Enemies that die to Reyna, or die within 3 seconds of taking damage from Reyna, leave behind Soul Orbs that last 3 seconds.\r\nDevour: INSTANTLY consume a nearby soul orb, rapidly Healing for a short duration. Health gained through this skill exceeding 100 will decay over time. If EMPRESS is active, this skill will automatically cast and not consume the Soul Orb.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Despreciar",
-                "description": "Consume INSTANT\u00c1NEAMENTE un orbe de alma cercano y se vuelve intangible durante un breve periodo. Si EMPERATRIZ est\u00e1 activa, se vuelve tambi\u00e9n invisible.",
+                "displayName": "Dismiss",
+                "description": "INSTANTLY consume a nearby Soul Orb, becoming Intangible for a short duration. If EMPRESS is active, also become Invisible.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Mirada lasciva",
-                "description": "EQUIPA un ojo et\u00e9reo destructible. ACT\u00cdVALA para lanzar el ojo hacia delante una corta distancia. El ojo limitar\u00e1 la visi\u00f3n de todos los enemigos que lo miren.",
+                "displayName": "Leer",
+                "description": "EQUIP an ethereal, destructible eye. ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Emperatriz",
-                "description": "Entra en un frenes\u00ed INSTANT\u00c1NEO que otorga Estimulante de combate, lo que aumenta dr\u00e1sticamente la velocidad de disparo, de equipamiento y de recarga. Consigue cargas infinitas de habilidades de Cosecha de almas. Cuando Reyna mata a un enemigo o este muere 3 segundos despu\u00e9s de que ella le haya infligido da\u00f1o, la duraci\u00f3n se reinicia.",
+                "displayName": "Empress",
+                "description": "INSTANTLY enter a frenzy, gaining a Combat Stim that increases firing, equip and reload speed dramatically. Gain infinite charges of Soul Harvest abilities. When an enemy dies to Reyna, or dies within 3 seconds of taking damage from Reyna, the duration is renewed.",
                 "displayIcon": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1259,11 +1259,11 @@
     {
         "uuid": "8e253930-4c05-31dd-1b6c-968525494517",
         "displayName": "Omen",
-        "description": "Omen es un fantasma de tiempos pasados que acecha en las sombras. Es capaz de cegar al enemigo, teleportarse a trav\u00e9s del campo de batalla y sembrar el caos y la paranoia mientras sus rivales se preguntan d\u00f3nde atacar\u00e1 la pr\u00f3xima vez.",
+        "description": "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to uncover where he might strike next.",
         "developerName": "Wraith",
         "characterTags": [
-            "Movilidad",
-            "Control de visi\u00f3n"
+            "Mobility",
+            "Vision Control"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/displayiconsmall.png",
@@ -1285,8 +1285,8 @@
         "isBaseContent": false,
         "role": {
             "uuid": "4ee40330-ecdd-4f2f-98a8-eb1243428373",
-            "displayName": "Controlador",
-            "description": "Los controladores se especializan en dividir terrenos peligrosos en varias zonas para que su equipo pueda encargarse del resto.",
+            "displayName": "Controller",
+            "description": "Controllers are experts in slicing up dangerous territory to set their team up for success.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Strategist_PrimaryDataAsset"
         },
@@ -1295,25 +1295,25 @@
             {
                 "slot": "Ability1",
                 "displayName": "Paranoia",
-                "description": "EQUIPA un orbe cegador.  DISPARA para lanzarlo hacia delante, lo que limita la visi\u00f3n y ensordece a todos los jugadores que toca durante un breve periodo. El proyectil puede atravesar paredes.",
+                "description": "EQUIP a blinding orb.  FIRE to throw it forward, briefly Nearsighting and Deafening all players it touches. This projectile can pass straight through walls.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Velo tenebroso",
-                "description": "EQUIPA un orbe sombr\u00edo y te adentras en un mundo paralelo para colocarlo y marcar el objetivo de los orbes. PULSA la tecla de la habilidad para lanzar el orbe sombr\u00edo a la ubicaci\u00f3n se\u00f1alada, lo que genera una esfera sombr\u00eda de larga duraci\u00f3n que bloquea la visi\u00f3n. MANT\u00c9N PULSADO el bot\u00f3n de disparar al apuntar para que el marcador se aleje m\u00e1s. MANT\u00c9N PULSADO el DISPARO ALTERNATIVO al apuntar para que el marcador se acerque m\u00e1s. PULSA RECARGAR para cambiar al modo de apuntado normal.",
+                "displayName": "Dark Cover",
+                "description": "EQUIP a shadow orb, entering a phased world to place and target the orbs. PRESS the ability key to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD FIRE while targeting to move the marker further away. HOLD ALT FIRE while targeting to move the marker closer. PRESS RELOAD to toggle normal targeting view.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Aparici\u00f3n tenebrosa",
-                "description": "EQUIPA una habilidad para caminar entre las sombras y ve su indicador de alcance. DISPARA para iniciar un breve periodo de canalizaci\u00f3n y despu\u00e9s teleportarte a la ubicaci\u00f3n se\u00f1alada.",
+                "displayName": "Shrouded Step",
+                "description": "EQUIP a shrouded step ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Desde las sombras",
-                "description": "EQUIPA un mapa t\u00e1ctico. DISPARA para empezar a teleportarte a la zona seleccionada. Mientras se teleporta, Omen aparecer\u00e1 como una sombra que los enemigos pueden destruir para cancelar su teleportaci\u00f3n. PULSA EQUIPAR para cancelar la teleportaci\u00f3n.",
+                "displayName": "From the Shadows",
+                "description": "EQUIP a tactical map. FIRE to begin teleporting to the selected location. While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport, or PRESS EQUIP for Omen to cancel his teleport.",
                 "displayIcon": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ultimate/displayicon.png"
             }
         ],
@@ -1322,11 +1322,11 @@
     {
         "uuid": "add6443a-41bd-e414-f6ad-e58d267f4e95",
         "displayName": "Jett",
-        "description": "Jett viene de Corea del Sur y su estilo de lucha \u00e1gil y evasivo le permite asumir grandes riesgos. En las refriegas, recorre el terreno en c\u00edrculos y hace trizas a los enemigos con una rapidez espectacular.",
+        "description": "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies up before they even know what hit them.",
         "developerName": "Wushu",
         "characterTags": [
-            "Evasi\u00f3n",
-            "Movilidad"
+            "Evasion",
+            "Mobility"
         ],
         "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png",
         "displayIconSmall": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayiconsmall.png",
@@ -1348,8 +1348,8 @@
         "isBaseContent": true,
         "role": {
             "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
-            "displayName": "Duelista",
-            "description": "Los duelistas son asesinos autosuficientes que, gracias a sus habilidades y destrezas, suelen conseguir iniciar enfrentamientos y anotarse muchos asesinatos.",
+            "displayName": "Duelist",
+            "description": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
             "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
             "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
         },
@@ -1357,32 +1357,32 @@
         "abilities": [
             {
                 "slot": "Ability1",
-                "displayName": "Vendaval",
-                "description": "Propulsa INSTANT\u00c1NEAMENTE a Jett a mucha altura hacia arriba.",
+                "displayName": "Updraft",
+                "description": "INSTANTLY propel Jett high into the air.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability1/displayicon.png"
             },
             {
                 "slot": "Ability2",
-                "displayName": "Viento de cola",
-                "description": "ACTIVA para preparar una r\u00e1faga de viento durante un tiempo limitado. VUELVE A USAR el viento para propulsar a Jett en la direcci\u00f3n en la que se est\u00e9 moviendo. Si Jett est\u00e1 quieta, se propulsa hacia delante. La carga de Viento de cola se reinicia cada dos asesinatos.",
+                "displayName": "Tailwind",
+                "description": "ACTIVATE to prepare a gust of wind for a limited time. RE-USE the wind to propel Jett in the direction she is moving. If Jett is standing still, she propels forward. Tailwind charge resets every two kills.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ability2/displayicon.png"
             },
             {
                 "slot": "Grenade",
-                "displayName": "Borrasca",
-                "description": "Lanza un proyectil INSTANT\u00c1NEAMENTE que se expande en una nube la cual bloquea la visi\u00f3n de forma breve al impactar contra una superficie. MANT\u00c9N PULSADO el bot\u00f3n de la habilidad para que el humo se curve en la direcci\u00f3n de la mira.",
+                "displayName": "Cloudburst",
+                "description": "INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/grenade/displayicon.png"
             },
             {
                 "slot": "Ultimate",
-                "displayName": "Tormenta de cuchillas",
-                "description": "EQUIPA un conjunto de cuchillos volantes de alta precisi\u00f3n. DISPARA para lanzar un \u00fanico cuchillo y recarga los cuchillos con un asesinato. ALTERNA EL MODO DE DISPARO para lanzar todos los cuchillos restantes, pero no se recargan con un asesinato.",
+                "displayName": "Blade Storm",
+                "description": "EQUIP a set of highly accurate throwing knives. FIRE to throw a single knife and recharge knives on a kill. ALT FIRE to throw all remaining daggers but does not recharge on a kill.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/ultimate/displayicon.png"
             },
             {
                 "slot": "Passive",
-                "displayName": "Planeo",
-                "description": "Mantener pulsado el bot\u00f3n de salto mientras caes te permite planear por los aires.",
+                "displayName": "Drift",
+                "description": "Holding the jump button while falling allows you to glide through the air.",
                 "displayIcon": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/abilities/passive/displayicon.png"
             }
         ],

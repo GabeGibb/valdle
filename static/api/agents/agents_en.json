@@ -53,7 +53,7 @@
             {
                 "slot": "Ultimate",
                 "displayName": "Thrash",
-                "description": "EQUIP Thrash. FIRE to link with Thrash\u2019s mind and steer her through enemy territory. ACTIVATE to lunge forward and explode, Detaining any players in a small radius. When Thrash expires she reverts into a dormant globule. INTERACT to reclaim the globule and gain another Thrash charge after a short cooldown. Thrash can be reclaimed once.",
+                "description": "EQUIP Thrash. FIRE to link with Thrash’s mind and steer her through enemy territory. ACTIVATE to lunge forward and explode, Detaining any players in a small radius. When Thrash expires she reverts into a dormant globule. INTERACT to reclaim the globule and gain another Thrash charge after a short cooldown. Thrash can be reclaimed once.",
                 "displayIcon": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png"
             }
         ],
@@ -687,7 +687,7 @@
     {
         "uuid": "95b78ed7-4637-86d9-7e41-71ba8c293152",
         "displayName": "Harbor",
-        "description": "Hailing from India\u2019s coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
+        "description": "Hailing from India’s coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
         "developerName": "Mage",
         "characterTags": null,
         "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/displayicon.png",
@@ -732,7 +732,7 @@
             {
                 "slot": "Ability2",
                 "displayName": "High Tide",
-                "description": "EQUIP a wall of water. FIRE to send the water forward along the ground. HOLD FIRE to guide the water in the direction of your crosshair, passing through the world, spawning a wall along the water\u2019s path. ALT FIRE while bending to stop the water early. Players hit are Slowed.",
+                "description": "EQUIP a wall of water. FIRE to send the water forward along the ground. HOLD FIRE to guide the water in the direction of your crosshair, passing through the world, spawning a wall along the water’s path. ALT FIRE while bending to stop the water early. Players hit are Slowed.",
                 "displayIcon": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/abilities/ability2/displayicon.png"
             },
             {
@@ -1011,6 +1011,74 @@
         "voiceLine": null
     },
     {
+        "uuid": "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
+        "displayName": "Iso",
+        "description": "Chinese fixer for hire Iso falls into a flow state to dismantle the opposition. Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.",
+        "developerName": "Sequoia",
+        "characterTags": null,
+        "displayIcon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayicon.png",
+        "displayIconSmall": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayiconsmall.png",
+        "bustPortrait": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/fullportrait.png",
+        "fullPortrait": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/fullportrait.png",
+        "fullPortraitV2": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/fullportrait.png",
+        "killfeedPortrait": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/killfeedportrait.png",
+        "background": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/background.png",
+        "backgroundGradientColors": [
+            "c4a1ffff",
+            "3d0fd4ff",
+            "20155dff",
+            "ac52ffff"
+        ],
+        "assetPath": "ShooterGame/Content/Characters/Sequoia/Sequoia_BasePrimaryAsset",
+        "isFullPortraitRightFacing": false,
+        "isPlayableCharacter": true,
+        "isAvailableForTest": false,
+        "isBaseContent": false,
+        "role": {
+            "uuid": "dbe8757e-9e92-4ed4-b39f-9dfc589691d4",
+            "displayName": "Duelist",
+            "description": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first.",
+            "displayIcon": "https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png",
+            "assetPath": "ShooterGame/Content/Characters/_Core/Roles/Assault_PrimaryDataAsset"
+        },
+        "recruitmentData": {
+            "counterId": "23012172-4c2f-13cf-f70c-d584a8050cba",
+            "milestoneId": "c4c1c4eb-4fb0-8a33-9cbe-1d902363d698",
+            "milestoneThreshold": 200000,
+            "useLevelVpCostOverride": false,
+            "levelVpCostOverride": 0,
+            "startDate": "2023-10-31T13:00:00Z",
+            "endDate": "2023-11-29T22:00:00Z"
+        },
+        "abilities": [
+            {
+                "slot": "Ability1",
+                "displayName": "Undercut",
+                "description": "EQUIP a molecular bolt. FIRE to throw it forward, briefly applying Vulnerable to all players it touches. The bolt can pass through solid objects, including walls.",
+                "displayIcon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability1/displayicon.png"
+            },
+            {
+                "slot": "Ultimate",
+                "displayName": "Kill Contract",
+                "description": "EQUIP an interdimensional arena. FIRE to hurl a column of energy through the battlefield, pulling you and the first enemy hit into the arena. You and your opponent duel to the death.",
+                "displayIcon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ultimate/displayicon.png"
+            },
+            {
+                "slot": "Ability2",
+                "displayName": "Double Tap",
+                "description": "START a focus timer. Once completed, enter a flow state during which downed enemies you kill or damage generate an energy orb. Shooting this orb grants you a shield which absorbs one instance of damage from any source.",
+                "displayIcon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/ability2/displayicon.png"
+            },
+            {
+                "slot": "Grenade",
+                "displayName": "Contingency",
+                "description": "EQUIP to assemble prismatic energy. FIRE to push an indestructible wall of energy forward that blocks bullets.",
+                "displayIcon": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/abilities/grenade/displayicon.png"
+            }
+        ],
+        "voiceLine": null
+    },
+    {
         "uuid": "bb2a4828-46eb-8cd1-e765-15848195d751",
         "displayName": "Neon",
         "description": "Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard then strikes them down quicker than lightning.",
@@ -1046,7 +1114,7 @@
             {
                 "slot": "Ability2",
                 "displayName": "High Gear",
-                "description": "INSTANTLY channel Neon\u2019s power for Increased Speed. When charged, ALT FIRE to trigger an electric slide. Slide charge resets every two kills.",
+                "description": "INSTANTLY channel Neon’s power for Increased Speed. When charged, ALT FIRE to trigger an electric slide. Slide charge resets every two kills.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ability2/displayicon.png"
             },
             {
@@ -1064,7 +1132,7 @@
             {
                 "slot": "Ultimate",
                 "displayName": "Overdrive",
-                "description": "Unleash Neon\u2019s full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy.",
+                "description": "Unleash Neon’s full power and speed for a short duration. FIRE to channel the power into a deadly lightning beam with high movement accuracy.",
                 "displayIcon": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/abilities/ultimate/displayicon.png"
             }
         ],
