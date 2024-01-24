@@ -55,6 +55,10 @@ def giveSiteMap():
 def giveRobots():
     return send_file('robots.txt')
 
+@app.route('/ads.txt')
+def giveAds():
+    return send_file('ads.txt')
+
 @app.route('/')
 def valdle():
     return render_template('valdle.html')
