@@ -144,6 +144,15 @@
         ]
     },
     {
+        "displayName": "Iso",
+        "voiceInfo": [
+            {
+                "audioFile": "/TempSequoiaPickFile.mp3",
+                "quote": "Enough training, it's time."
+            }
+        ]
+    },
+    {
         "displayName": "Neon",
         "voiceInfo": [
             {
