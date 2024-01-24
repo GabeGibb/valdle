@@ -71,3 +71,13 @@ a{
     bottom: 0;
     border-top-width: 0;
 }
+
+.privacy{
+    color: aliceblue;
+    font-size: x-large;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(71, 82, 95, 0.37);
+    padding: 10px;
+}

@@ -269,3 +269,18 @@
     color: #ff4655;
 }
 
+.disclaimer{
+    text-align: center;
+    color: aliceblue;
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 416px;
+    margin: auto;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    font-weight: 100;
+    font-size: medium;
+}
+a{
+    color: aliceblue;
+}

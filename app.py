@@ -83,6 +83,10 @@ def guessWeapon():
 def aboutPage():
     return render_template('about.html')
 
+@app.route('/privacy')
+def privacyPage():
+    return render_template('privacy.html')
+
 @app.errorhandler(404) 
 def default_handler(e):
     return render_template('invalidRoute.html')
