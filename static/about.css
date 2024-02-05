@@ -80,4 +80,5 @@ a{
     margin: auto;
     background-color: rgba(71, 82, 95, 0.37);
     padding: 10px;
+    border-radius: 5px;
 }
