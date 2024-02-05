@@ -37,6 +37,11 @@
 	<priority>0.8</priority>
 </url>
 <url>
+	<loc>https://valdle.gg/privacy</loc>
+    <lastmod>2024-02-03T01:12:45+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
 	<loc>https://valdle.gg/%5C</loc>
 	<lastmod>2023-09-21T01:12:57+01:00</lastmod>
 	<priority>0.5</priority>

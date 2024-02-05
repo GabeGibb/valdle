@@ -284,3 +284,9 @@
 a{
     color: aliceblue;
 }
+
+.privacy-policy{
+    width: fit-content;
+    margin: auto;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+}
