@@ -253,7 +253,7 @@ $.get(url, function (data, status) {
     $.get(window.location.href + '/mapOfDay', function (data, status) {
         answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"]
         answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"]
-        console.log(answer)
+        // console.log(answer)
     });
     loadPersistentData('map', curDayId)
 });
