@@ -44,6 +44,7 @@ html, body {
 
 .imgChoice, .callout, .trueImg, .mapChoice, #curMap, #mapChoiceContainer{
     -webkit-user-select: none; /* Safari */
+    -webkit-touch-callout:none;
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     touch-action: manipulation;
