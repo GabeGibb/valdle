@@ -1,4 +1,4 @@
-let url = "https://valdle-static.onrender.com/static/api/weapons/weapons_" + getLanguageCookie() + ".json";
+let url = "https://valdle-static.onrender.com/static/api/weapons/weapons_en.json";
 let weaponUrl = window.location.href + '/weaponOfDay';
 let dropdownClone = $('#dropdown').clone();
 let skinIndex;

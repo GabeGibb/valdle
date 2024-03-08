@@ -1,5 +1,5 @@
 let url = "https://valdle-static.onrender.com/static/api/agents/agents_en.json"
-let qUrl = "https://valdle-static.onrender.com/static/api/quotes/quotes_" + getLanguageCookie() + ".json";
+let qUrl = "https://valdle-static.onrender.com/static/api/quotes/quotes_en.json";
 let quoteUrl = window.location.href + '/quoteOfDay';
 
 var tempData;

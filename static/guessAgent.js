@@ -1,4 +1,4 @@
-let url = "static/api/agents/agents_" + getLanguageCookie() + ".json";
+let url = "https://valdle-static.onrender.com/static/static/api/agents/agents_en.json";
 
 let abilityUrl = window.location.href + '/agentOfDay';
 let dropdownClone = $('#dropdown').clone();
