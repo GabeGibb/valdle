@@ -3,4 +3,3 @@ Gunicorn
 requests
 # Pillow
 python-dotenv
-Flask-Compress==1.14
