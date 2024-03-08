@@ -38,15 +38,21 @@ function loadPersistentData(mode, curDayId){
     dayId = curDayId;
     loadStats(mode);
 
+    // if (debug){
+    //     persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': '', 'language': getLanguageCookie()}
+    //     savePersistentData();
+    //     return;
+    // }
+
     persistentData = JSON.parse(localStorage.getItem(mode));
     
-    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || (persistentData != null && persistentData['language'] != 'en')){
-        if (persistentData != null && persistentData['language'] != 'en'){
+    if (localStorage.getItem(mode) == null || persistentData['dayId'] != dayId || (persistentData != null && persistentData['language'] != getLanguageCookie())){
+        if (persistentData != null && persistentData['language'] != getLanguageCookie()){
             if (persistentData['currentState'] == 'p2'){
                 hasAlreadyWon = true;
             }
         }
-        persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': '', 'language': 'en'}
+        persistentData = {'dayId' : dayId, 'mode': mode, 'triesList': [], 'currentState': 'p1', 'p2Attempt': '', 'language': getLanguageCookie()}
         savePersistentData();
     }
 
