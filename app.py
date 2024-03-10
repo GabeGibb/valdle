@@ -1,4 +1,5 @@
 from flask import Flask, render_template, send_file
+from flask_compress import Compress
 import json
 from requests import get
 from json import dumps
@@ -9,7 +10,10 @@ load_dotenv()
 import os
 masterKey = os.getenv('MASTER')
 
+
+
 app = Flask(__name__)
+Compress(app)
 
 @app.route('/riot.txt')
 def riot():

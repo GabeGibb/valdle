@@ -4,12 +4,12 @@ let totalAudioLength;
 let playCounter = 0;
 
 function makeAudioElement(){
-    $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'><button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src='https://valdle-static.onrender.com/static/images/audioPlay.png'></button></div>");
+    $('.hintDiv').append("<div id='audioContainer' style='display:none' type='audio/mpeg'><button class='playAudioButton' id='playAudioButton'><img id='imgAudioButton' src=static/images/audioPlay.png></button></div>");
 }
 
 function test() {
     let audioPlayerImg = document.getElementById("imgAudioButton");
-    audioPlayerImg.src = "https://valdle-static.onrender.com/static/images/audioPlay.png";
+    audioPlayerImg.src = "/static/images/audioPlay.png";
 }
 
 function addAudioElement(audioSrc) {
@@ -23,15 +23,15 @@ function addAudioElement(audioSrc) {
     playAudioButton.addEventListener('click', function() {
         if (audioPlayer.paused) {
             audioPlayer.play(); // Will play if stopped
-            audioPlayerImg.src = "https://valdle-static.onrender.com/static/images/audioStop.png";
+            audioPlayerImg.src = "/static/images/audioStop.png";
             $(audioPlayer).bind('ended', function(){
-                audioPlayerImg.src = "https://valdle-static.onrender.com/static/images/audioPlay.png";
+                audioPlayerImg.src = "/static/images/audioPlay.png";
             });
         }
         else {
             audioPlayer.pause(); // Stops and resets to the beginning
             audioPlayer.currentTime = 0;
-            audioPlayerImg.src = "https://valdle-static.onrender.com/static/images/audioPlay.png";
+            audioPlayerImg.src = "static/images/audioPlay.png";
         }
     });
     audioContainer.appendChild(playAudioButton);

@@ -243,7 +243,7 @@ $.get(window.location.href + '/mapOfDay', function (data, status) {
 
 
 
-let url = "https://valdle-static.onrender.com/static/api/maps/maps_" + getLanguageCookie() + ".json";
+let url = "static/api/maps/maps_" + getLanguageCookie() + ".json";
 // let url = "/static/api/maps/maps_en.json"
 
 $.get(url, function (data, status) {
