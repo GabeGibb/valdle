@@ -1,21 +1,15 @@
-let url = "static/api/weapons/weapons_" + getLanguageCookie() + ".json";
+let url = "static/api/weapons/weapons_en.json";
 let weaponUrl = window.location.href + '/weaponOfDay';
 let dropdownClone = $('#dropdown').clone();
 let skinIndex;
 let weaponOptions;
 let shouldSave = true;
 
-// jQuery.ajaxSetup({async:false});
 $.get(weaponUrl, function(data, status){ //url defined in current webpage js file
     loadTemplate(url, false, 'weapon', data['dayId']);
-    // console.log(data)
-    // randIndex = data['skinRandIndex'];
     randIndex = data['skinRandIndex'];
     weaponIndex = data['weaponRandIndex'];
-    // console.log(data)
     weaponOptions = data['weaponOptions'];
-    // console.log(weaponOptions);
-    // console.log(weaponOptions);
 });
 
 function doTry(rows, curTry){

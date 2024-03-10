@@ -243,8 +243,7 @@ $.get(window.location.href + '/mapOfDay', function (data, status) {
 
 
 
-let url = "static/api/maps/maps_" + getLanguageCookie() + ".json";
-// let url = "/static/api/maps/maps_en.json"
+let url = "static/api/maps/maps_en.json";
 
 $.get(url, function (data, status) {
     maps = data;

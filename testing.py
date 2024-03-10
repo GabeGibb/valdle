@@ -2,7 +2,6 @@ from app import app
 import json
 from json import dumps
 from generateDailyAnswers import generateDailyAnswers
-#hi :3
 
 @app.route('/doThisIfYouWantToDebug')
 def debug():

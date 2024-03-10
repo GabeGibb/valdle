@@ -5,7 +5,6 @@ $.get(window.location.href + '/dayId', function (data, status) {
     showWinstreaks();
 });
 
-
 function getWinStreak(statsObj){
     let pastId = todaysDayId;
     let counter = 0;
@@ -19,8 +18,6 @@ function getWinStreak(statsObj){
     }
     return counter;
 }
-
-
 
 function showWinstreaks(){
     let buttons = document.querySelector('.buttons').children
