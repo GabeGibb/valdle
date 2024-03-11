@@ -39,4 +39,10 @@ document.body.onload = function(){
     document.body.style.visibility = 'visible'
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.setAttribute('loading', 'lazy');
+    });
+});
 
