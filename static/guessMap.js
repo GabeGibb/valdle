@@ -225,24 +225,6 @@ function clearMap() {
 
 
 let curDayId;
-jQuery.ajaxSetup({async:false});
-$.get(window.location.href + '/mapOfDay', function (data, status) {
-    // console.log(data)
-    answer[0] = data['mapName']
-    answer[1] = data['randCalloutEnglishRegion']
-    answer[2] = data['randCalloutEnglishSuperRegion']
-
-    imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
-    let mapImg = document.getElementById("trueImg");
-    mapImg.src = imgUrl;
-    // console.log(imgUrl);
-
-    curDayId = data['dayId'];
-});
-
-
-
-
 let url = "static/api/maps/maps_en.json";
 
 $.get(url, function (data, status) {
@@ -250,11 +232,18 @@ $.get(url, function (data, status) {
     zoomOutMap();
     createMaps();
     $.get(window.location.href + '/mapOfDay', function (data, status) {
+        answer[0] = data["mapName"]
         answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"]
         answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"]
-        // console.log(answer)
+        
+        imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
+        let mapImg = document.getElementById("trueImg");
+        mapImg.src = imgUrl;
+    
+        curDayId = data['dayId'];
+
+        loadPersistentData('map', curDayId)
     });
-    loadPersistentData('map', curDayId)
 });
 
 
