@@ -8,7 +8,9 @@ let imgUrl;
 let shouldSave = true;
 
 
-let mapSize = document.getElementById('mapChoice').clientHeight;
+// let mapSize = document.getElementById('mapChoice').clientHeight;
+let mapSize = 510;
+// console.log(mapSize)
 let divideFactor = 1000 / mapSize;
 
 let calloutMap = $('#mapChoice').clone();
@@ -76,12 +78,7 @@ function makeCalloutDiv(callout, mapName) {
 
     div.style.cursor = 'pointer';
     div.onclick = function () {
-        // imgUrl = window.location.href + '/' + mapName + '/' + region + '/' + superRegion;
-        // let mapImg = document.getElementById("trueImg");
-        // mapImg.style.clipPath = 'inset(' + 1 + '%)';
-        // mapImg.style.scale = 1
-        // mapImg.src = imgUrl;
-        // return;
+
 
         if (gameOver){
             return;
