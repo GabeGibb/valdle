@@ -40,7 +40,7 @@ document.body.onload = function(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll('img');
+    const images = document.querySelectorAll('img:not(.no-lazy)');
     images.forEach(img => {
       img.setAttribute('loading', 'lazy');
     });
