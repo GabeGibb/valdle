@@ -100,7 +100,7 @@ def default_handler(e):
 
 @app.route('/guessMap/<map>/<region>/<superRegion>')
 def callout(map, region, superRegion):
-    path = f'Valorant Maps/{map}/{region} - {superRegion}.png'
+    path = f'Valorant Maps/{map}/{region} - {superRegion}.webp'
     return send_file(path)
 
 
