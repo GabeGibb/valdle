@@ -413,7 +413,7 @@ function createNextPageBox(nextGame){
                             <div id="partTwoDiv"></div>\
                             <div id = "endTextDiv"><p id="partTwoEndText"></p><p class="notranslate" id="partTwoEndTextAnswer"></p></div>\
                             <button id="statsButton" onclick="toggleStats()">\
-                                <img src="static/images/statsIcon.png" id="statsImg">\
+                                <img src="static/images/statsIcon.webp" id="statsImg">\
                                 <span id="statsButtonInner">Stats</span>\
                             </button>\
                             <div id="statsColumns" style="display: none;">\

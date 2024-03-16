@@ -2,11 +2,10 @@ import os
 from PIL import Image
 
 # Loop through all directories and files
-for root, dirs, files in os.walk('./Valorant Maps'):
-    print('hi')
+for root, dirs, files in os.walk('./static/'):
     for file in files:
         # Check if the file is an image
-        if file.lower().endswith(('.png', '.jpg', '.jpeg')):
+        if file.lower().endswith(('.png', '.jpg')):
             # Get the full path of the image file
             image_path = os.path.join(root, file)
 
