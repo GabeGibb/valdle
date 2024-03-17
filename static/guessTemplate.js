@@ -446,7 +446,8 @@ function createNextPageBox(nextGame){
                                 </div>\
                             </div>\
                             <div id="nextPageButton"></div>\
-                        </div>');
+                        </div>\
+                        <div style="padding-bottom: 65px"></div>');
     let nextGameText = '';
     let nextPageUrl = ''
     if(nextGame != 'home'){
