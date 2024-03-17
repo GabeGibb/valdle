@@ -370,7 +370,7 @@ function removeOption(name){
     let index = 'empty';
     for (i = 0; i < button.length; i++) {
         txtValue = button[i].textContent || button[i].innerText;
-        if (txtValue == name){
+        if (txtValue.toUpperCase() == name.toUpperCase()){
             button[i].textContent = ''
             button[i].innerText = ''
             index = i;
