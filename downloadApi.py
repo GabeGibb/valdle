@@ -72,7 +72,7 @@ def add_before_json():
         for filename in files:
             print(filename)
             if filename.endswith("en.json"):
-                new_filename = filename.replace("enOLD.json", "en.json")
+                new_filename = filename.replace("en.json", "enOLD.json")
                 os.rename(os.path.join(root, filename), os.path.join(root, new_filename))
 
 add_before_json()
