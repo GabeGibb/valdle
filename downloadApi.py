@@ -2,12 +2,12 @@ from requests import get
 from json import dump, load
 
 
-language_list = ["en-US", "es-ES", "tr-TR"]
+language_list = ["en-US"] #, "es-ES", "tr-TR"
 
 def downloadWeapons(lan):
     weapons = get('https://valorant-api.com/v1/weapons?language=' + lan)
     if weapons.status_code == 200:
-        weaponsFile = open("static/api/weapons/weapons_" + lan[:2] + ".json", "w")
+        weaponsFile = open("static/api/weapons/weapons_" + lan[:2] + "NEW.json", "w")
         weaponContent = weapons.json()['data']
 
         for i in range(len(weaponContent)):
@@ -19,7 +19,7 @@ def downloadWeapons(lan):
 def downloadAgents(lan):
     agents = get('https://valorant-api.com/v1/agents?isPlayableCharacter=true&language=' + lan)
     if agents.status_code == 200:
-        agentsFile = open("static/api/agents/agents_" + lan[:2] + ".json", "w")
+        agentsFile = open("static/api/agents/agents_" + lan[:2] + "NEW.json", "w")
         agentsContent = agents.json()['data']
         dump(agentsContent, agentsFile, indent=4)
         agentsFile.close()
@@ -44,7 +44,7 @@ def downloadMaps(lan):
             if fixedMapName in mapList:
                 alteredMaps.append(mapsContent[i])
                 alteredMaps[-1]['rotation'] = 0
-        mapsFile = open("static/api/maps/maps_" + lan[:2] + ".json", "w")
+        mapsFile = open("static/api/maps/maps_" + lan[:2] + "NEW.json", "w")
         dump(alteredMaps, mapsFile, indent=4)
         mapsFile.close()
 

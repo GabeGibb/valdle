@@ -1,3 +1,4 @@
+@ -1,30 +0,0 @@
 import speech_recognition as sr
 import requests
 r = sr.Recognizer()
