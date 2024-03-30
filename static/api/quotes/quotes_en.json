@@ -156,8 +156,8 @@
         "displayName": "Clove",
         "voiceInfo": [
             {
-                "audioFile": "static/api/quotes/TempSequoiaPickFile.mp3",
-                "quote": "TODODODODODO"
+                "audioFile": "static/api/quotes/CloveVoice.mp3",
+                "quote": "I've got all the time in the world."
             }
         ]
     },
