@@ -49,13 +49,13 @@
     position: relative;
 }
 
-#changeLanguage, #about {
+#changeLanguage, #about, #discord {
     transform: scale(0.8);
     transition: 75ms ease-out;
 }
 
 
-#changeLanguage:hover, #about:hover {
+#changeLanguage:hover, #about:hover, #discord:hover {
     transform: scale(0.9);
     cursor: grab;
 }
