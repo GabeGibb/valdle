@@ -12,8 +12,8 @@ let genderMap = {
     "Deadlock": "Female",
     "Raze": "Female",
     "Chamber": "Male",
-    "KAY/O": "Male",
-    "Kay/o": "Male",
+    "KAY/O": "Male", // LAZY FIX
+    "Kay/o": "Male", // LAZY FIX
     "Skye": "Female",
     "Cypher": "Male",
     "Sova": "Male",
@@ -40,8 +40,8 @@ let dateMap = {
     "Deadlock": "2023",
     "Raze": "2020",
     "Chamber": "2021",
-    "KAY/O": "2021",
-    "Kay/o": "2021",
+    "KAY/O": "2021", // LAZY FIX
+    "Kay/o": "2021", // LAZY FIX
     "Skye": "2020",
     "Cypher": "2020",
     "Sova": "2020",
