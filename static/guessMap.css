@@ -194,6 +194,9 @@ html, body {
         width: 21px;
         
     }  */
+    html, body {
+        overflow-x: hidden;
+    }
     
     .calloutText{
         font-size: 9px;
