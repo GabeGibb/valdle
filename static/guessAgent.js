@@ -29,7 +29,8 @@ let genderMap = {
     "Reyna": "Female",
     "Omen": "Male",
     "Jett": "Female",
-    "Iso": "Male"
+    "Iso": "Male",
+    "Clove": "Gender-Neutral",
 }
 
 let dateMap = {
@@ -56,7 +57,8 @@ let dateMap = {
     "Reyna": "2020",
     "Omen": "2020",
     "Jett": "2020",
-    "Iso": "2023"
+    "Iso": "2023",
+    "Clove": "2024",
 }
 
 // jQuery.ajaxSetup({async:false});
@@ -97,11 +99,10 @@ function isCorrectAgentOption(userInputUPPER){
     let optionAnswer = string[0].toUpperCase() + string.slice(1);
     let string2 = (userInputUPPER).toLowerCase();
     userInput = string2[0].toUpperCase() + string2.slice(1);
-    console.log(optionAnswer)
+
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName'], dateMap[optionAnswer]]
     let guessList = [userInput, genderMap[userInputUPPER], dataList[findUserIndex(userInputUPPER)]['role']['displayName'], dateMap[userInputUPPER]]
-    console.log(guessList)
-    console.log(correctAnswers)
+
     let listOfGuesses = document.getElementById("listOfGuesses");
 
     let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses

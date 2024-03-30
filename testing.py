@@ -7,8 +7,11 @@ from generateDailyAnswers import generateDailyAnswers
 def debug():
     f = open('dailyAnswers.json')
     past = json.load(f)
-
     json_object = dumps(generateDailyAnswers(past), indent=4)
+    while True:
+        json_object = dumps(generateDailyAnswers(past), indent=4)
+        if "Clove" in json_object:
+            break
 
     with open("dailyAnswers.json", "w") as outfile:
         outfile.write(json_object)

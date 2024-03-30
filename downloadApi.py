@@ -70,8 +70,7 @@ def add_before_json():
     root_dir = "static/api"
     for root, dirs, files in os.walk(root_dir):
         for filename in files:
-            print(filename)
-            if filename.endswith("en.json"):
+            if filename in ["agents_en.json", "weapons_en.json", "maps_en.json"]:
                 new_filename = filename.replace("en.json", "enOLD.json")
                 os.rename(os.path.join(root, filename), os.path.join(root, new_filename))
 
@@ -81,4 +80,4 @@ add_before_json()
 for language in language_list:
     downloadWeapons(language) # for weapons
     downloadAgents(language) # for agents
-    downloadMaps(language) #for maps
+    # downloadMaps(language) #for maps

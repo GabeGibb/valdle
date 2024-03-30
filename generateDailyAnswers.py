@@ -98,16 +98,15 @@ def getWeapon(past):
     data = load(f)
     f.close()
     weaponIndex = randint(0, len(data)-1)
-    while weaponIndex in past['weaponRandIndex']:
+    while weaponIndex in past['weaponRandIndex'] or data[weaponIndex]['displayName'] == "Outlaw": # TODO: Outlaw too few skins
         weaponIndex = randint(0, len(data)-1)
 
     skinIndex = randint(0, len(data[weaponIndex]['skins'])-1)
 
     weaponSkins = [skinIndex]
-    print(weaponSkins)
     indexes = [x for x in range(0, len(data[weaponIndex]['skins']))]
     indexes.pop(skinIndex)
-    for _ in range(14):
+    for _ in range(min(14, len(data[weaponIndex]['skins'])-1)):
         randNumsIndex = randint(0, len(indexes) -1)
         weaponSkins.append(indexes[randNumsIndex])
         indexes.pop(randNumsIndex)

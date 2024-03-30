@@ -147,8 +147,17 @@
         "displayName": "Iso",
         "voiceInfo": [
             {
-                "audioFile": "/TempSequoiaPickFile.mp3",
+                "audioFile": "static/api/quotes/TempSequoiaPickFile.mp3",
                 "quote": "Enough training, it's time."
+            }
+        ]
+    },
+    {
+        "displayName": "Clove",
+        "voiceInfo": [
+            {
+                "audioFile": "static/api/quotes/TempSequoiaPickFile.mp3",
+                "quote": "TODODODODODO"
             }
         ]
     },
