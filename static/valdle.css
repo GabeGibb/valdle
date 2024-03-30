@@ -50,13 +50,13 @@
 }
 
 #changeLanguage, #about, #discord {
-    transform: scale(0.8);
+    transform: scale(0.85);
     transition: 75ms ease-out;
 }
 
 
 #changeLanguage:hover, #about:hover, #discord:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
     cursor: grab;
 }
 
