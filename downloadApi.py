@@ -78,7 +78,7 @@ def add_before_json():
 add_before_json()
 
 
-# for language in language_list:
-#     downloadWeapons(language) # for weapons
-#     downloadAgents(language) # for agents
-#     downloadMaps(language) #for maps
+for language in language_list:
+    downloadWeapons(language) # for weapons
+    downloadAgents(language) # for agents
+    downloadMaps(language) #for maps

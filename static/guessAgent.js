@@ -13,6 +13,7 @@ let genderMap = {
     "Raze": "Female",
     "Chamber": "Male",
     "KAY/O": "Male",
+    "Kay/o": "Male",
     "Skye": "Female",
     "Cypher": "Male",
     "Sova": "Male",
@@ -39,6 +40,7 @@ let dateMap = {
     "Raze": "2020",
     "Chamber": "2021",
     "KAY/O": "2021",
+    "Kay/o": "2021",
     "Skye": "2020",
     "Cypher": "2020",
     "Sova": "2020",
@@ -95,9 +97,11 @@ function isCorrectAgentOption(userInputUPPER){
     let optionAnswer = string[0].toUpperCase() + string.slice(1);
     let string2 = (userInputUPPER).toLowerCase();
     userInput = string2[0].toUpperCase() + string2.slice(1);
+    console.log(optionAnswer)
     let correctAnswers = [optionAnswer, genderMap[optionAnswer], dataList[randIndex]['role']['displayName'], dateMap[optionAnswer]]
     let guessList = [userInput, genderMap[userInputUPPER], dataList[findUserIndex(userInputUPPER)]['role']['displayName'], dateMap[userInputUPPER]]
-    
+    console.log(guessList)
+    console.log(correctAnswers)
     let listOfGuesses = document.getElementById("listOfGuesses");
 
     let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
