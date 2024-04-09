@@ -2,6 +2,7 @@ from app import app
 import json
 from json import dumps
 from generateDailyAnswers import generateDailyAnswers
+from app import loadDailyAnswers
 
 @app.route('/doThisIfYouWantToDebug')
 def debug():
@@ -15,6 +16,7 @@ def debug():
 
     with open("dailyAnswers.json", "w") as outfile:
         outfile.write(json_object)
+    loadDailyAnswers()
     return json_object
 
 app.run(host='0.0.0.0', debug=True)

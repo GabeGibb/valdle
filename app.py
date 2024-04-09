@@ -14,6 +14,13 @@ masterKey = os.getenv('MASTER')
 
 app = Flask(__name__)
 Compress(app)
+dailyGameAnswers = None
+
+def loadDailyAnswers():
+    global dailyGameAnswers
+    f = open("dailyAnswers.json")
+    dailyGameAnswers = json.load(f)
+    f.close()
 
 @app.route('/riot.txt')
 def riot():
@@ -32,7 +39,7 @@ def updateAnswers():
 
     with open("dailyAnswers.json", "w") as outfile:
         outfile.write(json_object)
-
+    loadDailyAnswers()
     return json_object
 
 updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
@@ -97,17 +104,13 @@ def callout(map, region, superRegion):
 
 @app.route('/dayId')
 def getDayId():
-    f = open("dailyAnswers.json")
-    dailyGameAnswers = json.load(f)
-    f.close()
+    global dailyGameAnswers
     dayIdDict = {}
     dayIdDict['dayId'] = dailyGameAnswers['dayId']
     return dayIdDict
 
 def blankOfDay(mode):
-    f = open("dailyAnswers.json")
-    dailyGameAnswers = json.load(f)
-    f.close()
+    global dailyGameAnswers
     blankOfDay = {}
     blankOfDay = dailyGameAnswers[mode]
     blankOfDay['dayId'] = dailyGameAnswers['dayId']
