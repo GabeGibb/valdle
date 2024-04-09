@@ -110,13 +110,13 @@ def callout(map, region, superRegion):
 
 
 # Retrieves daily answers from JSON file
-
+import sys
 @app.route('/dayId')
 def getDayId():
     global dailyGameAnswers
     dayIdDict = {}
     dayIdDict['dayId'] = dailyGameAnswers['dayId']
-    print(dayIdDict)
+    print(dayIdDict, file=sys.stdout)
     return dayIdDict
 
 def blankOfDay(mode):
