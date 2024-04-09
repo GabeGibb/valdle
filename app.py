@@ -23,14 +23,6 @@ def loadDailyAnswers():
     f.close()
     print(dailyGameAnswers)
 
-@app.after_request
-def add_header(response):
-    # Directs CDNs and browsers to not cache the content
-    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, proxy-revalidate'
-    response.headers['Pragma'] = 'no-cache'
-    response.headers['Expires'] = '0'
-    return response
-
 @app.route('/riot.txt')
 def riot():
     return send_file('riot.txt')
@@ -110,13 +102,11 @@ def callout(map, region, superRegion):
 
 
 # Retrieves daily answers from JSON file
-import sys
-@app.route('/dayId')
+@app.route('/dayId2')
 def getDayId():
     global dailyGameAnswers
     dayIdDict = {}
     dayIdDict['dayId'] = dailyGameAnswers['dayId']
-    print(dayIdDict, file=sys.stdout)
     return dayIdDict
 
 def blankOfDay(mode):
@@ -127,22 +117,22 @@ def blankOfDay(mode):
     return blankOfDay
 
 
-@app.route('/guessMap/mapOfDay')
+@app.route('/guessMap/mapOfDay2')
 def mapOfDay():
     return blankOfDay('map')
 
-@app.route('/guessAgent/agentOfDay')
+@app.route('/guessAgent/agentOfDay2')
 def agentOfDay():
     return blankOfDay('agent')
 
-@app.route('/guessAbility/abilityOfDay')
+@app.route('/guessAbility/abilityOfDay2')
 def abilityOfDay():
     return blankOfDay('ability')
 
-@app.route('/guessQuote/quoteOfDay')
+@app.route('/guessQuote/quoteOfDay2')
 def quoteOfDay():
     return blankOfDay('quote')
 
-@app.route('/guessWeapon/weaponOfDay')
+@app.route('/guessWeapon/weaponOfDay2')
 def weaponOfDay():
     return blankOfDay('weapon')

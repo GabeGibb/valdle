@@ -1,6 +1,6 @@
 let url = "static/api/agents/agents_en.json";
 
-let abilityUrl = window.location.href + '/agentOfDay';
+let abilityUrl = window.location.href + '/agentOfDay2';
 let dropdownClone = $('#dropdown').clone();
 let randIndex2;
 agentP1 = true;

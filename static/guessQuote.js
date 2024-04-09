@@ -1,6 +1,6 @@
 let url = "static/api/agents/agents_en.json"
 let qUrl = "static/api/quotes/quotes_en.json";
-let quoteUrl = window.location.href + '/quoteOfDay';
+let quoteUrl = window.location.href + '/quoteOfDay2';
 
 var tempData;
 var audioFile;
