@@ -21,6 +21,7 @@ def loadDailyAnswers():
     f = open("dailyAnswers.json")
     dailyGameAnswers = json.load(f)
     f.close()
+    print(dailyGameAnswers)
 
 @app.route('/riot.txt')
 def riot():
