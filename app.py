@@ -23,6 +23,14 @@ def loadDailyAnswers():
     f.close()
     print(dailyGameAnswers)
 
+@app.after_request
+def add_header(response):
+    # Directs CDNs and browsers to not cache the content
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, proxy-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response
+
 @app.route('/riot.txt')
 def riot():
     return send_file('riot.txt')
@@ -108,6 +116,7 @@ def getDayId():
     global dailyGameAnswers
     dayIdDict = {}
     dayIdDict['dayId'] = dailyGameAnswers['dayId']
+    print(dayIdDict)
     return dayIdDict
 
 def blankOfDay(mode):
