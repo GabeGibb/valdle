@@ -1,6 +1,19 @@
 /* Genric Styles */
 
-@import url(https://db.onlinewebfonts.com/c/0201813274259c3d4f78760d19270bab?family=DIN+Next+LT+W04+Medium);
+@font-face{
+    font-family: "DIN Next LT W04 Medium";
+    src: url("fonts/0201813274259c3d4f78760d19270bab.eot");
+    src: url("fonts/0201813274259c3d4f78760d19270bab.eot?#iefix")format("embedded-opentype"),
+        url("fonts/0201813274259c3d4f78760d19270bab.woff")format("woff"),
+        url("fonts/0201813274259c3d4f78760d19270bab.woff2")format("woff2"),
+        url("fonts/0201813274259c3d4f78760d19270bab.ttf")format("truetype"),
+        url("fonts/0201813274259c3d4f78760d19270bab.svg#DIN Next LT W04 Medium")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+ 
+/* @import url(https://db.onlinewebfonts.com/c/0201813274259c3d4f78760d19270bab?family=DIN+Next+LT+W04+Medium); */
 
 html {
     margin: 0px;
