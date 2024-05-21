@@ -1,6 +1,6 @@
 
 let todaysDayId;
-$.get(window.location.href + '/dayId2', function (data, status) {
+$.get(window.location.href + '/api/dayId', function (data, status) {
     todaysDayId = data['dayId']
     showWinstreaks();
 });
