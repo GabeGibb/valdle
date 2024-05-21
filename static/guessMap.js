@@ -228,7 +228,7 @@ $.get(url, function (data, status) {
     maps = data;
     zoomOutMap();
     createMaps();
-    $.get(window.location.href + '/mapOfDay2', function (data, status) {
+    $.get(window.location.href + '/api/mapOfDay', function (data, status) {
         answer[0] = data["mapName"]
         answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"]
         answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"]

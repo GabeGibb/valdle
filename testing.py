@@ -3,14 +3,6 @@ import json
 from json import dumps
 from generateDailyAnswers import generateDailyAnswers
 from app import loadDailyAnswers
-
-@app.after_request
-def add_header(response):
-    # Set headers to instruct the browser to revalidate the content for every request
-    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
-    response.headers['Pragma'] = 'no-cache'
-    response.headers['Expires'] = '0'
-    return response
     
 @app.route('/doThisIfYouWantToDebug')
 def debug():

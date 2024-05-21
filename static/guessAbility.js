@@ -1,5 +1,5 @@
 let url = "static/api/agents/agents_en.json";
-let abilityUrl = window.location.href + '/abilityOfDay2';
+let abilityUrl = window.location.href + '/api/abilityOfDay';
 var abilityIndex;
 var abilityIcon;
 let tileOrder;

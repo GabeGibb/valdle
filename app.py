@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template, send_file, request
 from flask_compress import Compress
 import json
 from requests import get
@@ -22,6 +22,18 @@ def loadDailyAnswers():
     dailyGameAnswers = json.load(f)
     f.close()
     print(dailyGameAnswers)
+
+@app.after_request
+def add_header(response):
+    if "/api" in request.path:
+        print(request.path)
+        response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        response.headers['Pragma'] = 'no-cache'
+        response.headers['Expires'] = '0'
+    else:
+        response.headers['Cache-Control'] = 'public, max-age=86400'
+    return response
+
 
 @app.route('/riot.txt')
 def riot():
@@ -99,10 +111,10 @@ def callout(map, region, superRegion):
     path = f'Valorant Maps/{map}/{region} - {superRegion}.webp'
     return send_file(path)
 
-
+# API ENDPOINTS
 
 # Retrieves daily answers from JSON file
-@app.route('/dayId2')
+@app.route('/api/dayId')
 def getDayId():
     global dailyGameAnswers
     dayIdDict = {}
@@ -117,22 +129,22 @@ def blankOfDay(mode):
     return blankOfDay
 
 
-@app.route('/guessMap/mapOfDay2')
+@app.route('/guessMap/api/mapOfDay')
 def mapOfDay():
     return blankOfDay('map')
 
-@app.route('/guessAgent/agentOfDay2')
+@app.route('/guessAgent/api/agentOfDay')
 def agentOfDay():
     return blankOfDay('agent')
 
-@app.route('/guessAbility/abilityOfDay2')
+@app.route('/guessAbility/api/abilityOfDay')
 def abilityOfDay():
     return blankOfDay('ability')
 
-@app.route('/guessQuote/quoteOfDay2')
+@app.route('/guessQuote/api/quoteOfDay')
 def quoteOfDay():
     return blankOfDay('quote')
 
-@app.route('/guessWeapon/weaponOfDay2')
+@app.route('/guessWeapon/api/weaponOfDay')
 def weaponOfDay():
     return blankOfDay('weapon')

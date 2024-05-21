@@ -1,5 +1,5 @@
 let url = "static/api/weapons/weapons_en.json";
-let weaponUrl = window.location.href + '/weaponOfDay2';
+let weaponUrl = window.location.href + '/api/weaponOfDay';
 let dropdownClone = $('#dropdown').clone();
 let skinIndex;
 let weaponOptions;
