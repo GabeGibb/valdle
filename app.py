@@ -26,7 +26,6 @@ def loadDailyAnswers():
 @app.after_request
 def add_header(response):
     if "/api" in request.path:
-        print(request.path)
         response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
         response.headers['Pragma'] = 'no-cache'
         response.headers['Expires'] = '0'
