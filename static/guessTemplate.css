@@ -851,21 +851,40 @@ canvas:not(#confettiCanvas){
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: none; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: black;
+    text-align: center;
+    color: white;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    padding-top: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    width: 85%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+}
+
+.modal-content .linedeco hr{
+    width: 80%;
+}
+.modal-header1{
+    font-family: 'VALORANT', sans-serif;
+    font-size: 28px;
+}
+
+.modal-header2{
+    font-size: 22px;
 }
 
 .close-button {
-    color: #aaa;
+    color: #fa4454;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -873,7 +892,7 @@ canvas:not(#confettiCanvas){
 
 .close-button:hover,
 .close-button:focus {
-    color: black;
+    transform: scale(1.1);
     text-decoration: none;
     cursor: pointer;
 }
@@ -881,6 +900,7 @@ canvas:not(#confettiCanvas){
 #shareButton {
     background-color: #4CAF50; /* Green */
     border: none;
+    border-radius: 5px;
     color: white;
     padding: 15px 32px;
     text-align: center;

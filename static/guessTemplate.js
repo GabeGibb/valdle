@@ -469,12 +469,11 @@ function createNextPageBox(nextGame){
     
     setTimeout(() => {
         document.getElementById("nextPageBox").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        addShareDiv();
     }, 600);
 
     showStats();
-    
-    addShareDiv();
-}
+    }
  
 
 function addShareDiv() {
@@ -490,6 +489,7 @@ function addShareDiv() {
 
     for (let i = 0; i < modes.length; i++) {
         let curData = JSON.parse(localStorage.getItem(modes[i]));
+        console.log(curData)
         if (curData == null || curData.dayId != dayId || curData.currentState != 'p2') {
             return;
         } else {
@@ -497,8 +497,8 @@ function addShareDiv() {
             output.push(`${modeEmojis[modes[i]]} ${modes[i].charAt(0).toUpperCase() + modes[i].slice(1)}: ${numTries}`);
         }
     }
-
-    let shareMessage = "I completed all the modes of #Valdle today:\n" + output.join("\n");
+    console.log("hi")
+    let shareMessage = "valdle.gg #" + dayId + ":\n" + output.join("\n");
 
     // Split the shareMessage by newline character
     let shareLines = shareMessage.split("\n");
@@ -511,6 +511,13 @@ function addShareDiv() {
         <div id="completionModal" class="modal">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
+                <h2 class="modal-header1">Congrats!</h1>
+                <h3 class="modal-header2">You've completed all the challenges for today!</h3>
+                <div class="linedeco">
+                    <hr>
+                    <p>	◆</p>
+                </div>
+                <div style="padding-top: 10px"></div>
                 ${shareHTML}
                 <button id="shareButton">Share</button>
             </div>
@@ -525,6 +532,12 @@ function addShareDiv() {
     // Close modal functionality
     $('.close-button').click(function() {
         $('#completionModal').hide();
+    });
+
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.modal-content').length) {
+            $('#completionModal').hide();
+        }
     });
 
     // Share button functionality
@@ -556,6 +569,7 @@ function createAndUpdateTimer() {
 
     let timeString = hours.toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2);
     $("#nextValdleCountdown").text(timeString);
+    $("#nextValdleCountdown2").text(timeString);
 }
 
 function toggleStats(){
