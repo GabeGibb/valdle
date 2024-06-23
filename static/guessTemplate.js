@@ -481,22 +481,19 @@ function createNextPageBox(nextGame){
 
 function createAndUpdateTimer() {
     let nextMidnight = new Date();
-    nextMidnight.setHours(21,0,0,0);
+    nextMidnight.setUTCHours(0, 0, 0, 0);
+    nextMidnight.setDate(nextMidnight.getUTCDate() + 1);
     let now = new Date();
 
-    if ((nextMidnight - now) < 0) {
-        nextMidnight.setHours(45,0,0,0);
-    }
-    
-    let rest = (nextMidnight.getTime() - now.getTime())/1000;
+    let rest = (nextMidnight.getTime() - now.getTime()) / 1000;
 
-    const hours = Math.floor(rest/3600);
-    rest = rest-(hours*3600);
-    const minutes = Math.floor(rest/60);
-    rest = rest-(minutes*60);
+    const hours = Math.floor(rest / 3600);
+    rest = rest - (hours * 3600);
+    const minutes = Math.floor(rest / 60);
+    rest = rest - (minutes * 60);
     const seconds = Math.floor(rest);
 
-    let timeString = (hours).toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2); // hours-3 to convert it to EST
+    let timeString = (hours).toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2);
     $("#nextValdleCountdown").text(timeString);
 }
 
