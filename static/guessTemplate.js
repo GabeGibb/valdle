@@ -477,30 +477,64 @@ function createNextPageBox(nextGame){
 }
  
 
-function addShareDiv(){
-    modes = ['map', 'agent', 'ability', 'weapon', "quote"]
+function addShareDiv() {
+    let modes = ['map', 'agent', 'ability', 'weapon', "quote"];
+    let output = [];
+    let modeEmojis = {
+        map: '🗺️',
+        agent: '🕵️',
+        ability: '✨',
+        weapon: '🔫',
+        quote: '💬'
+    };
 
-    for(let i = 0; i < modes.length; i++){
+    for (let i = 0; i < modes.length; i++) {
         let curData = JSON.parse(localStorage.getItem(modes[i]));
-        console.log(curData)
-        if (curData == null || curData.dayId != dayId || curData.currentState != 'p2'){
-            // return;
-        }
-        else{
-            let stats = JSON.parse(localStorage.getItem(modes[i] + 'Stats'));
-            console.log("GOOD")
-            console.log(stats.triesList.length)
+        if (curData == null || curData.dayId != dayId || curData.currentState != 'p2') {
+            return;
+        } else {
+            let numTries = curData.triesList.length;
+            output.push(`${modeEmojis[modes[i]]} ${modes[i].charAt(0).toUpperCase() + modes[i].slice(1)}: ${numTries}`);
         }
     }
 
+    let shareMessage = "I completed all the modes of #Valdle today:\n" + output.join("\n");
 
-    // let shareDiv = $('<div id="shareDiv">\
-    //                     <button id="shareButton" onclick="share()">\
-    //                         <img src="static/images/shareIcon.webp" id="shareImg">\
-    //                         <span id="shareButtonInner">Share</span>\
-    //                     </button>\
-    //                 </div>');
-    // $('body').append(shareDiv);
+    // Modal HTML structure
+    let modalHTML = `
+        <div id="completionModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <p>${shareMessage}</p>
+                <button id="shareButton">Share</button>
+            </div>
+        </div>
+    `;
+
+    $('body').append(modalHTML);
+
+    // Display the modal
+    $('#completionModal').show();
+
+    // Close modal functionality
+    $('.close-button').click(function() {
+        $('#completionModal').hide();
+    });
+
+    // Share button functionality
+    $('#shareButton').click(function() {
+        console.log('Share button clicked!');
+        copyToClipboard(shareMessage);
+        // Implement sharing functionality here
+    });
+}
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        console.log('Text copied to clipboard successfully!');
+    }).catch(err => {
+        console.error('Failed to copy text to clipboard:', err);
+    });
 }
 
 
