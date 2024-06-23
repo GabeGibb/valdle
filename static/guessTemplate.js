@@ -472,7 +472,37 @@ function createNextPageBox(nextGame){
     }, 600);
 
     showStats();
+    
+    addShareDiv();
 }
+ 
+
+function addShareDiv(){
+    modes = ['map', 'agent', 'ability', 'weapon', "quote"]
+
+    for(let i = 0; i < modes.length; i++){
+        let curData = JSON.parse(localStorage.getItem(modes[i]));
+        console.log(curData)
+        if (curData == null || curData.dayId != dayId || curData.currentState != 'p2'){
+            // return;
+        }
+        else{
+            let stats = JSON.parse(localStorage.getItem(modes[i] + 'Stats'));
+            console.log("GOOD")
+            console.log(stats.triesList.length)
+        }
+    }
+
+
+    // let shareDiv = $('<div id="shareDiv">\
+    //                     <button id="shareButton" onclick="share()">\
+    //                         <img src="static/images/shareIcon.webp" id="shareImg">\
+    //                         <span id="shareButtonInner">Share</span>\
+    //                     </button>\
+    //                 </div>');
+    // $('body').append(shareDiv);
+}
+
 
 function createAndUpdateTimer() {
     // Get the current time in EST
