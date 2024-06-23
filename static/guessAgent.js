@@ -183,7 +183,6 @@ function modeWrongActions(){
     }
 }
 
-
 let secondPartStarted = false;
 function displayPartTwo(){
     if (secondPartStarted){

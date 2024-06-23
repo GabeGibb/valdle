@@ -105,11 +105,6 @@ $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
 
-$(window).on('click', function(){
-    // console.log(persistentData)
-    // console.log(stats)
-})
-
 
 // jQuery.ajaxSetup({async:false});
 function loadTemplate(url, showButtonImages, mode, curDayId){
@@ -480,10 +475,12 @@ function createNextPageBox(nextGame){
 }
 
 function createAndUpdateTimer() {
-    let nextMidnight = new Date();
-    nextMidnight.setUTCHours(0, 0, 0, 0);
-    nextMidnight.setDate(nextMidnight.getUTCDate() + 1);
-    let now = new Date();
+    // Get the current time in EST
+    let now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    
+    // Calculate the next midnight in EST
+    let nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    nextMidnight.setHours(0, 0, 0, 0); // This is in local time, which is now EST due to the adjustment above
 
     let rest = (nextMidnight.getTime() - now.getTime()) / 1000;
 
@@ -493,7 +490,7 @@ function createAndUpdateTimer() {
     rest = rest - (minutes * 60);
     const seconds = Math.floor(rest);
 
-    let timeString = (hours).toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2);
+    let timeString = hours.toString() + ':' + ("0" + minutes).slice(-2) + ':' + ("0" + seconds).slice(-2);
     $("#nextValdleCountdown").text(timeString);
 }
 
