@@ -500,12 +500,18 @@ function addShareDiv() {
 
     let shareMessage = "I completed all the modes of #Valdle today:\n" + output.join("\n");
 
+    // Split the shareMessage by newline character
+    let shareLines = shareMessage.split("\n");
+
+    // Create a new p tag for each line
+    let shareHTML = shareLines.map(line => `<p>${line}</p>`).join("");
+
     // Modal HTML structure
     let modalHTML = `
         <div id="completionModal" class="modal">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
-                <p>${shareMessage}</p>
+                ${shareHTML}
                 <button id="shareButton">Share</button>
             </div>
         </div>
@@ -523,10 +529,10 @@ function addShareDiv() {
 
     // Share button functionality
     $('#shareButton').click(function() {
+        $('#shareButton').text("Copied!");
         copyToClipboard(shareMessage);
     });
 }
-
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text);
 }
