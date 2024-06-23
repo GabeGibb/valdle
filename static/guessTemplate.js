@@ -497,9 +497,8 @@ function addShareDiv() {
             output.push(`${modeEmojis[modes[i]]} ${modes[i].charAt(0).toUpperCase() + modes[i].slice(1)}: ${numTries}`);
         }
     }
-    console.log("hi")
-    let shareMessage = "valdle.gg #" + dayId + ":\n" + output.join("\n");
 
+    let shareMessage = "Valdle #" + dayId + ":\n" + output.join("\n") + "\nhttps://valdle.gg/";
     // Split the shareMessage by newline character
     let shareLines = shareMessage.split("\n");
 
@@ -515,7 +514,6 @@ function addShareDiv() {
                 <h3 class="modal-header2">You've completed all the challenges for today!</h3>
                 <div class="linedeco">
                     <hr>
-                    <p>	◆</p>
                 </div>
                 <div style="padding-top: 10px"></div>
                 ${shareHTML}

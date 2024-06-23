@@ -870,6 +870,7 @@ canvas:not(#confettiCanvas){
     width: 85%; /* Could be more or less, depending on screen size */
     max-width: 600px;
     font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+    font-size: 18px;
 }
 
 .modal-content .linedeco hr{
