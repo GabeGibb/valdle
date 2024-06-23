@@ -523,18 +523,12 @@ function addShareDiv() {
 
     // Share button functionality
     $('#shareButton').click(function() {
-        console.log('Share button clicked!');
         copyToClipboard(shareMessage);
-        // Implement sharing functionality here
     });
 }
 
 function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        console.log('Text copied to clipboard successfully!');
-    }).catch(err => {
-        console.error('Failed to copy text to clipboard:', err);
-    });
+    navigator.clipboard.writeText(text);
 }
 
 
