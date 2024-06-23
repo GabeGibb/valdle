@@ -489,7 +489,6 @@ function addShareDiv() {
 
     for (let i = 0; i < modes.length; i++) {
         let curData = JSON.parse(localStorage.getItem(modes[i]));
-        console.log(curData)
         if (curData == null || curData.dayId != dayId || curData.currentState != 'p2') {
             return;
         } else {
@@ -498,9 +497,10 @@ function addShareDiv() {
         }
     }
 
-    let shareMessage = "Valdle #" + dayId + ":\n" + output.join("\n") + "\nhttps://valdle.gg/";
+    let shareMessage = "Valdle #" + dayId + ":\n" + output.join("\n");
     // Split the shareMessage by newline character
     let shareLines = shareMessage.split("\n");
+    shareMessage += "\nhttps://valdle.gg/";
 
     // Create a new p tag for each line
     let shareHTML = shareLines.map(line => `<p>${line}</p>`).join("");

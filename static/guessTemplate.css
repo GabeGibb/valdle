@@ -883,6 +883,7 @@ canvas:not(#confettiCanvas){
 
 .modal-header2{
     font-size: 22px;
+    font-weight: 500;
 }
 
 .close-button {
