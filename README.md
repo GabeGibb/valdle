@@ -13,8 +13,7 @@
 
 # Updating game info
 - Run the downloadApi script (downloads agents / weapons)
-- Delete old json files
 - Update guessAgent.js manually (gender and year at the top)
 - Add the quote to the agent manually in the quotes_en.json file (IN CORRECT INDEX POSITION)
-- Map is done manually
+- Map is done via downloading and checking. Uncomment js code in guessMap to debug. Add to html.
 - Test anomalys with generateDailyAnswers
