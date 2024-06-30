@@ -2,15 +2,10 @@
     {
         "uuid": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
         "displayName": "Ascent",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
         "coordinates": "45\u00b026'BF'N,12\u00b020'Q'E",
         "displayIcon": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Ascent/Ascent_PrimaryAsset",
         "mapUrl": "/Game/Maps/Ascent/Ascent",
         "xMultiplier": 7e-05,
@@ -200,15 +195,10 @@
     {
         "uuid": "d960549e-485c-e861-8d71-aa9d1aed12a2",
         "displayName": "Split",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
         "coordinates": "35\u00b041'CD'N,139\u00b041'WX'E",
         "displayIcon": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/d960549e-485c-e861-8d71-aa9d1aed12a2/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Bonsai/Bonsai_PrimaryAsset",
         "mapUrl": "/Game/Maps/Bonsai/Bonsai",
         "xMultiplier": 7.8e-05,
@@ -414,15 +404,10 @@
     {
         "uuid": "b529448b-4d60-346e-e89e-00a4c527a405",
         "displayName": "Fracture",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
         "coordinates": "35\u00b048'BI\"N 106\u00b008'YQ\"W",
         "displayIcon": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/b529448b-4d60-346e-e89e-00a4c527a405/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Canyon/Canyon_PrimaryAsset",
         "mapUrl": "/Game/Maps/Canyon/Canyon",
         "xMultiplier": 7.8e-05,
@@ -612,15 +597,10 @@
     {
         "uuid": "2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba",
         "displayName": "Bind",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
         "coordinates": "34\u00b02'A'N,6\u00b051'Z'W",
         "displayIcon": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/2c9d57ec-4431-9c5e-2939-8f9ef6dd5cba/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Duality/Duality_PrimaryAsset",
         "mapUrl": "/Game/Maps/Duality/Duality",
         "xMultiplier": 5.9e-05,
@@ -826,15 +806,10 @@
     {
         "uuid": "2fb9a4fd-47b8-4e7d-a969-74b4046ebd53",
         "displayName": "Breeze",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
         "coordinates": "26\u00b011'AG\"N 71\u00b010'WY\"W",
         "displayIcon": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/2fb9a4fd-47b8-4e7d-a969-74b4046ebd53/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Foxtrot/Foxtrot_PrimaryAsset",
         "mapUrl": "/Game/Maps/Foxtrot/Foxtrot",
         "xMultiplier": 7e-05,
@@ -1027,6 +1002,14 @@
                 }
             },
             {
+                "regionName": "Cave",
+                "superRegionName": "A",
+                "location": {
+                    "x": 840,
+                    "y": 700
+                }
+            },
+            {
                 "regionName": "Shop",
                 "superRegionName": "A",
                 "location": {
@@ -1062,223 +1045,12 @@
         "rotation": 0
     },
     {
-        "uuid": "224b0a95-48b9-f703-1bd8-67aca101a61f",
-        "displayName": "Abyss",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
-        "coordinates": "70\u00b0 50' AJ\" N, 9\u00b0 00' VX\" W",
-        "displayIcon": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/displayicon.png",
-        "listViewIcon": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/listviewicontall.png",
-        "splash": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/224b0a95-48b9-f703-1bd8-67aca101a61f/premierbackgroundimage.png",
-        "assetPath": "ShooterGame/Content/Maps/Infinity/Infinity_PrimaryAsset",
-        "mapUrl": "/Game/Maps/Infinity/Infinity",
-        "xMultiplier": 8.1e-05,
-        "yMultiplier": -8.1e-05,
-        "xScalarToAdd": 0.5,
-        "yScalarToAdd": 0.5,
-        "callouts": [
-            {
-                "regionName": "Bridge",
-                "superRegionName": "A",
-                "location": {
-                    "x": 5700,
-                    "y": -375
-                }
-            },
-            {
-                "regionName": "Link",
-                "superRegionName": "A",
-                "location": {
-                    "x": 2800,
-                    "y": -2450
-                }
-            },
-            {
-                "regionName": "Lobby",
-                "superRegionName": "A",
-                "location": {
-                    "x": 3250,
-                    "y": 3400
-                }
-            },
-            {
-                "regionName": "Main",
-                "superRegionName": "A",
-                "location": {
-                    "x": 3800,
-                    "y": 1650
-                }
-            },
-            {
-                "regionName": "Site",
-                "superRegionName": "A",
-                "location": {
-                    "x": 4300,
-                    "y": -200
-                }
-            },
-            {
-                "regionName": "Spawn",
-                "superRegionName": "Attacker Side",
-                "location": {
-                    "x": 950,
-                    "y": 4950
-                }
-            },
-            {
-                "regionName": "Tower",
-                "superRegionName": "A",
-                "location": {
-                    "x": 3025,
-                    "y": -125
-                }
-            },
-            {
-                "regionName": "Bend",
-                "superRegionName": "Mid",
-                "location": {
-                    "x": -1700,
-                    "y": 1950
-                }
-            },
-            {
-                "regionName": "Link",
-                "superRegionName": "B",
-                "location": {
-                    "x": -2000,
-                    "y": -2350
-                }
-            },
-            {
-                "regionName": "Lobby",
-                "superRegionName": "B",
-                "location": {
-                    "x": -3650,
-                    "y": 4025
-                }
-            },
-            {
-                "regionName": "Main",
-                "superRegionName": "B",
-                "location": {
-                    "x": -4450,
-                    "y": 1525
-                }
-            },
-            {
-                "regionName": "Nest",
-                "superRegionName": "B",
-                "location": {
-                    "x": -4975,
-                    "y": 2150
-                }
-            },
-            {
-                "regionName": "Bottom",
-                "superRegionName": "Mid",
-                "location": {
-                    "x": -400,
-                    "y": 575
-                }
-            },
-            {
-                "regionName": "Site",
-                "superRegionName": "B",
-                "location": {
-                    "x": -4425,
-                    "y": -1175
-                }
-            },
-            {
-                "regionName": "Catwalk",
-                "superRegionName": "Mid",
-                "location": {
-                    "x": 600,
-                    "y": 525
-                }
-            },
-            {
-                "regionName": "Danger",
-                "superRegionName": "B",
-                "location": {
-                    "x": -5850,
-                    "y": 700
-                }
-            },
-            {
-                "regionName": "Spawn",
-                "superRegionName": "Defender Side",
-                "location": {
-                    "x": 950,
-                    "y": -5275
-                }
-            },
-            {
-                "regionName": "Library",
-                "superRegionName": "Mid",
-                "location": {
-                    "x": -325,
-                    "y": -600
-                }
-            },
-            {
-                "regionName": "Secret",
-                "superRegionName": "A",
-                "location": {
-                    "x": 3775,
-                    "y": -3850
-                }
-            },
-            {
-                "regionName": "Security",
-                "superRegionName": "A",
-                "location": {
-                    "x": 4900,
-                    "y": -2975
-                }
-            },
-            {
-                "regionName": "Top",
-                "superRegionName": "Mid",
-                "location": {
-                    "x": 775,
-                    "y": -2375
-                }
-            },
-            {
-                "regionName": "Tower",
-                "superRegionName": "B",
-                "location": {
-                    "x": -3925,
-                    "y": -2500
-                }
-            },
-            {
-                "regionName": "Vent",
-                "superRegionName": "A",
-                "location": {
-                    "x": 1700,
-                    "y": -325
-                }
-            }
-        ],
-        "rotation": 0
-    },
-    {
         "uuid": "2fe4ed3a-450a-948b-6d6b-e89a78e680a9",
         "displayName": "Lotus",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B/C Sites",
         "coordinates": "14\u00b007'AD.4\"N8 74\u00b053'XY\"E8",
         "displayIcon": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/2fe4ed3a-450a-948b-6d6b-e89a78e680a9/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Jam/Jam_PrimaryAsset",
         "mapUrl": "/Game/Maps/Jam/Jam",
         "xMultiplier": 7.2e-05,
@@ -1516,15 +1288,12 @@
     {
         "uuid": "92584fbe-486a-b1b2-9faa-39b0f486b498",
         "displayName": "Sunset",
-        "narrativeDescription": null,
+        "narrativeDescription": "A disaster at a local kingdom facility threatens to engulf the whole neighborhood. Stop at your favorite food truck then fight across the city in this traditional three lane map.",
         "tacticalDescription": "A/B Sites",
         "coordinates": "34\u00b0 2\u2032 C\u2033 N, 118\u00b0 12\u2032 YT\u2033 W",
         "displayIcon": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/92584fbe-486a-b1b2-9faa-39b0f486b498/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Juliett/Juliett_PrimaryAsset",
         "mapUrl": "/Game/Maps/Juliett/Juliett",
         "xMultiplier": 7.8e-05,
@@ -1674,15 +1443,10 @@
     {
         "uuid": "fd267378-4d1d-484f-ff52-77821ed10dc2",
         "displayName": "Pearl",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
         "coordinates": "38\u00b042'ED\"N8 9\u00b008'XS\"W8",
         "displayIcon": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/fd267378-4d1d-484f-ff52-77821ed10dc2/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Pitt/Pitt_PrimaryAsset",
         "mapUrl": "/Game/Maps/Pitt/Pitt",
         "xMultiplier": 7.8e-05,
@@ -1904,15 +1668,10 @@
     {
         "uuid": "e2ad5c54-4114-a870-9641-8ea21279579a",
         "displayName": "Icebox",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B Sites",
         "coordinates": "76\u00b044' A\"N 149\u00b030' Z\"E",
         "displayIcon": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/e2ad5c54-4114-a870-9641-8ea21279579a/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Port/Port_PrimaryAsset",
         "mapUrl": "/Game/Maps/Port/Port",
         "xMultiplier": 7.2e-05,
@@ -1998,6 +1757,14 @@
                 "location": {
                     "x": 260,
                     "y": 195
+                }
+            },
+            {
+                "regionName": "Fence",
+                "superRegionName": "B",
+                "location": {
+                    "x": 210,
+                    "y": 290
                 }
             },
             {
@@ -2114,10 +1881,10 @@
             },
             {
                 "regionName": "Fence",
-                "superRegionName": "B",
+                "superRegionName": "A",
                 "location": {
-                    "x": 210,
-                    "y": 290
+                    "x": 850,
+                    "y": 430
                 }
             }
         ],
@@ -2126,15 +1893,10 @@
     {
         "uuid": "2bee0dc9-4ffe-519b-1cbd-7fbe763a6047",
         "displayName": "Haven",
-        "narrativeDescription": null,
-        "tacticalDescription": "A/B/C Sites",
         "coordinates": "27\u00b028'A'N,89\u00b038'WZ'E",
         "displayIcon": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/displayicon.png",
         "listViewIcon": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/listviewicon.png",
-        "listViewIconTall": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/listviewicontall.png",
         "splash": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/splash.png",
-        "stylizedBackgroundImage": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/stylizedbackgroundimage.png",
-        "premierBackgroundImage": "https://media.valorant-api.com/maps/2bee0dc9-4ffe-519b-1cbd-7fbe763a6047/premierbackgroundimage.png",
         "assetPath": "ShooterGame/Content/Maps/Triad/Triad_PrimaryAsset",
         "mapUrl": "/Game/Maps/Triad/Triad",
         "xMultiplier": 7.5e-05,
