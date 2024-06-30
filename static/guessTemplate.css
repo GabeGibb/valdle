@@ -856,7 +856,7 @@ canvas:not(#confettiCanvas){
 }
 
 .modal-content {
-    background-color: #0D0E16;
+    background-color: black;
     text-align: center;
     color: white;
     margin: auto;
