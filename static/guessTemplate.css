@@ -842,7 +842,6 @@ canvas:not(#confettiCanvas){
     background-color: rgba(100,100,100,1);
     
 }
-
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -856,8 +855,14 @@ canvas:not(#confettiCanvas){
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.modal-diamond{
+    color: white;
+    margin: auto;
+    margin-top: -15.75px;
+}
+
 .modal-content {
-    background-color: black;
+    background-color: #0D0E16;
     text-align: center;
     color: white;
     margin: auto;
@@ -865,7 +870,7 @@ canvas:not(#confettiCanvas){
     padding: 20px;
     padding-top: 5px;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
 
     width: 85%; /* Could be more or less, depending on screen size */
     max-width: 600px;
