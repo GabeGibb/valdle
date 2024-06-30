@@ -509,7 +509,6 @@ function addShareDiv() {
     let modalHTML = `
         <div id="completionModal" class="modal">
             <div class="modal-content">
-                <p class="modal-diamond">◆</p>
                 <span class="close-button">&times;</span>
                 <h2 class="modal-header1">Congrats!</h1>
                 <h3 class="modal-header2">You've completed all the challenges for today!</h3>

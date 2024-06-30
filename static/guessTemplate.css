@@ -855,12 +855,6 @@ canvas:not(#confettiCanvas){
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal-diamond{
-    color: white;
-    margin: auto;
-    margin-top: -15.75px;
-}
-
 .modal-content {
     background-color: #0D0E16;
     text-align: center;
