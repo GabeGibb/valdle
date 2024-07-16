@@ -3,8 +3,28 @@
         "displayName": "Gekko",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/464327068.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/42/GekkoPick.mp3",
                 "quote": "Wachale güey, my crew is coming through."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/8b/GekkoMatchStart1.mp3",
+                "quote": "So, game plan. What y'all feeling? I'm down for whatever."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/dd/GekkoMatchStart2.mp3",
+                "quote": "We got my four friends, then five of us, that's nine! Man, we're stacked!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/90/GekkoMatchStart3.mp3",
+                "quote": "Man, my critters have the zoomies right now. Everyone watch your step!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/aa/GekkoMatchStart4.mp3",
+                "quote": "Okay lil' homies, teamwork on three. One, two, three!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/9c/GekkoMatchStart5.mp3",
+                "quote": "Ayy, how are my buddies? No, not y'all, I'm talking to these little guys, but... yeah, what's up?"
             }
         ]
     },
@@ -12,8 +32,32 @@
         "displayName": "Fade",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/963067082.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/6c/FadePick.mp3",
                 "quote": "Everyone is afraid of something."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/57/FadeMatchStart1.mp3",
+                "quote": "I paid a heavy price to commune with Nightmare. Don't waste it."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1b/FadeMatchStart2.mp3",
+                "quote": "It doesn't matter where they hide, I'll find them. I always find them."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/88/FadeMatchStart3.mp3",
+                "quote": "Hop! Eyes open, we have a job to do."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/dd/FadeMatchStart4.mp3",
+                "quote": "Another mission? Good. Anything to keep me awake."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/aa/FadeMatchStart5.mp3",
+                "quote": "There's truth in every dream, if you dig deep enough. Let's find out what they buried."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d4/FadeMatchStart6.mp3",
+                "quote": "Don't worry everyone, I won't tell them what scares you. Promise."
             }
         ]
     },
@@ -21,8 +65,40 @@
         "displayName": "Breach",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/802792402.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1b/BreachPick.mp3",
                 "quote": "Stand in my way. I dare you."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/7/7f/BreachMatchStart1.mp3",
+                "quote": "Guns in my face? Just another Tuesday."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/f/fe/BreachMatchStart2.mp3",
+                "quote": "Nothing fancy, uh? We go in, we crush them, we get out."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/b0/BreachMatchStart3.mp3",
+                "quote": "The faster we do this, the faster I get paid."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/35/BreachMatchStart4.mp3",
+                "quote": "We treat this like any other job. No more, no less."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/a5/BreachMatchStart5.mp3",
+                "quote": "They're not intimidating, they're stupid. Big difference."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/e6/BreachMatchStart6.mp3",
+                "quote": "Been pulling jobs like this for years. Risky? Sure. But never boring."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/24/BreachMatchStart7.mp3",
+                "quote": "I don't need these arms to fight, but they're fun. Might as well use 'em."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d0/BreachMatchStart8.mp3",
+                "quote": "These cowards aren't ready for me. No one ever is."
             }
         ]
     },
@@ -30,8 +106,40 @@
         "displayName": "Deadlock",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/727149664.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/25/DeadlockPick.mp3",
                 "quote": "Death is not an option."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/82/DeadlockMatchStart1.mp3",
+                "quote": "Nanowire armed and ready, kom igjen dere."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/92/DeadlockMatchStart2.mp3",
+                "quote": "Trust me, we can get this job done."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/e0/DeadlockMatchStart3.mp3",
+                "quote": "The greatest battles ever fought are written in storybooks. May they write about this one."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/e6/DeadlockMatchStart4.mp3",
+                "quote": "As long as I live, so does every St\u00e5ljeger before me. To battle, my sisters."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/05/DeadlockMatchStart5.mp3",
+                "quote": "Ammunition, time, life. These are all resources; spend them wisely."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/96/DeadlockMatchStart6.mp3",
+                "quote":  "Oh, there's only five of them? Kjedelig."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/9c/DeadlockMatchStart7.mp3",
+                "quote": "Here again, we face our death. And again, we will defy it."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/c6/DeadlockMatchStart8.mp3",
+                "quote": "The weight of our mission is upon us now."
             }
         ]
     },
@@ -39,8 +147,36 @@
         "displayName": "Raze",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/632864455.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/49/RazePick.mp3",
                 "quote": "Yes, I'm pumped!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/5d/RazeMatchStart1.mp3",
+                "quote": "Finally back out in the field! Let's go, there's so many new toys I want to try out!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/6a/RazeMatchStart2.mp3",
+                "quote": "You can take the girl out of Salvador, but you'll never take the girl out of Salvador. Wait..."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/10/RazeMatchStart3.mp3",
+                "quote": "I promise I'll get 'em. Might take down a city block along the way but hey, a win's a win."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2a/RazeMatchStart4.mp3",
+                "quote": "Okay, minha fam\u00edlia. Leave the fireworks to me. Should be plenty loud for you to have some fun."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/c9/RazeMatchStart5.mp3",
+                "quote": "Just me, my squad-zinho, and a few tons of dynamite. There's nothing we can't do!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1c/RazeMatchStart6.mp3",
+                "quote": "Even if I go out, I'll go out with a bang! Just promise you'll dance at my funeral, okay?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/82/RazeMatchStart7.mp3",
+                "quote": "I shouldn't have to say this because, you know, my vibe, but, stay clear of my explosions, okay?"
             }
         ]
     },
@@ -48,8 +184,28 @@
         "displayName": "Chamber",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/765052468.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/29/ChamberPick.mp3",
                 "quote": "You have good taste, my friend."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/af/ChamberMatchStart1.mp3",
+                "quote": "Do not worry, with me this will be easy. C'est simple comme bonjour."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2f/ChamberMatchStart2.mp3",
+                "quote": "Okay, last looks. You all look wonderful. Me, I always look good, we are ready."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/8a/ChamberMatchStart3.mp3",
+                "quote": "If you die today, I will remember you forever. It has been an honor."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/b3/ChamberMatchStart4.mp3",
+                "quote": "None of this 'a win is a win' nonsense. We should win big and look good doing it."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/94/ChamberMatchStart5.mp3",
+                "quote": "This killing is terrible business but I always say: if I must do something, be the best."
             }
         ]
     },
@@ -57,8 +213,36 @@
         "displayName": "KAY/O",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/170847866.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/cd/KAYOPick.mp3",
                 "quote": "Let's do this."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1a/KAYOMatchStart1.mp3",
+                "quote": "What's the plan, send the robot in first? Smart choice."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/88/KAYOMatchStart2.mp3",
+                "quote": "I'm about to go full killer robot. You've been warned."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/a0/KAYOMatchStart3.mp3",
+                "quote": "Fight well. This world depends on it."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/05/KAYOMatchStart4.mp3",
+                "quote": "I'll take the lead. It cost enough to build me. Get your money's worth."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/bf/KAYOMatchStart5.mp3",
+                "quote": "If no one objects, I'll go nix these targets. Company's welcome."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/7/70/KAYOMatchStart6.mp3",
+                "quote": "More hostiles trying to kill us, what's new?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2d/KAYOMatchStart7.mp3",
+                "quote": "We have one job: save this Earth. No excuses."
             }
         ]
     },
@@ -66,8 +250,28 @@
         "displayName": "Skye",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/452875258.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/de/SkyePick.mp3",
                 "quote": "Alright! Where's the fight?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/7/7d/SkyeMatchStart1.mp3",
+                "quote": "Remember everyone, if we survive, woodworking class tonight in the mess hall. Nimble hands, nimble minds."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/9c/SkyeMatchStart2.mp3",
+                "quote": "Not used to working with humans. Usually just me and my pack. I guess it's worse if you guys get shot, yeah?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/54/SkyeMatchStart3.mp3",
+                "quote": "Okay, let's get going. This work won't take care of itself."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/4b/SkyeMatchStart5.mp3",
+                "quote": "Anyone I catch slacking off has to join my morning run tomorrow. Wake up's at four, sound good?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/16/SkyeMatchStart6.mp3",
+                "quote": "Everyone good if my pets run around out here? I don't do leashes. Should be alright."
             }
         ]
     },
@@ -75,8 +279,44 @@
         "displayName": "Cypher",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/246514732.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/06/CypherPick.mp3",
                 "quote": "Nothing stays hidden from me. Nothing."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/34/CypherMatchStart1.mp3",
+                "quote": "They're scared. I don't need cameras to see that."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/14/CypherMatchStart2.mp3",
+                "quote": "Nobody escapes me. But they'll try."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/c6/CypherMatchStart3.mp3",
+                "quote": "I wonder if they have any parts I can salvage. Hmm, implants? I need those!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/58/CypherMatchStart4.mp3",
+                "quote": "Ah, okay, this is good! I've got new gadgets to try out."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/c4/CypherMatchStart5.mp3",
+                "quote": "I must survive to protect my family. I can't lose them. I can't feel that pain again."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/89/CypherMatchStart6.mp3",
+                "quote": "Let's see what I have to use. Pictures of their children? Wow, way too dark."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/81/CypherMatchStart7.mp3",
+                "quote": "I will stop anyone who tries to come through. I must keep my secrets with me."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/5f/CypherMatchStart8.mp3",
+                "quote": "The back alleys, or the streets of war. There is no difference. Just nicer toys."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/9b/CypherMatchStart9.mp3",
+                "quote": "I'm prepared to die for this mission, though I'd really rather not."
             }
         ]
     },
@@ -84,8 +324,40 @@
         "displayName": "Sova",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/130865070.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d3/SovaPick.mp3",
                 "quote": "Wherever they run, I will find them."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/f/ff/SovaMatchStart1.mp3",
+                "quote": "This bow has taken man and beast alike. I have found there is little difference."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/13/SovaMatchStart2.mp3",
+                "quote": "There is no retreat. Not when annihilation is at stake. This is our day."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/b6/SovaMatchStart3.mp3",
+                "quote": "Don't be afraid. I've gone through rifts before."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/bb/SovaMatchStart4.mp3",
+                "quote": "I believe in all of you, like I believe in myself."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/ac/SovaMatchStart5.mp3",
+                "quote": "I was told you are all the best. That is why I'm here."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/b4/SovaMatchStart6.mp3",
+                "quote": "You'll have your intel. I promise."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/29/SovaMatchStart7.mp3",
+                "quote": "You have me. That is good for you."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/7/71/SovaMatchStart8.mp3",
+                "quote": "Another day, another battle. So be it. I do not fear blood on my hands."
             }
         ]
     },
@@ -93,8 +365,36 @@
         "displayName": "Killjoy",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/1062625853.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/f/f3/KilljoyPick.mp3",
                 "quote": "Relax, I've already thought of everything."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/0a/KilljoyMatchStart1.mp3",
+                "quote": "I built literally everything on this battlefield. Ja, even the things that might kill us. What? You want me to say sorry?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/93/KilljoyMatchStart2.mp3",
+                "quote": "Okay, I put together some data on our last six combat missions. Did you read it? Did anyone read it? Oh God, can anyone here read?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/b7/KilljoyMatchStart3.mp3",
+                "quote": "Don't worry team. If you die, I have your memories backed up at base! Heh, just kidding, just kidding. Or am I?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/b5/KilljoyMatchStart4.mp3",
+                "quote": "Swarm grenades? Check. Killer robots? Check- oh, hah, don't worry, they're only killer when I say so."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/3d/KilljoyMatchStart5.mp3",
+                "quote": "If I'm not stressed, then you should not be stressed. I mean, look at me. Cool as a cucumber. Ja, that's a thing Americans say, right?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/67/KilljoyMatchStart6.mp3",
+                "quote": "These imposters actually think they can beat my tech? Ah, let's test that theory."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/e6/KilljoyMatchStart7.mp3",
+                "quote": "Why is no one wearing the pulse monitors I gave you? Honestly, I ask for a few readouts and you think I'm Doctor Frankenstein!"
             }
         ]
     },
@@ -102,8 +402,36 @@
         "displayName": "Harbor",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/409447225.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/61/HarborPick.mp3",
                 "quote": "Together, we'll crush them."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/81/HarborMatchStart1.mp3",
+                "quote": "Well-equipped, well-rested, and well-fed. Couldn't ask for a better start!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d8/HarborMatchStart2.mp3",
+                "quote": "Look at us! I've never seen a more beautiful group of heavily armed soldiers."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/50/HarborMatchStart3.mp3",
+                "quote": "I've done a thousand missions like this before. Today is no different!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/49/HarborMatchStart4.mp3",
+                "quote": "Someone showed up to fight us. They're either stupid, or very stupid."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/08/HarborMatchStart5.mp3",
+                "quote": "चलो, let's see some excitement! It's not everyday you save the world!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/57/HarborMatchStart6.mp3",
+                "quote": "This artifact is not my only source of strength."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/7/79/HarborMatchStart7.mp3",
+                "quote": "Well, this looks dangerous. Good thing we brought guns."
             }
         ]
     },
@@ -111,8 +439,36 @@
         "displayName": "Viper",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/204662687.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/f/f7/ViperPick.mp3",
                 "quote": "No one can hold their breath forever."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/46/ViperMatchStart1.mp3",
+                "quote": "Only five of them? Pity, I brought enough poison for fifty. You can't say I'm not prepared."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/12/ViperMatchStart2.mp3",
+                "quote": "Use my poison to your advantage, I don't deploy it for kicks."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/dd/ViperMatchStart3.mp3",
+                "quote": "I wonder if these ones will beg. They all do, after a while."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/6d/ViperMatchStart4.mp3",
+                "quote": "They call me a monster. Shall I prove them right?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/a2/ViperMatchStart5.mp3",
+                "quote": "Bodies decompose after twelve hours in acid. There's no reason I know that."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/db/ViperMatchStart6.mp3",
+                "quote": "Let's take from them what they took from me - everything!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/5f/ViperMatchStart7.mp3",
+                "quote": "They are not important. Let's move through them, like smoke through lungs."
             }
         ]
     },
@@ -120,8 +476,36 @@
         "displayName": "Phoenix",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/384959611.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d9/PhoenixPick.mp3",
                 "quote": "Just take a seat, I got this."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/31/PhoenixMatchStart1.mp3",
+                "quote": "Don't worry guys, they say I'm a prodigy. Not my words! Not my words, baby!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/da/PhoenixMatchStart2.mp3",
+                "quote": "Let's make this quick bro, I got things to do."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2f/PhoenixMatchStart3.mp3",
+                "quote": "Yes, yes, it's me, autographs if we survive, yeah?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/65/PhoenixMatchStart4.mp3",
+                "quote": "Relax, settle down, I've got this. And I'm not leaving until we're done out here, yeah?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/62/PhoenixMatchStart5.mp3",
+                "quote": "When I'm done, they'll be nothing more than ash."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/09/PhoenixMatchStart6.mp3",
+                "quote": "Keep a healthy distance! I burn hot!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1f/PhoenixMatchStart7.mp3",
+                "quote": "Okay fam, if any of you die I'll be vexed so just keep alive, yeah?"
             }
         ]
     },
@@ -129,8 +513,44 @@
         "displayName": "Astra",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/594322343.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/c7/AstraPick.mp3",
                 "quote": "I am on a higher plane, chale, literally!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/88/AstraMatchStart1.mp3",
+                "quote": "My plan may sound irrational, only because you cannot see what I can!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1c/AstraMatchStart2.mp3",
+                "quote": "Chale, you are ready for this situation, right my friends?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/98/AstraMatchStart3.mp3",
+                "quote": "Now we show dem, eh? They see our strength."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/4a/AstraMatchStart4.mp3",
+                "quote": "Okay, okay guys, let's get going. Win this!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/ef/AstraMatchStart5.mp3",
+                "quote": "Relax, my friends. Time and space are... they're not what you think."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/36/AstraMatchStart6.mp3",
+                "quote": "Don't underestimate me-o. Gold is my heart and my soul cuts like the sword."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/bb/AstraMatchStart7.mp3",
+                "quote": "Waddup, suckers! You okay?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/3f/AstraMatchStart8.mp3",
+                "quote": "Guys, don't think what you're fighting against. Consider what you are fighting for!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1d/AstraMatchStart9.mp3",
+                "quote": "Five on five, pa-pa-pa-pa-pa. We go clear them all."
             }
         ]
     },
@@ -138,8 +558,40 @@
         "displayName": "Brimstone",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/421554800.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/38/BrimstonePick.mp3",
                 "quote": "They think I'm an old dog? Heh, I'll show 'em just how many tricks I know."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/3d/BrimstoneMatchStart1.mp3",
+                "quote": "No one die on me! We're all going home."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/16/BrimstoneMatchStart2.mp3",
+                "quote": "They can throw the whole playbook at us. I've seen it all before."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d4/BrimstoneMatchStart3.mp3",
+                "quote": "I can't close the settings menu on my bracer. How do I- oh, got it."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/cd/BrimstoneMatchStart4.mp3",
+                "quote": "Different battlefield, same crap."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/40/BrimstoneMatchStart5.mp3",
+                "quote": "They've got one ugly lookin' crew. No offense to any of us."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d2/BrimstoneMatchStart6.mp3",
+                "quote": "Failure is the great teacher. So let's teach 'em somethin'!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/98/BrimstoneMatchStart7.mp3",
+                "quote": "Okay kids, we've got company. Pretend you all get along."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2d/BrimstoneMatchStart8.mp3",
+                "quote": "Alright team, let's go write this war story shall we?"
             }
         ]
     },
@@ -147,8 +599,44 @@
         "displayName": "Iso",
         "voiceInfo": [
             {
-                "audioFile": "static/api/quotes/TempSequoiaPickFile.mp3",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/0b/IsoPick.mp3",
                 "quote": "Enough training, it's time."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/2f/IsoMatchStart1.mp3",
+                "quote": "Okay, let's win this."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/b5/IsoMatchStart2.mp3",
+                "quote":  "One minute, finding a playlist... Ah, perfect."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/6e/IsoMatchStart3.mp3",
+                "quote": "What's the mission? Kill contract? Sorry, I forgot to read the brief."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/96/IsoMatchStart4.mp3",
+                "quote": "Time to gear up, right? I've got a song for that actually."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/24/IsoMatchStart5.mp3",
+                "quote": "So, who has to die?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/a5/IsoMatchStart6.mp3",
+                "quote": "Five on five? I prefer one on one. But don't worry, this is good too."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d1/IsoMatchStart7.mp3",
+                "quote": "Relax. With a team like ours, very little risk."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/14/IsoMatchStart8.mp3",
+                "quote": "Less than a minute, let's plan."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/bb/IsoMatchStart9.mp3",
+                "quote": "Once we find the right rhythm, it's over."
             }
         ]
     },
@@ -156,8 +644,48 @@
         "displayName": "Clove",
         "voiceInfo": [
             {
-                "audioFile": "static/api/quotes/CloveVoice.mp3",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/00/ClovePick.mp3",
                 "quote": "I've got all the time in the world."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/29/CloveMatchStart1.mp3",
+                "quote": "Have I been aging, like, at all? Still not sure how this whole living forever thing works."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/3b/CloveMatchStart2.mp3",
+                "quote": "I know I can come back to life and all, but bullets still hurt, so don't get any bright ideas."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/80/CloveMatchStart3.mp3",
+                "quote": "It's fun being a secret agent and all, but I really hope that there's an alternate universe out there where I'm just growing old with a bunch of cats."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/3a/CloveMatchStart4.mp3",
+                "quote": "Let me get this right, we're Earth's only defense and we still pay for our own weapons? Ridiculous."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/83/CloveMatchStart5.mp3",
+                "quote": "Look at this team! We're gonna kill it! And by 'it' I mean those bams over there."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/07/CloveMatchStart6.mp3",
+                "quote": "So, are we gonna talk about the empty locker back at base? The one with the scratched out 8? Anyone? No one? Okay."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/60/CloveMatchStart7.mp3",
+                "quote": "Take 'em dead or alive. Probably dead, well, preferably dead."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/21/CloveMatchStart8.mp3",
+                "quote": "You know what? If one of those lookalikes came over here and pretended to be one of ya, I'm not sure I'd be able to tell the difference."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/31/CloveMatchStart9.mp3",
+                "quote": "Wait, wait, wait. I have a rock in my shoe. Nice, free rock."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/c0/CloveMatchStart10.mp3",
+                "quote": "Who's ready to die for this mission? I am! But you know, I'm cheating."
             }
         ]
     },
@@ -165,8 +693,32 @@
         "displayName": "Neon",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/5690468.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/35/NeonPick.mp3",
                 "quote": "Move, or get zapped."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/ed/NeonMatchStart1.mp3",
+                "quote": "This covert ops thing, I kind of like it. Let's not mess that up."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/5c/NeonMatchStart2.mp3",
+                "quote": "Radiant powers, deadly tech. I'm sure we won't break anything."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/04/NeonMatchStart3.mp3",
+                "quote": "Let's go. World's not saving itself."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/95/NeonMatchStart4.mp3",
+                "quote": "Another site on the brink of destruction. At least we're consistent."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/57/NeonMatchStart5.mp3",
+                "quote": "Look, I'm glad you're all here. There, I said it."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/60/NeonMatchStart6.mp3",
+                "quote": "Enemies in our way? Hope they like getting hit by lightning."
             }
         ]
     },
@@ -174,8 +726,36 @@
         "displayName": "Yoru",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/107320642.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/df/YoruPick.mp3",
                 "quote": "I'll fight anybody. I'll fight everybody."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/57/YoruMatchStart1.mp3",
+                "quote": "Should I shoot them in the face, or stab them in the back? I'll decide later."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/4f/YoruMatchStart2.mp3",
+                "quote": "So much fuss over nothing. Someone get me a bat, I'll finish this."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/43/YoruMatchStart3.mp3",
+                "quote": "It's easiest if I sneak in and kill everyone. Don't make this complicated."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/7/75/YoruMatchStart4.mp3",
+                "quote": "You're all obsessed with teamwork, so I'll try it. But just this once."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/56/YoruMatchStart5.mp3",
+                "quote": "Five enemies. Five for me, none for anyone else."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/62/YoruMatchStart6.mp3",
+                "quote": "A bunch of \u3056\u3053 want to fight us. They must really want to die."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/cf/YoruMatchStart7.mp3",
+                "quote": "These guys caught me in a mood. Bad luck for them."
             }
         ]
     },
@@ -183,8 +763,32 @@
         "displayName": "Sage",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/119342169.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1d/SagePick.mp3",
                 "quote": "I am both shield and sword."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/57/SageMatchStart1.mp3",
+                "quote": "My purpose is my gift. Be not afraid to accept it."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/e2/SageMatchStart2.mp3",
+                "quote": "I will defend you all with my power and with my life."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d4/SageMatchStart3.mp3",
+                "quote": "This place. I can feel its pain, it aches for redemption."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/84/SageMatchStart4.mp3",
+                "quote": "I wasn't strong enough before. But now, now I am strong enough for us all."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/a8/SageMatchStart5.mp3",
+                "quote": "I will soothe this turmoil. With fire if I must."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/20/SageMatchStart6.mp3",
+                "quote": "The blossom wavers in strong wind. Yet I am no flower."
             }
         ]
     },
@@ -192,8 +796,36 @@
         "displayName": "Reyna",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/847719523.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/d/d1/ReynaPick.mp3",
                 "quote": "They have no idea how heartless I am."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/65/ReynaMatchStart1.mp3",
+                "quote": "It doesn't matter what this place used to be. Now it's just another graveyard."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/07/ReynaMatchStart2.mp3",
+                "quote": "Ah, what hope do these criaturas have? I almost pity them."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/80/ReynaMatchStart3.mp3",
+                "quote": "Are those our enemies? Huh. This won't take long."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/e2/ReynaMatchStart4.mp3",
+                "quote": "I've stood over so many corpses. A few more, does not matter."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/c/cc/ReynaMatchStart5.mp3",
+                "quote": "This enemy's nothing special. Still human, still mortal."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/17/ReynaMatchStart6.mp3",
+                "quote": "I will drain the life from our prey. That's all they're good for."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/a/a5/ReynaMatchStart7.mp3",
+                "quote": "I have lied, beaten, killed to survive. I will kill again and again if it means one more day."
             }
         ]
     },
@@ -201,8 +833,36 @@
         "displayName": "Omen",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/717842149.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/4/4f/OmenPick.mp3",
                 "quote": "I am the beginning. I am the end."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/f/f2/OmenMatchStart1.mp3",
+                "quote": "If I must live in this nightmare, my enemies might as well join me."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/95/OmenMatchStart2.mp3",
+                "quote": "They fear death, they should fear so much more than that."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/25/OmenMatchStart3.mp3",
+                "quote": "Make the right choice, even if it calls for sacrifice."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/5f/OmenMatchStart4.mp3",
+                "quote": "Who will they cry for, once they know they're going to die?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/3/3e/OmenMatchStart5.mp3",
+                "quote": "Do they know what it means to be... truly... afraid? I'll show them."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/b/bc/OmenMatchStart6.mp3",
+                "quote": "Ugh, how many must I kill before I am restored. More, always more!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/9/9f/OmenMatchStart7.mp3",
+                "quote": "I already feel their hope dying and we haven't even begun. This will not take long."
             }
         ]
     },
@@ -210,8 +870,36 @@
         "displayName": "Jett",
         "voiceInfo": [
             {
-                "audioFile": "https://media.valorant-api.com/sounds/878055936.wav",
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/2/22/JettPick.mp3",
                 "quote": "Cool. Let's go."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/f/f5/JettMatchStart1.mp3",
+                "quote": "Think you can keep up? Who am I kidding? You know you can't keep up."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/1e/JettMatchStart2.mp3",
+                "quote": "Huh! Who are you all? The cleanup crew?"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/6/6c/JettMatchStart3.mp3",
+                "quote": "I would make fun of their dumb faces, but they're us! Huh, we look stupid."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/e/e2/JettMatchStart4.mp3",
+                "quote": "Feels like just yesterday I was chopping \ub2ec\ub798 at the store. Wonder if that place is still standing."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/0a/JettMatchStart5.mp3",
+                "quote": "Oh, I'm hungry. Anyone hungry? Lunch on Brimstone after this!"
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/1/17/JettMatchStart6.mp3",
+                "quote": "I know I dash around a lot, but I promise I'm looking out for y'all. Take them out while they're busy with me."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/0a/JettMatchStart7.mp3",
+                "quote": "Ayy, the gang's all here! This is great, they don't stand a chance!"
             }
         ]
     }
