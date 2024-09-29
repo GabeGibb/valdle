@@ -79,13 +79,13 @@ function makeCalloutDiv(callout, mapName) {
     div.style.cursor = 'pointer';
     div.onclick = function () {
         // UNCOMENT THIS TO DEBUG MAP LOCATIONS
-        // imgUrl = window.location.href + '/' + mapName + '/' + region + '/' + superRegion;
-        // let mapImg = document.getElementById("trueImg");
-        // mapImg.src = imgUrl;
-        // for(let i = 0; i < calloutMaps.length; i++){
-        //     zoomOutMap();
-        // }
-        // return;
+        imgUrl = window.location.href + '/' + mapName + '/' + region + '/' + superRegion;
+        let mapImg = document.getElementById("trueImg");
+        mapImg.src = imgUrl;
+        for(let i = 0; i < calloutMaps.length; i++){
+            zoomOutMap();
+        }
+        return;
         if (gameOver){
             return;
         }
