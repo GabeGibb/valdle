@@ -1,7 +1,0 @@
-Icebox has two fence B's 
-Need one to be fence A
-REMEMBER
-
-revert some changes in map.js (A LOT)
-delete newmaps.json
-maps.css needs to change opacity of callouts

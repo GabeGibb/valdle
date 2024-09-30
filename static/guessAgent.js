@@ -31,6 +31,7 @@ let genderMap = {
     "Jett": "Female",
     "Iso": "Male",
     "Clove": "Gender-Neutral",
+    "Vyse": "Female",
 }
 
 let dateMap = {
@@ -59,6 +60,7 @@ let dateMap = {
     "Jett": "2020",
     "Iso": "2023",
     "Clove": "2024",
+    "Vyse": "2024",
 }
 
 // jQuery.ajaxSetup({async:false});
