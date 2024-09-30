@@ -16,14 +16,17 @@ html, body {
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    
 }
 
+.btn{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 0px !important;
+}
 
 .btn__inner {
   padding: 15px 28px; 
   font-size: 15px;
-
 }
 
 .gameButton {

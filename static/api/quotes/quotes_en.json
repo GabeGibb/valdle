@@ -436,6 +436,27 @@
         ]
     },
     {
+        "displayName": "Vyse",
+        "voiceInfo": [
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/0/06/VyseRoundStart1.mp3",
+                "quote": "A battle is just a conflict in need of resolution. Focus on the fix, then execute."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/56/VyseLead1.mp3",
+                "quote": "I love it when our competition embraces chaos theory, and makes the same mistakes expecting different results."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/8/81/VyseMatchStart2.mp3",
+                "quote": "History doesn't remember the almosts. We'll be the best, or we'll be forgotten."
+            },
+            {
+                "audioFile": "https://static.wikia.nocookie.net/valorant/images/5/51/VyseMatchStart6.mp3",
+                "quote": "Our enemies had every chance to back down, but they chose violence, and I choose to reply in kind."
+            }
+        ]
+    },
+    {
         "displayName": "Viper",
         "voiceInfo": [
             {
