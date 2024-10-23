@@ -1,94 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F267CYZLQ"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6F267CYZLQ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-        gtag('config', 'G-6F267CYZLQ');
-        </script>
-        <!-- <meta name="google-adsense-account" content="ca-pub-9727969275111127"> -->
+			gtag("config", "G-6F267CYZLQ");
+		</script>
+		<!-- <meta name="google-adsense-account" content="ca-pub-9727969275111127"> -->
+		<!-- exoclick -->
+		<meta name="6a97888e-site-verification" content="7602f009840bad90cd6cbe86b8dd7df2" />
 
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-        <title>Guess The Ability</title>
-        <link rel="icon" href="/static/images/tabIcon.webp">
-        <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
-        <link rel="stylesheet" href="/static/guessTemplate.css">
-        <link rel="stylesheet" href="/static/styles.css">
-        <link rel="stylesheet" href="/static/valdle.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>
-        <script src="/static/confetti.js" defer></script>
-        <script src="/static/guessTemplate.js" defer></script>
-        <script src="/static/guessAbility.js" defer></script>
-        <script type="text/javascript" src="/static/resize.js" defer></script>
-    </head>
+		<title>Guess The Ability</title>
+		<link rel="icon" href="/static/images/tabIcon.webp" />
+		<link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
+		<link rel="stylesheet" href="/static/guessTemplate.css" />
+		<link rel="stylesheet" href="/static/styles.css" />
+		<link rel="stylesheet" href="/static/valdle.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>
+		<script src="/static/confetti.js" defer></script>
+		<script src="/static/guessTemplate.js" defer></script>
+		<script src="/static/guessAbility.js" defer></script>
+		<script type="text/javascript" src="/static/resize.js" defer></script>
+	</head>
 
-    <body>
+	<body>
+		<nav class="navbar">
+			<a href="\" class="notranslate title">vAldle</a>
+		</nav>
 
-        <nav class="navbar">
-            <a href="\" class="notranslate title">vAldle</a>
-        </nav>
+		<div class="linedeco">
+			<hr />
+			<p>&#9670;</p>
+		</div>
 
-        <div class = "linedeco">
-            <hr>
-            <p>	&#9670;</p>
-        </div>
-        
-        <div id="gameArea">
-            <div id="modeBox">
-                <div class="prompt">
-                    <p id="header">Guess The Agent By Ability</p>
-                    <p id="sub_header">Each Try Reveals A Tile</p>
-                    <hr>
-                </div>
-                
-                <div class="guessImageDiv">
-                    <div class="covers" id="tileGrid">
-                        <!-- Covers added here through CSS -->
-                    </div>
-                    <img id="guessImage" src="">
-                </div>
-                <div id="dropdown">
-                    <div id="userInputDiv">
-                        <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
-                        <button id="submit" onclick="validateGuess()"><div class="searchArrow"></div></button>
-                    </div>
-                    <div id="optionNames" class="dropdown-content notranslate"></div>
-                </div>
-            </div>
+		<div id="gameArea">
+			<div id="modeBox">
+				<div class="prompt">
+					<p id="header">Guess The Agent By Ability</p>
+					<p id="sub_header">Each Try Reveals A Tile</p>
+					<hr />
+				</div>
 
-            <div id="fullListOfGuesses">
-                <!--Add Guesses-->
-            </div>
+				<div class="guessImageDiv">
+					<div class="covers" id="tileGrid">
+						<!-- Covers added here through CSS -->
+					</div>
+					<img id="guessImage" src="" />
+				</div>
+				<div id="dropdown">
+					<div id="userInputDiv">
+						<input
+							type="text"
+							placeholder="Search Agent.."
+							id="searchInput"
+							onfocus="showButtons()"
+							autocomplete="off"
+						/>
+						<button id="submit" onclick="validateGuess()"><div class="searchArrow"></div></button>
+					</div>
+					<div id="optionNames" class="dropdown-content notranslate"></div>
+				</div>
+			</div>
 
-            <div hidden id="partTwoDisplay">
-                <p class="prompt" id="bonusPrompt">Bonus<br>Guess The Ability Name</p>
-                <img id="partTwoAbilityIcon">
-                <div id="whatName"></div>
-            </div>  
-            
-            
-        </div>
+			<div id="fullListOfGuesses">
+				<!--Add Guesses-->
+			</div>
 
-    </body>
+			<div hidden id="partTwoDisplay">
+				<p class="prompt" id="bonusPrompt">Bonus<br />Guess The Ability Name</p>
+				<img id="partTwoAbilityIcon" />
+				<div id="whatName"></div>
+			</div>
+		</div>
+		<!-- ads -->
+		<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+		<ins class="eas6a97888e17" data-zoneid="5453152"></ins>
+		<script>
+			(AdProvider = window.AdProvider || []).push({ serve: {} });
+		</script>
+	</body>
 
-    <script>
-        // Generate the 4x4 grid tiles
-        const gridContainer = document.getElementById("tileGrid");
-        for (let i = 0; i < 16; i++) {
-            const tile = document.createElement("div");
-            const name = "cover" + (i+1).toString();
-            tile.setAttribute("id", name)
-            tile.setAttribute("class", 'tileCover')
-            gridContainer.appendChild(tile);
-        }
-    </script>
-
-
+	<script>
+		// Generate the 4x4 grid tiles
+		const gridContainer = document.getElementById("tileGrid");
+		for (let i = 0; i < 16; i++) {
+			const tile = document.createElement("div");
+			const name = "cover" + (i + 1).toString();
+			tile.setAttribute("id", name);
+			tile.setAttribute("class", "tileCover");
+			gridContainer.appendChild(tile);
+		}
+	</script>
 </html>

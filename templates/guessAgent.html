@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F267CYZLQ"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6F267CYZLQ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-        gtag('config', 'G-6F267CYZLQ');
-        </script>
-        <!-- <meta name="google-adsense-account" content="ca-pub-9727969275111127"> -->
+			gtag("config", "G-6F267CYZLQ");
+		</script>
+		<!-- <meta name="google-adsense-account" content="ca-pub-9727969275111127"> -->
+		<!-- exoclick -->
+		<meta name="6a97888e-site-verification" content="7602f009840bad90cd6cbe86b8dd7df2" />
 
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-        <title>Guess The Agent</title>
-        <link rel="icon" href="/static/images/tabIcon.webp">
-        <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
-        <link rel="stylesheet" href="/static/guessTemplate.css">
-        <link rel="stylesheet" href="/static/styles.css">
-        <link rel="stylesheet" href="/static/valdle.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>
-        <script type="text/javascript" src="/static/pixelate.js"></script>
-        <script src="/static/confetti.js" defer></script>
-        <script src="/static/guessTemplate.js" defer></script>
-        <script src="/static/guessAgent.js" defer></script>
-        <script type="text/javascript" src="/static/resize.js" defer></script>
-    </head>
+		<title>Guess The Agent</title>
+		<link rel="icon" href="/static/images/tabIcon.webp" />
+		<link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
+		<link rel="stylesheet" href="/static/guessTemplate.css" />
+		<link rel="stylesheet" href="/static/styles.css" />
+		<link rel="stylesheet" href="/static/valdle.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>
+		<script type="text/javascript" src="/static/pixelate.js"></script>
+		<script src="/static/confetti.js" defer></script>
+		<script src="/static/guessTemplate.js" defer></script>
+		<script src="/static/guessAgent.js" defer></script>
+		<script type="text/javascript" src="/static/resize.js" defer></script>
+	</head>
 
+	<body>
+		<nav class="navbar">
+			<a href="\" class="notranslate title">vAldle</a>
+		</nav>
 
-    <body>
+		<div class="linedeco">
+			<hr />
+			<p>&#9670;</p>
+		</div>
 
-        <nav class="navbar">
-            <a href="\" class="notranslate title">vAldle</a>
-        </nav>
+		<div id="gameArea">
+			<div id="modeBox">
+				<div class="prompt">
+					<p>Guess The Agent</p>
+					<hr />
+				</div>
+				<div class="guessTextDiv">
+					<h1 id="guessText" style="display: none">Take A Guess To Get Started!</h1>
+				</div>
+				<div id="dropdown">
+					<div id="userInputDiv">
+						<input
+							type="text"
+							placeholder="Search Agent.."
+							id="searchInput"
+							onfocus="showButtons()"
+							autocomplete="off"
+						/>
+						<button id="submit" onclick="validateGuess()"><div class="searchArrow"></div></button>
+					</div>
+					<div id="optionNames" class="dropdown-content notranslate"></div>
+				</div>
+			</div>
+			<div class="board" id="topRow">
+				<div class="row">
+					<div class="category"><span class="cata">Agent</span></div>
+					<div class="category"><span class="cata">Gender</span></div>
+					<div class="category"><span class="cata">Role</span></div>
+					<div class="category"><span class="cata">Year</span></div>
+				</div>
+			</div>
 
-        <div class = "linedeco">
-            <hr>
-            <p>	&#9670;</p>
-        </div>
+			<div class="board" id="listOfGuesses"></div>
 
-        <div id="gameArea">
-            <div id="modeBox">
-                <div class="prompt">
-                    <p>Guess The Agent</p>
-                    <hr>
-                </div>
-                <div class="guessTextDiv">
-                    <h1 id="guessText" style="display: none;">Take A Guess To Get Started!</h1>
-                </div>
-                <div id="dropdown">
-                    <div id="userInputDiv">
-                        <input type="text" placeholder="Search Agent.." id="searchInput" onfocus= "showButtons()" autocomplete="off">
-                        <button id="submit" onclick="validateGuess()"><div class="searchArrow"></div></button>
-                    </div>
-                    <div id="optionNames" class="dropdown-content notranslate"></div>
-                </div>
-            </div>
-            <div class = "board" id="topRow">
-                <div class="row">
-                  <div class="category"><span class="cata">Agent</span></div>
-                  <div class="category"><span class="cata">Gender</span></div>
-                  <div class="category"><span class="cata">Role</span></div>
-                  <div class="category"><span class="cata">Year</span></div>
-                </div>
-              </div>
-              
-              <div class="board" id="listOfGuesses">
-        </div>
-
-        <div hidden class="prompt" id="agent2Prompt">
-            <p>Bonus<br>Guess The Pixelated Agent Icon</p>
-        </div>
-
-    </body>
-
-
-
-
+			<div hidden class="prompt" id="agent2Prompt">
+				<p>Bonus<br />Guess The Pixelated Agent Icon</p>
+			</div>
+		</div>
+		<!-- ads -->
+		<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+		<ins class="eas6a97888e17" data-zoneid="5453152"></ins>
+		<script>
+			(AdProvider = window.AdProvider || []).push({ serve: {} });
+		</script>
+	</body>
 </html>
