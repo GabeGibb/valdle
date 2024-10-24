@@ -6,37 +6,25 @@ ad_dict = {
   "left-banner": {
     "type": "web",
     "script": '''
-      <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
-      <ins class="eas6a97888e17" data-zoneid="5453194"></ins>
-      <script>
-        (AdProvider = window.AdProvider || []).push({ serve: {} });
-      </script>
+<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
+ <ins class="eas6a97888e17" data-zoneid="5453290"></ins> 
+ <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
     '''
   },
   "right-banner": {
     "type": "web",
     "script": '''
-      <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
-      <ins class="eas6a97888e17" data-zoneid="5453206"></ins>
-      <script>
-        (AdProvider = window.AdProvider || []).push({ serve: {} });
-      </script>
+<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
+ <ins class="eas6a97888e17" data-zoneid="5453292"></ins> 
+ <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
     '''
   },
-  # "bottom-banner": {
-  #   "type": "web",
-  #   "script": '''
-  #     <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
-  #     <ins class="eas6a97888e17" data-zoneid="5453152"></ins> 
-  #     <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-  #   '''
-  # },
   "mobile-bottom-banner": {
     "type": "mobile",
     "script": '''
-      <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
-      <ins class="eas6a97888e14" data-zoneid="5453266"></ins> 
-      <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
+<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
+ <ins class="eas6a97888e10" data-zoneid="5453294"></ins> 
+ <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
     '''
   }
 }
@@ -64,22 +52,22 @@ def inject_html_tags(file_path, ad_dict, ad_group_id="ad-group"):
     remove_previous_ads(soup, ad_group_id)
     
     # UNCOMMENT/COMMENT THE FOLLOWING CODE BLOCK TO ENABLE/DISABLE AD INJECTION
-    # # Create a new div with data-ad-group and inject the new ads
-    # ad_group_div = soup.new_tag('div', **{'data-ad-group': ad_group_id})
+    # Create a new div with data-ad-group and inject the new ads
+    ad_group_div = soup.new_tag('div', **{'data-ad-group': ad_group_id})
     
-    # # Add each ad script into the new div
-    # for key, obj in ad_dict.items():
-    #     ad_div = soup.new_tag('div', **{'class': f"ad-{obj['type']}", 'data-ad-key': key})
-    #     ad_div.append(BeautifulSoup(obj['script'], 'lxml'))  # Parse the script and append
-    #     ad_group_div.append(ad_div)
+    # Add each ad script into the new div
+    for key, obj in ad_dict.items():
+        ad_div = soup.new_tag('div', **{'class': f"ad-{obj['type']}", 'data-ad-key': key})
+        ad_div.append(BeautifulSoup(obj['script'], 'lxml'))  # Parse the script and append
+        ad_group_div.append(ad_div)
 
-    # # Insert the new ads before the closing body tag
-    # body_tag = soup.find('body')
-    # if body_tag:
-    #     body_tag.append(ad_group_div)
-    # else:
-    #     print(f"No closing <body> tag found in {file_path}")
-    #     return
+    # Insert the new ads before the closing body tag
+    body_tag = soup.find('body')
+    if body_tag:
+        body_tag.append(ad_group_div)
+    else:
+        print(f"No closing <body> tag found in {file_path}")
+        return
     
     # Write the modified content back to the file with utf-8 encoding
     with open(file_path, 'w', encoding='utf-8') as file:
