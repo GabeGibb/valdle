@@ -23,7 +23,7 @@ ad_dict = {
     "type": "mobile",
     "script": '''
 <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
- <ins class="eas6a97888e10" data-zoneid="5453294"></ins> 
+ <ins class="eas6a97888e14" data-zoneid="5453798"></ins> 
  <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
     '''
   }
