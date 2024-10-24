@@ -289,23 +289,30 @@ button {
 	touch-action: manipulation;
 }
 
+/* Banner Ads */
+.mobile-bottom-banner-ad {
+	position: sticky;
+	bottom: 0;
+}
+
 /* Desktop/Web layout */
 @media only screen and (min-width: 1001px) {
-	.left-banner-ad,
-	.right-banner-ad,
-	.bottom-banner-ad {
+	.ad-web {
 		display: block;
+	}
+
+	.ad-mobile {
+		display: none;
 	}
 }
 
 /* Mobile layout (screen width 600px or less) */
 @media only screen and (max-width: 1000px) {
-	.left-banner-ad,
-	.right-banner-ad {
+	.ad-web {
 		display: none;
 	}
-	.top-banner-ad,
-	.bottom-banner-ad {
+
+	.ad-mobile {
 		display: block;
 	}
 }
