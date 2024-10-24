@@ -1,131 +1,122 @@
 /* Genric Styles */
 
-@font-face{
-    font-family: "DIN Next LT W04 Medium";
-    src: url("fonts/0201813274259c3d4f78760d19270bab.eot");
-    src: url("fonts/0201813274259c3d4f78760d19270bab.eot?#iefix")format("embedded-opentype"),
-        url("fonts/0201813274259c3d4f78760d19270bab.woff")format("woff"),
-        url("fonts/0201813274259c3d4f78760d19270bab.woff2")format("woff2"),
-        url("fonts/0201813274259c3d4f78760d19270bab.ttf")format("truetype"),
-        url("fonts/0201813274259c3d4f78760d19270bab.svg#DIN Next LT W04 Medium")format("svg");
-    font-weight:normal;
-    font-style:normal;
-    font-display:swap;
+@font-face {
+	font-family: "DIN Next LT W04 Medium";
+	src: url("fonts/0201813274259c3d4f78760d19270bab.eot");
+	src: url("fonts/0201813274259c3d4f78760d19270bab.eot?#iefix") format("embedded-opentype"),
+		url("fonts/0201813274259c3d4f78760d19270bab.woff") format("woff"),
+		url("fonts/0201813274259c3d4f78760d19270bab.woff2") format("woff2"),
+		url("fonts/0201813274259c3d4f78760d19270bab.ttf") format("truetype"),
+		url("fonts/0201813274259c3d4f78760d19270bab.svg#DIN Next LT W04 Medium") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
- 
+
 /* @import url(https://db.onlinewebfonts.com/c/0201813274259c3d4f78760d19270bab?family=DIN+Next+LT+W04+Medium); */
 
 html {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
- }
-
-body{
-    visibility: hidden;
-    background-color: #000000;
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    overflow-x: hidden;
-    font-family: 'VALORANT', sans-serif;
-    
-    background-image: url('images/pxfuelLogoRemoved.webp');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size:cover; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-    background-attachment: fixed;
-
-    /* padding-bottom: 100px; */
-    min-height: 100vh;
-    height: auto;
-    /* top: 0px !important; */
-    
+	margin: 0px;
+	height: 100%;
+	width: 100%;
 }
 
-@media screen and (max-width: 768px){
-    body{
-       background-attachment:scroll;
-       background-repeat: repeat;
-    }
+body {
+	visibility: hidden;
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: "VALORANT", sans-serif;
+
+	background-image: url("images/pxfuelLogoRemoved.webp");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+
+	background-attachment: fixed;
+
+	/* padding-bottom: 100px; */
+	min-height: 100vh;
+	height: auto;
+	/* top: 0px !important; */
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		background-attachment: scroll;
+		background-repeat: repeat;
+	}
 }
 
 .title {
-    font-size: 4em;
+	font-size: 4em;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .navbar a {
-    user-select: none;
-    /* float: left; */
-    color: #fa4454;
-    text-align: center;
-    padding-top: 10px;
-    text-decoration: none;
-    transition: 150ms ease-out;
+	user-select: none;
+	/* float: left; */
+	color: #fa4454;
+	text-align: center;
+	padding-top: 10px;
+	text-decoration: none;
+	transition: 150ms ease-out;
 }
 
 .navbar a:hover {
-    transform: scale(1.075); 
+	transform: scale(1.075);
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+	width: 20px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(128,128,128,1);
-
+	background-color: rgba(128, 128, 128, 1);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(50,50,50,1);
+	background-color: rgba(50, 50, 50, 1);
 }
-
-
-
 
 .gameButton {
-    background-color: #FA4454;
-    color: black;
-    border: 3px solid transparent;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0s;
-    transition: 100ms ease-out;
-  }
-
-.gameButton:hover {
-    background-color: black;
-    color: #FA4454;
-    border: 3px solid #FA4454;
-    
+	background-color: #fa4454;
+	color: black;
+	border: 3px solid transparent;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: 0s;
+	transition: 100ms ease-out;
 }
 
-button{
-    cursor: pointer;
+.gameButton:hover {
+	background-color: black;
+	color: #fa4454;
+	border: 3px solid #fa4454;
+}
+
+button {
+	cursor: pointer;
 }
 
 /* Game Page Stuff */
 
-
 .red {
-    background-color: #ff4655;
+	background-color: #ff4655;
 }
 
 .green {
-    background-color: #74CB71;
+	background-color: #74cb71;
 }
-
-
 
 /* TEST VAL BUTTON */
 
@@ -136,163 +127,192 @@ button{
 */
 
 .btn {
-    /* Clean style */
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    background: rgba(0,0,0,.9);
-    padding: 0;
-    color: var(--button-text-color);
-    cursor: pointer;
-    /* Clean style */
-    
-    --button-text-color: var(--background-color);
-    --button-text-color-hover: var(--button-background-color);
-    --border-color: #7D8082;
-    --button-background-color: #ece8e1;
-    --highlight-color: #ff4655;
-    --button-inner-border-color: transparent;
-    --button-bits-color: var(--background-color);
-    --button-bits-color-hover: var(--button-background-color);
-    
-    position: relative;
-    padding: 3px;
-    margin: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    transition: all .15s ease;
+	/* Clean style */
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 0;
+	color: var(--button-text-color);
+	cursor: pointer;
+	/* Clean style */
 
-  }
-  
+	--button-text-color: var(--background-color);
+	--button-text-color-hover: var(--button-background-color);
+	--border-color: #7d8082;
+	--button-background-color: #ece8e1;
+	--highlight-color: #ff4655;
+	--button-inner-border-color: transparent;
+	--button-bits-color: var(--background-color);
+	--button-bits-color-hover: var(--button-background-color);
 
-  
-  .btn:active,
-  .btn:focus {
-    outline: none;
-  }
-  
-  .btn:active::before,
-  .btn:active::after {
-    right: 3px;
-    left: 3px;
-  }
-  
-  .btn:active::before {
-    top: 3px;
-  }
-  
-  .btn:active::after {
-    bottom: 3px;
-  }
-  
-  .btn__inner {
-    position: relative;
-    display: block;
-    /* padding: 15px 30px; */
-    /* background-color: var(--button-background-color); */
-    /* background-color: #000000; */
-    overflow: hidden;
-    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
-  }
-  
-  .btn__inner::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0; left: 0;
-    width: 2px;
-    height: 2px;
-    background-color: var(--button-bits-color);
-  }
-  
-  .btn__inner::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0; bottom: 0;
-    width: 4px;
-    height: 4px;
-    background-color: var(--button-bits-color);
-    transition: all .2s ease;
-  }
-  
-  .btn__slide {
-    display: block;
-    position: absolute;
-    top: 0; bottom: -1px; left: -15px;
-    width: 0;
-    background-color: var(--highlight-color);
-    transform: skew(-15deg);
-    transition: all .2s ease;
-  }
-  
-  .btn__content {
-    position: relative;
-  }
-  
-  .btn:hover {
-    color: var(--button-text-color-hover);
-  }
-  
-  .btn:hover .btn__slide {
-    width: calc(100% + 45px);
-  }
-  
-  .btn:hover .btn__inner::after {
-    background-color: var(--button-bits-color-hover);
-  }
+	position: relative;
+	padding: 3px;
+	margin: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	transition: all 0.15s ease;
+}
 
-  
-  
-  .btn--light {
-    --button-background-color: var(--background-color);
-    --button-text-color: var(--highlight-color);
-    --button-inner-border-color: var(--highlight-color);
-    --button-text-color-hover: #ece8e1;
-  }
+.btn:active,
+.btn:focus {
+	outline: none;
+}
 
-  .icon {
-    width: 60px;
-  }
+.btn:active::before,
+.btn:active::after {
+	right: 3px;
+	left: 3px;
+}
+
+.btn:active::before {
+	top: 3px;
+}
+
+.btn:active::after {
+	bottom: 3px;
+}
+
+.btn__inner {
+	position: relative;
+	display: block;
+	/* padding: 15px 30px; */
+	/* background-color: var(--button-background-color); */
+	/* background-color: #000000; */
+	overflow: hidden;
+	box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+}
+
+.btn__inner::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 2px;
+	background-color: var(--button-bits-color);
+}
+
+.btn__inner::after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 4px;
+	height: 4px;
+	background-color: var(--button-bits-color);
+	transition: all 0.2s ease;
+}
+
+.btn__slide {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: -1px;
+	left: -15px;
+	width: 0;
+	background-color: var(--highlight-color);
+	transform: skew(-15deg);
+	transition: all 0.2s ease;
+}
+
+.btn__content {
+	position: relative;
+}
+
+.btn:hover {
+	color: var(--button-text-color-hover);
+}
+
+.btn:hover .btn__slide {
+	width: calc(100% + 45px);
+}
+
+.btn:hover .btn__inner::after {
+	background-color: var(--button-bits-color-hover);
+}
+
+.btn--light {
+	--button-background-color: var(--background-color);
+	--button-text-color: var(--highlight-color);
+	--button-inner-border-color: var(--highlight-color);
+	--button-text-color-hover: #ece8e1;
+}
+
+.icon {
+	width: 60px;
+}
 /* TEST VAL BUTTON END */
 
 /* Disables top translation pop-up */
 .VIpgJd-ZVi9od-ORHb-OEVmcd {
-  display: none !important;
+	display: none !important;
 }
 
 /* Disables GT tooltips and highlights */
-#goog-gt-tt {display: none !important;} 
+#goog-gt-tt {
+	display: none !important;
+}
 .VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
-  background-color: transparent !important;
-  box-shadow: none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 .VIpgJd-ZVi9od-aZ2wEe-wOHMyf .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
-  display: none !important;
+	display: none !important;
 }
 
-#confettiCanvas{
-    position:absolute;
-    top:0;
-    width: 100%;
-    height: 100%;
-    cursor: not-allowed;
-    pointer-events: none;
+#confettiCanvas {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	cursor: not-allowed;
+	pointer-events: none;
 }
 
-#loading{
-    visibility: visible;
-    width: 150px;
-    height: 150px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+#loading {
+	visibility: visible;
+	width: 150px;
+	height: 150px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
-button{
-    touch-action: manipulation;
+button {
+	touch-action: manipulation;
+}
+
+/* Banner Ads */
+.mobile-bottom-banner-ad {
+	position: sticky;
+	bottom: 0;
+}
+
+/* Desktop/Web layout */
+@media only screen and (min-width: 1001px) {
+	.ad-web {
+		display: block;
+	}
+
+	.ad-mobile {
+		display: none;
+	}
+}
+
+/* Mobile layout (screen width 600px or less) */
+@media only screen and (max-width: 1000px) {
+	.ad-web {
+		display: none;
+	}
+
+	.ad-mobile {
+		display: block;
+	}
 }
