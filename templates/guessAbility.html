@@ -26,17 +26,6 @@
 		<script defer="" src="/static/guessTemplate.js"></script>
 		<script defer="" src="/static/guessAbility.js"></script>
 		<script defer="" src="/static/resize.js" type="text/javascript"></script>
-		<script defer="">
-			// Generate the 4x4 grid tiles
-			const gridContainer = document.getElementById("tileGrid");
-			for (let i = 0; i < 16; i++) {
-				const tile = document.createElement("div");
-				const name = "cover" + (i + 1).toString();
-				tile.setAttribute("id", name);
-				tile.setAttribute("class", "tileCover");
-				gridContainer.appendChild(tile);
-			}
-		</script>
 	</head>
 	<body>
 		<nav class="navbar">
@@ -124,4 +113,15 @@
 			</div>
 		</div>
 	</body>
+			<script>
+			// Generate the 4x4 grid tiles
+			const gridContainer = document.getElementById("tileGrid");
+			for (let i = 0; i < 16; i++) {
+				const tile = document.createElement("div");
+				const name = "cover" + (i + 1).toString();
+				tile.setAttribute("id", name);
+				tile.setAttribute("class", "tileCover");
+				gridContainer.appendChild(tile);
+			}
+		</script>
 </html>
