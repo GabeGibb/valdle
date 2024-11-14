@@ -53,21 +53,21 @@ def inject_html_tags(file_path, ad_dict, ad_group_id="ad-group"):
     
     # UNCOMMENT/COMMENT THE FOLLOWING CODE BLOCK TO ENABLE/DISABLE AD INJECTION
     # Create a new div with data-ad-group and inject the new ads
-    ad_group_div = soup.new_tag('div', **{'data-ad-group': ad_group_id})
+    # ad_group_div = soup.new_tag('div', **{'data-ad-group': ad_group_id})
     
-    # Add each ad script into the new div
-    for key, obj in ad_dict.items():
-        ad_div = soup.new_tag('div', **{'class': f"ad-{obj['type']}", 'data-ad-key': key})
-        ad_div.append(BeautifulSoup(obj['script'], 'lxml'))  # Parse the script and append
-        ad_group_div.append(ad_div)
+    # # Add each ad script into the new div
+    # for key, obj in ad_dict.items():
+    #     ad_div = soup.new_tag('div', **{'class': f"ad-{obj['type']}", 'data-ad-key': key})
+    #     ad_div.append(BeautifulSoup(obj['script'], 'lxml'))  # Parse the script and append
+    #     ad_group_div.append(ad_div)
 
-    # Insert the new ads before the closing body tag
-    body_tag = soup.find('body')
-    if body_tag:
-        body_tag.append(ad_group_div)
-    else:
-        print(f"No closing <body> tag found in {file_path}")
-        return
+    # # Insert the new ads before the closing body tag
+    # body_tag = soup.find('body')
+    # if body_tag:
+    #     body_tag.append(ad_group_div)
+    # else:
+    #     print(f"No closing <body> tag found in {file_path}")
+    #     return
     
     # Write the modified content back to the file with utf-8 encoding
     with open(file_path, 'w', encoding='utf-8') as file:
