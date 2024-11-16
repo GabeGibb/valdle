@@ -295,6 +295,20 @@ button {
 	bottom: 0;
 }
 
+.left-banner-ad {
+	position: fixed;
+	top: 50%; /* Start at the middle of the viewport */
+	left: 0; /* Align to the left edge */
+	transform: translateY(-50%); /* Offset by 50% of its height to center it vertically */
+}
+
+.right-banner-ad {
+	position: fixed;
+	top: 50%; /* Start at the middle of the viewport */
+	right: 0; /* Align to the right edge */
+	transform: translateY(-50%); /* Offset by 50% of its height to center it vertically */
+}
+
 /* Desktop/Web layout */
 @media only screen and (min-width: 1001px) {
 	.ad-web {
