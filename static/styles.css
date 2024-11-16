@@ -309,6 +309,11 @@ button {
 	transform: translateY(-50%); /* Offset by 50% of its height to center it vertically */
 }
 
+.single-ad {
+	margin: auto;
+	width: fit-content;
+}
+
 /* Desktop/Web layout */
 @media only screen and (min-width: 1001px) {
 	.ad-web {

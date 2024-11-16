@@ -8,26 +8,28 @@ ad_dict = {
         "script": '''
 <div id="ntv_2096408"></div>
 <script defer type="text/javascript">
-(function(d) {
-    var params =
-    {
-        bvwidgetid: "ntv_2096408",
-        bvlinksownid: 2096408,
-        rows: 4,
-        cols: 1,
-        textpos: "below",
-        imagewidth: 150,
-        mobilecols: 1,
-        cb: (new Date()).getTime()
-    };
-    params.bvwidgetid = "ntv_2096408" + params.cb;
-    d.getElementById("ntv_2096408").id = params.bvwidgetid;
-    var qs = Object.keys(params).reduce(function(a, k){ a.push(k + '=' + encodeURIComponent(params[k])); return a},[]).join(String.fromCharCode(38));
-    var s = d.createElement('script'); s.type='text/javascript';s.async=true;
-    var p = 'https:' == document.location.protocol ? 'https' : 'http';
-    s.src = p + "://cdn.hyperpromote.com/bidvertiser/tags/active/bdvws.js?" + qs;
-    d.getElementById(params.bvwidgetid).appendChild(s);
-})(document);
+window.addEventListener("load", function() {
+    (function(d) {
+        var params =
+        {
+            bvwidgetid: "ntv_2096408",
+            bvlinksownid: 2096408,
+            rows: 4,
+            cols: 1,
+            textpos: "below",
+            imagewidth: 150,
+            mobilecols: 1,
+            cb: (new Date()).getTime()
+        };
+        params.bvwidgetid = "ntv_2096408" + params.cb;
+        d.getElementById("ntv_2096408").id = params.bvwidgetid;
+        var qs = Object.keys(params).reduce(function(a, k){ a.push(k + '=' + encodeURIComponent(params[k])); return a},[]).join(String.fromCharCode(38));
+        var s = d.createElement('script'); s.type='text/javascript';s.async=true;
+        var p = 'https:' == document.location.protocol ? 'https' : 'http';
+        s.src = p + "://cdn.hyperpromote.com/bidvertiser/tags/active/bdvws.js?" + qs;
+        d.getElementById(params.bvwidgetid).appendChild(s);
+    })(document);
+});
 </script>
         '''
     },
@@ -36,26 +38,28 @@ ad_dict = {
         "script": '''
 <div id="ntv_2096408"></div>
 <script defer type="text/javascript">
-(function(d) {
-    var params =
-    {
-        bvwidgetid: "ntv_2096408",
-        bvlinksownid: 2096408,
-        rows: 4,
-        cols: 1,
-        textpos: "below",
-        imagewidth: 150,
-        mobilecols: 1,
-        cb: (new Date()).getTime()
-    };
-    params.bvwidgetid = "ntv_2096408" + params.cb;
-    d.getElementById("ntv_2096408").id = params.bvwidgetid;
-    var qs = Object.keys(params).reduce(function(a, k){ a.push(k + '=' + encodeURIComponent(params[k])); return a},[]).join(String.fromCharCode(38));
-    var s = d.createElement('script'); s.type='text/javascript';s.async=true;
-    var p = 'https:' == document.location.protocol ? 'https' : 'http';
-    s.src = p + "://cdn.hyperpromote.com/bidvertiser/tags/active/bdvws.js?" + qs;
-    d.getElementById(params.bvwidgetid).appendChild(s);
-})(document);
+window.addEventListener("load", function() {
+    (function(d) {
+        var params =
+        {
+            bvwidgetid: "ntv_2096408",
+            bvlinksownid: 2096408,
+            rows: 4,
+            cols: 1,
+            textpos: "below",
+            imagewidth: 150,
+            mobilecols: 1,
+            cb: (new Date()).getTime()
+        };
+        params.bvwidgetid = "ntv_2096408" + params.cb;
+        d.getElementById("ntv_2096408").id = params.bvwidgetid;
+        var qs = Object.keys(params).reduce(function(a, k){ a.push(k + '=' + encodeURIComponent(params[k])); return a},[]).join(String.fromCharCode(38));
+        var s = d.createElement('script'); s.type='text/javascript';s.async=true;
+        var p = 'https:' == document.location.protocol ? 'https' : 'http';
+        s.src = p + "://cdn.hyperpromote.com/bidvertiser/tags/active/bdvws.js?" + qs;
+        d.getElementById(params.bvwidgetid).appendChild(s);
+    })(document);
+});
 </script>
         '''
     }
@@ -110,4 +114,4 @@ for html_file in html_files:
     file_path = os.path.join(directory, html_file)
     inject_html_tags(file_path, ad_dict)
 
-print("HTML ads have been successfully injected and old ads removed.")
+print("HTML ads have been successfully injected with delayed execution and old ads removed.")
