@@ -3,30 +3,66 @@ from bs4 import BeautifulSoup
 
 # Define a dictionary for the ad scripts
 ad_dict = {
-  "left-banner": {
-    "type": "web",
-    "script": '''
-<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
- <ins class="eas6a97888e17" data-zoneid="5453290"></ins> 
- <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-    '''
-  },
-  "right-banner": {
-    "type": "web",
-    "script": '''
-<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
- <ins class="eas6a97888e17" data-zoneid="5453292"></ins> 
- <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-    '''
-  },
-  "mobile-bottom-banner": {
-    "type": "mobile",
-    "script": '''
-<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
- <ins class="eas6a97888e14" data-zoneid="5453798"></ins> 
- <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-    '''
-  }
+    "left-banner-ad": {
+        "type": "web",
+        "script": '''
+<div id="ntv_2096408"></div>
+<script defer type="text/javascript">
+window.addEventListener("load", function() {
+    (function(d) {
+        var params =
+        {
+            bvwidgetid: "ntv_2096408",
+            bvlinksownid: 2096408,
+            rows: 4,
+            cols: 1,
+            textpos: "below",
+            imagewidth: 150,
+            mobilecols: 1,
+            cb: (new Date()).getTime()
+        };
+        params.bvwidgetid = "ntv_2096408" + params.cb;
+        d.getElementById("ntv_2096408").id = params.bvwidgetid;
+        var qs = Object.keys(params).reduce(function(a, k){ a.push(k + '=' + encodeURIComponent(params[k])); return a},[]).join(String.fromCharCode(38));
+        var s = d.createElement('script'); s.type='text/javascript';s.async=true;
+        var p = 'https:' == document.location.protocol ? 'https' : 'http';
+        s.src = p + "://cdn.hyperpromote.com/bidvertiser/tags/active/bdvws.js?" + qs;
+        d.getElementById(params.bvwidgetid).appendChild(s);
+    })(document);
+});
+</script>
+        '''
+    },
+    "right-banner-ad": {
+        "type": "web",
+        "script": '''
+<div id="ntv_2096408"></div>
+<script defer type="text/javascript">
+window.addEventListener("load", function() {
+    (function(d) {
+        var params =
+        {
+            bvwidgetid: "ntv_2096408",
+            bvlinksownid: 2096408,
+            rows: 4,
+            cols: 1,
+            textpos: "below",
+            imagewidth: 150,
+            mobilecols: 1,
+            cb: (new Date()).getTime()
+        };
+        params.bvwidgetid = "ntv_2096408" + params.cb;
+        d.getElementById("ntv_2096408").id = params.bvwidgetid;
+        var qs = Object.keys(params).reduce(function(a, k){ a.push(k + '=' + encodeURIComponent(params[k])); return a},[]).join(String.fromCharCode(38));
+        var s = d.createElement('script'); s.type='text/javascript';s.async=true;
+        var p = 'https:' == document.location.protocol ? 'https' : 'http';
+        s.src = p + "://cdn.hyperpromote.com/bidvertiser/tags/active/bdvws.js?" + qs;
+        d.getElementById(params.bvwidgetid).appendChild(s);
+    })(document);
+});
+</script>
+        '''
+    }
 }
 
 # List of HTML files to be modified
@@ -42,43 +78,35 @@ html_files = [
 # Directory containing the HTML files
 directory = "./"
 
-# Function to inject HTML tags wrapped in divs with metadata, and remove old ones
-def inject_html_tags(file_path, ad_dict, ad_group_id="ad-group"):
+# Function to inject HTML tags directly into the body and remove old ones
+def inject_html_tags(file_path, ad_dict):
     # Open and parse the HTML file with BeautifulSoup
     with open(file_path, 'r', encoding='utf-8') as file:
         soup = BeautifulSoup(file, 'lxml')
     
-    # Remove any existing ads by searching for the div with the group identifier
-    remove_previous_ads(soup, ad_group_id)
+    # Remove any existing ads with a data-ad-group attribute
+    remove_previous_ads(soup)
     
-    # UNCOMMENT/COMMENT THE FOLLOWING CODE BLOCK TO ENABLE/DISABLE AD INJECTION
-    # Create a new div with data-ad-group and inject the new ads
-    # ad_group_div = soup.new_tag('div', **{'data-ad-group': ad_group_id})
-    
-    # # Add each ad script into the new div
-    # for key, obj in ad_dict.items():
-    #     ad_div = soup.new_tag('div', **{'class': f"ad-{obj['type']}", 'data-ad-key': key})
-    #     ad_div.append(BeautifulSoup(obj['script'], 'lxml'))  # Parse the script and append
-    #     ad_group_div.append(ad_div)
-
-    # # Insert the new ads before the closing body tag
-    # body_tag = soup.find('body')
-    # if body_tag:
-    #     body_tag.append(ad_group_div)
-    # else:
-    #     print(f"No closing <body> tag found in {file_path}")
-    #     return
+    # Add each ad script directly into the <body> tag
+    body_tag = soup.find('body')
+    if body_tag:
+        for key, obj in ad_dict.items():
+            ad_div = soup.new_tag('div', **{'class': f"ad-{obj['type']} {key}", 'data-ad-key': key, 'data-ad-group': True})
+            ad_div.append(BeautifulSoup(obj['script'], 'html.parser'))  # Parse the script and append as raw HTML
+            body_tag.append(ad_div)
+    else:
+        print(f"No closing <body> tag found in {file_path}")
+        return
     
     # Write the modified content back to the file with utf-8 encoding
     with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(str(soup.prettify()))
+        file.write(str(soup.prettify(formatter=None)))  # Prevents unnecessary escaping
 
 
-# Function to remove previously injected ads and associated media queries
-def remove_previous_ads(soup, ad_group_id):
-    # Find and decompose (remove) the div with data-ad-group
-    ad_group = soup.find('div', {'data-ad-group': ad_group_id})
-    if ad_group:
+# Function to remove previously injected ads by identifying divs with data-ad-group
+def remove_previous_ads(soup):
+    # Find and decompose (remove) all div elements with a data-ad-group attribute
+    for ad_group in soup.find_all('div', {'data-ad-group': True}):
         ad_group.decompose()
 
 # Iterate over each HTML file and inject the tags
@@ -86,4 +114,4 @@ for html_file in html_files:
     file_path = os.path.join(directory, html_file)
     inject_html_tags(file_path, ad_dict)
 
-print("HTML ads have been successfully injected and old ads removed.")
+print("HTML ads have been successfully injected with delayed execution and old ads removed.")
