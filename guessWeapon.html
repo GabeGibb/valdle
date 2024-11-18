@@ -15,23 +15,32 @@
 		<!-- <meta name="google-adsense-account" content="ca-pub-9727969275111127"> -->
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport" />
-		<link href="/static/styles.css" rel="stylesheet" />
-		<link href="/static/guessTemplate.css" rel="stylesheet" />
-		<link href="/static/valdle.css" rel="stylesheet" />
-		<link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
-		<title>Guess The Quote</title>
+		<title>Guess The Weapon</title>
 		<link href="/static/images/tabIcon.webp" rel="icon" />
+		<link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
+		<link href="/static/guessTemplate.css" rel="stylesheet" />
+		<link href="/static/styles.css" rel="stylesheet" />
+		<link href="/static/valdle.css" rel="stylesheet" />
+		<script src="/static/env.js"></script>
+		<script defer="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script defer="" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 		<script defer="" src="/static/confetti.js"></script>
-		<script defer="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script defer="" src="/static/guessTemplate.js"></script>
-		<script defer="" src="/static/guessQuote.js"></script>
-		<script defer="" src="/static/audio.js" type="text/javascript"></script>
+		<script defer="" src="/static/guessWeapon.js"></script>
 		<script defer="" src="/static/resize.js" type="text/javascript"></script>
+		<style>
+			#correctGuessDiv {
+				flex-direction: column !important;
+			}
+
+			#correctImg {
+				width: 380px;
+			}
+		</style>
 	</head>
 	<body>
 		<nav class="navbar">
-			<a class="notranslate title" href="\"> vAldle </a>
+			<a class="notranslate title" href="\valdle.html"> vAldle </a>
 		</nav>
 		<div class="linedeco">
 			<hr />
@@ -39,29 +48,28 @@
 		</div>
 		<div id="gameArea">
 			<div id="modeBox">
-				<div class="prompt">
-					<p>Guess The Agent By Quote</p>
+				<div class="prompt" id="weaponPrompt">
+					<p id="header">Guess The Weapon Skin</p>
 					<hr />
 				</div>
-				<div class="guessTextDiv">
-					<h1 class="notranslate" id="guessText"></h1>
+				<div class="guessImageDiv">
+					<img id="weaponGuessImage" src="" />
 				</div>
-				<div class="hintDiv">
-					<h2 id="audioHintText"></h2>
-				</div>
+				<div id="weaponOptions"></div>
 				<div id="dropdown">
-					<div id="userInputDiv">
+					<div id="userInputDiv" style="display: none">
 						<input
 							autocomplete="off"
 							id="searchInput"
 							onfocus="showButtons()"
-							placeholder="Search Agent.."
+							placeholder="Search Weapon.."
 							type="text"
 						/>
 						<button id="submit" onclick="validateGuess()">
 							<div class="searchArrow"></div>
 						</button>
 					</div>
+					<!-- <div id="weaponOptions"></div> -->
 					<div class="dropdown-content notranslate" id="optionNames"></div>
 				</div>
 			</div>

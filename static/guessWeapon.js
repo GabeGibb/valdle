@@ -1,101 +1,98 @@
 let url = "static/api/weapons/weapons_en.json";
-let weaponUrl = window.location.href + '/api/weaponOfDay';
-let dropdownClone = $('#dropdown').clone();
+let weaponUrl = window.env.API_URL + "/guessWeapon/api/weaponOfDay";
+let dropdownClone = $("#dropdown").clone();
 let skinIndex;
 let weaponOptions;
 let shouldSave = true;
 
-$.get(weaponUrl, function(data, status){ //url defined in current webpage js file
-    loadTemplate(url, false, 'weapon', data['dayId']);
-    randIndex = data['skinRandIndex'];
-    weaponIndex = data['weaponRandIndex'];
-    weaponOptions = data['weaponOptions'];
+$.get(weaponUrl, function (data, status) {
+	//url defined in current webpage js file
+	loadTemplate(url, false, "weapon", data["dayId"]);
+	randIndex = data["skinRandIndex"];
+	weaponIndex = data["weaponRandIndex"];
+	weaponOptions = data["weaponOptions"];
 });
 
-function doTry(rows, curTry){
-    
-    for(let i = 0; i < 5; i++){
-        let curRow = rows[i].children;
-        for(let j = 0; j < 3; j++){
-            if (curRow[j].innerHTML == curTry){
-                curRow[j].click();
-                return;
-            }
-        }
-    }
-
+function doTry(rows, curTry) {
+	for (let i = 0; i < 5; i++) {
+		let curRow = rows[i].children;
+		for (let j = 0; j < 3; j++) {
+			if (curRow[j].innerHTML == curTry) {
+				curRow[j].click();
+				return;
+			}
+		}
+	}
 }
 
-function addTries(tries){
-    shouldSave = false;
+function addTries(tries) {
+	shouldSave = false;
 
-    let rows = $('#weaponOptions').children();
-    for(let x = 0; x < tries.length; x++){
-        doTry(rows, tries[x])
-    }
-    shouldSave = true;
+	let rows = $("#weaponOptions").children();
+	for (let x = 0; x < tries.length; x++) {
+		doTry(rows, tries[x]);
+	}
+	shouldSave = true;
 }
 
-function doP2Guess(attempt){
-    // if (attempt != ''){
-    //     isCorrectOption(attempt);
-    // }
+function doP2Guess(attempt) {
+	// if (attempt != ''){
+	//     isCorrectOption(attempt);
+	// }
 }
 
-function curGamemode(){
-    dataList = dataList[weaponIndex]['skins']
+function curGamemode() {
+	dataList = dataList[weaponIndex]["skins"];
 
-    correctImgSrc = dataList[randIndex]['displayIcon']
-    // console.log(correctImgSrc);
-    // console.log(dataList)
-    // console.log(dataList[randIndex]);
-    if (correctImgSrc == null){
-        for(let i=0; i < dataList[randIndex]['levels'].length; i++){
-            if (dataList[randIndex]['levels'][i]['displayIcon'] != null){
-                correctImgSrc = dataList[randIndex]['levels'][i]['displayIcon']
-                break;
-            }
-        }
-    }
+	correctImgSrc = dataList[randIndex]["displayIcon"];
+	// console.log(correctImgSrc);
+	// console.log(dataList)
+	// console.log(dataList[randIndex]);
+	if (correctImgSrc == null) {
+		for (let i = 0; i < dataList[randIndex]["levels"].length; i++) {
+			if (dataList[randIndex]["levels"][i]["displayIcon"] != null) {
+				correctImgSrc = dataList[randIndex]["levels"][i]["displayIcon"];
+				break;
+			}
+		}
+	}
 
-    correctName = dataList[randIndex]['displayName']//[randIndex]['displayName']
-    $("#weaponGuessImage").attr("src", correctImgSrc);
+	correctName = dataList[randIndex]["displayName"]; //[randIndex]['displayName']
+	$("#weaponGuessImage").attr("src", correctImgSrc);
 }
 
+function makeButtons() {
+	//OVERWRITE TEMPLATE
 
-function makeButtons(){ //OVERWRITE TEMPLATE
+	// console.log(dataList)
 
-    // console.log(dataList)
-
-
-    let weaponOptionsDiv = $('#weaponOptions');
-    for(let i = 0; i < 5; i++){
-        let curRow = $('<div class="weaponRow"></div>')
-        for(let j = 0; j < 3; j++){
-            // let option = weaponOptions[(i * 3) + j];
-            let option = dataList[weaponOptions[(i * 3) + j]]["displayName"];
-            let weaponOption = $('<button class="weaponOption notranslate">' + option + '</button>');
-            weaponOption.click(function(){ 
-                if (!weaponGameOver){
-                    if (shouldSave){
-                        persistAddTry(option);
-                    }     
-                    isCorrectOption(option);
-                    weaponOption.css("visibility", "hidden"); 
-                }
-            });
-            curRow.append(weaponOption)
-        }
-        weaponOptionsDiv.append(curRow);
-    }
-
+	let weaponOptionsDiv = $("#weaponOptions");
+	for (let i = 0; i < 5; i++) {
+		let curRow = $('<div class="weaponRow"></div>');
+		for (let j = 0; j < 3; j++) {
+			// let option = weaponOptions[(i * 3) + j];
+			let option = dataList[weaponOptions[i * 3 + j]]["displayName"];
+			let weaponOption = $('<button class="weaponOption notranslate">' + option + "</button>");
+			weaponOption.click(function () {
+				if (!weaponGameOver) {
+					if (shouldSave) {
+						persistAddTry(option);
+					}
+					isCorrectOption(option);
+					weaponOption.css("visibility", "hidden");
+				}
+			});
+			curRow.append(weaponOption);
+		}
+		weaponOptionsDiv.append(curRow);
+	}
 }
 
-function modeWrongActions(){}
+function modeWrongActions() {}
 
 let weaponGameOver = false;
-function displayPartTwo(){
-    weaponGameOver = true;
-    winConfetti();
-    createNextPageBox('quote');
+function displayPartTwo() {
+	weaponGameOver = true;
+	winConfetti();
+	createNextPageBox("quote");
 }

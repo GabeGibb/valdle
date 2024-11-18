@@ -2,258 +2,240 @@ let maps;
 let start = true;
 let gameOver = false;
 let rowNum = 1;
-let answer = ['', '', '']
+let answer = ["", "", ""];
 let win;
 let imgUrl;
 let shouldSave = true;
-
 
 // let mapSize = document.getElementById('mapChoice').clientHeight;
 let mapSize = 510;
 // console.log(mapSize)
 let divideFactor = 1000 / mapSize;
 
-let calloutMap = $('#mapChoice').clone();
-let instructionsDiv = $('#mapChoice').clone();
-let instruction = $('<div id="instructions">Select a map name and choose a callout to begin!</div>')
+let calloutMap = $("#mapChoice").clone();
+let instructionsDiv = $("#mapChoice").clone();
+let instruction = $('<div id="instructions">Select a map name and choose a callout to begin!</div>');
 instructionsDiv.append(instruction);
-$('#mapChoice').replaceWith(instructionsDiv)
-
-
-
+$("#mapChoice").replaceWith(instructionsDiv);
 
 let calloutMaps = [];
 
-function addTries(tries){
-    shouldSave = false;
-    for(let i = 0; i < tries.length; i++){
-        createMap(tries[i][0]);
-        for(let child of document.getElementById("mapChoice").children){
-            if (child.matches('.callout') && child.children[0] != undefined){
-                if (child.children[0].innerHTML == tries[i][2] + ' ' + tries[i][1]){  
-                    child.click();
-                }
-            }
-        }
-    }
-    shouldSave = true;
+function addTries(tries) {
+	shouldSave = false;
+	for (let i = 0; i < tries.length; i++) {
+		createMap(tries[i][0]);
+		for (let child of document.getElementById("mapChoice").children) {
+			if (child.matches(".callout") && child.children[0] != undefined) {
+				if (child.children[0].innerHTML == tries[i][2] + " " + tries[i][1]) {
+					child.click();
+				}
+			}
+		}
+	}
+	shouldSave = true;
 }
 
-function doP2Guess(attempt){}
+function doP2Guess(attempt) {}
 
-function tileAnimation(currRow, tileDiv, delayAmount){
-    setTimeout(() => {
-        currRow.appendChild(tileDiv);
-        tileDiv.animate(tileSpin, tileSpinTiming);
-    }, delayAmount);
+function tileAnimation(currRow, tileDiv, delayAmount) {
+	setTimeout(() => {
+		currRow.appendChild(tileDiv);
+		tileDiv.animate(tileSpin, tileSpinTiming);
+	}, delayAmount);
 }
 
 function makeCalloutDiv(callout, mapName) {
-    let div = document.createElement("div");
-    let textDiv = document.createElement("div");
+	let div = document.createElement("div");
+	let textDiv = document.createElement("div");
 
-    let x = callout['location']['x'];
-    let y = callout['location']['y'];
-    let region = callout['regionName'];
-    let superRegion = callout['superRegionName']
+	let x = callout["location"]["x"];
+	let y = callout["location"]["y"];
+	let region = callout["regionName"];
+	let superRegion = callout["superRegionName"];
 
-    div.className = "callout";
-    div.classList.add("notranslate");
-    let calloutString = superRegion + ' ' + region;
-    textDiv.innerHTML = calloutString;
-    textDiv.className = "calloutText"
+	div.className = "callout";
+	div.classList.add("notranslate");
+	let calloutString = superRegion + " " + region;
+	textDiv.innerHTML = calloutString;
+	textDiv.className = "calloutText";
 
-    let xOffset = calloutString.length * 6;
-    let yOffset = 0;
-    if (calloutString.length > 10){
-        yOffset = 10;
-    }
-    let calcX = (((x - xOffset) / divideFactor)).toString() + 'px'; //x
-    let calcY = (((y - yOffset) / divideFactor)).toString() + 'px'; //y
+	let xOffset = calloutString.length * 6;
+	let yOffset = 0;
+	if (calloutString.length > 10) {
+		yOffset = 10;
+	}
+	let calcX = ((x - xOffset) / divideFactor).toString() + "px"; //x
+	let calcY = ((y - yOffset) / divideFactor).toString() + "px"; //y
 
-    div.style.left = calcX;
-    div.style.top = calcY;
+	div.style.left = calcX;
+	div.style.top = calcY;
 
-    div.appendChild(textDiv)
+	div.appendChild(textDiv);
 
-    div.style.cursor = 'pointer';
-    div.onclick = function () {
-        // UNCOMENT THIS TO DEBUG MAP LOCATIONS
-        // imgUrl = window.location.href + '/' + mapName + '/' + region + '/' + superRegion;
-        // let mapImg = document.getElementById("trueImg");
-        // mapImg.src = imgUrl;
-        // for(let i = 0; i < calloutMaps.length; i++){
-        //     zoomOutMap();
-        // }
-        // return;
-        if (gameOver){
-            return;
-        }
+	div.style.cursor = "pointer";
+	div.onclick = function () {
+		// UNCOMENT THIS TO DEBUG MAP LOCATIONS
+		// imgUrl = window.location.href + '/' + mapName + '/' + region + '/' + superRegion;
+		// let mapImg = document.getElementById("trueImg");
+		// mapImg.src = imgUrl;
+		// for(let i = 0; i < calloutMaps.length; i++){
+		//     zoomOutMap();
+		// }
+		// return;
+		if (gameOver) {
+			return;
+		}
 
-        let guess = [mapName, region, superRegion]
+		let guess = [mapName, region, superRegion];
 
-        if (persistentData['currentState'] == 'p1' && shouldSave){
-            persistAddTry(guess);
-        }
+		if (persistentData["currentState"] == "p1" && shouldSave) {
+			persistAddTry(guess);
+		}
 
-        let listOfMapGuesses = document.getElementById("listOfMapGuesses");
+		let listOfMapGuesses = document.getElementById("listOfMapGuesses");
 
-        win = false;
+		win = false;
 
-        let currRow = document.createElement('div'); // creates new row div under listOfMapGuesses
-        listOfMapGuesses.prepend(currRow);
-        currRow.classList.add("row");
+		let currRow = document.createElement("div"); // creates new row div under listOfMapGuesses
+		listOfMapGuesses.prepend(currRow);
+		currRow.classList.add("row");
 
-        let counter = 0;
-        for (let j = 0; j < 3; j++) { //creates three tiles per row
-            tileDiv = document.createElement("div");
-            textSpan = document.createElement("span");
-            tileDiv.classList.add("tile");
-            textSpan.classList.add("hint");
-            tileDiv.appendChild(textSpan);
+		let counter = 0;
+		for (let j = 0; j < 3; j++) {
+			//creates three tiles per row
+			tileDiv = document.createElement("div");
+			textSpan = document.createElement("span");
+			tileDiv.classList.add("tile");
+			textSpan.classList.add("hint");
+			tileDiv.appendChild(textSpan);
 
-            let string = (guess[j]).toLowerCase();
-            let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
+			let string = guess[j].toLowerCase();
+			let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
 
-            if (fixedMapName.toLowerCase() == answer[j].toLowerCase()) {
-                tileDiv.classList.add('green');
-                counter++;
-            }
-            else {
-                tileDiv.classList.add('red');
-            }
-            let text = document.createTextNode(guess[j]);
-            textSpan.appendChild(text);
-            
-            tileAnimation(currRow, tileDiv, j * 500);
+			if (fixedMapName.toLowerCase() == answer[j].toLowerCase()) {
+				tileDiv.classList.add("green");
+				counter++;
+			} else {
+				tileDiv.classList.add("red");
+			}
+			let text = document.createTextNode(guess[j]);
+			textSpan.appendChild(text);
 
-        }
-        zoomOutMap();
-        if (counter == 3) {
-            win = true;
-        }
+			tileAnimation(currRow, tileDiv, j * 500);
+		}
+		zoomOutMap();
+		if (counter == 3) {
+			win = true;
+		}
 
+		if (win) {
+			persistP2State();
+			gameOver = true;
+			// clearMap();
 
-        if (win) {
-            persistP2State();
-            gameOver = true;
-            // clearMap();
+			winConfetti();
+			correctImgSrc = imgUrl;
+			correctName = answer[0] + ":\n " + answer[2] + " " + answer[1];
+			createNextPageBox("agent");
+		}
+		div.remove();
+		callout["regionName"] = "";
+	};
 
-
-            winConfetti();
-            correctImgSrc = imgUrl;
-            correctName = answer[0] + ':\n ' + answer[2] + ' ' + answer[1];
-            createNextPageBox('agent')
-
-        }
-        div.remove();
-        callout['regionName'] = '';
-    };
-   
-    calloutMaps[calloutMaps.length-1].append(div)
-
+	calloutMaps[calloutMaps.length - 1].append(div);
 }
-
 
 function createMaps() {
-    let callout;
+	let callout;
 
-    for (let i = 0; i < maps.length; i++) {
-        let mapName = maps[i]['displayName']; 
+	for (let i = 0; i < maps.length; i++) {
+		let mapName = maps[i]["displayName"];
 
-        calloutMaps.push(calloutMap.clone())
-        calloutMaps[calloutMaps.length - 1].children().attr('src', maps[i]["displayIcon"])
-        calloutMaps[calloutMaps.length - 1].children().css({'transform': 'rotate(' + maps[i]['rotation'] +'deg)'})
+		calloutMaps.push(calloutMap.clone());
+		calloutMaps[calloutMaps.length - 1].children().attr("src", maps[i]["displayIcon"]);
+		calloutMaps[calloutMaps.length - 1].children().css({ transform: "rotate(" + maps[i]["rotation"] + "deg)" });
 
-        calloutMaps[calloutMaps.length - 1].val(mapName)
+		calloutMaps[calloutMaps.length - 1].val(mapName);
 
-        for (let j = 0; j < maps[i]['callouts'].length; j++) {
-            callout = maps[i]['callouts'][j];
-            makeCalloutDiv(callout, mapName)
-        }
-
-    }
-
+		for (let j = 0; j < maps[i]["callouts"].length; j++) {
+			callout = maps[i]["callouts"][j];
+			makeCalloutDiv(callout, mapName);
+		}
+	}
 }
 
-
-function createMap(mapName){
-    //Toggle if map clicked
-    let box = document.getElementById('inputToggle');
-    if (!box.checked){
-        $('#inputToggle').click();
-    }
-    for (let i = 0; i < calloutMaps.length; i++){
-        let string = (calloutMaps[i].val()).toLowerCase();
-        let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
-        if (fixedMapName == mapName){
-            $('#mapChoice').replaceWith(calloutMaps[i])
-        }
-    }
+function createMap(mapName) {
+	//Toggle if map clicked
+	let box = document.getElementById("inputToggle");
+	if (!box.checked) {
+		$("#inputToggle").click();
+	}
+	for (let i = 0; i < calloutMaps.length; i++) {
+		let string = calloutMaps[i].val().toLowerCase();
+		let fixedMapName = string.charAt(0).toUpperCase() + string.slice(1);
+		if (fixedMapName == mapName) {
+			$("#mapChoice").replaceWith(calloutMaps[i]);
+		}
+	}
 }
-
-
 
 let insetValue = 42;
 
 function setScaleToInset() {
-    let mapImg = document.getElementById("trueImg");
-    let small = mapSize * (100 - (2 * insetValue)) / 100
-    let big = mapSize;
-    mapImg.style.scale = big / small
+	let mapImg = document.getElementById("trueImg");
+	let small = (mapSize * (100 - 2 * insetValue)) / 100;
+	let big = mapSize;
+	mapImg.style.scale = big / small;
 }
 
 function zoomOutMap() {
-    if (insetValue <= 0) {
-        return;
-    }
-    insetValue -= 1;
-    let mapImg = document.getElementById("trueImg");
-    mapImg.style.clipPath = 'inset(' + insetValue + '%)';
-    setScaleToInset();
+	if (insetValue <= 0) {
+		return;
+	}
+	insetValue -= 1;
+	let mapImg = document.getElementById("trueImg");
+	mapImg.style.clipPath = "inset(" + insetValue + "%)";
+	setScaleToInset();
 }
-
 
 function clearMap() {
-    let map = document.getElementById("mapChoice");
-    for (child of map.children) {
-        if (child.id == 'curMap') {
-            continue;
-        }
-        child.innerHTML = '';
-    }
-    let mapPic = document.getElementById("curMap");
-    mapPic.src = '';
+	let map = document.getElementById("mapChoice");
+	for (child of map.children) {
+		if (child.id == "curMap") {
+			continue;
+		}
+		child.innerHTML = "";
+	}
+	let mapPic = document.getElementById("curMap");
+	mapPic.src = "";
 }
-
 
 let curDayId;
 let url = "static/api/maps/maps_en.json";
-
+// TODO: Should this be 2 calls?
 $.get(url, function (data, status) {
-    maps = data;
-    zoomOutMap();
-    createMaps();
-    $.get(window.location.href + '/api/mapOfDay', function (data, status) {
-        answer[0] = data["mapName"]
-        answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"]
-        answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"]
-        
-        imgUrl = window.location.href + '/' + answer[0] + '/' + answer[1] + '/' + answer[2];
-        let mapImg = document.getElementById("trueImg");
-        mapImg.src = imgUrl;
-    
-        curDayId = data['dayId'];
+	maps = data;
+	zoomOutMap();
+	createMaps();
+	$.get(window.env.API_URL + "/guessMap/api/mapOfDay", function (data, status) {
+		answer[0] = data["mapName"];
+		answer[1] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["regionName"];
+		answer[2] = maps[data["mapIndex"]]["callouts"][data["randCalloutIndex"]]["superRegionName"];
 
-        loadPersistentData('map', curDayId)
-    });
+		imgUrl = "/maps" + "/" + answer[0] + "/" + answer[1] + " - " + answer[2] + ".webp";
+		let mapImg = document.getElementById("trueImg");
+		mapImg.src = imgUrl;
+
+		curDayId = data["dayId"];
+
+		loadPersistentData("map", curDayId);
+	});
 });
 
-
-function toggleSwitch(box){
-    if(box.checked){
-        $('#mapChoiceContainer').show();
-    }else{
-        $('#mapChoiceContainer').hide();
-    }
+function toggleSwitch(box) {
+	if (box.checked) {
+		$("#mapChoiceContainer").show();
+	} else {
+		$("#mapChoiceContainer").hide();
+	}
 }

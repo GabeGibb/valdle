@@ -13,33 +13,25 @@
 			gtag("config", "G-6F267CYZLQ");
 		</script>
 		<!-- <meta name="google-adsense-account" content="ca-pub-9727969275111127"> -->
-		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport" />
-		<title>Guess The Weapon</title>
+		<title>Guess The Agent</title>
 		<link href="/static/images/tabIcon.webp" rel="icon" />
 		<link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
 		<link href="/static/guessTemplate.css" rel="stylesheet" />
 		<link href="/static/styles.css" rel="stylesheet" />
 		<link href="/static/valdle.css" rel="stylesheet" />
+		<script src="/static/env.js"></script>
 		<script defer="" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script defer="" src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+		<script src="/static/pixelate.js" type="text/javascript"></script>
 		<script defer="" src="/static/confetti.js"></script>
 		<script defer="" src="/static/guessTemplate.js"></script>
-		<script defer="" src="/static/guessWeapon.js"></script>
+		<script defer="" src="/static/guessAgent.js"></script>
 		<script defer="" src="/static/resize.js" type="text/javascript"></script>
-		<style>
-			#correctGuessDiv {
-				flex-direction: column !important;
-			}
-
-			#correctImg {
-				width: 380px;
-			}
-		</style>
 	</head>
 	<body>
 		<nav class="navbar">
-			<a class="notranslate title" href="\"> vAldle </a>
+			<a class="notranslate title" href="\valdle.html"> vAldle </a>
 		</nav>
 		<div class="linedeco">
 			<hr />
@@ -47,33 +39,52 @@
 		</div>
 		<div id="gameArea">
 			<div id="modeBox">
-				<div class="prompt" id="weaponPrompt">
-					<p id="header">Guess The Weapon Skin</p>
+				<div class="prompt">
+					<p>Guess The Agent</p>
 					<hr />
 				</div>
-				<div class="guessImageDiv">
-					<img id="weaponGuessImage" src="" />
+				<div class="guessTextDiv">
+					<h1 id="guessText" style="display: none">Take A Guess To Get Started!</h1>
 				</div>
-				<div id="weaponOptions"></div>
 				<div id="dropdown">
-					<div id="userInputDiv" style="display: none">
+					<div id="userInputDiv">
 						<input
 							autocomplete="off"
 							id="searchInput"
 							onfocus="showButtons()"
-							placeholder="Search Weapon.."
+							placeholder="Search Agent.."
 							type="text"
 						/>
 						<button id="submit" onclick="validateGuess()">
 							<div class="searchArrow"></div>
 						</button>
 					</div>
-					<!-- <div id="weaponOptions"></div> -->
 					<div class="dropdown-content notranslate" id="optionNames"></div>
 				</div>
 			</div>
-			<div id="fullListOfGuesses">
-				<!--Add Guesses-->
+			<div class="board" id="topRow">
+				<div class="row">
+					<div class="category">
+						<span class="cata"> Agent </span>
+					</div>
+					<div class="category">
+						<span class="cata"> Gender </span>
+					</div>
+					<div class="category">
+						<span class="cata"> Role </span>
+					</div>
+					<div class="category">
+						<span class="cata"> Year </span>
+					</div>
+				</div>
+			</div>
+			<div class="board" id="listOfGuesses"></div>
+			<div class="prompt" hidden="" id="agent2Prompt">
+				<p>
+					Bonus
+					<br />
+					Guess The Pixelated Agent Icon
+				</p>
 			</div>
 		</div>
 		<div class="ad-web left-banner-ad" data-ad-group="True" data-ad-key="left-banner-ad">
