@@ -50,12 +50,6 @@ def updateAnswers():
 
 updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
 
-
-
-@app.errorhandler(404) 
-def default_handler(e):
-    return render_template('invalidRoute.html')
-
 # API ENDPOINTS
 
 # Retrieves daily answers from JSON file
