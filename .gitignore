@@ -4,4 +4,4 @@ keys.txt
 dailyAnswers.json
 # dailyAnswers.json
 .env
-static/env.js
+env.js

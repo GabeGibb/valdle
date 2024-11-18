@@ -2,42 +2,42 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://valdle.gg/valdle.html</loc>
+	<loc>https://valdle.gg/</loc>
 	<lastmod>2024-09-21T01:12:45+01:00</lastmod>
 	<priority>1</priority>
 </url>
 <url>
-	<loc>https://valdle.gg/about.html</loc>
+	<loc>https://valdle.gg/about</loc>
 	<lastmod>2024-09-21T01:12:45+01:00</lastmod>
 	<priority>0.7</priority>
 </url>
 <url>
-	<loc>https://valdle.gg/guessMap.html</loc>
+	<loc>https://valdle.gg/guessMap</loc>
 	<lastmod>2024-09-21T01:12:45+01:00</lastmod>
 	<priority>0.9</priority>
 </url>
 <url>
-	<loc>https://valdle.gg/guessAgent.html</loc>
+	<loc>https://valdle.gg/guessAgent</loc>
 	<lastmod>2024-09-21T01:12:45+01:00</lastmod>
 	<priority>0.9</priority>
 </url>
 <url>
-	<loc>https://valdle.gg/guessAbility.html</loc>
+	<loc>https://valdle.gg/guessAbility</loc>
 	<lastmod>2024-09-21T01:12:45+01:00</lastmod>
 	<priority>0.9</priority>
 </url>
 <url>
-	<loc>https://valdle.gg/guessWeapon.html</loc>
+	<loc>https://valdle.gg/guessWeapon</loc>
 	<lastmod>2024-09-21T01:12:45+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://valdle.gg/guessQuote.html</loc>
+	<loc>https://valdle.gg/guessQuote</loc>
 	<lastmod>2024-09-21T01:12:45+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://valdle.gg/privacy.html</loc>
+	<loc>https://valdle.gg/privacy</loc>
     <lastmod>2024-03-03T01:12:45+01:00</lastmod>
 	<priority>0.8</priority>
 </url>

@@ -476,7 +476,7 @@ function createNextPageBox(nextGame) {
 	let nextPageUrl = "";
 	if (nextGame != "home") {
 		nextGameText = "Guess the " + nextGame;
-		nextPageUrl = "guess" + nextGame.charAt(0).toUpperCase() + nextGame.slice(1) + ".html";
+		nextPageUrl = "guess" + nextGame.charAt(0).toUpperCase() + nextGame.slice(1);
 	} else {
 		nextGameText = "Homepage";
 	}

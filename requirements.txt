@@ -2,4 +2,4 @@ Flask
 Gunicorn
 requests
 python-dotenv
-flask_cors=5.0.0
+flask_cors==5.0.0
