@@ -1,13 +1,12 @@
-from flask import Flask, render_template, send_file, request
+from flask import Flask, request
 import json
 from flask_cors import CORS
 from requests import get
 from json import dumps
-from generateDailyAnswers import *
-
+import os
 from dotenv import load_dotenv
 load_dotenv()
-import os
+
 masterKey = os.getenv('MASTER')
 
 
@@ -51,6 +50,10 @@ def updateAnswers():
 updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
 
 # API ENDPOINTS
+
+@app.route('/')
+def home():
+    return "up and running!"
 
 # Retrieves daily answers from JSON file
 @app.route('/api/dayId')
