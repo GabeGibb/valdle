@@ -584,14 +584,20 @@ function copyToClipboard(text) {
 }
 
 function createAndUpdateTimer() {
-	// Get the current time in EST
-	let now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+	// Get the current time in UTC
+	let now = new Date();
 
-	// Calculate the next midnight in EST
-	let nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-	nextMidnight.setHours(0, 0, 0, 0); // This is in local time, which is now EST due to the adjustment above
+	// Calculate the next 04:00 AM UTC
+	let nextFourAM = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+	nextFourAM.setUTCHours(4, 0, 0, 0); // Set time to 04:00 AM UTC
 
-	let rest = (nextMidnight.getTime() - now.getTime()) / 1000;
+	// If the current time is past 04:00 AM UTC, calculate for the next day
+	if (now.getTime() >= nextFourAM.getTime()) {
+		nextFourAM.setUTCDate(nextFourAM.getUTCDate() + 1);
+	}
+
+	// Calculate remaining time in seconds
+	let rest = (nextFourAM.getTime() - now.getTime()) / 1000;
 
 	const hours = Math.floor(rest / 3600);
 	rest = rest - hours * 3600;
@@ -599,6 +605,7 @@ function createAndUpdateTimer() {
 	rest = rest - minutes * 60;
 	const seconds = Math.floor(rest);
 
+	// Format time as hh:mm:ss
 	let timeString = hours.toString() + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
 	$("#nextValdleCountdown").text(timeString);
 	$("#nextValdleCountdown2").text(timeString);
