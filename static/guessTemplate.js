@@ -326,7 +326,7 @@ function isCorrectOption(userInput) {
 	optionImg.classList.add("guessImg");
 
 	// Apply different styling for weapons
-	if (window.location.href.slice(-11) == "guessWeapon") {
+	if (window.location.href.includes("guessWeapon")) {
 		newDiv.classList.add("individualGuessesWeapons");
 		p.classList.add("guessTextWeapons");
 		optionImg.classList.add("guessImgWeapons");
