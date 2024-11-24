@@ -50,10 +50,20 @@ def updateAnswers():
 updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
 
 # API ENDPOINTS
-
+# TODO: REMOVE THIS ENDPOINT
 @app.route('/')
 def home():
-    return "up and running!"
+  return '''
+  <html>
+    <head>
+      <title>Maintenance</title>
+    </head>
+    <body>
+      <h1>Undergoing Maintenance</h1>
+      <p>Go to <a href="https://valdle-frontend.onrender.com/">https://valdle-frontend.onrender.com/</a> in the meantime.</p>
+    </body>
+  </html>
+  '''
 
 # Retrieves daily answers from JSON file
 @app.route('/api/dayId')
