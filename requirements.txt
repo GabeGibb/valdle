@@ -1,0 +1,5 @@
+Flask
+Gunicorn
+requests
+python-dotenv
+flask_cors==5.0.0
