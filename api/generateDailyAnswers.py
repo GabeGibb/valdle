@@ -4,7 +4,11 @@ from random import randint
 from json import load, dumps
 import json
 from random import randint, shuffle
+from pathlib import Path
+import os
 
+# Change the working directory to the parent directory
+os.chdir(Path(__file__).resolve().parent.parent)
 
 def getMap(past):
     f = open("static/api/maps/maps_en.json")
