@@ -7,9 +7,8 @@ from random import randint, shuffle
 from pathlib import Path
 import os
 
-# Change the working directory to the parent directory
-os.chdir(Path(__file__).resolve().parent.parent)
-
+# Change the working directory to one level up
+os.chdir(Path(__file__).resolve().parent)
 def getMap(past):
     f = open("static/api/maps/maps_en.json")
     data = json.load(f)
