@@ -4,11 +4,7 @@ from random import randint
 from json import load, dumps
 import json
 from random import randint, shuffle
-from pathlib import Path
-import os
 
-# Change the working directory to one level up
-os.chdir(Path(__file__).resolve().parent)
 def getMap(past):
     f = open("static/api/maps/maps_en.json")
     data = json.load(f)
