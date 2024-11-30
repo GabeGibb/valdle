@@ -1,8 +1,7 @@
-from app import app
+from api.app import app, loadDailyAnswers
 import json
 from json import dumps
 from generateDailyAnswers import generateDailyAnswers
-from app import loadDailyAnswers
 
 
 @app.route("/doThisIfYouWantToDebug")
