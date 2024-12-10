@@ -52,15 +52,15 @@ def inject_html_tags(file_path, ad_dict):
     remove_previous_ads(soup)
     
     # # Add each ad script directly into the <body> tag
-    body_tag = soup.find('body')
-    if body_tag:
-        for key, obj in ad_dict.items():
-            ad_div = soup.new_tag('div', **{'class': f"{key}", 'data-ad-key': key, 'data-ad-group': True})
-            ad_div.append(BeautifulSoup(obj['script'], 'html.parser'))  # Parse the script and append as raw HTML
-            body_tag.append(ad_div)
-    else:
-        print(f"No closing <body> tag found in {file_path}")
-        return
+    # body_tag = soup.find('body')
+    # if body_tag:
+    #     for key, obj in ad_dict.items():
+    #         ad_div = soup.new_tag('div', **{'class': f"{key}", 'data-ad-key': key, 'data-ad-group': True})
+    #         ad_div.append(BeautifulSoup(obj['script'], 'html.parser'))  # Parse the script and append as raw HTML
+    #         body_tag.append(ad_div)
+    # else:
+    #     print(f"No closing <body> tag found in {file_path}")
+    #     return
     
     # # Write the modified content back to the file with utf-8 encoding
     with open(file_path, 'w', encoding='utf-8') as file:
