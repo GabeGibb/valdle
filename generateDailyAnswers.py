@@ -143,6 +143,7 @@ def getRank(past):
     rankOfDay = {}
     rankOfDay["randIndex"] = index
     rankOfDay["displayName"] = data[index]["tierName"]
+    rankOfDay["displayIcon"] = data[index]["largeIcon"]
     # TODO: Delete this line
     rankOfDay["medalUrl"] = "https://medal.tv/clip/joM6rVYsZ0-YXowiv/1AHhs0FFh7WxW7u2?loop=1&autoplay=1&muted=1&cta=1"
     rankOfDay["iframe"] = "<iframe width='640' height='360' src='https://medal.tv/clip/joM6rVYsZ0-YXowiv/1AHhs0FFh7WxW7u2?loop=1&autoplay=1&muted=1&cta=1' frameborder='0' allow='autoplay' allowfullscreen class='medal-clip' id='cidjoM6rVYsZ0-YXowiv'></iframe>"
@@ -187,4 +188,3 @@ def generateDailyAnswers(past):
     dailyAnswers["past"] = pastAnswers
 
     return dailyAnswers
-

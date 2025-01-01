@@ -4,40 +4,33 @@ let rankUrl = window.env.API_URL + "/guessRank/api/rankOfDay";
 let dropdownClone = $("#dropdown").clone();
 let shouldSave = true;
 let rankData;
-let storedTries = [];
 $.get(rankUrl, function (data, status) {
 	//url defined in current webpage js file
 	loadTemplate(url, true, "rank", data["dayId"]);
 	randIndex = data["randIndex"];
 	medalUrl = data["medalUrl"];
 	rankData = data;
+
+	correctImgSrc = data["displayIcon"];
+	correctName = data["displayName"];
 });
 
-function doTry(rows, curTry) {
-	for (let i = 0; i < 5; i++) {
-		let curRow = rows[i].children;
-		console.log(curRow);
-		if (curRow[1] == curTry) {
-			curRow[j].click();
-			return;
+function addTries(tries) {
+	shouldSave = false;
+	let rows = $("#rankOptions").children();
+	for (let i = 0; i < rows.length; i++) {
+		if (tries.includes(rows[i].children[1].innerHTML)) {
+			rows[i].click();
 		}
 	}
-}
-
-function addTries(tries) {
-	storedTries = tries;
-
-	// let rows = $("#rankOptions").children();
-	// for (let x = 0; x < tries.length; x++) {
-	// 	doTry(rows, tries[x]);
-	// }
-	// shouldSave = true;
+	shouldSave = true;
 }
 
 function doP2Guess(attempt) {}
 
 function isCorrectOption(rankName) {
 	if (rankName == dataList[randIndex]["tierName"]) {
+		persistP2State();
 		displayPartTwo();
 	}
 }
@@ -63,11 +56,6 @@ function makeButtons() {
 		rankOptionDiv.append(rankImgElement);
 		rankOptionDiv.append(rankOption);
 
-		console.log(storedTries);
-		if (storedTries.includes(dataList[i]["tierName"])) {
-			rankOptionDiv.css("visibility", "hidden");
-		}
-
 		rankOptionDiv.click(function () {
 			if (!rankGameOver) {
 				if (shouldSave) {
@@ -81,6 +69,8 @@ function makeButtons() {
 		rankOptionsDiv.append(rankOptionDiv);
 	}
 }
+
+// TODO: Show the guesses
 
 function modeWrongActions() {}
 

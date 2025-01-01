@@ -44,7 +44,6 @@ function loadPersistentData(mode, curDayId) {
 	// }
 
 	persistentData = JSON.parse(localStorage.getItem(mode));
-
 	if (
 		localStorage.getItem(mode) == null ||
 		persistentData["dayId"] != dayId ||
@@ -596,6 +595,7 @@ function toggleStats() {
 function showStats() {
 	// console.log(stats)
 	// console.log(persistentData)
+	console.log(stats);
 	let columns = $("#statsColumns").children();
 	columns[0].children[1].innerText = stats["dayIds"].length;
 
