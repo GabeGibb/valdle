@@ -1,21 +1,51 @@
-.medal-clip {
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-}
-
 #rankOptions {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 5px;
 	max-width: 500px;
+	justify-content: center; /* Center the items */
+	margin: auto;
+	margin-top: 5px;
 }
 
 .rankOption {
-	display: inline-block;
-	width: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90px; /* Uniform width */
+	height: 100px; /* Uniform height */
+	background: rgba(43, 42, 41, 1); /* Normal background */
+	padding: 0px;
+	border-radius: 4px; /* Smooth corners */
+	transition: background-color 0.3s ease; /* Smooth transition for hover */
+	text-align: center; /* Center the text */
+	cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.rankOption:hover {
+	background-color: rgba(128, 128, 128, 1); /* Background on hover */
+}
+
+.rankOption img {
+	width: 50px; /* Uniform image size */
 	height: 50px;
-	margin: 0 5px;
+	margin-bottom: 5px; /* Space between image and text */
+}
+
+.rankOptionText {
+	font-family: "DIN Next LT W04 Medium";
+	font-size: 12px; /* Adjust font size for better readability */
+	color: white; /* White text color */
+	text-align: center;
+	line-height: 1.2; /* Better spacing for multiple lines */
+}
+
+.optionButton:hover,
+.autocompleteActive {
+	background-color: rgba(128, 128, 128, 1); /* Hover background color */
+}
+
+#modeBox {
+	padding: 10px;
 }

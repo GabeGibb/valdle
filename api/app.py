@@ -7,10 +7,6 @@ from flask import Flask, request
 from flask_cors import CORS
 from requests import get
 
-from requests import get
-
-load_dotenv()
-
 masterKey = os.getenv('MASTER')
 
 
@@ -54,20 +50,6 @@ def updateAnswers():
 updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
 
 # API ENDPOINTS
-# TODO: REMOVE THIS ENDPOINT
-@app.route('/')
-def home():
-  return '''
-  <html>
-    <head>
-      <title>Maintenance</title>
-    </head>
-    <body>
-      <h1>Undergoing Maintenance</h1>
-      <p>Go to <a href="https://valdle-frontend.onrender.com/">https://valdle-frontend.onrender.com/</a> in the meantime.</p>
-    </body>
-  </html>
-  '''
 
 # Retrieves daily answers from JSON file
 @app.route('/api/dayId')

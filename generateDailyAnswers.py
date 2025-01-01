@@ -1,9 +1,9 @@
 # PYTHON SCRIPT to generate a new set of answers every day (will be run by worker)
 
-from random import randint
-from json import load, dumps
 import json
+from json import dumps, load
 from random import randint, shuffle
+
 
 def getMap(past):
     f = open("static/api/maps/maps_en.json")
@@ -131,15 +131,35 @@ def getWeapon(past):
     weaponOfDay["weaponOptions"] = weaponSkins
     return weaponOfDay
 
+def getRank(past):
+    f = open("static/api/ranks/ranks_en.json")
+    data = load(f)
+    f.close()
+
+    index = randint(0, len(data) - 1)
+    while index in past["randIndex"]:
+        index = randint(0, len(data) - 1)
+
+    rankOfDay = {}
+    rankOfDay["randIndex"] = index
+    rankOfDay["displayName"] = data[index]["tierName"]
+    # TODO: Delete this line
+    rankOfDay["medalUrl"] = "https://medal.tv/clip/joM6rVYsZ0-YXowiv/1AHhs0FFh7WxW7u2?loop=1&autoplay=1&muted=1&cta=1"
+    rankOfDay["iframe"] = "<iframe width='640' height='360' src='https://medal.tv/clip/joM6rVYsZ0-YXowiv/1AHhs0FFh7WxW7u2?loop=1&autoplay=1&muted=1&cta=1' frameborder='0' allow='autoplay' allowfullscreen class='medal-clip' id='cidjoM6rVYsZ0-YXowiv'></iframe>"
+    return rankOfDay
 
 def generateDailyAnswers(past):
     pastAnswers = past["past"]
+    if "rank" not in pastAnswers:
+        pastAnswers["rank"] = {"randIndex": []}
+        
     dailyAnswers = {
         "map": getMap(pastAnswers["map"]),
         "agent": getAgent(pastAnswers["agent"]),
         "ability": getAbility(pastAnswers["ability"]),
         "weapon": getWeapon(pastAnswers["weapon"]),
         "quote": getQuote(pastAnswers["quote"]),
+        "rank": getRank(pastAnswers.get("rank", {"randIndex": []})),
     }
     dailyAnswers["dayId"] = past["dayId"] + 1
 
@@ -151,6 +171,7 @@ def generateDailyAnswers(past):
         dailyAnswers["weapon"]["weaponRandIndex"]
     )
     pastAnswers["quote"]["randIndex"].append(dailyAnswers["quote"]["randIndex"])
+    pastAnswers["rank"]["randIndex"].append(dailyAnswers["rank"]["randIndex"])
 
     n = 7
     pastAnswers["map"]["mapIndex"] = pastAnswers["map"]["mapIndex"][-n:]
@@ -161,113 +182,9 @@ def generateDailyAnswers(past):
         -n:
     ]
     pastAnswers["quote"]["randIndex"] = pastAnswers["quote"]["randIndex"][-n:]
+    pastAnswers["rank"]["randIndex"] = pastAnswers["rank"]["randIndex"][-n:]
 
     dailyAnswers["past"] = pastAnswers
 
     return dailyAnswers
 
-
-# pastAns = {
-#   "map": {
-#     "mapIndex": 2,
-#     "mapName": "Fracture",
-#     "randCalloutIndex": 2,
-#     "randCalloutEnglishRegion": "Arcade",
-#     "randCalloutEnglishSuperRegion": "B"
-#   },
-#   "agent": {
-#     "randIndex": 11,
-#     "displayName": "Harbor",
-#     "randIndex2": 9,
-#     "displayName2": "Sova"
-#   },
-#   "ability": {
-#     "randIndex": 1,
-#     "randAbilityIndex": 1,
-#     "displayName": "Fade",
-#     "abilityName": "Haunt",
-#     "tileOrder": [
-#       6,
-#       8,
-#       9,
-#       7,
-#       1,
-#       10,
-#       12,
-#       2,
-#       3,
-#       16,
-#       14,
-#       13,
-#       11,
-#       15,
-#       4,
-#       5
-#     ]
-#   },
-#   "weapon": {
-#     "weaponRandIndex": 1,
-#     "skinRandIndex": 10,
-#     "gunName": "Ares",
-#     "skinName": "Infantry Ares",
-#     "weaponOptions": [
-#       "Outpost Ares",
-#       "Endeavour Ares",
-#       "Spitfire Ares",
-#       "Premiere Collision Ares",
-#       "Magepunk Ares",
-#       "Sakura Ares",
-#       "Hivemind Ares",
-#       "Infantry Ares",
-#       "Divine Swine Ares",
-#       "Nunca Olvidados Ares",
-#       "Oni Ares",
-#       "Nebula Ares",
-#       "Rush Ares",
-#       "Sentinels of Light Ares",
-#       "Monstrocity Ares"
-#     ]
-#   },
-#   "quote": {
-#     "randIndex": 9,
-#     "randQuoteIndex": 0
-#   },
-#   "dayId": 86,
-#   "past": {
-#     "map": {
-#       "mapIndex": [
-#         2
-#       ]
-#     },
-#     "agent": {
-#       "randIndex": [
-#         11
-#       ],
-#       "randIndex2": [
-#         9
-#       ]
-#     },
-#     "ability": {
-#       "randIndex": [
-#         1
-#       ]
-#     },
-#     "weapon": {
-#       "weaponRandIndex": [
-#         1
-#       ]
-#     },
-#     "quote": {
-#       "randIndex": [
-#         9
-#       ]
-#     }
-#   }
-# }
-
-
-# cur = pastAns
-# for _ in range(10):
-#     cur = generateDailyAnswers(cur)
-#     print(cur)
-#     print()
