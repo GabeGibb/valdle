@@ -8,7 +8,6 @@ $.get(rankUrl, function (data, status) {
 	//url defined in current webpage js file
 	loadTemplate(url, true, "rank", data["dayId"]);
 	randIndex = data["randIndex"];
-	medalUrl = data["medalUrl"];
 	rankData = data;
 
 	correctImgSrc = data["displayIcon"];
@@ -101,7 +100,6 @@ function makeButtons() {
 }
 
 // TODO: Show the guesses
-
 function modeWrongActions() {}
 
 let rankGameOver = false;
