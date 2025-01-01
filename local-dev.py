@@ -1,8 +1,6 @@
 import os
 
 from flask import Flask, redirect, send_from_directory
-from flask import Flask, redirect, send_from_directory
-
 app = Flask(__name__, static_folder=".", static_url_path="")
 
 # Route rewrites for specific HTML files
@@ -59,4 +57,4 @@ def serve_static_file(filename):
         return redirect("/")  # Redirect unknown paths to home if needed
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)

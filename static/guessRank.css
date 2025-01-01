@@ -1,11 +1,11 @@
 #rankOptions {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 5px;
-	max-width: 500px;
+	/* gap: 5px; */
+	max-width: 450px;
 	justify-content: center; /* Center the items */
 	margin: auto;
-	margin-top: 5px;
+	/* margin-top: 5px; */
 }
 
 .rankOption {
@@ -13,8 +13,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 90px; /* Uniform width */
-	height: 100px; /* Uniform height */
+	width: 80px; /* Uniform width */
+	height: 80px; /* Uniform height */
 	background: rgba(43, 42, 41, 1); /* Normal background */
 	padding: 0px;
 	border-radius: 4px; /* Smooth corners */
@@ -39,6 +39,7 @@
 	color: white; /* White text color */
 	text-align: center;
 	line-height: 1.2; /* Better spacing for multiple lines */
+	margin: 0;
 }
 
 .optionButton:hover,
@@ -48,4 +49,22 @@
 
 #modeBox {
 	padding: 10px;
+}
+
+.medal-clip {
+	border-radius: 10px;
+}
+
+#listOfGuesses {
+	width: 380px !important;
+	margin-top: 10px;
+}
+
+.individualGuesses {
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+.linedeco hr {
+	width: 520px;
 }

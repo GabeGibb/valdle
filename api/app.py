@@ -7,6 +7,7 @@ from flask import Flask, request
 from flask_cors import CORS
 from requests import get
 
+load_dotenv()
 masterKey = os.getenv('MASTER')
 
 

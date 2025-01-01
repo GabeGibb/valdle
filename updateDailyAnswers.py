@@ -1,10 +1,13 @@
 import json
-from requests import put, get, post
-from generateDailyAnswers import generateDailyAnswers
 
 from dotenv import load_dotenv
+from requests import get, post, put
+
+from generateDailyAnswers import generateDailyAnswers
+
 load_dotenv()
 import os
+
 masterKey = os.getenv('MASTER')
 # TODO: Move genederate and update to api and requirements and call from root directory (dont cd into api)
 

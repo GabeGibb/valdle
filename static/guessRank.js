@@ -28,19 +28,49 @@ function addTries(tries) {
 
 function doP2Guess(attempt) {}
 
-function isCorrectOption(rankName) {
-	if (rankName == dataList[randIndex]["tierName"]) {
+function isCorrectOption(rankIndex) {
+	let guessParent = document.getElementById("listOfGuesses");
+	let newDiv = document.createElement("div");
+
+	let optionAnswer = dataList[randIndex]["divisionName"];
+	let text = document.createTextNode(dataList[rankIndex]["divisionName"]);
+	let p = document.createElement("p");
+	p.classList.add("guessText");
+	p.classList.add("notranslate");
+
+	let optionImg = document.createElement("img");
+	let optionImgSrc = dataList[rankIndex]["displayIcon"];
+	optionImg.src = optionImgSrc;
+	optionImg.classList.add("guessImg");
+
+	newDiv.appendChild(optionImg);
+	p.appendChild(text); //adds content to button
+	newDiv.appendChild(p); //appends button to div
+
+	if (optionAnswer == dataList[rankIndex]["divisionName"]) {
+		newDiv.classList.add("correctGuess");
 		persistP2State();
 		displayPartTwo();
+	} else {
+		newDiv.classList.add("wrongGuess");
+		// $("#searchInput").val("");
+		// removeOption(userInput);
+		// filterFunction();
+		// modeWrongActions();
 	}
+
+	newDiv.classList.add("individualGuesses");
+	animateGuess(guessParent, newDiv, 0);
 }
 
 function curGamemode() {
 	let medalIframe = $(rankData["iframe"]);
 	medalIframe.attr({
 		width: "100%",
-		height: "500px",
+		height: "420px",
+		defer: true,
 	});
+
 	$("#guessRankDiv").append(medalIframe);
 }
 
@@ -61,7 +91,7 @@ function makeButtons() {
 				if (shouldSave) {
 					persistAddTry(rankOptionName);
 				}
-				isCorrectOption(rankOptionName);
+				isCorrectOption(i);
 				rankOptionDiv.css("visibility", "hidden");
 			}
 		});
@@ -79,4 +109,9 @@ function displayPartTwo() {
 	rankGameOver = true;
 	winConfetti();
 	createNextPageBox("ability");
+	// Show the color of the rank
+	if (dataList[randIndex]["divisionName"] == "RADIANT" || dataList[randIndex]["divisionName"] == "GOLD") {
+		$("#correctGuess").css("color", "black");
+	}
+	$("#correctGuess").css("background-color", "#" + dataList[randIndex]["color"]);
 }
