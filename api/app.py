@@ -1,10 +1,14 @@
-from flask import Flask, request
 import json
+import os
+from json import dumps
+
+from dotenv import load_dotenv
+from flask import Flask, request
 from flask_cors import CORS
 from requests import get
-from json import dumps
-import os
-from dotenv import load_dotenv
+
+from requests import get
+
 load_dotenv()
 
 masterKey = os.getenv('MASTER')
@@ -100,3 +104,7 @@ def quoteOfDay():
 @app.route('/guessWeapon/api/weaponOfDay')
 def weaponOfDay():
     return blankOfDay('weapon')
+
+@app.route("/guessRank/api/rankOfDay")
+def rankOfDay():
+    return blankOfDay('rank')

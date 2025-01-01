@@ -218,7 +218,7 @@ function guessAgentTime2() {
 	agentP1 = false;
 	randIndex = randIndex2;
 
-	createNextPageBox("ability");
+	createNextPageBox("map");
 
 	$("#agent2Prompt").appendTo("#partTwoDiv");
 	$("#agent2Prompt").show();

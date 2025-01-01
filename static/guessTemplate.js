@@ -485,7 +485,7 @@ function createNextPageBox(nextGame) {
 }
 
 function addShareDiv() {
-	let modes = ["map", "agent", "ability", "weapon", "quote"];
+	let modes = ["map", "agent", "ability", "weapon", "quote", "rank"];
 	let output = [];
 	let modeEmojis = {
 		map: "🗺️",
@@ -493,6 +493,7 @@ function addShareDiv() {
 		ability: "✨",
 		weapon: "🔫",
 		quote: "💬",
+		rank: "🏆",
 	};
 
 	for (let i = 0; i < modes.length; i++) {

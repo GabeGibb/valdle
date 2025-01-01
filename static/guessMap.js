@@ -136,7 +136,7 @@ function makeCalloutDiv(callout, mapName) {
 			winConfetti();
 			correctImgSrc = imgUrl;
 			correctName = answer[0] + ":\n " + answer[2] + " " + answer[1];
-			createNextPageBox("agent");
+			createNextPageBox("rank");
 		}
 		div.remove();
 		callout["regionName"] = "";
