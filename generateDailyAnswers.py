@@ -132,23 +132,29 @@ def getWeapon(past):
     return weaponOfDay
 
 def getRank(past):
-    f = open("static/api/ranks/ranks_en.json")
-    data = load(f)
-    f.close()
-    # TODO: RANDOMIZE
-    rankOfDay = {}
-    rankOfDay["iframe"] = "<iframe width='640' height='360' style='border: none;' src='https://medal.tv/games/valorant/clip/joqfElZhfXbcFvLE0?invite=cr-MSwxalcsMTE2NTgxNjgxLA' allow='autoplay' allowfullscreen></iframe>"
+  # TODO: USE PAST
+  with open("static/api/ranks/ranks_en.json") as f:
+    ranks_data = load(f)
+  
+  with open("static/api/ranks/clips.json") as f:
+    clips_data = load(f)
+  
+  clip_index = randint(0, len(clips_data) - 1)
+  rank_name = clips_data[clip_index]["rank"]
 
-
-    # index = randint(0, len(data) - 1)
-    # while index in past["randIndex"]:
-    #     index = randint(0, len(data) - 1)
-    index = 2
-
-    rankOfDay["randIndex"] = index
-    rankOfDay["displayName"] = data[index]["tierName"]
-    rankOfDay["displayIcon"] = data[index]["largeIcon"]
-    return rankOfDay
+  rank_index = 0
+  for i in range(len(ranks_data)):
+    if ranks_data[i]["tierName"] == rank_name:
+      rank_index = i
+      break
+  
+  rankOfDay = {}
+  rankOfDay["iframe"] = f"<iframe style='border: none;' src='{clips_data[clip_index]['url_for_iframe']}' allow='autoplay' allowfullscreen></iframe>"
+  rankOfDay["randIndex"] = rank_index
+  rankOfDay["displayName"] = ranks_data[rank_index]["tierName"]
+  rankOfDay["displayIcon"] = ranks_data[rank_index]["largeIcon"]
+  
+  return rankOfDay
 
 def generateDailyAnswers(past):
     pastAnswers = past["past"]

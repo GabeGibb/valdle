@@ -1,61 +1,78 @@
+import json
+import os
+import time
 from time import sleep
 
 import requests
-from bs4 import BeautifulSoup
 
-VALORANT_RANKS = set(["Iron", "Bronze", "Silver", "Gold", "Platinum", "Diamond", "Immortal", "Radiant"])
+# Constants
+# VALDLE HASHTAG
+# BASE_URL = "https://developers.medal.tv/v1/search?categoryId=fW3AZxHf_c&limit=10&text=%23valdle"
+# TRENDING
+BASE_URL = "https://developers.medal.tv/v1/trending?categoryId=fW3AZxHf_c&limit=1000"
 
-url = "https://developers.medal.tv/v1/search?categoryId=fW3AZxHf_c&limit=10&text=%23valdle"
-headers = {
-  "Authorization": "pub_1T2PUQmnPFfoxKMmUUfvn7iBWJLosear"
+HEADERS = {
+    "Authorization": "pub_1T2PUQmnPFfoxKMmUUfvn7iBWJLosear"
 }
-
 USER_X_AUTH = "116581681,32598d6a-367a-41c6-9712-90fc56940382"
+OUTPUT_DIR = "static/api/ranks/clips"
 
-response = requests.get(url, headers=headers)
-content_list = response.json().get('contentObjects', [])
+# Create output directory if it doesn't exist
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# Fetch main content list
+response = requests.get(BASE_URL, headers=HEADERS)
+content_list = response.json().get("contentObjects", [])
+
+# Prepare data for output
+clip_data = []
+
 for content in content_list:
-  user_id = content.get('credits').split('/')[-1].strip(')')
-  user_url = f"https://medal.tv/api/content?userId={user_id}&limit=5&offset=0&sortDirection=DESC"
-  user_response = requests.get(user_url, headers={**headers, "X-Authentication": USER_X_AUTH})
-  sleep(0.5)
-  user_data = user_response.json()
-  if user_response.status_code != 200:
-    print("Error", user_data)
-    continue
+    user_id = content.get("credits", "").split("/")[-1].strip(")")
+    content_url = f"https://medal.tv/api/content?userId={user_id}&limit=5&offset=0&sortDirection=DESC"
+    content_response = requests.get(content_url, headers={**HEADERS, "X-Authentication": USER_X_AUTH})
+    sleep(0.5)
 
-  for data in user_data:
-    if data["supportMatchStats"]:
-      match_stats_url = f"https://medal.tv/api/content/{data['contentId']}/matchStats"
-      match_stats_response = requests.get(match_stats_url, headers={**headers, "X-Authentication": USER_X_AUTH})
-      sleep(0.5)
-      match_stats = match_stats_response.json()
-      for player in match_stats["playerDtos"]:
-        user = player.get("user", None)
-        if user:
-          if user.get("userId") == user_id:
-            rank = player.get("competitiveTierName", "")
-            clip_url = content.get('directClipUrl', '').replace("clip", "clips")
-            name = player.get("gameName", "Unknown")
-            print(f"Rank: {rank}, Clip URL: {clip_url}, Name: {name}")
+    if content_response.status_code != 200:
+        print("Error fetching content for user", user_id, content_response.json())
+        continue
 
-            if any(val_rank.lower() in rank.lower() for val_rank in VALORANT_RANKS):
-              print(rank, "contains a valid rank")
-            else:
-              print(rank, "does not contain a valid rank")
-  
+    content_data = content_response.json()
+    for data in content_data:
+        if data.get("supportMatchStats"):# and ("#valdle" in data.get("contentTitle", "") or "#valdle" in data.get("contentDescription", "")):
+            match_stats_url = f"https://medal.tv/api/content/{data['contentId']}/matchStats"
+            match_stats_response = requests.get(match_stats_url, headers={**HEADERS, "X-Authentication": USER_X_AUTH})
+            sleep(0.5)
 
-# for content in content_list:
-#   clip_url = content.get('directClipUrl')
-#   if clip_url:
-#     hydrated_url = clip_url.replace("clip", "clips")
-#     hydration_response = requests.get(hydrated_url)
-#     print(hydrated_url)
-#     quit()
-#     if hydration_response.status_code == 200:
-#       soup = BeautifulSoup(hydration_response.text, 'html.parser')
-#       script_tag = soup.find('script', {'id': '__NEXT_DATA__'})
-#       if script_tag:
-#         hydration_data = script_tag.string
-#         print(hydration_data)
-#         quit()
+            if match_stats_response.status_code != 200:
+                print("Error fetching match stats for content", data['contentId'], match_stats_response.json())
+                continue
+
+            match_stats = match_stats_response.json()
+            for player in match_stats.get("playerDtos", []):
+                user = player.get("user", None)
+                if user and user.get("userId") == user_id:
+                    rank = player.get("competitiveTierName", "Unknown")
+                    share_url = data.get("contentShareUrl", "")
+                    name = player.get("gameName", "Unknown")
+                    if rank.lower() == "unranked":
+                      print("skipped", rank)
+                      continue
+                    print(rank, "what")
+                    rank = ''.join(filter(lambda x: not x.isdigit(), rank)).upper()
+
+                    clip_data.append({
+                        "name": name,
+                        "rank": rank,
+                        "share_url": share_url,
+                        "url_for_iframe": share_url.replace("clips", "clip")
+                    })
+
+# Save to JSON file
+current_unix_time = int(time.time())
+output_file = os.path.join(OUTPUT_DIR, f"clip-{current_unix_time}.json")
+
+with open(output_file, "w") as json_file:
+    json.dump(clip_data, json_file, indent=4)
+
+print(f"Data saved to {output_file}")
