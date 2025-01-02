@@ -7,9 +7,9 @@ import requests
 
 # Constants
 # VALDLE HASHTAG
-# BASE_URL = "https://developers.medal.tv/v1/search?categoryId=fW3AZxHf_c&limit=10&text=%23valdle"
+BASE_URL = "https://developers.medal.tv/v1/search?categoryId=fW3AZxHf_c&limit=100&text=%23valdle"
 # TRENDING
-BASE_URL = "https://developers.medal.tv/v1/trending?categoryId=fW3AZxHf_c&limit=1000"
+# BASE_URL = "https://developers.medal.tv/v1/trending?categoryId=fW3AZxHf_c&limit=1000"
 
 HEADERS = {
     "Authorization": "pub_1T2PUQmnPFfoxKMmUUfvn7iBWJLosear"
@@ -26,46 +26,49 @@ content_list = response.json().get("contentObjects", [])
 
 # Prepare data for output
 clip_data = []
-
+# TODO: ONLY GET FEATURED + FIGURE OUT HOW TO QA + VERIFY RANKS
 for content in content_list:
     user_id = content.get("credits", "").split("/")[-1].strip(")")
-    content_url = f"https://medal.tv/api/content?userId={user_id}&limit=5&offset=0&sortDirection=DESC"
+    content_id = content.get("contentId")[3:]
+    content_url = f"https://medal.tv/api/content/{content_id}"
     content_response = requests.get(content_url, headers={**HEADERS, "X-Authentication": USER_X_AUTH})
-    sleep(0.5)
+    sleep(0.25)
 
     if content_response.status_code != 200:
         print("Error fetching content for user", user_id, content_response.json())
         continue
 
     content_data = content_response.json()
-    for data in content_data:
-        if data.get("supportMatchStats"):# and ("#valdle" in data.get("contentTitle", "") or "#valdle" in data.get("contentDescription", "")):
-            match_stats_url = f"https://medal.tv/api/content/{data['contentId']}/matchStats"
-            match_stats_response = requests.get(match_stats_url, headers={**HEADERS, "X-Authentication": USER_X_AUTH})
-            sleep(0.5)
+    print(content_data.get("supportMatchStats"))
 
-            if match_stats_response.status_code != 200:
-                print("Error fetching match stats for content", data['contentId'], match_stats_response.json())
-                continue
+    if content_data.get("supportMatchStats"):# and ("#valdle" in data.get("contentTitle", "") or "#valdle" in data.get("contentDescription", "")):
+        match_stats_url = f"https://medal.tv/api/content/{content_data['contentId']}/matchStats"
+        match_stats_response = requests.get(match_stats_url, headers={**HEADERS, "X-Authentication": USER_X_AUTH})
+        sleep(0.25)
 
-            match_stats = match_stats_response.json()
-            for player in match_stats.get("playerDtos", []):
-                user = player.get("user", None)
-                if user and user.get("userId") == user_id:
-                    rank = player.get("competitiveTierName", "Unknown")
-                    share_url = data.get("contentShareUrl", "")
-                    name = player.get("gameName", "Unknown")
-                    if rank.lower() == "unranked":
-                      print("skipped", rank)
-                      continue
-                    print(rank, "what")
-                    rank = ''.join(filter(lambda x: not x.isdigit(), rank)).upper()
+        if match_stats_response.status_code != 200:
+            print("Error fetching match stats for content", content_data['contentId'], match_stats_response.json())
+            continue
 
-                    clip_data.append({
-                        "name": name,
-                        "rank": rank,
-                        "share_url": share_url,
-                        "url_for_iframe": share_url.replace("clips", "clip")
+
+        match_stats = match_stats_response.json()
+        for player in match_stats.get("playerDtos", []):
+            user = player.get("user", None)
+            if user and user.get("userId") == user_id:
+                rank = player.get("competitiveTierName", "Unknown")
+                share_url = content_data.get("contentShareUrl", "")
+                name = player.get("gameName", "Unknown")
+                if rank.lower() == "unranked":
+                  print("skipped", rank)
+                  continue
+                print(rank)
+                rank = ''.join(filter(lambda x: not x.isdigit(), rank)).upper()
+
+                clip_data.append({
+                    "name": name,
+                    "rank": rank,
+                    "share_url": share_url,
+                    "url_for_iframe": share_url.replace("clips", "clip")
                     })
 
 # Save to JSON file
