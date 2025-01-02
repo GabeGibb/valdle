@@ -90,4 +90,15 @@ def weaponOfDay():
 
 @app.route("/guessRank/api/rankOfDay")
 def rankOfDay():
-    return blankOfDay('rank')
+  if "rank" not in dailyGameAnswers:
+    # Hardcoded rank
+    obj = {
+      "iframe": "<iframe width='640' height='360' style='border: none;' src='https://medal.tv/games/valorant/clip/joqfElZhfXbcFvLE0?invite=cr-MSwxalcsMTE2NTgxNjgxLA' allow='autoplay' allowfullscreen></iframe>",
+      "randIndex": 2,
+      "displayName": "SILVER",
+      "displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/11/largeicon.png",
+      "dayId": dailyGameAnswers['dayId']
+    }
+    return obj
+    
+  return blankOfDay('rank')
