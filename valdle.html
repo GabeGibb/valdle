@@ -14,14 +14,6 @@
 		</script>
 		<!-- DONT DELETE -->
 		<!-- <meta name="google-adsense-account" content="ca-pub-9727969275111127"> -->
-		<!-- EZOIC-->
-		<script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
-		<script async="" src="//www.ezojs.com/ezoic/sa.min.js"></script>
-		<script>
-			window.ezstandalone = window.ezstandalone || {};
-			ezstandalone.cmd = ezstandalone.cmd || [];
-		</script>
-		<!-- EZOIC -->
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport" />
 		<title>Valdle - Test Your Valorant Knowledge Daily</title>
 		<meta content="valdle" property="og:title" />
@@ -66,29 +58,6 @@
 			<!-- <h2 id="websiteSummary" style="color: #74CB71; font-size: x-large;">Now With Clove!</h2> -->
 		</div>
 		<div class="buttons">
-			<div id="map">
-				<button class="btn btn--light" id="mapRedirect" onclick="location.href='/guessMap'">
-					<span class="btn__inner">
-						<span class="btn__slide"> </span>
-						<img alt="map icon" class="btnIcon icon" id="mapRed" src="static/images/mapIcon.webp" />
-						<img alt="map icon" class="btnIcon icon" id="mapWhite" src="static/images/mapIcon-WHITE.webp" />
-						<span class="btn__content" id="button1Name"> Map </span>
-						<span class="btn__description" id="button1Desc"> Guess the map location from an image </span>
-						<div class="win_streak" style="display: none">
-							<img alt="streak icon" class="icon streak_icon" id="mapStreak" src="static/images/streakIcon.webp" />
-							<img
-								alt="white streak icon"
-								class="icon streak_icon"
-								id="mapStreakWhite"
-								src="static/images/streakIcon-WHITE.webp"
-							/>
-							<div class="streakBox">
-								<p class="streak_number" id="mapWinStreak"></p>
-							</div>
-						</div>
-					</span>
-				</button>
-			</div>
 			<div id="agent">
 				<button class="btn btn--light" id="agentRedirect" onclick="location.href='/guessAgent'">
 					<span class="btn__inner">
@@ -112,6 +81,57 @@
 							/>
 							<div class="streakBox">
 								<p class="streak_number" id="mapWinStreak"></p>
+							</div>
+						</div>
+					</span>
+				</button>
+			</div>
+			<div id="map">
+				<button class="btn btn--light" id="mapRedirect" onclick="location.href='/guessMap'">
+					<span class="btn__inner">
+						<span class="btn__slide"> </span>
+						<img alt="map icon" class="btnIcon icon" id="mapRed" src="static/images/mapIcon.webp" />
+						<img alt="map icon" class="btnIcon icon" id="mapWhite" src="static/images/mapIcon-WHITE.webp" />
+						<span class="btn__content" id="button1Name"> Map </span>
+						<span class="btn__description" id="button1Desc"> Guess the map location from an image </span>
+						<div class="win_streak" style="display: none">
+							<img alt="streak icon" class="icon streak_icon" id="mapStreak" src="static/images/streakIcon.webp" />
+							<img
+								alt="white streak icon"
+								class="icon streak_icon"
+								id="mapStreakWhite"
+								src="static/images/streakIcon-WHITE.webp"
+							/>
+							<div class="streakBox">
+								<p class="streak_number" id="mapWinStreak"></p>
+							</div>
+						</div>
+					</span>
+				</button>
+			</div>
+			<div id="rank">
+				<button class="btn btn--light" id="rankRedirect" onclick="location.href='/guessRank'">
+					<span class="btn__inner">
+						<span class="btn__slide"> </span>
+						<img alt="rank icon" class="btnIcon icon" id="rankRed" src="static/images/rankdleIcon.webp" />
+						<img
+							alt="white rank icon"
+							class="btnIcon icon"
+							id="rankWhite"
+							src="static/images/rankdleIcon-WHITE.webp"
+						/>
+						<span class="btn__content" id="button4Name"> Rank </span>
+						<span class="btn__description" id="button4Desc"> Guess the rank from the clip </span>
+						<div class="win_streak" style="display: none">
+							<img class="icon streak_icon" id="rankStreak" src="static/images/streakIcon.webp" />
+							<img
+								alt="white streak icon"
+								class="icon streak_icon"
+								id="rankStreakWhite"
+								src="static/images/streakIcon-WHITE.webp"
+							/>
+							<div class="streakBox">
+								<p class="streak_number" id="rankWinStreak"></p>
 							</div>
 						</div>
 					</span>

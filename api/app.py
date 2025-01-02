@@ -1,12 +1,13 @@
-from flask import Flask, request
 import json
+import os
+from json import dumps
+
+from dotenv import load_dotenv
+from flask import Flask, request
 from flask_cors import CORS
 from requests import get
-from json import dumps
-import os
-from dotenv import load_dotenv
-load_dotenv()
 
+load_dotenv()
 masterKey = os.getenv('MASTER')
 
 
@@ -50,20 +51,6 @@ def updateAnswers():
 updateAnswers() # CALL THIS ON SERVER LOAD TO ENSURE ANSWERS UPDATE / ARE CREATED
 
 # API ENDPOINTS
-# TODO: REMOVE THIS ENDPOINT
-@app.route('/')
-def home():
-  return '''
-  <html>
-    <head>
-      <title>Maintenance</title>
-    </head>
-    <body>
-      <h1>Undergoing Maintenance</h1>
-      <p>Go to <a href="https://valdle-frontend.onrender.com/">https://valdle-frontend.onrender.com/</a> in the meantime.</p>
-    </body>
-  </html>
-  '''
 
 # Retrieves daily answers from JSON file
 @app.route('/api/dayId')
@@ -100,3 +87,18 @@ def quoteOfDay():
 @app.route('/guessWeapon/api/weaponOfDay')
 def weaponOfDay():
     return blankOfDay('weapon')
+
+@app.route("/guessRank/api/rankOfDay")
+def rankOfDay():
+  if "rank" not in dailyGameAnswers:
+    # Hardcoded rank
+    obj = {
+      "iframe": "<iframe width='640' height='360' style='border: none;' src='https://medal.tv/games/valorant/clip/joqfElZhfXbcFvLE0?invite=cr-MSwxalcsMTE2NTgxNjgxLA' allow='autoplay' allowfullscreen></iframe>",
+      "randIndex": 2,
+      "displayName": "SILVER",
+      "displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/11/largeicon.png",
+      "dayId": dailyGameAnswers['dayId']
+    }
+    return obj
+    
+  return blankOfDay('rank')

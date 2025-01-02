@@ -1,0 +1,70 @@
+#rankOptions {
+	display: flex;
+	flex-wrap: wrap;
+	/* gap: 5px; */
+	max-width: 450px;
+	justify-content: center; /* Center the items */
+	margin: auto;
+	/* margin-top: 5px; */
+}
+
+.rankOption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80px; /* Uniform width */
+	height: 80px; /* Uniform height */
+	background: rgba(43, 42, 41, 1); /* Normal background */
+	padding: 0px;
+	border-radius: 4px; /* Smooth corners */
+	transition: background-color 0.3s ease; /* Smooth transition for hover */
+	text-align: center; /* Center the text */
+	cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.rankOption:hover {
+	background-color: rgba(128, 128, 128, 1); /* Background on hover */
+}
+
+.rankOption img {
+	width: 50px; /* Uniform image size */
+	height: 50px;
+	margin-bottom: 5px; /* Space between image and text */
+}
+
+.rankOptionText {
+	font-family: "DIN Next LT W04 Medium";
+	font-size: 12px; /* Adjust font size for better readability */
+	color: white; /* White text color */
+	text-align: center;
+	line-height: 1.2; /* Better spacing for multiple lines */
+	margin: 0;
+}
+
+.optionButton:hover,
+.autocompleteActive {
+	background-color: rgba(128, 128, 128, 1); /* Hover background color */
+}
+
+#modeBox {
+	padding: 10px;
+}
+
+.medal-clip {
+	border-radius: 10px;
+}
+
+#listOfGuesses {
+	width: 380px !important;
+	margin-top: 10px;
+}
+
+.individualGuesses {
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+.linedeco hr {
+	width: 520px;
+}

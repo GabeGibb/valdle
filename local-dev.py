@@ -1,6 +1,6 @@
-from flask import Flask, send_from_directory, redirect
 import os
 
+from flask import Flask, redirect, send_from_directory
 app = Flask(__name__, static_folder=".", static_url_path="")
 
 # Route rewrites for specific HTML files
@@ -23,6 +23,10 @@ def guess_quote():
 @app.route("/guessWeapon")
 def guess_weapon():
     return send_from_directory(".", "guessWeapon.html")
+
+@app.route("/guessRank")
+def guess_rank():
+    return send_from_directory(".", "guessRank.html")
 
 @app.route("/")
 def home():
@@ -53,4 +57,4 @@ def serve_static_file(filename):
         return redirect("/")  # Redirect unknown paths to home if needed
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)

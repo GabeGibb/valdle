@@ -1,291 +1,323 @@
 .navbar {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .icon {
-    height: 60px;
+	height: 60px;
 }
 
 #websiteSummary {
-    text-align: center;
-    color: #ece8e1;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-size: 2em;
+	text-align: center;
+	color: #ece8e1;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 2em;
 }
 
 #languageDisclaimer {
-    text-align: center;
-    color: #ece8e1;
-    /* font-size: 2em; */
-    /* margin-bottom: 10px; */
+	text-align: center;
+	color: #ece8e1;
+	/* font-size: 2em; */
+	/* margin-bottom: 10px; */
 }
 
 #languageSelector {
-    /* display: flex;
+	/* display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; */
-    font-size: 1em !important;
-    margin-left: 150px;
-    position: relative;
+	font-size: 1em !important;
+	margin-left: 150px;
+	position: relative;
 }
 
 #topBar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-#bottomButtons{
-    margin: auto;
-    width: fit-content;
-    display: flex;
+#bottomButtons {
+	margin: auto;
+	width: fit-content;
+	display: flex;
 }
 
 #google_translate_element {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
 }
 
-#changeLanguage, #about, #discord {
-    transform: scale(0.85);
-    transition: 75ms ease-out;
+#changeLanguage,
+#about,
+#discord {
+	transform: scale(0.85);
+	transition: 75ms ease-out;
 }
 
-
-#changeLanguage:hover, #about:hover, #discord:hover {
-    transform: scale(0.95);
-    cursor: grab;
+#changeLanguage:hover,
+#about:hover,
+#discord:hover {
+	transform: scale(0.95);
+	cursor: grab;
 }
 
 #changeLanguageButton {
-    /* transform: scale(0.75); */
-    border: none;
-    cursor: pointer;
-    appearance: none;
-    background-color: inherit;
+	/* transform: scale(0.75); */
+	border: none;
+	cursor: pointer;
+	appearance: none;
+	background-color: inherit;
 }
-
-
 
 /* #changeLanguageButton:hover {
     transform: scale(0.8);
 } */
 
-
 /* Google stuff */
 
 .goog-te-gadget-simple {
-    background-color: black !important;
+	background-color: black !important;
 }
 
 .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
-    color: white !important;
+	color: white !important;
 }
 
 .goog-te-gadget-icon {
-    display: none !important;
-    background-position: 0px !important;
+	display: none !important;
+	background-position: 0px !important;
 }
 
 /* Selection border */
 .VIpgJd-ZVi9od-vH1Gmf {
-    border: none;
+	border: none;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-#map, #agent, #ability, #quote, #weapon {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
+#map,
+#agent,
+#ability,
+#quote,
+#weapon {
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
 }
 
 .btn {
-    min-width: 400px;
+	min-width: 400px;
 }
 
 .btn__inner {
-    min-width: 400px;
-    padding: 25px 0px;  
-    display: flex;
-    flex-direction: column;
-    font-family: 'VALORANT', sans-serif;
+	min-width: 400px;
+	padding: 25px 0px;
+	display: flex;
+	flex-direction: column;
+	font-family: "VALORANT", sans-serif;
 }
 
 .btn__content {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .btn__description {
-    font-size: 0.9em;
-    color: #ece8e1;
-    z-index: 1;
-    margin-top: 10px;
+	font-size: 0.9em;
+	color: #ece8e1;
+	z-index: 1;
+	margin-top: 10px;
 }
 
 .btn::before,
 .btn::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0; left: 0;
-    height: calc(50% - 5px);
-    border: 1px solid var(--border-color);
-    transition: all .15s ease;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: calc(50% - 5px);
+	border: 1px solid var(--border-color);
+	transition: all 0.15s ease;
 }
 
 .btn::before {
-    top: 0;
-    border-bottom-width: 0;
+	top: 0;
+	border-bottom-width: 0;
 }
 
 .btn::after {
-    bottom: 0;
-    border-top-width: 0;
+	bottom: 0;
+	border-top-width: 0;
 }
 
 /* .win_streak {
 } */
 
 .streak_icon {
-    position: absolute;
-    scale: .45;
-    top: -5px;
-    right: -5px;
+	position: absolute;
+	scale: 0.45;
+	top: -5px;
+	right: -5px;
 }
 
 .streakBox {
-    position: absolute;
-    width: 24px;
-    height: 24px;
+	position: absolute;
+	width: 24px;
+	height: 24px;
 
-    top: 14px;
-    right: 13px;
-
+	top: 14px;
+	right: 13px;
 }
 .streak_number {
+	scale: 0.9;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    scale: .9;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: relative;
+	bottom: 7px;
 
-    position: relative;
-    bottom: 7px;
-
-    color: white;
-    transition: all .2s ease-out;
+	color: white;
+	transition: all 0.2s ease-out;
 }
 
-
-
 .btnIcon {
-    position: absolute;
-    scale: .8;
-    top: 22px;
-    left: 10px;
-
+	position: absolute;
+	scale: 0.8;
+	top: 22px;
+	left: 10px;
 }
 
 .buttons button {
-    text-align: left;
+	text-align: left;
 }
 
-.buttons .btn__content, .buttons .btn__description {
-    margin-left: 20%;
+.buttons .btn__content,
+.buttons .btn__description {
+	margin-left: 20%;
 }
 
 .buttons .btn__inner {
-    padding-top: 30px;
-    padding-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .buttons .btn__description {
-    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
-    font-weight: 100;
-    font-size: 13.5px;
+	font-family: "DIN Next LT W04 Medium", arial, georgia, sans-serif;
+	font-weight: 100;
+	font-size: 13.5px;
 }
-
-
-
 
 /* icons */
 
-#mapRed, #mapStreak,
-#agentRed, #agentStreak,
-#abilityRed, #abilityStreak,
-#weaponRed, #weaponStreak,
-#quoteRed, #quoteStreak
-{
-    opacity: 1;
-    transition: all .2s ease;
+#mapRed,
+#mapStreak,
+#agentRed,
+#agentStreak,
+#abilityRed,
+#abilityStreak,
+#weaponRed,
+#weaponStreak,
+#quoteRed,
+#quoteStreak,
+#rankRed,
+#rankStreak {
+	opacity: 1;
+	transition: all 0.2s ease;
 }
 
-#mapStreak, #agentStreak, #abilityStreak, #weaponStreak, #quoteStreak {
-    transition: all .2s ease-out;
+#mapStreak,
+#agentStreak,
+#abilityStreak,
+#weaponStreak,
+#quoteStreak,
+#rankStreak {
+	transition: all 0.2s ease-out;
 }
 
-#mapStreakWhite, #agentStreakWhite, #abilityStreakWhite, #weaponStreakWhite, #quoteStreakWhite {
-    transition: all .2s ease-out;
+#mapStreakWhite,
+#agentStreakWhite,
+#abilityStreakWhite,
+#weaponStreakWhite,
+#quoteStreakWhite,
+#rankStreakWhite {
+	transition: all 0.2s ease-out;
 }
 
-#mapWhite, #mapStreakWhite,
-#agentWhite, #agentStreakWhite,
-#abilityWhite, #abilityStreakWhite,
-#weaponWhite, #weaponStreakWhite,
-#quoteWhite, #quoteStreakWhite
-{
-    opacity: 0;
-    transition: all .2s ease;
+#mapWhite,
+#mapStreakWhite,
+#agentWhite,
+#agentStreakWhite,
+#abilityWhite,
+#abilityStreakWhite,
+#weaponWhite,
+#weaponStreakWhite,
+#quoteWhite,
+#rankWhite,
+#rankStreakWhite,
+#quoteStreakWhite {
+	opacity: 0;
+	transition: all 0.2s ease;
 }
 
-#mapRedirect:hover #mapRed, #mapRedirect:hover #mapStreak,
-#agentRedirect:hover #agentRed, #agentRedirect:hover #agentStreak,
-#abilityRedirect:hover #abilityRed, #abilityRedirect:hover #abilityStreak,
-#weaponRedirect:hover #weaponRed, #weaponRedirect:hover #weaponStreak,
-#quoteRedirect:hover #quoteRed, #quoteRedirect:hover #quoteStreak
-{
-    opacity: 0;
+#mapRedirect:hover #mapRed,
+#mapRedirect:hover #mapStreak,
+#agentRedirect:hover #agentRed,
+#agentRedirect:hover #agentStreak,
+#abilityRedirect:hover #abilityRed,
+#abilityRedirect:hover #abilityStreak,
+#weaponRedirect:hover #weaponRed,
+#weaponRedirect:hover #weaponStreak,
+#quoteRedirect:hover #quoteRed,
+#quoteRedirect:hover #quoteStreak,
+#rankRedirect:hover #rankRed,
+#rankRedirect:hover #rankStreak {
+	opacity: 0;
 }
 
-#mapRedirect:hover #mapWhite, #mapRedirect:hover #mapStreakWhite,
-#agentRedirect:hover #agentWhite, #agentRedirect:hover #agentStreakWhite,
-#abilityRedirect:hover #abilityWhite, #abilityRedirect:hover #abilityStreakWhite,
-#weaponRedirect:hover #weaponWhite, #weaponRedirect:hover #weaponStreakWhite,
-#quoteRedirect:hover #quoteWhite, #quoteRedirect:hover #quoteStreakWhite
-{
-    opacity: 1;
+#mapRedirect:hover #mapWhite,
+#mapRedirect:hover #mapStreakWhite,
+#agentRedirect:hover #agentWhite,
+#agentRedirect:hover #agentStreakWhite,
+#abilityRedirect:hover #abilityWhite,
+#abilityRedirect:hover #abilityStreakWhite,
+#weaponRedirect:hover #weaponWhite,
+#weaponRedirect:hover #weaponStreakWhite,
+#quoteRedirect:hover #quoteWhite,
+#quoteRedirect:hover #quoteStreakWhite,
+#rankRedirect:hover #rankWhite,
+#rankRedirect:hover #rankStreakWhite {
+	opacity: 1;
 }
 
 .btn:hover .streak_number {
-    color: #ff4655;
+	color: #ff4655;
 }
 
-.disclaimer{
-    text-align: center;
-    color: aliceblue;
-    font-size: 0.8em;
-    max-width: 416px;
-    margin: auto;
-    margin-top: 10px;
-    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
-    font-weight: 100;
-    font-size: medium;
+.disclaimer {
+	text-align: center;
+	color: aliceblue;
+	font-size: 0.8em;
+	max-width: 416px;
+	margin: auto;
+	margin-top: 10px;
+	font-family: "DIN Next LT W04 Medium", arial, georgia, sans-serif;
+	font-weight: 100;
+	font-size: medium;
 }
-a{
-    color: aliceblue;
+a {
+	color: aliceblue;
 }
 
-.privacy-policy{
-    width: fit-content;
-    margin: auto;
-    font-family: "DIN Next LT W04 Medium",arial,georgia,sans-serif;
+.privacy-policy {
+	width: fit-content;
+	margin: auto;
+	font-family: "DIN Next LT W04 Medium", arial, georgia, sans-serif;
 }

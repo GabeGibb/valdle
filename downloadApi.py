@@ -1,7 +1,7 @@
-from requests import get
-from json import dump, load
 import os
+from json import dump, load
 
+from requests import get
 
 language_list = ["en-US"]  # , "es-ES", "tr-TR"
 
@@ -111,6 +111,14 @@ def downloadMaps(lan):
     start.close()
     to.close()
 
+def downloadRanks(language):
+    add_before_json("ranks_en.json")
+    ranks = get("https://valorant-api.com/v1/competitivetiers?language=" + language)
+    if ranks.status_code == 200:
+        ranksFile = open("static/api/ranks/ranks_" + language[:2] + ".json", "w")
+        ranksContent = ranks.json()["data"]
+        dump(ranksContent, ranksFile, indent=4)
+        ranksFile.close()
 
 def add_before_json(filename2):
     root_dir = "static/api"
@@ -124,6 +132,7 @@ def add_before_json(filename2):
 
 
 for language in language_list:
-    downloadWeapons(language)  # for weapons
-    downloadAgents(language)  # for agents
-    downloadMaps(language)  # for maps
+  # downloadWeapons(language)  # for weapons
+  # downloadAgents(language)  # for agents
+  # downloadMaps(language)  # for maps
+  downloadRanks(language)  # for ranks

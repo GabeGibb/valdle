@@ -35,6 +35,7 @@ function addWinToStats() {
 
 function loadPersistentData(mode, curDayId) {
 	dayId = curDayId;
+	$("#header").append(" #" + dayId);
 	loadStats(mode);
 
 	// if (debug){
@@ -44,7 +45,6 @@ function loadPersistentData(mode, curDayId) {
 	// }
 
 	persistentData = JSON.parse(localStorage.getItem(mode));
-
 	if (
 		localStorage.getItem(mode) == null ||
 		persistentData["dayId"] != dayId ||
@@ -485,7 +485,7 @@ function createNextPageBox(nextGame) {
 }
 
 function addShareDiv() {
-	let modes = ["map", "agent", "ability", "weapon", "quote"];
+	let modes = ["agent", "map", "rank", "ability", "weapon", "quote"];
 	let output = [];
 	let modeEmojis = {
 		map: "🗺️",
@@ -493,6 +493,7 @@ function addShareDiv() {
 		ability: "✨",
 		weapon: "🔫",
 		quote: "💬",
+		rank: "🏆",
 	};
 
 	for (let i = 0; i < modes.length; i++) {
@@ -595,6 +596,7 @@ function toggleStats() {
 function showStats() {
 	// console.log(stats)
 	// console.log(persistentData)
+	console.log(stats);
 	let columns = $("#statsColumns").children();
 	columns[0].children[1].innerText = stats["dayIds"].length;
 

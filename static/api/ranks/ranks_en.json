@@ -1,0 +1,110 @@
+[
+	{
+		"tier": 5,
+		"tierName": "IRON",
+		"division": "ECompetitiveDivision::IRON",
+		"divisionName": "IRON",
+		"color": "4f514fff",
+		"backgroundColor": "828282ff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/5/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/5/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/5/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/5/ranktriangleupicon.png"
+	},
+	{
+		"tier": 8,
+		"tierName": "BRONZE",
+		"division": "ECompetitiveDivision::BRONZE",
+		"divisionName": "BRONZE",
+		"color": "a5855dff",
+		"backgroundColor": "7c5522ff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/8/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/8/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/8/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/8/ranktriangleupicon.png"
+	},
+	{
+		"tier": 11,
+		"tierName": "SILVER",
+		"division": "ECompetitiveDivision::SILVER",
+		"divisionName": "SILVER",
+		"color": "bbc2c2ff",
+		"backgroundColor": "d1d1d1ff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/11/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/11/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/11/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/11/ranktriangleupicon.png"
+	},
+	{
+		"tier": 14,
+		"tierName": "GOLD",
+		"division": "ECompetitiveDivision::GOLD",
+		"divisionName": "GOLD",
+		"color": "eccf56ff",
+		"backgroundColor": "eec56aff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/14/ranktriangleupicon.png"
+	},
+	{
+		"tier": 17,
+		"tierName": "PLATINUM",
+		"division": "ECompetitiveDivision::PLATINUM",
+		"divisionName": "PLATINUM",
+		"color": "59a9b6ff",
+		"backgroundColor": "00c7c0ff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/17/ranktriangleupicon.png"
+	},
+	{
+		"tier": 20,
+		"tierName": "DIAMOND",
+		"division": "ECompetitiveDivision::DIAMOND",
+		"divisionName": "DIAMOND",
+		"color": "b489c4ff",
+		"backgroundColor": "763bafff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/20/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/20/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/20/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/20/ranktriangleupicon.png"
+	},
+	{
+		"tier": 23,
+		"tierName": "ASCENDANT",
+		"division": "ECompetitiveDivision::ASCENDANT",
+		"divisionName": "ASCENDANT",
+		"color": "6ae2afff",
+		"backgroundColor": "1c7245ff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/23/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/23/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/23/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/23/ranktriangleupicon.png"
+	},
+	{
+		"tier": 26,
+		"tierName": "IMMORTAL",
+		"division": "ECompetitiveDivision::IMMORTAL",
+		"divisionName": "IMMORTAL",
+		"color": "bb3d65ff",
+		"backgroundColor": "ff5551ff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/26/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/26/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/26/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/26/ranktriangleupicon.png"
+	},
+	{
+		"tier": 27,
+		"tierName": "RADIANT",
+		"division": "ECompetitiveDivision::RADIANT",
+		"divisionName": "RADIANT",
+		"color": "ffffaaff",
+		"backgroundColor": "ffedaaff",
+		"displayIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/27/smallicon.png",
+		"largeIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/27/largeicon.png",
+		"rankTriangleDownIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/27/ranktriangledownicon.png",
+		"rankTriangleUpIcon": "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/27/ranktriangleupicon.png"
+	}
+]
