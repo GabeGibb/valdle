@@ -99,7 +99,6 @@ function makeButtons() {
 	}
 }
 
-// TODO: Show the guesses
 function modeWrongActions() {}
 
 let rankGameOver = false;

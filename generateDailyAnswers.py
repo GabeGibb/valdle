@@ -135,17 +135,19 @@ def getRank(past):
     f = open("static/api/ranks/ranks_en.json")
     data = load(f)
     f.close()
-
-    index = randint(0, len(data) - 1)
-    while index in past["randIndex"]:
-        index = randint(0, len(data) - 1)
-
+    # TODO: RANDOMIZE
     rankOfDay = {}
+    rankOfDay["iframe"] = "<iframe width='640' height='360' style='border: none;' src='https://medal.tv/games/valorant/clip/joqfElZhfXbcFvLE0?invite=cr-MSwxalcsMTE2NTgxNjgxLA' allow='autoplay' allowfullscreen></iframe>"
+
+
+    # index = randint(0, len(data) - 1)
+    # while index in past["randIndex"]:
+    #     index = randint(0, len(data) - 1)
+    index = 2
+
     rankOfDay["randIndex"] = index
     rankOfDay["displayName"] = data[index]["tierName"]
     rankOfDay["displayIcon"] = data[index]["largeIcon"]
-    # TODO: Delete this line
-    rankOfDay["iframe"] = "<iframe width='640' height='360' src='https://medal.tv/clip/joM6rVYsZ0-YXowiv/1AHhs0FFh7WxW7u2?loop=1&autoplay=1&muted=1&cta=1' frameborder='0' allow='autoplay' allowfullscreen class='medal-clip' id='cidjoM6rVYsZ0-YXowiv'></iframe>"
     return rankOfDay
 
 def generateDailyAnswers(past):

@@ -35,6 +35,7 @@ function addWinToStats() {
 
 function loadPersistentData(mode, curDayId) {
 	dayId = curDayId;
+	$("#header").append(" #" + dayId);
 	loadStats(mode);
 
 	// if (debug){
