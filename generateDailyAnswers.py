@@ -132,7 +132,7 @@ def getWeapon(past):
     return weaponOfDay
 
 def getRank(past):
-  # TODO: USE PAST
+  # TODO: USE PAST + fix other things idk this whole system is weird with the indices
   with open("static/api/ranks/ranks_en.json") as f:
     ranks_data = load(f)
   

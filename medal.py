@@ -14,7 +14,6 @@ BASE_URL = "https://developers.medal.tv/v1/search?categoryId=fW3AZxHf_c&limit=10
 HEADERS = {
     "Authorization": "pub_1T2PUQmnPFfoxKMmUUfvn7iBWJLosear"
 }
-USER_X_AUTH = "116581681,32598d6a-367a-41c6-9712-90fc56940382"
 OUTPUT_DIR = "static/api/ranks/clips"
 
 # Create output directory if it doesn't exist
@@ -31,7 +30,7 @@ for content in content_list:
     user_id = content.get("credits", "").split("/")[-1].strip(")")
     content_id = content.get("contentId")[3:]
     content_url = f"https://medal.tv/api/content/{content_id}"
-    content_response = requests.get(content_url, headers={**HEADERS, "X-Authentication": USER_X_AUTH})
+    content_response = requests.get(content_url)
     sleep(0.25)
 
     if content_response.status_code != 200:
@@ -43,7 +42,7 @@ for content in content_list:
 
     if content_data.get("supportMatchStats"):# and ("#valdle" in data.get("contentTitle", "") or "#valdle" in data.get("contentDescription", "")):
         match_stats_url = f"https://medal.tv/api/content/{content_data['contentId']}/matchStats"
-        match_stats_response = requests.get(match_stats_url, headers={**HEADERS, "X-Authentication": USER_X_AUTH})
+        match_stats_response = requests.get(match_stats_url)
         sleep(0.25)
 
         if match_stats_response.status_code != 200:
@@ -52,6 +51,7 @@ for content in content_list:
 
 
         match_stats = match_stats_response.json()
+        print(match_stats)
         for player in match_stats.get("playerDtos", []):
             user = player.get("user", None)
             if user and user.get("userId") == user_id:
