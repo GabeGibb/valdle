@@ -149,6 +149,7 @@ def getRank(past):
       break
   
   rankOfDay = {}
+  rankOfDay["clipIndex"] = clip_index
   rankOfDay["iframe"] = f"<iframe style='border: none;' src='{clips_data[clip_index]['url_for_iframe']}' allow='autoplay' allowfullscreen></iframe>"
   rankOfDay["randIndex"] = rank_index
   rankOfDay["displayName"] = ranks_data[rank_index]["tierName"]
@@ -159,7 +160,7 @@ def getRank(past):
 def generateDailyAnswers(past):
     pastAnswers = past["past"]
     if "rank" not in pastAnswers:
-        pastAnswers["rank"] = {"randIndex": []}
+        pastAnswers["rank"] = {"clipIndex": []}
         
     dailyAnswers = {
         "map": getMap(pastAnswers["map"]),
@@ -167,7 +168,7 @@ def generateDailyAnswers(past):
         "ability": getAbility(pastAnswers["ability"]),
         "weapon": getWeapon(pastAnswers["weapon"]),
         "quote": getQuote(pastAnswers["quote"]),
-        "rank": getRank(pastAnswers.get("rank", {"randIndex": []})),
+        "rank": getRank(pastAnswers.get("rank", {"clipIndex": []})),
     }
     dailyAnswers["dayId"] = past["dayId"] + 1
 
@@ -179,7 +180,7 @@ def generateDailyAnswers(past):
         dailyAnswers["weapon"]["weaponRandIndex"]
     )
     pastAnswers["quote"]["randIndex"].append(dailyAnswers["quote"]["randIndex"])
-    pastAnswers["rank"]["randIndex"].append(dailyAnswers["rank"]["randIndex"])
+    pastAnswers["rank"]["clipIndex"].append(dailyAnswers["rank"]["clipIndex"])
 
     n = 7
     pastAnswers["map"]["mapIndex"] = pastAnswers["map"]["mapIndex"][-n:]
@@ -190,7 +191,7 @@ def generateDailyAnswers(past):
         -n:
     ]
     pastAnswers["quote"]["randIndex"] = pastAnswers["quote"]["randIndex"][-n:]
-    pastAnswers["rank"]["randIndex"] = pastAnswers["rank"]["randIndex"][-n:]
+    pastAnswers["rank"]["clipIndex"] = pastAnswers["rank"]["clipIndex"][-n:]
 
     dailyAnswers["past"] = pastAnswers
 
